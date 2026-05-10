@@ -1,0 +1,438 @@
+{
+	autofocus_id: "6A1E8D4C0F2B7A11"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "entering_the_iron_era"
+	group: "12B6640DF4C0DCFE"
+	hide_quest_until_deps_complete: true
+	icon: {
+		id: "overgeared:copper_smithing_hammer"
+	}
+	id: "620C470E078B2F83"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["60D53613768CA1F3"]
+			hide_until_deps_complete: true
+			id: "6A1E8D4C0F2B7A11"
+			rewards: [
+				{
+					id: "63BF29C8E587C73E"
+					table_id: 8849093687305634787L
+					type: "loot"
+				}
+				{
+					count: 8
+					id: "55DCEF7F6685E658"
+					item: {
+						count: 1
+						id: "minecraft:stick"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "7A1E8D4C0F2B7701"
+				item: { count: 1, id: "minecraft:flint" }
+				type: "item"
+			}]
+			x: -13.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6A1E8D4C0F2B7A11"]
+			hide_until_deps_complete: true
+			id: "6A1E8D4C0F2B7A12"
+			rewards: [{
+				id: "006598A1D8B58E5A"
+				table_id: 8849093687305634787L
+				type: "loot"
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				count: 4L
+				id: "7A1E8D4C0F2B7703"
+				item: { count: 1, id: "overgeared:knappable_rock" }
+				type: "item"
+			}]
+			x: -12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6A1E8D4C0F2B7A12"]
+			hide_until_deps_complete: true
+			id: "6A1E8D4C0F2B7A13"
+			rewards: [{
+				count: 4
+				id: "390A4517301FE448"
+				item: {
+					count: 1
+					id: "minecraft:stick"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "7A1E8D4C0F2B7704"
+				item: { count: 1, id: "overgeared:stone_pickaxe_head" }
+				type: "item"
+			}]
+			x: -10.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6A1E8D4C0F2B7A13"]
+			hide_until_deps_complete: true
+			id: "6A1E8D4C0F2B7A14"
+			rewards: [
+				{
+					count: 4
+					id: "3373104B12593B79"
+					item: {
+						count: 1
+						id: "minecraft:charcoal"
+					}
+					type: "item"
+				}
+				{
+					count: 2
+					id: "3B00E32D6370AA32"
+					item: {
+						count: 1
+						id: "minecraft:bread"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "7A1E8D4C0F2B7705"
+				item: { count: 1, id: "minecraft:stone_pickaxe" }
+				type: "item"
+			}]
+			x: -9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6A1E8D4C0F2B7A14"]
+			hide_until_deps_complete: true
+			id: "6A1E8D4C0F2B7A15"
+			rewards: [{
+				count: 6
+				id: "3979B8BE434EF008"
+				item: {
+					count: 1
+					id: "minecraft:coal"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					count: 3L
+					id: "7A1E8D4C0F2B7706"
+					item: { count: 1, id: "minecraft:raw_copper" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					count: 3L
+					id: "7A1E8D4C0F2B7707"
+					item: { count: 1, id: "minecraft:copper_ingot" }
+					type: "item"
+				}
+			]
+			x: -7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6A1E8D4C0F2B7A15"]
+			hide_until_deps_complete: true
+			id: "6A1E8D4C0F2B7A16"
+			rewards: [{
+				count: 2
+				id: "5284B77AE57E5A3B"
+				item: {
+					count: 1
+					id: "minecraft:copper_ingot"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "7A1E8D4C0F2B7708"
+				item: { count: 1, id: "overgeared:copper_smithing_hammer" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["27631F12D97B7FA8"]
+			hide_until_deps_complete: true
+			id: "6A1E8D4C0F2B7A18"
+			rewards: [{
+				count: 4
+				id: "2933285548C23F07"
+				item: {
+					count: 1
+					id: "minecraft:charcoal"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "7A1E8D4C0F2B770A"
+				item: { count: 1, id: "overgeared:wooden_tongs" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6A1E8D4C0F2B7A18"]
+			hide_until_deps_complete: true
+			id: "6A1E8D4C0F2B7A19"
+			rewards: [{
+				id: "0C73BB4E9359D9D3"
+				item: {
+					count: 1
+					id: "overgeared:empty_blueprint"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "7A1E8D4C0F2B770B"
+				item: { count: 1, id: "minecraft:grindstone" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6A1E8D4C0F2B7A19"]
+			hide_until_deps_complete: true
+			id: "6A1E8D4C0F2B7A1A"
+			rewards: [{
+				count: 6
+				id: "024F6B1A1638B4F8"
+				item: {
+					count: 1
+					id: "minecraft:paper"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "7A1E8D4C0F2B770C"
+				item: { count: 1, id: "overgeared:drafting_table" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6A1E8D4C0F2B7B03"]
+			hide_until_deps_complete: true
+			id: "6A1E8D4C0F2B7A1B"
+			rewards: [{
+				id: "3A6FFC6D1B61E430"
+				item: {
+					count: 1
+					id: "overgeared:empty_blueprint"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "7A1E8D4C0F2B770D"
+				item: { count: 1, id: "overgeared:blueprint" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6A1E8D4C0F2B7A1B"]
+			hide_until_deps_complete: true
+			id: "097AED7C91033D5E"
+			rewards: [
+				{
+					auto: "enabled"
+					command: "/stage grant {p} medieval_times"
+					icon: {
+						id: "malum:iron_impetus"
+					}
+					id: "09D8F92E8CE5B06A"
+					permission_level: 2
+					silent: true
+					team_reward: true
+					type: "command"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "32D51FE9E88AE022"
+					table_id: 4597731606249609751L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "1F57854559E61136"
+				type: "checkmark"
+			}]
+			x: 5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6A1E8D4C0F2B7A1A"]
+			hide_until_deps_complete: true
+			id: "6A1E8D4C0F2B7B03"
+			rewards: [{
+				count: 4
+				id: "704E0341BBE8333D"
+				item: {
+					count: 1
+					id: "minecraft:paper"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "7A1E8D4C0F2B7714"
+				item: { count: 1, id: "overgeared:empty_blueprint" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6A1E8D4C0F2B7A16"]
+			id: "27631F12D97B7FA8"
+			tasks: [
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "6B99B6BAD3036C23"
+					item: { count: 1, id: "overgeared:copper_sword_blade" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "6EFBC4B05DA6CD9F"
+					item: { count: 1, id: "overgeared:copper_pickaxe_head" }
+					type: "item"
+				}
+			]
+			x: -4.5d
+			y: 0.0d
+		}
+	]
+}

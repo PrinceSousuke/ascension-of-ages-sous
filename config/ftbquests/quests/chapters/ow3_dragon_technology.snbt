@@ -1,0 +1,14 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ow3_dragon_technology"
+	group: "080F7BA9FFB8FC07"
+	hide_quest_until_deps_complete: true
+	icon: {
+		id: "minecraft:dragon_egg"
+	}
+	id: "4454010000000000"
+	order_index: 1
+	quest_links: [ ]
+	quests: [ ]
+}

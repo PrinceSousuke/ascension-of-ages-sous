@@ -1,0 +1,234 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "asc4_singularity"
+	group: "6A196D2B21EDE4C0"
+	hide_quest_until_deps_complete: true
+	icon: {
+		id: "oritech:black_hole_block"
+	}
+	id: "5347010000000000"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"5449010000010001"
+				"4F43010000010060"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				id: "oritech:unstable_container"
+			}
+			id: "5347010000010002"
+			rewards: [{
+				id: "5347010000030002"
+				type: "xp"
+				xp: 200
+			}]
+			shape: "diamond"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "5347010000020002"
+				item: { count: 1, id: "oritech:unstable_container" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -5.25d
+		}
+		{
+			dependencies: [
+				"5449010000010001"
+				"4F43010000010060"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				id: "oritech:heisenberg_compensator"
+			}
+			id: "5347010000010004"
+			rewards: [{
+				id: "5347010000030004"
+				type: "xp"
+				xp: 150
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "5347010000020004"
+				item: { count: 1, id: "oritech:heisenberg_compensator" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -2.25d
+		}
+		{
+			dependencies: [
+				"5449010000010001"
+				"4F43010000010060"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				id: "oritech:accelerator_controller"
+			}
+			id: "5347010000010006"
+			rewards: [{
+				id: "5347010000030006"
+				type: "xp"
+				xp: 150
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				block: { count: 1, id: "oritech:accelerator_controller" }
+				id: "5347010000020006"
+				type: "place_block"
+				value: 1L
+			}]
+			x: 1.5d
+			y: -0.75d
+		}
+		{
+			dependencies: ["5347010000010006"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "enderio:reinforced_obsidian_block"
+			}
+			id: "5347010000010007"
+			rewards: [{
+				id: "5347010000030007"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				block: { count: 1, id: "enderio:reinforced_obsidian_block" }
+				id: "5347010000020007"
+				type: "use_block"
+				value: 1L
+			}]
+			x: 3.0d
+			y: -0.75d
+		}
+		{
+			dependencies: ["5347010000010007"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "endrem:ancient_portal_frame"
+			}
+			id: "5347010000010008"
+			rewards: [{
+				id: "5347010000030008"
+				type: "xp"
+				xp: 150
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				block: { count: 1, id: "endrem:ancient_portal_frame" }
+				id: "5347010000020008"
+				type: "use_block"
+				value: 1L
+			}]
+			x: 4.5d
+			y: -0.75d
+		}
+		{
+			dependencies: [
+				"5347010000010008"
+				"5347010000010002"
+				"5347010000010004"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				id: "oritech:black_hole_block"
+			}
+			id: "5347010000010009"
+			rewards: [{
+				id: "5347010000030009"
+				type: "xp"
+				xp: 1000
+			}]
+			shape: "gear"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				block: { count: 1, id: "oritech:black_hole_block" }
+				id: "5347010000020009"
+				type: "use_block"
+				value: 1L
+			}]
+			x: 6.0d
+			y: -0.75d
+		}
+		{
+			dependencies: ["5347010000010009"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "oritech:particle_collector_block"
+			}
+			id: "534701000001000A"
+			rewards: [{
+				id: "534701000003000A"
+				type: "xp"
+				xp: 1500
+			}]
+			shape: "gear"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				duration_seconds: 60.0d
+				id: "534701000002000A"
+				type: "timer"
+			}]
+			x: 6.0d
+			y: 0.75d
+		}
+	]
+}

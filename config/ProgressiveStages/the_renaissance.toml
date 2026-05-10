@@ -1,0 +1,396 @@
+# ============================================================================
+# Stage: The Renaissance
+# ============================================================================
+# CHOKEPOINT MODEL (rewritten 2026-05-02 from blanket item_mods to chokepoints)
+# Mod-wide item_mods locks were causing JEI/EMI tag pollution: tag-based recipe
+# ingredients (e.g. c:logs) iterated every member of the tag and rendered a
+# lock icon on each modded entry whose mod was item_mods-locked. Replaced with
+# per-mod chokepoint items (the entry-tier crafting prerequisite that gates a
+# mod's downstream recipes).
+# ============================================================================
+
+[stage]
+id = "the_renaissance"
+display_name = "The Renaissance"
+description = "Realm travel, stronger gear, and the first broad outward push."
+icon = "minecraft:diamond_pickaxe"
+unlock_message = "&b&lThe Renaissance Unlocked! &r&7Deeper travel, better gear, and stronger branches are now open."
+dependency = "medieval_times"
+
+[locks]
+
+# ----------------------------------------------------------------------------
+# ITEMS - Specific items locked until The Renaissance is granted.
+# Includes:
+#   - Vanilla diamond/emerald/beacon/end-crystal tier
+#   - Mid-tier ATO metals (lead/nickel/osmium/platinum/silver) and their forms
+#   - Per-mod chokepoint items (entry-tier crafting prerequisites — gating one
+#     blocks the rest of the mod's progression chain)
+# ----------------------------------------------------------------------------
+items = [
+  "aether:cloud_staff",
+  "alltheores:lead_dust",
+  "alltheores:lead_ingot",
+  "alltheores:lead_nugget",
+  "alltheores:nickel_dust",
+  "alltheores:nickel_ingot",
+  "alltheores:nickel_nugget",
+  "alltheores:osmium_dust",
+  "alltheores:osmium_ingot",
+  "alltheores:osmium_nugget",
+  "alltheores:platinum_dust",
+  "alltheores:platinum_ingot",
+  "alltheores:platinum_nugget",
+  "alltheores:raw_lead",
+  "alltheores:raw_lead_block",
+  "alltheores:raw_nickel",
+  "alltheores:raw_nickel_block",
+  "alltheores:raw_osmium",
+  "alltheores:raw_osmium_block",
+  "alltheores:raw_platinum",
+  "alltheores:raw_platinum_block",
+  "alltheores:raw_silver",
+  "alltheores:raw_silver_block",
+  "alltheores:silver_dust",
+  "alltheores:silver_ingot",
+  "alltheores:silver_nugget",
+  "cataclysm:cursium_ingot",
+  "cataclysm:cursed_eye",
+  "deeperdarker:soul_elytra",
+  "divinerpg:realmite_ingot",
+  "mekanism:dust_lead",
+  "mekanism:dust_osmium",
+  "mekanism:ingot_lead",
+  "mekanism:ingot_osmium",
+  "mekanism:nugget_lead",
+  "mekanism:nugget_osmium",
+  "mekanism:raw_lead",
+  "mekanism:raw_osmium",
+  "minecraft:beacon",
+  "minecraft:conduit",
+  "minecraft:deepslate_diamond_ore",
+  "minecraft:diamond",
+  "minecraft:diamond_axe",
+  "minecraft:diamond_block",
+  "minecraft:diamond_boots",
+  "minecraft:diamond_chestplate",
+  "minecraft:diamond_helmet",
+  "minecraft:diamond_hoe",
+  "minecraft:diamond_leggings",
+  "minecraft:diamond_ore",
+  "minecraft:diamond_pickaxe",
+  "minecraft:diamond_shovel",
+  "minecraft:diamond_sword",
+  "minecraft:enchanting_table",
+  "minecraft:end_crystal",
+  "minecraft:ender_chest",
+  "minecraft:experience_bottle",
+  "minecraft:firework_rocket",
+  "minecraft:firework_star",
+  "minecraft:jukebox",
+  "tfmg:lead_ingot",
+  "tfmg:lead_nugget",
+  "tfmg:nickel_ingot",
+  "tfmg:nickel_nugget",
+  "tfmg:raw_lead",
+  "tfmg:raw_nickel",
+
+  # ─── Per-mod chokepoints (replace blanket item_mods locks) ───
+  # Aether (dim is also locked below; this gates the staff entry item)
+  # cloud_staff already listed above
+  # Deep Aether (rides on aether dim lock; explicit ingots gate metal chain)
+  "deep_aether:oratie_ingot",
+  "deep_aether:stratus_ingot",
+  # Better Nether — cincinnasite alone (NARROWED 2026-05-02). The raw shard is
+  # consumed by 3 recipes including cincinnasite_ingot smelting/blasting; locking
+  # the raw form gates ingot production → 30 downstream tools/armor/bars/boots.
+  "betternether:cincinnasite",
+  # Eternal Nether — soul_stone is the only soul-tier reagent
+  "eternalnether:soul_stone",
+  # Eternal Starlight — orb_of_prophecy gates ES progression; springstone is mid-tier
+  "eternal_starlight:orb_of_prophecy",
+  "eternal_starlight:thermal_springstone",
+  # Enderscape — nebulite_shards (note plural) is the entry crystal
+  "enderscape:nebulite_shards",
+  # The Undergarden — catalyst items activate stone/deepslate portal frames;
+  # dimension travel and portal block are also locked below.
+  "undergarden:catalyst",
+  "undergarden:crumbling_catalyst",
+  # Block Factorys Bosses — arena keys gate boss summoning
+  "block_factorys_bosses:underworld_arena_key",
+  "block_factorys_bosses:ancient_trial_key",
+  # Bosses of Mass Destruction — verified namespace bosses_of_mass_destruction
+  # (jar: BOMD-NeoForge-1.21-1.3.2.jar). The boss-summon items gate spawning;
+  # bosses themselves spawn naturally in worldgen and don't need locking.
+  # All four IDs verified in JAR lang at item.bosses_of_mass_destruction.* /
+  # block.bosses_of_mass_destruction.* on 2026-05-02.
+  "bosses_of_mass_destruction:soul_star",
+  "bosses_of_mass_destruction:void_lily",
+  "bosses_of_mass_destruction:obsidilith_rune",
+  # AE2 — fluix_crystal alone (NARROWED 2026-05-02). controller recipe consumes
+  # fluix_crystal, so locking the crystal cascades. Also covers all 38 IR-tier
+  # AE2 items via the inscriber → processor chain (gated separately at IR).
+  "ae2:fluix_crystal",
+  # Refined Storage — processor_binding alone (NARROWED 2026-05-02). controller
+  # needs advanced_processor → raw_advanced_processor → processor_binding, so
+  # locking processor_binding cascades to controller + ExtraDisks/ExtraStorage/
+  # RSRequestify (all of which need the RS controller).
+  "refinedstorage:processor_binding",
+  # Pastel — pastel_node is the network root
+  "pastel:pastel_node",
+  # Malum — spirit_altar alone (NARROWED 2026-05-02). soul_stained_steel_ingot's
+  # entry production is via malum:spirit_infusion at the altar (refined_soulstone
+  # + iron_ingot + spirits); block/nugget paths are decompose loops requiring
+  # existing soul_stained_steel. Locking the altar gates first-time ingot
+  # creation, cascading to 15 downstream items.
+  # NOTE: spirit_altar is a multiblock-controller chokepoint (gates by
+  # placement, not strict consume — see CLAUDE.md multiblock policy 2026-05-02).
+  "malum:spirit_altar",
+  # Actually Additions — iron_casing + basic_coil (KEPT BOTH per audit). Two
+  # independent gates: iron_casing gates 19 machines, basic_coil gates 12 (incl.
+  # advanced_coil/battery_box/breaker which don't need iron_casing).
+  "actuallyadditions:iron_casing",
+  "actuallyadditions:basic_coil",
+  # GnKinetics — industrial_gear gates the advanced gear chain
+  "gnkinetics:industrial_gear",
+  # Create Integrated Farming: NO chokepoint — roost is quested in m4_relics_and_burrows
+  # (Medieval); brass-tier recipes naturally gate it. Removed `roost`/`fishing_net` locks.
+  # Create: Crafts & Additions — alternator + capacitor gate RF generation/storage
+  "createaddition:alternator",
+  # Create: New Age — basic_energiser is the entry transformer
+  "create_new_age:basic_energiser",
+  # Slice & Dice: NO chokepoint — slicer is quested in m4_relics_and_burrows (Medieval).
+  # Brass-tier recipe naturally gates it. Removed `slicer` lock.
+  # ProjectRed — plate gates all silicon-based circuit progression (silicon→plate→circuit)
+  "projectred_core:plate",
+  # Cable Tiers — elite_importer is the entry-tier extension cable (refined
+  # storage compatible). Mega/Ultra/Creative tiers all consume elite_importer
+  # in their recipes, so locking the elite tier gates the whole mod chain
+  # (added 2026-05-02 modwide elim; quested in r8_the_inventory_problem).
+  "cabletiers:elite_importer",
+
+  # ─── PneumaticCraft — pressure_chamber_wall alone (NARROWED 2026-05-02 from
+  # 11 items). The wall is consumed by 8 chamber-component recipes including
+  # glass, valve, interface, and downstream items (block_tracker_upgrade,
+  # spawner_extractor). Without walls, no chamber, no pressure-crafted items.
+  # IR-tier PNC items (refinery, advanced_liquid_compressor, fluid_mixer,
+  # refinery_output, thermal_compressor) cascade-lock through this — IR PNC
+  # locks were also removed in this audit. Quested in r7_renaissance_tech. ───
+  "pneumaticcraft:pressure_chamber_wall",
+  # ─── Theurgy — calcination_oven (Renaissance entry, 2026-05-03). Multiblock-
+  # controller chokepoint: hosts theurgy:calcination custom recipe type when
+  # placed atop a heat source (pyromantic_brazier). Without this block, no
+  # Salt extraction → no transmutation chain → mod cannot bootstrap. JAR-verified
+  # at data/theurgy/recipe/crafting/shaped/calcination_oven.json (recipe = copper
+  # block + iron ingot — both Renaissance-tier ingredients). Sister apparatus
+  # (distiller, fermentation_vat, incubator) cascade-gate via Salt/Sulfur/Mercury
+  # availability, so calcination_oven is the unique entry chokepoint per the
+  # "earliest unique single item" rule.
+  "theurgy:calcination_oven"
+]
+
+# ----------------------------------------------------------------------------
+# ITEM TAGS - currently unused (kept blank — tag-pollution is the problem this
+# rework solves, so we avoid item_tags for broad mod gating).
+# ----------------------------------------------------------------------------
+item_tags = []
+
+# ----------------------------------------------------------------------------
+# ITEM_MODS - blanket per-mod locks. Used SPARINGLY for small mods that
+# have no clean chokepoint and where tag pollution risk is acceptable.
+# Most broad item_mods from older passes were narrowed in this rework.
+# Live boss/adventure mods such as block_factorys_bosses and
+# bosses_of_mass_destruction are gated by exact chokepoints above, not by
+# namespace blanket locks. Entries marked "(kept)" below remain deliberate
+# blanket locks.
+# Reviewed/narrowed examples: actuallyadditions, ae2, aether, betterend,
+# betternether, cataclysm, create_integrated_farming, create_new_age,
+# createaddition, deep_aether, deeperdarker, divinerpg, enderscape, endrem,
+# eternal_starlight, eternalnether, extradisks, extrastorage, gnkinetics,
+# malum, modern_industrialization, moderndynamics, pastel, phantasm,
+# pneumaticcraft, railways, refinedstorage, refinedstorage_quartz_arsenal,
+# rsrequestify.
+# ----------------------------------------------------------------------------
+# Mod-wide locks eliminated 2026-05-02 (PROMPT_modwide_lock_elimination).
+# Removed entries: cabletiers → chokepointed via elite_importer in items[];
+# gaze (25 items, 0 recipes, no crafting chain — altar/scripted progression);
+# luminous_nether (240 items, 122 recipes mostly cosmetic ash blocks/biome
+# decoration; Nether biome additions, no chain).
+item_mods = []
+
+# ----------------------------------------------------------------------------
+# BLOCKS - mid-tier ore/storage blocks unlocked at Renaissance.
+# (Uranium ores remain visible as Atomic foreshadowing; storage blocks are
+#  locked separately at Atomic.)
+# ----------------------------------------------------------------------------
+blocks = [
+    "minecraft:diamond_block",
+    "minecraft:enchanting_table",
+    "minecraft:beacon",
+    "minecraft:conduit",
+    "minecraft:ender_chest",
+    "minecraft:respawn_anchor",
+    "minecraft:lodestone",
+
+    "alltheores:lead_ore",
+    "alltheores:deepslate_lead_ore",
+    "alltheores:nether_lead_ore",
+    "alltheores:end_lead_ore",
+    "alltheores:other_lead_ore",
+    "alltheores:lead_block",
+    "alltheores:raw_lead_block",
+    "alltheores:nickel_ore",
+    "alltheores:deepslate_nickel_ore",
+    "alltheores:nether_nickel_ore",
+    "alltheores:end_nickel_ore",
+    "alltheores:nickel_block",
+    "alltheores:raw_nickel_block",
+    "alltheores:silver_ore",
+    "alltheores:deepslate_silver_ore",
+    "alltheores:nether_silver_ore",
+    "alltheores:end_silver_ore",
+    "alltheores:other_silver_ore",
+    "alltheores:silver_block",
+    "alltheores:raw_silver_block",
+    "alltheores:osmium_ore",
+    "alltheores:deepslate_osmium_ore",
+    "alltheores:nether_osmium_ore",
+    "alltheores:end_osmium_ore",
+    "alltheores:other_osmium_ore",
+    "alltheores:osmium_block",
+    "alltheores:raw_osmium_block",
+    "alltheores:platinum_ore",
+    "alltheores:deepslate_platinum_ore",
+    "alltheores:nether_platinum_ore",
+    "alltheores:end_platinum_ore",
+    "alltheores:other_platinum_ore",
+    "alltheores:platinum_block",
+    "alltheores:raw_platinum_block",
+    "alltheores:uranium_ore",
+    "alltheores:deepslate_uranium_ore",
+    "alltheores:nether_uranium_ore",
+    "alltheores:end_uranium_ore",
+    "alltheores:other_uranium_ore",
+    "mekanism:lead_ore",
+    "mekanism:deepslate_lead_ore",
+    "mekanism:block_lead",
+    "mekanism:block_raw_lead",
+    "mekanism:osmium_ore",
+    "mekanism:deepslate_osmium_ore",
+    "mekanism:block_osmium",
+    "mekanism:block_raw_osmium",
+    "mekanism:uranium_ore",
+    "mekanism:deepslate_uranium_ore",
+    "tfmg:lead_ore",
+    "tfmg:deepslate_lead_ore",
+    "tfmg:lead_block",
+    "tfmg:raw_lead_block",
+    "tfmg:nickel_ore",
+    "tfmg:deepslate_nickel_ore",
+    "tfmg:nickel_block",
+    "tfmg:raw_nickel_block",
+
+    # Aether portal frame block — backstop on dimension lock
+    "aether:aether_portal",
+    # Undergarden portal block — backstop on dimension/catalyst lock
+    "undergarden:undergarden_portal"
+]
+
+block_tags = []
+block_mods = []
+
+# ----------------------------------------------------------------------------
+# DIMENSIONS - dimension travel gate. Includes Aether dim (added 2026-05-02
+# as a backstop replacement for the removed item_mods=aether lock) and
+# Undergarden dim (added 2026-05-07 to close portal access leak).
+# Deep Aether shares aether:the_aether dimension; no separate lock needed.
+# ----------------------------------------------------------------------------
+dimensions = [
+  "minecraft:the_nether",
+  "minecraft:the_end",
+  "divinerpg:iceika",
+  "divinerpg:eden",
+  "divinerpg:wildwood",
+  "deeperdarker:otherside",
+  "eternal_starlight:starlight",
+  "aether:the_aether",
+  "undergarden:undergarden"
+]
+
+fluids = []
+fluid_tags = []
+fluid_mods = []
+mods = []
+
+# ----------------------------------------------------------------------------
+# NAMES - "diamond" substring lock kept (already part of items list, but
+# ensures any modded diamond-named items not in items[] are also gated).
+# ----------------------------------------------------------------------------
+names = [
+    "diamond"
+]
+
+entities = []
+entity_tags = []
+entity_mods = []
+
+# ----------------------------------------------------------------------------
+# SPAWN ENTITY MODS - mob-spawn locks. These are separate from entity_mods
+# above, which only block attacking. Locked until Renaissance so Dark Ages and
+# Stage-file locks mean "locked until this stage is unlocked."
+# Born in Chaos is quested in Medieval, so only over-tier outliers are locked here.
+# ZoNiEx has no live quest refs and stays whole-mod gated to Renaissance.
+# ----------------------------------------------------------------------------
+spawn_entities = [
+  "born_in_chaos_v1:diamond_termite"
+]
+spawn_entity_tags = []
+spawn_entity_mods = [
+  "zoniex"
+]
+
+unlocked_items = []
+
+# ----------------------------------------------------------------------------
+# UNLOCKED_BLOCKS - whitelist exceptions. Lower-tier ATO metals (copper, tin,
+# zinc, aluminum) stay accessible from Dark Ages onward.
+# ----------------------------------------------------------------------------
+unlocked_blocks = [
+    "minecraft:copper_ore",
+    "minecraft:deepslate_copper_ore",
+    "minecraft:copper_block",
+    "minecraft:raw_copper_block",
+    "alltheores:tin_ore",
+    "alltheores:deepslate_tin_ore",
+    "alltheores:tin_block",
+    "alltheores:raw_tin_block",
+    "alltheores:zinc_ore",
+    "alltheores:deepslate_zinc_ore",
+    "alltheores:zinc_block",
+    "alltheores:raw_zinc_block",
+    "alltheores:aluminum_ore",
+    "alltheores:deepslate_aluminum_ore",
+    "alltheores:aluminum_block",
+    "alltheores:raw_aluminum_block",
+    "alltheores:bronze_block",
+    "mekanism:tin_ore",
+    "mekanism:deepslate_tin_ore",
+    "mekanism:block_tin",
+    "mekanism:block_raw_tin"
+]
+
+unlocked_entities = []
+unlocked_fluids = []
+
+# ----------------------------------------------------------------------------
+# INTERACTIONS - block right-click locks for high-value vanilla blocks.
+# ----------------------------------------------------------------------------
+[[locks.interactions]]
+type = "block_right_click"
+target_block = "minecraft:enchanting_table"
+description = "Use Enchanting Table"
+
+[[locks.interactions]]
+type = "block_right_click"
+target_block = "minecraft:beacon"
+description = "Configure Beacon"

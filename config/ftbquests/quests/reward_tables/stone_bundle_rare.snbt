@@ -1,0 +1,54 @@
+{
+	icon: {
+		id: "minecraft:barrel"
+	}
+	id: "7100000000000013"
+	loot_size: 1
+	order_index: 15
+	rewards: [
+		{ id: "7113000000000001", item: { count: 1, id: "cold_sweat:icebox" } }
+		{ id: "7113000000000002", item: { count: 1, id: "comforts:hammock_white" } }
+		{ id: "7113000000000003", item: { count: 1, id: "aquaculture:stone_fillet_knife" } }
+		{
+			count: 4
+			id: "7113000000000004"
+			item: {
+				count: 1
+				id: "regions_unexplored:blackwood_sapling"
+			}
+		}
+		{
+			count: 8
+			id: "7113000000000005"
+			item: {
+				count: 1
+				id: "cold_sweat:goat_fur"
+			}
+		}
+		{
+			count: 8
+			id: "7113000000000006"
+			item: {
+				count: 1
+				id: "cold_sweat:hoglin_hide"
+			}
+		}
+		{
+			count: 8
+			id: "7113000000000007"
+			item: {
+				count: 1
+				id: "cold_sweat:chameleon_molt"
+			}
+		}
+		{
+			count: 2
+			id: "7113000000000008"
+			item: {
+				count: 1
+				id: "minecraft:golden_apple"
+			}
+		}
+	]
+	use_title: true
+}

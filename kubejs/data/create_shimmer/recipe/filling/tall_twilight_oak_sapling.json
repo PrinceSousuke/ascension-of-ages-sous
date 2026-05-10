@@ -1,0 +1,18 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "twilightforest:twilight_oak_sapling"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 1000,
+      "fluid": "create_shimmer:shimmer"
+    }
+  ],
+  "results": [
+    {
+      "id": "twilightforest:hollow_oak_sapling"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+	icon: {
+		id: "minecraft:oak_chest_boat"
+	}
+	id: "7300000000000011"
+	loot_size: 1
+	order_index: 25
+	rewards: [
+		{ id: "7311000000000001", item: { count: 1, id: "waystones:waystone" } }
+		{ id: "7311000000000002", item: { count: 1, id: "sophisticatedbackpacks:gold_backpack" } }
+		{ id: "7311000000000003", item: { count: 1, id: "minecraft:oak_chest_boat" } }
+		{
+			count: 2
+			id: "7311000000000004"
+			item: {
+				count: 1
+				id: "minecraft:trial_key"
+			}
+		}
+	]
+	use_title: true
+}

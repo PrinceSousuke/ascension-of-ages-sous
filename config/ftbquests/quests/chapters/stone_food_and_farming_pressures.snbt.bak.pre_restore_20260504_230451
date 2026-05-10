@@ -1,0 +1,194 @@
+{
+	autofocus_id: "3F33D0F200BD6ED5"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "stone_food_and_farming_pressures"
+	group: "12B6640DF4C0DCFE"
+	hide_quest_until_deps_complete: true
+	icon: {
+		id: "minecraft:wheat_seeds"
+	}
+	id: "3400000000001400"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["60D53613768CA1F3"]
+			hide_until_deps_complete: true
+			id: "3F33D0F200BD6ED5"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "476665FBF45E5307"
+				table_id: 4597731606249609751L
+				type: "random"
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "14B35990436DE0C7"
+				item: { count: 1, id: "regions_unexplored:blackwood_sapling" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["097AED7C91033D5E"]
+			disable_recipe_mod: false
+			hide_until_deps_complete: true
+			id: "2973560A44DEC9A5"
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "67AF0688A918864D"
+				item: { count: 1, id: "aquaculture:fishing_line" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["60D53613768CA1F3"]
+			hide_until_deps_complete: true
+			id: "6F697569C417FCCE"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5BFE8926DD427D40"
+				table_id: 8142508126285856770L
+				type: "choice"
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "3EE50D625C38D840"
+				item: { count: 1, id: "aquaculture:stone_fillet_knife" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["60D53613768CA1F3"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "eclipticseasons:calendar"
+			}
+			id: "62FF13481B0696BA"
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "76B7B355617588FC"
+				item: { count: 1, id: "eclipticseasons:calendar" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["62FF13481B0696BA"]
+			hide_until_deps_complete: true
+			id: "11C25203906C0FD4"
+			rewards: [{
+				id: "5B2002743C9714CA"
+				item: {
+					count: 1
+					id: "eclipticseasons:hygrometer"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "79E9884DBCAE604C"
+					item: { count: 1, id: "eclipticseasons:block_in_wooden_grate_block" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "03EE105893854750"
+					item: { count: 1, id: "eclipticseasons:greenhouse_core_container" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "2F350BF7B2E715A8"
+					item: { count: 1, id: "eclipticseasons:growth_detector" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4A6896A80C159791"
+					item: { count: 1, id: "eclipticseasons:seasonal_prayer_scroll" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "44AB1BC3CB6D51F3"
+					item: { count: 1, id: "eclipticseasons:thermometer" }
+					type: "item"
+				}
+			]
+			x: -5.0d
+			y: 2.5d
+		}
+	]
+}

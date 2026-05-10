@@ -1,0 +1,43 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "asc1_the_table_of_infinities"
+	group: "6A196D2B21EDE4C0"
+	hide_quest_until_deps_complete: true
+	icon: {
+		id: "minecraft:crafting_table"
+	}
+	id: "5449010000000000"
+	order_index: 0
+	quest_links: [ ]
+	quests: [{
+		dependencies: ["4C57010000010001"]
+		hide_until_deps_complete: true
+		icon: {
+			id: "extendedcrafting:the_ultimate_block"
+		}
+		id: "5449010000010001"
+		rewards: [{
+			id: "5449010000030001"
+			type: "xp"
+			xp: 100
+		}]
+		shape: "hexagon"
+		size: 2.0d
+		tasks: [{
+			SkillsLevel: {
+				category: ""
+				check: 0b
+				comparison: "GREATER_OR_EQUAL"
+				first: 10
+				mode: "TOTAL_LEVEL"
+				second: 20
+			}
+			id: "5449010000020001"
+			item: { count: 1, id: "extendedcrafting:ultimate_singularity" }
+			type: "item"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+}

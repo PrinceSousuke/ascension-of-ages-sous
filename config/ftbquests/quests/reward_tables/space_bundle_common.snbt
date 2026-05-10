@@ -1,0 +1,29 @@
+{
+	icon: {
+		id: "minecraft:ender_chest"
+	}
+	id: "7700000000000011"
+	loot_size: 1
+	order_index: 49
+	rewards: [
+		{ id: "7711000000000001", item: { count: 1, id: "appmek:chemical_storage_cell_1k" } }
+		{ id: "7711000000000002", item: { count: 1, id: "appmek:portable_chemical_cell_1k" } }
+		{
+			count: 16
+			id: "7711000000000003"
+			item: {
+				count: 1
+				id: "mekanism:ultimate_pressurized_tube"
+			}
+		}
+		{
+			count: 16
+			id: "7711000000000004"
+			item: {
+				count: 1
+				id: "mekanismcovers:cover"
+			}
+		}
+	]
+	use_title: true
+}

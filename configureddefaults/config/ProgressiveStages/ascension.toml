@@ -1,0 +1,50 @@
+[stage]
+id = "ascension"
+display_name = "Ascension"
+description = "Prestige convergence, final crafting, and end-of-pack mastery."
+icon = "minecraft:nether_star"
+unlock_message = "&c&lAscension Unlocked! &r&7The final convergence of power and prestige is now open."
+dependency = "otherworldly"
+
+[locks]
+items = [
+  # NOTE: divinerpg:divine_shards REMOVED 2026-05-02 — quested in r_drpg_the_frozen_path
+  # and r_end_the_void_beyond (Renaissance chapters); over-gating prevented quest completion.
+  # DivineRPG's own dimension/portal progression naturally gates higher-tier divine_shards use.
+  "draconicevolution:chaotic_core",
+  "extendedcrafting:ultimate_table",
+  # Oritech Ascension apex (added 2026-04-30, Wave 3 Phase 1)
+  # See asc4_singularity.snbt — Black Hole apex chain
+  # Note: black_hole_block is spawned in-world via 15kJ accelerator collision, not crafted.
+  # Locking here is defensive against creative-mode bypass / item-give scenarios.
+  # unstable_container is the precursor item; players craft it only after Ascension stage opens.
+  "oritech:unstable_container",
+  "oritech:black_hole_block",
+  # Draconic Evolution — draconium_ingot is the entry-tier DE material
+  # (consumed by wyvern_core, awakened_draconium_ingot decompress chain,
+  # and all higher-tier DE crafting). Locking gates the full DE progression
+  # without mod-wide tag pollution at Ascension (added 2026-05-02 modwide
+  # elimination — overrides prior "keep mod-wide here" rationale per
+  # Andrew's directive: zero mod-wide locks).
+  "draconicevolution:draconium_ingot"
+]
+item_tags = []
+# Mod-wide locks eliminated 2026-05-02 (PROMPT_modwide_lock_elimination).
+# draconicevolution → chokepointed via draconium_ingot in items[].
+item_mods = []
+blocks = []
+block_tags = []
+block_mods = []
+dimensions = []
+fluids = []
+fluid_tags = []
+fluid_mods = []
+mods = []
+names = []
+entities = []
+entity_tags = []
+entity_mods = []
+unlocked_items = []
+unlocked_blocks = []
+unlocked_entities = []
+unlocked_fluids = []

@@ -1,0 +1,43 @@
+{
+	icon: {
+		id: "create:item_vault"
+	}
+	id: "7400000000000011"
+	loot_size: 1
+	order_index: 31
+	rewards: [
+		{
+			count: 16
+			id: "7411000000000001"
+			item: {
+				count: 1
+				id: "oritech:steel_ingot"
+			}
+		}
+		{
+			count: 4
+			id: "7411000000000002"
+			item: {
+				count: 1
+				id: "oritech:machine_core_1"
+			}
+		}
+		{
+			count: 8
+			id: "7411000000000003"
+			item: {
+				count: 1
+				id: "create:brass_funnel"
+			}
+		}
+		{
+			count: 2
+			id: "7411000000000004"
+			item: {
+				count: 1
+				id: "create:stockpile_switch"
+			}
+		}
+	]
+	use_title: true
+}

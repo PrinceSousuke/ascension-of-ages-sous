@@ -1,0 +1,28 @@
+[stage]
+id = "basic_electricity"
+display_name = "Basic Electricity"
+description = "Low-voltage wires, first storage, first generators, and basic electric processing."
+icon = "electrodynamics:circuitbasic"
+unlock_message = "&b&lBasic Electricity Unlocked! &r&7First electrical machines and low-tier circuits can now be introduced."
+dependency = "power_grid_systems"
+
+[locks]
+items = []
+item_tags = []
+item_mods = []
+blocks = []
+block_tags = []
+block_mods = []
+dimensions = []
+fluids = []
+fluid_tags = []
+fluid_mods = []
+mods = []
+names = []
+entities = []
+entity_tags = []
+entity_mods = []
+unlocked_items = []
+unlocked_blocks = []
+unlocked_entities = []
+unlocked_fluids = []

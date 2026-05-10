@@ -1,0 +1,130 @@
+{
+  "metadata": {
+    "library_name": "aoa_reward_payload_library",
+    "version": "2026-04-02.mechanical_pilot.1",
+    "scope": "pilot_live_injection",
+    "notes": "Payloads are progression-safe templates for FTB Quests rewards. Quest-level reward ids stay unique per quest file."
+  },
+  "payloads": {
+    "mechanical_workshop_t1_bundle_v1": {
+      "registry_id": "mechanical_workshop_t1_bundle",
+      "class": "support_bundle",
+      "tier": "T1",
+      "ftb_reward_templates": [
+        {
+          "type": "item",
+          "item": { "id": "minecraft:iron_ingot", "count": 1 },
+          "count": 6
+        },
+        {
+          "type": "item",
+          "item": { "id": "minecraft:redstone", "count": 1 },
+          "count": 8
+        }
+      ]
+    },
+    "mechanical_storage_choice_1_fallback_v1": {
+      "registry_id": "mechanical_storage_choice_1",
+      "class": "choice_bundle",
+      "tier": "T1",
+      "delivery_mode": "deterministic_fallback_bundle",
+      "notes": "Used until dedicated FTB choice-table ids are authored for this branch.",
+      "ftb_reward_templates": [
+        {
+          "type": "item",
+          "item": { "id": "minecraft:leather", "count": 1 },
+          "count": 8
+        },
+        {
+          "type": "item",
+          "item": { "id": "minecraft:string", "count": 1 },
+          "count": 8
+        }
+      ]
+    },
+    "mechanical_workshop_cache_t2_v1": {
+      "registry_id": "mechanical_workshop_cache_t2",
+      "class": "themed_cache",
+      "tier": "T2",
+      "ftb_reward_templates": [
+        {
+          "type": "item",
+          "item": { "id": "sophisticatedbackpacks:upgrade_base", "count": 1 },
+          "count": 1
+        },
+        {
+          "type": "item",
+          "item": { "id": "sophisticatedstorage:barrel", "count": 1 },
+          "count": 2
+        },
+        {
+          "type": "item",
+          "item": { "id": "minecraft:ender_pearl", "count": 1 },
+          "count": 2
+        }
+      ]
+    },
+    "mechanical_food_relief_t1_bundle_v1": {
+      "registry_id": "mechanical_food_relief_t1_bundle",
+      "class": "support_bundle",
+      "tier": "T1",
+      "ftb_reward_templates": [
+        {
+          "type": "item",
+          "item": { "id": "minecraft:cooked_beef", "count": 1 },
+          "count": 12
+        },
+        {
+          "type": "item",
+          "item": { "id": "minecraft:honey_bottle", "count": 1 },
+          "count": 3
+        }
+      ]
+    },
+    "mechanical_readiness_t1_bundle_v1": {
+      "registry_id": "mechanical_readiness_t1_bundle",
+      "class": "support_bundle",
+      "tier": "T1",
+      "ftb_reward_templates": [
+        {
+          "type": "item",
+          "item": { "id": "minecraft:torch", "count": 1 },
+          "count": 32
+        },
+        {
+          "type": "item",
+          "item": { "id": "minecraft:bread", "count": 1 },
+          "count": 12
+        },
+        {
+          "type": "item",
+          "item": { "id": "minecraft:arrow", "count": 1 },
+          "count": 32
+        }
+      ]
+    },
+    "mechanical_boss_proof_mark_v1": {
+      "registry_id": "mechanical_boss_proof_mark",
+      "class": "proof_symbolic",
+      "tier": "T1",
+      "variants": {
+        "proof_step": {
+          "ftb_reward_templates": [
+            {
+              "type": "xp",
+              "xp": 5
+            }
+          ]
+        },
+        "validator_step": {
+          "ftb_reward_templates": [
+            {
+              "type": "xp",
+              "xp": 10
+            }
+          ]
+        }
+      }
+    }
+  }
+}

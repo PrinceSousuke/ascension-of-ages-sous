@@ -1,0 +1,70 @@
+{
+	icon: {
+		id: "minecraft:ender_chest"
+	}
+	id: "7700000000000003"
+	loot_size: 1
+	order_index: 48
+	rewards: [
+		{
+			id: "7703000000000001"
+			item: {
+				count: 1
+				id: "appmek:chemical_storage_cell_4k"
+			}
+			weight: 1.25f
+		}
+		{ id: "7703000000000002", item: { count: 1, id: "refinedstorage_mekanism_integration:256b_chemical_storage_block" } }
+		{
+			id: "7703000000000003"
+			item: {
+				count: 1
+				id: "mekanism:quantum_entangloporter"
+			}
+			weight: 0.75f
+		}
+		{
+			id: "7703000000000004"
+			item: {
+				count: 1
+				id: "mekanism_lasers:energy_transformer"
+			}
+			weight: 0.75f
+		}
+		{
+			id: "7703000000000005"
+			item: {
+				count: 1
+				id: "evolvedmekanism:dense_energy_cube"
+			}
+			weight: 0.5f
+		}
+		{
+			id: "7703000000000006"
+			item: {
+				count: 1
+				id: "minecraft:echo_shard"
+			}
+			weight: 0.35f
+		}
+		{
+			id: "7703000000000007"
+			item: {
+				count: 1
+				id: "mekanism:ultimate_chemical_tank"
+			}
+			weight: 0.5f
+		}
+		{
+			count: 2
+			id: "7703000000000008"
+			item: {
+				count: 1
+				id: "mekanism_lasers:energy_storage_cell"
+			}
+			weight: 0.5f
+		}
+		{ id: "7703000000000009", item: { count: 1, id: "mekanism:portable_teleporter" } }
+	]
+	use_title: true
+}

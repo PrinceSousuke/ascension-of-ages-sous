@@ -1,0 +1,38 @@
+name: Source check
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  guard-source-repo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+
+      - name: Reject accidental binary/runtime commits
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          forbidden_regex='(^|/)(mods|saves|logs|resourcepacks|shaderpacks|journeymap|backup|downloads|dynamic-data-pack-cache|dynamic-resource-pack-cache)/|\.jar$|\.zip$|\.mrpack$|\.mca$'
+          matches="$(git ls-files | grep -E "$forbidden_regex" || true)"
+          if [ -n "$matches" ]; then
+            echo "Forbidden runtime or binary files are tracked:"
+            echo "$matches"
+            exit 1
+          fi
+
+      - name: Warn on unusually large tracked files
+        shell: bash
+        run: |
+          set -euo pipefail
+          limit=$((50 * 1024 * 1024))
+          while IFS= read -r file; do
+            size=$(wc -c < "$file")
+            if [ "$size" -gt "$limit" ]; then
+              echo "Tracked file exceeds 50 MiB: $file ($size bytes)"
+              exit 1
+            fi
+          done < <(git ls-files)

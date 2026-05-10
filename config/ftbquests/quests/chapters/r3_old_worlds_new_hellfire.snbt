@@ -1,0 +1,1135 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "r3_old_worlds_new_hellfire"
+	group: "0B038EB15EBBFD95"
+	hide_quest_until_deps_complete: true
+	icon: {
+		id: "forbidden_arcanus:obsidian_skull"
+	}
+	id: "7B8C9D0E1F2A3B01"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["6D7E8F901A2B1054"]
+			hide_until_deps_complete: true
+			icon: {
+				components: {
+					"ftbquests:icon": "luminous_nether:block/fire"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "03BA0C965C1D8F75"
+			min_width: 300
+			rewards: [{
+				id: "2BC5077E26455EDD"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				dimension: "minecraft:the_nether"
+				id: "237EBF5641C7A1EE"
+				type: "dimension"
+			}]
+			x: 1.5d
+			y: 6.75d
+		}
+		{
+			dependencies: ["03BA0C965C1D8F75"]
+			hide_until_deps_complete: true
+			id: "28F53CF46BDC20CC"
+			rewards: [{
+				id: "3DE0C7D941FCE017"
+				type: "xp"
+				xp: 30
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "710B142E015DBAE0"
+				item: { count: 1, id: "betternether:cincinnasite_ingot" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["28F53CF46BDC20CC"]
+			hide_until_deps_complete: true
+			id: "3321F8D46A99177F"
+			rewards: [{
+				id: "53844F379C9EB6FB"
+				type: "xp"
+				xp: 35
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "2A62A743398BE5CC"
+				item: { count: 1, id: "betternether:nether_ruby" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["03BA0C965C1D8F75"]
+			hide_until_deps_complete: true
+			id: "78C710358E9E4CCF"
+			rewards: [{
+				id: "6A5CA07570F538EC"
+				type: "xp"
+				xp: 30
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "6DEFE159E2C77586"
+				item: { count: 1, id: "luminous_nether:ghostly_essence" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["03BA0C965C1D8F75"]
+			hide_until_deps_complete: true
+			id: "6C483F0CDE702A4A"
+			rewards: [{
+				id: "346B15623E7379CB"
+				type: "xp"
+				xp: 30
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0DAA8CEA1FAAF56F"
+				item: { count: 1, id: "eternalnether:soul_stone" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["6C483F0CDE702A4A"]
+			hide_until_deps_complete: true
+			id: "7E45103025EB0FE6"
+			rewards: [{
+				id: "42190FAD5C47DEF6"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "5037D39C1DF9B282"
+				item: { count: 1, id: "eternalnether:cutlass" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["7E45103025EB0FE6"]
+			hide_until_deps_complete: true
+			id: "7B756D8E8E7323A5"
+			rewards: [{
+				id: "4CB001B39FACF0A4"
+				type: "xp"
+				xp: 40
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "35FF773932CDB961"
+				item: { count: 1, id: "eternalnether:withered_bone" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["6C483F0CDE702A4A"]
+			hide_until_deps_complete: true
+			id: "0C63DB5E0BA792BA"
+			rewards: [{
+				id: "10B7890FBD737190"
+				type: "xp"
+				xp: 40
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0CB17B77BD911A9C"
+				item: { count: 1, id: "eternalnether:warped_ender_pearl" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["7B756D8E8E7323A5"]
+			hide_until_deps_complete: true
+			id: "7B203014B0A62C8E"
+			rewards: [{
+				id: "3BEACE287EB9CBF2"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4587247E080ED4E0"
+				item: { count: 1, id: "eternalnether:wither_waltz_music_disc" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["03BA0C965C1D8F75"]
+			hide_until_deps_complete: true
+			id: "7C9F1E9C31DC7362"
+			rewards: [
+				{
+					id: "6923AEF8501EF76B"
+					type: "xp"
+					xp: 75
+				}
+				{
+					id: "2D20204C6260325B"
+					item: {
+						count: 1
+						id: "endrem:cursed_eye"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				entity: "luminous_nether:piglin_executioner"
+				id: "21ECA8E2348FDD1D"
+				type: "kill"
+				value: 1L
+			}]
+			x: 11.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["7C9F1E9C31DC7362"]
+			hide_until_deps_complete: true
+			id: "72C624EA044945A9"
+			rewards: [{
+				id: "60E78AF36A37DB7C"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				entity: "eternalnether:wither_skeleton_knight"
+				id: "03FBF37163210965"
+				type: "kill"
+				value: 1L
+			}]
+			x: 11.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["03BA0C965C1D8F75"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "cataclysm:burning_ashes"
+			}
+			id: "2F5D1E8DEDD27EE6"
+			rewards: [{
+				id: "04EA75C0D1E11BA3"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				count: 3L
+				id: "5E1241E0D877002A"
+				item: { count: 1, id: "cataclysm:burning_ashes" }
+				type: "item"
+			}]
+			x: 13.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["2F5D1E8DEDD27EE6"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "forbidden_arcanus:eternal_obsidian_skull"
+			}
+			id: "0CDEE2F6D9DCA285"
+			rewards: [{
+				id: "720D1BCACEA3CDE2"
+				type: "xp"
+				xp: 75
+			}]
+			shape: "circle"
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "60120ABDF5F74FD0"
+				item: { count: 1, id: "forbidden_arcanus:eternal_obsidian_skull" }
+				type: "item"
+			}]
+			x: 17.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["7C9F1E9C31DC7362"]
+			hide_until_deps_complete: true
+			id: "2F1466CEB0B375D5"
+			optional: true
+			rewards: [{
+				id: "1690C0E81D2BF052"
+				type: "xp"
+				xp: 75
+			}]
+			shape: "diamond"
+			tasks: [
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "42EC70E859909490"
+					item: { count: 1, id: "mowziesmobs:sol_visage" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "06768D8D0DF296D2"
+					item: { count: 1, id: "mowziesmobs:wrought_axe" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					count: 8L
+					id: "7295F7AA95098FD9"
+					item: { count: 1, id: "born_in_chaos_v1:pieceofdarkmetal" }
+					type: "item"
+				}
+			]
+			x: 12.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["7C9F1E9C31DC7362"]
+			hide_until_deps_complete: true
+			id: "08B35FCEB44F2F03"
+			rewards: [
+				{
+					id: "2610F5315FEDB56A"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "1CF949B8DE62F0B0"
+					item: {
+						count: 1
+						id: "endrem:nether_eye"
+					}
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0CA5E08D1F1A2A84"
+				item: { count: 1, id: "forbidden_arcanus:hephaestus_forge_tier_1" }
+				type: "item"
+			}]
+			x: 15.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["28F53CF46BDC20CC"]
+			hide_until_deps_complete: true
+			id: "7027A1DD66448C98"
+			rewards: [{
+				id: "675E5FE6D1EA954E"
+				type: "xp"
+				xp: 35
+			}]
+			tasks: [
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "0E6FC9333DD73D62"
+					item: { count: 1, id: "betternether:cincinnasite_pickaxe" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4912F8B5FF258A3C"
+					item: { count: 1, id: "betternether:cincinnasite_sword" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "3D0130CE2CA0D39C"
+					item: { count: 1, id: "betternether:cincinnasite_axe" }
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["28F53CF46BDC20CC"]
+			hide_until_deps_complete: true
+			id: "4C7BDBC427365332"
+			rewards: [{
+				id: "496F243DD1AC003C"
+				type: "xp"
+				xp: 35
+			}]
+			tasks: [
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "777B79630435DF03"
+					item: { count: 1, id: "betternether:cincinnasite_helmet" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "03EB9A62B55AE1C5"
+					item: { count: 1, id: "betternether:cincinnasite_chestplate" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "6CCF971DF3DA1077"
+					item: { count: 1, id: "betternether:cincinnasite_leggings" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "540C2CA246A6D919"
+					item: { count: 1, id: "betternether:cincinnasite_boots" }
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["28F53CF46BDC20CC"]
+			hide_until_deps_complete: true
+			id: "62E2AC63E7031E0B"
+			rewards: [{
+				id: "1F0CD7FE5E0E72C1"
+				type: "xp"
+				xp: 40
+			}]
+			shape: "diamond"
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "20E3462EA925A2A9"
+				item: { count: 1, id: "betternether:cincinnasite_forge" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["28F53CF46BDC20CC"]
+			hide_until_deps_complete: true
+			id: "4C0AA9CD5745A341"
+			rewards: [{
+				id: "49CA44F46820409C"
+				type: "xp"
+				xp: 30
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "60A3FF09D4B6C7DE"
+				item: { count: 1, id: "betternether:bowl_upgrade_smithing_template" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4C0AA9CD5745A341"]
+			hide_until_deps_complete: true
+			id: "2069A30CADB75289"
+			rewards: [{
+				id: "2FD018802B90DA4C"
+				type: "xp"
+				xp: 40
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "21432671D092DB75"
+				item: { count: 1, id: "betternether:cincinnasite_diamond_upgrade_smithing_template" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2069A30CADB75289"]
+			hide_until_deps_complete: true
+			id: "02832BFB312C42BB"
+			rewards: [{
+				id: "6F210C3467A91504"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "17909888A187DC02"
+				item: { count: 1, id: "betternether:flaming_ruby_upgrade_smithing_template" }
+				type: "item"
+			}]
+			x: 14.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["03BA0C965C1D8F75"]
+			hide_until_deps_complete: true
+			id: "38A6B6D54EB79323"
+			rewards: [{
+				id: "6E044AD15063E98C"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				entity: "luminous_nether:the_furnace"
+				id: "0540B2CE787B36FD"
+				type: "kill"
+				value: 1L
+			}]
+			x: 1.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["78C710358E9E4CCF"]
+			hide_until_deps_complete: true
+			id: "7674B1701342CD1B"
+			rewards: [{
+				id: "0A2D0390CB50667B"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "16E262970B17C153"
+				item: { count: 1, id: "luminous_nether:molten_coal" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["03BA0C965C1D8F75"]
+			hide_until_deps_complete: true
+			id: "716C5BC09B5510A6"
+			rewards: [{
+				id: "7071119574F79E56"
+				type: "xp"
+				xp: 60
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				entity: "luminous_nether:mushlin_king"
+				id: "2AF996671E8C5047"
+				type: "kill"
+				value: 1L
+			}]
+			x: 3.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["716C5BC09B5510A6"]
+			hide_until_deps_complete: true
+			id: "5F3667E7DBDC4EE9"
+			rewards: [{
+				id: "7639C2E83830C6E0"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				entity: "luminous_nether:warped_spewer_king"
+				id: "61027401021EB31F"
+				type: "kill"
+				value: 1L
+			}]
+			x: 4.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["5F3667E7DBDC4EE9"]
+			hide_until_deps_complete: true
+			id: "3A661256B68D13B5"
+			rewards: [{
+				id: "6CDA15C784E30F92"
+				type: "xp"
+				xp: 30
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "401900BB4F8AD6E6"
+				item: { count: 1, id: "luminous_nether:spore_bundle" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["7C9F1E9C31DC7362"]
+			hide_until_deps_complete: true
+			id: "780532C2960D5BF2"
+			rewards: [{
+				id: "0FC97366CD1340CB"
+				type: "xp"
+				xp: 30
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "66EDE7A092073082"
+				item: { count: 1, id: "luminous_nether:executioner_hood_helmet" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["78C710358E9E4CCF"]
+			hide_until_deps_complete: true
+			id: "339A80B6C7B12915"
+			rewards: [{
+				id: "009213F58040CEDD"
+				type: "xp"
+				xp: 30
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4293F70832086637"
+				item: { count: 1, id: "luminous_nether:nether_beast_totem" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["78C710358E9E4CCF"]
+			hide_until_deps_complete: true
+			id: "710BCFAEA5172406"
+			optional: true
+			rewards: [{
+				id: "1BCB949F8284A7EE"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "diamond"
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "1C772F23F56251D3"
+				item: { count: 1, id: "luminous_nether:cultist_armor_trim" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["78C710358E9E4CCF"]
+			hide_until_deps_complete: true
+			id: "4D252AEDF9ED968E"
+			rewards: [{
+				id: "6B5AACD0766D3994"
+				type: "xp"
+				xp: 30
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "1BFA844087B2A667"
+				item: { count: 1, id: "luminous_nether:pedestal" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4D252AEDF9ED968E"]
+			hide_until_deps_complete: true
+			id: "63ACB2A05379ADD4"
+			rewards: [{
+				id: "4B1BBF1E4E6CF4E3"
+				type: "xp"
+				xp: 30
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "741CCF6CE2F920F7"
+				item: { count: 1, id: "luminous_nether:ritual_table" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["63ACB2A05379ADD4"]
+			hide_until_deps_complete: true
+			id: "2D8C4A97AE031A9D"
+			rewards: [{
+				id: "3ED37A03033BB823"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "29ADF544CE38F0B9"
+				item: { count: 1, id: "luminous_nether:gilded_bundle" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["03BA0C965C1D8F75"]
+			hide_until_deps_complete: true
+			id: "6846D8FF4F53AC29"
+			rewards: [{
+				id: "280A49A19A6BE813"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				entity: "bosses_of_mass_destruction:void_blossom"
+				id: "76129870A2E018ED"
+				type: "kill"
+				value: 1L
+			}]
+			x: 3.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["2F5D1E8DEDD27EE6"]
+			hide_until_deps_complete: true
+			id: "2DD7E1853AC2A996"
+			optional: true
+			rewards: [{
+				id: "2DD7E1853AC2A997"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "2DD7E1853AC2A998"
+					item: { count: 1, id: "cataclysm:flame_eye" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "2DD7E1853AC2A999"
+					item: { count: 1, id: "cataclysm:mech_eye" }
+					type: "item"
+				}
+			]
+			x: 14.5d
+			y: 6.75d
+		}
+		{
+			dependencies: ["2DD7E1853AC2A996"]
+			hide_until_deps_complete: true
+			id: "4C1BA38F43EFF4BE"
+			rewards: [{
+				id: "0B67D9395B11AA89"
+				type: "xp"
+				xp: 150
+			}]
+			shape: "rsquare"
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				entity: "cataclysm:the_harbinger"
+				id: "6734BFEB1ACF3046"
+				type: "kill"
+				value: 1L
+			}]
+			x: 15.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["4C1BA38F43EFF4BE"]
+			hide_until_deps_complete: true
+			id: "58B78879EDB93602"
+			rewards: [{
+				id: "481159035D42702A"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "3E9C32480A88D9C8"
+				item: { count: 1, id: "cataclysm:witherite_block" }
+				type: "item"
+			}]
+			x: 17.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["2DD7E1853AC2A996"]
+			hide_until_deps_complete: true
+			id: "2DD7E1853AC2A995"
+			rewards: [{
+				id: "54FCB770C0E018B8"
+				type: "xp"
+				xp: 150
+			}]
+			shape: "rsquare"
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				entity: "cataclysm:ignis"
+				id: "1C6E0D089BD128B9"
+				type: "kill"
+				value: 1L
+			}]
+			x: 15.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["2DD7E1853AC2A995"]
+			hide_until_deps_complete: true
+			id: "63E00A157F4B0AD9"
+			rewards: [{
+				id: "01712253729FE5B4"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				count: 3L
+				id: "4588EADD34CA5E06"
+				item: { count: 1, id: "cataclysm:ignitium_ingot" }
+				type: "item"
+			}]
+			x: 17.0d
+			y: 7.5d
+		}
+	]
+}

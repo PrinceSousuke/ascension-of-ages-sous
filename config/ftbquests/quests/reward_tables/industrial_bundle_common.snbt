@@ -1,0 +1,43 @@
+{
+	icon: {
+		id: "immersiveengineering:crate"
+	}
+	id: "7500000000000011"
+	loot_size: 1
+	order_index: 37
+	rewards: [
+		{
+			count: 16
+			id: "7511000000000001"
+			item: {
+				count: 1
+				id: "modern_industrialization:steel_ingot"
+			}
+		}
+		{
+			count: 16
+			id: "7511000000000002"
+			item: {
+				count: 1
+				id: "modern_industrialization:bronze_ingot"
+			}
+		}
+		{
+			count: 8
+			id: "7511000000000003"
+			item: {
+				count: 1
+				id: "pneumaticcraft:plastic"
+			}
+		}
+		{
+			count: 32
+			id: "7511000000000004"
+			item: {
+				count: 1
+				id: "create_new_age:copper_wire"
+			}
+		}
+	]
+	use_title: true
+}

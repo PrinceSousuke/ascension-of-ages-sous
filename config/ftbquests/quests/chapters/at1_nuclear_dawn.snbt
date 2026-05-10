@@ -1,0 +1,44 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "at1_nuclear_dawn"
+	group: "7D28E4AEBC440F10"
+	hide_quest_until_deps_complete: true
+	icon: {
+		id: "minecraft:lightning_rod"
+	}
+	id: "4E44010000000000"
+	order_index: 0
+	quest_links: [ ]
+	quests: [{
+		dependencies: ["4757010000010001"]
+		hide_until_deps_complete: true
+		icon: {
+			id: "nuclearscience:fuelheuo2"
+		}
+		id: "4E44010000010001"
+		rewards: [{
+			id: "4E44010000030001"
+			type: "xp"
+			xp: 100
+		}]
+		shape: "hexagon"
+		size: 2.0d
+		tasks: [{
+			SkillsLevel: {
+				category: ""
+				check: 0b
+				comparison: "GREATER_OR_EQUAL"
+				first: 10
+				mode: "TOTAL_LEVEL"
+				second: 20
+			}
+			block: { count: 1, id: "forbidden_arcanus:hephaestus_forge_tier_5" }
+			id: "4E44010000020001"
+			type: "use_block"
+			value: 1L
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+}

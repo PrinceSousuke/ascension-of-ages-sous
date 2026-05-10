@@ -1,0 +1,15 @@
+{
+	icon: {
+		id: "mekanism:radioactive_waste_barrel"
+	}
+	id: "7600000000000012"
+	loot_size: 1
+	order_index: 44
+	rewards: [
+		{ id: "7612000000000001", item: { count: 1, id: "mekanism:hazmat_gown" } }
+		{ id: "7612000000000002", item: { count: 1, id: "minecraft:bell" } }
+		{ id: "7612000000000003", item: { count: 1, id: "mekanism:hazmat_mask" } }
+		{ id: "7612000000000004", item: { count: 1, id: "mekanism:hazmat_boots" } }
+	]
+	use_title: true
+}

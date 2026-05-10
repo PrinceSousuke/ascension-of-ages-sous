@@ -1,0 +1,17 @@
+{
+	icon: {
+		id: "create:brown_toolbox"
+	}
+	id: "7200000000000002"
+	loot_size: 1
+	order_index: 17
+	rewards: [
+		{ id: "7202000000000001", item: { count: 1, id: "botanypots:stone_bricks_hopper_botany_pot" } }
+		{ id: "7202000000000002", item: { count: 1, id: "generatorgalore:iron_generator" } }
+		{ id: "7202000000000003", item: { count: 1, id: "create:mechanical_pump" } }
+		{ id: "7202000000000004", item: { count: 1, id: "create:item_vault" } }
+		{ id: "7202000000000005", item: { count: 1, id: "sophisticatedbackpacks:restock_upgrade" } }
+		{ id: "7202000000000006", item: { count: 1, id: "explorerscompass:explorerscompass" } }
+	]
+	use_title: true
+}

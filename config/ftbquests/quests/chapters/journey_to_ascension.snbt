@@ -1,0 +1,674 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "diamond"
+	filename: "journey_to_ascension"
+	group: ""
+	icon: {
+		id: "forbidden_arcanus:obsidian_skull"
+	}
+	id: "5350010000000001"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				id: "overgeared:copper_pickaxe"
+			}
+			id: "5350010000010001"
+			linked_item: {
+				count: 1
+				id: "overgeared:copper_pickaxe"
+			}
+			rewards: [{
+				id: "5350010000002001"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "5350010001010001"
+				mode: "ALL"
+				required: 0L
+				targets: ["6A1E8D4C0F2B7A1D"]
+				type: "check_quest"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				components: {
+					"cold_sweat:armor_insulation": {
+						insulation: [ ]
+					}
+				}
+				id: "mowziesmobs:sol_visage"
+			}
+			id: "5350010000010002"
+			rewards: [{
+				id: "5350010000002002"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				SkillsLevel: {
+					category: "minecraft:"
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "5350010001010002"
+				mode: "ALL"
+				required: 0L
+				targets: ["6D7E8F901A2B1012"]
+				type: "check_quest"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				id: "forbidden_arcanus:hephaestus_forge_tier_1"
+			}
+			id: "5350010000010003"
+			rewards: [{
+				id: "5350010000002003"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "5350010001010003"
+				mode: "ALL"
+				required: 0L
+				targets: ["08B35FCEB44F2F03"]
+				type: "check_quest"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				id: "aether:cloud_staff"
+			}
+			id: "5350010000010004"
+			rewards: [{
+				id: "5350010000002004"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "5350010001010004"
+				mode: "ALL"
+				required: 0L
+				targets: ["1DECC5C19950ECEF"]
+				type: "check_quest"
+			}]
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				id: "betterend:aeternium_sword"
+			}
+			id: "5350010000010005"
+			rewards: [{
+				id: "5350010000002005"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "5350010001010005"
+				mode: "ALL"
+				required: 0L
+				targets: ["061FD91B5F815FFC"]
+				type: "check_quest"
+			}]
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				components: {
+					"cold_sweat:armor_insulation": {
+						insulation: [ ]
+					}
+				}
+				id: "deeperdarker:soul_elytra"
+			}
+			id: "5350010000010006"
+			rewards: [{
+				id: "5350010000002006"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "5350010001010006"
+				mode: "ALL"
+				required: 0L
+				targets: ["4833833D8E1C4ACE"]
+				type: "check_quest"
+			}]
+			x: 15.0d
+			y: 0.0d
+		}
+		{
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				id: "create:precision_mechanism"
+			}
+			id: "5350010000010007"
+			rewards: [{
+				id: "5350010000002007"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "5350010001010007"
+				mode: "ALL"
+				required: 0L
+				targets: ["7E7C01A700000008"]
+				type: "check_quest"
+			}]
+			x: 18.0d
+			y: 0.0d
+		}
+		{
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				id: "refinedstorage:autocrafter"
+			}
+			id: "5350010000010008"
+			rewards: [{
+				id: "5350010000002008"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "5350010001010008"
+				mode: "ALL"
+				required: 0L
+				targets: ["373BA818670535A0"]
+				type: "check_quest"
+			}]
+			x: 21.0d
+			y: 0.0d
+		}
+		{
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				id: "cataclysm:cursium_ingot"
+			}
+			id: "535001000001000A"
+			rewards: [{
+				id: "535001000000200A"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "535001000101000A"
+				mode: "ALL"
+				required: 0L
+				targets: ["6F1A4D0C00010009"]
+				type: "check_quest"
+			}]
+			x: 27.0d
+			y: 0.0d
+		}
+		{
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				id: "modern_industrialization:basic_machine_hull"
+			}
+			id: "535001000001000B"
+			rewards: [{
+				id: "535001000000200B"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "535001000101000B"
+				mode: "ALL"
+				required: 0L
+				targets: ["4D49010000010012"]
+				type: "check_quest"
+			}]
+			x: 30.0d
+			y: 0.0d
+		}
+		{
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				id: "oritech:exo_chestplate"
+			}
+			id: "535001000001000C"
+			rewards: [{
+				id: "535001000000200C"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "535001000101000C"
+				mode: "ALL"
+				required: 0L
+				targets: ["4F4701000001001D"]
+				type: "check_quest"
+			}]
+			x: 33.0d
+			y: 0.0d
+		}
+		{
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				id: "energizedpower:advanced_battery_box"
+			}
+			id: "535001000001000D"
+			rewards: [{
+				id: "535001000000200D"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "535001000101000D"
+				mode: "ALL"
+				required: 0L
+				targets: ["4650010000010089"]
+				type: "check_quest"
+			}]
+			x: 36.0d
+			y: 0.0d
+		}
+		{
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				id: "mekanism:alloy_atomic"
+			}
+			id: "535001000001000E"
+			rewards: [{
+				id: "535001000000200E"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "535001000101000E"
+				mode: "ALL"
+				required: 0L
+				targets: ["4C41010000010052"]
+				type: "check_quest"
+			}]
+			x: 39.0d
+			y: 0.0d
+		}
+		{
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				id: "projectred_core:red_ingot"
+			}
+			id: "535001000001000F"
+			rewards: [{
+				id: "535001000000200F"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "535001000101000F"
+				mode: "ALL"
+				required: 0L
+				targets: ["5343010000010001"]
+				type: "check_quest"
+			}]
+			x: 42.0d
+			y: 0.0d
+		}
+		{
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				id: "ae2:item_storage_cell_64k"
+			}
+			id: "5350010000010010"
+			rewards: [{
+				id: "5350010000002010"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "5350010001010010"
+				mode: "ALL"
+				required: 0L
+				targets: ["414501000001002D"]
+				type: "check_quest"
+			}]
+			x: 45.0d
+			y: 0.0d
+		}
+		{
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				id: "aether:phoenix_bow"
+			}
+			id: "5350010000010013"
+			rewards: [{
+				id: "5350010000002013"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "5350010001010013"
+				mode: "ALL"
+				required: 0L
+				targets: ["5089554FF27187F8"]
+				type: "check_quest"
+			}]
+			x: 54.0d
+			y: 0.0d
+		}
+		{
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				id: "bosses_of_mass_destruction:obsidian_heart"
+			}
+			id: "5350010000010014"
+			rewards: [{
+				id: "5350010000002014"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "5350010001010014"
+				mode: "ALL"
+				required: 0L
+				targets: ["4F420100000100A6"]
+				type: "check_quest"
+			}]
+			x: 57.0d
+			y: 0.0d
+		}
+		{
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				id: "stellaris:rocket"
+			}
+			id: "5350010000010017"
+			rewards: [{
+				id: "5350010000002017"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "5350010001010017"
+				mode: "ALL"
+				required: 0L
+				targets: ["4C57010000010001"]
+				type: "check_quest"
+			}]
+			x: 66.0d
+			y: 0.0d
+		}
+		{
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				id: "extendedcrafting:the_ultimate_block"
+			}
+			id: "5350010000010018"
+			rewards: [{
+				id: "5350010000002018"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "5350010001010018"
+				mode: "ALL"
+				required: 0L
+				targets: ["5449010000010001"]
+				type: "check_quest"
+			}]
+			x: 69.0d
+			y: 0.0d
+		}
+	]
+}

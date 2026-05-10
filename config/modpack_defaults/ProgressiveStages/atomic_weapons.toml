@@ -1,0 +1,28 @@
+[stage]
+id = "atomic_weapons"
+display_name = "Atomic Weapons"
+description = "Nuclear, antimatter, and server-rule-sensitive weapons after containment and ballistics proof."
+icon = "ballistix:missiletier3"
+unlock_message = "&4&lAtomic Weapons Unlocked! &r&7Late destructive systems can now be considered under server policy."
+dependency = "ballistics_systems"
+
+[locks]
+items = []
+item_tags = []
+item_mods = []
+blocks = []
+block_tags = []
+block_mods = []
+dimensions = []
+fluids = []
+fluid_tags = []
+fluid_mods = []
+mods = []
+names = []
+entities = []
+entity_tags = []
+entity_mods = []
+unlocked_items = []
+unlocked_blocks = []
+unlocked_entities = []
+unlocked_fluids = []

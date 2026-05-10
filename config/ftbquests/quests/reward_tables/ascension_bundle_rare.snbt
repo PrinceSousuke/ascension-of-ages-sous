@@ -1,0 +1,15 @@
+{
+	icon: {
+		id: "minecraft:dragon_egg"
+	}
+	id: "7800000000000013"
+	loot_size: 1
+	order_index: 57
+	rewards: [
+		{ id: "7813000000000001", item: { count: 1, id: "mekanism:quantum_entangloporter" } }
+		{ id: "7813000000000002", item: { count: 1, id: "minecraft:echo_shard" } }
+		{ id: "7813000000000003", item: { count: 1, id: "mekanism:ultimate_chemical_tank" } }
+		{ id: "7813000000000004", item: { count: 1, id: "minecraft:enchanted_golden_apple" } }
+	]
+	use_title: true
+}

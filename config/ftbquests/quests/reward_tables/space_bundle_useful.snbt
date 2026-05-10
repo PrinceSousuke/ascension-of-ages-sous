@@ -1,0 +1,29 @@
+{
+	icon: {
+		id: "minecraft:ender_chest"
+	}
+	id: "7700000000000012"
+	loot_size: 1
+	order_index: 50
+	rewards: [
+		{
+			count: 2
+			id: "7712000000000001"
+			item: {
+				count: 1
+				id: "appmek:chemical_p2p_tunnel"
+			}
+		}
+		{ id: "7712000000000002", item: { count: 1, id: "refinedstorage_mekanism_integration:256b_chemical_storage_disk" } }
+		{ id: "7712000000000003", item: { count: 1, id: "mekanism:portable_teleporter" } }
+		{
+			count: 16
+			id: "7712000000000004"
+			item: {
+				count: 1
+				id: "mekanism:ultimate_logistical_transporter"
+			}
+		}
+	]
+	use_title: true
+}

@@ -1,0 +1,22 @@
+{
+	icon: {
+		id: "immersiveengineering:crate"
+	}
+	id: "7500000000000012"
+	loot_size: 1
+	order_index: 38
+	rewards: [
+		{ id: "7512000000000001", item: { count: 1, id: "modern_industrialization:bronze_boiler" } }
+		{ id: "7512000000000002", item: { count: 1, id: "create_new_age:stirling_engine" } }
+		{ id: "7512000000000003", item: { count: 1, id: "createaddition:electric_motor" } }
+		{
+			count: 32
+			id: "7512000000000004"
+			item: {
+				count: 1
+				id: "create:fluid_pipe"
+			}
+		}
+	]
+	use_title: true
+}

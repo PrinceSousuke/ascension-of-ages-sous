@@ -1,0 +1,957 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "gilded_oritech_deep_machine"
+	group: "5E42E6B4A7C91D30"
+	hide_quest_until_deps_complete: true
+	icon: {
+		id: "oritech:atomic_forge_block"
+	}
+	id: "4F44010000000000"
+	order_index: 7
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"4F420100000100BA"
+				"4F420100000100C0"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				id: "oritech:enderic_compound"
+			}
+			id: "4F44010000010002"
+			rewards: [{
+				id: "4F44010000030002"
+				type: "xp"
+				xp: 75
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4F44010000020002"
+				item: { count: 1, id: "oritech:enderic_compound" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -12.75d
+		}
+		{
+			dependencies: ["4F44010000010002"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "oritech:flux_gate"
+			}
+			id: "4F44010000010004"
+			rewards: [{
+				id: "4F44010000030004"
+				type: "xp"
+				xp: 75
+			}]
+			size: 1.5d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4F44010000020004"
+				item: { count: 1, id: "oritech:flux_gate" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: -15.75d
+		}
+		{
+			dependencies: [
+				"4F420100000100BA"
+				"4F420100000100C0"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				id: "oritech:dubios_container"
+			}
+			id: "4F44010000010005"
+			rewards: [{
+				id: "4F44010000030005"
+				type: "xp"
+				xp: 75
+			}]
+			size: 1.5d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4F44010000020005"
+				item: { count: 1, id: "oritech:dubios_container" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -8.25d
+		}
+		{
+			dependencies: [
+				"4F44010000010004"
+				"4F44010000010005"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				id: "oritech:atomic_forge_block"
+			}
+			id: "4F4401000001000D"
+			rewards: [{
+				id: "4F4401000003000D"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				block: { count: 1, id: "oritech:atomic_forge_block" }
+				id: "4F4401000002000D"
+				type: "use_block"
+				value: 1L
+			}]
+			x: 9.0d
+			y: -20.25d
+		}
+		{
+			dependencies: [
+				"4F420100000100BA"
+				"4F420100000100C0"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				id: "oritech:machine_core_5"
+			}
+			id: "4F44010000010012"
+			rewards: [{
+				id: "4F44010000030012"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "hexagon"
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4F44010000020012"
+				item: { count: 1, id: "oritech:machine_core_5" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 5.25d
+		}
+		{
+			dependencies: ["4F44010000010005"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "oritech:large_storage_block"
+			}
+			id: "4F44010000010013"
+			rewards: [{
+				id: "4F44010000030013"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4F44010000020013"
+				item: { count: 1, id: "oritech:large_storage_block" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: -8.25d
+		}
+		{
+			dependencies: ["4F44010000010012"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "oritech:machine_core_6"
+			}
+			id: "4F44010000010014"
+			rewards: [{
+				id: "4F44010000030014"
+				type: "xp"
+				xp: 200
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4F44010000020014"
+				item: { count: 1, id: "oritech:machine_core_6" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 5.25d
+		}
+		{
+			dependencies: ["4F44010000010014"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "oritech:capacitor_addon_extender"
+			}
+			id: "4F44010000010016"
+			rewards: [{
+				id: "4F44010000030016"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4F44010000020016"
+				item: { count: 1, id: "oritech:capacitor_addon_extender" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 2.25d
+		}
+		{
+			dependencies: [
+				"4F420100000100BA"
+				"4F420100000100C0"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				id: "oritech:deepslate_platinum_ore"
+			}
+			id: "4F44010000010018"
+			rewards: [{
+				id: "4F44010000030018"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4F44010000020018"
+				item: { count: 1, id: "oritech:raw_platinum" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 13.12d
+		}
+		{
+			dependencies: ["4F44010000010018"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "oritech:platinum_ingot"
+			}
+			id: "4F44010000010019"
+			rewards: [{
+				id: "4F44010000030019"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4F44010000020019"
+				item: { count: 1, id: "oritech:platinum_ingot" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 13.12d
+		}
+		{
+			dependencies: ["4F44010000010019"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "oritech:duratium_block"
+			}
+			id: "4F4401000001001C"
+			rewards: [{
+				id: "4F4401000003001C"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4F4401000002001C"
+				item: { count: 1, id: "oritech:duratium_block" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 11.25d
+		}
+		{
+			dependencies: [
+				"4F44010000010004"
+				"4F44010000010005"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				id: "oritech:superconductor"
+			}
+			id: "4F4401000001001D"
+			rewards: [{
+				id: "4F4401000003001D"
+				type: "xp"
+				xp: 150
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4F4401000002001D"
+				item: { count: 1, id: "oritech:superconductor" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: -15.75d
+		}
+		{
+			dependencies: ["4F4401000001001D"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "oritech:framed_superconductor"
+			}
+			id: "4F4401000001001E"
+			rewards: [{
+				id: "4F4401000003001E"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4F4401000002001E"
+				item: { count: 1, id: "oritech:framed_superconductor" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: -18.75d
+		}
+		{
+			dependencies: ["4F4401000001001D"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "oritech:superconductor_duct_block"
+			}
+			id: "4F4401000001001F"
+			rewards: [{
+				id: "4F4401000003001F"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4F4401000002001F"
+				item: { count: 1, id: "oritech:superconductor_duct_block" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: -17.25d
+		}
+		{
+			dependencies: [
+				"4F4401000001001D"
+				"4F420100000100BA"
+				"4F420100000100C0"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				id: "oritech:accelerator_ring"
+			}
+			id: "4F44010000010020"
+			rewards: [{
+				id: "4F44010000030020"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4F44010000020020"
+				item: { count: 1, id: "oritech:accelerator_ring" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: -15.75d
+		}
+		{
+			dependencies: [
+				"4F44010000010019"
+				"4F4401000001001D"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				id: "oritech:accelerator_motor"
+			}
+			id: "4F44010000010021"
+			rewards: [{
+				id: "4F44010000030021"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4F44010000020021"
+				item: { count: 1, id: "oritech:accelerator_motor" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 12.75d
+		}
+		{
+			dependencies: ["4F44010000010020"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "oritech:accelerator_sensor"
+			}
+			id: "4F44010000010023"
+			rewards: [{
+				id: "4F44010000030023"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4F44010000020023"
+				item: { count: 1, id: "oritech:accelerator_sensor" }
+				type: "item"
+			}]
+			x: 15.0d
+			y: -15.75d
+		}
+		{
+			dependencies: ["4F4401000001001D"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "oritech:particle_collector_block"
+			}
+			id: "4F44010000010024"
+			rewards: [{
+				id: "4F44010000030024"
+				type: "xp"
+				xp: 150
+			}]
+			shape: "gear"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4F44010000020024"
+				item: { count: 1, id: "oritech:particle_collector_block" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: -14.25d
+		}
+		{
+			dependencies: [
+				"4F420100000100BA"
+				"4F420100000100C0"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				id: "oritechthings:accelerator_magnetic_field"
+			}
+			id: "4F44010000010026"
+			rewards: [{
+				id: "4F44010000030026"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4F44010000020026"
+				item: { count: 1, id: "oritechthings:accelerator_magnetic_field" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 17.25d
+		}
+		{
+			dependencies: [
+				"4F44010000010023"
+				"4F44010000010019"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				id: "oritechthings:particle_accelerator_speed_sensor"
+			}
+			id: "4F44010000010027"
+			rewards: [{
+				id: "4F44010000030027"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4F44010000020027"
+				item: { count: 1, id: "oritechthings:particle_accelerator_speed_sensor" }
+				type: "item"
+			}]
+			x: 18.0d
+			y: -15.75d
+		}
+		{
+			dependencies: [
+				"4F44010000010019"
+				"4F44010000010004"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				id: "oritech:advanced_augment_station"
+			}
+			id: "4F44010000010029"
+			rewards: [{
+				id: "4F44010000030029"
+				type: "xp"
+				xp: 150
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				block: { count: 1, id: "oritech:advanced_augment_station" }
+				id: "4F44010000020029"
+				type: "place_block"
+				value: 1L
+			}]
+			x: 12.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["4F4401000001001D"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "oritech:drone_port_block"
+			}
+			id: "4F44010000010034"
+			rewards: [{
+				id: "4F44010000030034"
+				type: "xp"
+				xp: 150
+			}]
+			shape: "gear"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				block: { count: 1, id: "oritech:drone_port_block" }
+				id: "4F44010000020034"
+				type: "place_block"
+				value: 1L
+			}]
+			x: 12.0d
+			y: -12.75d
+		}
+		{
+			dependencies: ["4F44010000010034"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "oritechthings:advanced_target_designator"
+			}
+			id: "4F44010000010035"
+			rewards: [{
+				id: "4F44010000030035"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4F44010000020035"
+				item: { count: 1, id: "oritechthings:advanced_target_designator" }
+				type: "item"
+			}]
+			x: 15.0d
+			y: -12.75d
+		}
+		{
+			dependencies: [
+				"4F420100000100BA"
+				"4F420100000100C0"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				id: "oritechthings:frame_placer"
+			}
+			id: "4F44010000010036"
+			rewards: [{
+				id: "4F44010000030036"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4F44010000020036"
+				item: { count: 1, id: "oritechthings:frame_placer" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 18.75d
+		}
+		{
+			dependencies: ["4F44010000010014"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "oritechthings:addon_block_speed_tier_2"
+			}
+			id: "4F44010000010037"
+			rewards: [{
+				id: "4F44010000030037"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4F44010000020037"
+				item: { count: 1, id: "oritechthings:addon_block_speed_tier_2" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: 3.75d
+		}
+		{
+			dependencies: ["4F44010000010014"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "oritechthings:addon_block_efficiency_tier_2"
+			}
+			id: "4F44010000010038"
+			rewards: [{
+				id: "4F44010000030038"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4F44010000020038"
+				item: { count: 1, id: "oritechthings:addon_block_efficiency_tier_2" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: 5.25d
+		}
+		{
+			dependencies: ["4F44010000010014"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "oritechthings:addon_block_capacitor_tier_2"
+			}
+			id: "4F44010000010039"
+			rewards: [{
+				id: "4F44010000030039"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4F44010000020039"
+				item: { count: 1, id: "oritechthings:addon_block_capacitor_tier_2" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: 6.75d
+		}
+		{
+			dependencies: ["4F44010000010014"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "oritechthings:addon_block_acceptor_tier_2"
+			}
+			id: "4F4401000001003A"
+			rewards: [{
+				id: "4F4401000003003A"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4F4401000002003A"
+				item: { count: 1, id: "oritechthings:addon_block_acceptor_tier_2" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: 8.25d
+		}
+		{
+			dependencies: ["4F44010000010014"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "oritechthings:addon_block_processing_tier_2"
+			}
+			id: "4F4401000001003B"
+			rewards: [{
+				id: "4F4401000003003B"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4F4401000002003B"
+				item: { count: 1, id: "oritechthings:addon_block_processing_tier_2" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: 9.75d
+		}
+		{
+			dependencies: [
+				"4F44010000010037"
+				"4F44010000010038"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				id: "oritechthings:addon_block_efficient_speed_tier_2"
+			}
+			id: "4F4401000001003C"
+			rewards: [{
+				id: "4F4401000003003C"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4F4401000002003C"
+				item: { count: 1, id: "oritechthings:addon_block_efficient_speed_tier_2" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 3.75d
+		}
+		{
+			dependencies: [
+				"4F44010000010014"
+				"4F4401000001001D"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				id: "oritech:machine_core_6"
+			}
+			id: "4F44010000010050"
+			rewards: [
+				{
+					id: "4F44010000030050"
+					type: "xp"
+					xp: 250
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4F44010000030051"
+					item: {
+						count: 1
+						id: "oritech:machine_ultimate_addon"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4F44010000020050"
+				item: { count: 1, id: "oritech:machine_core_6" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 0.75d
+		}
+	]
+}

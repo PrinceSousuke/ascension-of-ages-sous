@@ -1,0 +1,204 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "at3_chain_reaction"
+	group: "7D28E4AEBC440F10"
+	hide_quest_until_deps_complete: true
+	icon: {
+		id: "industrialforegoingsouls:soul_laser_base"
+	}
+	id: "4348010000000000"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["6D1396F9ABD5BB76"]
+			hide_until_deps_complete: false
+			icon: {
+				id: "deeperdarker:brittle_gloomsherd"
+			}
+			id: "4348010000010100"
+			rewards: [{
+				id: "4348010000030100"
+				type: "xp"
+				xp: 200
+			}]
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4348010000020100"
+				item: { count: 1, id: "deeperdarker:brittle_gloomsherd" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.12d
+		}
+		{
+			dependencies: ["4348010000010100"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "deeperdarker:listener_gloomsherd"
+			}
+			id: "4348010000010101"
+			rewards: [{
+				id: "4348010000030101"
+				type: "xp"
+				xp: 150
+			}]
+			tasks: [
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4348010000020101"
+					item: { count: 1, id: "deeperdarker:listener_gloomsherd" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4348010000020201"
+					item: { count: 1, id: "deeperdarker:temple_gloomsherd" }
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: -3.12d
+		}
+		{
+			dependencies: ["4348010000010101"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "industrialforegoingsouls:soul_laser_base"
+			}
+			id: "4348010000010102"
+			rewards: [{
+				id: "4348010000030102"
+				type: "xp"
+				xp: 200
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4348010000020102"
+				item: { count: 1, id: "industrialforegoingsouls:soul_laser_base" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: -3.12d
+		}
+		{
+			dependencies: ["4348010000010102"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "industrialforegoingsouls:soul_network_pipe"
+			}
+			id: "4348010000010103"
+			rewards: [{
+				id: "4348010000030103"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4348010000020103"
+				item: { count: 1, id: "industrialforegoingsouls:soul_network_pipe" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 3.12d
+		}
+		{
+			dependencies: ["4348010000010103"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "industrialforegoingsouls:soul_surge"
+			}
+			id: "4348010000010104"
+			rewards: [{
+				id: "4348010000030104"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4348010000020104"
+				item: { count: 1, id: "industrialforegoingsouls:soul_surge" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 3.12d
+		}
+		{
+			dependencies: ["4348010000010104"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "industrialforegoingsouls:soul_laser_base"
+			}
+			id: "4348010000010105"
+			rewards: [{
+				id: "4348010000030105"
+				type: "xp"
+				xp: 300
+			}]
+			shape: "pentagon"
+			size: 1.5d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4348010000020105"
+				item: { count: 1, id: "industrialforegoingsouls:soul_surge" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.12d
+		}
+	]
+}

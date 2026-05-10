@@ -1,0 +1,28 @@
+[stage]
+id = "ascension"
+display_name = "Ascension"
+description = "Prestige convergence, final crafting, and end-of-pack mastery."
+icon = "minecraft:nether_star"
+unlock_message = "&c&lAscension Unlocked! &r&7The final convergence of power and prestige is now open."
+dependency = "space_age"
+
+[locks]
+items = []
+item_tags = []
+item_mods = []
+blocks = []
+block_tags = []
+block_mods = []
+dimensions = []
+fluids = []
+fluid_tags = []
+fluid_mods = []
+mods = []
+names = []
+entities = []
+entity_tags = []
+entity_mods = []
+unlocked_items = []
+unlocked_blocks = []
+unlocked_entities = []
+unlocked_fluids = []

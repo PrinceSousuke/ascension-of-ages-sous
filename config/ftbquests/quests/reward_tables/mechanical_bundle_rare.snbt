@@ -1,0 +1,19 @@
+{
+	icon: {
+		id: "create:brown_toolbox"
+	}
+	id: "7200000000000013"
+	loot_size: 1
+	order_index: 21
+	rewards: [
+		{ id: "7213000000000001", item: { count: 1, id: "sophisticatedbackpacks:restock_upgrade" } }
+		{ id: "7213000000000002", item: { count: 1, id: "sophisticatedbackpacks:magnet_upgrade" } }
+		{ id: "7213000000000003", item: { count: 1, id: "explorerscompass:explorerscompass" } }
+		{ id: "7213000000000004", item: { count: 1, id: "naturescompass:naturescompass" } }
+		{ id: "7213000000000005", item: { count: 1, id: "createaddition:rolling_mill" } }
+		{ id: "7213000000000006", item: { count: 1, id: "createaddition:capacitor" } }
+		{ id: "7213000000000007", item: { count: 1, id: "sophisticatedstorage:storage_io" } }
+		{ id: "7213000000000008", item: { components: { "relics:data": { abilities: { abilities: { gliding: { lock: { breaks: 5 }, points: 0, stats: { damage: { initialQuality: 3 }, efficiency: { initialQuality: 1 }, resistance: { initialQuality: 4 } } }, slots: { lock: { breaks: 5 }, points: 0, stats: { amount: { initialQuality: 2 } } } }, synergies: { } }, leveling: { }, statistic: { } } }, count: 1, id: "relics:kinetic_belt" } }
+	]
+	use_title: true
+}

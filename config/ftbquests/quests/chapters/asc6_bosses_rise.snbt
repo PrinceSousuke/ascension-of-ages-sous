@@ -1,0 +1,14 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "asc6_bosses_rise"
+	group: "6A196D2B21EDE4C0"
+	hide_quest_until_deps_complete: true
+	icon: {
+		id: "minecraft:netherite_sword"
+	}
+	id: "4252010000000000"
+	order_index: 5
+	quest_links: [ ]
+	quests: [ ]
+}

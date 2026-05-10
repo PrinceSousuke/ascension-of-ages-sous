@@ -1,0 +1,1067 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "r6_the_deep_dark"
+	group: "0B038EB15EBBFD95"
+	hide_quest_until_deps_complete: true
+	icon: {
+		id: "deeperdarker:sculk_transmitter"
+	}
+	id: "34868FD9027C1EC8"
+	order_index: 7
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["7E7C01A700000048"]
+			hide_until_deps_complete: true
+			id: "2160974BDE2FAB89"
+			rewards: [{
+				id: "4E73471DC5290F48"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "3377234056044626"
+				item: { count: 1, id: "deeperdarker:sculk_bone" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["0B8FE04742316372"]
+			hide_until_deps_complete: true
+			id: "573B3C0F1AD1591E"
+			rewards: [
+				{
+					id: "1E87163F332C910D"
+					type: "xp"
+					xp: 40
+				}
+				{
+					id: "0D77833F7AFFD097"
+					item: {
+						count: 1
+						id: "endrem:lost_eye"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "388C5B7E40E3BED5"
+				item: { count: 1, id: "deeperdarker:gleam_gel" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2160974BDE2FAB89"]
+			hide_until_deps_complete: true
+			id: "3BE4B2D0C69E5D59"
+			rewards: [{
+				id: "7FDE75C6AE04EB99"
+				type: "xp"
+				xp: 30
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "7788A1C81A0F1D46"
+				item: { count: 1, id: "deeperdarker:resonarium" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["2160974BDE2FAB89"]
+			hide_until_deps_complete: true
+			id: "7A42FE7D3D95B8B4"
+			rewards: [{
+				id: "4718880BE325AC95"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "35D54D74E4E42319"
+				item: { count: 1, id: "deeperdarker:grime_ball" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["2160974BDE2FAB89"]
+			hide_until_deps_complete: true
+			id: "3811D4BC332788DB"
+			rewards: [{
+				id: "635AB50281076C2A"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "195DAE19C2C2C0A5"
+				item: { count: 1, id: "deeperdarker:soul_dust" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["573B3C0F1AD1591E"]
+			hide_until_deps_complete: true
+			id: "2EA1F3E9461C0AD6"
+			rewards: [{
+				id: "59E8F19BB940AFF8"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "1B8CE0945B9ED8FB"
+				item: { count: 1, id: "deeperdarker:lite" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3BE4B2D0C69E5D59"]
+			hide_until_deps_complete: true
+			id: "52864CF4C7626519"
+			rewards: [{
+				id: "49D7B3C7E3966BE5"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "44C1324CAC0EBD57"
+				item: { count: 1, id: "deeperdarker:resonarium_plate" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["52864CF4C7626519"]
+			hide_until_deps_complete: true
+			id: "0B8FE04742316372"
+			rewards: [{
+				id: "1A7803BA4B9AA5AC"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0FF78B3716911B0E"
+				item: { count: 1, id: "deeperdarker:resonarium_upgrade_smithing_template" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"0B8FE04742316372"
+				"3BE4B2D0C69E5D59"
+			]
+			hide_until_deps_complete: true
+			id: "267DDED534149BD3"
+			rewards: [{
+				id: "5AC6CE4D8F867DC6"
+				type: "xp"
+				xp: 150
+			}]
+			shape: "rsquare"
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "131D3CAA7AF9F642"
+				item: { count: 1, id: "deeperdarker:resonarium_axe" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["267DDED534149BD3"]
+			hide_until_deps_complete: true
+			id: "58C18AD8E67C7321"
+			rewards: [{
+				id: "63591A6A107B0700"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "126321CF9A953993"
+				item: { count: 1, id: "deeperdarker:resonarium_sword" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["267DDED534149BD3"]
+			hide_until_deps_complete: true
+			id: "309208FA6FB43EE6"
+			rewards: [{
+				id: "6B28521F4136A689"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "6D6A715B5DB618A3"
+				item: { count: 1, id: "deeperdarker:resonarium_pickaxe" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["267DDED534149BD3"]
+			hide_until_deps_complete: true
+			id: "7CA2115E54E97BE0"
+			rewards: [{
+				id: "30738A6D2B0DDC9E"
+				type: "xp"
+				xp: 30
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "6B11223EA300E110"
+				item: { count: 1, id: "deeperdarker:soundproof_glass" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7E7C01A700000056"]
+			hide_until_deps_complete: true
+			id: "0BB65C0D8FAA6FFA"
+			rewards: [{
+				id: "4BC9DFE98123142B"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "2C2EF39085898438"
+				item: { count: 1, id: "deeperdarker:ancient_compass" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["0BB65C0D8FAA6FFA"]
+			hide_until_deps_complete: true
+			id: "17F26BD4F5E66141"
+			rewards: [{
+				id: "6D491E8EB4BA21AF"
+				type: "xp"
+				xp: 150
+			}]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				dimension: "deeperdarker:otherside"
+				id: "3834CADBF3CE18D4"
+				type: "dimension"
+			}]
+			x: 8.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["17F26BD4F5E66141"]
+			hide_until_deps_complete: true
+			id: "3049005B6FE14734"
+			rewards: [{
+				id: "2D8EA476C2E6C77A"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				entity: "deeperdarker:stalker"
+				id: "74C421295158766B"
+				type: "kill"
+				value: 1L
+			}]
+			x: 10.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["3049005B6FE14734"]
+			hide_until_deps_complete: true
+			id: "69E2424DB14F10CC"
+			rewards: [{
+				id: "08C2173CF79F06FB"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "3AA4D6771C01C9B3"
+				item: { count: 1, id: "deeperdarker:soul_crystal" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["17F26BD4F5E66141"]
+			hide_until_deps_complete: true
+			id: "77EA22C1050BEE70"
+			rewards: [{
+				id: "22B260415AC4F54D"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				entity: "deeperdarker:sculk_snapper"
+				id: "7A50C7301EEA4F7B"
+				type: "kill"
+				value: 1L
+			}]
+			x: 10.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["77EA22C1050BEE70"]
+			hide_until_deps_complete: true
+			id: "6AB8ABFC790675C4"
+			rewards: [{
+				id: "0F06384235E5E053"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "19AF96EDBD8855BA"
+				item: { count: 1, id: "deeperdarker:heart_of_the_deep" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"6AB8ABFC790675C4"
+				"69E2424DB14F10CC"
+			]
+			hide_until_deps_complete: true
+			id: "2DEB40BFC4EA18CE"
+			rewards: [{
+				id: "5D3F8BB5DA6B20DC"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "3E7E615BD4D4AAED"
+				item: { count: 1, id: "deeperdarker:sculk_transmitter" }
+				type: "item"
+			}]
+			x: 14.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["17F26BD4F5E66141"]
+			hide_until_deps_complete: true
+			id: "22390A3639521581"
+			rewards: [{
+				id: "645BC617CC88D0BC"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "3AFB2B8FCF9141A6"
+				item: { count: 1, id: "deeperdarker:bloom_berries" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["17F26BD4F5E66141"]
+			hide_until_deps_complete: true
+			id: "065C715299CFCF28"
+			rewards: [{
+				id: "173152A5B2B24719"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				entity: "deeperdarker:shriek_worm"
+				id: "581E153DB524E01E"
+				type: "kill"
+				value: 1L
+			}]
+			x: 8.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["17F26BD4F5E66141"]
+			hide_until_deps_complete: true
+			id: "6A4BE27177E98C96"
+			rewards: [{
+				id: "21005D1E099AB189"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				entity: "deeperdarker:sludge"
+				id: "45A0A90B4721E7ED"
+				type: "kill"
+				value: 1L
+			}]
+			x: 10.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["17F26BD4F5E66141"]
+			hide_until_deps_complete: true
+			id: "22DE26D2C27E33A9"
+			rewards: [{
+				id: "3193430AE26DF61C"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				entity: "deeperdarker:sculk_leech"
+				id: "0B0975FD100FB3FA"
+				type: "kill"
+				value: 1L
+			}]
+			x: 12.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["2DEB40BFC4EA18CE"]
+			hide_until_deps_complete: true
+			id: "532666873B8B703D"
+			rewards: [{
+				id: "055634DF58EFD77A"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "5082E139D24EB962"
+				item: { count: 1, id: "deeperdarker:warden_upgrade_smithing_template" }
+				type: "item"
+			}]
+			x: 15.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["532666873B8B703D"]
+			hide_until_deps_complete: true
+			id: "58B84DEB7B72D9D3"
+			rewards: [{
+				id: "11EFE507FEF37BEB"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "201D4AC0660837F8"
+				item: { count: 1, id: "deeperdarker:warden_carapace" }
+				type: "item"
+			}]
+			x: 16.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["58B84DEB7B72D9D3"]
+			hide_until_deps_complete: true
+			id: "21D73852F0CA11EE"
+			rewards: [{
+				id: "61B5588B9D012D69"
+				type: "xp"
+				xp: 150
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "384985B38E5B27A1"
+				item: { count: 1, id: "deeperdarker:reinforced_echo_shard" }
+				type: "item"
+			}]
+			x: 18.0d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"21D73852F0CA11EE"
+				"065C715299CFCF28"
+				"6A4BE27177E98C96"
+				"22DE26D2C27E33A9"
+			]
+			hide_until_deps_complete: true
+			id: "5E12C6355BD0A073"
+			rewards: [{
+				id: "3B369AA15BC18A81"
+				type: "xp"
+				xp: 150
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "76644911E3BDEA42"
+				item: { count: 1, id: "deeperdarker:warden_axe" }
+				type: "item"
+			}]
+			x: 21.0d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"21D73852F0CA11EE"
+				"065C715299CFCF28"
+				"6A4BE27177E98C96"
+				"22DE26D2C27E33A9"
+			]
+			hide_until_deps_complete: true
+			id: "4C25269A99740791"
+			rewards: [{
+				id: "4FDB998ED0C8B8F8"
+				type: "xp"
+				xp: 150
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "1EF661F812264154"
+				item: { count: 1, id: "deeperdarker:sonorous_staff" }
+				type: "item"
+			}]
+			x: 22.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"21D73852F0CA11EE"
+				"065C715299CFCF28"
+				"6A4BE27177E98C96"
+				"22DE26D2C27E33A9"
+			]
+			hide_until_deps_complete: true
+			id: "4833833D8E1C4ACE"
+			rewards: [{
+				id: "475ABAD6C85B15DF"
+				type: "xp"
+				xp: 200
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "10322201E4BD7DA2"
+				item: { count: 1, id: "deeperdarker:soul_elytra" }
+				type: "item"
+			}]
+			x: 22.5d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"21D73852F0CA11EE"
+				"065C715299CFCF28"
+				"6A4BE27177E98C96"
+				"22DE26D2C27E33A9"
+			]
+			hide_until_deps_complete: true
+			id: "734E9B04298C7734"
+			optional: true
+			rewards: [{
+				id: "3C7E58E8D5C47208"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "66ED96C0C4D35D7D"
+				item: { count: 1, id: "deeperdarker:warden_sword" }
+				type: "item"
+			}]
+			x: 22.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["734E9B04298C7734"]
+			hide_until_deps_complete: true
+			id: "2F1C2B8AC5E11976"
+			optional: true
+			rewards: [{
+				id: "27F34B5B8FEEB6D5"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "2D8F9AFA9BCC4013"
+				item: { count: 1, id: "deeperdarker:warden_chestplate" }
+				type: "item"
+			}]
+			x: 24.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["065C715299CFCF28"]
+			hide_until_deps_complete: true
+			id: "0FF97444C4E7CB2A"
+			rewards: [{
+				id: "20C1D2771BE53EDE"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "5F149C3E00F34661"
+				item: { count: 1, id: "bosses_of_mass_destruction:soul_star" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["0FF97444C4E7CB2A"]
+			hide_until_deps_complete: true
+			id: "4069CFC8D4924D87"
+			rewards: [
+				{
+					id: "5D3AE98BA81412C9"
+					type: "xp"
+					xp: 300
+				}
+				{
+					id: "3D975A3B61482908"
+					item: {
+						count: 1
+						id: "endrem:black_eye"
+					}
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				entity: "bosses_of_mass_destruction:lich"
+				id: "454237A6B011CA27"
+				type: "kill"
+				value: 1L
+			}]
+			x: 8.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["4069CFC8D4924D87"]
+			hide_until_deps_complete: true
+			id: "317D9A77F0F11D68"
+			rewards: [{
+				id: "0F8809BCF20F4CA3"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4DFAFC83A08E5A30"
+				item: { count: 1, id: "mowziesmobs:ice_crystal" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["317D9A77F0F11D68"]
+			hide_until_deps_complete: true
+			id: "3D34678414E510E7"
+			rewards: [{
+				id: "4CB6F54E3F3940F6"
+				type: "xp"
+				xp: 250
+			}]
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				entity: "mowziesmobs:frostmaw"
+				id: "36EDC895393F63D4"
+				type: "kill"
+				value: 1L
+			}]
+			x: 8.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["3D34678414E510E7"]
+			hide_until_deps_complete: true
+			id: "4A8F54B9ED085393"
+			rewards: [{
+				id: "31E7A3F666D655CE"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4DB26F113D17BCD7"
+				item: { count: 1, id: "block_factorys_bosses:underworld_arena_key" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["6D1396F9ABD5BB76"]
+			hide_until_deps_complete: true
+			id: "17497F108CAB6C71"
+			rewards: [{
+				id: "2A7D7C62DC32F893"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "420AFCFF3E52017A"
+				item: { count: 1, id: "block_factorys_bosses:knight_sword" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["4A8F54B9ED085393"]
+			hide_until_deps_complete: true
+			id: "6D1396F9ABD5BB76"
+			rewards: [{
+				id: "59CA57DB18B867BC"
+				type: "xp"
+				xp: 350
+			}]
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				entity: "block_factorys_bosses:underworld_knight"
+				id: "1AC732A59EF9E7D3"
+				type: "kill"
+				value: 1L
+			}]
+			x: 10.0d
+			y: 14.0d
+		}
+		{
+			dependencies: [
+				"21D73852F0CA11EE"
+				"065C715299CFCF28"
+				"6A4BE27177E98C96"
+				"22DE26D2C27E33A9"
+				"4069CFC8D4924D87"
+				"3D34678414E510E7"
+				"6D1396F9ABD5BB76"
+			]
+			hide_until_deps_complete: true
+			id: "016BFDF187EB3CC9"
+			rewards: [{
+				id: "1029B0D8E0C12728"
+				type: "xp"
+				xp: 500
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "6FE0F12FBCD7764D"
+				item: { count: 1, id: "deeperdarker:warden_helmet" }
+				type: "item"
+			}]
+			x: 16.5d
+			y: 10.5d
+		}
+	]
+}

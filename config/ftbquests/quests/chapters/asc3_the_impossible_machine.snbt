@@ -1,0 +1,14 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "asc3_the_impossible_machine"
+	group: "6A196D2B21EDE4C0"
+	hide_quest_until_deps_complete: true
+	icon: {
+		id: "minecraft:piston"
+	}
+	id: "494D010000000000"
+	order_index: 2
+	quest_links: [ ]
+	quests: [ ]
+}

@@ -1,0 +1,28 @@
+[stage]
+id = "nuclear_engineering"
+display_name = "Nuclear Engineering"
+description = "Nuclear Science fuel processing, reactor construction, waste handling, and fission systems."
+icon = "nuclearscience:fissionreactorcore"
+unlock_message = "&2&lNuclear Engineering Unlocked! &r&7Fuel, reactor, and containment systems can now be integrated."
+dependency = "radiological_materials"
+
+[locks]
+items = []
+item_tags = []
+item_mods = []
+blocks = []
+block_tags = []
+block_mods = []
+dimensions = []
+fluids = []
+fluid_tags = []
+fluid_mods = []
+mods = []
+names = []
+entities = []
+entity_tags = []
+entity_mods = []
+unlocked_items = []
+unlocked_blocks = []
+unlocked_entities = []
+unlocked_fluids = []

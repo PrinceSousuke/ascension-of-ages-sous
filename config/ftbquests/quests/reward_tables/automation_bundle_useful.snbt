@@ -1,0 +1,15 @@
+{
+	icon: {
+		id: "create:item_vault"
+	}
+	id: "7400000000000012"
+	loot_size: 1
+	order_index: 32
+	rewards: [
+		{ id: "7412000000000001", item: { count: 1, id: "oritech:basic_generator_block" } }
+		{ id: "7412000000000002", item: { count: 1, id: "oritech:charger_block" } }
+		{ id: "7412000000000003", item: { count: 1, id: "minecraft:redstone_block" } }
+		{ id: "7412000000000004", item: { count: 1, id: "create:mechanical_arm" } }
+	]
+	use_title: true
+}

@@ -1,0 +1,28 @@
+[stage]
+id = "create_nuclear_systems"
+display_name = "Create Nuclear Systems"
+description = "Create-side nuclear processing, reactor/turbine integration, and Power Grid support paths."
+icon = "createnuclear:reactor_controller"
+unlock_message = "&2&lCreate Nuclear Systems Unlocked! &r&7Create-linked nuclear machinery can now be integrated."
+dependency = "radiological_materials"
+
+[locks]
+items = []
+item_tags = []
+item_mods = []
+blocks = []
+block_tags = []
+block_mods = []
+dimensions = []
+fluids = []
+fluid_tags = []
+fluid_mods = []
+mods = []
+names = []
+entities = []
+entity_tags = []
+entity_mods = []
+unlocked_items = []
+unlocked_blocks = []
+unlocked_entities = []
+unlocked_fluids = []

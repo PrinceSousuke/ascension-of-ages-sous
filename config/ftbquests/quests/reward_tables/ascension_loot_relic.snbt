@@ -1,0 +1,78 @@
+{
+	icon: {
+		id: "minecraft:dragon_egg"
+	}
+	id: "7800000000000003"
+	loot_size: 1
+	order_index: 54
+	rewards: [
+		{
+			count: 2
+			id: "7803000000000001"
+			item: {
+				count: 1
+				id: "minecraft:totem_of_undying"
+			}
+			weight: 2.0f
+		}
+		{
+			count: 6
+			id: "7803000000000002"
+			item: {
+				count: 1
+				id: "apotheosis:mythic_material"
+			}
+			weight: 1.5f
+		}
+		{
+			count: 4
+			id: "7803000000000003"
+			item: {
+				count: 1
+				id: "minecraft:nether_star"
+			}
+			weight: 1.25f
+		}
+		{
+			id: "7803000000000004"
+			item: {
+				count: 1
+				id: "mekanism:quantum_entangloporter"
+			}
+			weight: 0.6f
+		}
+		{
+			id: "7803000000000005"
+			item: {
+				count: 1
+				id: "minecraft:echo_shard"
+			}
+			weight: 0.5f
+		}
+		{
+			id: "7803000000000006"
+			item: {
+				count: 1
+				id: "mekanism:ultimate_chemical_tank"
+			}
+			weight: 0.6f
+		}
+		{
+			id: "7803000000000007"
+			item: {
+				count: 1
+				id: "minecraft:enchanted_golden_apple"
+			}
+			weight: 0.5f
+		}
+		{
+			id: "7803000000000008"
+			item: {
+				count: 1
+				id: "minecraft:beacon"
+			}
+			weight: 0.25f
+		}
+	]
+	use_title: true
+}

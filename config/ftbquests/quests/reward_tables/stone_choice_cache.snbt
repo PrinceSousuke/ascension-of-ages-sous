@@ -1,0 +1,24 @@
+{
+	icon: {
+		id: "minecraft:barrel"
+	}
+	id: "7100000000000002"
+	loot_size: 1
+	order_index: 11
+	rewards: [
+		{ id: "7102000000000001", item: { count: 1, id: "cold_sweat:waterskin" } }
+		{ id: "7102000000000002", item: { count: 1, id: "cold_sweat:boiler" } }
+		{ id: "7102000000000003", item: { count: 1, id: "crafting_on_a_stick:crafting_table" } }
+		{ id: "7102000000000004", item: { count: 1, id: "comforts:hammock_white" } }
+		{ id: "7102000000000005", item: { count: 1, id: "cold_sweat:icebox" } }
+		{
+			count: 2
+			id: "7102000000000006"
+			item: {
+				count: 1
+				id: "comforts:rope_and_nail"
+			}
+		}
+	]
+	use_title: true
+}

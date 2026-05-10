@@ -1,0 +1,2809 @@
+{
+  "generated_by": "Codex create recipe schema compatibility patch",
+  "source_log": "logs\\latest.log",
+  "total_overrides": 457,
+  "excluded_namespaces": [
+    "irons_spellbooks"
+  ],
+  "selection_rule": "Recipes from latest.log that failed KubeJS parsing and were Create recipe types, Create-family namespaces, or ATC/Create Metalwork/Created Diesel Generators integration recipes.",
+  "schema_updates": {
+    "ingredient: fluid_stack -> neoforge:single": 83,
+    "ingredient: fluid_tag -> neoforge:tag": 89,
+    "result: item -> id": 1,
+    "result: string -> item stack": 16,
+    "results: fluid -> id": 1,
+    "results: item -> id": 90,
+    "results: item.id -> id": 557
+  },
+  "overrides_by_namespace": {
+    "allthecompatibility": 205,
+    "createframed": 47,
+    "create_confectionery": 46,
+    "create": 37,
+    "create_sa": 25,
+    "createmetalwork": 19,
+    "createdieselgenerators": 18,
+    "create_shimmer": 14,
+    "createoritechcompat": 14,
+    "createaddition": 12,
+    "create_ultimate_factory": 10,
+    "createdeco": 2,
+    "farmersdelight": 2,
+    "thirst": 2,
+    "chemicalscience": 1,
+    "cold_sweat": 1,
+    "malum": 1,
+    "oritech": 1
+  },
+  "overrides_by_source_jar": {
+    "AlltheCompatibility-1.21.1-(v.3.9.0).jar": 205,
+    "createframed-1.21.1-1.7.3.jar": 47,
+    "create-confectionery1.21.1_v1.1.2.jar": 46,
+    "create-stuff-additions1.21.1_v2.1.0e.jar": 25,
+    "deeperdarker-neoforge-1.21.1-1.3.5.jar": 20,
+    "createmetalwork-2.0.0.jar": 19,
+    "createdieselgenerators-1.21.1-1.3.11.jar": 18,
+    "create-1.21.1-6.0.9.jar": 17,
+    "create-shimmer-1.2.8.jar": 14,
+    "createoritechcompat-1.20.1-1.0.jar": 14,
+    "createaddition-1.5.10.jar": 12,
+    "create_ultimate_factory-2.2.3-neoforge-1.21.1.jar": 10,
+    "createdeco-2.1.2.jar": 2,
+    "FarmersDelight-1.21.1-1.2.10.jar": 2,
+    "ThirstWasTaken-1.21.1-2.1.5.jar": 2,
+    "chemicalscience-1.21.1-3.1.1.jar": 1,
+    "ColdSweat-2.4.jar": 1,
+    "malum-1.21.1-1.8.2.jar": 1,
+    "oritech-neoforge-1.21.1-1.1.0.jar": 1
+  },
+  "notes": [
+    "These files override mod-provided datapack recipes; no .jar files were edited.",
+    "Old Create processing outputs using item/item.id were rewritten to id/count/chance objects.",
+    "Old Create fluid ingredients using fluid_stack/fluid_tag were rewritten to neoforge:single/neoforge:tag with amount preserved.",
+    "Old vanilla single-string results were rewritten to item stack objects."
+  ],
+  "overrides": [
+    {
+      "id": "allthecompatibility:create/crushing/aluminum_clump",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\aluminum_clump.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/aluminum_end_ore",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\aluminum_end_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/aluminum_nether_ore",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\aluminum_nether_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/aluminum_ore",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\aluminum_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/cinnabar_end_ore",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\cinnabar_end_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/cinnabar_nether_ore",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\cinnabar_nether_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/cinnabar_ore",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\cinnabar_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/copper_clump",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\copper_clump.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/copper_ore",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\copper_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/deepslate_aluminum_ore",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\deepslate_aluminum_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/deepslate_cinnabar_ore",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\deepslate_cinnabar_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/deepslate_copper_ore",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\deepslate_copper_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/deepslate_fluorite_ore",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\deepslate_fluorite_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/deepslate_gold_ore",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\deepslate_gold_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/deepslate_iridium_ore",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\deepslate_iridium_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/deepslate_iron_ore",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\deepslate_iron_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/deepslate_lead_ore",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\deepslate_lead_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/deepslate_nickel_ore",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\deepslate_nickel_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/deepslate_osmium_ore",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\deepslate_osmium_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/deepslate_peridot_ore",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\deepslate_peridot_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/deepslate_platinum_ore",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\deepslate_platinum_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/deepslate_ruby_ore",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\deepslate_ruby_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/deepslate_salt_ore",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\deepslate_salt_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/deepslate_sapphire_ore",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\deepslate_sapphire_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/deepslate_silver_ore",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\deepslate_silver_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/deepslate_sulfur_ore",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\deepslate_sulfur_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/deepslate_tin_ore",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\deepslate_tin_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/deepslate_uranium_ore",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\deepslate_uranium_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/deepslate_zinc_ore",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\deepslate_zinc_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/diamond",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\diamond.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/fluorite",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\fluorite.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/fluorite_end_ore",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\fluorite_end_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/fluorite_nether_ore",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\fluorite_nether_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/fluorite_ore",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\fluorite_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/gold_clump",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\gold_clump.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/gold_ore",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\gold_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/iridium_clump",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\iridium_clump.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/iridium_end_ore",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\iridium_end_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/iridium_nether_ore",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\iridium_nether_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/iridium_ore",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\iridium_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/iron_clump",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\iron_clump.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/iron_ore",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\iron_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/lead_clump",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\lead_clump.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/lead_end_ore",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\lead_end_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/lead_nether_ore",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\lead_nether_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/lead_ore",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\lead_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/nickel_clump",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\nickel_clump.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/nickel_end_ore",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\nickel_end_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/nickel_nether_ore",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\nickel_nether_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/nickel_ore",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\nickel_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/osmium_clump",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\osmium_clump.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/osmium_end_ore",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\osmium_end_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/osmium_nether_ore",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\osmium_nether_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/osmium_ore",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\osmium_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/peridot",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\peridot.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/peridot_end_ore",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\peridot_end_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/peridot_nether_ore",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\peridot_nether_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/peridot_ore",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\peridot_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/platinum_clump",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\platinum_clump.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/platinum_end_ore",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\platinum_end_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/platinum_nether_ore",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\platinum_nether_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/platinum_ore",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\platinum_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/raw_aluminum",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\raw_aluminum.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/raw_aluminum_block",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\raw_aluminum_block.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/raw_copper",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\raw_copper.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/raw_copper_block",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\raw_copper_block.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/raw_gold",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\raw_gold.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/raw_gold_block",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\raw_gold_block.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/raw_iridium",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\raw_iridium.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/raw_iridium_block",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\raw_iridium_block.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/raw_iron",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\raw_iron.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/raw_iron_block",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\raw_iron_block.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/raw_lead",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\raw_lead.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/raw_lead_block",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\raw_lead_block.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/raw_nickel",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\raw_nickel.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/raw_nickel_block",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\raw_nickel_block.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/raw_osmium",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\raw_osmium.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/raw_osmium_block",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\raw_osmium_block.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/raw_platinum",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\raw_platinum.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/raw_platinum_block",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\raw_platinum_block.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/raw_silver",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\raw_silver.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/raw_silver_block",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\raw_silver_block.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/raw_tin",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\raw_tin.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/raw_tin_block",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\raw_tin_block.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/raw_uranium",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\raw_uranium.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/raw_uranium_block",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\raw_uranium_block.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/raw_zinc",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\raw_zinc.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/raw_zinc_block",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\raw_zinc_block.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/ruby",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\ruby.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/ruby_end_ore",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\ruby_end_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/ruby_nether_ore",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\ruby_nether_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/ruby_ore",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\ruby_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/salt_end_ore",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\salt_end_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/salt_nether_ore",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\salt_nether_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/salt_ore",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\salt_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/sapphire",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\sapphire.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/sapphire_end_ore",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\sapphire_end_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/sapphire_nether_ore",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\sapphire_nether_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/sapphire_ore",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\sapphire_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/silver_clump",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\silver_clump.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/silver_end_ore",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\silver_end_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/silver_nether_ore",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\silver_nether_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/silver_ore",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\silver_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/sulfur",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\sulfur.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/sulfur_end_ore",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\sulfur_end_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/sulfur_nether_ore",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\sulfur_nether_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/sulfur_ore",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\sulfur_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/tin_clump",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\tin_clump.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/tin_end_ore",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\tin_end_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/tin_nether_ore",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\tin_nether_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/tin_ore",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\tin_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/uranium_clump",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\uranium_clump.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/uranium_end_ore",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\uranium_end_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/uranium_nether_ore",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\uranium_nether_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/uranium_ore",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\uranium_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/zinc_clump",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\zinc_clump.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/zinc_end_ore",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\zinc_end_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/zinc_nether_ore",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\zinc_nether_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/crushing/zinc_ore",
+      "type": "create:crushing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\crushing\\zinc_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/filling/aluminum_crystal",
+      "type": "create:filling",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\filling\\aluminum_crystal.json"
+    },
+    {
+      "id": "allthecompatibility:create/filling/aluminum_ore",
+      "type": "create:filling",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\filling\\aluminum_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/filling/aluminum_raw",
+      "type": "create:filling",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\filling\\aluminum_raw.json"
+    },
+    {
+      "id": "allthecompatibility:create/filling/aluminum_raw_block",
+      "type": "create:filling",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\filling\\aluminum_raw_block.json"
+    },
+    {
+      "id": "allthecompatibility:create/filling/copper_crystal",
+      "type": "create:filling",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\filling\\copper_crystal.json"
+    },
+    {
+      "id": "allthecompatibility:create/filling/copper_ore",
+      "type": "create:filling",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\filling\\copper_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/filling/copper_raw",
+      "type": "create:filling",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\filling\\copper_raw.json"
+    },
+    {
+      "id": "allthecompatibility:create/filling/copper_raw_block",
+      "type": "create:filling",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\filling\\copper_raw_block.json"
+    },
+    {
+      "id": "allthecompatibility:create/filling/gold_crystal",
+      "type": "create:filling",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\filling\\gold_crystal.json"
+    },
+    {
+      "id": "allthecompatibility:create/filling/gold_ore",
+      "type": "create:filling",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\filling\\gold_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/filling/gold_raw",
+      "type": "create:filling",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\filling\\gold_raw.json"
+    },
+    {
+      "id": "allthecompatibility:create/filling/gold_raw_block",
+      "type": "create:filling",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\filling\\gold_raw_block.json"
+    },
+    {
+      "id": "allthecompatibility:create/filling/iridium_crystal",
+      "type": "create:filling",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\filling\\iridium_crystal.json"
+    },
+    {
+      "id": "allthecompatibility:create/filling/iridium_ore",
+      "type": "create:filling",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\filling\\iridium_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/filling/iridium_raw",
+      "type": "create:filling",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\filling\\iridium_raw.json"
+    },
+    {
+      "id": "allthecompatibility:create/filling/iridium_raw_block",
+      "type": "create:filling",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\filling\\iridium_raw_block.json"
+    },
+    {
+      "id": "allthecompatibility:create/filling/iron_crystal",
+      "type": "create:filling",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\filling\\iron_crystal.json"
+    },
+    {
+      "id": "allthecompatibility:create/filling/iron_ore",
+      "type": "create:filling",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\filling\\iron_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/filling/iron_raw",
+      "type": "create:filling",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\filling\\iron_raw.json"
+    },
+    {
+      "id": "allthecompatibility:create/filling/iron_raw_block",
+      "type": "create:filling",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\filling\\iron_raw_block.json"
+    },
+    {
+      "id": "allthecompatibility:create/filling/lead_crystal",
+      "type": "create:filling",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\filling\\lead_crystal.json"
+    },
+    {
+      "id": "allthecompatibility:create/filling/lead_ore",
+      "type": "create:filling",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\filling\\lead_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/filling/lead_raw",
+      "type": "create:filling",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\filling\\lead_raw.json"
+    },
+    {
+      "id": "allthecompatibility:create/filling/lead_raw_block",
+      "type": "create:filling",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\filling\\lead_raw_block.json"
+    },
+    {
+      "id": "allthecompatibility:create/filling/nickel_crystal",
+      "type": "create:filling",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\filling\\nickel_crystal.json"
+    },
+    {
+      "id": "allthecompatibility:create/filling/nickel_ore",
+      "type": "create:filling",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\filling\\nickel_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/filling/nickel_raw",
+      "type": "create:filling",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\filling\\nickel_raw.json"
+    },
+    {
+      "id": "allthecompatibility:create/filling/nickel_raw_block",
+      "type": "create:filling",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\filling\\nickel_raw_block.json"
+    },
+    {
+      "id": "allthecompatibility:create/filling/osmium_crystal",
+      "type": "create:filling",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\filling\\osmium_crystal.json"
+    },
+    {
+      "id": "allthecompatibility:create/filling/osmium_ore",
+      "type": "create:filling",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\filling\\osmium_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/filling/osmium_raw",
+      "type": "create:filling",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\filling\\osmium_raw.json"
+    },
+    {
+      "id": "allthecompatibility:create/filling/osmium_raw_block",
+      "type": "create:filling",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\filling\\osmium_raw_block.json"
+    },
+    {
+      "id": "allthecompatibility:create/filling/platinum_crystal",
+      "type": "create:filling",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\filling\\platinum_crystal.json"
+    },
+    {
+      "id": "allthecompatibility:create/filling/platinum_ore",
+      "type": "create:filling",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\filling\\platinum_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/filling/platinum_raw",
+      "type": "create:filling",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\filling\\platinum_raw.json"
+    },
+    {
+      "id": "allthecompatibility:create/filling/platinum_raw_block",
+      "type": "create:filling",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\filling\\platinum_raw_block.json"
+    },
+    {
+      "id": "allthecompatibility:create/filling/silver_crystal",
+      "type": "create:filling",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\filling\\silver_crystal.json"
+    },
+    {
+      "id": "allthecompatibility:create/filling/silver_ore",
+      "type": "create:filling",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\filling\\silver_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/filling/silver_raw",
+      "type": "create:filling",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\filling\\silver_raw.json"
+    },
+    {
+      "id": "allthecompatibility:create/filling/silver_raw_block",
+      "type": "create:filling",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\filling\\silver_raw_block.json"
+    },
+    {
+      "id": "allthecompatibility:create/filling/tin_crystal",
+      "type": "create:filling",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\filling\\tin_crystal.json"
+    },
+    {
+      "id": "allthecompatibility:create/filling/tin_ore",
+      "type": "create:filling",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\filling\\tin_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/filling/tin_raw",
+      "type": "create:filling",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\filling\\tin_raw.json"
+    },
+    {
+      "id": "allthecompatibility:create/filling/tin_raw_block",
+      "type": "create:filling",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\filling\\tin_raw_block.json"
+    },
+    {
+      "id": "allthecompatibility:create/filling/uranium_crystal",
+      "type": "create:filling",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\filling\\uranium_crystal.json"
+    },
+    {
+      "id": "allthecompatibility:create/filling/uranium_ore",
+      "type": "create:filling",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\filling\\uranium_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/filling/uranium_raw",
+      "type": "create:filling",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\filling\\uranium_raw.json"
+    },
+    {
+      "id": "allthecompatibility:create/filling/uranium_raw_block",
+      "type": "create:filling",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\filling\\uranium_raw_block.json"
+    },
+    {
+      "id": "allthecompatibility:create/filling/zinc_crystal",
+      "type": "create:filling",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\filling\\zinc_crystal.json"
+    },
+    {
+      "id": "allthecompatibility:create/filling/zinc_ore",
+      "type": "create:filling",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\filling\\zinc_ore.json"
+    },
+    {
+      "id": "allthecompatibility:create/filling/zinc_raw",
+      "type": "create:filling",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\filling\\zinc_raw.json"
+    },
+    {
+      "id": "allthecompatibility:create/filling/zinc_raw_block",
+      "type": "create:filling",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\filling\\zinc_raw_block.json"
+    },
+    {
+      "id": "allthecompatibility:create/mixing/brass",
+      "type": "create:mixing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\mixing\\brass.json"
+    },
+    {
+      "id": "allthecompatibility:create/mixing/bronze",
+      "type": "create:mixing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\mixing\\bronze.json"
+    },
+    {
+      "id": "allthecompatibility:create/mixing/constantan",
+      "type": "create:mixing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\mixing\\constantan.json"
+    },
+    {
+      "id": "allthecompatibility:create/mixing/electrum",
+      "type": "create:mixing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\mixing\\electrum.json"
+    },
+    {
+      "id": "allthecompatibility:create/mixing/enderium",
+      "type": "create:mixing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\mixing\\enderium.json"
+    },
+    {
+      "id": "allthecompatibility:create/mixing/invar",
+      "type": "create:mixing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\mixing\\invar.json"
+    },
+    {
+      "id": "allthecompatibility:create/mixing/lumium",
+      "type": "create:mixing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\mixing\\lumium.json"
+    },
+    {
+      "id": "allthecompatibility:create/mixing/signalum",
+      "type": "create:mixing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\mixing\\signalum.json"
+    },
+    {
+      "id": "allthecompatibility:create/mixing/steel",
+      "type": "create:mixing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\mixing\\steel.json"
+    },
+    {
+      "id": "allthecompatibility:create/pressing/aluminum",
+      "type": "create:pressing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\pressing\\aluminum.json"
+    },
+    {
+      "id": "allthecompatibility:create/pressing/brass",
+      "type": "create:pressing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\pressing\\brass.json"
+    },
+    {
+      "id": "allthecompatibility:create/pressing/bronze",
+      "type": "create:pressing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\pressing\\bronze.json"
+    },
+    {
+      "id": "allthecompatibility:create/pressing/constantan",
+      "type": "create:pressing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\pressing\\constantan.json"
+    },
+    {
+      "id": "allthecompatibility:create/pressing/copper",
+      "type": "create:pressing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\pressing\\copper.json"
+    },
+    {
+      "id": "allthecompatibility:create/pressing/diamond",
+      "type": "create:pressing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\pressing\\diamond.json"
+    },
+    {
+      "id": "allthecompatibility:create/pressing/electrum",
+      "type": "create:pressing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\pressing\\electrum.json"
+    },
+    {
+      "id": "allthecompatibility:create/pressing/enderium",
+      "type": "create:pressing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\pressing\\enderium.json"
+    },
+    {
+      "id": "allthecompatibility:create/pressing/gold",
+      "type": "create:pressing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\pressing\\gold.json"
+    },
+    {
+      "id": "allthecompatibility:create/pressing/invar",
+      "type": "create:pressing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\pressing\\invar.json"
+    },
+    {
+      "id": "allthecompatibility:create/pressing/iridium",
+      "type": "create:pressing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\pressing\\iridium.json"
+    },
+    {
+      "id": "allthecompatibility:create/pressing/iron",
+      "type": "create:pressing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\pressing\\iron.json"
+    },
+    {
+      "id": "allthecompatibility:create/pressing/lead",
+      "type": "create:pressing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\pressing\\lead.json"
+    },
+    {
+      "id": "allthecompatibility:create/pressing/lumium",
+      "type": "create:pressing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\pressing\\lumium.json"
+    },
+    {
+      "id": "allthecompatibility:create/pressing/netherite",
+      "type": "create:pressing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\pressing\\netherite.json"
+    },
+    {
+      "id": "allthecompatibility:create/pressing/nickel",
+      "type": "create:pressing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\pressing\\nickel.json"
+    },
+    {
+      "id": "allthecompatibility:create/pressing/osmium",
+      "type": "create:pressing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\pressing\\osmium.json"
+    },
+    {
+      "id": "allthecompatibility:create/pressing/platinum",
+      "type": "create:pressing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\pressing\\platinum.json"
+    },
+    {
+      "id": "allthecompatibility:create/pressing/signalum",
+      "type": "create:pressing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\pressing\\signalum.json"
+    },
+    {
+      "id": "allthecompatibility:create/pressing/silver",
+      "type": "create:pressing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\pressing\\silver.json"
+    },
+    {
+      "id": "allthecompatibility:create/pressing/steel",
+      "type": "create:pressing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\pressing\\steel.json"
+    },
+    {
+      "id": "allthecompatibility:create/pressing/tin",
+      "type": "create:pressing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\pressing\\tin.json"
+    },
+    {
+      "id": "allthecompatibility:create/pressing/uranium",
+      "type": "create:pressing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\pressing\\uranium.json"
+    },
+    {
+      "id": "allthecompatibility:create/pressing/zinc",
+      "type": "create:pressing",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\create\\pressing\\zinc.json"
+    },
+    {
+      "id": "allthecompatibility:modern_industrialization/forge_hammer/raw_metal_to_dust_with_tool/netherite",
+      "type": "modern_industrialization:forge_hammer",
+      "source_jar": "AlltheCompatibility-1.21.1-(v.3.9.0).jar",
+      "target": "kubejs\\data\\allthecompatibility\\recipe\\modern_industrialization\\forge_hammer\\raw_metal_to_dust_with_tool\\netherite.json"
+    },
+    {
+      "id": "chemicalscience:mixing/ceramicwet",
+      "type": "create:mixing",
+      "source_jar": "chemicalscience-1.21.1-3.1.1.jar",
+      "target": "kubejs\\data\\chemicalscience\\recipe\\mixing\\ceramicwet.json"
+    },
+    {
+      "id": "cold_sweat:compat/create/waterskin_filling",
+      "type": "create:filling",
+      "source_jar": "ColdSweat-2.4.jar",
+      "target": "kubejs\\data\\cold_sweat\\recipe\\compat\\create\\waterskin_filling.json"
+    },
+    {
+      "id": "create:crushing/compat/biomeswevegone/ametrine_ore",
+      "type": "create:crushing",
+      "source_jar": "create-1.21.1-6.0.9.jar",
+      "target": "kubejs\\data\\create\\recipe\\crushing\\compat\\biomeswevegone\\ametrine_ore.json"
+    },
+    {
+      "id": "create:crushing/compat/biomeswevegone/anthracite_ore",
+      "type": "create:crushing",
+      "source_jar": "create-1.21.1-6.0.9.jar",
+      "target": "kubejs\\data\\create\\recipe\\crushing\\compat\\biomeswevegone\\anthracite_ore.json"
+    },
+    {
+      "id": "create:crushing/compat/biomeswevegone/blue_nether_gold_ore",
+      "type": "create:crushing",
+      "source_jar": "create-1.21.1-6.0.9.jar",
+      "target": "kubejs\\data\\create\\recipe\\crushing\\compat\\biomeswevegone\\blue_nether_gold_ore.json"
+    },
+    {
+      "id": "create:crushing/compat/biomeswevegone/blue_nether_quartz_ore",
+      "type": "create:crushing",
+      "source_jar": "create-1.21.1-6.0.9.jar",
+      "target": "kubejs\\data\\create\\recipe\\crushing\\compat\\biomeswevegone\\blue_nether_quartz_ore.json"
+    },
+    {
+      "id": "create:crushing/compat/biomeswevegone/brimstone_nether_gold_ore",
+      "type": "create:crushing",
+      "source_jar": "create-1.21.1-6.0.9.jar",
+      "target": "kubejs\\data\\create\\recipe\\crushing\\compat\\biomeswevegone\\brimstone_nether_gold_ore.json"
+    },
+    {
+      "id": "create:crushing/compat/biomeswevegone/brimstone_nether_quartz_ore",
+      "type": "create:crushing",
+      "source_jar": "create-1.21.1-6.0.9.jar",
+      "target": "kubejs\\data\\create\\recipe\\crushing\\compat\\biomeswevegone\\brimstone_nether_quartz_ore.json"
+    },
+    {
+      "id": "create:crushing/compat/biomeswevegone/cryptic_redstone_ore",
+      "type": "create:crushing",
+      "source_jar": "create-1.21.1-6.0.9.jar",
+      "target": "kubejs\\data\\create\\recipe\\crushing\\compat\\biomeswevegone\\cryptic_redstone_ore.json"
+    },
+    {
+      "id": "create:crushing/compat/biomeswevegone/emeraldite_ore",
+      "type": "create:crushing",
+      "source_jar": "create-1.21.1-6.0.9.jar",
+      "target": "kubejs\\data\\create\\recipe\\crushing\\compat\\biomeswevegone\\emeraldite_ore.json"
+    },
+    {
+      "id": "create:crushing/compat/biomeswevegone/lignite_ore",
+      "type": "create:crushing",
+      "source_jar": "create-1.21.1-6.0.9.jar",
+      "target": "kubejs\\data\\create\\recipe\\crushing\\compat\\biomeswevegone\\lignite_ore.json"
+    },
+    {
+      "id": "create:crushing/compat/biomeswevegone/pervaded_netherrack",
+      "type": "create:crushing",
+      "source_jar": "create-1.21.1-6.0.9.jar",
+      "target": "kubejs\\data\\create\\recipe\\crushing\\compat\\biomeswevegone\\pervaded_netherrack.json"
+    },
+    {
+      "id": "create:crushing/gloomslate_coal_ore",
+      "type": "create:crushing",
+      "source_jar": "deeperdarker-neoforge-1.21.1-1.3.5.jar",
+      "target": "kubejs\\data\\create\\recipe\\crushing\\gloomslate_coal_ore.json"
+    },
+    {
+      "id": "create:crushing/gloomslate_copper_ore",
+      "type": "create:crushing",
+      "source_jar": "deeperdarker-neoforge-1.21.1-1.3.5.jar",
+      "target": "kubejs\\data\\create\\recipe\\crushing\\gloomslate_copper_ore.json"
+    },
+    {
+      "id": "create:crushing/gloomslate_diamond_ore",
+      "type": "create:crushing",
+      "source_jar": "deeperdarker-neoforge-1.21.1-1.3.5.jar",
+      "target": "kubejs\\data\\create\\recipe\\crushing\\gloomslate_diamond_ore.json"
+    },
+    {
+      "id": "create:crushing/gloomslate_emerald_ore",
+      "type": "create:crushing",
+      "source_jar": "deeperdarker-neoforge-1.21.1-1.3.5.jar",
+      "target": "kubejs\\data\\create\\recipe\\crushing\\gloomslate_emerald_ore.json"
+    },
+    {
+      "id": "create:crushing/gloomslate_gold_ore",
+      "type": "create:crushing",
+      "source_jar": "deeperdarker-neoforge-1.21.1-1.3.5.jar",
+      "target": "kubejs\\data\\create\\recipe\\crushing\\gloomslate_gold_ore.json"
+    },
+    {
+      "id": "create:crushing/gloomslate_iron_ore",
+      "type": "create:crushing",
+      "source_jar": "deeperdarker-neoforge-1.21.1-1.3.5.jar",
+      "target": "kubejs\\data\\create\\recipe\\crushing\\gloomslate_iron_ore.json"
+    },
+    {
+      "id": "create:crushing/gloomslate_lapis_ore",
+      "type": "create:crushing",
+      "source_jar": "deeperdarker-neoforge-1.21.1-1.3.5.jar",
+      "target": "kubejs\\data\\create\\recipe\\crushing\\gloomslate_lapis_ore.json"
+    },
+    {
+      "id": "create:crushing/gloomslate_redstone_ore",
+      "type": "create:crushing",
+      "source_jar": "deeperdarker-neoforge-1.21.1-1.3.5.jar",
+      "target": "kubejs\\data\\create\\recipe\\crushing\\gloomslate_redstone_ore.json"
+    },
+    {
+      "id": "create:crushing/sculk_stone_coal_ore",
+      "type": "create:crushing",
+      "source_jar": "deeperdarker-neoforge-1.21.1-1.3.5.jar",
+      "target": "kubejs\\data\\create\\recipe\\crushing\\sculk_stone_coal_ore.json"
+    },
+    {
+      "id": "create:crushing/sculk_stone_copper_ore",
+      "type": "create:crushing",
+      "source_jar": "deeperdarker-neoforge-1.21.1-1.3.5.jar",
+      "target": "kubejs\\data\\create\\recipe\\crushing\\sculk_stone_copper_ore.json"
+    },
+    {
+      "id": "create:crushing/sculk_stone_diamond_ore",
+      "type": "create:crushing",
+      "source_jar": "deeperdarker-neoforge-1.21.1-1.3.5.jar",
+      "target": "kubejs\\data\\create\\recipe\\crushing\\sculk_stone_diamond_ore.json"
+    },
+    {
+      "id": "create:crushing/sculk_stone_emerald_ore",
+      "type": "create:crushing",
+      "source_jar": "deeperdarker-neoforge-1.21.1-1.3.5.jar",
+      "target": "kubejs\\data\\create\\recipe\\crushing\\sculk_stone_emerald_ore.json"
+    },
+    {
+      "id": "create:crushing/sculk_stone_gold_ore",
+      "type": "create:crushing",
+      "source_jar": "deeperdarker-neoforge-1.21.1-1.3.5.jar",
+      "target": "kubejs\\data\\create\\recipe\\crushing\\sculk_stone_gold_ore.json"
+    },
+    {
+      "id": "create:crushing/sculk_stone_iron_ore",
+      "type": "create:crushing",
+      "source_jar": "deeperdarker-neoforge-1.21.1-1.3.5.jar",
+      "target": "kubejs\\data\\create\\recipe\\crushing\\sculk_stone_iron_ore.json"
+    },
+    {
+      "id": "create:crushing/sculk_stone_lapis_ore",
+      "type": "create:crushing",
+      "source_jar": "deeperdarker-neoforge-1.21.1-1.3.5.jar",
+      "target": "kubejs\\data\\create\\recipe\\crushing\\sculk_stone_lapis_ore.json"
+    },
+    {
+      "id": "create:crushing/sculk_stone_redstone_ore",
+      "type": "create:crushing",
+      "source_jar": "deeperdarker-neoforge-1.21.1-1.3.5.jar",
+      "target": "kubejs\\data\\create\\recipe\\crushing\\sculk_stone_redstone_ore.json"
+    },
+    {
+      "id": "create:cutting/echo_log",
+      "type": "create:cutting",
+      "source_jar": "deeperdarker-neoforge-1.21.1-1.3.5.jar",
+      "target": "kubejs\\data\\create\\recipe\\cutting\\echo_log.json"
+    },
+    {
+      "id": "create:cutting/echo_wood",
+      "type": "create:cutting",
+      "source_jar": "deeperdarker-neoforge-1.21.1-1.3.5.jar",
+      "target": "kubejs\\data\\create\\recipe\\cutting\\echo_wood.json"
+    },
+    {
+      "id": "create:cutting/stripped_echo_log",
+      "type": "create:cutting",
+      "source_jar": "deeperdarker-neoforge-1.21.1-1.3.5.jar",
+      "target": "kubejs\\data\\create\\recipe\\cutting\\stripped_echo_log.json"
+    },
+    {
+      "id": "create:cutting/stripped_echo_wood",
+      "type": "create:cutting",
+      "source_jar": "deeperdarker-neoforge-1.21.1-1.3.5.jar",
+      "target": "kubejs\\data\\create\\recipe\\cutting\\stripped_echo_wood.json"
+    },
+    {
+      "id": "create:milling/compat/biomeswevegone/compat/biomeswevegone/white_sage",
+      "type": "create:milling",
+      "source_jar": "create-1.21.1-6.0.9.jar",
+      "target": "kubejs\\data\\create\\recipe\\milling\\compat\\biomeswevegone\\compat\\biomeswevegone\\white_sage.json"
+    },
+    {
+      "id": "create:milling/compat/biomeswevegone/compat/biomeswevegone/winter_cyclamen",
+      "type": "create:milling",
+      "source_jar": "create-1.21.1-6.0.9.jar",
+      "target": "kubejs\\data\\create\\recipe\\milling\\compat\\biomeswevegone\\compat\\biomeswevegone\\winter_cyclamen.json"
+    },
+    {
+      "id": "create:milling/compat/biomeswevegone/lolipop_flower",
+      "type": "create:milling",
+      "source_jar": "create-1.21.1-6.0.9.jar",
+      "target": "kubejs\\data\\create\\recipe\\milling\\compat\\biomeswevegone\\lolipop_flower.json"
+    },
+    {
+      "id": "create:milling/compat/biomeswevegone/orchid",
+      "type": "create:milling",
+      "source_jar": "create-1.21.1-6.0.9.jar",
+      "target": "kubejs\\data\\create\\recipe\\milling\\compat\\biomeswevegone\\orchid.json"
+    },
+    {
+      "id": "create:milling/compat/biomeswevegone/purple_rose",
+      "type": "create:milling",
+      "source_jar": "create-1.21.1-6.0.9.jar",
+      "target": "kubejs\\data\\create\\recipe\\milling\\compat\\biomeswevegone\\purple_rose.json"
+    },
+    {
+      "id": "create:milling/compat/biomeswevegone/torch_ginger",
+      "type": "create:milling",
+      "source_jar": "create-1.21.1-6.0.9.jar",
+      "target": "kubejs\\data\\create\\recipe\\milling\\compat\\biomeswevegone\\torch_ginger.json"
+    },
+    {
+      "id": "create:pressing/compat/biomeswevegone/lush_grass_path",
+      "type": "create:pressing",
+      "source_jar": "create-1.21.1-6.0.9.jar",
+      "target": "kubejs\\data\\create\\recipe\\pressing\\compat\\biomeswevegone\\lush_grass_path.json"
+    },
+    {
+      "id": "create_confectionery:bar_of_black_chocolate_recipe",
+      "type": "create:compacting",
+      "source_jar": "create-confectionery1.21.1_v1.1.2.jar",
+      "target": "kubejs\\data\\create_confectionery\\recipe\\bar_of_black_chocolate_recipe.json"
+    },
+    {
+      "id": "create_confectionery:bar_of_caramel_recipe",
+      "type": "create:compacting",
+      "source_jar": "create-confectionery1.21.1_v1.1.2.jar",
+      "target": "kubejs\\data\\create_confectionery\\recipe\\bar_of_caramel_recipe.json"
+    },
+    {
+      "id": "create_confectionery:bar_of_ruby_chocolate_recipe",
+      "type": "create:compacting",
+      "source_jar": "create-confectionery1.21.1_v1.1.2.jar",
+      "target": "kubejs\\data\\create_confectionery\\recipe\\bar_of_ruby_chocolate_recipe.json"
+    },
+    {
+      "id": "create_confectionery:bar_of_white_chocolate_recipe",
+      "type": "create:compacting",
+      "source_jar": "create-confectionery1.21.1_v1.1.2.jar",
+      "target": "kubejs\\data\\create_confectionery\\recipe\\bar_of_white_chocolate_recipe.json"
+    },
+    {
+      "id": "create_confectionery:black_chocolate_candy_1_recipe",
+      "type": "create:filling",
+      "source_jar": "create-confectionery1.21.1_v1.1.2.jar",
+      "target": "kubejs\\data\\create_confectionery\\recipe\\black_chocolate_candy_1_recipe.json"
+    },
+    {
+      "id": "create_confectionery:black_chocolate_candy_2_recipe",
+      "type": "create:filling",
+      "source_jar": "create-confectionery1.21.1_v1.1.2.jar",
+      "target": "kubejs\\data\\create_confectionery\\recipe\\black_chocolate_candy_2_recipe.json"
+    },
+    {
+      "id": "create_confectionery:black_chocolate_candy_3_recipe",
+      "type": "create:filling",
+      "source_jar": "create-confectionery1.21.1_v1.1.2.jar",
+      "target": "kubejs\\data\\create_confectionery\\recipe\\black_chocolate_candy_3_recipe.json"
+    },
+    {
+      "id": "create_confectionery:black_chocolate_candy_recipe",
+      "type": "create:filling",
+      "source_jar": "create-confectionery1.21.1_v1.1.2.jar",
+      "target": "kubejs\\data\\create_confectionery\\recipe\\black_chocolate_candy_recipe.json"
+    },
+    {
+      "id": "create_confectionery:black_chocolate_emptying",
+      "type": "create:emptying",
+      "source_jar": "create-confectionery1.21.1_v1.1.2.jar",
+      "target": "kubejs\\data\\create_confectionery\\recipe\\black_chocolate_emptying.json"
+    },
+    {
+      "id": "create_confectionery:black_chocolate_glazed_berries_recipe",
+      "type": "create:filling",
+      "source_jar": "create-confectionery1.21.1_v1.1.2.jar",
+      "target": "kubejs\\data\\create_confectionery\\recipe\\black_chocolate_glazed_berries_recipe.json"
+    },
+    {
+      "id": "create_confectionery:black_chocolate_glazed_marshmallow_recipe",
+      "type": "create:filling",
+      "source_jar": "create-confectionery1.21.1_v1.1.2.jar",
+      "target": "kubejs\\data\\create_confectionery\\recipe\\black_chocolate_glazed_marshmallow_recipe.json"
+    },
+    {
+      "id": "create_confectionery:black_chocolate_recipe",
+      "type": "create:mixing",
+      "source_jar": "create-confectionery1.21.1_v1.1.2.jar",
+      "target": "kubejs\\data\\create_confectionery\\recipe\\black_chocolate_recipe.json"
+    },
+    {
+      "id": "create_confectionery:candy_cane_recipe",
+      "type": "create:mixing",
+      "source_jar": "create-confectionery1.21.1_v1.1.2.jar",
+      "target": "kubejs\\data\\create_confectionery\\recipe\\candy_cane_recipe.json"
+    },
+    {
+      "id": "create_confectionery:caramel_emptying",
+      "type": "create:emptying",
+      "source_jar": "create-confectionery1.21.1_v1.1.2.jar",
+      "target": "kubejs\\data\\create_confectionery\\recipe\\caramel_emptying.json"
+    },
+    {
+      "id": "create_confectionery:caramel_glazed_berries_recipe",
+      "type": "create:filling",
+      "source_jar": "create-confectionery1.21.1_v1.1.2.jar",
+      "target": "kubejs\\data\\create_confectionery\\recipe\\caramel_glazed_berries_recipe.json"
+    },
+    {
+      "id": "create_confectionery:caramel_recipe",
+      "type": "create:mixing",
+      "source_jar": "create-confectionery1.21.1_v1.1.2.jar",
+      "target": "kubejs\\data\\create_confectionery\\recipe\\caramel_recipe.json"
+    },
+    {
+      "id": "create_confectionery:chocolate_candy_1_recipe",
+      "type": "create:filling",
+      "source_jar": "create-confectionery1.21.1_v1.1.2.jar",
+      "target": "kubejs\\data\\create_confectionery\\recipe\\chocolate_candy_1_recipe.json"
+    },
+    {
+      "id": "create_confectionery:chocolate_candy_2_recipe",
+      "type": "create:filling",
+      "source_jar": "create-confectionery1.21.1_v1.1.2.jar",
+      "target": "kubejs\\data\\create_confectionery\\recipe\\chocolate_candy_2_recipe.json"
+    },
+    {
+      "id": "create_confectionery:chocolate_candy_3_recipe",
+      "type": "create:filling",
+      "source_jar": "create-confectionery1.21.1_v1.1.2.jar",
+      "target": "kubejs\\data\\create_confectionery\\recipe\\chocolate_candy_3_recipe.json"
+    },
+    {
+      "id": "create_confectionery:chocolate_candy_recipe",
+      "type": "create:filling",
+      "source_jar": "create-confectionery1.21.1_v1.1.2.jar",
+      "target": "kubejs\\data\\create_confectionery\\recipe\\chocolate_candy_recipe.json"
+    },
+    {
+      "id": "create_confectionery:chocolate_glazed_marshmallow_recipe",
+      "type": "create:filling",
+      "source_jar": "create-confectionery1.21.1_v1.1.2.jar",
+      "target": "kubejs\\data\\create_confectionery\\recipe\\chocolate_glazed_marshmallow_recipe.json"
+    },
+    {
+      "id": "create_confectionery:cocoa_powder_and_butter_recipe",
+      "type": "create:crushing",
+      "source_jar": "create-confectionery1.21.1_v1.1.2.jar",
+      "target": "kubejs\\data\\create_confectionery\\recipe\\cocoa_powder_and_butter_recipe.json"
+    },
+    {
+      "id": "create_confectionery:crushed_cocoa_recipe",
+      "type": "create:pressing",
+      "source_jar": "create-confectionery1.21.1_v1.1.2.jar",
+      "target": "kubejs\\data\\create_confectionery\\recipe\\crushed_cocoa_recipe.json"
+    },
+    {
+      "id": "create_confectionery:gingerbread_man_recipe",
+      "type": "create:pressing",
+      "source_jar": "create-confectionery1.21.1_v1.1.2.jar",
+      "target": "kubejs\\data\\create_confectionery\\recipe\\gingerbread_man_recipe.json"
+    },
+    {
+      "id": "create_confectionery:gingerdough_recipe",
+      "type": "create:mixing",
+      "source_jar": "create-confectionery1.21.1_v1.1.2.jar",
+      "target": "kubejs\\data\\create_confectionery\\recipe\\gingerdough_recipe.json"
+    },
+    {
+      "id": "create_confectionery:honey_candy_recipe",
+      "type": "create:mixing",
+      "source_jar": "create-confectionery1.21.1_v1.1.2.jar",
+      "target": "kubejs\\data\\create_confectionery\\recipe\\honey_candy_recipe.json"
+    },
+    {
+      "id": "create_confectionery:hot_chocolate_bottle_recipe",
+      "type": "create:filling",
+      "source_jar": "create-confectionery1.21.1_v1.1.2.jar",
+      "target": "kubejs\\data\\create_confectionery\\recipe\\hot_chocolate_bottle_recipe.json"
+    },
+    {
+      "id": "create_confectionery:hot_chocolate_drain",
+      "type": "create:emptying",
+      "source_jar": "create-confectionery1.21.1_v1.1.2.jar",
+      "target": "kubejs\\data\\create_confectionery\\recipe\\hot_chocolate_drain.json"
+    },
+    {
+      "id": "create_confectionery:hot_chocolate_recipe",
+      "type": "create:mixing",
+      "source_jar": "create-confectionery1.21.1_v1.1.2.jar",
+      "target": "kubejs\\data\\create_confectionery\\recipe\\hot_chocolate_recipe.json"
+    },
+    {
+      "id": "create_confectionery:marshmallow_recipe",
+      "type": "create:mixing",
+      "source_jar": "create-confectionery1.21.1_v1.1.2.jar",
+      "target": "kubejs\\data\\create_confectionery\\recipe\\marshmallow_recipe.json"
+    },
+    {
+      "id": "create_confectionery:ruby_chocolate_candy_1_recipe",
+      "type": "create:filling",
+      "source_jar": "create-confectionery1.21.1_v1.1.2.jar",
+      "target": "kubejs\\data\\create_confectionery\\recipe\\ruby_chocolate_candy_1_recipe.json"
+    },
+    {
+      "id": "create_confectionery:ruby_chocolate_candy_2_recipe",
+      "type": "create:filling",
+      "source_jar": "create-confectionery1.21.1_v1.1.2.jar",
+      "target": "kubejs\\data\\create_confectionery\\recipe\\ruby_chocolate_candy_2_recipe.json"
+    },
+    {
+      "id": "create_confectionery:ruby_chocolate_candy_3_recipe",
+      "type": "create:filling",
+      "source_jar": "create-confectionery1.21.1_v1.1.2.jar",
+      "target": "kubejs\\data\\create_confectionery\\recipe\\ruby_chocolate_candy_3_recipe.json"
+    },
+    {
+      "id": "create_confectionery:ruby_chocolate_candy_recipe",
+      "type": "create:filling",
+      "source_jar": "create-confectionery1.21.1_v1.1.2.jar",
+      "target": "kubejs\\data\\create_confectionery\\recipe\\ruby_chocolate_candy_recipe.json"
+    },
+    {
+      "id": "create_confectionery:ruby_chocolate_emptying",
+      "type": "create:emptying",
+      "source_jar": "create-confectionery1.21.1_v1.1.2.jar",
+      "target": "kubejs\\data\\create_confectionery\\recipe\\ruby_chocolate_emptying.json"
+    },
+    {
+      "id": "create_confectionery:ruby_chocolate_glazed_berries_recipe",
+      "type": "create:filling",
+      "source_jar": "create-confectionery1.21.1_v1.1.2.jar",
+      "target": "kubejs\\data\\create_confectionery\\recipe\\ruby_chocolate_glazed_berries_recipe.json"
+    },
+    {
+      "id": "create_confectionery:ruby_chocolate_glazed_marshmallow_recipe",
+      "type": "create:filling",
+      "source_jar": "create-confectionery1.21.1_v1.1.2.jar",
+      "target": "kubejs\\data\\create_confectionery\\recipe\\ruby_chocolate_glazed_marshmallow_recipe.json"
+    },
+    {
+      "id": "create_confectionery:ruby_chocolate_recipe",
+      "type": "create:mixing",
+      "source_jar": "create-confectionery1.21.1_v1.1.2.jar",
+      "target": "kubejs\\data\\create_confectionery\\recipe\\ruby_chocolate_recipe.json"
+    },
+    {
+      "id": "create_confectionery:white_chocolate_candy_1_recipe",
+      "type": "create:filling",
+      "source_jar": "create-confectionery1.21.1_v1.1.2.jar",
+      "target": "kubejs\\data\\create_confectionery\\recipe\\white_chocolate_candy_1_recipe.json"
+    },
+    {
+      "id": "create_confectionery:white_chocolate_candy_2_recipe",
+      "type": "create:filling",
+      "source_jar": "create-confectionery1.21.1_v1.1.2.jar",
+      "target": "kubejs\\data\\create_confectionery\\recipe\\white_chocolate_candy_2_recipe.json"
+    },
+    {
+      "id": "create_confectionery:white_chocolate_candy_3_recipe",
+      "type": "create:filling",
+      "source_jar": "create-confectionery1.21.1_v1.1.2.jar",
+      "target": "kubejs\\data\\create_confectionery\\recipe\\white_chocolate_candy_3_recipe.json"
+    },
+    {
+      "id": "create_confectionery:white_chocolate_candy_recipe",
+      "type": "create:filling",
+      "source_jar": "create-confectionery1.21.1_v1.1.2.jar",
+      "target": "kubejs\\data\\create_confectionery\\recipe\\white_chocolate_candy_recipe.json"
+    },
+    {
+      "id": "create_confectionery:white_chocolate_emptying",
+      "type": "create:emptying",
+      "source_jar": "create-confectionery1.21.1_v1.1.2.jar",
+      "target": "kubejs\\data\\create_confectionery\\recipe\\white_chocolate_emptying.json"
+    },
+    {
+      "id": "create_confectionery:white_chocolate_glazed_berries_recipe",
+      "type": "create:filling",
+      "source_jar": "create-confectionery1.21.1_v1.1.2.jar",
+      "target": "kubejs\\data\\create_confectionery\\recipe\\white_chocolate_glazed_berries_recipe.json"
+    },
+    {
+      "id": "create_confectionery:white_chocolate_glazed_marshmallow_recipe",
+      "type": "create:filling",
+      "source_jar": "create-confectionery1.21.1_v1.1.2.jar",
+      "target": "kubejs\\data\\create_confectionery\\recipe\\white_chocolate_glazed_marshmallow_recipe.json"
+    },
+    {
+      "id": "create_confectionery:white_chocolate_recipe",
+      "type": "create:mixing",
+      "source_jar": "create-confectionery1.21.1_v1.1.2.jar",
+      "target": "kubejs\\data\\create_confectionery\\recipe\\white_chocolate_recipe.json"
+    },
+    {
+      "id": "create_sa:blazing_axe_recipe",
+      "type": "create:mixing",
+      "source_jar": "create-stuff-additions1.21.1_v2.1.0e.jar",
+      "target": "kubejs\\data\\create_sa\\recipe\\blazing_axe_recipe.json"
+    },
+    {
+      "id": "create_sa:blazing_pickaxe_recipe",
+      "type": "create:mixing",
+      "source_jar": "create-stuff-additions1.21.1_v2.1.0e.jar",
+      "target": "kubejs\\data\\create_sa\\recipe\\blazing_pickaxe_recipe.json"
+    },
+    {
+      "id": "create_sa:blazing_shovel_recipe",
+      "type": "create:mixing",
+      "source_jar": "create-stuff-additions1.21.1_v2.1.0e.jar",
+      "target": "kubejs\\data\\create_sa\\recipe\\blazing_shovel_recipe.json"
+    },
+    {
+      "id": "create_sa:blazing_sword_recipe",
+      "type": "create:mixing",
+      "source_jar": "create-stuff-additions1.21.1_v2.1.0e.jar",
+      "target": "kubejs\\data\\create_sa\\recipe\\blazing_sword_recipe.json"
+    },
+    {
+      "id": "create_sa:book_and_quill_haunting",
+      "type": "create:haunting",
+      "source_jar": "create-stuff-additions1.21.1_v2.1.0e.jar",
+      "target": "kubejs\\data\\create_sa\\recipe\\book_and_quill_haunting.json"
+    },
+    {
+      "id": "create_sa:brain_tube_coral_revive",
+      "type": "create:filling",
+      "source_jar": "create-stuff-additions1.21.1_v2.1.0e.jar",
+      "target": "kubejs\\data\\create_sa\\recipe\\brain_tube_coral_revive.json"
+    },
+    {
+      "id": "create_sa:dead_bubble_coral_revive",
+      "type": "create:filling",
+      "source_jar": "create-stuff-additions1.21.1_v2.1.0e.jar",
+      "target": "kubejs\\data\\create_sa\\recipe\\dead_bubble_coral_revive.json"
+    },
+    {
+      "id": "create_sa:dead_fire_coral_revive",
+      "type": "create:filling",
+      "source_jar": "create-stuff-additions1.21.1_v2.1.0e.jar",
+      "target": "kubejs\\data\\create_sa\\recipe\\dead_fire_coral_revive.json"
+    },
+    {
+      "id": "create_sa:dead_horn_coral_revive",
+      "type": "create:filling",
+      "source_jar": "create-stuff-additions1.21.1_v2.1.0e.jar",
+      "target": "kubejs\\data\\create_sa\\recipe\\dead_horn_coral_revive.json"
+    },
+    {
+      "id": "create_sa:dead_tube_coral_revive",
+      "type": "create:filling",
+      "source_jar": "create-stuff-additions1.21.1_v2.1.0e.jar",
+      "target": "kubejs\\data\\create_sa\\recipe\\dead_tube_coral_revive.json"
+    },
+    {
+      "id": "create_sa:deepslate_pressing_recipe",
+      "type": "create:compacting",
+      "source_jar": "create-stuff-additions1.21.1_v2.1.0e.jar",
+      "target": "kubejs\\data\\create_sa\\recipe\\deepslate_pressing_recipe.json"
+    },
+    {
+      "id": "create_sa:heat_engine_recipe",
+      "type": "create:sequenced_assembly",
+      "source_jar": "create-stuff-additions1.21.1_v2.1.0e.jar",
+      "target": "kubejs\\data\\create_sa\\recipe\\heat_engine_recipe.json"
+    },
+    {
+      "id": "create_sa:hydraulic_engine_recipe",
+      "type": "create:sequenced_assembly",
+      "source_jar": "create-stuff-additions1.21.1_v2.1.0e.jar",
+      "target": "kubejs\\data\\create_sa\\recipe\\hydraulic_engine_recipe.json"
+    },
+    {
+      "id": "create_sa:incomplete_book_recipe",
+      "type": "create:sequenced_assembly",
+      "source_jar": "create-stuff-additions1.21.1_v2.1.0e.jar",
+      "target": "kubejs\\data\\create_sa\\recipe\\incomplete_book_recipe.json"
+    },
+    {
+      "id": "create_sa:incomplete_web_recipe",
+      "type": "create:sequenced_assembly",
+      "source_jar": "create-stuff-additions1.21.1_v2.1.0e.jar",
+      "target": "kubejs\\data\\create_sa\\recipe\\incomplete_web_recipe.json"
+    },
+    {
+      "id": "create_sa:iron_boots_haunting",
+      "type": "create:haunting",
+      "source_jar": "create-stuff-additions1.21.1_v2.1.0e.jar",
+      "target": "kubejs\\data\\create_sa\\recipe\\iron_boots_haunting.json"
+    },
+    {
+      "id": "create_sa:iron_chestplate_haunting",
+      "type": "create:haunting",
+      "source_jar": "create-stuff-additions1.21.1_v2.1.0e.jar",
+      "target": "kubejs\\data\\create_sa\\recipe\\iron_chestplate_haunting.json"
+    },
+    {
+      "id": "create_sa:iron_helmet_haunting",
+      "type": "create:haunting",
+      "source_jar": "create-stuff-additions1.21.1_v2.1.0e.jar",
+      "target": "kubejs\\data\\create_sa\\recipe\\iron_helmet_haunting.json"
+    },
+    {
+      "id": "create_sa:iron_leggings_haunting",
+      "type": "create:haunting",
+      "source_jar": "create-stuff-additions1.21.1_v2.1.0e.jar",
+      "target": "kubejs\\data\\create_sa\\recipe\\iron_leggings_haunting.json"
+    },
+    {
+      "id": "create_sa:magma_cream_recipe",
+      "type": "create:mixing",
+      "source_jar": "create-stuff-additions1.21.1_v2.1.0e.jar",
+      "target": "kubejs\\data\\create_sa\\recipe\\magma_cream_recipe.json"
+    },
+    {
+      "id": "create_sa:netherrack_recipe",
+      "type": "create:filling",
+      "source_jar": "create-stuff-additions1.21.1_v2.1.0e.jar",
+      "target": "kubejs\\data\\create_sa\\recipe\\netherrack_recipe.json"
+    },
+    {
+      "id": "create_sa:obsidian_haunting",
+      "type": "create:haunting",
+      "source_jar": "create-stuff-additions1.21.1_v2.1.0e.jar",
+      "target": "kubejs\\data\\create_sa\\recipe\\obsidian_haunting.json"
+    },
+    {
+      "id": "create_sa:quartz_gem_crushing",
+      "type": "create:crushing",
+      "source_jar": "create-stuff-additions1.21.1_v2.1.0e.jar",
+      "target": "kubejs\\data\\create_sa\\recipe\\quartz_gem_crushing.json"
+    },
+    {
+      "id": "create_sa:sponge_filling",
+      "type": "create:filling",
+      "source_jar": "create-stuff-additions1.21.1_v2.1.0e.jar",
+      "target": "kubejs\\data\\create_sa\\recipe\\sponge_filling.json"
+    },
+    {
+      "id": "create_sa:steam_engine_recipe",
+      "type": "create:sequenced_assembly",
+      "source_jar": "create-stuff-additions1.21.1_v2.1.0e.jar",
+      "target": "kubejs\\data\\create_sa\\recipe\\steam_engine_recipe.json"
+    },
+    {
+      "id": "create_shimmer:compacting/shimmer_block",
+      "type": "create:compacting",
+      "source_jar": "create-shimmer-1.2.8.jar",
+      "target": "kubejs\\data\\create_shimmer\\recipe\\compacting\\shimmer_block.json"
+    },
+    {
+      "id": "create_shimmer:filling/charm_of_shimmer_1",
+      "type": "create:filling",
+      "source_jar": "create-shimmer-1.2.8.jar",
+      "target": "kubejs\\data\\create_shimmer\\recipe\\filling\\charm_of_shimmer_1.json"
+    },
+    {
+      "id": "create_shimmer:filling/crying_obsidian",
+      "type": "create:filling",
+      "source_jar": "create-shimmer-1.2.8.jar",
+      "target": "kubejs\\data\\create_shimmer\\recipe\\filling\\crying_obsidian.json"
+    },
+    {
+      "id": "create_shimmer:filling/fiery_ingot",
+      "type": "create:filling",
+      "source_jar": "create-shimmer-1.2.8.jar",
+      "target": "kubejs\\data\\create_shimmer\\recipe\\filling\\fiery_ingot.json"
+    },
+    {
+      "id": "create_shimmer:filling/fiery_tears_item",
+      "type": "create:filling",
+      "source_jar": "create-shimmer-1.2.8.jar",
+      "target": "kubejs\\data\\create_shimmer\\recipe\\filling\\fiery_tears_item.json"
+    },
+    {
+      "id": "create_shimmer:filling/magic_map_focus",
+      "type": "create:filling",
+      "source_jar": "create-shimmer-1.2.8.jar",
+      "target": "kubejs\\data\\create_shimmer\\recipe\\filling\\magic_map_focus.json"
+    },
+    {
+      "id": "create_shimmer:filling/magic_soil",
+      "type": "create:filling",
+      "source_jar": "create-shimmer-1.2.8.jar",
+      "target": "kubejs\\data\\create_shimmer\\recipe\\filling\\magic_soil.json"
+    },
+    {
+      "id": "create_shimmer:filling/shimmer_reagent",
+      "type": "create:filling",
+      "source_jar": "create-shimmer-1.2.8.jar",
+      "target": "kubejs\\data\\create_shimmer\\recipe\\filling\\shimmer_reagent.json"
+    },
+    {
+      "id": "create_shimmer:filling/spectral_arrow",
+      "type": "create:filling",
+      "source_jar": "create-shimmer-1.2.8.jar",
+      "target": "kubejs\\data\\create_shimmer\\recipe\\filling\\spectral_arrow.json"
+    },
+    {
+      "id": "create_shimmer:filling/tall_twilight_oak_sapling",
+      "type": "create:filling",
+      "source_jar": "create-shimmer-1.2.8.jar",
+      "target": "kubejs\\data\\create_shimmer\\recipe\\filling\\tall_twilight_oak_sapling.json"
+    },
+    {
+      "id": "create_shimmer:mixing/fiery_tear_from_carminite",
+      "type": "create:mixing",
+      "source_jar": "create-shimmer-1.2.8.jar",
+      "target": "kubejs\\data\\create_shimmer\\recipe\\mixing\\fiery_tear_from_carminite.json"
+    },
+    {
+      "id": "create_shimmer:mixing/raw_knightmetal",
+      "type": "create:mixing",
+      "source_jar": "create-shimmer-1.2.8.jar",
+      "target": "kubejs\\data\\create_shimmer\\recipe\\mixing\\raw_knightmetal.json"
+    },
+    {
+      "id": "create_shimmer:mixing/shimmer_from_experience",
+      "type": "create:mixing",
+      "source_jar": "create-shimmer-1.2.8.jar",
+      "target": "kubejs\\data\\create_shimmer\\recipe\\mixing\\shimmer_from_experience.json"
+    },
+    {
+      "id": "create_shimmer:smithing/blaze_uncrafter",
+      "type": "minecraft:smithing_transform",
+      "source_jar": "create-shimmer-1.2.8.jar",
+      "target": "kubejs\\data\\create_shimmer\\recipe\\smithing\\blaze_uncrafter.json"
+    },
+    {
+      "id": "create_ultimate_factory:compacting_asurine",
+      "type": "create:compacting",
+      "source_jar": "create_ultimate_factory-2.2.3-neoforge-1.21.1.jar",
+      "target": "kubejs\\data\\create_ultimate_factory\\recipe\\compacting_asurine.json"
+    },
+    {
+      "id": "create_ultimate_factory:compacting_coalblock",
+      "type": "create:compacting",
+      "source_jar": "create_ultimate_factory-2.2.3-neoforge-1.21.1.jar",
+      "target": "kubejs\\data\\create_ultimate_factory\\recipe\\compacting_coalblock.json"
+    },
+    {
+      "id": "create_ultimate_factory:compacting_crimsite",
+      "type": "create:compacting",
+      "source_jar": "create_ultimate_factory-2.2.3-neoforge-1.21.1.jar",
+      "target": "kubejs\\data\\create_ultimate_factory\\recipe\\compacting_crimsite.json"
+    },
+    {
+      "id": "create_ultimate_factory:compacting_deepslate",
+      "type": "create:compacting",
+      "source_jar": "create_ultimate_factory-2.2.3-neoforge-1.21.1.jar",
+      "target": "kubejs\\data\\create_ultimate_factory\\recipe\\compacting_deepslate.json"
+    },
+    {
+      "id": "create_ultimate_factory:compacting_ochrum",
+      "type": "create:compacting",
+      "source_jar": "create_ultimate_factory-2.2.3-neoforge-1.21.1.jar",
+      "target": "kubejs\\data\\create_ultimate_factory\\recipe\\compacting_ochrum.json"
+    },
+    {
+      "id": "create_ultimate_factory:compacting_tuff",
+      "type": "create:compacting",
+      "source_jar": "create_ultimate_factory-2.2.3-neoforge-1.21.1.jar",
+      "target": "kubejs\\data\\create_ultimate_factory\\recipe\\compacting_tuff.json"
+    },
+    {
+      "id": "create_ultimate_factory:compacting_veridium",
+      "type": "create:compacting",
+      "source_jar": "create_ultimate_factory-2.2.3-neoforge-1.21.1.jar",
+      "target": "kubejs\\data\\create_ultimate_factory\\recipe\\compacting_veridium.json"
+    },
+    {
+      "id": "create_ultimate_factory:mixing_dripstone",
+      "type": "create:mixing",
+      "source_jar": "create_ultimate_factory-2.2.3-neoforge-1.21.1.jar",
+      "target": "kubejs\\data\\create_ultimate_factory\\recipe\\mixing_dripstone.json"
+    },
+    {
+      "id": "create_ultimate_factory:mixing_redstone",
+      "type": "create:mixing",
+      "source_jar": "create_ultimate_factory-2.2.3-neoforge-1.21.1.jar",
+      "target": "kubejs\\data\\create_ultimate_factory\\recipe\\mixing_redstone.json"
+    },
+    {
+      "id": "create_ultimate_factory:splashing_magma_cream",
+      "type": "create:splashing",
+      "source_jar": "create_ultimate_factory-2.2.3-neoforge-1.21.1.jar",
+      "target": "kubejs\\data\\create_ultimate_factory\\recipe\\splashing_magma_cream.json"
+    },
+    {
+      "id": "createaddition:filling/cake",
+      "type": "create:filling",
+      "source_jar": "createaddition-1.5.10.jar",
+      "target": "kubejs\\data\\createaddition\\recipe\\filling\\cake.json"
+    },
+    {
+      "id": "createaddition:filling/chocolate_cake",
+      "type": "create:filling",
+      "source_jar": "createaddition-1.5.10.jar",
+      "target": "kubejs\\data\\createaddition\\recipe\\filling\\chocolate_cake.json"
+    },
+    {
+      "id": "createaddition:filling/honey_cake",
+      "type": "create:filling",
+      "source_jar": "createaddition-1.5.10.jar",
+      "target": "kubejs\\data\\createaddition\\recipe\\filling\\honey_cake.json"
+    },
+    {
+      "id": "createaddition:mixing/biomass_from_crops",
+      "type": "create:mixing",
+      "source_jar": "createaddition-1.5.10.jar",
+      "target": "kubejs\\data\\createaddition\\recipe\\mixing\\biomass_from_crops.json"
+    },
+    {
+      "id": "createaddition:mixing/biomass_from_flowers",
+      "type": "create:mixing",
+      "source_jar": "createaddition-1.5.10.jar",
+      "target": "kubejs\\data\\createaddition\\recipe\\mixing\\biomass_from_flowers.json"
+    },
+    {
+      "id": "createaddition:mixing/biomass_from_honeycomb",
+      "type": "create:mixing",
+      "source_jar": "createaddition-1.5.10.jar",
+      "target": "kubejs\\data\\createaddition\\recipe\\mixing\\biomass_from_honeycomb.json"
+    },
+    {
+      "id": "createaddition:mixing/biomass_from_leaves",
+      "type": "create:mixing",
+      "source_jar": "createaddition-1.5.10.jar",
+      "target": "kubejs\\data\\createaddition\\recipe\\mixing\\biomass_from_leaves.json"
+    },
+    {
+      "id": "createaddition:mixing/biomass_from_plant_foods",
+      "type": "create:mixing",
+      "source_jar": "createaddition-1.5.10.jar",
+      "target": "kubejs\\data\\createaddition\\recipe\\mixing\\biomass_from_plant_foods.json"
+    },
+    {
+      "id": "createaddition:mixing/biomass_from_plants",
+      "type": "create:mixing",
+      "source_jar": "createaddition-1.5.10.jar",
+      "target": "kubejs\\data\\createaddition\\recipe\\mixing\\biomass_from_plants.json"
+    },
+    {
+      "id": "createaddition:mixing/biomass_from_saplings",
+      "type": "create:mixing",
+      "source_jar": "createaddition-1.5.10.jar",
+      "target": "kubejs\\data\\createaddition\\recipe\\mixing\\biomass_from_saplings.json"
+    },
+    {
+      "id": "createaddition:mixing/biomass_from_stricks",
+      "type": "create:mixing",
+      "source_jar": "createaddition-1.5.10.jar",
+      "target": "kubejs\\data\\createaddition\\recipe\\mixing\\biomass_from_stricks.json"
+    },
+    {
+      "id": "createaddition:mixing/netherrack",
+      "type": "create:mixing",
+      "source_jar": "createaddition-1.5.10.jar",
+      "target": "kubejs\\data\\createaddition\\recipe\\mixing\\netherrack.json"
+    },
+    {
+      "id": "createdeco:placard",
+      "type": "minecraft:crafting_shapeless",
+      "source_jar": "createdeco-2.1.2.jar",
+      "target": "kubejs\\data\\createdeco\\recipe\\placard.json"
+    },
+    {
+      "id": "createdeco:pressing/netherite_sheet",
+      "type": "create:pressing",
+      "source_jar": "createdeco-2.1.2.jar",
+      "target": "kubejs\\data\\createdeco\\recipe\\pressing\\netherite_sheet.json"
+    },
+    {
+      "id": "createdieselgenerators:mixing/asphalt_block",
+      "type": "create:mixing",
+      "source_jar": "createdieselgenerators-1.21.1-1.3.11.jar",
+      "target": "kubejs\\data\\createdieselgenerators\\recipe\\mixing\\asphalt_block.json"
+    },
+    {
+      "id": "createdieselgenerators:mixing/biodiesel",
+      "type": "create:mixing",
+      "source_jar": "createdieselgenerators-1.21.1-1.3.11.jar",
+      "target": "kubejs\\data\\createdieselgenerators\\recipe\\mixing\\biodiesel.json"
+    },
+    {
+      "id": "createdieselgenerators:mixing/black_concrete",
+      "type": "create:mixing",
+      "source_jar": "createdieselgenerators-1.21.1-1.3.11.jar",
+      "target": "kubejs\\data\\createdieselgenerators\\recipe\\mixing\\black_concrete.json"
+    },
+    {
+      "id": "createdieselgenerators:mixing/blue_concrete",
+      "type": "create:mixing",
+      "source_jar": "createdieselgenerators-1.21.1-1.3.11.jar",
+      "target": "kubejs\\data\\createdieselgenerators\\recipe\\mixing\\blue_concrete.json"
+    },
+    {
+      "id": "createdieselgenerators:mixing/brown_concrete",
+      "type": "create:mixing",
+      "source_jar": "createdieselgenerators-1.21.1-1.3.11.jar",
+      "target": "kubejs\\data\\createdieselgenerators\\recipe\\mixing\\brown_concrete.json"
+    },
+    {
+      "id": "createdieselgenerators:mixing/cyan_concrete",
+      "type": "create:mixing",
+      "source_jar": "createdieselgenerators-1.21.1-1.3.11.jar",
+      "target": "kubejs\\data\\createdieselgenerators\\recipe\\mixing\\cyan_concrete.json"
+    },
+    {
+      "id": "createdieselgenerators:mixing/gray_concrete",
+      "type": "create:mixing",
+      "source_jar": "createdieselgenerators-1.21.1-1.3.11.jar",
+      "target": "kubejs\\data\\createdieselgenerators\\recipe\\mixing\\gray_concrete.json"
+    },
+    {
+      "id": "createdieselgenerators:mixing/green_concrete",
+      "type": "create:mixing",
+      "source_jar": "createdieselgenerators-1.21.1-1.3.11.jar",
+      "target": "kubejs\\data\\createdieselgenerators\\recipe\\mixing\\green_concrete.json"
+    },
+    {
+      "id": "createdieselgenerators:mixing/light_blue_concrete",
+      "type": "create:mixing",
+      "source_jar": "createdieselgenerators-1.21.1-1.3.11.jar",
+      "target": "kubejs\\data\\createdieselgenerators\\recipe\\mixing\\light_blue_concrete.json"
+    },
+    {
+      "id": "createdieselgenerators:mixing/light_gray_concrete",
+      "type": "create:mixing",
+      "source_jar": "createdieselgenerators-1.21.1-1.3.11.jar",
+      "target": "kubejs\\data\\createdieselgenerators\\recipe\\mixing\\light_gray_concrete.json"
+    },
+    {
+      "id": "createdieselgenerators:mixing/lime_concrete",
+      "type": "create:mixing",
+      "source_jar": "createdieselgenerators-1.21.1-1.3.11.jar",
+      "target": "kubejs\\data\\createdieselgenerators\\recipe\\mixing\\lime_concrete.json"
+    },
+    {
+      "id": "createdieselgenerators:mixing/magenta_concrete",
+      "type": "create:mixing",
+      "source_jar": "createdieselgenerators-1.21.1-1.3.11.jar",
+      "target": "kubejs\\data\\createdieselgenerators\\recipe\\mixing\\magenta_concrete.json"
+    },
+    {
+      "id": "createdieselgenerators:mixing/orange_concrete",
+      "type": "create:mixing",
+      "source_jar": "createdieselgenerators-1.21.1-1.3.11.jar",
+      "target": "kubejs\\data\\createdieselgenerators\\recipe\\mixing\\orange_concrete.json"
+    },
+    {
+      "id": "createdieselgenerators:mixing/pink_concrete",
+      "type": "create:mixing",
+      "source_jar": "createdieselgenerators-1.21.1-1.3.11.jar",
+      "target": "kubejs\\data\\createdieselgenerators\\recipe\\mixing\\pink_concrete.json"
+    },
+    {
+      "id": "createdieselgenerators:mixing/purple_concrete",
+      "type": "create:mixing",
+      "source_jar": "createdieselgenerators-1.21.1-1.3.11.jar",
+      "target": "kubejs\\data\\createdieselgenerators\\recipe\\mixing\\purple_concrete.json"
+    },
+    {
+      "id": "createdieselgenerators:mixing/red_concrete",
+      "type": "create:mixing",
+      "source_jar": "createdieselgenerators-1.21.1-1.3.11.jar",
+      "target": "kubejs\\data\\createdieselgenerators\\recipe\\mixing\\red_concrete.json"
+    },
+    {
+      "id": "createdieselgenerators:mixing/white_concrete",
+      "type": "create:mixing",
+      "source_jar": "createdieselgenerators-1.21.1-1.3.11.jar",
+      "target": "kubejs\\data\\createdieselgenerators\\recipe\\mixing\\white_concrete.json"
+    },
+    {
+      "id": "createdieselgenerators:mixing/yellow_concrete",
+      "type": "create:mixing",
+      "source_jar": "createdieselgenerators-1.21.1-1.3.11.jar",
+      "target": "kubejs\\data\\createdieselgenerators\\recipe\\mixing\\yellow_concrete.json"
+    },
+    {
+      "id": "createframed:deploying/karpboard_block",
+      "type": "create:deploying",
+      "source_jar": "createframed-1.21.1-1.7.3.jar",
+      "target": "kubejs\\data\\createframed\\recipe\\deploying\\karpboard_block.json"
+    },
+    {
+      "id": "createframed:deploying/shiny_karpboard_block",
+      "type": "create:deploying",
+      "source_jar": "createframed-1.21.1-1.7.3.jar",
+      "target": "kubejs\\data\\createframed\\recipe\\deploying\\shiny_karpboard_block.json"
+    },
+    {
+      "id": "createframed:integration/smelting/black_radon_lamp",
+      "type": "minecraft:smelting",
+      "source_jar": "createframed-1.21.1-1.7.3.jar",
+      "target": "kubejs\\data\\createframed\\recipe\\integration\\smelting\\black_radon_lamp.json"
+    },
+    {
+      "id": "createframed:integration/smelting/blue_radon_lamp",
+      "type": "minecraft:smelting",
+      "source_jar": "createframed-1.21.1-1.7.3.jar",
+      "target": "kubejs\\data\\createframed\\recipe\\integration\\smelting\\blue_radon_lamp.json"
+    },
+    {
+      "id": "createframed:integration/smelting/brown_radon_lamp",
+      "type": "minecraft:smelting",
+      "source_jar": "createframed-1.21.1-1.7.3.jar",
+      "target": "kubejs\\data\\createframed\\recipe\\integration\\smelting\\brown_radon_lamp.json"
+    },
+    {
+      "id": "createframed:integration/smelting/cyan_radon_lamp",
+      "type": "minecraft:smelting",
+      "source_jar": "createframed-1.21.1-1.7.3.jar",
+      "target": "kubejs\\data\\createframed\\recipe\\integration\\smelting\\cyan_radon_lamp.json"
+    },
+    {
+      "id": "createframed:integration/smelting/gray_radon_lamp",
+      "type": "minecraft:smelting",
+      "source_jar": "createframed-1.21.1-1.7.3.jar",
+      "target": "kubejs\\data\\createframed\\recipe\\integration\\smelting\\gray_radon_lamp.json"
+    },
+    {
+      "id": "createframed:integration/smelting/green_radon_lamp",
+      "type": "minecraft:smelting",
+      "source_jar": "createframed-1.21.1-1.7.3.jar",
+      "target": "kubejs\\data\\createframed\\recipe\\integration\\smelting\\green_radon_lamp.json"
+    },
+    {
+      "id": "createframed:integration/smelting/light_blue_radon_lamp",
+      "type": "minecraft:smelting",
+      "source_jar": "createframed-1.21.1-1.7.3.jar",
+      "target": "kubejs\\data\\createframed\\recipe\\integration\\smelting\\light_blue_radon_lamp.json"
+    },
+    {
+      "id": "createframed:integration/smelting/light_gray_radon_lamp",
+      "type": "minecraft:smelting",
+      "source_jar": "createframed-1.21.1-1.7.3.jar",
+      "target": "kubejs\\data\\createframed\\recipe\\integration\\smelting\\light_gray_radon_lamp.json"
+    },
+    {
+      "id": "createframed:integration/smelting/lime_radon_lamp",
+      "type": "minecraft:smelting",
+      "source_jar": "createframed-1.21.1-1.7.3.jar",
+      "target": "kubejs\\data\\createframed\\recipe\\integration\\smelting\\lime_radon_lamp.json"
+    },
+    {
+      "id": "createframed:integration/smelting/magenta_radon_lamp",
+      "type": "minecraft:smelting",
+      "source_jar": "createframed-1.21.1-1.7.3.jar",
+      "target": "kubejs\\data\\createframed\\recipe\\integration\\smelting\\magenta_radon_lamp.json"
+    },
+    {
+      "id": "createframed:integration/smelting/orange_radon_lamp",
+      "type": "minecraft:smelting",
+      "source_jar": "createframed-1.21.1-1.7.3.jar",
+      "target": "kubejs\\data\\createframed\\recipe\\integration\\smelting\\orange_radon_lamp.json"
+    },
+    {
+      "id": "createframed:integration/smelting/pink_radon_lamp",
+      "type": "minecraft:smelting",
+      "source_jar": "createframed-1.21.1-1.7.3.jar",
+      "target": "kubejs\\data\\createframed\\recipe\\integration\\smelting\\pink_radon_lamp.json"
+    },
+    {
+      "id": "createframed:integration/smelting/purple_radon_lamp",
+      "type": "minecraft:smelting",
+      "source_jar": "createframed-1.21.1-1.7.3.jar",
+      "target": "kubejs\\data\\createframed\\recipe\\integration\\smelting\\purple_radon_lamp.json"
+    },
+    {
+      "id": "createframed:integration/smelting/red_radon_lamp",
+      "type": "minecraft:smelting",
+      "source_jar": "createframed-1.21.1-1.7.3.jar",
+      "target": "kubejs\\data\\createframed\\recipe\\integration\\smelting\\red_radon_lamp.json"
+    },
+    {
+      "id": "createframed:integration/smelting/white_radon_lamp",
+      "type": "minecraft:smelting",
+      "source_jar": "createframed-1.21.1-1.7.3.jar",
+      "target": "kubejs\\data\\createframed\\recipe\\integration\\smelting\\white_radon_lamp.json"
+    },
+    {
+      "id": "createframed:integration/smelting/yellow_radon_lamp",
+      "type": "minecraft:smelting",
+      "source_jar": "createframed-1.21.1-1.7.3.jar",
+      "target": "kubejs\\data\\createframed\\recipe\\integration\\smelting\\yellow_radon_lamp.json"
+    },
+    {
+      "id": "createframed:item_application/base_from_modded_string",
+      "type": "create:item_application",
+      "source_jar": "createframed-1.21.1-1.7.3.jar",
+      "target": "kubejs\\data\\createframed\\recipe\\item_application\\base_from_modded_string.json"
+    },
+    {
+      "id": "createframed:item_application/bound_cardboard/black",
+      "type": "create:item_application",
+      "source_jar": "createframed-1.21.1-1.7.3.jar",
+      "target": "kubejs\\data\\createframed\\recipe\\item_application\\bound_cardboard\\black.json"
+    },
+    {
+      "id": "createframed:item_application/bound_cardboard/blue",
+      "type": "create:item_application",
+      "source_jar": "createframed-1.21.1-1.7.3.jar",
+      "target": "kubejs\\data\\createframed\\recipe\\item_application\\bound_cardboard\\blue.json"
+    },
+    {
+      "id": "createframed:item_application/bound_cardboard/brown",
+      "type": "create:item_application",
+      "source_jar": "createframed-1.21.1-1.7.3.jar",
+      "target": "kubejs\\data\\createframed\\recipe\\item_application\\bound_cardboard\\brown.json"
+    },
+    {
+      "id": "createframed:item_application/bound_cardboard/cyan",
+      "type": "create:item_application",
+      "source_jar": "createframed-1.21.1-1.7.3.jar",
+      "target": "kubejs\\data\\createframed\\recipe\\item_application\\bound_cardboard\\cyan.json"
+    },
+    {
+      "id": "createframed:item_application/bound_cardboard/gray",
+      "type": "create:item_application",
+      "source_jar": "createframed-1.21.1-1.7.3.jar",
+      "target": "kubejs\\data\\createframed\\recipe\\item_application\\bound_cardboard\\gray.json"
+    },
+    {
+      "id": "createframed:item_application/bound_cardboard/green",
+      "type": "create:item_application",
+      "source_jar": "createframed-1.21.1-1.7.3.jar",
+      "target": "kubejs\\data\\createframed\\recipe\\item_application\\bound_cardboard\\green.json"
+    },
+    {
+      "id": "createframed:item_application/bound_cardboard/light_blue",
+      "type": "create:item_application",
+      "source_jar": "createframed-1.21.1-1.7.3.jar",
+      "target": "kubejs\\data\\createframed\\recipe\\item_application\\bound_cardboard\\light_blue.json"
+    },
+    {
+      "id": "createframed:item_application/bound_cardboard/light_gray",
+      "type": "create:item_application",
+      "source_jar": "createframed-1.21.1-1.7.3.jar",
+      "target": "kubejs\\data\\createframed\\recipe\\item_application\\bound_cardboard\\light_gray.json"
+    },
+    {
+      "id": "createframed:item_application/bound_cardboard/lime",
+      "type": "create:item_application",
+      "source_jar": "createframed-1.21.1-1.7.3.jar",
+      "target": "kubejs\\data\\createframed\\recipe\\item_application\\bound_cardboard\\lime.json"
+    },
+    {
+      "id": "createframed:item_application/bound_cardboard/magenta",
+      "type": "create:item_application",
+      "source_jar": "createframed-1.21.1-1.7.3.jar",
+      "target": "kubejs\\data\\createframed\\recipe\\item_application\\bound_cardboard\\magenta.json"
+    },
+    {
+      "id": "createframed:item_application/bound_cardboard/orange",
+      "type": "create:item_application",
+      "source_jar": "createframed-1.21.1-1.7.3.jar",
+      "target": "kubejs\\data\\createframed\\recipe\\item_application\\bound_cardboard\\orange.json"
+    },
+    {
+      "id": "createframed:item_application/bound_cardboard/pink",
+      "type": "create:item_application",
+      "source_jar": "createframed-1.21.1-1.7.3.jar",
+      "target": "kubejs\\data\\createframed\\recipe\\item_application\\bound_cardboard\\pink.json"
+    },
+    {
+      "id": "createframed:item_application/bound_cardboard/purple",
+      "type": "create:item_application",
+      "source_jar": "createframed-1.21.1-1.7.3.jar",
+      "target": "kubejs\\data\\createframed\\recipe\\item_application\\bound_cardboard\\purple.json"
+    },
+    {
+      "id": "createframed:item_application/bound_cardboard/red",
+      "type": "create:item_application",
+      "source_jar": "createframed-1.21.1-1.7.3.jar",
+      "target": "kubejs\\data\\createframed\\recipe\\item_application\\bound_cardboard\\red.json"
+    },
+    {
+      "id": "createframed:item_application/bound_cardboard/white",
+      "type": "create:item_application",
+      "source_jar": "createframed-1.21.1-1.7.3.jar",
+      "target": "kubejs\\data\\createframed\\recipe\\item_application\\bound_cardboard\\white.json"
+    },
+    {
+      "id": "createframed:item_application/bound_cardboard/yellow",
+      "type": "create:item_application",
+      "source_jar": "createframed-1.21.1-1.7.3.jar",
+      "target": "kubejs\\data\\createframed\\recipe\\item_application\\bound_cardboard\\yellow.json"
+    },
+    {
+      "id": "createframed:washing/bound_cardboard_block_from_dyed_bound_cardboard",
+      "type": "create:splashing",
+      "source_jar": "createframed-1.21.1-1.7.3.jar",
+      "target": "kubejs\\data\\createframed\\recipe\\washing\\bound_cardboard_block_from_dyed_bound_cardboard.json"
+    },
+    {
+      "id": "createframed:washing/cardboard_block_from_dyed_cardboard",
+      "type": "create:splashing",
+      "source_jar": "createframed-1.21.1-1.7.3.jar",
+      "target": "kubejs\\data\\createframed\\recipe\\washing\\cardboard_block_from_dyed_cardboard.json"
+    },
+    {
+      "id": "createframed:washing/cardboard_window_from_dyed_cardboard_window",
+      "type": "create:splashing",
+      "source_jar": "createframed-1.21.1-1.7.3.jar",
+      "target": "kubejs\\data\\createframed\\recipe\\washing\\cardboard_window_from_dyed_cardboard_window.json"
+    },
+    {
+      "id": "createframed:washing/cardboard_window_pane_from_dyed_cardboard_window_pane",
+      "type": "create:splashing",
+      "source_jar": "createframed-1.21.1-1.7.3.jar",
+      "target": "kubejs\\data\\createframed\\recipe\\washing\\cardboard_window_pane_from_dyed_cardboard_window_pane.json"
+    },
+    {
+      "id": "createframed:washing/framed_glass_door_from_dyed_framed_glass_door",
+      "type": "create:splashing",
+      "source_jar": "createframed-1.21.1-1.7.3.jar",
+      "target": "kubejs\\data\\createframed\\recipe\\washing\\framed_glass_door_from_dyed_framed_glass_door.json"
+    },
+    {
+      "id": "createframed:washing/framed_glass_from_dyed_framed_glass",
+      "type": "create:splashing",
+      "source_jar": "createframed-1.21.1-1.7.3.jar",
+      "target": "kubejs\\data\\createframed\\recipe\\washing\\framed_glass_from_dyed_framed_glass.json"
+    },
+    {
+      "id": "createframed:washing/framed_glass_pane_from_dyed_framed_glass_pane",
+      "type": "create:splashing",
+      "source_jar": "createframed-1.21.1-1.7.3.jar",
+      "target": "kubejs\\data\\createframed\\recipe\\washing\\framed_glass_pane_from_dyed_framed_glass_pane.json"
+    },
+    {
+      "id": "createframed:washing/framed_glass_trapdoor_from_dyed_framed_glass_trapdoor",
+      "type": "create:splashing",
+      "source_jar": "createframed-1.21.1-1.7.3.jar",
+      "target": "kubejs\\data\\createframed\\recipe\\washing\\framed_glass_trapdoor_from_dyed_framed_glass_trapdoor.json"
+    },
+    {
+      "id": "createframed:washing/horizontal_framed_glass_from_dyed_horizontal_framed_glass",
+      "type": "create:splashing",
+      "source_jar": "createframed-1.21.1-1.7.3.jar",
+      "target": "kubejs\\data\\createframed\\recipe\\washing\\horizontal_framed_glass_from_dyed_horizontal_framed_glass.json"
+    },
+    {
+      "id": "createframed:washing/tiled_glass_from_dyed_tiled_glass",
+      "type": "create:splashing",
+      "source_jar": "createframed-1.21.1-1.7.3.jar",
+      "target": "kubejs\\data\\createframed\\recipe\\washing\\tiled_glass_from_dyed_tiled_glass.json"
+    },
+    {
+      "id": "createframed:washing/tiled_glass_pane_from_dyed_tiled_glass_pane",
+      "type": "create:splashing",
+      "source_jar": "createframed-1.21.1-1.7.3.jar",
+      "target": "kubejs\\data\\createframed\\recipe\\washing\\tiled_glass_pane_from_dyed_tiled_glass_pane.json"
+    },
+    {
+      "id": "createframed:washing/vertical_framed_glass_from_dyed_vertical_framed_glass",
+      "type": "create:splashing",
+      "source_jar": "createframed-1.21.1-1.7.3.jar",
+      "target": "kubejs\\data\\createframed\\recipe\\washing\\vertical_framed_glass_from_dyed_vertical_framed_glass.json"
+    },
+    {
+      "id": "createmetalwork:create/compacting/andesite_alloy_from_compacting_heated",
+      "type": "create:compacting",
+      "source_jar": "createmetalwork-2.0.0.jar",
+      "target": "kubejs\\data\\createmetalwork\\recipe\\create\\compacting\\andesite_alloy_from_compacting_heated.json"
+    },
+    {
+      "id": "createmetalwork:create/compacting/andesite_alloy_from_compacting_molten",
+      "type": "create:compacting",
+      "source_jar": "createmetalwork-2.0.0.jar",
+      "target": "kubejs\\data\\createmetalwork\\recipe\\create\\compacting\\andesite_alloy_from_compacting_molten.json"
+    },
+    {
+      "id": "createmetalwork:create/compacting/brass_ingot_from_compacting_molten",
+      "type": "create:compacting",
+      "source_jar": "createmetalwork-2.0.0.jar",
+      "target": "kubejs\\data\\createmetalwork\\recipe\\create\\compacting\\brass_ingot_from_compacting_molten.json"
+    },
+    {
+      "id": "createmetalwork:create/compacting/copper_ingot_from_compacting_heated",
+      "type": "create:compacting",
+      "source_jar": "createmetalwork-2.0.0.jar",
+      "target": "kubejs\\data\\createmetalwork\\recipe\\create\\compacting\\copper_ingot_from_compacting_heated.json"
+    },
+    {
+      "id": "createmetalwork:create/compacting/copper_ingot_from_compacting_molten",
+      "type": "create:compacting",
+      "source_jar": "createmetalwork-2.0.0.jar",
+      "target": "kubejs\\data\\createmetalwork\\recipe\\create\\compacting\\copper_ingot_from_compacting_molten.json"
+    },
+    {
+      "id": "createmetalwork:create/compacting/gold_ingot_from_compacting_heated",
+      "type": "create:compacting",
+      "source_jar": "createmetalwork-2.0.0.jar",
+      "target": "kubejs\\data\\createmetalwork\\recipe\\create\\compacting\\gold_ingot_from_compacting_heated.json"
+    },
+    {
+      "id": "createmetalwork:create/compacting/gold_ingot_from_compacting_molten",
+      "type": "create:compacting",
+      "source_jar": "createmetalwork-2.0.0.jar",
+      "target": "kubejs\\data\\createmetalwork\\recipe\\create\\compacting\\gold_ingot_from_compacting_molten.json"
+    },
+    {
+      "id": "createmetalwork:create/compacting/iron_ingot_from_compacting_heated",
+      "type": "create:compacting",
+      "source_jar": "createmetalwork-2.0.0.jar",
+      "target": "kubejs\\data\\createmetalwork\\recipe\\create\\compacting\\iron_ingot_from_compacting_heated.json"
+    },
+    {
+      "id": "createmetalwork:create/compacting/iron_ingot_from_compacting_molten",
+      "type": "create:compacting",
+      "source_jar": "createmetalwork-2.0.0.jar",
+      "target": "kubejs\\data\\createmetalwork\\recipe\\create\\compacting\\iron_ingot_from_compacting_molten.json"
+    },
+    {
+      "id": "createmetalwork:create/compacting/netherite_ingot_from_compacting_molten",
+      "type": "create:compacting",
+      "source_jar": "createmetalwork-2.0.0.jar",
+      "target": "kubejs\\data\\createmetalwork\\recipe\\create\\compacting\\netherite_ingot_from_compacting_molten.json"
+    },
+    {
+      "id": "createmetalwork:create/compacting/zinc_ingot_from_compacting_heated",
+      "type": "create:compacting",
+      "source_jar": "createmetalwork-2.0.0.jar",
+      "target": "kubejs\\data\\createmetalwork\\recipe\\create\\compacting\\zinc_ingot_from_compacting_heated.json"
+    },
+    {
+      "id": "createmetalwork:create/compacting/zinc_ingot_from_compacting_molten",
+      "type": "create:compacting",
+      "source_jar": "createmetalwork-2.0.0.jar",
+      "target": "kubejs\\data\\createmetalwork\\recipe\\create\\compacting\\zinc_ingot_from_compacting_molten.json"
+    },
+    {
+      "id": "createmetalwork:create/crushing/crushed_andesite_from_crushing",
+      "type": "create:crushing",
+      "source_jar": "createmetalwork-2.0.0.jar",
+      "target": "kubejs\\data\\createmetalwork\\recipe\\create\\crushing\\crushed_andesite_from_crushing.json"
+    },
+    {
+      "id": "createmetalwork:create/crushing/crushed_netherite_scrap_from_crushing",
+      "type": "create:crushing",
+      "source_jar": "createmetalwork-2.0.0.jar",
+      "target": "kubejs\\data\\createmetalwork\\recipe\\create\\crushing\\crushed_netherite_scrap_from_crushing.json"
+    },
+    {
+      "id": "createmetalwork:create/crushing/crushed_raw_gold_from_crushing_nether_gold_ore",
+      "type": "create:crushing",
+      "source_jar": "createmetalwork-2.0.0.jar",
+      "target": "kubejs\\data\\createmetalwork\\recipe\\create\\crushing\\crushed_raw_gold_from_crushing_nether_gold_ore.json"
+    },
+    {
+      "id": "createmetalwork:create/mixing/molten_andesite_alloy_from_mixing_heated_molten_iron",
+      "type": "create:mixing",
+      "source_jar": "createmetalwork-2.0.0.jar",
+      "target": "kubejs\\data\\createmetalwork\\recipe\\create\\mixing\\molten_andesite_alloy_from_mixing_heated_molten_iron.json"
+    },
+    {
+      "id": "createmetalwork:create/mixing/molten_andesite_alloy_from_mixing_heated_molten_zinc",
+      "type": "create:mixing",
+      "source_jar": "createmetalwork-2.0.0.jar",
+      "target": "kubejs\\data\\createmetalwork\\recipe\\create\\mixing\\molten_andesite_alloy_from_mixing_heated_molten_zinc.json"
+    },
+    {
+      "id": "createmetalwork:create/mixing/molten_brass_from_mixing_heated_molten",
+      "type": "create:mixing",
+      "source_jar": "createmetalwork-2.0.0.jar",
+      "target": "kubejs\\data\\createmetalwork\\recipe\\create\\mixing\\molten_brass_from_mixing_heated_molten.json"
+    },
+    {
+      "id": "createmetalwork:create/mixing/molten_netherite_from_mixing_heated_molten",
+      "type": "create:mixing",
+      "source_jar": "createmetalwork-2.0.0.jar",
+      "target": "kubejs\\data\\createmetalwork\\recipe\\create\\mixing\\molten_netherite_from_mixing_heated_molten.json"
+    },
+    {
+      "id": "createoritechcompat:crushing/biomass",
+      "type": "create:crushing",
+      "source_jar": "createoritechcompat-1.20.1-1.0.jar",
+      "target": "kubejs\\data\\createoritechcompat\\recipe\\crushing\\biomass.json"
+    },
+    {
+      "id": "createoritechcompat:crushing/biomass_from_hay_block",
+      "type": "create:crushing",
+      "source_jar": "createoritechcompat-1.20.1-1.0.jar",
+      "target": "kubejs\\data\\createoritechcompat\\recipe\\crushing\\biomass_from_hay_block.json"
+    },
+    {
+      "id": "createoritechcompat:crushing/biomass_from_packed_wheat",
+      "type": "create:crushing",
+      "source_jar": "createoritechcompat-1.20.1-1.0.jar",
+      "target": "kubejs\\data\\createoritechcompat\\recipe\\crushing\\biomass_from_packed_wheat.json"
+    },
+    {
+      "id": "createoritechcompat:crushing/uranium_crystal",
+      "type": "create:crushing",
+      "source_jar": "createoritechcompat-1.20.1-1.0.jar",
+      "target": "kubejs\\data\\createoritechcompat\\recipe\\crushing\\uranium_crystal.json"
+    },
+    {
+      "id": "createoritechcompat:mixing/adamant_ingot",
+      "type": "create:mixing",
+      "source_jar": "createoritechcompat-1.20.1-1.0.jar",
+      "target": "kubejs\\data\\createoritechcompat\\recipe\\mixing\\adamant_ingot.json"
+    },
+    {
+      "id": "createoritechcompat:mixing/biosteel_ingot",
+      "type": "create:mixing",
+      "source_jar": "createoritechcompat-1.20.1-1.0.jar",
+      "target": "kubejs\\data\\createoritechcompat\\recipe\\mixing\\biosteel_ingot.json"
+    },
+    {
+      "id": "createoritechcompat:mixing/dirt",
+      "type": "create:mixing",
+      "source_jar": "createoritechcompat-1.20.1-1.0.jar",
+      "target": "kubejs\\data\\createoritechcompat\\recipe\\mixing\\dirt.json"
+    },
+    {
+      "id": "createoritechcompat:mixing/duratium_ingot",
+      "type": "create:mixing",
+      "source_jar": "createoritechcompat-1.20.1-1.0.jar",
+      "target": "kubejs\\data\\createoritechcompat\\recipe\\mixing\\duratium_ingot.json"
+    },
+    {
+      "id": "createoritechcompat:mixing/electrum_ingot",
+      "type": "create:mixing",
+      "source_jar": "createoritechcompat-1.20.1-1.0.jar",
+      "target": "kubejs\\data\\createoritechcompat\\recipe\\mixing\\electrum_ingot.json"
+    },
+    {
+      "id": "createoritechcompat:mixing/energite_ingot",
+      "type": "create:mixing",
+      "source_jar": "createoritechcompat-1.20.1-1.0.jar",
+      "target": "kubejs\\data\\createoritechcompat\\recipe\\mixing\\energite_ingot.json"
+    },
+    {
+      "id": "createoritechcompat:mixing/steel_ingot",
+      "type": "create:mixing",
+      "source_jar": "createoritechcompat-1.20.1-1.0.jar",
+      "target": "kubejs\\data\\createoritechcompat\\recipe\\mixing\\steel_ingot.json"
+    },
+    {
+      "id": "createoritechcompat:splashing/crushed_raw_nickel",
+      "type": "create:splashing",
+      "source_jar": "createoritechcompat-1.20.1-1.0.jar",
+      "target": "kubejs\\data\\createoritechcompat\\recipe\\splashing\\crushed_raw_nickel.json"
+    },
+    {
+      "id": "createoritechcompat:splashing/crushed_raw_planitnum",
+      "type": "create:splashing",
+      "source_jar": "createoritechcompat-1.20.1-1.0.jar",
+      "target": "kubejs\\data\\createoritechcompat\\recipe\\splashing\\crushed_raw_planitnum.json"
+    },
+    {
+      "id": "createoritechcompat:splashing/crushed_raw_uranium",
+      "type": "create:splashing",
+      "source_jar": "createoritechcompat-1.20.1-1.0.jar",
+      "target": "kubejs\\data\\createoritechcompat\\recipe\\splashing\\crushed_raw_uranium.json"
+    },
+    {
+      "id": "farmersdelight:integration/create/filling/chocolate_pie",
+      "type": "create:filling",
+      "source_jar": "FarmersDelight-1.21.1-1.2.10.jar",
+      "target": "kubejs\\data\\farmersdelight\\recipe\\integration\\create\\filling\\chocolate_pie.json"
+    },
+    {
+      "id": "farmersdelight:integration/create/mixing/pie_crust_from_mixing",
+      "type": "create:mixing",
+      "source_jar": "FarmersDelight-1.21.1-1.2.10.jar",
+      "target": "kubejs\\data\\farmersdelight\\recipe\\integration\\create\\mixing\\pie_crust_from_mixing.json"
+    },
+    {
+      "id": "malum:create/milling/grim_talc",
+      "type": "create:milling",
+      "source_jar": "malum-1.21.1-1.8.2.jar",
+      "target": "kubejs\\data\\malum\\recipe\\create\\milling\\grim_talc.json"
+    },
+    {
+      "id": "oritech:mixing/compat/create/turbofuel",
+      "type": "create:mixing",
+      "source_jar": "oritech-neoforge-1.21.1-1.1.0.jar",
+      "target": "kubejs\\data\\oritech\\recipe\\mixing\\compat\\create\\turbofuel.json"
+    },
+    {
+      "id": "thirst:compat/create/cactus",
+      "type": "create:compacting",
+      "source_jar": "ThirstWasTaken-1.21.1-2.1.5.jar",
+      "target": "kubejs\\data\\thirst\\recipe\\compat\\create\\cactus.json"
+    },
+    {
+      "id": "thirst:compat/create/terracotta_water_bowl",
+      "type": "create:filling",
+      "source_jar": "ThirstWasTaken-1.21.1-2.1.5.jar",
+      "target": "kubejs\\data\\thirst\\recipe\\compat\\create\\terracotta_water_bowl.json"
+    }
+  ]
+}

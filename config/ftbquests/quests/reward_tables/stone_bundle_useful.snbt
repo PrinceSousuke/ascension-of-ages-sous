@@ -1,0 +1,29 @@
+{
+	icon: {
+		id: "minecraft:barrel"
+	}
+	id: "7100000000000012"
+	loot_size: 1
+	order_index: 14
+	rewards: [
+		{ id: "7112000000000001", item: { count: 1, id: "cold_sweat:boiler" } }
+		{ id: "7112000000000002", item: { count: 1, id: "crafting_on_a_stick:crafting_table" } }
+		{
+			count: 2
+			id: "7112000000000003"
+			item: {
+				count: 1
+				id: "comforts:rope_and_nail"
+			}
+		}
+		{
+			count: 16
+			id: "7112000000000004"
+			item: {
+				count: 1
+				id: "minecraft:bread"
+			}
+		}
+	]
+	use_title: true
+}

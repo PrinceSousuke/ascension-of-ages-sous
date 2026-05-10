@@ -1,0 +1,89 @@
+{
+	icon: {
+		id: "immersiveengineering:crate"
+	}
+	id: "7500000000000003"
+	loot_size: 1
+	order_index: 36
+	rewards: [
+		{
+			count: 32
+			id: "7503000000000001"
+			item: {
+				count: 1
+				id: "modern_industrialization:steel_ingot"
+			}
+			weight: 4.0f
+		}
+		{
+			count: 32
+			id: "7503000000000002"
+			item: {
+				count: 1
+				id: "modern_industrialization:bronze_ingot"
+			}
+			weight: 4.0f
+		}
+		{
+			count: 16
+			id: "7503000000000003"
+			item: {
+				count: 1
+				id: "pneumaticcraft:plastic"
+			}
+			weight: 3.0f
+		}
+		{ id: "7503000000000004", item: { count: 1, id: "pneumaticcraft:air_compressor" } }
+		{ id: "7503000000000005", item: { count: 1, id: "createoreexcavation:vein_atlas" } }
+		{
+			count: 2
+			id: "7503000000000006"
+			item: {
+				count: 1
+				id: "create:fluid_tank"
+			}
+		}
+		{
+			count: 16
+			id: "7503000000000007"
+			item: {
+				count: 1
+				id: "oritech:framed_item_pipe"
+			}
+		}
+		{
+			count: 4
+			id: "7503000000000008"
+			item: {
+				count: 1
+				id: "create:mechanical_crafter"
+			}
+			weight: 0.75f
+		}
+		{
+			id: "7503000000000009"
+			item: {
+				count: 1
+				id: "modern_industrialization:steam_blast_furnace"
+			}
+			weight: 0.5f
+		}
+		{
+			id: "7503000000000010"
+			item: {
+				count: 1
+				id: "pneumaticcraft:thermopneumatic_processing_plant"
+			}
+			weight: 0.5f
+		}
+		{
+			id: "7503000000000011"
+			item: {
+				count: 1
+				id: "createdieselgenerators:distillation_controller"
+			}
+			weight: 0.5f
+		}
+	]
+	use_title: true
+}

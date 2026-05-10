@@ -1,0 +1,79 @@
+{
+	icon: {
+		id: "mekanism:radioactive_waste_barrel"
+	}
+	id: "7600000000000001"
+	loot_size: 1
+	order_index: 40
+	rewards: [
+		{
+			count: 8
+			id: "7601000000000001"
+			item: {
+				count: 1
+				id: "mekanism:steel_casing"
+			}
+			weight: 4.0f
+		}
+		{
+			count: 8
+			id: "7601000000000002"
+			item: {
+				count: 1
+				id: "mekanism:basic_control_circuit"
+			}
+			weight: 4.0f
+		}
+		{
+			count: 2
+			id: "7601000000000003"
+			item: {
+				count: 1
+				id: "mekanism:basic_chemical_tank"
+			}
+			weight: 3.0f
+		}
+		{
+			count: 32
+			id: "7601000000000004"
+			item: {
+				count: 1
+				id: "mekanism:basic_pressurized_tube"
+			}
+			weight: 3.0f
+		}
+		{
+			id: "7601000000000005"
+			item: {
+				count: 1
+				id: "mekanism:hazmat_gown"
+			}
+			weight: 1.5f
+		}
+		{
+			id: "7601000000000006"
+			item: {
+				count: 1
+				id: "minecraft:bell"
+			}
+			weight: 1.5f
+		}
+		{
+			id: "7601000000000007"
+			item: {
+				count: 1
+				id: "mekanism:hazmat_mask"
+			}
+			weight: 1.2f
+		}
+		{
+			id: "7601000000000008"
+			item: {
+				count: 1
+				id: "mekanism:hazmat_boots"
+			}
+			weight: 1.1f
+		}
+	]
+	use_title: true
+}

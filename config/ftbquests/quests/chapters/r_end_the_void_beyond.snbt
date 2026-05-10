@@ -1,0 +1,1436 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "r_end_the_void_beyond"
+	group: "0B038EB15EBBFD95"
+	hide_quest_until_deps_complete: true
+	icon: {
+		id: "endrem:old_eye"
+	}
+	id: "08B1EEA0D2B16703"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"04C9AC6678A69875"
+				"08B35FCEB44F2F03"
+			]
+			hide_until_deps_complete: true
+			id: "4FC72031CD12A930"
+			rewards: [{
+				id: "448DF4E8E86B9781"
+				type: "xp"
+				xp: 300
+			}]
+			shape: "gear"
+			size: 2.0d
+			tasks: [
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "0B06656411201166"
+					item: { count: 1, id: "endrem:old_eye" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "6D1DA04C68A6605E"
+					item: { count: 1, id: "endrem:nether_eye" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "251A7EC29F18784B"
+					item: { count: 1, id: "endrem:cold_eye" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "502943E8CD93194F"
+					item: { count: 1, id: "endrem:rogue_eye" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "1DADC9BFAE0148DD"
+					item: { count: 1, id: "endrem:black_eye" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "589A46036379C275"
+					item: { count: 1, id: "endrem:lost_eye" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "6302132769F2FDB0"
+					item: { count: 1, id: "endrem:corrupted_eye" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "5EF4CBEC6ED55EAC"
+					item: { count: 1, id: "endrem:magical_eye" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "122F9407658AA20D"
+					item: { count: 1, id: "endrem:wither_eye" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "548D7369B54E9D21"
+					item: { count: 1, id: "endrem:guardian_eye" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "0218C8F88BC4D837"
+					item: { count: 1, id: "endrem:cursed_eye" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "7EDA9110A5F9E619"
+					item: { count: 1, id: "endrem:exotic_eye" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "79B50A71D70E527E"
+					item: { count: 1, id: "endrem:evil_eye" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "75C4527B5BE85BBE"
+					item: { count: 1, id: "endrem:undead_eye" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "0E257C524DDA2C01"
+					item: { count: 1, id: "endrem:cryptic_eye" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 1.6d
+		}
+		{
+			dependencies: ["4FC72031CD12A930"]
+			hide_until_deps_complete: true
+			id: "3ADFFFD3E319A205"
+			rewards: [{
+				id: "2854AC9B0322BE36"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C256280021C33AF"
+				item: { count: 1, id: "endrem:witch_eye" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: -13.5d
+		}
+		{
+			dependencies: ["4FC72031CD12A931"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "phantasm:fallen_star"
+			}
+			id: "32BA43DFCB5407B2"
+			rewards: [{
+				id: "59C6F8FEE7581FC6"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "05173613FCE62F9F"
+				item: { count: 1, id: "phantasm:fallen_star" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: -11.5d
+		}
+		{
+			dependencies: ["32BA43DFCB5407B2"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "phantasm:behemoth_meat"
+			}
+			id: "513D49F66B09F9C1"
+			rewards: [{
+				id: "36FEC9907BF0D56E"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "6271405DF5DAEE2E"
+				item: { count: 1, id: "phantasm:behemoth_meat" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["4FC72031CD12A932"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "phantasm:oblifruit"
+			}
+			id: "2CD0BFA1FFD74438"
+			rewards: [{
+				id: "7FB10889A42242A2"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "2C39D94B4E18ECC6"
+				item: { count: 1, id: "phantasm:oblifruit" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["4FC72031CD12A931"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "phantasm:crystal_shard"
+			}
+			id: "0FD6F5486176D462"
+			rewards: [{
+				id: "12293B6B1190A37A"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "153541A7E8819423"
+				item: { count: 1, id: "phantasm:crystal_shard" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["0FD6F5486176D462"]
+			hide_until_deps_complete: true
+			id: "061FD91BE0000003"
+			optional: true
+			rewards: [{
+				id: "061FD91BE0000023"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "061FD91BE0000013"
+				item: { count: 1, id: "cataclysm:void_eye" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0FD6F5486176D462"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "betterend:eternal_pedestal"
+			}
+			id: "056D9981DEF27D74"
+			rewards: [{
+				id: "192311FB057CDC41"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C3BF3F6DC9C2858"
+				item: { count: 1, id: "betterend:eternal_pedestal" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0FD6F5486176D462"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "betterend:filalux_wings"
+			}
+			id: "5C28EA75507DB346"
+			rewards: [{
+				id: "34C4B91D99448143"
+				type: "xp"
+				xp: 150
+			}]
+			shape: "rsquare"
+			size: 1.3d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "33669680732A3E94"
+				item: { count: 1, id: "betterend:filalux_wings" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["4FC72031CD12A931"]
+			hide_until_deps_complete: true
+			id: "56D14B2368BEA45B"
+			rewards: [{
+				id: "14F69CD48CA31F3C"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "3677A6103A9937AD"
+				item: { count: 1, id: "phantasm:shattered_pendant" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["56D14B2368BEA45B"]
+			hide_until_deps_complete: true
+			id: "77A4A9B8601767C7"
+			rewards: [{
+				id: "43E1CEC162A15662"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "6C4BFD996339E2EC"
+				item: { count: 1, id: "phantasm:choral_arrow" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["061FD91BE0000003"]
+			hide_until_deps_complete: true
+			id: "061FD91BE0000001"
+			rewards: [{
+				id: "061FD91BE0000021"
+				type: "xp"
+				xp: 200
+			}]
+			shape: "rsquare"
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				entity: "cataclysm:ender_guardian"
+				id: "061FD91BE0000011"
+				type: "kill"
+				value: 1L
+			}]
+			x: 12.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["32BA43DFCB5407B2"]
+			hide_until_deps_complete: true
+			id: "68C388E9E943F4E8"
+			rewards: [{
+				id: "1CFEFE2E8A761BC7"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0924729AC14282A0"
+				item: { count: 1, id: "betterend:silk_fiber" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: -11.0d
+		}
+		{
+			dependencies: ["3ADFFFD3E319A205"]
+			hide_until_deps_complete: true
+			id: "5E11A3CD8044F7EA"
+			rewards: [{
+				id: "733E663422C79160"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "315E35E409926A13"
+				item: { count: 1, id: "betterend:iron_hammer" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: -14.0d
+		}
+		{
+			dependencies: ["7B01000000000001"]
+			hide_until_deps_complete: true
+			id: "00B7F9EBC0426F32"
+			rewards: [{
+				id: "04572B480704C3EE"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "60E12BBF56AAFC34"
+					item: { count: 1, id: "betterend:shadow_berry_jelly" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "01D0AE677EA77010"
+					item: { count: 1, id: "betterend:blossom_berry_jelly" }
+					type: "item"
+				}
+			]
+			x: 12.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["3ADFFFD3E319A205"]
+			hide_until_deps_complete: true
+			id: "6A451493A964873E"
+			rewards: [{
+				id: "5AAE4D02A4E31B22"
+				type: "xp"
+				xp: 150
+			}]
+			shape: "rsquare"
+			size: 1.3d
+			tasks: [
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "3C272B70F422C8A3"
+					item: { count: 1, id: "betterend:thallasium_helmet" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "52E155C637D6982C"
+					item: { count: 1, id: "betterend:thallasium_chestplate" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "203C8C0EDA1E80D9"
+					item: { count: 1, id: "betterend:thallasium_leggings" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "005DCA4409BDFE6F"
+					item: { count: 1, id: "betterend:thallasium_boots" }
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: -13.0d
+		}
+		{
+			dependencies: ["4FC72031CD12A932"]
+			hide_until_deps_complete: true
+			id: "1B7156DB58841951"
+			rewards: [{
+				id: "3206D6C0072BAD07"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "6A108147E661ED58"
+				item: { count: 1, id: "enderscape:nebulite" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["1B7156DB58841951"]
+			hide_until_deps_complete: true
+			id: "71845BF086F2F2AF"
+			rewards: [{
+				id: "11192B13959CA0E1"
+				type: "xp"
+				xp: 150
+			}]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "02F14AECB72E7D34"
+				item: { count: 1, id: "enderscape:mirror" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["71845BF086F2F2AF"]
+			hide_until_deps_complete: true
+			id: "18D001A121FBEBCE"
+			rewards: [{
+				id: "45AB612DF95C5AC5"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "400505D200B9BA58"
+				item: { count: 1, id: "enderscape:shadoline_ingot" }
+				type: "item"
+			}]
+			x: 12.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["18D001A121FBEBCE"]
+			hide_until_deps_complete: true
+			id: "23F9E474E4782FE0"
+			rewards: [{
+				id: "64986F9BCDF42B3E"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "3886D386AD957C09"
+				item: { count: 1, id: "enderscape:drift_leggings" }
+				type: "item"
+			}]
+			x: 15.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["18D001A121FBEBCE"]
+			hide_until_deps_complete: true
+			id: "33BA016FBEA4E697"
+			rewards: [{
+				id: "12D30168BE770679"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "112FAFBCED02CBF4"
+				item: { count: 1, id: "enderscape:magnia_attractor" }
+				type: "item"
+			}]
+			x: 15.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["4FC72031CD12A931"]
+			hide_until_deps_complete: true
+			id: "09CA56F0E895545E"
+			rewards: [{
+				id: "7F4C3F69658314DE"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				entity: "phantasm:behemoth"
+				id: "398110AD69BEF789"
+				type: "kill"
+				value: 1L
+			}]
+			x: 7.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["09CA56F0E895545E"]
+			hide_until_deps_complete: true
+			id: "4D7AB52A71728AB3"
+			rewards: [{
+				id: "39972447CB60DEB7"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "179E12B135DFCAED"
+				item: { count: 1, id: "phantasm:behemoth_steak" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["4FC72031CD12A932"]
+			hide_until_deps_complete: true
+			id: "16E0EF63A6D4F3B6"
+			rewards: [{
+				id: "16CBF542706C6004"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "3DAF12F38AAF99A3"
+				item: { count: 1, id: "enderscape:end_stone_rubble_shield" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["56D14B2368BEA45B"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "phantasm:pream_berry"
+			}
+			id: "7B01000000000001"
+			rewards: [{
+				id: "7B01000000001001"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "7B01000000002001"
+				item: { count: 1, id: "phantasm:pream_berry" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["7B01000000000001"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "phantasm:pome_slice"
+			}
+			id: "7B01000000000002"
+			rewards: [{
+				id: "7B01000000001002"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "7B01000000002002"
+				item: { count: 1, id: "phantasm:pome_slice" }
+				type: "item"
+			}]
+			x: 12.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["7B01000000000002"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "phantasm:chorus_fruit_salad"
+			}
+			id: "7B01000000000003"
+			rewards: [{
+				id: "7B01000000001003"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "7B01000000002003"
+				item: { count: 1, id: "phantasm:chorus_fruit_salad" }
+				type: "item"
+			}]
+			x: 15.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["2CD0BFA1FFD74438"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "phantasm:starflower"
+			}
+			id: "7B01000000000004"
+			rewards: [{
+				id: "7B01000000001004"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "7B01000000002004"
+				item: { count: 1, id: "phantasm:starflower" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["7B01000000000004"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "phantasm:crystalily"
+			}
+			id: "7B01000000000005"
+			rewards: [{
+				id: "7B01000000001005"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "7B01000000002005"
+				item: { count: 1, id: "phantasm:crystalily" }
+				type: "item"
+			}]
+			x: 12.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["7B01000000000005"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "phantasm:dragon_mint"
+			}
+			id: "7B01000000000006"
+			rewards: [{
+				id: "7B01000000001006"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "7B01000000002006"
+				item: { count: 1, id: "phantasm:dragon_mint" }
+				type: "item"
+			}]
+			x: 15.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["0FD6F5486176D462"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "phantasm:crystal_block"
+			}
+			id: "7B01000000000008"
+			rewards: [{
+				id: "7B01000000001008"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "7B01000000002008"
+				item: { count: 1, id: "phantasm:crystal_block" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["7B01000000000008"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "phantasm:void_crystal_block"
+			}
+			id: "7B01000000000009"
+			rewards: [{
+				id: "7B01000000001009"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "7B01000000002009"
+				item: { count: 1, id: "phantasm:void_crystal_block" }
+				type: "item"
+			}]
+			x: 12.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["09CA56F0E895545E"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "phantasm:music_disc_abruption"
+			}
+			id: "7B0100000000000D"
+			rewards: [{
+				id: "7B0100000000100D"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "7B0100000000200D"
+				item: { count: 1, id: "phantasm:music_disc_abruption" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0FD6F5486176D462"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "phantasm:crystalline_sword"
+			}
+			id: "7B0100000000000E"
+			rewards: [{
+				id: "7B0100000000100E"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "7B0100000000020E"
+					item: { count: 1, id: "phantasm:crystalline_sword" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "7B0100000000030E"
+					item: { count: 1, id: "phantasm:crystalline_pickaxe" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "7B0100000000040E"
+					item: { count: 1, id: "phantasm:crystalline_axe" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "7B0100000000050E"
+					item: { count: 1, id: "phantasm:crystalline_shovel" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "7B0100000000060E"
+					item: { count: 1, id: "phantasm:crystalline_hoe" }
+					type: "item"
+				}
+			]
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["56D14B2368BEA45B"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "betterend:end_fish_cooked"
+			}
+			id: "3BE223E78D122C17"
+			rewards: [{
+				id: "5AE9768B02C9990F"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "284575401D32FAB1"
+				item: { count: 1, id: "betterend:end_fish_cooked" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["4FC72031CD12A932"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "enderscape:rustle_bucket"
+			}
+			id: "7B03000000000004"
+			rewards: [{
+				id: "7B03000000001004"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "7B03000000002004"
+				item: { count: 1, id: "enderscape:rustle_bucket" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 13.0d
+		}
+		{
+			dependencies: ["33BA016FBEA4E697"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "enderscape:flanger_berry"
+			}
+			id: "7B03000000000005"
+			rewards: [{
+				id: "7B03000000001005"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "7B03000000002005"
+				item: { count: 1, id: "enderscape:flanger_berry" }
+				type: "item"
+			}]
+			x: 17.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["7B03000000000005"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "enderscape:chorus_cake_roll"
+			}
+			id: "7B03000000000007"
+			rewards: [{
+				id: "7B03000000001007"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "7B03000000002007"
+				item: { count: 1, id: "enderscape:chorus_cake_roll" }
+				type: "item"
+			}]
+			x: 20.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["061FD91BE0000001"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "cataclysm:music_disc_ender_guardian"
+			}
+			id: "7B05000000000001"
+			rewards: [{
+				id: "7B05000000001001"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "7B05000000002001"
+				item: { count: 1, id: "cataclysm:music_disc_ender_guardian" }
+				type: "item"
+			}]
+			x: 15.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"71845BF086F2F2AF"
+				"56D14B2368BEA45B"
+			]
+			hide_until_deps_complete: true
+			id: "061FD91B5F815FFC"
+			rewards: [{
+				id: "5CF9EAF9AA890728"
+				type: "xp"
+				xp: 500
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "631BA3A37965BFAF"
+				item: { count: 1, id: "betterend:aeternium_sword" }
+				type: "item"
+			}]
+			x: 17.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["4FC72031CD12A930"]
+			hide_until_deps_complete: true
+			id: "4FC72031CD12A931"
+			shape: "square"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4FC72031CD12B931"
+				item: { count: 1, id: "phantasm:shattered_pendant" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: -1.6d
+		}
+		{
+			dependencies: ["4FC72031CD12A930"]
+			hide_until_deps_complete: true
+			id: "4FC72031CD12A932"
+			shape: "square"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4FC72031CD12B932"
+				item: { count: 1, id: "phantasm:oblifruit" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 10.0d
+		}
+	]
+}

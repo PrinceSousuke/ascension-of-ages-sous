@@ -1,0 +1,636 @@
+{
+	autofocus_id: "3400000000001113"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "stone_water_weather_and_wounds"
+	group: "12B6640DF4C0DCFE"
+	hide_quest_until_deps_complete: true
+	icon: {
+		id: "minecraft:campfire"
+	}
+	id: "3400000000001000"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["60D53613768CA1F3"]
+			hide_until_deps_complete: true
+			id: "3400000000001113"
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "3400000000001114"
+				item: { count: 1, id: "minecraft:campfire" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3400000000001113"]
+			hide_until_deps_complete: true
+			id: "3400000000001116"
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "3400000000001117"
+				item: { count: 1, id: "minecraft:furnace" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3400000000001116"]
+			hide_until_deps_complete: true
+			id: "3400000000001119"
+			rewards: [{
+				id: "4B6495058B9463F4"
+				item: {
+					count: 1
+					id: "comforts:sleeping_bag_white"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "340000000000111A"
+				item: { count: 1, id: "minecraft:white_bed" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["3400000000001119"]
+			hide_until_deps_complete: true
+			id: "340000000000111C"
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				count: 2L
+				id: "340000000000111D"
+				item: { count: 1, id: "minecraft:chest" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3400000000001119"]
+			hide_until_deps_complete: true
+			id: "340000000000111F"
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				count: 16L
+				id: "3400000000001120"
+				item: { count: 1, id: "minecraft:torch" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["2940A79987A07E07"]
+			hide_until_deps_complete: true
+			id: "340000000000141D"
+			tasks: [
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "340000000000141E"
+					item: { count: 1, id: "minecraft:leather_boots" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "784F6D74EF0A0E6D"
+					item: { count: 1, id: "minecraft:leather_chestplate" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "7A71D28C8296246B"
+					item: { count: 1, id: "minecraft:leather_leggings" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "2D9E0D92B268ACA2"
+					item: { count: 1, id: "minecraft:leather_helmet" }
+					type: "item"
+				}
+			]
+			x: -4.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["3400000000001116"]
+			hide_until_deps_complete: true
+			id: "1998AA8EB20A3D62"
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "6BA66EA6C1BFC79E"
+				item: { count: 1, id: "cold_sweat:boiler" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3400000000001116"]
+			hide_until_deps_complete: true
+			id: "190D88699AB87245"
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "24758752B132552A"
+				item: { count: 1, id: "cold_sweat:waterskin" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3400000000001116"]
+			hide_until_deps_complete: true
+			id: "430B4618A0BFF120"
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4EB49B3256E5C098"
+				item: { count: 1, id: "cold_sweat:icebox" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"190D88699AB87245"
+				"097AED7C91033D5E"
+			]
+			hide_until_deps_complete: true
+			id: "2940A79987A07E07"
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				count: 5L
+				id: "6B0FA6B9C72AAC87"
+				item: { count: 1, id: "minecraft:leather" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["190D88699AB87245"]
+			hide_until_deps_complete: true
+			id: "6D08A993695D141E"
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				count: 5L
+				id: "0FBB72B126EEC730"
+				item: { count: 1, id: "cold_sweat:chameleon_molt" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["190D88699AB87245"]
+			hide_until_deps_complete: true
+			id: "329ACE742921BBBB"
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				count: 5L
+				id: "3CDA8AC549A82210"
+				item: { count: 1, id: "cold_sweat:goat_fur" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3400000000001116"]
+			hide_until_deps_complete: true
+			id: "6DDBA2A0973F5F0C"
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "675B3850F1909286"
+				item: { count: 1, id: "thirst:terracotta_bowl" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3400000000001116"]
+			hide_until_deps_complete: true
+			id: "7813F9EAC9075122"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6A9B1F4D2C8E7101"
+				table_id: 8142508126285856769L
+				type: "random"
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				count: 10L
+				id: "7660368E07A9F09A"
+				item: { components: { "minecraft:potion_contents": { potion: "minecraft:water" }, "thirst:purity": 3 }, count: 1, id: "minecraft:potion" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["329ACE742921BBBB"]
+			hide_until_deps_complete: true
+			id: "28FB6A2936D5FEE2"
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "225F0287EC61FA90"
+				item: { components: { "cold_sweat:armor_insulation": { insulation: [ ] } }, count: 1, id: "cold_sweat:goat_fur_chestplate" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"097AED7C91033D5E"
+				"1BB227EC6C14ACEC"
+			]
+			hide_until_deps_complete: true
+			id: "70D99BC8FE5F6FC7"
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "65F6626F0107E4F1"
+				item: { count: 1, id: "comforts:hammock_white" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["097AED7C91033D5E"]
+			hide_until_deps_complete: true
+			id: "1BB227EC6C14ACEC"
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "5D9DA269DEFA4FFA"
+				item: { count: 1, id: "comforts:rope_and_nail" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["340000000000111C"]
+			hide_until_deps_complete: true
+			id: "082F612406308078"
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "5E903F0BE19FAC26"
+				item: { count: 1, id: "crafting_on_a_stick:crafting_table" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["082F612406308078"]
+			hide_until_deps_complete: true
+			id: "62CA9D0E97DAD5A0"
+			tasks: [
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "0E9830211CB66143"
+					item: { count: 1, id: "crafting_on_a_stick:loom" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "7CE68419F80897B8"
+					item: { count: 1, id: "crafting_on_a_stick:grindstone" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "54FDE4B8D7088ED5"
+					item: { count: 1, id: "crafting_on_a_stick:cartography_table" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "2C27601CA4F2EE64"
+					item: { count: 1, id: "crafting_on_a_stick:stonecutter" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "75B242CFE807F515"
+					item: { count: 1, id: "crafting_on_a_stick:smithing_table" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "558ACEAD13067BAB"
+					item: { count: 1, id: "crafting_on_a_stick:anvil" }
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: 2.0d
+		}
+		{
+			id: "60D53613768CA1F3"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "13E28CB1BE5302E4"
+				table_id: 8142508126285856771L
+				type: "loot"
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "741000E9C829118C"
+				type: "checkmark"
+			}]
+			x: -8.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6D08A993695D141E"]
+			hide_until_deps_complete: true
+			id: "29D759EFE44E2422"
+			rewards: [{
+				id: "5A236F7DAF444AA0"
+				item: {
+					components: {
+						"cold_sweat:armor_insulation": {
+							insulation: [ ]
+						}
+					}
+					count: 1
+					id: "cold_sweat:chameleon_boots"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "172D6BE424EAA9B0"
+					item: { components: { "cold_sweat:armor_insulation": { insulation: [ ] } }, count: 1, id: "cold_sweat:chameleon_leggings" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "0A03A5B883B50C0D"
+					item: { components: { "cold_sweat:armor_insulation": { insulation: [ ] } }, count: 1, id: "cold_sweat:chameleon_helmet" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4DA770F75EBD100D"
+					item: { components: { "cold_sweat:armor_insulation": { insulation: [ ] } }, count: 1, id: "cold_sweat:chameleon_leggings" }
+					type: "item"
+				}
+			]
+			x: -5.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["340000000000141D"]
+			disable_recipe_mod: false
+			hide_until_deps_complete: true
+			id: "3CA98E14B6A82FF5"
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				count: 10L
+				id: "2CE80B7BD68E24DB"
+				item: { count: 1, id: "cold_sweat:hoglin_hide" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: -6.0d
+		}
+	]
+}

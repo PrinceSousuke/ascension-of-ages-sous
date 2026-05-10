@@ -1,0 +1,2569 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ir4_the_lab"
+	group: "3F77A31B7D30C0AA"
+	hide_quest_until_deps_complete: true
+	icon: {
+		id: "mekanism:enrichment_chamber"
+	}
+	id: "4C41010000000000"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"4D49010000010020"
+				"4D49010000010011"
+				"4D4901000001003F"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				id: "mekanism:metallurgic_infuser"
+			}
+			id: "4C41010000010001"
+			rewards: [{
+				id: "4C41010000030001"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C41010000020001"
+				item: { count: 1, id: "mekanism:metallurgic_infuser" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 9.45d
+		}
+		{
+			dependencies: ["4C41010000010001"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "mekanism:steel_casing"
+			}
+			id: "4C41010000010002"
+			rewards: [{
+				id: "4C41010000030002"
+				type: "xp"
+				xp: 75
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C41010000020002"
+				item: { count: 1, id: "mekanism:steel_casing" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 4.95d
+		}
+		{
+			dependencies: ["4C41010000010001"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "mekanism:basic_control_circuit"
+			}
+			id: "4C41010000010003"
+			rewards: [{
+				id: "4C41010000030003"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C41010000020003"
+				item: { count: 1, id: "mekanism:basic_control_circuit" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 13.05d
+		}
+		{
+			dependencies: ["4C41010000010001"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "mekanism:alloy_infused"
+			}
+			id: "4C41010000010004"
+			rewards: [{
+				id: "4C41010000030004"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C41010000020004"
+				item: { count: 1, id: "mekanism:alloy_infused" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 13.95d
+		}
+		{
+			dependencies: [
+				"4C41010000010002"
+				"4C41010000010003"
+				"4C41010000010004"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				id: "mekanism:enrichment_chamber"
+			}
+			id: "4C41010000010005"
+			rewards: [{
+				id: "4C41010000030005"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C41010000020005"
+				item: { count: 1, id: "mekanism:enrichment_chamber" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -1.8d
+		}
+		{
+			dependencies: ["4C41010000010005"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "mekanism:crusher"
+			}
+			id: "4C41010000010006"
+			rewards: [{
+				id: "4C41010000030006"
+				type: "xp"
+				xp: 75
+			}]
+			shape: "diamond"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C41010000020006"
+				item: { count: 1, id: "mekanism:crusher" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: -13.95d
+		}
+		{
+			dependencies: ["4C41010000010005"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "mekanism:energized_smelter"
+			}
+			id: "4C41010000010007"
+			rewards: [{
+				id: "4C41010000030007"
+				type: "xp"
+				xp: 75
+			}]
+			shape: "diamond"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C41010000020007"
+				item: { count: 1, id: "mekanism:energized_smelter" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: -7.42d
+		}
+		{
+			dependencies: ["4C41010000010005"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "mekanism:osmium_compressor"
+			}
+			id: "4C41010000010008"
+			rewards: [{
+				id: "4C41010000030008"
+				type: "xp"
+				xp: 75
+			}]
+			shape: "diamond"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C41010000020008"
+				item: { count: 1, id: "mekanism:osmium_compressor" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 9.45d
+		}
+		{
+			dependencies: ["4C41010000010002"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "mekanism:basic_energy_cube"
+			}
+			id: "4C41010000010009"
+			rewards: [{
+				id: "4C41010000030009"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C41010000020009"
+				item: { count: 1, id: "mekanism:basic_energy_cube" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 11.7d
+		}
+		{
+			dependencies: ["4C41010000010009"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "mekanism:basic_universal_cable"
+			}
+			id: "4C4101000001000A"
+			rewards: [{
+				id: "4C4101000003000A"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C4101000002000A"
+				item: { count: 1, id: "mekanism:basic_universal_cable" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 11.25d
+		}
+		{
+			dependencies: ["4C41010000010009"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "mekanism:basic_fluid_tank"
+			}
+			id: "4C4101000001000B"
+			rewards: [{
+				id: "4C4101000003000B"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C4101000002000B"
+				item: { count: 1, id: "mekanism:basic_fluid_tank" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 12.15d
+		}
+		{
+			dependencies: ["4C4101000001000B"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "mekanism:basic_mechanical_pipe"
+			}
+			id: "4C4101000001000C"
+			rewards: [{
+				id: "4C4101000003000C"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C4101000002000C"
+				item: { count: 1, id: "mekanism:basic_mechanical_pipe" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 12.15d
+		}
+		{
+			dependencies: ["4C41010000010007"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "mekanism:basic_smelting_factory"
+			}
+			id: "4C4101000001000D"
+			rewards: [{
+				id: "4C4101000003000D"
+				type: "xp"
+				xp: 75
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C4101000002000D"
+				item: { count: 1, id: "mekanism:basic_smelting_factory" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: -7.42d
+		}
+		{
+			dependencies: ["4C41010000010006"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "mekanism:basic_crushing_factory"
+			}
+			id: "4C4101000001000E"
+			rewards: [{
+				id: "4C4101000003000E"
+				type: "xp"
+				xp: 75
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C4101000002000E"
+				item: { count: 1, id: "mekanism:basic_crushing_factory" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: -13.95d
+		}
+		{
+			dependencies: ["4C41010000010005"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "mekanism:basic_enriching_factory"
+			}
+			id: "4C4101000001000F"
+			rewards: [{
+				id: "4C4101000003000F"
+				type: "xp"
+				xp: 75
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C4101000002000F"
+				item: { count: 1, id: "mekanism:basic_enriching_factory" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 10.35d
+		}
+		{
+			dependencies: ["4C4101000001000C"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "mekanism:basic_logistical_transporter"
+			}
+			id: "4C41010000010010"
+			rewards: [{
+				id: "4C41010000030010"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C41010000020010"
+				item: { count: 1, id: "mekanism:basic_logistical_transporter" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 12.15d
+		}
+		{
+			dependencies: [
+				"4C4101000001000D"
+				"4C4101000001000E"
+				"4C4101000001000F"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				id: "mekanism:dust_iron"
+			}
+			id: "4C41010000010011"
+			rewards: [
+				{
+					id: "4C41010000030011"
+					type: "xp"
+					xp: 150
+				}
+				{
+					count: 4
+					id: "4C41010000031011"
+					item: {
+						count: 1
+						id: "mekanism:alloy_infused"
+					}
+					random_bonus: 4
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C41010000020011"
+				item: { count: 1, id: "mekanism:dust_iron" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: -7.42d
+		}
+		{
+			dependencies: ["4C41010000010011"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "mekanism:basic_chemical_tank"
+			}
+			id: "4C41010000010012"
+			rewards: [{
+				id: "4C41010000030012"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C41010000020012"
+				item: { count: 1, id: "mekanism:basic_chemical_tank" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: -7.42d
+		}
+		{
+			dependencies: ["4C41010000010012"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "mekanism:basic_pressurized_tube"
+			}
+			id: "4C41010000010013"
+			rewards: [{
+				id: "4C41010000030013"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C41010000020013"
+				item: { count: 1, id: "mekanism:basic_pressurized_tube" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: -13.05d
+		}
+		{
+			dependencies: ["4C41010000010012"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "mekanism:electrolytic_separator"
+			}
+			id: "4C41010000010014"
+			rewards: [{
+				id: "4C41010000030014"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C41010000020014"
+				item: { count: 1, id: "mekanism:electrolytic_separator" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: -1.8d
+		}
+		{
+			dependencies: ["4C41010000010014"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "mekanism:hydrogen_bucket"
+			}
+			id: "4C41010000010015"
+			rewards: [{
+				id: "4C41010000030015"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C41010000020015"
+				item: { count: 1, id: "mekanism:hydrogen_bucket" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: -12.15d
+		}
+		{
+			dependencies: ["4C41010000010014"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "mekanism:oxygen_bucket"
+			}
+			id: "4C41010000010016"
+			rewards: [{
+				id: "4C41010000030016"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C41010000020016"
+				item: { count: 1, id: "mekanism:oxygen_bucket" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: -3.68d
+		}
+		{
+			dependencies: ["4C41010000010014"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "mekanism:chemical_oxidizer"
+			}
+			id: "4C41010000010017"
+			rewards: [{
+				id: "4C41010000030017"
+				type: "xp"
+				xp: 75
+			}]
+			shape: "diamond"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C41010000020017"
+				item: { count: 1, id: "mekanism:chemical_oxidizer" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 8.55d
+		}
+		{
+			dependencies: ["4C41010000010016"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "mekanism:thermal_evaporation_controller"
+			}
+			id: "4C41010000010018"
+			rewards: [{
+				id: "4C41010000030018"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C41010000020018"
+				item: { count: 1, id: "mekanism:thermal_evaporation_controller" }
+				type: "item"
+			}]
+			x: 13.5d
+			y: -10.8d
+		}
+		{
+			dependencies: ["4C41010000010018"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "mekanism:brine_bucket"
+			}
+			id: "4C41010000010019"
+			rewards: [{
+				id: "4C41010000030019"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C41010000020019"
+				item: { count: 1, id: "mekanism:brine_bucket" }
+				type: "item"
+			}]
+			x: 15.0d
+			y: -10.8d
+		}
+		{
+			dependencies: ["4C41010000010019"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "mekanism:sodium_bucket"
+			}
+			id: "4C4101000001001A"
+			rewards: [{
+				id: "4C4101000003001A"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C4101000002001A"
+				item: { count: 1, id: "mekanism:sodium_bucket" }
+				type: "item"
+			}]
+			x: 16.5d
+			y: -11.25d
+		}
+		{
+			dependencies: ["4C41010000010019"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "mekanism:chlorine_bucket"
+			}
+			id: "4C4101000001001B"
+			rewards: [{
+				id: "4C4101000003001B"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C4101000002001B"
+				item: { count: 1, id: "mekanism:chlorine_bucket" }
+				type: "item"
+			}]
+			x: 16.5d
+			y: -10.35d
+		}
+		{
+			dependencies: ["4C41010000010016"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "mekanism:chemical_infuser"
+			}
+			id: "4C4101000001001C"
+			rewards: [{
+				id: "4C4101000003001C"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C4101000002001C"
+				item: { count: 1, id: "mekanism:chemical_infuser" }
+				type: "item"
+			}]
+			x: 13.5d
+			y: 3.43d
+		}
+		{
+			dependencies: [
+				"4C4101000001001C"
+				"4C4101000001001B"
+				"4C41010000010015"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				id: "mekanism:hydrogen_chloride_bucket"
+			}
+			id: "4C4101000001001D"
+			rewards: [{
+				id: "4C4101000003001D"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C4101000002001D"
+				item: { count: 1, id: "mekanism:hydrogen_chloride_bucket" }
+				type: "item"
+			}]
+			x: 18.0d
+			y: 3.43d
+		}
+		{
+			dependencies: [
+				"4C4101000001001D"
+				"4C41010000010017"
+				"4C4101000001001A"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				id: "mekanism:purification_chamber"
+			}
+			id: "4C4101000001001E"
+			rewards: [
+				{
+					id: "4C4101000003001E"
+					type: "xp"
+					xp: 150
+				}
+				{
+					count: 2
+					id: "4C41010000031E1E"
+					item: {
+						count: 1
+						id: "mekanism:alloy_reinforced"
+					}
+					random_bonus: 2
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C4101000002001F"
+				item: { count: 1, id: "mekanism:purification_chamber" }
+				type: "item"
+			}]
+			x: 19.5d
+			y: 3.43d
+		}
+		{
+			dependencies: ["4C4101000001001E"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "pneumaticcraft:capacitor"
+			}
+			id: "4C41010000010020"
+			rewards: [{
+				id: "4C41010000030020"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C41010000020020"
+				item: { count: 1, id: "pneumaticcraft:capacitor" }
+				type: "item"
+			}]
+			x: 22.5d
+			y: -8.33d
+		}
+		{
+			dependencies: ["4C41010000010020"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "pneumaticcraft:charging_station"
+			}
+			id: "4C41010000010021"
+			rewards: [{
+				id: "4C41010000030021"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C41010000020021"
+				item: { count: 1, id: "pneumaticcraft:charging_station" }
+				type: "item"
+			}]
+			x: 24.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["4C41010000010021"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "pneumaticcraft:charging_upgrade"
+			}
+			id: "4C41010000010022"
+			rewards: [{
+				id: "4C41010000030022"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C41010000020022"
+				item: { count: 1, id: "pneumaticcraft:charging_upgrade" }
+				type: "item"
+			}]
+			x: 25.5d
+			y: -9.45d
+		}
+		{
+			dependencies: ["4C41010000010020"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "pneumaticcraft:pneumatic_wrench"
+			}
+			id: "4C41010000010023"
+			rewards: [{
+				id: "4C41010000030023"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C41010000020023"
+				item: { count: 1, id: "pneumaticcraft:pneumatic_wrench" }
+				type: "item"
+			}]
+			x: 24.0d
+			y: -7.65d
+		}
+		{
+			dependencies: ["4C4101000001001E"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "pneumaticcraft:compressed_iron_gear"
+			}
+			id: "4C41010000010024"
+			rewards: [{
+				id: "4C41010000030024"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C41010000020024"
+				item: { count: 1, id: "pneumaticcraft:compressed_iron_gear" }
+				type: "item"
+			}]
+			x: 22.5d
+			y: 0.43d
+		}
+		{
+			dependencies: ["4C41010000010024"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "pneumaticcraft:vortex_tube"
+			}
+			id: "4C41010000010025"
+			rewards: [{
+				id: "4C41010000030025"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C41010000020025"
+				item: { count: 1, id: "pneumaticcraft:vortex_tube" }
+				type: "item"
+			}]
+			x: 24.0d
+			y: 0.43d
+		}
+		{
+			dependencies: ["4C41010000010025"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "pneumaticcraft:heat_sink"
+			}
+			id: "4C41010000010026"
+			rewards: [{
+				id: "4C41010000030026"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C41010000020026"
+				item: { count: 1, id: "pneumaticcraft:heat_sink" }
+				type: "item"
+			}]
+			x: 25.5d
+			y: -3.2d
+		}
+		{
+			dependencies: ["4C41010000010025"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "pneumaticcraft:heat_pipe"
+			}
+			id: "4C41010000010027"
+			rewards: [{
+				id: "4C41010000030027"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C41010000020027"
+				item: { count: 1, id: "pneumaticcraft:heat_pipe" }
+				type: "item"
+			}]
+			x: 25.5d
+			y: 4.05d
+		}
+		{
+			dependencies: ["4C4101000001001E"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "pneumaticcraft:aerial_interface"
+			}
+			id: "4C41010000010028"
+			rewards: [{
+				id: "4C41010000030028"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C41010000020028"
+				item: { count: 1, id: "pneumaticcraft:aerial_interface" }
+				type: "item"
+			}]
+			x: 22.5d
+			y: 4.95d
+		}
+		{
+			dependencies: ["4C4101000001001E"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "pneumaticcraft:fluid_mixer"
+			}
+			id: "4C41010000010029"
+			rewards: [{
+				id: "4C41010000030029"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C41010000020029"
+				item: { count: 1, id: "pneumaticcraft:fluid_mixer" }
+				type: "item"
+			}]
+			x: 22.5d
+			y: 5.85d
+		}
+		{
+			dependencies: ["4C41010000010028"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "pneumaticcraft:smart_chest"
+			}
+			id: "4C4101000001002A"
+			rewards: [{
+				id: "4C4101000003002A"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C4101000002002A"
+				item: { count: 1, id: "pneumaticcraft:smart_chest" }
+				type: "item"
+			}]
+			x: 24.0d
+			y: 4.95d
+		}
+		{
+			dependencies: ["4C4101000001002A"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "pneumaticcraft:logistics_frame_default_storage"
+			}
+			id: "4C4101000001002B"
+			rewards: [{
+				id: "4C4101000003002B"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C4101000002002B"
+				item: { count: 1, id: "pneumaticcraft:logistics_frame_default_storage" }
+				type: "item"
+			}]
+			x: 25.5d
+			y: 4.95d
+		}
+		{
+			dependencies: ["4C41010000010021"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "pneumaticcraft:elevator_base"
+			}
+			id: "4C4101000001002C"
+			rewards: [{
+				id: "4C4101000003002C"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4C41010000020C2C"
+					item: { count: 1, id: "pneumaticcraft:elevator_base" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4C41010000020D2C"
+					item: { count: 1, id: "pneumaticcraft:elevator_caller" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4C41010000020E2C"
+					item: { count: 1, id: "pneumaticcraft:elevator_frame" }
+					type: "item"
+				}
+			]
+			x: 25.5d
+			y: -8.55d
+		}
+		{
+			dependencies: [
+				"4C41010000010026"
+				"4C41010000010029"
+				"4C4101000001002C"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				id: "pneumaticcraft:thermal_compressor"
+			}
+			id: "4C4101000001002D"
+			rewards: [
+				{
+					id: "4C4101000003002D"
+					type: "xp"
+					xp: 150
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4C41010000031D2D"
+					item: {
+						count: 1
+						id: "pneumaticcraft:vortex_cannon"
+					}
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C4101000002022D"
+				item: { count: 1, id: "pneumaticcraft:thermal_compressor" }
+				type: "item"
+			}]
+			x: 27.0d
+			y: -3.2d
+		}
+		{
+			dependencies: ["4C4101000001002D"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "nautec:polished_prismarine"
+			}
+			id: "4C4101000001002E"
+			rewards: [{
+				id: "4C4101000003002E"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C4101000002002E"
+				item: { count: 1, id: "nautec:polished_prismarine" }
+				type: "item"
+			}]
+			x: 28.5d
+			y: -3.2d
+		}
+		{
+			dependencies: ["4C4101000001002E"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "nautec:aquatic_catalyst"
+			}
+			id: "4C4101000001002F"
+			rewards: [{
+				id: "4C4101000003002F"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C4101000002002F"
+				item: { count: 1, id: "nautec:aquatic_catalyst" }
+				type: "item"
+			}]
+			x: 30.0d
+			y: -6.75d
+		}
+		{
+			dependencies: ["4C4101000001002E"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "nautec:saltwater_bucket"
+			}
+			id: "4C41010000010030"
+			rewards: [{
+				id: "4C41010000030030"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C41010000020030"
+				item: { count: 1, id: "nautec:saltwater_bucket" }
+				type: "item"
+			}]
+			x: 30.0d
+			y: -5.4d
+		}
+		{
+			dependencies: ["4C41010000010030"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "nautec:salt"
+			}
+			id: "4C41010000010031"
+			rewards: [{
+				id: "4C41010000030031"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C41010000020031"
+				item: { count: 1, id: "nautec:salt" }
+				type: "item"
+			}]
+			x: 31.5d
+			y: -5.85d
+		}
+		{
+			dependencies: ["4C41010000010030"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "nautec:deep_sea_drain"
+			}
+			id: "4C41010000010032"
+			rewards: [{
+				id: "4C41010000030032"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C41010000020032"
+				item: { count: 1, id: "nautec:deep_sea_drain" }
+				type: "item"
+			}]
+			x: 31.5d
+			y: -4.95d
+		}
+		{
+			dependencies: ["4C4101000001002E"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "nautec:cast_iron_ingot"
+			}
+			id: "4C41010000010033"
+			rewards: [{
+				id: "4C41010000030033"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C41010000020033"
+				item: { count: 1, id: "nautec:cast_iron_ingot" }
+				type: "item"
+			}]
+			x: 30.0d
+			y: 0.35d
+		}
+		{
+			dependencies: ["4C41010000010033"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "nautec:cast_iron_rod"
+			}
+			id: "4C41010000010034"
+			rewards: [{
+				id: "4C41010000030034"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C41010000020034"
+				item: { count: 1, id: "nautec:cast_iron_rod" }
+				type: "item"
+			}]
+			x: 31.5d
+			y: 0.35d
+		}
+		{
+			dependencies: [
+				"4C41010000010034"
+				"4C41010000010032"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				id: "nautec:mixer"
+			}
+			id: "4C41010000010035"
+			rewards: [{
+				id: "4C41010000030035"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C41010000020035"
+				item: { count: 1, id: "nautec:mixer" }
+				type: "item"
+			}]
+			x: 33.0d
+			y: -2.45d
+		}
+		{
+			dependencies: ["4C41010000010035"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "nautec:etching_acid_bucket"
+			}
+			id: "4C41010000010036"
+			rewards: [{
+				id: "4C41010000030036"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C41010000020036"
+				item: { count: 1, id: "nautec:etching_acid_bucket" }
+				type: "item"
+			}]
+			x: 34.5d
+			y: -4.05d
+		}
+		{
+			dependencies: ["4C41010000010036"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "nautec:gear"
+			}
+			id: "4C41010000010037"
+			rewards: [{
+				id: "4C41010000030037"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C41010000020037"
+				item: { count: 1, id: "nautec:gear" }
+				type: "item"
+			}]
+			x: 36.0d
+			y: -4.05d
+		}
+		{
+			dependencies: ["4C41010000010035"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "nautec:aquarine_steel_compound"
+			}
+			id: "4C41010000010038"
+			rewards: [{
+				id: "4C41010000030038"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C41010000020038"
+				item: { count: 1, id: "nautec:aquarine_steel_compound" }
+				type: "item"
+			}]
+			x: 34.5d
+			y: -0.84d
+		}
+		{
+			dependencies: [
+				"4C41010000010038"
+				"4C4101000001002F"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				id: "nautec:aquarine_steel_ingot"
+			}
+			id: "4C41010000010039"
+			rewards: [{
+				id: "4C41010000030039"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C41010000020039"
+				item: { count: 1, id: "nautec:aquarine_steel_ingot" }
+				type: "item"
+			}]
+			x: 36.0d
+			y: -0.84d
+		}
+		{
+			dependencies: ["4C41010000010039"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "nautec:prism_monocle"
+			}
+			id: "4C4101000001003A"
+			rewards: [{
+				id: "4C4101000003003A"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C4101000002003A"
+				item: { count: 1, id: "nautec:prism_monocle" }
+				type: "item"
+			}]
+			x: 37.5d
+			y: -3.15d
+		}
+		{
+			dependencies: ["4C41010000010039"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "nautec:diving_chestplate"
+			}
+			id: "4C4101000001003B"
+			rewards: [{
+				id: "4C4101000003003B"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C4101000002003B"
+				item: { count: 1, id: "nautec:diving_chestplate" }
+				type: "item"
+			}]
+			x: 37.5d
+			y: -2.25d
+		}
+		{
+			dependencies: ["4C41010000010039"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "nautec:aquatic_chip"
+			}
+			id: "4C4101000001003C"
+			rewards: [{
+				id: "4C4101000003003C"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C4101000002003C"
+				item: { count: 1, id: "nautec:aquatic_chip" }
+				type: "item"
+			}]
+			x: 37.5d
+			y: -1.35d
+		}
+		{
+			dependencies: ["4C41010000010039"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "nautec:burnt_coil"
+			}
+			id: "4C4101000001003D"
+			rewards: [{
+				id: "4C4101000003003D"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C4101000002003D"
+				item: { count: 1, id: "nautec:burnt_coil" }
+				type: "item"
+			}]
+			x: 37.5d
+			y: 1.46d
+		}
+		{
+			dependencies: ["4C4101000001003D"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "nautec:laser_channeling_coil"
+			}
+			id: "4C4101000001003E"
+			rewards: [{
+				id: "4C4101000003003E"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C4101000002003E"
+				item: { count: 1, id: "nautec:laser_channeling_coil" }
+				type: "item"
+			}]
+			x: 39.0d
+			y: 1.46d
+		}
+		{
+			dependencies: ["4C4101000001003E"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "nautec:prismarine_lens"
+			}
+			id: "4C4101000001003F"
+			rewards: [{
+				id: "4C4101000003003F"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C4101000002003F"
+				item: { count: 1, id: "nautec:prismarine_lens" }
+				type: "item"
+			}]
+			x: 40.5d
+			y: 0.68d
+		}
+		{
+			dependencies: ["4C4101000001003F"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "nautec:long_distance_laser"
+			}
+			id: "4C41010000010040"
+			rewards: [{
+				id: "4C41010000030040"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C41010000020040"
+				item: { count: 1, id: "nautec:long_distance_laser" }
+				type: "item"
+			}]
+			x: 42.0d
+			y: 0.68d
+		}
+		{
+			dependencies: ["4C4101000001003E"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "nautec:prismatic_battery"
+			}
+			id: "4C41010000010041"
+			rewards: [{
+				id: "4C41010000030041"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C41010000020041"
+				item: { count: 1, id: "nautec:prismatic_battery" }
+				type: "item"
+			}]
+			x: 40.5d
+			y: 2.25d
+		}
+		{
+			dependencies: [
+				"4C41010000010040"
+				"4C41010000010041"
+				"4C4101000001003C"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				id: "nautec:laser_junction"
+			}
+			id: "4C41010000010042"
+			rewards: [
+				{
+					id: "4C41010000030042"
+					type: "xp"
+					xp: 150
+				}
+				{
+					count: 4
+					id: "4C41010000031142"
+					item: {
+						count: 1
+						id: "nautec:laser_channeling_coil"
+					}
+					random_bonus: 2
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C41010000020042"
+				item: { count: 1, id: "nautec:laser_junction" }
+				type: "item"
+			}]
+			x: 43.5d
+			y: 0.68d
+		}
+		{
+			dependencies: ["4C4101000001001E"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "mekanism:pressurized_reaction_chamber"
+			}
+			id: "4C41010000010043"
+			rewards: [{
+				id: "4C41010000030043"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C41010000020043"
+				item: { count: 1, id: "mekanism:pressurized_reaction_chamber" }
+				type: "item"
+			}]
+			x: 21.0d
+			y: 7.65d
+		}
+		{
+			dependencies: ["4C41010000010043"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "mekanism:substrate"
+			}
+			id: "4C41010000010044"
+			rewards: [{
+				id: "4C41010000030044"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C41010000020044"
+				item: { count: 1, id: "mekanism:substrate" }
+				type: "item"
+			}]
+			x: 22.5d
+			y: 7.65d
+		}
+		{
+			dependencies: ["4C41010000010044"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "mekanism:ethene_bucket"
+			}
+			id: "4C41010000010045"
+			rewards: [{
+				id: "4C41010000030045"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C41010000020045"
+				item: { count: 1, id: "mekanism:ethene_bucket" }
+				type: "item"
+			}]
+			x: 24.0d
+			y: 7.65d
+		}
+		{
+			dependencies: ["4C41010000010045"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "mekanism:hdpe_sheet"
+			}
+			id: "4C41010000010046"
+			rewards: [{
+				id: "4C41010000030046"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			size: 1.0d
+			tasks: [
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4C41010000020046"
+					item: { count: 1, id: "mekanism:hdpe_pellet" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4C41010000020146"
+					item: { count: 1, id: "mekanism:hdpe_sheet" }
+					type: "item"
+				}
+			]
+			x: 25.5d
+			y: 7.65d
+		}
+		{
+			dependencies: ["4C41010000010042"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "nautec:petri_dish"
+			}
+			id: "4C41010000010047"
+			rewards: [{
+				id: "4C41010000030047"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C41010000020047"
+				item: { count: 1, id: "nautec:petri_dish" }
+				type: "item"
+			}]
+			x: 45.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4C41010000010034"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "nautec:grafting_tool"
+			}
+			id: "4C41010000010048"
+			rewards: [{
+				id: "4C41010000030048"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C41010000020048"
+				item: { count: 1, id: "nautec:grafting_tool" }
+				type: "item"
+			}]
+			x: 33.0d
+			y: 3.15d
+		}
+		{
+			dependencies: ["4C41010000010047"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "nautec:bacterial_analyzer"
+			}
+			id: "4C41010000010049"
+			rewards: [{
+				id: "4C41010000030049"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C41010000020049"
+				item: { count: 1, id: "nautec:bacterial_analyzer" }
+				type: "item"
+			}]
+			x: 46.5d
+			y: -0.45d
+		}
+		{
+			dependencies: ["4C41010000010049"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "nautec:bio_reactor"
+			}
+			id: "4C4101000001004A"
+			rewards: [{
+				id: "4C4101000003004A"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C4101000002004A"
+				item: { count: 1, id: "nautec:bio_reactor" }
+				type: "item"
+			}]
+			x: 48.0d
+			y: -0.45d
+		}
+		{
+			dependencies: ["4C41010000010047"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "nautec:incubator"
+			}
+			id: "4C4101000001004B"
+			rewards: [{
+				id: "4C4101000003004B"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C4101000002004B"
+				item: { count: 1, id: "nautec:incubator" }
+				type: "item"
+			}]
+			x: 46.5d
+			y: 0.45d
+		}
+		{
+			dependencies: [
+				"4C41010000010046"
+				"4C4101000001004A"
+				"4C4101000001004B"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				id: "nautec:mutator"
+			}
+			id: "4C4101000001004C"
+			rewards: [
+				{
+					id: "4C4101000003004C"
+					type: "xp"
+					xp: 150
+				}
+				{
+					count: 8
+					id: "4C41010000031C4C"
+					item: {
+						count: 1
+						id: "mekanism:hdpe_sheet"
+					}
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C4101000002024C"
+				item: { count: 1, id: "nautec:mutator" }
+				type: "item"
+			}]
+			x: 49.5d
+			y: 7.65d
+		}
+		{
+			dependencies: ["4C41010000010042"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "nautec:eldritch_heart"
+			}
+			id: "4C4101000001004E"
+			rewards: [{
+				id: "4C4101000003004E"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C4101000002004E"
+				item: { count: 1, id: "nautec:eldritch_heart" }
+				type: "item"
+			}]
+			x: 46.5d
+			y: 1.35d
+		}
+		{
+			dependencies: ["4C4101000001004E"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "nautec:augmentation_station"
+			}
+			id: "4C4101000001004F"
+			rewards: [
+				{
+					id: "4C4101000003004F"
+					type: "xp"
+					xp: 150
+				}
+				{
+					count: 4
+					id: "4C4101000003114F"
+					item: {
+						count: 1
+						id: "nautec:augmentation_station_extension"
+					}
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C4101000002024F"
+				item: { count: 1, id: "nautec:augmentation_station" }
+				type: "item"
+			}]
+			x: 48.0d
+			y: 1.35d
+		}
+		{
+			dependencies: ["4C4101000001004F"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "nautec:claw_robot_arm"
+			}
+			id: "4C41010000010050"
+			rewards: [{
+				id: "4C41010000030050"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C41010000020050"
+				item: { count: 1, id: "nautec:claw_robot_arm" }
+				type: "item"
+			}]
+			x: 49.5d
+			y: 1.35d
+		}
+		{
+			dependencies: ["4C41010000010050"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "nautec:guardian_eye"
+			}
+			id: "4C41010000010051"
+			rewards: [
+				{
+					id: "4C41010000030051"
+					type: "xp"
+					xp: 200
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4C41010000031151"
+					item: {
+						count: 1
+						id: "nautec:dolphin_fin"
+					}
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C41010000020051"
+				item: { count: 1, id: "nautec:guardian_eye" }
+				type: "item"
+			}]
+			x: 51.0d
+			y: 1.35d
+		}
+		{
+			dependencies: ["4C4101000001004C"]
+			hide_dependency_lines: false
+			hide_until_deps_complete: true
+			icon: {
+				id: "mekanism:alloy_atomic"
+			}
+			icon_scale: 2.0d
+			id: "4C41010000010052"
+			min_required_dependencies: 4
+			rewards: [
+				{
+					id: "4C41010000030052"
+					type: "xp"
+					xp: 250
+				}
+				{
+					count: 8
+					exclude_from_claim_all: true
+					id: "4C41010000031252"
+					item: {
+						count: 1
+						id: "nautec:laser_channeling_coil"
+					}
+					type: "item"
+				}
+			]
+			shape: "pentagon"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C41010000020052"
+				item: { count: 1, id: "mekanism:alloy_atomic" }
+				type: "item"
+			}]
+			x: 51.0d
+			y: 7.65d
+		}
+		{
+			dependencies: ["4C4101000001001E"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "projectred_integration:timer_gate"
+			}
+			id: "4C41010000010053"
+			optional: true
+			rewards: [{
+				id: "4C41010000030053"
+				type: "xp"
+				xp: 75
+			}]
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C41010000020053"
+				item: { count: 1, id: "projectred_integration:timer_gate" }
+				type: "item"
+			}]
+			x: 22.5d
+			y: 6.75d
+		}
+		{
+			dependencies: ["4C41010000010053"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "projectred_integration:and_gate"
+			}
+			id: "4C41010000010054"
+			optional: true
+			rewards: [{
+				id: "4C41010000030054"
+				type: "xp"
+				xp: 75
+			}]
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C41010000020054"
+				item: { count: 1, id: "projectred_integration:and_gate" }
+				type: "item"
+			}]
+			x: 24.0d
+			y: 6.75d
+		}
+	]
+}

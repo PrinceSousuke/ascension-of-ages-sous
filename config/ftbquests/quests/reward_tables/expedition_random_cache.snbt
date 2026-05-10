@@ -1,0 +1,78 @@
+{
+	icon: {
+		id: "minecraft:oak_chest_boat"
+	}
+	id: "7300000000000001"
+	loot_size: 1
+	order_index: 22
+	rewards: [
+		{
+			id: "7301000000000001"
+			item: {
+				count: 1
+				id: "waystones:waystone"
+			}
+			weight: 3.0f
+		}
+		{
+			id: "7301000000000002"
+			item: {
+				count: 1
+				id: "sophisticatedbackpacks:gold_backpack"
+			}
+			weight: 2.5f
+		}
+		{
+			id: "7301000000000003"
+			item: {
+				count: 1
+				id: "minecraft:oak_chest_boat"
+			}
+			weight: 3.0f
+		}
+		{
+			count: 2
+			id: "7301000000000004"
+			item: {
+				count: 1
+				id: "minecraft:trial_key"
+			}
+			weight: 3.0f
+		}
+		{
+			id: "7301000000000005"
+			item: {
+				count: 1
+				id: "explorerscompass:explorerscompass"
+			}
+			weight: 1.5f
+		}
+		{
+			count: 4
+			id: "7301000000000006"
+			item: {
+				count: 1
+				id: "nautec:air_bottle"
+			}
+			weight: 2.0f
+		}
+		{
+			count: 2
+			id: "7301000000000007"
+			item: {
+				count: 1
+				id: "alkhars:flame_in_a_bottle"
+			}
+			weight: 1.5f
+		}
+		{
+			id: "7301000000000008"
+			item: {
+				count: 1
+				id: "ae2:item_storage_cell_1k"
+			}
+			weight: 1.25f
+		}
+	]
+	use_title: true
+}

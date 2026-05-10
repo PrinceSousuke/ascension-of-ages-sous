@@ -1,0 +1,29 @@
+{
+	icon: {
+		id: "minecraft:oak_chest_boat"
+	}
+	id: "7300000000000012"
+	loot_size: 1
+	order_index: 26
+	rewards: [
+		{ id: "7312000000000001", item: { count: 1, id: "explorerscompass:explorerscompass" } }
+		{
+			count: 4
+			id: "7312000000000002"
+			item: {
+				count: 1
+				id: "nautec:air_bottle"
+			}
+		}
+		{
+			count: 2
+			id: "7312000000000003"
+			item: {
+				count: 1
+				id: "alkhars:flame_in_a_bottle"
+			}
+		}
+		{ id: "7312000000000004", item: { count: 1, id: "ae2:item_storage_cell_1k" } }
+	]
+	use_title: true
+}

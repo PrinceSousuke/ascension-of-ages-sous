@@ -1,0 +1,1719 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "r5_the_fallen_star"
+	group: "0B038EB15EBBFD95"
+	hide_quest_until_deps_complete: true
+	icon: {
+		id: "eternal_starlight:orb_of_prophecy"
+	}
+	id: "1CA7109A0FAF33AF"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"04C9AC6678A69875"
+				"08B35FCEB44F2F03"
+			]
+			hide_until_deps_complete: true
+			id: "5A286602E5DC00A2"
+			rewards: [{
+				id: "1DA86CE6B1E716C5"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "18B50DB21B69163A"
+				item: { count: 1, id: "eternal_starlight:orb_of_prophecy" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5A286602E5DC00A2"]
+			hide_until_deps_complete: true
+			id: "0CBBB1EB2144BCB5"
+			rewards: [{
+				id: "49DB85F633E1AA1A"
+				type: "xp"
+				xp: 200
+			}]
+			shape: "rsquare"
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				entity: "eternal_starlight:the_gatekeeper"
+				id: "6D8DAA581163106C"
+				type: "kill"
+				value: 1L
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0CBBB1EB2144BCB5"]
+			hide_until_deps_complete: true
+			id: "6A6E6AF1EFA361BB"
+			rewards: [{
+				id: "2ABA34D20008B297"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "37C96AC08C082474"
+				item: { count: 1, id: "eternal_starlight:book" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6A6E6AF1EFA361BB"]
+			hide_until_deps_complete: true
+			id: "3F60F5275861D65B"
+			rewards: [{
+				id: "73DFCD664D1522FF"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				dimension: "eternal_starlight:starlight"
+				id: "7A6443454009506E"
+				type: "dimension"
+			}]
+			x: 7.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3F60F5275861D65B"]
+			hide_until_deps_complete: true
+			id: "797DF1B61A45B9FD"
+			rewards: [{
+				id: "04694DCC01CEA3FA"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "diamond"
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "5AEA7AE01A19B287"
+				item: { count: 1, id: "eternal_starlight:music_disc_optimized_option" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3F60F5275861D65B"]
+			hide_until_deps_complete: true
+			id: "379E477105EE5F9E"
+			rewards: [{
+				id: "607D1FAECF15DB29"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "6031749B89874623"
+				item: { count: 1, id: "eternal_starlight:mana_crystal" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["379E477105EE5F9E"]
+			hide_until_deps_complete: true
+			id: "27405F3036E62186"
+			rewards: [{
+				id: "43364DE28BE318CE"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "35822A9D7AF207AF"
+				item: { count: 1, id: "eternal_starlight:blue_starlight_crystal_shard" }
+				type: "item"
+			}]
+			x: 11.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["379E477105EE5F9E"]
+			hide_until_deps_complete: true
+			id: "3F960130E5BD7D54"
+			rewards: [{
+				id: "20DBAE2292DFD998"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "rsquare"
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "7BA42454DB5F87C6"
+				item: { count: 1, id: "eternal_starlight:red_starlight_crystal_shard" }
+				type: "item"
+			}]
+			x: 11.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"27405F3036E62186"
+				"3F960130E5BD7D54"
+			]
+			hide_until_deps_complete: true
+			id: "3DB04EDE7D401C44"
+			rewards: [{
+				id: "38C49221D2BF4B88"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0A75C6AA6292B8F0"
+				item: { count: 1, id: "eternal_starlight:aethersent_ingot" }
+				type: "item"
+			}]
+			x: 13.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3DB04EDE7D401C44"]
+			hide_until_deps_complete: true
+			id: "64F7979B207A5723"
+			rewards: [{
+				id: "7E3D4E81DAF958C7"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "43F68087CC5D85EC"
+				item: { count: 1, id: "eternal_starlight:amaramber_ingot" }
+				type: "item"
+			}]
+			x: 15.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["64F7979B207A5723"]
+			hide_until_deps_complete: true
+			id: "327B6BA6B94DF9E9"
+			rewards: [{
+				id: "5C98C1EB08EC99DE"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "37C5170C1D62C2D3"
+				item: { count: 1, id: "eternal_starlight:deepsilver_ingot" }
+				type: "item"
+			}]
+			x: 17.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["327B6BA6B94DF9E9"]
+			hide_until_deps_complete: true
+			id: "60D3C24718A84EC2"
+			rewards: [{
+				id: "115E38A405A86DE6"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "28BA27B7B6885B90"
+				item: { count: 1, id: "eternal_starlight:glacite_shard" }
+				type: "item"
+			}]
+			x: 19.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["60D3C24718A84EC2"]
+			hide_until_deps_complete: true
+			id: "1D5FE83E8B73BE7B"
+			rewards: [{
+				id: "29D114967262AFF0"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "384DAD77AD8BC99D"
+				item: { count: 1, id: "eternal_starlight:thioquartz_shard" }
+				type: "item"
+			}]
+			x: 21.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1D5FE83E8B73BE7B"]
+			hide_until_deps_complete: true
+			id: "6069C51CDA107811"
+			rewards: [{
+				id: "007202BDE41B82E0"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "6C616E3DABA40BC3"
+				item: { count: 1, id: "eternal_starlight:thermal_springstone_ingot" }
+				type: "item"
+			}]
+			x: 23.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6069C51CDA107811"]
+			hide_until_deps_complete: true
+			id: "212833237642AD58"
+			rewards: [{
+				id: "597CBBDF7AD212E2"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "713089B53978EA99"
+				item: { count: 1, id: "eternal_starlight:raw_flowglaze" }
+				type: "item"
+			}]
+			x: 25.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3DB04EDE7D401C44"]
+			hide_until_deps_complete: true
+			id: "3B19DD5032B7163F"
+			rewards: [{
+				id: "74E5AEE8023C5BDB"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "rsquare"
+			tasks: [
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "2050F3BB83FAD824"
+					item: { count: 1, id: "eternal_starlight:aethersent_cape" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "349E5F9A5E3DF172"
+					item: { count: 1, id: "eternal_starlight:aethersent_hood" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "19EADD2324282167"
+					item: { count: 1, id: "eternal_starlight:aethersent_bottoms" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "6E983226B059C61F"
+					item: { count: 1, id: "eternal_starlight:aethersent_boots" }
+					type: "item"
+				}
+			]
+			x: 13.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3B19DD5032B7163F"]
+			hide_until_deps_complete: true
+			id: "3677657520E0C0C1"
+			rewards: [{
+				id: "11528D16A5F5E77A"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "53A69A845D9DB6C5"
+				item: { count: 1, id: "eternal_starlight:starfall_longbow" }
+				type: "item"
+			}]
+			x: 15.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3677657520E0C0C1"]
+			hide_until_deps_complete: true
+			id: "344ECE9368E8366F"
+			rewards: [{
+				id: "6F3A05603DC0B784"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "793D48C84A9B9B38"
+				item: { count: 1, id: "eternal_starlight:aethersent_arrow" }
+				type: "item"
+			}]
+			x: 17.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["327B6BA6B94DF9E9"]
+			hide_until_deps_complete: true
+			id: "723F5E944741006F"
+			rewards: [{
+				id: "5D11463CD7454BFE"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "rsquare"
+			tasks: [
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "3F9A87CCF537BD65"
+					item: { count: 1, id: "eternal_starlight:deepsilver_helmet" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "5A05332C68C5C376"
+					item: { count: 1, id: "eternal_starlight:deepsilver_chestplate" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "68311B8451741109"
+					item: { count: 1, id: "eternal_starlight:deepsilver_leggings" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "3E1110A26E5B2FFF"
+					item: { count: 1, id: "eternal_starlight:deepsilver_boots" }
+					type: "item"
+				}
+			]
+			x: 17.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["60D3C24718A84EC2"]
+			hide_until_deps_complete: true
+			id: "2EF74E251B7CF27A"
+			rewards: [{
+				id: "5C27A1876A21F42E"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "rsquare"
+			tasks: [
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "73AB1D7C4A224F96"
+					item: { count: 1, id: "eternal_starlight:glacite_helmet" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "081725E97AD21585"
+					item: { count: 1, id: "eternal_starlight:glacite_chestplate" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "56D675C826621020"
+					item: { count: 1, id: "eternal_starlight:glacite_leggings" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4663F2D75CBBDFA4"
+					item: { count: 1, id: "eternal_starlight:glacite_boots" }
+					type: "item"
+				}
+			]
+			x: 19.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6069C51CDA107811"]
+			hide_until_deps_complete: true
+			id: "4CB3F3E52FF14B02"
+			rewards: [{
+				id: "0F731C91DE3072F7"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "rsquare"
+			tasks: [
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "7085AC91C08C5001"
+					item: { count: 1, id: "eternal_starlight:thermal_springstone_helmet" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "3EC81004577D675D"
+					item: { count: 1, id: "eternal_starlight:thermal_springstone_chestplate" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "13410BBF3CE0BFD8"
+					item: { count: 1, id: "eternal_starlight:thermal_springstone_leggings" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "60EEC144CB2E3193"
+					item: { count: 1, id: "eternal_starlight:thermal_springstone_boots" }
+					type: "item"
+				}
+			]
+			x: 23.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4CB3F3E52FF14B02"]
+			hide_until_deps_complete: true
+			id: "4C7AC08710454C2B"
+			rewards: [{
+				id: "38B0D62E48EDE344"
+				type: "xp"
+				xp: 150
+			}]
+			shape: "rsquare"
+			tasks: [
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "6BF39B3D57376487"
+					item: { count: 1, id: "eternal_starlight:starlit_diamond_helmet" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "2FF5FCAF51C1F8E8"
+					item: { count: 1, id: "eternal_starlight:starlit_diamond_chestplate" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "5C5A328C1F2F7125"
+					item: { count: 1, id: "eternal_starlight:starlit_diamond_leggings" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "40A97DD00F0A7180"
+					item: { count: 1, id: "eternal_starlight:starlit_diamond_boots" }
+					type: "item"
+				}
+			]
+			x: 25.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["212833237642AD58"]
+			hide_until_deps_complete: true
+			id: "01E1EF862A35F38D"
+			rewards: [{
+				id: "1E3EC813002BC6FC"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "76E67B9F8F199595"
+				item: { count: 1, id: "eternal_starlight:flowglaze_upgrade_smithing_template" }
+				type: "item"
+			}]
+			x: 25.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"212833237642AD58"
+				"01E1EF862A35F38D"
+			]
+			hide_until_deps_complete: true
+			id: "27944E17BDF60435"
+			rewards: [{
+				id: "1762F3BC9AA64A99"
+				type: "xp"
+				xp: 150
+			}]
+			shape: "rsquare"
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0FA612049FB5909E"
+				item: { count: 1, id: "eternal_starlight:flowglaze" }
+				type: "item"
+			}]
+			x: 27.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["27944E17BDF60435"]
+			hide_until_deps_complete: true
+			id: "1F1F3EEF94C8A08D"
+			rewards: [{
+				id: "0B85E54BE94B9D25"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "412912919B244995"
+				item: { count: 1, id: "eternal_starlight:starfire_hammer" }
+				type: "item"
+			}]
+			x: 29.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["27944E17BDF60435"]
+			hide_until_deps_complete: true
+			id: "46115E2AF01B6866"
+			rewards: [{
+				id: "478A452C1C22DA7B"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "3EEC89EBCEC38634"
+				item: { count: 1, id: "eternal_starlight:crystal_greatsword" }
+				type: "item"
+			}]
+			x: 29.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["27944E17BDF60435"]
+			hide_until_deps_complete: true
+			id: "52FA3E4B2B33095B"
+			rewards: [{
+				id: "657F0F10B69ADD79"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "rsquare"
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "391E85798E6D09F9"
+				item: { count: 1, id: "eternal_starlight:dagger_of_hunger" }
+				type: "item"
+			}]
+			x: 31.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["52FA3E4B2B33095B"]
+			hide_until_deps_complete: true
+			id: "4F2AA98F732218B8"
+			rewards: [{
+				id: "1B7634D87BF3336C"
+				type: "xp"
+				xp: 200
+			}]
+			shape: "rsquare"
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				entity: "eternal_starlight:starlight_golem"
+				id: "66323CF65C0142CF"
+				type: "kill"
+				value: 1L
+			}]
+			x: 33.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["4F2AA98F732218B8"]
+			hide_until_deps_complete: true
+			id: "0D1584C4C0FE812F"
+			rewards: [{
+				id: "550FF9A02FAB48FE"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "7B1196981E78F8D8"
+				item: { count: 1, id: "eternal_starlight:oxidized_golem_steel_ingot" }
+				type: "item"
+			}]
+			x: 35.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0D1584C4C0FE812F"]
+			hide_until_deps_complete: true
+			id: "5A814F5A06A5B350"
+			rewards: [{
+				id: "30E258ED96693A6B"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "7FD4D79CDC249D6B"
+				item: { count: 1, id: "eternal_starlight:energy_sword" }
+				type: "item"
+			}]
+			x: 37.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["5A814F5A06A5B350"]
+			hide_until_deps_complete: true
+			id: "5265E6A242B2FBBD"
+			rewards: [{
+				id: "76DC458D325F408C"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "6C9E8AAFA744BBF6"
+				item: { count: 1, id: "eternal_starlight:forge_armor_trim_smithing_template" }
+				type: "item"
+			}]
+			x: 39.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["52FA3E4B2B33095B"]
+			hide_until_deps_complete: true
+			id: "744C7E0F329DA02B"
+			rewards: [{
+				id: "6E0AB74CA6DDFD22"
+				type: "xp"
+				xp: 200
+			}]
+			shape: "rsquare"
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				entity: "eternal_starlight:permafrost"
+				id: "24BFEEC4B5F7323E"
+				type: "kill"
+				value: 1L
+			}]
+			x: 33.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["744C7E0F329DA02B"]
+			hide_until_deps_complete: true
+			id: "04EDCD0B6D653077"
+			rewards: [{
+				id: "63B7E7D12FF2EE1E"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "6E5E16835D644D86"
+				item: { count: 1, id: "eternal_starlight:coldsnap" }
+				type: "item"
+			}]
+			x: 35.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["52FA3E4B2B33095B"]
+			hide_until_deps_complete: true
+			id: "6997D4E8772B5E8C"
+			rewards: [{
+				id: "38479251272EA921"
+				type: "xp"
+				xp: 200
+			}]
+			shape: "rsquare"
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				entity: "eternal_starlight:lunar_monstrosity"
+				id: "755477752B3FAE26"
+				type: "kill"
+				value: 1L
+			}]
+			x: 33.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6997D4E8772B5E8C"]
+			hide_until_deps_complete: true
+			id: "11D413E28EF327B6"
+			rewards: [{
+				id: "5642AE750710BBD9"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "1B7DC9049EE1759E"
+				item: { count: 1, id: "eternal_starlight:moonring_bow" }
+				type: "item"
+			}]
+			x: 35.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["11D413E28EF327B6"]
+			hide_until_deps_complete: true
+			id: "030EAD87F43B0F51"
+			rewards: [{
+				id: "0D15B947346347C4"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "71453D3DDC7E31F2"
+				item: { count: 1, id: "eternal_starlight:crescent_pendant" }
+				type: "item"
+			}]
+			x: 37.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["030EAD87F43B0F51"]
+			hide_until_deps_complete: true
+			id: "6006F3F0566BE51B"
+			rewards: [{
+				id: "62E6F6877EFA6686"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "05026CB791D254A0"
+				item: { count: 1, id: "eternal_starlight:twining_armor_trim_smithing_template" }
+				type: "item"
+			}]
+			x: 39.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["52FA3E4B2B33095B"]
+			hide_until_deps_complete: true
+			id: "7015044E71E2A547"
+			rewards: [{
+				id: "1E02297583C3184E"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "52499BAC361A5A38"
+				item: { count: 1, id: "block_factorys_bosses:dragon_guard_shield" }
+				type: "item"
+			}]
+			x: 33.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7015044E71E2A547"]
+			hide_until_deps_complete: true
+			id: "693818D5656A64A1"
+			rewards: [{
+				id: "6999D2ABD31101C8"
+				type: "xp"
+				xp: 250
+			}]
+			shape: "rsquare"
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				entity: "block_factorys_bosses:infernal_dragon"
+				id: "1AEB1E281D6F0C8D"
+				type: "kill"
+				value: 1L
+			}]
+			x: 35.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["693818D5656A64A1"]
+			hide_until_deps_complete: true
+			id: "73E9AEDC0604E6CE"
+			rewards: [{
+				id: "763DA16EAB108F45"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "6D508DC5A1AD225D"
+				item: { count: 1, id: "block_factorys_bosses:dragon_skull" }
+				type: "item"
+			}]
+			x: 37.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["73E9AEDC0604E6CE"]
+			hide_until_deps_complete: true
+			id: "0A47A8410AC5DDA8"
+			rewards: [{
+				id: "2963866360000E36"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "rsquare"
+			tasks: [
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "60B4660611AD2C44"
+					item: { count: 1, id: "block_factorys_bosses:dragon_bones_chestplate" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "7EF242E820B2AFA3"
+					item: { count: 1, id: "block_factorys_bosses:dragon_bones_leggings" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "64248CE1B3F37CAE"
+					item: { count: 1, id: "block_factorys_bosses:dragon_bones_boots" }
+					type: "item"
+				}
+			]
+			x: 39.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"4F2AA98F732218B8"
+				"744C7E0F329DA02B"
+				"6997D4E8772B5E8C"
+				"693818D5656A64A1"
+			]
+			hide_until_deps_complete: true
+			id: "13D66D6A506008F2"
+			rewards: [{
+				id: "0AAF6CC5ADA5D111"
+				type: "xp"
+				xp: 150
+			}]
+			shape: "rsquare"
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "31B46CC9AAE0B7F2"
+				item: { count: 1, id: "eternal_starlight:soul_dew" }
+				type: "item"
+			}]
+			x: 42.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["13D66D6A506008F2"]
+			hide_until_deps_complete: true
+			id: "23594A58EE25F2B3"
+			rewards: [{
+				id: "76E7941E2EBFBA22"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4CDC60CFF95975C8"
+				item: { count: 1, id: "eternal_starlight:starfire_upgrade_smithing_template" }
+				type: "item"
+			}]
+			x: 44.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["23594A58EE25F2B3"]
+			hide_until_deps_complete: true
+			id: "58341CF00E4AEDC9"
+			rewards: [{
+				id: "14EA8FBDD7242574"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4088530E62BBBC03"
+					item: { count: 1, id: "eternal_starlight:crystalborn_catalyst" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "713B8601222A3FFA"
+					item: { count: 1, id: "eternal_starlight:tooth_of_hunger" }
+					type: "item"
+				}
+			]
+			x: 46.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["23594A58EE25F2B3"]
+			hide_until_deps_complete: true
+			id: "43B9CF03D8E8755F"
+			rewards: [{
+				id: "79D6FED24091C392"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "6110C4B9279BB92A"
+				item: { count: 1, id: "eternal_starlight:eclipse_core" }
+				type: "item"
+			}]
+			x: 46.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["58341CF00E4AEDC9"]
+			hide_until_deps_complete: true
+			id: "40BA962891CC9395"
+			rewards: [{
+				id: "6E819F1D610EF880"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "101B57372A0D6FA6"
+				item: { count: 1, id: "eternal_starlight:blazing_starcore_block" }
+				type: "item"
+			}]
+			x: 48.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["43B9CF03D8E8755F"]
+			hide_until_deps_complete: true
+			id: "6A9280907C5F9065"
+			rewards: [{
+				id: "43064B0498993CD8"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "7A964FAF7356C53E"
+				item: { count: 1, id: "eternal_starlight:starcore" }
+				type: "item"
+			}]
+			x: 48.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"40BA962891CC9395"
+				"6A9280907C5F9065"
+			]
+			hide_until_deps_complete: true
+			id: "14CF2A9A9C14E0CF"
+			rewards: [{
+				id: "5C3F3BB4CCDE5C0A"
+				type: "xp"
+				xp: 200
+			}]
+			shape: "rsquare"
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "62EAC78732219795"
+				item: { count: 1, id: "eternal_starlight:unrealium_ingot" }
+				type: "item"
+			}]
+			x: 50.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["14CF2A9A9C14E0CF"]
+			hide_until_deps_complete: true
+			id: "08A174880BD0C2CB"
+			rewards: [{
+				id: "5D270582F2A576F2"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "54C9FF31A30AAF52"
+				item: { count: 1, id: "eternal_starlight:unrealium_sword" }
+				type: "item"
+			}]
+			x: 52.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["14CF2A9A9C14E0CF"]
+			hide_until_deps_complete: true
+			id: "1502A04F252A9DDB"
+			rewards: [{
+				id: "78C231DA39810F66"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "2DD54BEBE4E8B91D"
+				item: { count: 1, id: "eternal_starlight:unrealium_crossbow" }
+				type: "item"
+			}]
+			x: 52.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["14CF2A9A9C14E0CF"]
+			hide_until_deps_complete: true
+			id: "486EFE363116610B"
+			rewards: [{
+				id: "35AAF4454DB1AC71"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "diamond"
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "5AC9AB97F1C59BCC"
+				item: { count: 1, id: "eternal_starlight:butterfly_wings_amulet" }
+				type: "item"
+			}]
+			x: 50.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["14CF2A9A9C14E0CF"]
+			hide_until_deps_complete: true
+			id: "7C6DEF08EF7C60DB"
+			rewards: [{
+				id: "680C9AC97D3CCDCC"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "diamond"
+			tasks: [
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "6A5AB8EFAA732590"
+					item: { count: 1, id: "eternal_starlight:starlit_painting" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "063E3ADF7A9E5B0B"
+					item: { count: 1, id: "eternal_starlight:starlit_painting" }
+					type: "item"
+				}
+			]
+			x: 50.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"08A174880BD0C2CB"
+				"1502A04F252A9DDB"
+			]
+			hide_until_deps_complete: true
+			id: "2A330E059C46608B"
+			rewards: [{
+				id: "4E74E72FAECC81BA"
+				type: "xp"
+				xp: 200
+			}]
+			shape: "rsquare"
+			tasks: [
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4B3E45E60573D3EF"
+					item: { count: 1, id: "eternal_starlight:unrealium_helmet" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "57C66A5F4BC37440"
+					item: { count: 1, id: "eternal_starlight:unrealium_chestplate" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "139176B79E4CC561"
+					item: { count: 1, id: "eternal_starlight:unrealium_leggings" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "6494ACC9462417C2"
+					item: { count: 1, id: "eternal_starlight:unrealium_boots" }
+					type: "item"
+				}
+			]
+			x: 54.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2A330E059C46608B"]
+			hide_until_deps_complete: true
+			id: "739A211BEB4C9A1F"
+			rewards: [{
+				id: "40327799BC632025"
+				type: "xp"
+				xp: 500
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "2482E37B50E3349E"
+				item: { count: 1, id: "eternal_starlight:unrealium_sickle" }
+				type: "item"
+			}]
+			x: 57.0d
+			y: 0.0d
+		}
+	]
+}

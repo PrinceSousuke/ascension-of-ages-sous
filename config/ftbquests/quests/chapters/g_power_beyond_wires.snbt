@@ -1,0 +1,41 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "g_power_beyond_wires"
+	group: "5E42E6B4A7C91D30"
+	hide_quest_until_deps_complete: true
+	icon: {
+		id: "powergrid:electrical_gizmo"
+	}
+	id: "5057010000000000"
+	order_index: 8
+	quest_links: [ ]
+	quests: [{
+		dependencies: ["4F44010000010050"]
+		id: "5DC7713F8BF3C06F"
+		rewards: [{
+			command: "/stage grant {p} atomic_age"
+			icon: {
+				id: "nuclearscience:meltedreactor"
+			}
+			id: "490C1E3D514EDFF4"
+			permission_level: 2
+			type: "command"
+		}]
+		tasks: [{
+			SkillsLevel: {
+				category: ""
+				check: 0b
+				comparison: "GREATER_OR_EQUAL"
+				first: 10
+				mode: "TOTAL_LEVEL"
+				second: 20
+			}
+			id: "43E8F75B630C81B9"
+			item: { count: 1, id: "astral_dimension:astral_eye" }
+			type: "item"
+		}]
+		x: -0.5d
+		y: -0.5d
+	}]
+}

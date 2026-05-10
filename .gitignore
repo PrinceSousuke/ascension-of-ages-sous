@@ -1,0 +1,74 @@
+# Ascension of Ages source repo ignore rules.
+# Keep authored pack source in Git; keep local runtime, downloads, jars, saves,
+# logs, caches, and generated exports out of GitHub.
+
+# CurseForge / launcher local state
+/.curseclient
+/minecraftinstance.json
+/user-prefs.json
+/usercache.json
+/usernamecache.json
+/command_history.txt
+/options.txt
+/servers.dat
+/servers.dat_old
+/launcher_profiles.json
+
+# Downloaded mods and third-party binary assets
+/mods/
+/resourcepacks/
+/shaderpacks/
+*.jar
+*.zip
+*.7z
+*.rar
+*.mrpack
+*.disabled
+
+# Worlds, local player state, maps, and runtime data
+/saves/
+/journeymap/
+/local/
+/downloads/
+/reports/
+/crash-reports/
+/screenshots/
+/crash_assistant/
+/WaypointData.dat
+/ponders_watched.json
+/TrashSlotSaveState.json
+session.lock
+level.dat
+level.dat_old
+*.mca
+*.mcr
+*.dat_old
+
+# Logs, cache, and generated runtime output
+/logs/
+/.mixin.out/
+/.pg-native/
+/dynamic-data-pack-cache/
+/dynamic-resource-pack-cache/
+*.log
+*.log.gz
+*.tmp
+*.temp
+*.cache
+
+# Backups and generated audit scratch
+/backup/
+/audit_artifacts/
+*.bak
+*.old
+*.orig
+*.rej
+*.202[0-9]*
+*~
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/

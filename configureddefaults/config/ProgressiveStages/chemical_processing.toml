@@ -1,0 +1,28 @@
+[stage]
+id = "chemical_processing"
+display_name = "Chemical Processing"
+description = "Chemical Science entry, lab tools, readable acids, sulfur handling, and first wet chemistry."
+icon = "chemicalscience:chemical_bench_controller"
+unlock_message = "&a&lChemical Processing Unlocked! &r&7Lab chemistry and first acid chains can now begin."
+dependency = "advanced_electricity"
+
+[locks]
+items = []
+item_tags = []
+item_mods = []
+blocks = []
+block_tags = []
+block_mods = []
+dimensions = []
+fluids = []
+fluid_tags = []
+fluid_mods = []
+mods = []
+names = []
+entities = []
+entity_tags = []
+entity_mods = []
+unlocked_items = []
+unlocked_blocks = []
+unlocked_entities = []
+unlocked_fluids = []

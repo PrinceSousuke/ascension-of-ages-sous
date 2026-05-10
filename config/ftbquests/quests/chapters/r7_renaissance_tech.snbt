@@ -1,0 +1,2017 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "r7_renaissance_tech"
+	group: "0B038EB15EBBFD95"
+	hide_quest_until_deps_complete: true
+	icon: {
+		id: "create:precision_mechanism"
+	}
+	id: "7E7C00A700000000"
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["08B35FCEB44F2F03"]
+			hide_until_deps_complete: true
+			id: "7E7C01A700000001"
+			rewards: [{
+				id: "7E7C03A701000001"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "7E7C02A701000001"
+				item: { count: 1, id: "create:empty_blaze_burner" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.57d
+		}
+		{
+			dependencies: ["7E7C01A700000074"]
+			hide_until_deps_complete: true
+			id: "7E7C01A700000002"
+			rewards: [{
+				id: "7E7C03A701000002"
+				type: "xp"
+				xp: 75
+			}]
+			shape: "diamond"
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "7E7C02A701000002"
+				item: { count: 1, id: "create:blaze_burner" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: -7.31d
+		}
+		{
+			dependencies: ["7E7C01A700000002"]
+			hide_until_deps_complete: true
+			id: "7E7C01A700000003"
+			rewards: [{
+				id: "7E7C03A701000003"
+				type: "xp"
+				xp: 75
+			}]
+			shape: "diamond"
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				count: 8L
+				id: "7E7C02A701000003"
+				item: { count: 1, id: "create:brass_ingot" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: -12.38d
+		}
+		{
+			dependencies: ["7E7C01A700000003"]
+			hide_until_deps_complete: true
+			id: "7E7C01A700000004"
+			rewards: [{
+				id: "7E7C03A701000004"
+				type: "xp"
+				xp: 75
+			}]
+			shape: "diamond"
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				count: 4L
+				id: "7E7C02A701000004"
+				item: { count: 1, id: "create:brass_casing" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: -15.3d
+		}
+		{
+			dependencies: ["7E7C01A700000074"]
+			hide_until_deps_complete: true
+			id: "7E7C01A700000005"
+			rewards: [{
+				id: "7E7C03A701000005"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				count: 4L
+				id: "7E7C02A701000005"
+				item: { count: 1, id: "create:rose_quartz" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7E7C01A700000005"]
+			hide_until_deps_complete: true
+			id: "7E7C01A700000006"
+			rewards: [{
+				id: "7E7C03A701000006"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				count: 4L
+				id: "7E7C02A701000006"
+				item: { count: 1, id: "create:polished_rose_quartz" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7E7C01A700000006"]
+			hide_until_deps_complete: true
+			id: "7E7C01A700000007"
+			rewards: [{
+				id: "7E7C03A701000007"
+				type: "xp"
+				xp: 75
+			}]
+			shape: "diamond"
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				count: 4L
+				id: "7E7C02A701000007"
+				item: { count: 1, id: "create:electron_tube" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"7E7C01A700000007"
+				"7E7C01A700000003"
+			]
+			hide_until_deps_complete: true
+			id: "7E7C01A700000008"
+			rewards: [{
+				id: "7E7C03A701000008"
+				type: "xp"
+				xp: 75
+			}]
+			shape: "diamond"
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "7E7C02A701000008"
+				item: { count: 1, id: "create:precision_mechanism" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"7E7C01A700000004"
+				"7E7C01A700000007"
+			]
+			hide_until_deps_complete: true
+			id: "7E7C01A700000009"
+			rewards: [{
+				id: "7E7C03A701000009"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				count: 9L
+				id: "7E7C02A701000009"
+				item: { count: 1, id: "create:mechanical_crafter" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: -17.55d
+		}
+		{
+			dependencies: ["7E7C01A700000009"]
+			hide_until_deps_complete: true
+			id: "7E7C01A700000010"
+			rewards: [{
+				id: "7E7C03A701000010"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				count: 2L
+				id: "7E7C02A701000010"
+				item: { count: 1, id: "create:crushing_wheel" }
+				type: "item"
+			}]
+			x: 12.5d
+			y: -17.55d
+		}
+		{
+			dependencies: [
+				"7E7C01A700000004"
+				"7E7C01A700000007"
+			]
+			hide_until_deps_complete: true
+			id: "7E7C01A700000011"
+			rewards: [{
+				id: "7E7C03A701000011"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "7E7C02A701000011"
+				item: { count: 1, id: "create:deployer" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: -16.65d
+		}
+		{
+			dependencies: [
+				"7E7C01A700000004"
+				"7E7C01A700000008"
+			]
+			hide_until_deps_complete: true
+			id: "7E7C01A700000012"
+			rewards: [{
+				id: "7E7C03A701000012"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "diamond"
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "7E7C02A701000012"
+				item: { count: 1, id: "create:mechanical_arm" }
+				type: "item"
+			}]
+			x: 12.5d
+			y: -18.45d
+		}
+		{
+			dependencies: ["7E7C01A700000003"]
+			hide_until_deps_complete: true
+			id: "7E7C01A700000013"
+			rewards: [{
+				id: "7E7C03A701000013"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "7E7C02A701000013"
+				item: { count: 1, id: "create:transmitter" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: -9.45d
+		}
+		{
+			dependencies: ["7E7C01A700000004"]
+			hide_until_deps_complete: true
+			id: "7E7C01A700000014"
+			rewards: [{
+				id: "7E7C03A701000014"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "7E7C02A701000014"
+				item: { count: 1, id: "create:display_link" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: -15.75d
+		}
+		{
+			dependencies: ["7E7C01A700000007"]
+			hide_until_deps_complete: true
+			id: "7E7C01A700000015"
+			rewards: [{
+				id: "7E7C03A701000015"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "7E7C02A701000015"
+				item: { count: 1, id: "create:smart_chute" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 1.35d
+		}
+		{
+			dependencies: ["7E7C01A700000004"]
+			hide_until_deps_complete: true
+			id: "7E7C01A700000016"
+			rewards: [{
+				id: "7E7C03A701000016"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "7E7C02A701000016"
+				item: { count: 1, id: "create:rotation_speed_controller" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: -14.85d
+		}
+		{
+			dependencies: ["7E7C01A700000004"]
+			hide_until_deps_complete: true
+			id: "7E7C01A700000017"
+			rewards: [{
+				id: "7E7C03A701000017"
+				type: "xp"
+				xp: 75
+			}]
+			shape: "diamond"
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				count: 4L
+				id: "7E7C02A701000017"
+				item: { count: 1, id: "create:railway_casing" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: -12.15d
+		}
+		{
+			dependencies: ["7E7C01A700000017"]
+			hide_until_deps_complete: true
+			id: "7E7C01A700000018"
+			rewards: [{
+				id: "7E7C03A701000018"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				count: 32L
+				id: "7E7C02A701000018"
+				item: { count: 1, id: "create:track" }
+				type: "item"
+			}]
+			x: 12.5d
+			y: -13.95d
+		}
+		{
+			dependencies: ["7E7C01A700000017"]
+			hide_until_deps_complete: true
+			id: "7E7C01A700000019"
+			rewards: [{
+				id: "7E7C03A701000019"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "7E7C02A701000019"
+				item: { count: 1, id: "create:track_station" }
+				type: "item"
+			}]
+			x: 12.5d
+			y: -13.05d
+		}
+		{
+			dependencies: [
+				"7E7C01A700000008"
+				"7E7C01A700000017"
+			]
+			hide_until_deps_complete: true
+			id: "7E7C01A700000020"
+			rewards: [{
+				id: "7E7C03A701000020"
+				type: "xp"
+				xp: 75
+			}]
+			shape: "diamond"
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "7E7C02A701000020"
+				item: { count: 1, id: "create:controls" }
+				type: "item"
+			}]
+			x: 12.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7E7C01A700000017"]
+			hide_until_deps_complete: true
+			id: "7E7C01A700000021"
+			rewards: [{
+				id: "7E7C03A701000021"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "7E7C02A701000021"
+				item: { count: 1, id: "railways:handcar" }
+				type: "item"
+			}]
+			x: 12.5d
+			y: -12.15d
+		}
+		{
+			dependencies: ["7E7C01A700000020"]
+			hide_until_deps_complete: true
+			id: "7E7C01A700000022"
+			rewards: [{
+				id: "7E7C03A701000022"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "7E7C02A701000022"
+				item: { count: 1, id: "railways:black_conductor_cap" }
+				type: "item"
+			}]
+			x: 15.0d
+			y: -0.45d
+		}
+		{
+			dependencies: [
+				"7E7C01A700000007"
+				"7E7C01A700000017"
+			]
+			hide_until_deps_complete: true
+			id: "7E7C01A700000023"
+			rewards: [{
+				id: "7E7C03A701000023"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				count: 2L
+				id: "7E7C02A701000023"
+				item: { count: 1, id: "create:track_signal" }
+				type: "item"
+			}]
+			x: 12.5d
+			y: -1.35d
+		}
+		{
+			dependencies: ["7E7C01A700000017"]
+			hide_until_deps_complete: true
+			id: "7E7C01A700000024"
+			rewards: [{
+				id: "7E7C03A701000024"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "7E7C02A701000024"
+				item: { count: 1, id: "create:track_observer" }
+				type: "item"
+			}]
+			x: 12.5d
+			y: -11.25d
+		}
+		{
+			dependencies: ["7E7C01A700000017"]
+			hide_until_deps_complete: true
+			id: "7E7C01A700000025"
+			rewards: [{
+				id: "7E7C03A701000025"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				count: 2L
+				id: "7E7C02A701000025"
+				item: { count: 1, id: "create:train_door" }
+				type: "item"
+			}]
+			x: 12.5d
+			y: -10.35d
+		}
+		{
+			dependencies: [
+				"7E7C01A700000020"
+				"7E7C01A700000019"
+			]
+			hide_until_deps_complete: true
+			id: "7E7C01A700000026"
+			rewards: [
+				{
+					id: "7E7C03A701000026"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "7E7C03A702000026"
+					item: {
+						count: 1
+						id: "create:railway_casing"
+					}
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "7E7C02A701000026"
+				item: { count: 1, id: "create:schedule" }
+				type: "item"
+			}]
+			x: 15.0d
+			y: 0.45d
+		}
+		{
+			dependencies: ["7E7C01A700000074"]
+			hide_until_deps_complete: true
+			id: "7E7C01A700000027"
+			rewards: [{
+				id: "7E7C03A701000027"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "7E7C02A701000027"
+				item: { count: 1, id: "createaddition:rolling_mill" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 3.15d
+		}
+		{
+			dependencies: ["7E7C01A700000027"]
+			hide_until_deps_complete: true
+			id: "7E7C01A700000028"
+			rewards: [{
+				id: "7E7C03A701000028"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				count: 4L
+				id: "7E7C02A701000028"
+				item: { count: 1, id: "createaddition:iron_rod" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 2.25d
+		}
+		{
+			dependencies: ["7E7C01A700000027"]
+			hide_until_deps_complete: true
+			id: "7E7C01A700000029"
+			rewards: [{
+				id: "7E7C03A701000029"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				count: 4L
+				id: "7E7C02A701000029"
+				item: { count: 1, id: "createaddition:copper_wire" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 3.15d
+		}
+		{
+			dependencies: ["7E7C01A700000029"]
+			hide_until_deps_complete: true
+			id: "7E7C01A700000030"
+			rewards: [{
+				id: "7E7C03A701000030"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "7E7C02A701000030"
+				item: { count: 1, id: "createaddition:copper_spool" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 3.15d
+		}
+		{
+			dependencies: ["7E7C01A700000027"]
+			hide_until_deps_complete: true
+			id: "7E7C01A700000033"
+			rewards: [{
+				id: "7E7C03A701000033"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				count: 8L
+				id: "7E7C02A701000033"
+				item: { count: 1, id: "createaddition:biomass_pellet" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 4.05d
+		}
+		{
+			dependencies: ["7E7C01A700000030"]
+			hide_until_deps_complete: true
+			id: "7E7C01A700000034"
+			rewards: [
+				{
+					id: "7E7C03A701000034"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "7E7C03A702000034"
+					item: {
+						count: 1
+						id: "createaddition:electric_motor"
+					}
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			tasks: [
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "7E7C02A701000034"
+					item: { count: 1, id: "createaddition:portable_energy_interface" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "7E7C02A702000034"
+					item: { count: 1, id: "createaddition:capacitor" }
+					type: "item"
+				}
+			]
+			x: 10.0d
+			y: 3.15d
+		}
+		{
+			dependencies: ["7E7C01A700000074"]
+			hide_until_deps_complete: true
+			id: "7E7C01A700000035"
+			rewards: [{
+				id: "7E7C03A701000035"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				count: 4L
+				id: "7E7C02A701000035"
+				item: { count: 1, id: "gnkinetics:chainable_cogwheel" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 5.85d
+		}
+		{
+			dependencies: ["7E7C01A700000035"]
+			hide_until_deps_complete: true
+			id: "7E7C01A700000036"
+			rewards: [{
+				id: "7E7C03A701000036"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "7E7C02A701000036"
+				item: { count: 1, id: "gnkinetics:worm_gear" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 4.95d
+		}
+		{
+			dependencies: ["7E7C01A700000035"]
+			hide_until_deps_complete: true
+			id: "7E7C01A700000037"
+			rewards: [{
+				id: "7E7C03A701000037"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "7E7C02A701000037"
+				item: { count: 1, id: "gnkinetics:planetary_gear" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 5.85d
+		}
+		{
+			dependencies: ["7E7C01A700000037"]
+			hide_until_deps_complete: true
+			id: "7E7C01A700000038"
+			rewards: [{
+				id: "7E7C03A701000038"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "7E7C02A701000038"
+				item: { count: 1, id: "gnkinetics:ring_gear" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 5.85d
+		}
+		{
+			dependencies: ["7E7C01A700000035"]
+			hide_until_deps_complete: true
+			id: "7E7C01A700000039"
+			rewards: [{
+				id: "7E7C03A701000039"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "7E7C02A701000039"
+				item: { count: 1, id: "gnkinetics:magnet_gear" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 6.75d
+		}
+		{
+			dependencies: ["7E7C01A700000002"]
+			hide_until_deps_complete: true
+			id: "7E7C01A700000040"
+			rewards: [{
+				id: "7E7C03A701000040"
+				type: "xp"
+				xp: 75
+			}]
+			shape: "diamond"
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				count: 4L
+				id: "7E7C02A701000040"
+				item: { count: 1, id: "immersiveengineering:ingot_electrum" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: -5.85d
+		}
+		{
+			dependencies: ["7E7C01A700000040"]
+			hide_until_deps_complete: true
+			id: "7E7C01A700000041"
+			rewards: [{
+				id: "7E7C03A701000041"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				count: 4L
+				id: "7E7C02A701000041"
+				item: { count: 1, id: "immersiveengineering:wirecoil_electrum" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: -8.55d
+		}
+		{
+			dependencies: ["7E7C01A700000040"]
+			hide_until_deps_complete: true
+			id: "7E7C01A700000042"
+			rewards: [{
+				id: "7E7C03A701000042"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				count: 2L
+				id: "7E7C02A701000042"
+				item: { count: 1, id: "immersiveengineering:connector_mv" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: -7.65d
+		}
+		{
+			dependencies: ["7E7C01A700000040"]
+			hide_until_deps_complete: true
+			id: "7E7C01A700000043"
+			rewards: [{
+				id: "7E7C03A701000043"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				count: 2L
+				id: "7E7C02A701000043"
+				item: { count: 1, id: "immersiveengineering:connector_mv_relay" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: -6.75d
+		}
+		{
+			dependencies: ["7E7C01A700000040"]
+			hide_until_deps_complete: true
+			id: "7E7C01A700000044"
+			rewards: [{
+				id: "7E7C03A701000044"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "7E7C02A701000044"
+				item: { count: 1, id: "immersiveengineering:capacitor_mv" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: -5.85d
+		}
+		{
+			dependencies: ["7E7C01A700000040"]
+			hide_until_deps_complete: true
+			id: "7E7C01A700000045"
+			rewards: [{
+				id: "7E7C03A701000045"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				count: 2L
+				id: "7E7C02A701000045"
+				item: { count: 1, id: "immersiveengineering:component_electronic" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: -4.95d
+		}
+		{
+			dependencies: ["7E7C01A700000040"]
+			hide_until_deps_complete: true
+			id: "7E7C01A700000046"
+			rewards: [{
+				id: "7E7C03A701000046"
+				type: "xp"
+				xp: 75
+			}]
+			shape: "diamond"
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				count: 12L
+				id: "7E7C02A701000046"
+				item: { count: 1, id: "immersiveengineering:blastbrick" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: -4.05d
+		}
+		{
+			dependencies: ["7E7C01A700000046"]
+			hide_until_deps_complete: true
+			id: "7E7C01A700000047"
+			rewards: [{
+				id: "7E7C03A701000047"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				count: 8L
+				id: "7E7C02A701000047"
+				item: { count: 1, id: "immersiveengineering:coal_coke" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: -4.05d
+		}
+		{
+			dependencies: ["7E7C01A700000047"]
+			hide_until_deps_complete: true
+			id: "7E7C01A700000048"
+			rewards: [{
+				id: "7E7C03A701000048"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				count: 4L
+				id: "7E7C02A701000048"
+				item: { count: 1, id: "immersiveengineering:ingot_steel" }
+				type: "item"
+			}]
+			x: 12.5d
+			y: -4.05d
+		}
+		{
+			dependencies: ["7E7C01A700000040"]
+			hide_until_deps_complete: true
+			id: "7E7C01A700000049"
+			rewards: [{
+				id: "7E7C03A701000049"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "7E7C02A701000049"
+				item: { count: 1, id: "immersiveengineering:voltmeter" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: -3.15d
+		}
+		{
+			dependencies: ["7E7C01A700000075"]
+			hide_until_deps_complete: true
+			id: "7E7C01A700000050"
+			rewards: [{
+				id: "7E7C03A701000050"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				count: 8L
+				id: "7E7C02A701000050"
+				item: { count: 1, id: "pneumaticcraft:ingot_iron_compressed" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 9.45d
+		}
+		{
+			dependencies: ["7E7C01A700000050"]
+			hide_until_deps_complete: true
+			id: "7E7C01A700000051"
+			rewards: [{
+				id: "7E7C03A701000051"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				count: 8L
+				id: "7E7C02A701000051"
+				item: { count: 1, id: "pneumaticcraft:reinforced_stone" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 7.65d
+		}
+		{
+			dependencies: ["7E7C01A700000050"]
+			hide_until_deps_complete: true
+			id: "7E7C01A700000052"
+			rewards: [{
+				id: "7E7C03A701000052"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				count: 8L
+				id: "7E7C02A701000052"
+				item: { count: 1, id: "pneumaticcraft:pressure_tube" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["7E7C01A700000052"]
+			hide_until_deps_complete: true
+			id: "7E7C01A700000054"
+			rewards: [{
+				id: "7E7C03A701000054"
+				type: "xp"
+				xp: 75
+			}]
+			shape: "diamond"
+			tasks: [
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					count: 16L
+					id: "7E7C02A701000054"
+					item: { count: 1, id: "pneumaticcraft:pressure_chamber_wall" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "7E7C02A702000054"
+					item: { count: 1, id: "pneumaticcraft:pressure_chamber_valve" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					count: 2L
+					id: "7E7C02A703000054"
+					item: { count: 1, id: "pneumaticcraft:pressure_chamber_glass" }
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 8.55d
+		}
+		{
+			dependencies: ["7E7C01A700000050"]
+			hide_until_deps_complete: true
+			id: "7E7C01A700000055"
+			rewards: [{
+				id: "7E7C03A701000055"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "7E7C02A701000055"
+				item: { count: 1, id: "pneumaticcraft:pressure_gauge" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 10.35d
+		}
+		{
+			dependencies: ["7E7C01A700000052"]
+			hide_until_deps_complete: true
+			id: "7E7C01A700000056"
+			rewards: [{
+				id: "7E7C03A701000056"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "diamond"
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "7E7C02A701000056"
+				item: { count: 1, id: "pneumaticcraft:vortex_cannon" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 9.45d
+		}
+		{
+			dependencies: ["7E7C01A700000050"]
+			hide_until_deps_complete: true
+			id: "7E7C01A700000057"
+			rewards: [{
+				id: "7E7C03A701000057"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "7E7C02A701000057"
+					item: { count: 1, id: "pneumaticcraft:compressed_iron_helmet" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "7E7C02A702000057"
+					item: { count: 1, id: "pneumaticcraft:compressed_iron_chestplate" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "7E7C02A703000057"
+					item: { count: 1, id: "pneumaticcraft:compressed_iron_leggings" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "7E7C02A704000057"
+					item: { count: 1, id: "pneumaticcraft:compressed_iron_boots" }
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: 11.25d
+		}
+		{
+			dependencies: ["7E7C01A700000075"]
+			hide_until_deps_complete: true
+			id: "7E7C01A700000058"
+			rewards: [{
+				id: "7E7C03A701000058"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "7E7C02A701000058"
+				item: { count: 1, id: "modern_industrialization:forge_hammer" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 12.6d
+		}
+		{
+			dependencies: ["7E7C01A700000058"]
+			hide_until_deps_complete: true
+			id: "7E7C01A700000059"
+			rewards: [{
+				id: "7E7C03A701000059"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "7E7C02A701000059"
+				item: { count: 1, id: "modern_industrialization:wrench" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 12.15d
+		}
+		{
+			dependencies: ["7E7C01A700000058"]
+			hide_until_deps_complete: true
+			id: "7E7C01A700000060"
+			rewards: [{
+				id: "7E7C03A701000060"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "7E7C02A701000060"
+				item: { count: 1, id: "modern_industrialization:steam_mining_drill" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 13.05d
+		}
+		{
+			dependencies: ["7E7C01A700000075"]
+			hide_until_deps_complete: true
+			id: "7E7C01A700000061"
+			rewards: [{
+				id: "7E7C03A701000061"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				count: 8L
+				id: "7E7C02A701000061"
+				item: { count: 1, id: "moderndynamics:item_pipe" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 14.4d
+		}
+		{
+			dependencies: ["7E7C01A700000061"]
+			hide_until_deps_complete: true
+			id: "7E7C01A700000062"
+			rewards: [{
+				id: "7E7C03A701000062"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "7E7C02A701000062"
+				item: { count: 1, id: "moderndynamics:extractor" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 13.95d
+		}
+		{
+			dependencies: ["7E7C01A700000061"]
+			hide_until_deps_complete: true
+			id: "7E7C01A700000063"
+			rewards: [{
+				id: "7E7C03A701000063"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "7E7C02A701000063"
+				item: { count: 1, id: "moderndynamics:filter" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 14.85d
+		}
+		{
+			dependencies: ["7E7C01A700000076"]
+			hide_until_deps_complete: true
+			id: "7E7C01A700000064"
+			rewards: [{
+				id: "7E7C03A701000064"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "7E7C02A701000064"
+				item: { count: 1, id: "create_new_age:redstone_magnet" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 15.75d
+		}
+		{
+			dependencies: ["7E7C01A700000064"]
+			hide_until_deps_complete: true
+			id: "7E7C01A700000065"
+			rewards: [{
+				id: "7E7C03A701000065"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "7E7C02A701000065"
+				item: { count: 1, id: "create_new_age:basic_energiser" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 15.75d
+		}
+		{
+			dependencies: ["7E7C01A700000076"]
+			hide_until_deps_complete: true
+			id: "7E7C01A700000067"
+			rewards: [{
+				id: "7E7C03A701000067"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "7E7C02A701000067"
+					item: { count: 1, id: "ae2:charger" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "7E7C02A702000067"
+					item: { count: 1, id: "ae2:crank" }
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: 16.65d
+		}
+		{
+			dependencies: ["7E7C01A700000067"]
+			hide_until_deps_complete: true
+			id: "7E7C01A700000068"
+			rewards: [{
+				id: "7E7C03A701000068"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "7E7C02A701000068"
+				item: { count: 1, id: "ae2:growth_accelerator" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 16.65d
+		}
+		{
+			dependencies: ["7E7C01A700000076"]
+			hide_until_deps_complete: true
+			id: "7E7C01A700000069"
+			rewards: [{
+				id: "7E7C03A701000069"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "7E7C02A701000069"
+				item: { count: 1, id: "actuallyadditions:atomic_reconstructor" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 17.55d
+		}
+		{
+			dependencies: ["7E7C01A700000069"]
+			hide_until_deps_complete: true
+			id: "7E7C01A700000070"
+			rewards: [{
+				id: "7E7C03A701000070"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "7E7C02A701000070"
+				item: { count: 1, id: "actuallyadditions:laser_relay" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 17.55d
+		}
+		{
+			dependencies: ["7E7C01A700000002"]
+			hide_until_deps_complete: true
+			id: "7E7C01A700000071"
+			rewards: [{
+				id: "7E7C03A701000071"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "7E7C02A701000071"
+				item: { count: 1, id: "sliceanddice:fertilizer_bucket" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: -2.25d
+		}
+		{
+			dependencies: ["7E7C01A700000071"]
+			hide_until_deps_complete: true
+			id: "7E7C01A700000072"
+			rewards: [{
+				id: "7E7C03A701000072"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "7E7C02A701000072"
+				item: { count: 1, id: "sliceanddice:sprinkler" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: -2.25d
+		}
+		{
+			dependencies: ["7E7C01A700000076"]
+			hide_until_deps_complete: true
+			id: "7E7C01A700000073"
+			rewards: [{
+				id: "7E7C03A701000073"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "7E7C02A701000073"
+				item: { count: 1, id: "create_integrated_farming:chicken_roost" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 18.45d
+		}
+		{
+			dependencies: ["7E7C01A700000001"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "create:blaze_burner"
+			}
+			id: "7E7C01A700000074"
+			rewards: [{
+				id: "7E7C03A701000074"
+				type: "xp"
+				xp: 75
+			}]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "7E7C02A701000074"
+				item: { count: 1, id: "create:blaze_burner" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 0.4d
+		}
+		{
+			dependencies: ["7E7C01A700000001"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "pneumaticcraft:ingot_iron_compressed"
+			}
+			id: "7E7C01A700000075"
+			rewards: [{
+				id: "7E7C03A701000075"
+				type: "xp"
+				xp: 75
+			}]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "7E7C02A701000075"
+				item: { count: 1, id: "pneumaticcraft:ingot_iron_compressed" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 12.2d
+		}
+		{
+			dependencies: ["7E7C01A700000001"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "create_new_age:redstone_magnet"
+			}
+			id: "7E7C01A700000076"
+			rewards: [{
+				id: "7E7C03A701000076"
+				type: "xp"
+				xp: 75
+			}]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "7E7C02A701000076"
+				item: { count: 1, id: "create_new_age:redstone_magnet" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 17.1d
+		}
+	]
+}

@@ -1,0 +1,15 @@
+{
+	icon: {
+		id: "minecraft:dragon_egg"
+	}
+	id: "7800000000000012"
+	loot_size: 1
+	order_index: 56
+	rewards: [
+		{ id: "7812000000000001", item: { count: 1, id: "mekanism:portable_teleporter" } }
+		{ id: "7812000000000002", item: { count: 1, id: "minecraft:echo_shard" } }
+		{ id: "7812000000000003", item: { count: 1, id: "evolvedmekanism:dense_energy_cube" } }
+		{ id: "7812000000000004", item: { count: 1, id: "appmek:chemical_storage_cell_4k" } }
+	]
+	use_title: true
+}

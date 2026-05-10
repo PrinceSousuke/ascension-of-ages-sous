@@ -1,0 +1,52 @@
+# AoA triggers.toml
+# File path: config/ProgressiveStages/triggers.toml
+#
+# Event-driven ProgressiveStages grants for Ascension of Ages.
+# Stage IDs below use the live FTB Quests chapter group IDs:
+#   dark_ages -> medieval_times -> the_renaissance -> industrial_revolution
+#   -> gilded_age -> atomic -> otherworldly -> ascension
+
+# =============================================================================
+# BOSS KILL EVENTS - Age-gate progression triggers
+# =============================================================================
+# Each entry grants the specified stage when the keyed entity is killed by any
+# player. ProgressiveStages is configured for ftb_teams mode, so age gates are
+# team-shared rather than single-player-only grants.
+
+[bosses]
+"cataclysm:maledictus" = "industrial_revolution"
+"bosses_of_mass_destruction:obsidilith" = "gilded_age"
+"divinerpg:lady_luna" = "atomic"
+"fdbosses:geburah" = "otherworldly"
+"cataclysm:the_leviathan" = "ascension"
+
+# Replacement candidates audited 2026-04-30:
+# - fdbosses:geburah = selected Atomic -> Otherworldly gate; Qliphoth boss,
+#   stronger and stranger than the Atomic science spine without consuming the
+#   final Draconic apex.
+# - fdbosses:chesed = fallback Qliphoth gate if Geburah tests too punishing.
+# - block_factorys_bosses:infernal_dragon / :underworld_knight = good
+#   Ascension boss-chapter/prestige candidates, but too low-scale for the
+#   main Atomic -> Otherworldly gate.
+
+# =============================================================================
+# DIMENSION ENTRY EVENTS - Bootstrap triggers
+# =============================================================================
+
+[dimensions]
+# Keep the bootstrap grant aligned with the live starting stage ID.
+"minecraft:overworld" = "dark_ages"
+
+# =============================================================================
+# ITEM PICKUP EVENTS - Tier milestone triggers
+# =============================================================================
+
+[items]
+
+# =============================================================================
+# ADVANCEMENT EVENTS - Custom trigger bindings
+# =============================================================================
+
+[advancements]
+# Example:
+# Add advancement trigger entries here when needed.

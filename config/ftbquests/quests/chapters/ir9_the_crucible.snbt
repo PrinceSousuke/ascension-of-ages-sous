@@ -1,0 +1,1116 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ir9_the_crucible"
+	group: "3F77A31B7D30C0AA"
+	hide_quest_until_deps_complete: true
+	icon: {
+		id: "aether:phoenix_bow"
+	}
+	id: "4352010000000000"
+	order_index: 6
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["5FAB2EB4942FDA77"]
+			icon: {
+				id: "aether:phoenix_bow"
+			}
+			icon_scale: 2.0d
+			id: "4352010000010001"
+			rewards: [{
+				id: "4352010000030001"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4352010000020001"
+				item: { count: 1, id: "aether:silver_dungeon_key" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.12d
+		}
+		{
+			dependencies: ["435201000001002B"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "aether:valkyrie_queen_spawn_egg"
+			}
+			icon_scale: 2.0d
+			id: "4352010000010002"
+			rewards: [{
+				id: "4352010000030002"
+				type: "xp"
+				xp: 150
+			}]
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				entity: "aether:valkyrie_queen"
+				id: "4352010000020002"
+				type: "kill"
+				value: 1L
+			}]
+			x: 7.5d
+			y: 3.25d
+		}
+		{
+			dependencies: ["4352010000010029"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "aether:poison_dart_shooter"
+			}
+			id: "4352010000010007"
+			rewards: [{
+				id: "4352010000030007"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4352010000020007"
+				item: { count: 1, id: "aether:poison_dart_shooter" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 2.25d
+		}
+		{
+			dependencies: ["435201000001001A"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "aether:regeneration_stone"
+			}
+			id: "4352010000010008"
+			rewards: [{
+				id: "4352010000030008"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4352010000020008"
+				item: { count: 1, id: "aether:regeneration_stone" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: -1.75d
+		}
+		{
+			dependencies: ["435201000001002B"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "aether:valkyrie_chestplate"
+			}
+			id: "4352010000010009"
+			rewards: [{
+				id: "4352010000030009"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4352010000020009"
+					item: { count: 1, id: "aether:valkyrie_helmet" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4352010000020041"
+					item: { count: 1, id: "aether:valkyrie_chestplate" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4352010000020042"
+					item: { count: 1, id: "aether:valkyrie_leggings" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4352010000020043"
+					item: { count: 1, id: "aether:valkyrie_boots" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4352010000020044"
+					item: { count: 1, id: "aether:valkyrie_gloves" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4352010000020045"
+					item: { count: 1, id: "aether:valkyrie_cape" }
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 4.25d
+		}
+		{
+			dependencies: ["4352010000010008"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "aether:valkyrie_pickaxe"
+			}
+			id: "435201000001000A"
+			rewards: [{
+				id: "435201000001003A"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "435201000001002A"
+					item: { count: 1, id: "aether:valkyrie_axe" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4352010000020046"
+					item: { count: 1, id: "aether:valkyrie_pickaxe" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4352010000020047"
+					item: { count: 1, id: "aether:valkyrie_shovel" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4352010000020048"
+					item: { count: 1, id: "aether:valkyrie_hoe" }
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: -2.25d
+		}
+		{
+			dependencies: ["4352010000010001"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "aether:sun_spirit_spawn_egg"
+			}
+			icon_scale: 2.0d
+			id: "435201000001000D"
+			rewards: [{
+				id: "435201000001003D"
+				type: "xp"
+				xp: 150
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				entity: "aether:sun_spirit"
+				id: "4352010000020059"
+				type: "kill"
+				value: 1L
+			}]
+			x: 2.5d
+			y: -3.62d
+		}
+		{
+			dependencies: ["435201000001000D"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "aether:gold_dungeon_key"
+			}
+			id: "435201000001000E"
+			rewards: [{
+				id: "435201000001003E"
+				type: "xp"
+				xp: 50
+			}]
+			size: 1.5d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "435201000002005A"
+				item: { count: 1, id: "aether:gold_dungeon_key" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["435201000001000D"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "aether:sun_altar"
+			}
+			id: "435201000001000F"
+			rewards: [{
+				id: "435201000001003F"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "435201000002005B"
+				item: { count: 1, id: "aether:sun_altar" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: -2.75d
+		}
+		{
+			dependencies: ["435201000001000E"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "aether:vampire_blade"
+			}
+			id: "4352010000010011"
+			rewards: [{
+				id: "4352010000030011"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4352010000020011"
+				item: { count: 1, id: "aether:vampire_blade" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["435201000001000E"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "aether:pig_slayer"
+			}
+			id: "4352010000010012"
+			rewards: [{
+				id: "4352010000030012"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4352010000020012"
+				item: { count: 1, id: "aether:pig_slayer" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["435201000001000E"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "aether:life_shard"
+			}
+			id: "4352010000010013"
+			rewards: [{
+				id: "4352010000030013"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4352010000020013"
+				item: { count: 1, id: "aether:life_shard" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: -5.75d
+		}
+		{
+			dependencies: ["4352010000010011"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "aether:iron_bubble"
+			}
+			id: "4352010000010014"
+			rewards: [{
+				id: "4352010000030014"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4352010000020014"
+				item: { count: 1, id: "aether:iron_bubble" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: -4.75d
+		}
+		{
+			dependencies: ["4352010000010012"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "aether:ice_pendant"
+			}
+			id: "4352010000010015"
+			rewards: [{
+				id: "4352010000030015"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4352010000020015"
+				item: { count: 1, id: "aether:ice_pendant" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: -3.75d
+		}
+		{
+			dependencies: ["435201000001000E"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "aether:ice_ring"
+			}
+			id: "4352010000010016"
+			rewards: [{
+				id: "4352010000030016"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4352010000020016"
+				item: { count: 1, id: "aether:ice_ring" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: -5.25d
+		}
+		{
+			dependencies: ["4352010000010001"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "cataclysm:ender_guardian_spawn_egg"
+			}
+			icon_scale: 2.0d
+			id: "435201000001001A"
+			rewards: [{
+				id: "4352010000030037"
+				type: "xp"
+				xp: 200
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				entity: "cataclysm:ender_guardian"
+				id: "435201000002004B"
+				type: "kill"
+				value: 1L
+			}]
+			x: 2.5d
+			y: -0.25d
+		}
+		{
+			dependencies: ["4352010000010008"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "cataclysm:gauntlet_of_guard"
+			}
+			id: "435201000001001B"
+			rewards: [{
+				id: "4352010000030038"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "435201000002004C"
+				item: { count: 1, id: "cataclysm:gauntlet_of_guard" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: -1.75d
+		}
+		{
+			dependencies: ["435201000001001A"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "cataclysm:netherite_monstrosity_spawn_egg"
+			}
+			icon_scale: 2.0d
+			id: "435201000001001C"
+			rewards: [{
+				id: "4352010000030039"
+				type: "xp"
+				xp: 200
+			}]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				entity: "cataclysm:netherite_monstrosity"
+				id: "435201000002004D"
+				type: "kill"
+				value: 1L
+			}]
+			x: 5.0d
+			y: -0.25d
+		}
+		{
+			dependencies: ["435201000001001C"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "cataclysm:infernal_forge"
+			}
+			id: "435201000001001D"
+			rewards: [{
+				id: "435201000003003A"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "435201000002004E"
+				item: { count: 1, id: "cataclysm:infernal_forge" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: -0.75d
+		}
+		{
+			dependencies: ["435201000001001C"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "cataclysm:monstrous_horn"
+			}
+			id: "435201000001001E"
+			rewards: [{
+				id: "435201000003003B"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "435201000002004F"
+				item: { count: 1, id: "cataclysm:monstrous_horn" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: -0.25d
+		}
+		{
+			dependencies: ["435201000001001C"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "cataclysm:lava_power_cell"
+			}
+			id: "435201000001001F"
+			rewards: [{
+				id: "435201000003003C"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4352010000020050"
+				item: { count: 1, id: "cataclysm:lava_power_cell" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 0.25d
+		}
+		{
+			dependencies: ["435201000001001A"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "cataclysm:ancient_remnant_spawn_egg"
+			}
+			icon_scale: 2.0d
+			id: "4352010000010020"
+			rewards: [{
+				id: "4352010000030020"
+				type: "xp"
+				xp: 200
+			}]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				entity: "cataclysm:ancient_remnant"
+				id: "4352010000020020"
+				type: "kill"
+				value: 1L
+			}]
+			x: 5.0d
+			y: 1.25d
+		}
+		{
+			dependencies: ["4352010000010020"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "cataclysm:sandstorm_in_a_bottle"
+			}
+			id: "4352010000010021"
+			rewards: [{
+				id: "4352010000030021"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4352010000020021"
+				item: { count: 1, id: "cataclysm:sandstorm_in_a_bottle" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 0.75d
+		}
+		{
+			dependencies: ["4352010000010020"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "cataclysm:remnant_skull"
+			}
+			id: "4352010000010022"
+			rewards: [{
+				id: "4352010000030022"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4352010000020022"
+				item: { count: 1, id: "cataclysm:remnant_skull" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 1.25d
+		}
+		{
+			dependencies: ["4352010000010020"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "cataclysm:ancient_metal_block"
+			}
+			id: "4352010000010023"
+			rewards: [{
+				id: "4352010000030023"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4352010000020023"
+				item: { count: 1, id: "cataclysm:ancient_metal_block" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 1.75d
+		}
+		{
+			dependencies: [
+				"4352010000010021"
+				"435201000001001D"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				id: "cataclysm:music_disc_ender_guardian"
+			}
+			id: "4352010000010024"
+			rewards: [{
+				id: "4352010000030024"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4352010000020024"
+					item: { count: 1, id: "cataclysm:music_disc_ender_guardian" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4352010000020049"
+					item: { count: 1, id: "cataclysm:music_disc_netherite_monstrosity" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "435201000002004A"
+					item: { count: 1, id: "cataclysm:music_disc_ancient_remnant" }
+					type: "item"
+				}
+			]
+			x: 10.0d
+			y: 0.75d
+		}
+		{
+			dependencies: ["4352010000010008"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "born_in_chaos_v1:spiritof_chaos_spawn_egg"
+			}
+			icon_scale: 2.0d
+			id: "4352010000010025"
+			rewards: [{
+				id: "4352010000030025"
+				type: "xp"
+				xp: 200
+			}]
+			shape: "diamond"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				entity: "born_in_chaos_v1:spiritof_chaos"
+				id: "4352010000020025"
+				type: "kill"
+				value: 1L
+			}]
+			x: 7.5d
+			y: -1.25d
+		}
+		{
+			dependencies: ["435201000001000A"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "born_in_chaos_v1:lord_pumpkinhead_spawn_egg"
+			}
+			id: "4352010000010026"
+			rewards: [{
+				id: "4352010000030026"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				entity: "born_in_chaos_v1:lord_pumpkinhead"
+				id: "4352010000020026"
+				type: "kill"
+				value: 1L
+			}]
+			x: 10.0d
+			y: -2.25d
+		}
+		{
+			dependencies: ["4352010000010001"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "alexscaves:spawn_egg_hullbreaker"
+			}
+			icon_scale: 2.0d
+			id: "4352010000010028"
+			rewards: [{
+				id: "4352010000030028"
+				type: "xp"
+				xp: 200
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				entity: "alexscaves:hullbreaker"
+				id: "4352010000020028"
+				type: "kill"
+				value: 1L
+			}]
+			x: 2.5d
+			y: 3.88d
+		}
+		{
+			dependencies: ["4352010000010028"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "alexscaves:enigmatic_engine"
+			}
+			id: "4352010000010029"
+			rewards: [{
+				id: "4352010000030029"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4352010000020029"
+				item: { count: 1, id: "alexscaves:enigmatic_engine" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["4352010000010029"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "alexscaves:immortal_embryo"
+			}
+			id: "5EEFB0DD54D78E39"
+			rewards: [{
+				id: "435201000003003D"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4352010000020051"
+				item: { count: 1, id: "alexscaves:immortal_embryo" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 2.75d
+		}
+		{
+			dependencies: ["4352010000010028"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "alexscaves:sea_glass_shards"
+			}
+			id: "435201000001002B"
+			rewards: [{
+				id: "435201000003003E"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4352010000020052"
+				item: { count: 1, id: "alexscaves:sea_glass_shards" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 3.75d
+		}
+		{
+			dependencies: ["4352010000010028"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "alexscaves:spawn_egg_magnetron"
+			}
+			icon_scale: 2.0d
+			id: "435201000001002C"
+			rewards: [{
+				id: "435201000003003F"
+				type: "xp"
+				xp: 150
+			}]
+			shape: "diamond"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				entity: "alexscaves:magnetron"
+				id: "4352010000020053"
+				type: "kill"
+				value: 1L
+			}]
+			x: 5.0d
+			y: 5.25d
+		}
+	]
+}

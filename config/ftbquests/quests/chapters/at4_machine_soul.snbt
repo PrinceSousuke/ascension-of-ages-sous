@@ -1,0 +1,513 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "at4_machine_soul"
+	group: "7D28E4AEBC440F10"
+	hide_quest_until_deps_complete: true
+	icon: {
+		id: "industrialforegoing:mycelial_reactor"
+	}
+	id: "4D53010000000000"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["4348010000010105"]
+			hide_until_deps_complete: false
+			icon: {
+				id: "industrialforegoing:machine_frame_supreme"
+			}
+			id: "4D53010000010001"
+			rewards: [{
+				id: "4D53010000030001"
+				type: "xp"
+				xp: 300
+			}]
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4D53010000020001"
+				item: { count: 1, id: "industrialforegoing:machine_frame_supreme" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.25d
+		}
+		{
+			dependencies: ["4D53010000010001"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "industrialforegoing:ether_gas_bucket"
+			}
+			id: "4D53010000010002"
+			rewards: [{
+				id: "4D53010000030002"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4D53010000020002"
+				item: { count: 1, id: "industrialforegoing:ether_gas_bucket" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4D53010000010002"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "industrialforegoing:mycelial_reactor"
+			}
+			id: "4D53010000010003"
+			rewards: [{
+				id: "4D53010000030003"
+				type: "xp"
+				xp: 250
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4D53010000020003"
+				item: { count: 1, id: "industrialforegoing:mycelial_reactor" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4D53010000010003"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "industrialforegoing:mycelial_furnace"
+			}
+			id: "4D53010000010004"
+			rewards: [{
+				id: "4D53010000030004"
+				type: "xp"
+				xp: 150
+			}]
+			tasks: [
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4D53010000020004"
+					item: { count: 1, id: "industrialforegoing:mycelial_furnace" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4D53010000020104"
+					item: { count: 1, id: "industrialforegoing:mycelial_culinary" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4D53010000020204"
+					item: { count: 1, id: "industrialforegoing:mycelial_frosty" }
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4D53010000010003"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "industrialforegoing:mycelial_explosive"
+			}
+			id: "4D53010000010005"
+			rewards: [{
+				id: "4D53010000030005"
+				type: "xp"
+				xp: 200
+			}]
+			tasks: [
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4D53010000020005"
+					item: { count: 1, id: "industrialforegoing:mycelial_crimed" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4D53010000020105"
+					item: { count: 1, id: "industrialforegoing:mycelial_death" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4D53010000020205"
+					item: { count: 1, id: "industrialforegoing:mycelial_disenchantment" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4D53010000020305"
+					item: { count: 1, id: "industrialforegoing:mycelial_ender" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4D53010000020405"
+					item: { count: 1, id: "industrialforegoing:mycelial_explosive" }
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4D53010000010005"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "industrialforegoing:mycelial_netherstar"
+			}
+			id: "4D53010000010006"
+			rewards: [{
+				id: "4D53010000030006"
+				type: "xp"
+				xp: 300
+			}]
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4D53010000020006"
+					item: { count: 1, id: "industrialforegoing:mycelial_halitosis" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4D53010000020106"
+					item: { count: 1, id: "industrialforegoing:mycelial_magma" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4D53010000020206"
+					item: { count: 1, id: "industrialforegoing:mycelial_meatallurgic" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4D53010000020306"
+					item: { count: 1, id: "industrialforegoing:mycelial_netherstar" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4D53010000020406"
+					item: { count: 1, id: "industrialforegoing:mycelial_pink" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4D53010000020506"
+					item: { count: 1, id: "industrialforegoing:mycelial_potion" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4D53010000020606"
+					item: { count: 1, id: "industrialforegoing:mycelial_rocket" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4D53010000020706"
+					item: { count: 1, id: "industrialforegoing:mycelial_slimey" }
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4D53010000010001"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "industrialforegoing:wither_builder"
+			}
+			id: "4D53010000010007"
+			rewards: [{
+				id: "4D53010000030007"
+				type: "xp"
+				xp: 200
+			}]
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4D53010000020007"
+				item: { count: 1, id: "industrialforegoing:wither_builder" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4D53010000010001"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "industrialforegoingsouls:soul_laser_base"
+			}
+			id: "4D53010000010008"
+			optional: true
+			rewards: [{
+				id: "4D53010000030008"
+				type: "xp"
+				xp: 150
+			}]
+			tasks: [
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4D53010000020008"
+					item: { count: 1, id: "industrialforegoingsouls:soul_laser_base" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4D53010000020108"
+					item: { count: 1, id: "industrialforegoingsouls:soul_network_pipe" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4D53010000020208"
+					item: { count: 1, id: "industrialforegoingsouls:soul_surge" }
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4D53010000010001"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "industrialforegoing:infinity_charger"
+			}
+			id: "4D53010000010009"
+			optional: true
+			rewards: [{
+				id: "4D53010000030009"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4D53010000020009"
+				item: { count: 1, id: "industrialforegoing:infinity_charger" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"4D53010000010006"
+				"4D53010000010007"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				id: "industrialforegoing:mycelial_reactor"
+			}
+			id: "4D5301000001000A"
+			rewards: [{
+				id: "4D5301000003000A"
+				type: "xp"
+				xp: 500
+			}]
+			shape: "pentagon"
+			size: 2.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4D5301000002000A"
+				item: { count: 1, id: "industrialforegoing:mycelial_reactor" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: -1.0d
+		}
+	]
+}

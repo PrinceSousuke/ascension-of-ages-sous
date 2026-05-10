@@ -1,0 +1,14 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "g6_circuits_and_current"
+	group: "5E42E6B4A7C91D30"
+	hide_quest_until_deps_complete: true
+	icon: {
+		id: "minecraft:redstone"
+	}
+	id: "4343010000000000"
+	order_index: 5
+	quest_links: [ ]
+	quests: [ ]
+}

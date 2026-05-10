@@ -1,0 +1,182 @@
+[stage]
+id = "atomic"
+display_name = "Atomic"
+description = "Hazardous processing, reactors, strategic force, and hardened facilities."
+icon = "mekanism:hazmat_gown"
+unlock_message = "&2&lAtomic Unlocked! &r&7Containment, reactors, and hazardous infrastructure are now open."
+dependency = "gilded_age"
+
+[locks]
+items = [
+  "alltheores:raw_uranium",
+  "alltheores:raw_uranium_block",
+  "alltheores:uranium_dust",
+  "alltheores:uranium_ingot",
+  "alltheores:uranium_nugget",
+  "chemicalscience:circuitorganic",
+  "chemicalscience:dust_plutoniumhydroxide",
+  "chemicalscience:dust_plutoniumoxide",
+  "chemicalscience:dust_thorium",
+  "chemicalscience:dust_uranium",
+  "chemicalscience:dust_uraniumoxide",
+  "chemicalscience:impuredust_thorium",
+  "chemicalscience:impuredust_uranium",
+  "chemicalscience:platinum_thorium_catalyst",
+  "electrodynamics:circuitelite",
+  "electrodynamics:circuitultimate",
+  "electrodynamics:raworeblockthorium",
+  "electrodynamics:raworeblockuranium",
+  "electrodynamics:raworethorium",
+  "electrodynamics:raworeuranium",
+  "mekanism:dust_uranium",
+  "mekanism:ingot_uranium",
+  "mekanism:nugget_uranium",
+  "mekanism:raw_uranium",
+  # ─── Oritech Atomic — 7 chokepoints (NARROWED 2026-05-02 from 21 items) ───
+  # JAR scan confirmed three parallel sub-chains (no single cascade root):
+  #   particle_collision multiblock → overcharged_crystal → prometheum_ingot
+  #     → machine_core_7 → atomic-tier oritech machines/tools
+  #   atomic_forge multiblock → prometheum_ingot, advanced_computing_engine
+  #   laser multiblock (laser_arm_block) → plutonium_dust, fluxite
+  # Plus a few apex items not covered by the multiblock cascades.
+  # Lock these 7 to gate all 21 previously-listed atomic-tier oritech items:
+  "oritech:overcharged_crystal",          # 37 in-mod consumers (budding catalysts, prometheum_ingot, nether_star, etc.)
+  "oritech:prometheum_ingot",             # gates machine_core_7 + promethium tools (defensive — already cascade-locked via overcharged_crystal)
+  "oritech:plutonium_pellet",             # 8 plutonium-chain consumers (pelletbasic/better/ultimate, blocks)
+  "oritech:arcane_augment_station",       # 7 arcane augment consumers (cloak, flight, gravity, etc.)
+  "oritech:accelerator_controller",       # apex multiblock; not cascade-covered by the 3 above
+  "oritech:enchantment_catalyst_block",   # gates enchanter_block + spawner_controller_block (2 cascades)
+  "oritech:laser_arm_block",              # multiblock-controller; gates plutonium_dust + portable_laser + destroyer_block + fluxite (laser-recipe-typed)
+
+  # ─── Per-mod chokepoints (2026-05-02 modwide elimination) ───
+  # Ballistix — missiletier1 is consumed by missile_tier2/tier3 (verified
+  # in JAR: ballistix:missile_tier2_electro/_noelectro both list tier1 as
+  # ingredient). Locking it gates all 3 tiers + cascade to launchers.
+  "ballistix:missiletier1",
+  # Create Nuclear — reactor_controller is the mechanical_crafting result
+  # that gates the multiblock reactor; without it the entire reactor chain
+  # cannot be built (verified: data/createnuclear/recipe/mechanical_crafting/
+  # reactor_controller.json).
+  "createnuclear:reactor_controller",
+  # Nuclear Science — fissionreactorcore is the entry-tier reactor core,
+  # also consumed by msrreactorcore (molten-salt reactor variant). Gates
+  # the entire NS reactor chain (verified: data/nuclearscience/recipe/
+  # machine_msrreactorcore.json lists fissionreactorcore as ingredient).
+  "nuclearscience:fissionreactorcore",
+
+  # FDBosses / Qliphoth Awakening — summon eyes are craftable from much
+  # earlier materials but Geburah is the live Atomic -> Otherworldly boss gate.
+  "fdbosses:eye_of_malkuth",
+  "fdbosses:eye_of_chesed",
+  "fdbosses:eye_of_geburah"
+]
+item_tags = [
+  "#c:circuits/elite",
+  "#c:circuits/ultimate",
+  "#c:dusts/fissile",
+  "#c:dusts/plutonium",
+  "#c:dusts/thorium",
+  "#c:dusts/uranium",
+  "#c:fuel_rods/heuo2",
+  "#c:fuel_rods/leuo2",
+  "#c:fuel_rods/plutonium",
+  "#c:fuel_rods/spent",
+  "#c:ingots/uranium",
+  "#c:nuggets/uranium",
+  "#c:ores/thorium",
+  "#c:ores/uranium",
+  "#c:oxide/plutonium",
+  "#c:oxides/plutonium",
+  "#c:pellets/plutonium",
+  "#c:pellets/uranium235",
+  "#c:pellets/uranium238",
+  "#c:plates/uranium",
+  "#c:raw_materials/thorium",
+  "#c:raw_materials/uranium",
+  "#c:salts/fissile",
+  "#c:storage_blocks/raw_thorium",
+  "#c:storage_blocks/raw_uranium",
+  "#c:storage_blocks/thorium",
+  "#c:storage_blocks/uranium",
+  "#c:yellow_cake_uranium"
+]
+# Mod-wide locks eliminated 2026-05-02 (PROMPT_modwide_lock_elimination).
+# All three nuclear/weapons mods are now chokepointed via single items in
+# the items[] array above:
+#   - ballistix:missiletier1 (tier-2/tier-3 missiles consume tier1)
+#   - createnuclear:reactor_controller (mechanical_crafting reactor entry)
+#   - nuclearscience:fissionreactorcore (also consumed by msrreactorcore)
+item_mods = []
+blocks = [
+  # Uranium storage blocks are usable material compression, not early ore
+  # foreshadowing, so they are exact-locked to Atomic.
+  "alltheores:uranium_block",
+  "alltheores:raw_uranium_block",
+  "chemicalscience:block_element_pu",
+  "chemicalscience:block_element_th",
+  "chemicalscience:block_element_u",
+  "chemicalscience:ore_thorium_mars",
+  "chemicalscience:ore_thorium_mercury",
+  "chemicalscience:ore_thorium_moon",
+  "chemicalscience:ore_thorium_venus",
+  "chemicalscience:ore_uranium_mars",
+  "chemicalscience:ore_uranium_mercury",
+  "chemicalscience:ore_uranium_moon",
+  "chemicalscience:ore_uranium_venus",
+  "electrodynamics:deepslateorethorium",
+  "electrodynamics:deepslateoreuranium",
+  "electrodynamics:orethorium",
+  "electrodynamics:oreuranium",
+  "electrodynamics:raworeblockthorium",
+  "electrodynamics:raworeblockuranium",
+  "mekanism:block_uranium",
+  "mekanism:block_raw_uranium"
+]
+block_tags = [
+  "#c:ores/thorium",
+  "#c:ores/uranium",
+  "#c:storage_blocks/raw_thorium",
+  "#c:storage_blocks/raw_uranium",
+  "#c:storage_blocks/thorium",
+  "#c:storage_blocks/uranium"
+]
+# Mod-wide block_mods eliminated 2026-05-02 (PROMPT_modwide_lock_elimination).
+# Same rationale as item_mods above — chokepoint items handle gating.
+block_mods = []
+dimensions = []
+fluids = [
+  "chemicalscience:impureuraniumsolution",
+  "chemicalscience:organicuraniumsolution",
+  "chemicalscience:plutoniumnitrate",
+  "chemicalscience:uraniumnitrate"
+]
+fluid_tags = [
+  "#c:plutonium_nitrate",
+  "#c:uranium",
+  "#c:uranium_hexafluoride",
+  "#c:uranium_nitrate"
+]
+# Mod-wide fluid_mods eliminated 2026-05-02 (PROMPT_modwide_lock_elimination).
+# Specific atomic-tier fluids are exact-locked in fluids[] / fluid_tags[] above.
+fluid_mods = []
+mods = []
+names = []
+entities = []
+entity_tags = []
+# Mod-wide entity_mods eliminated 2026-05-02 (PROMPT_modwide_lock_elimination).
+# Ballistix entities (missiles, etc.) are tied to atomic-tier launchers
+# already gated via missiletier1 chokepoint in items[].
+entity_mods = []
+
+# Spawn locks are separate from entity_mods attack locks. FDBosses bosses are
+# held until Atomic so the Geburah kill can serve as the Otherworldly gate.
+spawn_entities = []
+spawn_entity_tags = []
+spawn_entity_mods = [
+  "fdbosses"
+]
+
+unlocked_items = []
+unlocked_blocks = []
+unlocked_entities = []
+unlocked_fluids = []

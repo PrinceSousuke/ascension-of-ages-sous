@@ -1,0 +1,80 @@
+{
+	icon: {
+		id: "immersiveengineering:crate"
+	}
+	id: "7500000000000001"
+	loot_size: 1
+	order_index: 34
+	rewards: [
+		{
+			count: 16
+			id: "7501000000000001"
+			item: {
+				count: 1
+				id: "modern_industrialization:steel_ingot"
+			}
+			weight: 4.0f
+		}
+		{
+			count: 16
+			id: "7501000000000002"
+			item: {
+				count: 1
+				id: "modern_industrialization:bronze_ingot"
+			}
+			weight: 4.0f
+		}
+		{
+			count: 8
+			id: "7501000000000003"
+			item: {
+				count: 1
+				id: "pneumaticcraft:plastic"
+			}
+			weight: 3.0f
+		}
+		{
+			count: 32
+			id: "7501000000000004"
+			item: {
+				count: 1
+				id: "create_new_age:copper_wire"
+			}
+			weight: 3.0f
+		}
+		{
+			id: "7501000000000005"
+			item: {
+				count: 1
+				id: "modern_industrialization:bronze_boiler"
+			}
+			weight: 1.5f
+		}
+		{
+			id: "7501000000000006"
+			item: {
+				count: 1
+				id: "create_new_age:stirling_engine"
+			}
+			weight: 1.25f
+		}
+		{
+			id: "7501000000000007"
+			item: {
+				count: 1
+				id: "createaddition:electric_motor"
+			}
+			weight: 1.5f
+		}
+		{
+			count: 32
+			id: "7501000000000008"
+			item: {
+				count: 1
+				id: "create:fluid_pipe"
+			}
+			weight: 2.0f
+		}
+	]
+	use_title: true
+}

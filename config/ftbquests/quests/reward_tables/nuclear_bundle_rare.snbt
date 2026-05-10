@@ -1,0 +1,33 @@
+{
+	icon: {
+		id: "mekanism:radioactive_waste_barrel"
+	}
+	id: "7600000000000013"
+	loot_size: 1
+	order_index: 45
+	rewards: [
+		{ id: "7613000000000001", item: { count: 1, id: "mekanism:electrolytic_separator" } }
+		{ id: "7613000000000002", item: { count: 1, id: "mekanism:advanced_chemical_tank" } }
+		{ id: "7613000000000003", item: { count: 1, id: "mekanism:hazmat_gown" } }
+		{
+			count: 2
+			id: "7613000000000004"
+			item: {
+				count: 1
+				id: "mekanism:radioactive_waste_barrel"
+			}
+		}
+		{ id: "7613000000000005", item: { count: 1, id: "mekanismgenerators:fission_reactor_logic_adapter" } }
+		{
+			count: 8
+			id: "7613000000000006"
+			item: {
+				count: 1
+				id: "mekanismgenerators:turbine_casing"
+			}
+		}
+		{ id: "7613000000000007", item: { count: 1, id: "mekanism:hazmat_boots" } }
+		{ id: "7613000000000008", item: { count: 1, id: "mekanism:quantum_entangloporter" } }
+	]
+	use_title: true
+}

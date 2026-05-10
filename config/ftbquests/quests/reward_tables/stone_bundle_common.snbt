@@ -1,0 +1,29 @@
+{
+	icon: {
+		id: "minecraft:barrel"
+	}
+	id: "7100000000000011"
+	loot_size: 1
+	order_index: 13
+	rewards: [
+		{ id: "7111000000000001", item: { count: 1, id: "cold_sweat:waterskin" } }
+		{
+			count: 4
+			id: "7111000000000002"
+			item: {
+				count: 1
+				id: "thirst:terracotta_bowl"
+			}
+		}
+		{
+			count: 32
+			id: "7111000000000003"
+			item: {
+				count: 1
+				id: "minecraft:torch"
+			}
+		}
+		{ id: "7111000000000004", item: { count: 1, id: "comforts:sleeping_bag_white" } }
+	]
+	use_title: true
+}

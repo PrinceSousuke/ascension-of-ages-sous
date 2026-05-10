@@ -1,0 +1,14 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "at7_chaos_convergence"
+	group: "7D28E4AEBC440F10"
+	hide_quest_until_deps_complete: true
+	icon: {
+		id: "minecraft:nether_star"
+	}
+	id: "4358010000000000"
+	order_index: 6
+	quest_links: [ ]
+	quests: [ ]
+}

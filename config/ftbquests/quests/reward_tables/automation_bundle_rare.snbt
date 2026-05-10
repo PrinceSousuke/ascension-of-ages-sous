@@ -1,0 +1,33 @@
+{
+	icon: {
+		id: "create:item_vault"
+	}
+	id: "7400000000000013"
+	loot_size: 1
+	order_index: 33
+	rewards: [
+		{ id: "7413000000000001", item: { count: 1, id: "oritech:steam_engine_block" } }
+		{ id: "7413000000000002", item: { count: 1, id: "oritech:pulverizer_block" } }
+		{ id: "7413000000000003", item: { count: 1, id: "oritech:foundry_block" } }
+		{ id: "7413000000000004", item: { count: 1, id: "generatorgalore:gold_generator" } }
+		{
+			count: 2
+			id: "7413000000000005"
+			item: {
+				count: 1
+				id: "oritech:machine_core_2"
+			}
+		}
+		{
+			count: 16
+			id: "7413000000000006"
+			item: {
+				count: 1
+				id: "oritech:framed_energy_pipe"
+			}
+		}
+		{ id: "7413000000000007", item: { count: 1, id: "ae2:energy_cell" } }
+		{ id: "7413000000000008", item: { count: 1, id: "minecraft:redstone_block" } }
+	]
+	use_title: true
+}
