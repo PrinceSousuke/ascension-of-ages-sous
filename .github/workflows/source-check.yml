@@ -24,6 +24,20 @@ jobs:
             exit 1
           fi
 
+      - name: Reject generated root config directories
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          allowed_roots='^(\.github|config|configureddefaults|defaultconfigs|kubejs|datapacks|docs|tools|progression|_aoa_optional_datapacks)$'
+          unexpected_roots="$(git ls-files | awk -F/ 'NF > 1 { print $1 }' | sort -u | grep -Ev "$allowed_roots" || true)"
+          if [ -n "$unexpected_roots" ]; then
+            echo "Unexpected top-level directories are tracked:"
+            echo "$unexpected_roots"
+            echo "Root mod config directories should stay local; track source under config/, kubejs/, docs/, etc."
+            exit 1
+          fi
+
       - name: Warn on unusually large tracked files
         shell: bash
         run: |

@@ -31,6 +31,30 @@
 /*.txt
 !/#STOP_MOD_REPOSTS.txt
 
+# Generated mod config directories dumped directly into the instance root.
+# Keep only intentional repository source roots visible to Git.
+/*/
+!/.github/
+!/.github/**
+!/config/
+!/config/**
+!/configureddefaults/
+!/configureddefaults/**
+!/defaultconfigs/
+!/defaultconfigs/**
+!/kubejs/
+!/kubejs/**
+!/datapacks/
+!/datapacks/**
+!/docs/
+!/docs/**
+!/tools/
+!/tools/**
+!/progression/
+!/progression/**
+!/_aoa_optional_datapacks/
+!/_aoa_optional_datapacks/**
+
 # Downloaded mods and third-party binary assets
 /mods/
 /resourcepacks/
