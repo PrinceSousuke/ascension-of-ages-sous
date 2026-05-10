@@ -14,6 +14,23 @@
 /servers.dat_old
 /launcher_profiles.json
 
+# Generated mod config files dumped directly into the instance root.
+# Authoritative pack config should live in tracked source folders such as
+# config/, configureddefaults/, defaultconfigs/, kubejs/, datapacks/, and docs/.
+/*.toml
+/*.json
+/*.json5
+/*.jsonc
+/*.cfg
+/*.properties
+/*.yaml
+/*.yml
+/*.ini
+/*.css
+/*.snbt
+/*.txt
+!/#STOP_MOD_REPOSTS.txt
+
 # Downloaded mods and third-party binary assets
 /mods/
 /resourcepacks/
