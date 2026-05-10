@@ -53,8 +53,22 @@ level.dat_old
 *.log
 *.log.gz
 *.tmp
+*.tmp*
 *.temp
 *.cache
+*.dat
+*.pyc
+*.pyo
+*.db
+__pycache__/
+**/__pycache__/
+**/spark/tmp/
+**/spark/tmp-client/
+**/structurify/*backup*.json
+**/data.cache.json
+**/cached.json
+**/cached.dat
+**/user_variables.db
 
 # Backups and generated audit scratch
 /backup/
