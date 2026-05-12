@@ -22,25 +22,15 @@
 //     `custom_book_item: "occultism:dictionary_of_spirits"`).
 
 const EXACT_STARTING_ITEMS = [
-  'patchouli:guide_book[patchouli:book="jtl:jtl_essentia"]',
-  'patchouli:guide_book[patchouli:book="jtl:essentia"]',
-  'patchouli:guide_book[patchouli:book="jtl:essentia_bible"]',
-  'patchouli:guide_book[patchouli:book="divinerpg:divine"]',
   'patchouli:guide_book[patchouli:book="kubejs:first_days_field_guide"]',
-  'industrialupgrade:book/guide_book[industrialupgrade:container={listItem:[],open:0b,slot_inventory:-1,uid:0}]',
   // Theurgy "The Hermetica" — Modonomicon-generated, identified by book_id component
   'modonomicon:modonomicon[modonomicon:book_id="theurgy:the_hermetica"]'
 ]
 
 const BASE_STARTING_ITEMS = [
-  'industrialupgrade:book/guide_book',
-  'jtl:essentia_bible',
-  'ars_nouveau:worn_notebook',
   'alexsmobs:animal_dictionary',
   'modern_industrialization:guidebook',
   'alchemists_garden:overgrown_letter',
-  'cosmos_infinia:infinity_opus',
-  'industrialupgrade:sensor/sensor',
   'nautec:nautec_guide',
   // Occultism "Dictionary of Spirits" — custom registered item, plain ID
   'occultism:dictionary_of_spirits'
@@ -48,11 +38,6 @@ const BASE_STARTING_ITEMS = [
 
 const STUBBORN_ITEMS = [
   'integrateddynamics:on_the_dynamics_of_integration',
-  'patchouli:guide_book[patchouli:book="jtl:jtl_essentia"]',
-  'patchouli:guide_book[patchouli:book="jtl:essentia"]',
-  'patchouli:guide_book[patchouli:book="jtl:essentia_bible"]',
-  'cosmos_infinia:infinity_opus',
-  'jtl:essentia_bible',
   // Re-grant defenders for the new entries — both mods may re-give the book
   // if it's missing from a player's inventory on login. The base/exact lists
   // catch the on-login give; STUBBORN covers any deferred re-give within the
@@ -72,7 +57,6 @@ const STUBBORN_CLEAR_WINDOW   = 1200
 const STUBBORN_RECHECK_EVERY  = 40
 
 const SCRUB_ALL_PATCHOULI_ON_FIRST_JOIN = false
-const ALLOW_STUBBORN_ITEMS_STAGE = 'starting_books_unlocked'
 
 // ---------------------------------------------------------------------------
 // Helpers
@@ -94,7 +78,6 @@ function clearAllPatchouliBooks(player) {
 }
 
 function clearStubbornItems(player) {
-  if (player.stages && player.stages.has(ALLOW_STUBBORN_ITEMS_STAGE)) return
   for (const item of STUBBORN_ITEMS) clearItem(player, item)
 }
 
