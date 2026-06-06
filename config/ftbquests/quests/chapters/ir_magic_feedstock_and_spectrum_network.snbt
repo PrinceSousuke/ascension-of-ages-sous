@@ -1,0 +1,1719 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ir_magic_feedstock_and_spectrum_network"
+	group: "3F77A31B7D30C0AA"
+	hide_quest_until_deps_complete: true
+	icon: {
+		id: "malum:spirit_crucible"
+	}
+	id: "49540B0000000000"
+	order_index: 6
+	quest_links: [ ]
+	quests: [
+		{
+			hide_until_deps_complete: false
+			icon: {
+				id: "malum:spirit_crucible"
+			}
+			dependencies: ["4954011000000001"]
+			id: "49540B1000000001"
+			title: "Spirit Crucible"
+			subtitle: "Refine spirits into feedstock."
+			description: [
+				"Build a &6Malum&r &bSpirit Crucible&r. It processes captured spirits into the refined forms industry can use, the first step in feeding magic into your machines."
+				"This chapter wires the magic systems into the factory, so think of spirits as another raw material."
+			]
+			rewards: [
+				{
+					id: "49540B3000001000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "49540B3000001001"
+					table_id: 8430738502437568513L
+					title: "A starter cache for the spirit work."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540B2000001000"
+				item: { count: 1, id: "malum:spirit_crucible" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["49540B1000000001"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "malum:spirit_catalyzer"
+			}
+			id: "49540B1000000002"
+			title: "Spirit Catalyzer"
+			subtitle: "Speed the spirit work."
+			description: [
+				"Craft a &bSpirit Catalyzer&r. It accelerates the crucible's processing, turning a trickle of refined spirit into a supply worth piping into other systems."
+				"Pair it with the crucible to keep the feedstock flowing."
+			]
+			rewards: [
+				{
+					id: "49540B3000002000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "49540B3000002001"
+					table_id: 8430738502437568513L
+					title: "Parts for the catalyzer."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540B2000002000"
+				item: { count: 1, id: "malum:spirit_catalyzer" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["49540B1000000002"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "malum:spirit_jar"
+			}
+			id: "49540B1000000003"
+			title: "Spirit Jar"
+			subtitle: "Stockpile your spirits."
+			description: [
+				"Build a &bSpirit Jar&r. It banks the spirits you harvest so the crucible never idles waiting on fresh souls, the buffer for the whole spirit line."
+				"A full jar is a tank of magical feedstock."
+			]
+			rewards: [
+				{
+					id: "49540B3000003000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "49540B3000003001"
+					table_id: 8430738502437568513L
+					title: "A cache for the spirit store."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540B2000003000"
+				item: { count: 1, id: "malum:spirit_jar" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["49540B1000000003"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "malum:arcane_spirit"
+			}
+			id: "49540B1000000016"
+			title: "Arcane Spirit"
+			subtitle: "The refined product."
+			description: [
+				"Produce &bArcane Spirit&r. It is the worked spirit the bridges downstream demand, including the agitator that caps this chapter, so it is a feedstock worth automating."
+				"One of the proofs the finale will want."
+			]
+			rewards: [
+				{
+					id: "49540B3000016000"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "49540B3000016001"
+					table_id: 8430738502437568513L
+					title: "A cache to go with the arcane spirit."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540B2000016000"
+				item: { count: 1, id: "malum:arcane_spirit" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["49540B1000000001"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "malum:ritual_plinth"
+			}
+			id: "49540B1000000012"
+			title: "Ritual Plinth"
+			subtitle: "Run the spirit rituals."
+			description: [
+				"Place a &bRitual Plinth&r. It anchors &6Malum&r's rituals, the focus that drives the larger spirit-alchemy workings beyond the basic altar."
+				"Set it where you have room for a ritual to play out."
+			]
+			rewards: [
+				{
+					id: "49540B3000012000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "49540B3000012001"
+					table_id: 8430738502437568513L
+					title: "Parts for the ritual setup."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540B2000012000"
+				item: { count: 1, id: "malum:ritual_plinth" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -9.5d
+		}
+		{
+			hide_until_deps_complete: false
+			icon: {
+				id: "forbidden_arcanus:hephaestus_forge_tier_2"
+			}
+			dependencies: ["4954011000000001"]
+			id: "49540B1000000004"
+			title: "Hephaestus Forge II"
+			subtitle: "Upgrade the divine furnace."
+			description: [
+				"Upgrade your &bHephaestus Forge&r to its second tier. The higher tier unlocks more enhancer slots and the heavier &6Forbidden Arcanus&r recipes, including the &bDeorum block&r."
+				"The forge is the engine of this mod's magic feedstock."
+			]
+			rewards: [
+				{
+					id: "49540B3000004000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "49540B3000004001"
+					table_id: 8430738502437568513L
+					title: "A cache for the forge upgrade."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540B2000004000"
+				item: { count: 1, id: "forbidden_arcanus:hephaestus_forge_tier_2" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["49540B1000000004"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "forbidden_arcanus:deorum_block"
+			}
+			id: "49540B1000000018"
+			title: "Deorum Block"
+			subtitle: "Divine metal, in bulk."
+			description: [
+				"Forge a &bDeorum Block&r. It packs the divine metal into a dense storable form and feeds the &bfoundry&r bridge that comes next."
+				"Stockpile it; the &bAureal&r Foundry is hungry for it."
+			]
+			rewards: [
+				{
+					id: "49540B3000018000"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "49540B3000018001"
+					table_id: 8430738502437568513L
+					title: "A cache of the divine metal."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540B2000018000"
+				item: { count: 1, id: "forbidden_arcanus:deorum_block" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["49540B1000000018"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "oritech:foundry_block"
+			}
+			id: "49540B1000000005"
+			title: "Aureal Foundry"
+			subtitle: "Magic feeds the foundry."
+			description: [
+				"Build the &6Oritech&r &bFoundry&r. Here the recipe is coupled to &6Forbidden Arcanus&r: the foundry takes Deorum as feedstock, the first of three deliberate bridges between magic and industry."
+				"The divine metal becomes an industrial input."
+			]
+			rewards: [
+				{
+					id: "49540B3000005000"
+					type: "xp"
+					xp: 75
+				}
+				{
+					id: "49540B3000005001"
+					table_id: 8430738502437568515L
+					title: "A cache for the foundry bridge."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540B2000005000"
+				item: { count: 1, id: "oritech:foundry_block" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: -2.5d
+		}
+		{
+			hide_until_deps_complete: false
+			icon: {
+				id: "occultism:book_of_calling_djinni_manage_machine"
+			}
+			dependencies: ["4954011000000001"]
+			id: "49540B1000000006"
+			title: "Djinni Machine Operator"
+			subtitle: "A spirit that runs machines."
+			description: [
+				"Write a &bBook of Calling&r for a Djinni Machine Operator. A bound Djinni reads and works your machines on command, &6Occultism&r's spirit-powered automation."
+				"Magic labor, slotted into an &dindustrial&r base."
+			]
+			rewards: [
+				{
+					id: "49540B3000006000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "49540B3000006001"
+					table_id: 8430738502437568513L
+					title: "A cache for the spirit operator."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540B2000006000"
+				item: { count: 1, id: "occultism:book_of_calling_djinni_manage_machine" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["49540B1000000006"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "occultism:dimensional_matrix"
+			}
+			id: "49540B1000000007"
+			title: "Dimensional Crystal Matrix"
+			subtitle: "The heart of spirit storage."
+			description: [
+				"Craft a &bDimensional Crystal Matrix&r. It is the core of &6Occultism&r's dimensional storage, a Djinni-held pocket that keeps far more than any chest."
+				"The start of a spirit-bound storage network."
+			]
+			rewards: [
+				{
+					id: "49540B3000007000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "49540B3000007001"
+					table_id: 8430738502437568513L
+					title: "A cache for the storage core."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540B2000007000"
+				item: { count: 1, id: "occultism:dimensional_matrix" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["49540B1000000007"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "occultism:storage_controller"
+			}
+			id: "49540B1000000008"
+			title: "Dimensional Storage"
+			subtitle: "Bank items in a pocket."
+			description: [
+				"Build a &bDimensional Storage Actuator&r and a &bStable Wormhole&r. Together they open access to the matrix's pocket dimension, &6Occultism&r's answer to mass storage."
+				"A magical alternative to a wall of drawers."
+			]
+			rewards: [
+				{
+					id: "49540B3000008000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "49540B3000008001"
+					table_id: 8430738502437568513L
+					title: "A cache for the storage build."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "49540B2000008000"
+					item: { count: 1, id: "occultism:storage_controller" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "49540B2000008001"
+					item: { count: 1, id: "occultism:stable_wormhole" }
+					type: "item"
+				}
+			]
+			x: 5.5d
+			y: 2.5d
+		}
+		{
+			hide_until_deps_complete: false
+			icon: {
+				id: "theurgy:reformation_result_pedestal"
+			}
+			dependencies: ["4954011000000001"]
+			id: "49540B1000000009"
+			title: "Reformation Result Pedestal"
+			subtitle: "Complete the reformation array."
+			description: [
+				"Place a &bReformation Result Pedestal&r. It is the output side of &6Theurgy&r's reformation, where the rebuilt item appears once mercury and sulfur do their work."
+				"Pair it with the source pedestals and the &bmercurial wand&r to replicate items."
+			]
+			rewards: [
+				{
+					id: "49540B3000009000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "49540B3000009001"
+					table_id: 8430738502437568513L
+					title: "Parts for the reformation array."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540B2000009000"
+				item: { count: 1, id: "theurgy:reformation_result_pedestal" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["49540B1000000009"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "theurgy:caloric_flux_emitter"
+			}
+			id: "49540B100000000A"
+			title: "Flux Emitters"
+			subtitle: "Power machines with flux."
+			description: [
+				"Craft a &bCaloric Flux Emitter&r and a &bSulfuric Flux Emitter&r. They beam &6Theurgy&r's heat and sulfur flux to its machines, the wireless power of the alchemy line."
+				"Aim them at the machines that need feeding."
+			]
+			rewards: [
+				{
+					id: "49540B300000A000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "49540B300000A001"
+					table_id: 8430738502437568513L
+					title: "A cache for the flux network."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "49540B200000A000"
+					item: { count: 1, id: "theurgy:caloric_flux_emitter" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "49540B200000A001"
+					item: { count: 1, id: "theurgy:sulfuric_flux_emitter" }
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["49540B1000000009"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "theurgy:incubator"
+			}
+			id: "49540B100000000B"
+			title: "Incubator"
+			subtitle: "Grow sulfur for the line."
+			description: [
+				"Build a &6Theurgy&r &bIncubator&r. Fed salt and mercury it multiplies a sample of sulfur, turning a one-time extraction into a steady feedstock for the alchemy machines."
+				"A renewable source for the reformation chain."
+			]
+			rewards: [
+				{
+					id: "49540B300000B000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "49540B300000B001"
+					table_id: 8430738502437568513L
+					title: "A cache for the incubator."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540B200000B000"
+				item: { count: 1, id: "theurgy:incubator" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["49540B100000000B"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "theurgy:incubator_sulfur_vessel"
+			}
+			id: "49540B1000000011"
+			title: "Incubator Sulfur Vessel"
+			subtitle: "Feed the incubator its seed."
+			description: [
+				"Attach an &bIncubator Sulfur Vessel&r. It supplies the sulfur sample the incubator grows from, the seed stock for the whole operation."
+				"Without a seed there is nothing to multiply."
+			]
+			rewards: [
+				{
+					id: "49540B3000011000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "49540B3000011001"
+					table_id: 8430738502437568513L
+					title: "A few parts for the vessel."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540B2000011000"
+				item: { count: 1, id: "theurgy:incubator_sulfur_vessel" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 7.5d
+		}
+		{
+			hide_until_deps_complete: false
+			icon: {
+				id: "spectrum:paltaeria_gem"
+			}
+			dependencies: ["4954011000000001"]
+			id: "49540B100000000C"
+			title: "Spectrum Materials"
+			subtitle: "Enter the Spectrum network."
+			description: [
+				"Gather a &bPaltaeria Gem&r, a &bMidnight Chip&r, and &bStardust&r. These are the entry materials of Spectrum, the light-and-ink magic line, and the gate to its many machines."
+				"Spectrum rewards patience; collect these before you build its altars."
+			]
+			rewards: [
+				{
+					id: "49540B300000C000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "49540B300000C001"
+					table_id: 8430738502437568513L
+					title: "A cache to open the Spectrum line."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "49540B200000C000"
+					item: { count: 1, id: "spectrum:paltaeria_gem" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "49540B200000C001"
+					item: { count: 1, id: "spectrum:midnight_chip" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "49540B200000C002"
+					item: { count: 1, id: "spectrum:stardust" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["49540B100000000C"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "spectrum:fusion_shrine_basalt"
+			}
+			id: "49540B100000000D"
+			title: "Fusion Shrine"
+			subtitle: "Fuse under the open sky."
+			description: [
+				"Build a &bFusion Shrine&r. Under a clear night sky it fuses items with light into &6Spectrum&r's stranger materials, the workhorse altar of the mod's midgame."
+				"It needs a view of the sky, so roof it carefully or not at all."
+			]
+			rewards: [
+				{
+					id: "49540B300000D000"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "49540B300000D001"
+					table_id: 8430738502437568515L
+					title: "A cache for the shrine build."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				advancement: "spectrum:build_fusion_shrine"
+				criterion: ""
+				id: "49540B200000D000"
+				type: "advancement"
+			}]
+			x: -1.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["49540B100000000C"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "spectrum:spirit_instiller"
+			}
+			id: "49540B100000000E"
+			title: "Spirit Instiller"
+			subtitle: "Optional: instill a soul."
+			description: [
+				"Build the &bSpirit Instiller&r structure. It binds spirit into items for &6Spectrum&r's higher crafts, a multiblock for the dedicated practitioner."
+				"Optional depth for the &6Spectrum&r enthusiast."
+			]
+			optional: true
+			rewards: [
+				{
+					id: "49540B300000E000"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "49540B300000E001"
+					table_id: 8430738502437568515L
+					title: "A cache for the instiller."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				advancement: "spectrum:midgame/build_spirit_instiller_structure"
+				criterion: ""
+				id: "49540B200000E000"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["49540B100000000C"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "integrateddynamics:logic_director"
+			}
+			id: "49540B1000000017"
+			title: "Resonant Logic Director"
+			subtitle: "Spectrum feeds the logic grid."
+			description: [
+				"Craft an &6Integrated Dynamics&r &bLogic Director&r, coupled here to &6Spectrum&r resonance. Its recipe takes a Spectrum component, the second bridge wiring magic into your automation."
+				"The director is a powerful logic part, now with a magical price of entry."
+			]
+			rewards: [
+				{
+					id: "49540B3000017000"
+					type: "xp"
+					xp: 75
+				}
+				{
+					id: "49540B3000017001"
+					table_id: 8430738502437568515L
+					title: "A cache for the logic bridge."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540B2000017000"
+				item: { count: 1, id: "integrateddynamics:logic_director" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"49540B1000000016"
+				"49540B1000000005"
+				"49540B1000000017"
+				"49540B1000000008"
+				"49540B100000000B"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				id: "pneumaticcraft:spawner_agitator"
+			}
+			id: "49540B1000000015"
+			title: "Spirit-Bound Agitator"
+			subtitle: "The magic-feedstock capstone."
+			description: [
+				"Craft a &6PneumaticCraft&r &bSpawner Agitator&r, coupled to &6Malum&r's arcane spirit. The third and final bridge, it caps the chapter once your foundry, logic, storage, spirit, and incubator lines all run."
+				"Completing it is one of the six proofs the iron era's finale demands."
+			]
+			rewards: [
+				{
+					id: "49540B3000015000"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "49540B3000015001"
+					table_id: 8430738502437568531L
+					title: "A cache to seal the magic-feedstock proof."
+					type: "loot"
+				}
+				{
+					auto: "enabled"
+					command: "/astages add {p} ir_magic_feedstock_complete true true"
+					id: "49540B3000015002"
+					permission_level: 2
+					silent: true
+					team_reward: true
+					type: "command"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540B2000015000"
+				item: { count: 1, id: "pneumaticcraft:spawner_agitator" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["49540B1000000004"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "forbidden_arcanus:aureal_tank"
+			}
+			id: "49540B1000000019"
+			title: "Aureal Tank"
+			subtitle: "Store the magic energy."
+			description: [
+				"Build an &bAureal Tank&r. It banks the Aureal the &bHephaestus Forge&r and its kin run on, the buffer that keeps your divine &bfurnace&r from starving."
+				"Aureal handling at scale starts here."
+			]
+			rewards: [
+				{
+					id: "4EF4423C8A199556"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "4D247DA7387B75AD"
+					table_id: 8430738502437568513L
+					title: "A cache for the Aureal store."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540B2000000019"
+				item: { count: 1, id: "forbidden_arcanus:aureal_tank" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["49540B1000000004"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "forbidden_arcanus:smelter_prism"
+			}
+			id: "49540B100000001A"
+			title: "Smelter Prism"
+			subtitle: "Add a smelting trick."
+			description: [
+				"Craft a &bSmelter Prism&r. Fitted to the &bHephaestus Forge&r it smelts inputs as it works, saving a separate &bfurnace&r step for the right recipes."
+				"One of the enhancers that shape how the forge behaves."
+			]
+			rewards: [
+				{
+					id: "7F33D4DD888BAAEA"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "061A0CEB02160869"
+					table_id: 8430738502437568513L
+					title: "A few parts for the prism."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540B200000001A"
+				item: { count: 1, id: "forbidden_arcanus:smelter_prism" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["49540B1000000004"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "forbidden_arcanus:tyr_helmet"
+			}
+			id: "49540B100000001B"
+			title: "Tyr Helmet"
+			subtitle: "Optional: Deorum armor."
+			description: [
+				"Forge a &bTyr Helmet&r. The Tyr set is &6Forbidden Arcanus&r' divine-metal armor, strong and storied, the head of a suit worth the &bDeorum&r it costs."
+			]
+			optional: true
+			rewards: [
+				{
+					id: "1556018C6915B8DB"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "46058CE7ED6CCEDF"
+					table_id: 8430738502437568513L
+					title: "An armor cache for the set."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540B200000001B"
+				item: { count: 1, id: "forbidden_arcanus:tyr_helmet" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["49540B1000000004"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "forbidden_arcanus:tyr_chestplate"
+			}
+			id: "49540B100000001C"
+			title: "Tyr Chestplate"
+			subtitle: "Optional: the body piece."
+			description: [
+				"Craft a &bTyr Chestplate&r, the heaviest piece of the divine-metal set and the one to make first."
+			]
+			optional: true
+			rewards: [
+				{
+					id: "378CABC03DE72FFD"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "5E0868963E242AB4"
+					table_id: 8430738502437568513L
+					title: "An armor cache for the chest."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540B200000001C"
+				item: { count: 1, id: "forbidden_arcanus:tyr_chestplate" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["49540B1000000004"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "forbidden_arcanus:tyr_leggings"
+			}
+			id: "49540B100000001D"
+			title: "Tyr Leggings"
+			subtitle: "Optional: the leg piece."
+			description: [
+				"Build &bTyr Leggings&r to cover the lower half of the &6Forbidden Arcanus&r divine-metal suit."
+			]
+			optional: true
+			rewards: [
+				{
+					id: "5F5FFEC54494B1B1"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "14A48D911F88C67F"
+					table_id: 8430738502437568513L
+					title: "An armor cache for the legs."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540B200000001D"
+				item: { count: 1, id: "forbidden_arcanus:tyr_leggings" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["49540B1000000004"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "forbidden_arcanus:tyr_boots"
+			}
+			id: "49540B100000001E"
+			title: "Tyr Boots"
+			subtitle: "Optional: finish the set."
+			description: [
+				"Forge &bTyr Boots&r to complete the Tyr suit, one of the finest armors the magic line produces."
+			]
+			optional: true
+			rewards: [
+				{
+					id: "4D834EE2C29FA9CF"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "7AD831B568422E36"
+					table_id: 8430738502437568513L
+					title: "An armor cache for the boots."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540B200000001E"
+				item: { count: 1, id: "forbidden_arcanus:tyr_boots" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["49540B1000000008"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "occultism:dimensional_mineshaft"
+			}
+			id: "49540B100000001F"
+			title: "Dimensional Mineshaft"
+			subtitle: "Mine through a spirit."
+			description: [
+				"Build a &bDimensional Mineshaft&r. Bound to a spirit it pulls ore from the Otherworld on its own, &6Occultism&r's hands-off mining, no quarry required."
+				"Magic labor replacing the pickaxe entirely."
+			]
+			rewards: [
+				{
+					id: "1AECF422866F99A2"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "38FF84BDEA5F1C97"
+					table_id: 8430738502437568513L
+					title: "A cache for the spirit mine."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540B200000001F"
+				item: { count: 1, id: "occultism:dimensional_mineshaft" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["49540B100000001F"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "occultism:dimensional_extractor"
+			}
+			id: "49540B1000000020"
+			title: "Dimensional Extractor"
+			subtitle: "Tune what the spirit mines."
+			description: [
+				"Craft a &bDimensional Extractor&r. It directs the mineshaft toward a chosen resource, so the spirit brings back what you actually need."
+				"Set the target and let the Otherworld provide."
+			]
+			rewards: [
+				{
+					id: "2D219B13410AAE1B"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "5EC168BE055BB442"
+					table_id: 8430738502437568513L
+					title: "Parts for the extractor."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540B2000000020"
+				item: { count: 1, id: "occultism:dimensional_extractor" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["49540B1000000006"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "occultism:spirit_grindstone"
+			}
+			id: "49540B1000000021"
+			title: "Spirit Grindstone"
+			subtitle: "Double ore by spirit."
+			description: [
+				"Build a &bSpirit Grindstone&r. Powered by a bound spirit it grinds ore into extra dust, &6Occultism&r's magical take on ore doubling."
+				"Another &dindustrial&r job handed to a spirit."
+			]
+			rewards: [
+				{
+					id: "5075B08324080671"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "0EDCCC770DA5A36D"
+					table_id: 8430738502437568513L
+					title: "A cache for the spirit mill."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540B2000000021"
+				item: { count: 1, id: "occultism:spirit_grindstone" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["49540B1000000006"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "occultism:book_of_binding_djinni"
+			}
+			id: "49540B1000000022"
+			title: "Book of Binding: Djinni"
+			subtitle: "Bind a higher spirit."
+			description: [
+				"Assemble a &bBook of Binding&r for a Djinni. The Djinni is a stronger spirit than the Foliot, the class that runs the machine operators and storage you have been building."
+				"Summon and bind it through the proper ritual."
+			]
+			rewards: [
+				{
+					id: "5711EC424C3AFA9C"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "7666FAC4D63FA809"
+					table_id: 8430738502437568513L
+					title: "A cache for the binding ritual."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540B2000000022"
+				item: { count: 1, id: "occultism:book_of_binding_djinni" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -11.0d
+		}
+		{
+			dependencies: ["49540B1000000009"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "theurgy:digestion_vat"
+			}
+			id: "49540B1000000023"
+			title: "Digestion Vat"
+			subtitle: "Break inputs down."
+			description: [
+				"Build a &bDigestion Vat&r. It dissolves materials into the fluids &6Theurgy&r's chemistry needs, a processing step that feeds the reformation and &bincubator&r lines."
+				"The acid stomach of the alchemy setup."
+			]
+			rewards: [
+				{
+					id: "1256A5A64AC3A004"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "2A909B1829F5E186"
+					table_id: 8430738502437568513L
+					title: "Parts for the digestion vat."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540B2000000023"
+				item: { count: 1, id: "theurgy:digestion_vat" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["49540B1000000025"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "psi:programmer"
+			}
+			id: "49540B1000000024"
+			title: "Spell Programmer"
+			subtitle: "Write your spells."
+			description: [
+				"Build a &bSpell Programmer&r. It is the bench where you lay out &6Psi&r spells as a grid of components, the programming half of the mod paired to the CAD that casts them."
+				"Start simple; &6Psi&r spells grow complex fast."
+			]
+			rewards: [
+				{
+					id: "771CF5D16817A341"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "78B83FD96931B8DE"
+					table_id: 8430738502437568513L
+					title: "A cache for the spell bench."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540B2000000024"
+				item: { count: 1, id: "psi:programmer" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["49540B100000000C"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "psi:cad_assembler"
+			}
+			id: "49540B1000000025"
+			title: "CAD Assembler"
+			subtitle: "Build a spell device."
+			description: [
+				"Craft a &bCAD Assembler&r. It is where you assemble a CAD, the &6Psi&r device that casts the spells you write, the entry point to that mod's programmable magic."
+				"&6Psi&r is logic and magic both, so expect to tinker."
+			]
+			rewards: [
+				{
+					id: "0C6CBF11E71B1AC1"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "00EF5DD71562C666"
+					table_id: 8430738502437568513L
+					title: "A cache to start with Psi."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540B2000000025"
+				item: { count: 1, id: "psi:cad_assembler" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["49540B100000000C"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "spectrum:enchanter"
+			}
+			id: "49540B1000000026"
+			title: "Spectrum Enchanter"
+			subtitle: "Enchant with light."
+			description: [
+				"Build a &6Spectrum&r &bEnchanter&r. It applies enchantments through the mod's light magic, an alternative path to the gear bonuses you want."
+				"A &6Spectrum&r-flavored route around the vanilla table."
+			]
+			rewards: [
+				{
+					id: "3A9FDC6729E2B6CE"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "31BC236613A6712D"
+					table_id: 8430738502437568513L
+					title: "A cache for the enchanter."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540B2000000026"
+				item: { count: 1, id: "spectrum:enchanter" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["49540B100000000C"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "spectrum:crystallarieum"
+			}
+			id: "49540B1000000027"
+			title: "Crystallarieum"
+			subtitle: "Grow Spectrum crystals."
+			description: [
+				"Craft a &bCrystallarieum&r. It grows the gems and crystals &6Spectrum&r's recipes consume, turning a seed into a renewable supply."
+				"The farm behind the mod's crystal economy."
+			]
+			rewards: [
+				{
+					id: "6A902FBEC044DE2A"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "7FBFC548A4DAB9FA"
+					table_id: 8430738502437568513L
+					title: "A cache for the crystal grower."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540B2000000027"
+				item: { count: 1, id: "spectrum:crystallarieum" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["49540B100000000C"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "spectrum:cinderhearth"
+			}
+			id: "49540B1000000028"
+			title: "Cinderhearth"
+			subtitle: "Smelt the Spectrum way."
+			description: [
+				"Build a &bCinderhearth&r. It smelts ores and produces the mod's metals with bonus output, &6Spectrum&r's &dindustrial&r-grade furnace."
+				"Feed it well and it pays back in extra ingots."
+			]
+			rewards: [
+				{
+					id: "2BB304B1D9CC1DB9"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "759A20B79091DB2E"
+					table_id: 8430738502437568513L
+					title: "A cache for the Spectrum smelter."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540B2000000028"
+				item: { count: 1, id: "spectrum:cinderhearth" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["49540B100000000C"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "spectrum:crystal_apothecary"
+			}
+			id: "49540B1000000029"
+			title: "Crystal Apothecary"
+			subtitle: "Gather pigments and resources."
+			description: [
+				"Craft a &bCrystal Apothecary&r. It collects the pigments, gems, and growths that gather around your &6Spectrum&r setup, an automated harvester for the mod's odder yields."
+				"The tidy collector that closes the &6Spectrum&r network."
+			]
+			rewards: [
+				{
+					id: "68B01AC1CBEF9F78"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "5606F7CB44C3BB19"
+					table_id: 8430738502437568513L
+					title: "A cache to round out the network."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540B2000000029"
+				item: { count: 1, id: "spectrum:crystal_apothecary" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 5.5d
+		}
+	]
+}
