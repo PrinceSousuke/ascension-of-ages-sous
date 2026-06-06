@@ -3,10 +3,6 @@
 	default_quest_shape: ""
 	filename: "minecolonies"
 	group: "1A7F0E9D4C22B6F1"
-	hide_quest_until_deps_complete: true
-	icon: {
-		id: "minecolonies:supplycampdeployer"
-	}
 	id: "0E21FB2EFB41A583"
 	images: [
 		{
@@ -66,13 +62,54 @@
 			y: -1.0d
 		}
 	]
-	order_index: 1
+	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
 			dependencies: ["097AED7C91033D5E"]
 			hide_until_deps_complete: true
+			id: "1BB571557F74D3A1"
+			title: "Town Hall"
+			subtitle: "The heart of a colony."
+			description: [
+				"Craft the &bTown Hall&r block. It is the core of a &6MineColonies&r settlement, setting the borders and giving you the interface that manages every citizen and building."
+				"Nothing else in the colony works until this block exists, so make it your first move."
+			]
+			rewards: [{
+				id: "5118D5653FA17BEF"
+				type: "xp"
+				xp: 5
+			}]
+			size: 1.5d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "7BE92C777F0CDFCE"
+				item: { count: 1, id: "minecolonies:blockhuttownhall" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -18.0d
+		}
+		{
+			dependencies: [
+				"1E1870FAD295DEDE"
+				"0F409DACBEB7BBF8"
+			]
+			dependency_requirement: "one_completed"
 			id: "0D6E099A1A242153"
+			title: "Found the Colony"
+			subtitle: "Place the hall, claim the land."
+			description: [
+				"Set the &bTown Hall&r down with the &bBuild Tool&r to found your colony. The Build Tool previews and positions every structure, so it is the one item you reach for on every build."
+				"Founding the colony hands you your first &bBuilder's Hut&r to place."
+			]
 			rewards: [
 				{
 					id: "2C0FFA33AF366627"
@@ -80,6 +117,7 @@
 						count: 1
 						id: "minecolonies:blockhutbuilder"
 					}
+					title: "Your first Builder's Hut to set down."
 					type: "item"
 				}
 				{
@@ -123,8 +161,13 @@
 		}
 		{
 			dependencies: ["583A7AA84FEC027F"]
-			hide_until_deps_complete: true
 			id: "15B51FB56A64C303"
+			title: "University"
+			subtitle: "Colony-wide upgrades come from here."
+			description: [
+				"Raise a &bUniversity&r. Its researchers unlock upgrades that touch the whole colony, from faster builders to tougher guards, the long game that makes a settlement thrive."
+				"Staff it and keep the research queue full, since the best bonuses take real time to earn."
+			]
 			rewards: [
 				{
 					count: 8
@@ -165,8 +208,13 @@
 		{
 			dependencies: ["0D6E099A1A242153"]
 			hide_dependency_lines: true
-			hide_until_deps_complete: true
 			id: "75599A9909C7A8C8"
+			title: "First Meal"
+			subtitle: "Citizens have to eat."
+			description: [
+				"Get a citizen fed for the first time. Colonists need food, and a hungry worker slows down or stops entirely, so a stocked rack near their hut keeps them productive."
+				"Drop some spare food in the &bwarehouse&r and watch them help themselves."
+			]
 			invisible: true
 			rewards: [{
 				count: 32
@@ -175,6 +223,7 @@
 					count: 1
 					id: "minecraft:apple"
 				}
+				title: "Apples to keep the first workers fed."
 				type: "item"
 			}]
 			tasks: [{
@@ -196,8 +245,13 @@
 		}
 		{
 			dependencies: ["0D6E099A1A242153"]
-			hide_until_deps_complete: true
 			id: "583A7AA84FEC027F"
+			title: "Builder's Hut"
+			subtitle: "Who builds everything else."
+			description: [
+				"Build the &bBuilder's Hut&r and assign a worker. The Builder constructs and upgrades every other building from your requests, so the colony grows only as fast as they can work."
+				"Keep them supplied with materials or the whole town stalls waiting on one person."
+			]
 			rewards: [
 				{
 					id: "1BE3A8B887502B0C"
@@ -208,6 +262,7 @@
 					exclude_from_claim_all: true
 					id: "66D644A1B1483B6F"
 					table_id: 2567105459748842191L
+					title: "A food cache while the builder works."
 					type: "loot"
 				}
 			]
@@ -233,8 +288,13 @@
 		{
 			dependencies: ["0D6E099A1A242153"]
 			hide_dependency_lines: true
-			hide_until_deps_complete: true
 			id: "342A1EF584823D2C"
+			title: "Teach a Recipe"
+			subtitle: "Crafters only make what you teach them."
+			description: [
+				"Add a recipe to a building, starting with torches. Colony crafters produce only what you have taught them, so adding recipes is how a worker learns to make what you need."
+				"Open the building's recipe list and feed it a pattern. You will be doing this often."
+			]
 			rewards: [
 				{
 					count: 16
@@ -280,8 +340,13 @@
 		{
 			dependencies: ["0D6E099A1A242153"]
 			hide_dependency_lines: true
-			hide_until_deps_complete: true
 			id: "65D23E7683812E26"
+			title: "Lean Times"
+			subtitle: "A sign the larder is thin."
+			description: [
+				"Watch a colonist eat something grim, like rotten flesh. Hungry citizens eat whatever is on hand, which is a clear sign your food supply is running short."
+				"Take it as a cue to get a farmer and a cook running before morale drops."
+			]
 			invisible: true
 			rewards: [
 				{
@@ -322,8 +387,13 @@
 		}
 		{
 			dependencies: ["583A7AA84FEC027F"]
-			hide_until_deps_complete: true
 			id: "23012F6C4C522CEB"
+			title: "Lumberjack's Hut"
+			subtitle: "Logs without swinging an axe."
+			description: [
+				"Build the &bLumberjack's Hut&r. The Lumberjack fells and replants trees, turning a forest into a steady log supply on its own."
+				"Give them a wide wooded area to work and the colony never runs short of wood."
+			]
 			rewards: [
 				{
 					exclude_from_claim_all: true
@@ -362,8 +432,13 @@
 		}
 		{
 			dependencies: ["583A7AA84FEC027F"]
-			hide_until_deps_complete: true
 			id: "6BB0C51EE8CA5966"
+			title: "Miner's Hut"
+			subtitle: "Stone and ore from a shaft."
+			description: [
+				"Sink a &bMiner's Hut&r. The Miner digs a &bshaft&r and brings up stone and ore without you lifting a pick, the backbone of your raw material supply."
+				"Level the hut to send them deeper, where the richer ores sit."
+			]
 			rewards: [
 				{
 					count: 16
@@ -411,8 +486,13 @@
 		}
 		{
 			dependencies: ["583A7AA84FEC027F"]
-			hide_until_deps_complete: true
 			id: "0B009391E3F76D6E"
+			title: "Fisherman's Hut"
+			subtitle: "Easy food from the water."
+			description: [
+				"Set up a &bFisherman's Hut&r beside water. The Fisherman reels in food and the occasional treasure, a low-effort supply for a colony near a pond or coast."
+				"Place it right on the shoreline so the worker can reach open water."
+			]
 			rewards: [
 				{
 					id: "41290EC24CAFB21A"
@@ -420,6 +500,7 @@
 						count: 1
 						id: "minecraft:fishing_rod"
 					}
+					title: "A rod to fish alongside them."
 					type: "item"
 				}
 				{
@@ -447,8 +528,13 @@
 		}
 		{
 			dependencies: ["583A7AA84FEC027F"]
-			hide_until_deps_complete: true
 			id: "57C889EC980D33D9"
+			title: "Farmer's Hut"
+			subtitle: "The colony's main food engine."
+			description: [
+				"Build the &bFarmer's Hut&r and mark out fields beside it. The Farmer plants, tends, and harvests crops across them, feeding most of the colony."
+				"Pair it with a &bComposter&r for the enriched dirt the fields need."
+			]
 			rewards: [
 				{
 					id: "2EC62DDE60A5271C"
@@ -489,8 +575,13 @@
 		}
 		{
 			dependencies: ["583A7AA84FEC027F"]
-			hide_until_deps_complete: true
 			id: "67E8B8DCFC93F832"
+			title: "Warehouse"
+			subtitle: "The store everything pulls from."
+			description: [
+				"Raise a &bWarehouse&r. It is the central store every building delivers to and draws from, which is what lets a colony share resources instead of each hut hoarding its own."
+				"Add racks inside to expand how much it can hold."
+			]
 			rewards: [
 				{
 					count: 6
@@ -535,8 +626,13 @@
 		}
 		{
 			dependencies: ["67E8B8DCFC93F832"]
-			hide_until_deps_complete: true
 			id: "490628CE108A833A"
+			title: "Courier's Hut"
+			subtitle: "Keep the goods moving."
+			description: [
+				"Build the &bCourier's Hut&r. Couriers run items between the &bwarehouse&r and every working building, which is what keeps a busy colony from grinding to a halt."
+				"Hire one the moment the &bwarehouse&r is up, or deliveries pile up unworked."
+			]
 			rewards: [
 				{
 					id: "7EFD224B4DFF2D7A"
@@ -544,6 +640,7 @@
 						count: 1
 						id: "minecraft:leather_boots"
 					}
+					title: "Boots for the colony's first runner."
 					type: "item"
 				}
 				{
@@ -571,8 +668,44 @@
 		}
 		{
 			dependencies: ["583A7AA84FEC027F"]
-			hide_until_deps_complete: true
+			hide_dependency_lines: true
+			id: "71FCF06A98CC66D7"
+			title: "Clipboard"
+			subtitle: "See every open work order."
+			description: [
+				"Craft a &bClipboard&r. It lists every open request across the colony, so you can see at a glance what each builder still needs."
+				"Keep it on you while you manage supplies and nothing slips through."
+			]
+			rewards: [{
+				id: "2D0F9C1101384C0F"
+				type: "xp"
+				xp: 5
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "6FF8ACDFE7CCF238"
+				item: { count: 1, id: "minecolonies:clipboard" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: -14.0d
+		}
+		{
+			dependencies: ["583A7AA84FEC027F"]
 			id: "48AC8545D66B71B7"
+			title: "Builder, Level 2"
+			subtitle: "A faster, more capable builder."
+			description: [
+				"Upgrade the &bBuilder's Hut&r to level two. A higher-level Builder works faster and can put up taller, more complex buildings."
+				"Every upgrade after this pays for itself in build speed alone."
+			]
 			invisible: true
 			rewards: [{
 				id: "06F6BD1EAC09269C"
@@ -598,27 +731,20 @@
 			y: -8.0d
 		}
 		{
-			dependencies: ["097AED7C91033D5E"]
-			dependency_requirement: "one_completed"
-			hide_until_deps_complete: true
-			id: "22F4C38E79DEFF1E"
-			invisible: true
-			progression_mode: "flexible"
-			rewards: [
-				{
-					id: "332F2D21F7C92CE3"
-					type: "xp"
-					xp: 10
-				}
-				{
-					id: "7B3487D80B889A52"
-					item: {
-						count: 1
-						id: "minecolonies:supplycampdeployer"
-					}
-					type: "item"
-				}
+			dependencies: ["583A7AA84FEC027F"]
+			hide_dependency_lines: true
+			id: "3B40A769EDB26EA2"
+			title: "Postbox and Stash"
+			subtitle: "Request and drop off remotely."
+			description: [
+				"Place a &bPostbox&r and a &bStash&r. The Postbox lets you request items from the &bwarehouse&r from anywhere, and a Stash is a simple shared drop-off that couriers service."
+				"Both cut down on hand-carrying across a growing town."
 			]
+			rewards: [{
+				id: "3843BBFA28666B30"
+				type: "xp"
+				xp: 5
+			}]
 			tasks: [
 				{
 					SkillsLevel: {
@@ -629,9 +755,8 @@
 						mode: "TOTAL_LEVEL"
 						second: 20
 					}
-					count: 64L
-					id: "261A4E520BE01361"
-					item: { count: 1, id: "minecraft:oak_log" }
+					id: "0CBB5387057BD20C"
+					item: { count: 1, id: "minecolonies:blockpostbox" }
 					type: "item"
 				}
 				{
@@ -643,19 +768,25 @@
 						mode: "TOTAL_LEVEL"
 						second: 20
 					}
-					count: 64L
-					id: "63E8706A243A6A4B"
-					item: { count: 1, id: "minecraft:cobblestone" }
+					id: "49A9EEEC13D15772"
+					item: { count: 1, id: "minecolonies:blockstash" }
 					type: "item"
 				}
 			]
-			x: 3.0d
-			y: -15.0d
+			x: 11.5d
+			y: -13.0d
 		}
+		
+		
 		{
-			dependencies: ["22F4C38E79DEFF1E"]
-			hide_until_deps_complete: true
+			dependencies: ["1BB571557F74D3A1"]
 			id: "1E1870FAD295DEDE"
+			title: "Supply Camp"
+			subtitle: "Bootstrap the colony on land."
+			description: [
+				"Place a &bSupply Camp&r on flat ground. It is the starter structure that hands you the &bBuild Tool&r and the gear to put down your first buildings."
+				"Give it open space around it so the camp can unpack cleanly."
+			]
 			rewards: [{
 				id: "1BB2255A28D5416B"
 				type: "xp"
@@ -678,9 +809,14 @@
 			y: -13.5d
 		}
 		{
-			dependencies: ["22F4C38E79DEFF1E"]
-			hide_until_deps_complete: true
+			dependencies: ["1BB571557F74D3A1"]
 			id: "0F409DACBEB7BBF8"
+			title: "Supply Ship"
+			subtitle: "The waterside alternative."
+			description: [
+				"Drop a &bSupply Ship&r on open water if you would rather start by the coast. Like the camp it bootstraps the colony with the &bBuild Tool&r and starting supplies."
+				"It needs a clear stretch of water to deploy, so scout the shoreline first."
+			]
 			rewards: [{
 				id: "5775E488967BE81A"
 				type: "xp"
@@ -705,8 +841,48 @@
 		{
 			dependencies: ["0D6E099A1A242153"]
 			hide_dependency_lines: true
-			hide_until_deps_complete: true
+			id: "69EAF1072D492F1A"
+			title: "Ancient Tome"
+			subtitle: "Call in hired help."
+			description: [
+				"Get hold of an &bAncient Tome&r. Used at the &bTown Hall&r it summons mercenaries to help fight off a raid your own guards cannot handle alone."
+				"Keep one in reserve for the night a raid comes in heavier than expected."
+			]
+			rewards: [{
+				id: "37634C6C11ED163C"
+				item: {
+					count: 1
+					id: "minecraft:enchanted_book"
+				}
+				title: "An enchanted book for the trouble."
+				type: "item"
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4FC0D16018A0834C"
+				item: { count: 1, id: "minecolonies:ancienttome" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: -13.0d
+		}
+		{
+			dependencies: ["0D6E099A1A242153"]
+			hide_dependency_lines: true
 			id: "120152510AD4B59A"
+			title: "Builder's Goggles"
+			subtitle: "See what a build still needs."
+			description: [
+				"Craft the &bBuilder's Goggles&r. Worn at a build site they show which blocks are still missing and where they go, which takes the guesswork out of supplying a builder."
+				"Pull them on whenever a construction stalls on a material you cannot place."
+			]
 			rewards: [{
 				id: "7BB544852E19F144"
 				type: "xp"
@@ -736,10 +912,13 @@
 				"493B9FC17C3CF3CA"
 				"130E8FC7479E4271"
 			]
-			hide_dependent_lines: true
-			hide_until_deps_complete: true
 			id: "4DD7E2BD8508A117"
-			progression_mode: "linear"
+			title: "Full Pasture"
+			subtitle: "Every herder at work."
+			description: [
+				"Get all of your animal herders running at once. A colony raising its own cattle, pigs, chickens, sheep, and rabbits feeds and clothes itself without you hunting a thing."
+				"This fires once the whole pen is staffed and working."
+			]
 			rewards: [{
 				id: "0EF34269FB098EBD"
 				type: "xp"
@@ -759,14 +938,19 @@
 				id: "69375D01EECF69DB"
 				type: "advancement"
 			}]
-			x: -7.0d
-			y: -13.5d
+			x: -5.0d
+			y: -13.0d
 		}
 		{
-			dependencies: ["4EEF0962CC249F30"]
-			dependency_requirement: "all_started"
-			hide_until_deps_complete: true
+			dependencies: ["1BB571557F74D3A1"]
+			hide_until_deps_complete: false
 			id: "49793060345FB28C"
+			title: "Cowboy's Hut"
+			subtitle: "Beef, leather, and milk."
+			description: [
+				"Build the &bCowboy's Hut&r. The Cowboy raises cattle for a steady supply of beef, leather, and milk."
+				"Fence off some grass nearby and keep wheat handy for breeding the herd."
+			]
 			rewards: [
 				{
 					id: "30842F1BADAF5B54"
@@ -774,6 +958,7 @@
 						count: 1
 						id: "minecraft:bucket"
 					}
+					title: "A bucket for the first milk run."
 					type: "item"
 				}
 				{
@@ -796,12 +981,18 @@
 				type: "item"
 			}]
 			x: -5.0d
-			y: -10.0d
+			y: -11.5d
 		}
 		{
-			dependencies: ["4EEF0962CC249F30"]
-			hide_until_deps_complete: true
+			dependencies: ["1BB571557F74D3A1"]
+			hide_until_deps_complete: false
 			id: "201CB898A399F1D5"
+			title: "Swineherder's Hut"
+			subtitle: "Fast, simple meat."
+			description: [
+				"Set up the &bSwineherder's Hut&r. The Swineherder raises pigs for pork, the quickest meat supply you can hand the kitchen."
+				"Keep carrots or similar on hand so the worker can breed them."
+			]
 			rewards: [
 				{
 					id: "5A4D37447956FC3D"
@@ -809,6 +1000,7 @@
 						count: 1
 						id: "minecraft:carrot_on_a_stick"
 					}
+					title: "A carrot on a stick for the herd."
 					type: "item"
 				}
 				{
@@ -830,13 +1022,19 @@
 				item: { count: 1, id: "minecolonies:blockhutswineherder" }
 				type: "item"
 			}]
-			x: -4.5d
-			y: -12.0d
+			x: -7.0d
+			y: -11.5d
 		}
 		{
-			dependencies: ["4EEF0962CC249F30"]
-			hide_until_deps_complete: true
+			dependencies: ["1BB571557F74D3A1"]
+			hide_until_deps_complete: false
 			id: "7870800C28A7E199"
+			title: "Chicken Herder's Hut"
+			subtitle: "Eggs, meat, and feathers."
+			description: [
+				"Build the &bChicken Herder's Hut&r. It keeps chickens for eggs, meat, and feathers, and those feathers arm your archers later on."
+				"A small flock supplies a lot, so it earns its space quickly."
+			]
 			rewards: [
 				{
 					count: 16
@@ -845,6 +1043,7 @@
 						count: 1
 						id: "minecraft:wheat_seeds"
 					}
+					title: "Seeds to start the flock."
 					type: "item"
 				}
 				{
@@ -866,13 +1065,19 @@
 				item: { count: 1, id: "minecolonies:blockhutchickenherder" }
 				type: "item"
 			}]
-			x: -4.5d
-			y: -11.0d
+			x: -6.0d
+			y: -11.5d
 		}
 		{
-			dependencies: ["4EEF0962CC249F30"]
-			hide_until_deps_complete: true
+			dependencies: ["1BB571557F74D3A1"]
+			hide_until_deps_complete: false
 			id: "130E8FC7479E4271"
+			title: "Shepherd's Hut"
+			subtitle: "Wool and mutton."
+			description: [
+				"Raise the &bShepherd's Hut&r. The Shepherd keeps sheep for wool and mutton, and wool feeds your building, banners, and the Dyer."
+				"Pair it with the &bDyer's Hut&r and you have colored wool on tap."
+			]
 			rewards: [
 				{
 					id: "64FBC8D5D5F8E092"
@@ -880,6 +1085,7 @@
 						count: 1
 						id: "minecraft:shears"
 					}
+					title: "Shears to get the flock started."
 					type: "item"
 				}
 				{
@@ -901,13 +1107,19 @@
 				item: { count: 1, id: "minecolonies:blockhutshepherd" }
 				type: "item"
 			}]
-			x: -2.5d
-			y: -13.0d
+			x: -7.0d
+			y: -13.5d
 		}
 		{
-			dependencies: ["4EEF0962CC249F30"]
-			hide_until_deps_complete: true
+			dependencies: ["1BB571557F74D3A1"]
+			hide_until_deps_complete: false
 			id: "493B9FC17C3CF3CA"
+			title: "Rabbit Hutch"
+			subtitle: "A tidy little food source."
+			description: [
+				"Build the &bRabbit Hutch&r. It raises rabbits for meat, hide, and the occasional foot, a minor but reliable addition to the larder."
+				"Hand the keeper a few rabbits and a carrot to start the warren."
+			]
 			rewards: [
 				{
 					id: "242E90648A0F515D"
@@ -944,13 +1156,18 @@
 				item: { count: 1, id: "minecolonies:blockhutrabbithutch" }
 				type: "item"
 			}]
-			x: -3.5d
+			x: -7.0d
 			y: -12.5d
 		}
 		{
 			dependencies: ["00A3AD4BD4EE0FC7"]
-			hide_until_deps_complete: true
 			id: "5A11A2FC20E5CE2A"
+			title: "Barracks"
+			subtitle: "Defense in numbers."
+			description: [
+				"Construct the &bBarracks&r. It houses and posts guards in real numbers, the core of a defense that holds once raids turn serious."
+				"Each tower built onto it stations another guard, so plan room to grow."
+			]
 			rewards: [
 				{
 					id: "05BBD7141863E37E"
@@ -1009,8 +1226,13 @@
 		}
 		{
 			dependencies: ["15B51FB56A64C303"]
-			hide_until_deps_complete: true
 			id: "0EBB4E5195610A82"
+			title: "Sawmill"
+			subtitle: "Advanced woodworking."
+			description: [
+				"Build the &bSawmill&r. Its carpenter crafts planks, sticks, and the more involved wooden parts your buildings keep requesting."
+				"Teach it the recipes your builds want most so the couriers can stock them automatically."
+			]
 			rewards: [
 				{
 					id: "5805F3CA7D86C3C9"
@@ -1051,13 +1273,19 @@
 		}
 		{
 			dependencies: ["15B51FB56A64C303"]
-			hide_until_deps_complete: true
 			id: "6B0CE8AD86991E28"
+			title: "Composter's Hut"
+			subtitle: "Surplus into rich dirt."
+			description: [
+				"Raise a &bComposter's Hut&r. The Composter turns spare food and plants into compost, which the Farmer needs to enrich fields."
+				"It closes the loop between what you grow and what makes the next crop grow faster."
+			]
 			rewards: [
 				{
 					exclude_from_claim_all: true
 					id: "300505E53BBE2D41"
 					table_id: 8849093687305634787L
+					title: "Some farm supplies to start composting."
 					type: "choice"
 				}
 				{
@@ -1085,8 +1313,13 @@
 		}
 		{
 			dependencies: ["15B51FB56A64C303"]
-			hide_until_deps_complete: true
 			id: "206159A3C7A78447"
+			title: "Mystical Site"
+			subtitle: "Quietly lifts colony mood."
+			description: [
+				"Build a &bMystical Site&r. It raises colony happiness in the background, and content citizens work better and complain less."
+				"A small decorative investment that pays off across the whole town."
+			]
 			rewards: [{
 				id: "77C8FAFFFB207296"
 				type: "xp"
@@ -1111,8 +1344,13 @@
 		}
 		{
 			dependencies: ["583A7AA84FEC027F"]
-			hide_until_deps_complete: true
 			id: "00A3AD4BD4EE0FC7"
+			title: "Guard Tower"
+			subtitle: "Your first real defense."
+			description: [
+				"Put up a &bGuard Tower&r. Each one posts a guard to watch and defend a stretch of your border, the first answer to night mobs and early raids."
+				"Place them to cover the approaches an enemy would actually take."
+			]
 			rewards: [
 				{
 					id: "1C00DB8352773D0D"
@@ -1181,8 +1419,13 @@
 		}
 		{
 			dependencies: ["15B51FB56A64C303"]
-			hide_until_deps_complete: true
 			id: "52453550206EC770"
+			title: "Dyer's Hut"
+			subtitle: "Color for wool and concrete."
+			description: [
+				"Build the &bDyer's Hut&r. The Dyer produces dyes from flowers and plants, coloring the wool, banners, and blocks your builds use."
+				"Feed it the Florist's flowers and it runs itself."
+			]
 			rewards: [
 				{
 					count: 4
@@ -1257,8 +1500,13 @@
 		}
 		{
 			dependencies: ["15B51FB56A64C303"]
-			hide_until_deps_complete: true
 			id: "37E43341FA234E84"
+			title: "Florist's Hut"
+			subtitle: "Flowers grown under glass."
+			description: [
+				"Raise the &bFlorist's Hut&r. The Florist grows flowers in a &bgreenhouse&r using magical compost, supplying the Dyer and brightening the colony."
+				"It needs a steady feed of that compost, so keep the &bcomposter&r running."
+			]
 			rewards: [
 				{
 					count: 16
@@ -1294,9 +1542,15 @@
 			y: -4.0d
 		}
 		{
-			dependencies: ["097AED7C91033D5E"]
-			hide_until_deps_complete: true
+			dependencies: ["1BB571557F74D3A1"]
+			hide_until_deps_complete: false
 			id: "743D7D9204915A13"
+			title: "Lay Them to Rest"
+			subtitle: "Death is bookkeeping too."
+			description: [
+				"Bury a fallen citizen in a &bgraveyard&r. Colonists who die can be laid to rest, which keeps morale up and, with an Undertaker, opens the door to bringing them back."
+				"Grim work, but a colony that loses people needs somewhere to put them."
+			]
 			invisible: true
 			rewards: [
 				{
@@ -1334,10 +1588,15 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["22F4C38E79DEFF1E"]
-			hide_dependency_lines: true
-			hide_until_deps_complete: true
+			dependencies: ["1BB571557F74D3A1"]
+			hide_until_deps_complete: false
 			id: "1C16AEE8E29FB5A0"
+			title: "Rallying Banner"
+			subtitle: "Point your guards at the threat."
+			description: [
+				"Craft the &bRallying Banner&r. Raise it and your guards leave their posts to gather and march where you point, turning scattered defenders into a strike force."
+				"Use it to meet a raid head-on instead of letting it pick at your towers."
+			]
 			rewards: [{
 				id: "07881A4A804B5ABA"
 				type: "xp"
@@ -1361,8 +1620,13 @@
 		}
 		{
 			dependencies: ["15B51FB56A64C303"]
-			hide_until_deps_complete: true
 			id: "15F03A5E7E14C022"
+			title: "Stonemason's Hut"
+			subtitle: "Bricks and decorative stone."
+			description: [
+				"Build the &bStonemason's Hut&r. The Stonemason crafts bricks, polished stone, and the cut blocks your fancier buildings call for."
+				"Teach it the stone recipes your builds keep requesting and the queue takes care of itself."
+			]
 			rewards: [
 				{
 					exclude_from_claim_all: true
@@ -1401,8 +1665,13 @@
 		}
 		{
 			dependencies: ["5A11A2FC20E5CE2A"]
-			hide_until_deps_complete: true
 			id: "4D9DC4973FD340E5"
+			title: "Combat Academy"
+			subtitle: "Train your knights."
+			description: [
+				"Construct the &bCombat Academy&r. It trains melee guards, raising their skill so they survive longer in a real fight."
+				"Pair it with the &bBarracks&r to turn a row of recruits into a proper garrison."
+			]
 			rewards: [
 				{
 					id: "68743AAE977C18C9"
@@ -1445,8 +1714,13 @@
 		}
 		{
 			dependencies: ["5A11A2FC20E5CE2A"]
-			hide_until_deps_complete: true
 			id: "6D56AD1BEC644A10"
+			title: "Archery"
+			subtitle: "Train your archers."
+			description: [
+				"Build the &bArchery&r. It trains ranged guards who thin a raid before it ever reaches your walls."
+				"Keep it stocked with bows and the chicken herder laying for feathers."
+			]
 			rewards: [
 				{
 					id: "3920611631742955"
@@ -1454,6 +1728,7 @@
 						count: 1
 						id: "minecraft:bow"
 					}
+					title: "A bow for the first archer."
 					type: "item"
 				}
 				{
@@ -1481,8 +1756,13 @@
 		}
 		{
 			dependencies: ["15B51FB56A64C303"]
-			hide_until_deps_complete: true
 			id: "33058894ACD9CB06"
+			title: "Graveyard"
+			subtitle: "Where the Undertaker works."
+			description: [
+				"Raise a &bGraveyard&r. It gives fallen citizens a resting place and is where the Undertaker does their work, the first step toward recovering a lost colonist."
+				"A morbid build, but a growing colony will eventually need one."
+			]
 			rewards: [
 				{
 					count: 32
@@ -1525,8 +1805,13 @@
 		}
 		{
 			dependencies: ["583A7AA84FEC027F"]
-			hide_until_deps_complete: true
 			id: "72C749AD9F1C634E"
+			title: "Residence"
+			subtitle: "More homes, more citizens."
+			description: [
+				"Build a &bResidence&r and welcome a new citizen. Homes raise your population cap, and more colonists means more hands for every job."
+				"Keep raising houses as the town grows or you cap out on workers."
+			]
 			rewards: [
 				{
 					count: 3
@@ -1570,13 +1855,19 @@
 		}
 		{
 			dependencies: ["15B51FB56A64C303"]
-			hide_until_deps_complete: true
 			id: "74C114D0C0D4D374"
+			title: "Hospital"
+			subtitle: "Keep your workers on their feet."
+			description: [
+				"Construct the &bHospital&r. Its healer treats sick and injured citizens who would otherwise stay down, keeping your workforce intact."
+				"Stock it with the remedies the healer asks for and recoveries speed up."
+			]
 			rewards: [
 				{
 					exclude_from_claim_all: true
 					id: "2E0C0022EB951C89"
 					table_id: 4959401306108526783L
+					title: "Pick a remedy to stock the ward."
 					type: "choice"
 				}
 				{
@@ -1603,8 +1894,13 @@
 		}
 		{
 			dependencies: ["15B51FB56A64C303"]
-			hide_until_deps_complete: true
 			id: "68FC81E133443E76"
+			title: "Library"
+			subtitle: "Smarter citizens, faster research."
+			description: [
+				"Build the &bLibrary&r. Citizens study there to raise their Intelligence and Knowledge, which speeds &bUniversity&r research across the whole colony."
+				"A well-read colony advances noticeably faster, so staff it early."
+			]
 			rewards: [
 				{
 					count: 8
@@ -1649,8 +1945,13 @@
 		}
 		{
 			dependencies: ["15B51FB56A64C303"]
-			hide_until_deps_complete: true
 			id: "19D03831EB5EED02"
+			title: "Blacksmith's Hut"
+			subtitle: "Tools and armor on demand."
+			description: [
+				"Raise the &bBlacksmith's Hut&r. The Smith forges the tools and armor your workers and guards burn through, so you stop hand-crafting every pickaxe."
+				"Teach it the gear your colony actually uses and let the requests flow."
+			]
 			rewards: [{
 				count: 16
 				id: "054ADA61F5EBDF99"
@@ -1658,6 +1959,7 @@
 					count: 1
 					id: "minecraft:iron_ingot"
 				}
+				title: "Iron to get the forge started."
 				type: "item"
 			}]
 			tasks: [{
@@ -1679,13 +1981,19 @@
 		}
 		{
 			dependencies: ["15B51FB56A64C303"]
-			hide_until_deps_complete: true
 			id: "430475E11D259B74"
+			title: "Smeltery"
+			subtitle: "Ore into ingots."
+			description: [
+				"Build the &bSmeltery&r. The Smelter cooks raw ore into ingots for the colony, freeing your own furnaces for other work."
+				"Keep it fed with ore and fuel and it quietly stocks your metal supply."
+			]
 			rewards: [
 				{
 					exclude_from_claim_all: true
 					id: "00154CD53E104DD5"
 					table_id: 1287062647694046403L
+					title: "Pick some stone to raise the smeltery."
 					type: "choice"
 				}
 				{
@@ -1713,8 +2021,13 @@
 		}
 		{
 			dependencies: ["15B51FB56A64C303"]
-			hide_until_deps_complete: true
 			id: "6A60B76053393288"
+			title: "Feed the Smeltery"
+			subtitle: "Bonus metal at higher levels."
+			description: [
+				"Keep the &bSmeltery&r running on a steady stream of ore. As it levels up the Smelter starts returning bonus output, the colony's own form of ore doubling."
+				"The more ore you push through, the more the upgrades pay back."
+			]
 			rewards: [
 				{
 					count: 16
@@ -1723,6 +2036,7 @@
 						count: 1
 						id: "minecraft:iron_ore"
 					}
+					title: "Ore to keep the smeltery fed."
 					type: "item"
 				}
 				{
@@ -1750,13 +2064,19 @@
 		}
 		{
 			dependencies: ["4EEF0962CC249F30"]
-			hide_until_deps_complete: true
 			id: "7B5E2CD676A1A1C4"
+			title: "Bakery"
+			subtitle: "Bread for a growing town."
+			description: [
+				"Build the &bBakery&r. The Baker turns wheat into bread and other baked food, a dependable staple for feeding a rising population."
+				"Keep the farmer's wheat flowing to it and nobody goes hungry."
+			]
 			rewards: [
 				{
 					exclude_from_claim_all: true
 					id: "00F742CE5063BB97"
 					table_id: 4597731606249609751L
+					title: "Pick a crop to keep the oven busy."
 					type: "choice"
 				}
 				{
@@ -1779,14 +2099,19 @@
 				id: "417ABABF3953F755"
 				type: "advancement"
 			}]
-			x: -1.0d
+			x: -3.5d
 			y: -13.0d
 		}
 		{
-			dependencies: ["22F4C38E79DEFF1E"]
-			hide_dependency_lines: true
-			hide_until_deps_complete: true
+			dependencies: ["1BB571557F74D3A1"]
+			hide_until_deps_complete: false
 			id: "085F473094778DCD"
+			title: "Resource Scroll"
+			subtitle: "Know what a build needs, anywhere."
+			description: [
+				"Craft a &bResource Scroll&r and bind it to a builder. From anywhere it shows exactly what materials that build still needs."
+				"Carry one on supply runs so you never come back a few blocks short."
+			]
 			rewards: [{
 				id: "4D8E17B38C63B53D"
 				type: "xp"
@@ -1810,8 +2135,13 @@
 		}
 		{
 			dependencies: ["15B51FB56A64C303"]
-			hide_until_deps_complete: true
 			id: "3B91163DE3DA885C"
+			title: "Nether Mine"
+			subtitle: "Nether loot without the risk."
+			description: [
+				"Build the &bNether Mine&r. Its worker makes timed trips into the Nether and returns with its resources, so you gain them without going yourself."
+				"Equip the worker well, since the run is dangerous and a poorly geared miner comes back empty."
+			]
 			rewards: [{
 				count: 12
 				id: "212B59C3DEB3A36A"
@@ -1819,6 +2149,7 @@
 					count: 1
 					id: "minecraft:obsidian"
 				}
+				title: "Obsidian to reinforce the portal room."
 				type: "item"
 			}]
 			tasks: [{
@@ -1839,8 +2170,13 @@
 		}
 		{
 			dependencies: ["00A3AD4BD4EE0FC7"]
-			hide_until_deps_complete: true
 			id: "537A8F99CC3F525D"
+			title: "Army of Eight"
+			subtitle: "A patrol becomes a garrison."
+			description: [
+				"Grow your standing guard to eight. A handful of trained, posted guards turns a colony from easy prey into a hard target."
+				"Build the towers and &bbarracks&r space to house them all."
+			]
 			invisible: true
 			rewards: [{
 				id: "01E903FEACE3702E"
@@ -1866,8 +2202,13 @@
 		}
 		{
 			dependencies: ["537A8F99CC3F525D"]
-			hide_until_deps_complete: true
 			id: "5F5DB67F6A470C73"
+			title: "Army of Thirty"
+			subtitle: "A real wall of defenders."
+			description: [
+				"Field thirty guards. At this size a raid meets a genuine wall of defenders rather than a token patrol."
+				"Keep the &bbarracks&r and training buildings feeding the ranks."
+			]
 			invisible: true
 			rewards: [{
 				id: "227BA266A045FDA2"
@@ -1893,8 +2234,13 @@
 		}
 		{
 			dependencies: ["5F5DB67F6A470C73"]
-			hide_until_deps_complete: true
 			id: "53F8923B85A8A9CC"
+			title: "Army of Eighty"
+			subtitle: "A fortress colony."
+			description: [
+				"Command eighty guards. A garrison this large shrugs off all but the worst raids, the mark of a fortress town."
+				"Sustaining it takes serious food and gear production behind the walls."
+			]
 			invisible: true
 			rewards: [{
 				id: "373767266F024F66"
@@ -1920,14 +2266,20 @@
 		}
 		{
 			dependencies: ["72C749AD9F1C634E"]
-			hide_until_deps_complete: true
 			id: "3AE1C3290500638F"
+			title: "Ten Citizens"
+			subtitle: "Past scraping by."
+			description: [
+				"Reach ten citizens. A colony of ten can cover its core jobs and start to specialize instead of just surviving."
+				"Keep building homes to push the cap higher."
+			]
 			invisible: true
 			rewards: [
 				{
 					exclude_from_claim_all: true
 					id: "5E48B17F81800DBC"
 					table_id: 4597731606249609751L
+					title: "Pick a crop to feed the growing town."
 					type: "choice"
 				}
 				{
@@ -1955,14 +2307,20 @@
 		}
 		{
 			dependencies: ["3AE1C3290500638F"]
-			hide_until_deps_complete: true
 			id: "4D61009737D94BDA"
+			title: "Twenty-Five Citizens"
+			subtitle: "The colony starts to hum."
+			description: [
+				"Grow to twenty-five citizens. At this size couriers, crafters, and guards all work in parallel and the town runs itself between your orders."
+				"Housing and food are your limiting factors now, so plan ahead."
+			]
 			invisible: true
 			rewards: [
 				{
 					exclude_from_claim_all: true
 					id: "62CA7982C2A3CBAA"
 					table_id: 4959401306108526783L
+					title: "Pick a remedy for a bigger town's aches."
 					type: "choice"
 				}
 				{
@@ -1990,14 +2348,20 @@
 		}
 		{
 			dependencies: ["4D61009737D94BDA"]
-			hide_until_deps_complete: true
 			id: "14DA3DC7C0009A6A"
+			title: "Fifty Citizens"
+			subtitle: "A logistics project of its own."
+			description: [
+				"Reach fifty citizens. A town this large is a supply chain in itself, demanding constant food, housing, and order to hold together."
+				"Lean hard on the &bwarehouse&r and couriers to keep it all moving."
+			]
 			invisible: true
 			rewards: [
 				{
 					exclude_from_claim_all: true
 					id: "64C6A587169EFED6"
 					table_id: 4597731606249609751L
+					title: "Pick a crop for fifty hungry mouths."
 					type: "choice"
 				}
 				{
@@ -2025,8 +2389,13 @@
 		}
 		{
 			dependencies: ["5A11A2FC20E5CE2A"]
-			hide_until_deps_complete: true
 			id: "360E9E02A494217C"
+			title: "Barracks Tower"
+			subtitle: "One more guard on the wall."
+			description: [
+				"Add a &bBarracks Tower&r. Each tower attached to the Barracks houses and posts another guard, scaling your defense alongside your walls."
+				"Ring the &bbarracks&r with them to cover every angle of an assault."
+			]
 			invisible: true
 			rewards: [
 				{
@@ -2086,8 +2455,13 @@
 		}
 		{
 			dependencies: ["33058894ACD9CB06"]
-			hide_until_deps_complete: true
 			id: "696BDC29ACCBBE29"
+			title: "Raise the Dead"
+			subtitle: "Death need not be final."
+			description: [
+				"Have the Undertaker raise a fallen citizen. With a staffed &bGraveyard&r and the right totem, a lost colonist can be brought back rather than gone for good."
+				"It is the colony's insurance against losing a trained worker to a bad raid."
+			]
 			invisible: true
 			rewards: [{
 				id: "07ACEB931B4480C1"
@@ -2113,8 +2487,13 @@
 		}
 		{
 			dependencies: ["0EBB4E5195610A82"]
-			hide_until_deps_complete: true
 			id: "68500900087F92BC"
+			title: "Carpenter's Doors"
+			subtitle: "One more thing you stop crafting."
+			description: [
+				"Teach a crafter to make doors. Adding the recipe lets the colony produce its own, one more chore off your hands."
+				"Keep adding recipes like this and your crafters cover most of what you need."
+			]
 			invisible: true
 			rewards: [
 				{
@@ -2126,6 +2505,7 @@
 					exclude_from_claim_all: true
 					id: "20110BAC5A1C81EB"
 					table_id: 8216757454481317885L
+					title: "Pick some logs for the carpenter."
 					type: "choice"
 				}
 			]
@@ -2147,9 +2527,15 @@
 			y: -9.0d
 		}
 		{
-			dependencies: ["097AED7C91033D5E"]
-			hide_until_deps_complete: true
+			dependencies: ["1BB571557F74D3A1"]
+			hide_until_deps_complete: false
 			id: "6B26495A9E7D77FC"
+			title: "Five Citizens"
+			subtitle: "Enough to get rolling."
+			description: [
+				"Reach five citizens. Five colonists is enough to cover the essential jobs and get real production moving."
+				"Build a few more homes and the colony climbs from here."
+			]
 			invisible: true
 			rewards: [
 				{
@@ -2191,8 +2577,13 @@
 		}
 		{
 			dependencies: ["7D3489901AA47547"]
-			hide_until_deps_complete: true
 			id: "37BE190EE466D697"
+			title: "Town Hall, Level 5"
+			subtitle: "Raise the ceiling on everything."
+			description: [
+				"Upgrade the &bTown Hall&r to level five. A higher-level hall lifts your citizen cap and unlocks the larger buildings every other system grows under."
+				"Gather the materials first, because it is a substantial build."
+			]
 			invisible: true
 			rewards: [{
 				id: "4E66B79ECC629FBD"
@@ -2217,14 +2608,60 @@
 			y: -8.5d
 		}
 		{
+			dependencies: ["1BB571557F74D3A1"]
+			hide_until_deps_complete: false
+			id: "503C5A0CE113962C"
+			title: "Golden Assistant Hammer"
+			subtitle: "Lend the builder a hand."
+			description: [
+				"Craft the Golden Builder's &bAssistant Hammer&r. With it you can place blocks straight into a build site yourself, hurrying a construction along when you are impatient."
+				"The gold version reaches further than the iron one, so it covers larger builds."
+			]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "450CD29537FAF8BF"
+					table_id: 2567105459748842191L
+					title: "A small cache for pitching in."
+					type: "random"
+				}
+				{
+					id: "180BF0B37EF2CD10"
+					type: "xp"
+					xp: 5
+				}
+			]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "41E1240EDDD3F18A"
+				item: { count: 1, id: "minecolonies:assistanthammer_gold" }
+				type: "item"
+			}]
+			x: 9.5d
+			y: -12.0d
+		}
+		{
 			dependencies: ["4EEF0962CC249F30"]
-			hide_until_deps_complete: true
 			id: "55851524FDDB6959"
+			title: "Chef's Kitchen"
+			subtitle: "Proper meals, not scraps."
+			description: [
+				"Build the &bChef's Kitchen&r. The Chef cooks raw ingredients into full meals that feed citizens better than loose food, raising their saturation and mood."
+				"Keep it stocked from the farms and herders and the whole town eats well."
+			]
 			rewards: [
 				{
 					exclude_from_claim_all: true
 					id: "6F570DFB3F9B0F99"
 					table_id: 4597731606249609751L
+					title: "Pick a crop for the kitchen."
 					type: "choice"
 				}
 				{
@@ -2246,19 +2683,36 @@
 				item: { count: 1, id: "minecolonies:blockhutkitchen" }
 				type: "item"
 			}]
-			x: 0.5d
-			y: -12.5d
+			x: -2.5d
+			y: -13.0d
 		}
 		{
 			dependencies: ["206159A3C7A78447"]
-			hide_until_deps_complete: true
 			id: "5827E9110E4B19F9"
+			title: "Mystical Site, Level 5"
+			subtitle: "Push happiness further."
+			description: [
+				"Upgrade the &bMystical Site&r to level five. A higher-level site lifts colony happiness further, and the happiest colonies are the most productive."
+				"Worth the materials once you are running a large town."
+			]
 			invisible: true
-			rewards: [{
-				id: "62EF7719AFAC37B2"
-				type: "xp"
-				xp: 20
-			}]
+			rewards: [
+				{
+					count: 3
+					id: "14677649E2CFBF71"
+					item: {
+						count: 1
+						id: "minecraft:diamond"
+					}
+					title: "A few diamonds for the trouble."
+					type: "item"
+				}
+				{
+					id: "62EF7719AFAC37B2"
+					type: "xp"
+					xp: 20
+				}
+			]
 			tasks: [{
 				SkillsLevel: {
 					category: ""
@@ -2278,8 +2732,13 @@
 		}
 		{
 			dependencies: ["14DA3DC7C0009A6A"]
-			hide_until_deps_complete: true
 			id: "3F77375A5E0F0FFA"
+			title: "Seventy-Five Citizens"
+			subtitle: "Nearly a city."
+			description: [
+				"Reach seventy-five citizens. A settlement this size is almost a city, with deep specialization and constant logistics running underneath it."
+				"Only a well-managed colony sustains a population this large."
+			]
 			invisible: true
 			rewards: [{
 				id: "66E23E218BCAB5FE"
@@ -2304,15 +2763,22 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["097AED7C91033D5E"]
-			hide_until_deps_complete: true
+			dependencies: ["1BB571557F74D3A1"]
+			hide_until_deps_complete: false
 			id: "0D56E3C121A776DF"
+			title: "Bring One Back"
+			subtitle: "Recover a lost colonist."
+			description: [
+				"Resurrect a fallen citizen. With the &bGraveyard&r, the Undertaker, and the right preparation, death is not the end of a colonist's service."
+				"Bringing back a skilled worker saves hours of training a replacement."
+			]
 			invisible: true
 			rewards: [
 				{
 					exclude_from_claim_all: true
 					id: "2393FDDDFD2A444E"
 					table_id: 7776825318533965765L
+					title: "Pick a remedy to restock the ward."
 					type: "choice"
 				}
 				{
@@ -2340,13 +2806,19 @@
 		}
 		{
 			dependencies: ["583A7AA84FEC027F"]
-			hide_until_deps_complete: true
 			id: "7D3489901AA47547"
+			title: "Claim the Land"
+			subtitle: "The colony is official."
+			description: [
+				"Place your &bTown Hall&r and claim the surrounding land. The moment it goes down the colony exists, with borders, a citizen cap, and a management interface."
+				"Everything you build from here grows outward from this point."
+			]
 			rewards: [
 				{
 					exclude_from_claim_all: true
 					id: "0EC30F4D91BF6600"
 					table_id: 2567105459748842191L
+					title: "A starting food cache for the colony."
 					type: "random"
 				}
 				{
@@ -2374,13 +2846,19 @@
 		}
 		{
 			dependencies: ["583A7AA84FEC027F"]
-			hide_until_deps_complete: true
 			id: "4EEF0962CC249F30"
+			title: "Cook's Hut"
+			subtitle: "Keep the citizens fed."
+			description: [
+				"Staff a Cook's Hut. The Cook serves prepared meals that keep citizens fed and content far better than raw food, which keeps everyone working."
+				"Feed it from your farms, herders, and &bbakery&r."
+			]
 			rewards: [
 				{
 					exclude_from_claim_all: true
 					id: "4F1860A141110E9C"
 					table_id: 4597731606249609751L
+					title: "Pick a crop to keep the cook busy."
 					type: "choice"
 				}
 				{
@@ -2403,18 +2881,24 @@
 				id: "6E30AB6B9EFC8567"
 				type: "advancement"
 			}]
-			x: -1.5d
-			y: -10.5d
+			x: -3.0d
+			y: -12.0d
 		}
 		{
 			dependencies: ["583A7AA84FEC027F"]
-			hide_until_deps_complete: true
 			id: "75CBFD0F90772359"
+			title: "Tavern"
+			subtitle: "Where new citizens arrive."
+			description: [
+				"Build the &bTavern&r. It recruits new citizens and draws visitors you can hire, the main way to grow your population beyond births."
+				"A lively &btavern&r keeps the town filling up with workers."
+			]
 			rewards: [
 				{
 					exclude_from_claim_all: true
 					id: "7752AA65150ED232"
 					table_id: 2567105459748842191L
+					title: "A food cache to welcome newcomers."
 					type: "choice"
 				}
 				{
@@ -2442,13 +2926,19 @@
 		}
 		{
 			dependencies: ["15B51FB56A64C303"]
-			hide_until_deps_complete: true
 			id: "07C26C046CDE2507"
+			title: "Crusher's Hut"
+			subtitle: "Grind bulk materials down."
+			description: [
+				"Raise the &bCrusher's Hut&r. The Crusher grinds cobblestone into gravel, gravel into sand, and ore into extra dust, feeding both the sifter and your building supply."
+				"Keep it fed with cheap bulk material and it pays back steadily."
+			]
 			rewards: [
 				{
 					exclude_from_claim_all: true
 					id: "053463DF132494C0"
 					table_id: 8298941300314909535L
+					title: "Pick a material for the crusher to grind."
 					type: "choice"
 				}
 				{
@@ -2476,8 +2966,13 @@
 		}
 		{
 			dependencies: ["360E9E02A494217C"]
-			hide_until_deps_complete: true
 			id: "0B96EC5055E6B817"
+			title: "Every Tower Manned"
+			subtitle: "The barracks at full strength."
+			description: [
+				"Finish every tower on the &bBarracks&r. A fully towered barracks posts a complete complement of guards, the strongest fixed defense a colony fields."
+				"Complete it before raids start scaling up against you."
+			]
 			invisible: true
 			rewards: [{
 				id: "44BD46C82881D560"
@@ -2503,13 +2998,19 @@
 		}
 		{
 			dependencies: ["15B51FB56A64C303"]
-			hide_until_deps_complete: true
 			id: "79933C964312F721"
+			title: "Sifter's Hut"
+			subtitle: "Free resources from cheap dirt."
+			description: [
+				"Build the &bSifter's Hut&r. The Sifter runs dirt, sand, gravel, and soul sand through meshes to pull out seeds, ores, and oddments, a slow trickle of free material."
+				"Keep it fed with bulk filler and let it work in the background."
+			]
 			rewards: [
 				{
 					exclude_from_claim_all: true
 					id: "43FD6B29EC71AA97"
 					table_id: 8298941300314909535L
+					title: "Pick a material for the sifter."
 					type: "choice"
 				}
 				{
@@ -2537,8 +3038,13 @@
 		}
 		{
 			dependencies: ["6A60B76053393288"]
-			hide_until_deps_complete: true
 			id: "6B80B2314CC47FD6"
+			title: "Smeltery, Level 3"
+			subtitle: "Faster, with bonus output."
+			description: [
+				"Upgrade the &bSmeltery&r to level three. A higher-level Smeltery smelts faster and begins returning bonus metal from ore."
+				"Push ore through it and the upgrade quickly pays you back."
+			]
 			invisible: true
 			rewards: [
 				{
@@ -2548,6 +3054,7 @@
 						count: 1
 						id: "minecraft:iron_ore"
 					}
+					title: "Ore to keep the smeltery fed."
 					type: "item"
 				}
 				{
@@ -2575,8 +3082,13 @@
 		}
 		{
 			dependencies: ["6B80B2314CC47FD6"]
-			hide_until_deps_complete: true
 			id: "0089B6C20C45DDCA"
+			title: "Smeltery, Level 5"
+			subtitle: "Top-tier ore returns."
+			description: [
+				"Push the &bSmeltery&r to level five. At its top tier it processes ore quickly and returns the most bonus metal, a serious boost to your ingot supply."
+				"Worth the haul of materials the upgrade demands."
+			]
 			invisible: true
 			rewards: [
 				{
@@ -2586,6 +3098,7 @@
 						count: 1
 						id: "minecraft:iron_ore"
 					}
+					title: "More ore for the upgraded smeltery."
 					type: "item"
 				}
 				{
@@ -2613,14 +3126,20 @@
 		}
 		{
 			dependencies: ["57C889EC980D33D9"]
-			hide_until_deps_complete: true
 			id: "226176A1C73431B5"
+			title: "Full Fields"
+			subtitle: "Max out the harvest."
+			description: [
+				"Give the Farmer their full set of fields. A fully-fielded farmer grows the most crops the colony can, the backbone of feeding a large population."
+				"Mark out and assign every field slot the hut allows."
+			]
 			invisible: true
 			rewards: [
 				{
 					exclude_from_claim_all: true
 					id: "09573D784D77C108"
 					table_id: 4597731606249609751L
+					title: "Pick a crop from the full harvest."
 					type: "choice"
 				}
 				{
@@ -2647,10 +3166,15 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["22F4C38E79DEFF1E"]
-			hide_dependency_lines: true
-			hide_until_deps_complete: true
+			dependencies: ["1BB571557F74D3A1"]
+			hide_until_deps_complete: false
 			id: "2FD5037D4E720043"
+			title: "Colony Manager's Kit"
+			subtitle: "Everything you need to run it."
+			description: [
+				"Pull together the full management kit: the &bassistant hammer&r, &bresource scroll&r, &bbuilder's goggles&r, clipboard, rallying banner, ancient tome, postbox, and stash."
+				"Together they let you run a colony without micromanaging every builder by hand. This is the toolkit a settled town runs on."
+			]
 			invisible: true
 			rewards: [
 				{
@@ -2659,6 +3183,7 @@
 						count: 1
 						id: "minecolonies:assistanthammer_iron"
 					}
+					title: "The Iron Assistant Hammer to round out the set."
 					type: "item"
 				}
 				{
@@ -2791,5 +3316,4 @@
 			y: -12.0d
 		}
 	]
-	require_sequential_tasks: true
 }
