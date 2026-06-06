@@ -1,0 +1,2091 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ren_magic_foundations"
+	group: "0B038EB15EBBFD95"
+	hide_quest_until_deps_complete: true
+	icon: {
+		id: "malum:spirit_altar"
+	}
+	id: "0B03001000000001"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["6D7E8F901A2B1054"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "malum:spirit_altar"
+			}
+			id: "0B03101000000001"
+			title: "Magic Foundations"
+			subtitle: "Four schools open at once."
+			description: [
+				"The &dRenaissance&r is where the pack's magic gets real teeth. Four schools branch from here: &6Malum&r's spirit alchemy, &6Theurgy&r's alchemical machines, Occultism's summoning rituals, and the arcane crafting of Forbidden Arcanus."
+				"Each lane stands on its own, so start with whichever appeals and treat the rest as parallel tracks."
+			]
+			rewards: [{
+				id: "0B03301000000001"
+				type: "xp"
+				xp: 25
+			}]
+			size: 1.5d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				dimension: "minecraft:overworld"
+				id: "0B03201000000001"
+				type: "dimension"
+			}]
+			x: 0.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["0B03101000000001"]
+			hide_until_deps_complete: true
+			id: "0B03101000000002"
+			title: "Alchemical Calx"
+			subtitle: "Malum's base reagent."
+			description: [
+				"Burn your way to &bAlchemical Calx&r, the plain powder the whole of &6Malum&r is built from. Nearly every spirit-alchemy recipe wants it, so set up a steady supply early."
+			]
+			rewards: [{
+				id: "0B03301000000002"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03201000000002"
+				item: { count: 1, id: "malum:alchemical_calx" }
+				type: "item"
+			}]
+			x: -7.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0B03101000000002"]
+			hide_until_deps_complete: true
+			id: "0B03101000000003"
+			title: "Raw Soulstone"
+			subtitle: "Mine the spirit-bearing ore."
+			description: [
+				"Dig up &bRaw Soulstone&r. It is the ore that holds the spirits &6Malum&r's craft runs on, the raw form before you refine it."
+			]
+			rewards: [{
+				id: "0B03301000000003"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03201000000003"
+				item: { count: 1, id: "malum:raw_soulstone" }
+				type: "item"
+			}]
+			x: -7.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0B03101000000003"]
+			hide_until_deps_complete: true
+			id: "0B03101000000004"
+			title: "Refined Soulstone"
+			subtitle: "Process the ore into reagent."
+			description: [
+				"Refine your raw stone into &bRefined Soulstone&r. This is the worked form the altar recipes call for, and it stores the spirits you capture from dying mobs."
+			]
+			rewards: [{
+				id: "0B03301000000004"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03201000000004"
+				item: { count: 1, id: "malum:refined_soulstone" }
+				type: "item"
+			}]
+			x: -7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0B03101000000004"]
+			hide_until_deps_complete: true
+			id: "0B03101000000005"
+			title: "Arcane Charcoal Fragment"
+			subtitle: "A sliver of altar fuel."
+			description: [
+				"Produce an &bArcane Charcoal Fragment&r. Several fragments press together into the charcoal that feeds the &bSpirit Altar&r, so this is the small step before real fuel."
+			]
+			rewards: [{
+				id: "0B03301000000005"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03201000000005"
+				item: { count: 1, id: "malum:arcane_charcoal_fragment" }
+				type: "item"
+			}]
+			x: -7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0B03101000000005"]
+			hide_until_deps_complete: true
+			id: "0B03101000000006"
+			title: "Spirit Altar"
+			subtitle: "The heart of spirit alchemy."
+			description: [
+				"Build the &bSpirit Altar&r. It runs &6Malum&r's spagyric crafting: ring it with pedestals holding the recipe's ingredients, drop the core item in, and feed it the spirits it asks for."
+				"Everything else in this lane orbits the altar."
+			]
+			rewards: [{
+				id: "0B03301000000006"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03201000000006"
+				item: { count: 1, id: "malum:spirit_altar" }
+				type: "item"
+			}]
+			x: -7.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0B03101000000006"]
+			hide_until_deps_complete: true
+			id: "0B03101000000007"
+			title: "Brilliant Stone"
+			subtitle: "A polished altar product."
+			description: [
+				"Craft &bBrilliant Stone&r on the altar. It is a refined material the higher spirit-alchemy recipes lean on, proof your altar setup is working as intended."
+			]
+			rewards: [{
+				id: "0B03301000000007"
+				type: "xp"
+				xp: 30
+			}]
+			shape: "diamond"
+			size: 1.2d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03201000000007"
+				item: { count: 1, id: "malum:brilliant_stone" }
+				type: "item"
+			}]
+			x: -7.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0B03101000000001"]
+			hide_until_deps_complete: true
+			id: "0B03101000000010"
+			title: "Pyromantic Brazier"
+			subtitle: "Theurgy's heat source."
+			description: [
+				"Build a &bPyromantic Brazier&r. It is the open flame several &6Theurgy&r machines sit over for heat, the first piece of that mod's alchemy line."
+				"&6Theurgy&r is about extracting and recombining the essence of materials, and it all needs warming first."
+			]
+			rewards: [{
+				id: "0B03301000000010"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03201000000010"
+				item: { count: 1, id: "theurgy:pyromantic_brazier" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0B03101000000010"]
+			hide_until_deps_complete: true
+			id: "0B03101000000011"
+			title: "Liquefaction Cauldron"
+			subtitle: "Dissolve metals into mercury."
+			description: [
+				"Set up a &bLiquefaction Cauldron&r over the brazier. It melts ores and metals down into liquid mercury, the carrier fluid &6Theurgy&r's transmutations move through."
+			]
+			rewards: [{
+				id: "0B03301000000011"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03201000000011"
+				item: { count: 1, id: "theurgy:liquefaction_cauldron" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0B03101000000011"]
+			hide_until_deps_complete: true
+			id: "0B03101000000012"
+			title: "Iron Sulfur"
+			subtitle: "Extract a metal's essence."
+			description: [
+				"Produce &bAlchemical Sulfur&r for iron. A sulfur captures one material exactly, and iron is the natural first target since you already smelt it by the stack."
+			]
+			rewards: [{
+				id: "0B03301000000012"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03201000000012"
+				item: { count: 1, id: "theurgy:alchemical_sulfur_iron" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0B03101000000012"]
+			hide_until_deps_complete: true
+			id: "0B03101000000013"
+			title: "Mineral Salt"
+			subtitle: "The reagent salt class."
+			description: [
+				"Distill an &bAlchemical Salt&r from the mineral class. Salts are the broad reagents that pair with sulfurs to drive the more involved recipes."
+			]
+			rewards: [{
+				id: "0B03301000000013"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03201000000013"
+				item: { count: 1, id: "theurgy:alchemical_salt_mineral" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0B03101000000013"]
+			hide_until_deps_complete: true
+			id: "0B03101000000014"
+			title: "Incubator"
+			subtitle: "Grow sulfur in bulk."
+			description: [
+				"Build the &bIncubator&r. Fed salt and mercury it multiplies a sample of &bAlchemical Sulfur&r over time, turning a single extraction into a renewable supply."
+			]
+			rewards: [{
+				id: "0B03301000000014"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03201000000014"
+				item: { count: 1, id: "theurgy:incubator" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0B03101000000014"]
+			hide_until_deps_complete: true
+			id: "0B03101000000015"
+			title: "Glass Divination Rod"
+			subtitle: "Find ore by feel."
+			description: [
+				"Craft the &bGlass Divination Rod&r, &6Theurgy&r's entry-tier finder. Held and used, it points toward nearby blocks of the type it is keyed to, which beats mining blind."
+				"Better rods and attunements wait in the Observation chapter."
+			]
+			rewards: [{
+				id: "0B03301000000015"
+				type: "xp"
+				xp: 30
+			}]
+			shape: "diamond"
+			size: 1.2d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03201000000015"
+				item: { count: 1, id: "theurgy:divination_rod_t1" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0B03101000000001"]
+			hide_until_deps_complete: true
+			id: "0B03101000000020"
+			title: "Dictionary of Spirits"
+			subtitle: "Occultism's whole manual."
+			description: [
+				"Craft the &bDictionary of Spirits&r. Every pentacle, ritual, and spirit in &6Occultism&r is documented inside it, so keep it in hand as your reference for the entire school."
+				"Read it before you draw a single chalk line."
+			]
+			rewards: [{
+				id: "0B03301000000020"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03201000000020"
+				item: { count: 1, id: "occultism:dictionary_of_spirits" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0B03101000000020"]
+			hide_until_deps_complete: true
+			id: "0B03101000000021"
+			title: "Impure White Chalk"
+			subtitle: "Draw your first marks."
+			description: [
+				"Make &bImpure White Chalk&r. It scratches the pentacle glyphs onto the ground for low-tier rituals, the rougher version before you refine the recipe."
+			]
+			rewards: [{
+				id: "0B03301000000021"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03201000000021"
+				item: { count: 1, id: "occultism:chalk_white_impure" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0B03101000000021"]
+			hide_until_deps_complete: true
+			id: "0B03101000000022"
+			title: "Golden Ritual Bowl"
+			subtitle: "The center of every ritual."
+			description: [
+				"Craft the &bGolden Ritual Bowl&r. It sits at the heart of a drawn pentacle, and right-clicking it with the activation item is what starts a summoning."
+				"Sacrifice items land in or beside it as the ritual demands."
+			]
+			rewards: [{
+				id: "0B03301000000022"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03201000000022"
+				item: { count: 1, id: "occultism:golden_sacrificial_bowl" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0B03101000000022"]
+			hide_until_deps_complete: true
+			id: "0B03101000000023"
+			title: "Book of Binding: Foliot"
+			subtitle: "An empty binding for a Foliot."
+			description: [
+				"Assemble a &bBook of Binding&r for a Foliot. It is the vessel a summoned Foliot spirit gets sealed into, the lowest and most willing class of spirit &6Occultism&r works with."
+			]
+			rewards: [{
+				id: "0B03301000000023"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03201000000023"
+				item: { count: 1, id: "occultism:book_of_binding_foliot" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0B03101000000023"]
+			hide_until_deps_complete: true
+			id: "0B03101000000024"
+			title: "Bind a Foliot"
+			subtitle: "Run your first summoning."
+			description: [
+				"Perform the ritual to bind a Foliot into its book. Draw the pentacle the Dictionary specifies, place the &bGolden Ritual Bowl&r, supply the offerings, and let the summoning complete."
+				"A bound Foliot is the spirit you put to work in the steps that follow."
+			]
+			rewards: [{
+				id: "0B03301000000024"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03201000000024"
+				item: { components: { "occultism:spirit_name": "Styrdornzur" }, count: 1, id: "occultism:book_of_binding_bound_foliot" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0B03101000000024"]
+			hide_until_deps_complete: true
+			id: "0B03101000000025"
+			title: "Empty Magic Lamp"
+			subtitle: "A home for a Djinni."
+			description: [
+				"Forge an &bEmpty Magic Lamp&r. Bind a Djinni into it through the right ritual and the lamp will craft or mine on its own, &6Occultism&r's route to passive automation."
+			]
+			rewards: [{
+				id: "0B03301000000025"
+				type: "xp"
+				xp: 30
+			}]
+			shape: "diamond"
+			size: 1.2d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03201000000025"
+				item: { count: 1, id: "occultism:magic_lamp_empty" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0B03101000000001"]
+			hide_until_deps_complete: true
+			id: "0B03101000000030"
+			title: "Arcane Crystal Dust"
+			subtitle: "Forbidden Arcanus' seed dust."
+			description: [
+				"Grind out &bArcane Crystal Dust&r. Sprinkled on the right block it grows into the arcane crystals the whole mod is built around, the start of that progression."
+			]
+			rewards: [{
+				id: "0B03301000000030"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03201000000030"
+				item: { count: 1, id: "forbidden_arcanus:arcane_crystal_dust" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0B03101000000030"]
+			hide_until_deps_complete: true
+			id: "0B03101000000031"
+			title: "Arcane Crystal Dust Speck"
+			subtitle: "The smaller fraction."
+			description: [
+				"Collect &bArcane Crystal Dust&r Specks. Several specks combine into a full measure of dust, the fiddly low end of the crystal supply chain."
+			]
+			rewards: [{
+				id: "0B03301000000031"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03201000000031"
+				item: { count: 1, id: "forbidden_arcanus:arcane_crystal_dust_speck" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0B03101000000031"]
+			hide_until_deps_complete: true
+			id: "0B03101000000032"
+			title: "Elementarium"
+			subtitle: "A core crafting material."
+			description: [
+				"Craft &bElementarium&r. It is one of &6Forbidden Arcanus&r' fundamental materials, turning up in recipes from runes to the &bHephaestus Forge&r itself."
+			]
+			rewards: [{
+				id: "0B03301000000032"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03201000000032"
+				item: { count: 1, id: "forbidden_arcanus:elementarium" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0B03101000000032"]
+			hide_until_deps_complete: true
+			id: "0B03101000000033"
+			title: "Rune"
+			subtitle: "Inscribe a binding rune."
+			description: [
+				"Make a Rune. &6Forbidden Arcanus&r uses runes as binding components in its higher crafts, so a small stockpile keeps the later recipes moving."
+			]
+			rewards: [{
+				id: "0B03301000000033"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03201000000033"
+				item: { count: 1, id: "forbidden_arcanus:rune" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0B03101000000033"]
+			hide_until_deps_complete: true
+			id: "0B03101000000034"
+			title: "Aureal Bottle"
+			subtitle: "Carry the mod's magic energy."
+			description: [
+				"Craft an &bAureal Bottle&r. Aureal is the ambient magic &6Forbidden Arcanus&r runs on, and the bottle lets you gather and carry a charge of it."
+				"Several of the mod's blocks consume &bAureal&r to operate."
+			]
+			rewards: [{
+				id: "0B03301000000034"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03201000000034"
+				item: { count: 1, id: "forbidden_arcanus:aureal_bottle" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0B03101000000034"]
+			hide_until_deps_complete: true
+			id: "0B03101000000035"
+			title: "Obsidian Skull"
+			subtitle: "Optional: walk through fire."
+			description: [
+				"Craft an &bObsidian Skull&r. Worn in a charm slot it shrugs off fire and lava damage, a genuinely useful trinket before any nether or deep-lava trip."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03301000000035"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "diamond"
+			size: 1.2d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03201000000035"
+				item: { count: 1, id: "forbidden_arcanus:obsidian_skull" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0B03101000000006"]
+			hide_until_deps_complete: true
+			id: "0B03101000000008"
+			title: "Arcane Charcoal"
+			subtitle: "Fuel the altar properly."
+			description: [
+				"Press fragments into &bArcane Charcoal&r. It is the dedicated fuel the &bSpirit Altar&r burns, longer-lasting than the fragments and cheaper than wasting coal on magic."
+			]
+			rewards: [{
+				id: "0B03301000000008"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03201000000008"
+				item: { count: 1, id: "malum:arcane_charcoal" }
+				type: "item"
+			}]
+			x: -9.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["0B03101000000008"]
+			hide_until_deps_complete: true
+			id: "0B03101000000009"
+			title: "Runic Workbench"
+			subtitle: "Carve runes for spells."
+			description: [
+				"Build the &bRunic Workbench&r. It cuts the runes &6Malum&r uses to augment its scythes and staves, the customization layer over the base spirit alchemy."
+			]
+			rewards: [{
+				id: "0B03301000000009"
+				type: "xp"
+				xp: 15
+			}]
+			shape: "gear"
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03201000000009"
+				item: { count: 1, id: "malum:runic_workbench" }
+				type: "item"
+			}]
+			x: -9.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["0B03101000000009"]
+			hide_until_deps_complete: true
+			id: "0B0310100000000A"
+			title: "Spirit Jar"
+			subtitle: "Bottle captured spirits."
+			description: [
+				"Craft a &bSpirit Jar&r. It holds the spirits you harvest from slain mobs, letting you stockpile them between altar runs instead of gathering fresh every time."
+			]
+			rewards: [{
+				id: "0B0330100000000A"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B0320100000000A"
+				item: { count: 1, id: "malum:spirit_jar" }
+				type: "item"
+			}]
+			x: -9.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["0B03101000000014"]
+			hide_until_deps_complete: true
+			id: "0B03101000000016"
+			title: "Calcination Oven"
+			subtitle: "Burn items down to sulfur."
+			description: [
+				"Build the &bCalcination Oven&r. It is where raw materials are reduced to their &bAlchemical Sulfur&r, the extraction step that makes every later transmutation possible."
+			]
+			rewards: [{
+				id: "0B03301000000016"
+				type: "xp"
+				xp: 15
+			}]
+			shape: "gear"
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03201000000016"
+				item: { count: 1, id: "theurgy:calcination_oven" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["0B03101000000016"]
+			hide_until_deps_complete: true
+			id: "0B03101000000017"
+			title: "Mercury Distiller"
+			subtitle: "Purify your mercury."
+			description: [
+				"Set up the &bMercury Distiller&r. It refines the mercury your cauldron produces into the cleaner grade the precise recipes demand."
+			]
+			rewards: [{
+				id: "0B03301000000017"
+				type: "xp"
+				xp: 15
+			}]
+			shape: "gear"
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03201000000017"
+				item: { count: 1, id: "theurgy:distiller" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["0B03101000000017"]
+			hide_until_deps_complete: true
+			id: "0B03101000000018"
+			title: "Fermentation Vat"
+			subtitle: "Ferment toward sal ammoniac."
+			description: [
+				"Build the &bFermentation Vat&r. It brews the base liquids that become &bsal ammoniac&r, the flux &6Theurgy&r uses to keep its reactions stable."
+			]
+			rewards: [{
+				id: "0B03301000000018"
+				type: "xp"
+				xp: 15
+			}]
+			shape: "gear"
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03201000000018"
+				item: { count: 1, id: "theurgy:fermentation_vat" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["0B03101000000018"]
+			hide_until_deps_complete: true
+			id: "0B03101000000019"
+			title: "Sal Ammoniac Tank"
+			subtitle: "Store the flux."
+			description: [
+				"Place a &bSal Ammoniac Tank&r. It buffers the flux your vat produces so the machines downstream never run dry mid-reaction."
+			]
+			rewards: [{
+				id: "0B03301000000019"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03201000000019"
+				item: { count: 1, id: "theurgy:sal_ammoniac_tank" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["0B03101000000024"]
+			hide_until_deps_complete: true
+			id: "0B03101000000026"
+			title: "Otherworld Sapling"
+			subtitle: "Grow otherworld wood at home."
+			description: [
+				"Obtain an &bOtherworld Sapling&r, the stable version you can plant in the overworld. It lets you grow otherworld materials without repeatedly opening a portal to fetch them."
+			]
+			rewards: [{
+				id: "0B03301000000026"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03201000000026"
+				item: { count: 1, id: "occultism:otherworld_sapling" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["0B03101000000026"]
+			hide_until_deps_complete: true
+			id: "0B03101000000027"
+			title: "Book of Binding: Empty"
+			subtitle: "A blank binding book."
+			description: [
+				"Craft an empty &bBook of Binding&r. It is the unwritten base you key to a specific spirit class before a summoning, the reusable shell behind the bound books."
+			]
+			rewards: [{
+				id: "0B03301000000027"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03201000000027"
+				item: { count: 1, id: "occultism:book_of_binding_empty" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["0B03101000000027"]
+			hide_until_deps_complete: true
+			id: "0B03101000000028"
+			title: "White Chalk"
+			subtitle: "The refined drawing chalk."
+			description: [
+				"Make &bWhite Chalk&r, the clean version of the impure stuff. It draws the pentacles the higher rituals require, so upgrade to it once you move past the first summon."
+			]
+			rewards: [{
+				id: "0B03301000000028"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03201000000028"
+				item: { count: 1, id: "occultism:chalk_white" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["0B03101000000028"]
+			hide_until_deps_complete: true
+			id: "0B03101000000029"
+			title: "Book of Calling: Transporter"
+			subtitle: "Put a Foliot to work hauling."
+			description: [
+				"Write a &bBook of Calling&r that orders a bound Foliot to move items between inventories. It is the cleanest early automation &6Occultism&r offers, a spirit-powered item pipe."
+				"Point it at a source and a destination and the Foliot does the carrying."
+			]
+			rewards: [{
+				id: "0B03301000000029"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "diamond"
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03201000000029"
+				item: { count: 1, id: "occultism:book_of_calling_foliot_transport_items" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["0B03101000000034"]
+			hide_until_deps_complete: true
+			id: "0B03101000000036"
+			title: "Arcane Crystal"
+			subtitle: "Harvest the grown crystal."
+			description: [
+				"Grow and harvest an &bArcane Crystal&r. It is the mod's signature reagent, raised from dust rather than mined, and it feeds nearly every recipe past this point."
+			]
+			rewards: [{
+				id: "0B03301000000036"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03201000000036"
+				item: { count: 1, id: "forbidden_arcanus:arcane_crystal" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["0B03101000000036"]
+			hide_until_deps_complete: true
+			id: "0B03101000000037"
+			title: "Darkstone Pedestal"
+			subtitle: "Where crystals grow."
+			description: [
+				"Place a &bDarkstone Pedestal&r. Dust set on it matures into a full &bArcane Crystal&r over time, so a row of pedestals is your crystal farm."
+			]
+			rewards: [{
+				id: "0B03301000000037"
+				type: "xp"
+				xp: 15
+			}]
+			shape: "square"
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03201000000037"
+				item: { count: 1, id: "forbidden_arcanus:darkstone_pedestal" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["0B03101000000037"]
+			hide_until_deps_complete: true
+			id: "0B03101000000038"
+			title: "Clibano Core"
+			subtitle: "Core of a faster furnace."
+			description: [
+				"Build the &bClibano Core&r. It is the working heart of the &bClibano Combustion&r &bfurnace&r, which smelts faster than vanilla and runs several jobs at once."
+				"A worthwhile upgrade for any serious smelting."
+			]
+			rewards: [{
+				id: "0B03301000000038"
+				type: "xp"
+				xp: 15
+			}]
+			shape: "gear"
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03201000000038"
+				item: { count: 1, id: "forbidden_arcanus:clibano_core" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["0B03101000000038"]
+			hide_until_deps_complete: true
+			id: "0B03101000000039"
+			title: "Arcane Bone Meal"
+			subtitle: "The lane's payoff reagent."
+			description: [
+				"Craft &bArcane Bone Meal&r, a far stronger growth agent than the vanilla kind. Reaching it means your crystal supply and &bAureal&r handling are both in working order."
+				"It caps the core &6Forbidden Arcanus&r progression and opens the mod's deeper crafts."
+			]
+			rewards: [
+				{
+					id: "0B03301000000039"
+					type: "xp"
+					xp: 15
+				}
+				{
+					auto: "enabled"
+					command: "/astages add {p} ren_magic_foundations_complete true true"
+					icon: {
+						id: "minecraft:experience_bottle"
+					}
+					id: "0B03301000000040"
+					permission_level: 2
+					silent: true
+					team_reward: true
+					type: "command"
+				}
+				{
+					id: "0B03301000000041"
+					item: {
+						count: 1
+						id: "endrem:magical_eye"
+					}
+					title: "Eyes of Arcane Make"
+					type: "item"
+				}
+				{
+					id: "0B03301000000042"
+					item: {
+						count: 1
+						id: "endrem:corrupted_eye"
+					}
+					type: "item"
+				}
+				{
+					id: "0B03301000000044"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03201000000039"
+				item: { count: 1, id: "forbidden_arcanus:arcane_bone_meal" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["0B03101000000009"]
+			hide_until_deps_complete: true
+			id: "0B0310100000003A"
+			title: "Runewood Item Pedestal"
+			subtitle: "Optional: surround the altar."
+			description: [
+				"Set Runewood Item Pedestals around the &bSpirit Altar&r. Each one presents an ingredient to the altar during a craft, so a full ring lets you run the larger recipes without juggling items by hand."
+			]
+			optional: true
+			rewards: [{
+				id: "0B0330100000003A"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B0320100000003A"
+				item: { count: 1, id: "malum:runewood_item_pedestal" }
+				type: "item"
+			}]
+			x: -10.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["0B03101000000018"]
+			hide_until_deps_complete: true
+			id: "0B0310100000003B"
+			title: "Fermentation Starter"
+			subtitle: "Optional: seed the vat."
+			description: [
+				"Craft a &bFermentation Starter&r. Dropped into the vat it kicks off fermentation faster, a small convenience once you are running batches regularly."
+			]
+			optional: true
+			rewards: [{
+				id: "0B0330100000003B"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B0320100000003B"
+				item: { count: 1, id: "theurgy:fermentation_starter" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: 13.5d
+		}
+		{
+			dependencies: ["0B03101000000029"]
+			hide_until_deps_complete: true
+			id: "0B0310100000003C"
+			title: "Book of Calling: Janitor"
+			subtitle: "Optional: a Foliot that tidies."
+			description: [
+				"Bind a Foliot to a Janitor's &bBook of Calling&r. It collects dropped items in an area and stows them, which keeps a busy work floor from littering itself."
+			]
+			optional: true
+			rewards: [{
+				id: "0B0330100000003C"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B0320100000003C"
+				item: { count: 1, id: "occultism:book_of_calling_foliot_cleaner" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 13.5d
+		}
+		{
+			dependencies: ["0B03101000000037"]
+			hide_until_deps_complete: true
+			id: "0B0310100000003D"
+			title: "Arcane Crystal Obelisk"
+			subtitle: "Optional: speed the crystal farm."
+			description: [
+				"Raise an &bArcane Crystal Obelisk&r near your pedestals. It accelerates the crystals growing around it, worth building once you are consuming them faster than they ripen."
+			]
+			optional: true
+			rewards: [{
+				id: "0B0330100000003D"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B0320100000003D"
+				item: { count: 1, id: "forbidden_arcanus:arcane_crystal_obelisk" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: 13.5d
+		}
+		{
+			dependencies: ["0B03101000000001"]
+			hide_until_deps_complete: true
+			id: "0B03101000000051"
+			title: "Iron Divination Rod"
+			subtitle: "A longer-reaching finder."
+			description: [
+				"Upgrade to the &bIron Divination Rod&r. It reaches further and lasts longer than the glass starter, the natural second step in &6Theurgy&r's ore-finding line."
+			]
+			rewards: [
+				{
+					id: "0B03301000000051"
+					type: "xp"
+					xp: 15
+				}
+				{
+					id: "0B03301000000050"
+					type: "xp"
+					xp: 20
+				}
+			]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03201000000051"
+				item: { count: 1, id: "theurgy:divination_rod_t2" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0B03101000000051"]
+			hide_until_deps_complete: true
+			id: "0B03101000000052"
+			title: "Diamond Divination Rod"
+			subtitle: "Optional: the deep-search rod."
+			description: [
+				"Craft the &bDiamond Divination Rod&r. Its range and durability make it the workhorse for hunting the scarcer ores once the easy veins are gone."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03301000000052"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03201000000052"
+				item: { count: 1, id: "theurgy:divination_rod_t3" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0B03101000000052"]
+			hide_until_deps_complete: true
+			id: "0B03101000000053"
+			title: "Amethyst Divination Rod"
+			subtitle: "Optional: tuned to amethyst."
+			description: [
+				"Make the &bAmethyst Divination Rod&r. It is a specialist rod keyed to amethyst, handy given how many pack recipes pull on the crystal."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03301000000053"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03201000000053"
+				item: { count: 1, id: "theurgy:amethyst_divination_rod" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0B03101000000053"]
+			hide_until_deps_complete: true
+			id: "0B03101000000054"
+			title: "Sal Ammoniac Crystal"
+			subtitle: "Optional: solid flux."
+			description: [
+				"Crystallize &bSal Ammoniac&r. The solid form stores and stacks more conveniently than the liquid, useful when you are carrying flux between setups."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03301000000054"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03201000000054"
+				item: { count: 1, id: "theurgy:sal_ammoniac_crystal" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0B03101000000054"]
+			hide_until_deps_complete: true
+			id: "0B03101000000055"
+			title: "Mercury Shard"
+			subtitle: "Optional: solidified mercury."
+			description: [
+				"Produce a &bMercury Shard&r. It is mercury pinned into a handling-safe solid, a component the reformation gear ahead will ask for."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03301000000055"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03201000000055"
+				item: { count: 1, id: "theurgy:mercury_shard" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0B03101000000055"]
+			hide_until_deps_complete: true
+			id: "0B03101000000056"
+			title: "Incubator Salt Vessel"
+			subtitle: "Optional: feed the incubator salt."
+			description: [
+				"Attach an &bIncubator Salt Vessel&r. It supplies the salt side of the incubator's appetite, half of what keeps the sulfur multiplying."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03301000000056"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03201000000056"
+				item: { count: 1, id: "theurgy:incubator_salt_vessel" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["0B03101000000056"]
+			hide_until_deps_complete: true
+			id: "0B03101000000057"
+			title: "Incubator Mercury Vessel"
+			subtitle: "Optional: feed it mercury."
+			description: [
+				"Attach an &bIncubator Mercury Vessel&r. With the salt vessel it completes the incubator's feed, letting it run sulfur production unattended."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03301000000057"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03201000000057"
+				item: { count: 1, id: "theurgy:incubator_mercury_vessel" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["0B03101000000057"]
+			hide_until_deps_complete: true
+			id: "0B03101000000058"
+			title: "Reformation Source Pedestal"
+			subtitle: "Optional: store an essence."
+			description: [
+				"Place a &bReformation Source Pedestal&r. It holds the &bAlchemical Sulfur&r the reformation array copies from, the first piece of &6Theurgy&r's item-replication setup."
+				"Reformation lets you rebuild an item from its captured essence."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03301000000058"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03201000000058"
+				item: { count: 1, id: "theurgy:reformation_source_pedestal" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["0B03101000000058"]
+			hide_until_deps_complete: true
+			id: "0B03101000000059"
+			title: "Mercurial Wand"
+			subtitle: "Optional: drive reformation."
+			description: [
+				"Craft the &bMercurial Wand&r. It is the tool that triggers a reformation array, spending mercury to reconstitute the item your pedestals are keyed to."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03301000000059"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03201000000059"
+				item: { count: 1, id: "theurgy:mercurial_wand" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["0B03101000000001"]
+			hide_until_deps_complete: true
+			id: "0B03101000000060"
+			title: "Plant Salt"
+			subtitle: "The growing class."
+			description: [
+				"Distill an &bAlchemical Salt&r from plants. It is the reagent for the recipes that touch living, growing things, distinct from the mineral salt."
+			]
+			rewards: [{
+				id: "0B03301000000060"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03201000000060"
+				item: { count: 1, id: "theurgy:alchemical_salt_plant" }
+				type: "item"
+			}]
+			x: 15.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0B03101000000060"]
+			hide_until_deps_complete: true
+			id: "0B03101000000061"
+			title: "Creature Salt"
+			subtitle: "Optional: the animal class."
+			description: [
+				"Render an &bAlchemical Salt&r from creatures. It rounds out the salt classes, drawn from the drops of the things you hunt and herd."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03301000000061"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03201000000061"
+				item: { count: 1, id: "theurgy:alchemical_salt_creature" }
+				type: "item"
+			}]
+			x: 15.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0B03101000000061"]
+			hide_until_deps_complete: true
+			id: "0B03101000000062"
+			title: "Mercury Crystal"
+			subtitle: "Optional: the purest mercury."
+			description: [
+				"Grow a &bMercury Crystal&r. It is the most concentrated mercury form &6Theurgy&r makes, reserved for the demanding end of the reformation recipes."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03301000000062"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03201000000062"
+				item: { count: 1, id: "theurgy:mercury_crystal" }
+				type: "item"
+			}]
+			x: 15.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0B03101000000001"]
+			hide_until_deps_complete: true
+			id: "0B03101000000070"
+			title: "Artisan Relic"
+			subtitle: "Enhance the Hephaestus Forge."
+			description: [
+				"Craft an &bArtisan Relic&r. Slotted into the &bHephaestus Forge&r it saves a great deal of the experience the forge would otherwise eat per craft."
+				"The forge is &6Forbidden Arcanus&r' centerpiece, and enhancers shape how it behaves."
+			]
+			rewards: [{
+				id: "0B03301000000070"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03201000000070"
+				item: { count: 1, id: "forbidden_arcanus:artisan_relic" }
+				type: "item"
+			}]
+			x: 18.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0B03101000000070"]
+			hide_until_deps_complete: true
+			id: "0B03101000000071"
+			title: "Corrupted Arcane Crystal"
+			subtitle: "Optional: the tainted crystal."
+			description: [
+				"Obtain a &bCorrupted Arcane Crystal&r. It is the darker counterpart to the clean crystal, the entry point to the mod's corruption-themed crafts."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03301000000071"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03201000000071"
+				item: { count: 1, id: "forbidden_arcanus:corrupted_arcane_crystal" }
+				type: "item"
+			}]
+			x: 18.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0B03101000000071"]
+			hide_until_deps_complete: true
+			id: "0B03101000000072"
+			title: "Corrupti Dust"
+			subtitle: "Optional: ground corruption."
+			description: [
+				"Grind &bCorrupti Dust&r from corrupted material. It is a reagent for the darker recipes, the corrupted echo of ordinary crystal dust."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03301000000072"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03201000000072"
+				item: { count: 1, id: "forbidden_arcanus:corrupti_dust" }
+				type: "item"
+			}]
+			x: 18.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0B03101000000072"]
+			hide_until_deps_complete: true
+			id: "0B03101000000073"
+			title: "Soul"
+			subtitle: "Optional: capture a soul."
+			description: [
+				"Collect a Soul. &6Forbidden Arcanus&r lets you draw the soul from a dying creature, the raw input for its soul-binding line of crafting."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03301000000073"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03201000000073"
+				item: { count: 1, id: "forbidden_arcanus:soul" }
+				type: "item"
+			}]
+			x: 18.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0B03101000000073"]
+			hide_until_deps_complete: true
+			id: "0B03101000000074"
+			title: "Enchanted Soul"
+			subtitle: "Optional: refine the soul."
+			description: [
+				"Make an &bEnchanted Soul&r. It is the worked, stable form of a captured soul, ready to be set into the crystal that holds it."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03301000000074"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03201000000074"
+				item: { count: 1, id: "forbidden_arcanus:enchanted_soul" }
+				type: "item"
+			}]
+			x: 18.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0B03101000000074"]
+			hide_until_deps_complete: true
+			id: "0B03101000000075"
+			title: "Soul Binding Crystal"
+			subtitle: "Optional: cage a soul."
+			description: [
+				"Craft a &bSoul Binding Crystal&r. It traps an &benchanted soul&r in solid form, the storage piece the soul machinery draws on."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03301000000075"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03201000000075"
+				item: { count: 1, id: "forbidden_arcanus:soul_binding_crystal" }
+				type: "item"
+			}]
+			x: 18.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["0B03101000000075"]
+			hide_until_deps_complete: true
+			id: "0B03101000000076"
+			title: "Blood Test Tube"
+			subtitle: "Optional: bottle your own blood."
+			description: [
+				"Fill a &bTest Tube&r with blood to make a &bBlood Test Tube&r. It is a grim reagent the soul-working recipes ask for, drawn from the player at a small cost."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03301000000076"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03201000000076"
+				item: { count: 1, id: "forbidden_arcanus:blood_test_tube" }
+				type: "item"
+			}]
+			x: 18.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["0B03101000000076"]
+			hide_until_deps_complete: true
+			id: "0B03101000000077"
+			title: "Soul Extractor"
+			subtitle: "Optional: pull souls at scale."
+			description: [
+				"Build the &bSoul Extractor&r. It draws souls from creatures mechanically rather than by hand, the payoff that turns the soul branch into a real supply line."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03301000000077"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03201000000077"
+				item: { count: 1, id: "forbidden_arcanus:soul_extractor" }
+				type: "item"
+			}]
+			x: 18.0d
+			y: 10.5d
+		}
+		{
+			can_repeat: false
+			dependencies: [
+				"0B03101000000039"
+				"0B03102000000062"
+				"0B03109000000060"
+				"0B03103000000031"
+				"0B03104000000050"
+				"0B03105000000050"
+				"0B03106000000050"
+				"0B03107000000050"
+				"0B031080000000F2"
+				"0B0310A000000014"
+			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			id: "0B0310100000CAFE"
+			title: "The Cursed Trophy"
+			subtitle: "Optional: a secret across every age."
+			description: [
+				"This hidden challenge only opens once you have cleared a defining milestone in every age, from the &dDark Age&r through to the present. The &bCursium Ingot&r from &6Cataclysm&r is the trophy at the end."
+				"It is pure bragging rights, a reward for the player who finishes everything rather than a step on any path."
+			]
+			invisible: true
+			optional: true
+			rewards: [
+				{
+					command: "/advancement grant {p} only apotheosis:progression/frontier"
+					icon: {
+						id: "minecraft:iron_sword"
+					}
+					id: "0B0330100000CAF3"
+					permission_level: 2
+					silent: true
+					team_reward: true
+					type: "command"
+				}
+				{
+					id: "0B0330100000CAF4"
+					type: "xp_levels"
+					xp_levels: 25
+				}
+			]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B0320100000CAFE"
+				item: { count: 1, id: "cataclysm:cursium_ingot" }
+				type: "item"
+			}]
+			x: 21.0d
+			y: 12.0d
+		}
+	]
+}
