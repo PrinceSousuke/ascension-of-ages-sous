@@ -1,0 +1,1209 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ren_undergarden_descent"
+	group: "0B038EB15EBBFD95"
+	hide_quest_until_deps_complete: true
+	icon: {
+		id: "undergarden:catalyst"
+	}
+	id: "0B03001000000005"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"0B03103000000031"
+				"0B03107000000050"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				id: "undergarden:catalyst"
+			}
+			id: "0B03105000000001"
+			title: "Undergarden Descent"
+			subtitle: "A foggy world beneath the world."
+			description: [
+				"The &6Undergarden&r is a vast cavern dimension of glowing fog, strange metals, and meaner-than-they-look locals. This chapter covers the way down, the Cloggrum-and-Utherium metalwork waiting there, and the guardians that keep the best of it."
+				"Getting in starts with proving yourself against the deep dark."
+			]
+			rewards: [{
+				id: "0B03305000000001"
+				type: "xp"
+				xp: 25
+			}]
+			size: 1.5d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				dimension: "minecraft:overworld"
+				id: "0B03205000000001"
+				type: "dimension"
+			}]
+			x: 0.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["0B03105000000001"]
+			hide_until_deps_complete: true
+			id: "0B03105000000010"
+			title: "Catalyst"
+			subtitle: "The key to the portal."
+			description: [
+				"Craft a &bCatalyst&r. The &6Undergarden&r portal is opened not with &bflint&r and steel but by throwing this at a built frame, so it is the single item that lets you cross."
+				"Make it before you go looking for a fight in the deep dark."
+			]
+			rewards: [{
+				id: "0B03305000000010"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03205000000010"
+				item: { count: 1, id: "undergarden:catalyst" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0B03105000000010"]
+			hide_until_deps_complete: true
+			id: "0B03105000000011"
+			title: "The Warden"
+			subtitle: "Best the deep dark's guardian."
+			description: [
+				"Before the descent opens you must put down a &c&lWarden&r. It is among the deadliest things in the game: blind but deafening, with a melee that flattens armor and a sonic boom that ignores it entirely."
+				"Come with totems, strength and regeneration, and an escape plan. Stay off the sculk, strike, and reposition. Winning here earns you the way below."
+			]
+			rewards: [{
+				id: "0B03305000000011"
+				type: "xp"
+				xp: 75
+			}]
+			shape: "diamond"
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				entity: "minecraft:warden"
+				id: "0B03205000000011"
+				type: "kill"
+				value: 1L
+			}]
+			x: -4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0B03105000000011"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "undergarden:depthrock"
+			}
+			id: "0B03105000000012"
+			title: "Into the Undergarden"
+			subtitle: "Throw the Catalyst and drop down."
+			description: [
+				"Open your frame with the &bCatalyst&r and step into the &6Undergarden&r. The fog cuts your sight short and the locals do not wait for an introduction, so move carefully until you have a base."
+				"Arriving is the milestone the &c&lwarden&r fight bought you."
+			]
+			rewards: [{
+				id: "0B03305000000012"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				dimension: "undergarden:undergarden"
+				id: "0B03205000000012"
+				type: "dimension"
+			}]
+			x: -4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0B03105000000012"]
+			hide_until_deps_complete: true
+			id: "0B03105000000020"
+			title: "Depthrock Pebble"
+			subtitle: "The dimension's first stone."
+			description: [
+				"Pick up a &bDepthrock Pebble&r. Depthrock is the &6Undergarden&r's bedrock-to-ceiling filler, and the pebble is the first crafting material the place hands you."
+			]
+			rewards: [{
+				id: "0B03305000000020"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03205000000020"
+				item: { count: 1, id: "undergarden:depthrock_pebble" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0B03105000000020"]
+			hide_until_deps_complete: true
+			id: "0B03105000000021"
+			title: "Droopfruit"
+			subtitle: "Forage the hanging vines."
+			description: [
+				"Harvest &bDroopfruit&r from the droopvines. It is early food and the input for &bditchbulb paste&r, the start of the &6Undergarden&r's small kitchen."
+			]
+			rewards: [{
+				id: "0B03305000000021"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03205000000021"
+				item: { count: 1, id: "undergarden:droopvine_item" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0B03105000000012"]
+			hide_until_deps_complete: true
+			id: "0B03105000000030"
+			title: "Cloggrum Ingot"
+			subtitle: "The Undergarden's base metal."
+			description: [
+				"Smelt a &bCloggrum Ingot&r. Cloggrum is the workhorse metal of the &6Undergarden&r, the one its first tools, weapons, and the shield are forged from."
+				"Nearly every crafting branch here starts with a stack of it."
+			]
+			rewards: [{
+				id: "0B03305000000030"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03205000000030"
+				item: { count: 1, id: "undergarden:cloggrum_ingot" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0B03105000000030"]
+			hide_until_deps_complete: true
+			id: "0B03105000000031"
+			title: "Utherium Crystal"
+			subtitle: "The signature red crystal."
+			description: [
+				"Mine a &bUtherium Crystal&r. The glowing red gem is the &6Undergarden&r's prize material, the upgrade reagent that lifts Cloggrum gear to something special."
+				"It feeds the &binfuser&r and the better pickaxe both."
+			]
+			rewards: [{
+				id: "0B03305000000031"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03205000000031"
+				item: { count: 1, id: "undergarden:utherium_crystal" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0B03105000000034"]
+			hide_until_deps_complete: true
+			id: "0B03105000000032"
+			title: "Froststeel Ingot"
+			subtitle: "Optional: cold-forged metal."
+			description: [
+				"Smelt a &bFroststeel Ingot&r. The chilled metal carries its own bite into the gear made from it, a colder cousin to Cloggrum from the dimension's frozen pockets."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03305000000032"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03205000000032"
+				item: { count: 1, id: "undergarden:froststeel_ingot" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0B03105000000034"]
+			hide_until_deps_complete: true
+			id: "0B03105000000033"
+			title: "Regalium Crystal"
+			subtitle: "Optional: the royal crystal."
+			description: [
+				"Find a &bRegalium Crystal&r. It is a rarer gem of the &6Undergarden&r, tied to the dimension's grander structures and the gear that comes out of them."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03305000000033"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03205000000033"
+				item: { count: 1, id: "undergarden:regalium_crystal" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0B03105000000031"]
+			hide_until_deps_complete: true
+			id: "0B03105000000040"
+			title: "The Catacombs"
+			subtitle: "Optional: find the buried halls."
+			description: [
+				"Locate the &bCatacombs&r. The buried structure is where the &6Undergarden&r hides its forgotten gear and the guardian that watches it, the destination for anyone chasing the top tier."
+				"Go in prepared, not curious."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03305000000040"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03205000000040"
+				structure: "undergarden:catacombs"
+				type: "structure"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0B03105000000040"]
+			hide_until_deps_complete: true
+			id: "0B03105000000045"
+			title: "Forgotten Vestige"
+			subtitle: "Optional: a deeper ruin."
+			description: [
+				"Find a &bForgotten Vestige&r. These ruins hold more of the forgotten materials and a stiffer challenge, the reward for mapping the dimension thoroughly."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03305000000045"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03205000000045"
+				structure: "undergarden:forgotten_vestige"
+				type: "structure"
+			}]
+			x: -1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0B03105000000040"]
+			hide_until_deps_complete: true
+			id: "0B03105000000041"
+			title: "Forgotten Guardian"
+			subtitle: "Optional: the catacomb boss."
+			description: [
+				"Bring down the &c&lForgotten Guardian&r in the &bCatacombs&r. The stone sentinel hits hard and soaks damage, so circle it, use the pillars for cover, and wear it down rather than rushing."
+				"Its defeat opens the forgotten gear, the &6Undergarden&r's highest tier."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03305000000041"
+				type: "xp"
+				xp: 75
+			}]
+			shape: "diamond"
+			size: 1.3d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				entity: "undergarden:forgotten_guardian"
+				id: "0B03205000000041"
+				type: "kill"
+				value: 1L
+			}]
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0B03105000000041"]
+			hide_until_deps_complete: true
+			id: "0B03105000000042"
+			title: "Forgotten Nugget"
+			subtitle: "Optional: a sliver of the best metal."
+			description: [
+				"Recover a &bForgotten Nugget&r. The forgotten metal is the dimension's netherite-grade material, and the nugget is its smallest measure, gathered from the &bcatacombs&r."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03305000000042"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03205000000042"
+				item: { count: 1, id: "undergarden:forgotten_nugget" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0B03105000000031"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "undergarden:utherium_crystal"
+			}
+			id: "0B03105000000050"
+			title: "Back from the Depths"
+			subtitle: "Surface with the Lost Eye."
+			description: [
+				"Climb back to the overworld with your &6Undergarden&r haul. The descent earns you the Lost Eye, one more key your End portal has been waiting on."
+				"Reaching the surface again closes the chapter's required line."
+			]
+			rewards: [
+				{
+					id: "0B03305000000050"
+					type: "xp"
+					xp: 15
+				}
+				{
+					auto: "enabled"
+					command: "/astages add {p} ren_undergarden_descent_complete true true"
+					icon: {
+						id: "undergarden:utherium_crystal"
+					}
+					id: "0B03305000000060"
+					permission_level: 2
+					silent: true
+					team_reward: true
+					type: "command"
+				}
+				{
+					id: "0B03305000000061"
+					item: {
+						count: 1
+						id: "endrem:lost_eye"
+					}
+					title: "Eye Lost and Found"
+					type: "item"
+				}
+				{
+					id: "0B03305000000063"
+					type: "xp_levels"
+					xp_levels: 8
+				}
+			]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				dimension: "minecraft:overworld"
+				id: "0B03205000000050"
+				type: "dimension"
+			}]
+			x: -4.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0B03105000000021"]
+			hide_until_deps_complete: true
+			id: "0B03105000000022"
+			title: "Ditchbulb Paste"
+			subtitle: "Mash the glowing bulbs."
+			description: [
+				"Grind &bDitchbulb Paste&r. It is a reagent the dimension's recipes and some of its food lean on, worked up from the bulbs that light the caverns."
+			]
+			rewards: [{
+				id: "0B03305000000022"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03205000000022"
+				item: { count: 1, id: "undergarden:ditchbulb_paste" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0B03105000000031"]
+			hide_until_deps_complete: true
+			id: "0B03105000000034"
+			title: "Utherium Pickaxe"
+			subtitle: "A crystal-cut mining tool."
+			description: [
+				"Forge a &bUtherium Pickaxe&r. Built with the red crystal it mines faster and lasts longer than Cloggrum, the natural step up for digging deeper here."
+			]
+			rewards: [{
+				id: "0B03305000000034"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03205000000034"
+				item: { count: 1, id: "undergarden:utherium_pickaxe" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0B03105000000042"]
+			hide_until_deps_complete: true
+			id: "0B03105000000043"
+			title: "Forgotten Ingot"
+			subtitle: "Optional: the full bar."
+			description: [
+				"Assemble a &bForgotten Ingot&r. It is the &6Undergarden&r's top metal in usable form, the material behind its strongest upgrades."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03305000000043"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "diamond"
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03205000000043"
+				item: { count: 1, id: "undergarden:forgotten_ingot" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["0B03105000000030"]
+			hide_until_deps_complete: true
+			id: "0B03105000000035"
+			title: "Cloggrum Shield"
+			subtitle: "Optional: a sturdy guard."
+			description: [
+				"Craft a &bCloggrum Shield&r. Heavier than wood and proof against more, it is a solid block-and-counter tool for the dimension's harder hitters."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03305000000035"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03205000000035"
+				item: { count: 1, id: "undergarden:cloggrum_shield" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0B03105000000031"]
+			hide_until_deps_complete: true
+			id: "0B03105000000036"
+			title: "Infuser"
+			subtitle: "Upgrade Undergarden gear."
+			description: [
+				"Build the &bInfuser&r. It is the &6Undergarden&r's upgrade station, working Utherium and other crystals into your Cloggrum and Froststeel tools for a real step in power."
+				"Think of it as the dimension's answer to a smithing table."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03305000000036"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "gear"
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03205000000036"
+				item: { count: 1, id: "undergarden:infuser" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0B03105000000021"]
+			hide_until_deps_complete: true
+			id: "0B03105000000037"
+			title: "Gloomgourd Pie"
+			subtitle: "Optional: bake the local squash."
+			description: [
+				"Bake a &bGloomgourd Pie&r. The &6Undergarden&r's gourd makes a filling pie, a homegrown meal for long stints in the fog and the base of the stew line."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03305000000037"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03205000000037"
+				item: { count: 1, id: "undergarden:gloomgourd_pie" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0B03105000000021"]
+			hide_until_deps_complete: true
+			id: "0B03105000000038"
+			title: "Scintling Goo Ball"
+			subtitle: "Optional: a sticky drop."
+			description: [
+				"Collect a &bScintling Goo Ball&r. It comes off the dimension's scintlings, a sticky reagent with a few uses and the input for the brute-tusk recipe."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03305000000038"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03205000000038"
+				item: { count: 1, id: "undergarden:goo_ball" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0B03105000000043"]
+			hide_until_deps_complete: true
+			id: "0B03105000000044"
+			title: "Forgotten Upgrade Template"
+			subtitle: "Optional: the smithing key."
+			description: [
+				"Find the &bForgotten Upgrade&r smithing template. Paired with the &bforgotten ingot&r at a smithing table it pushes your gear to the dimension's highest tier."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03305000000044"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03205000000044"
+				item: { count: 1, id: "undergarden:forgotten_upgrade_smithing_template" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["0B03105000000030"]
+			hide_until_deps_complete: true
+			id: "0B03105000000070"
+			title: "Raw Cloggrum"
+			subtitle: "Optional: the unsmelted ore."
+			description: [
+				"Mine &bRaw Cloggrum&r. It is the ore form before the &bfurnace&r, worth a quest of its own since every Cloggrum tool traces back to it."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03305000000070"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03205000000070"
+				item: { count: 1, id: "undergarden:raw_cloggrum" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0B03105000000030"]
+			hide_until_deps_complete: true
+			id: "0B03105000000071"
+			title: "Cloggrum Sword"
+			subtitle: "Optional: the base blade."
+			description: [
+				"Forge a &bCloggrum Sword&r. It is the &6Undergarden&r's starter weapon, a clear cut above stone or iron for the dimension's mobs."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03305000000071"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03205000000071"
+				item: { count: 1, id: "undergarden:cloggrum_sword" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["0B03105000000071"]
+			hide_until_deps_complete: true
+			id: "0B03105000000072"
+			title: "Cloggrum Pickaxe"
+			subtitle: "Optional: the base pick."
+			description: [
+				"Craft a &bCloggrum Pickaxe&r. It is the workhorse miner before you upgrade to Utherium, plenty for harvesting the dimension's common stone and ore."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03305000000072"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03205000000072"
+				item: { count: 1, id: "undergarden:cloggrum_pickaxe" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["0B03105000000032"]
+			hide_until_deps_complete: true
+			id: "0B03105000000073"
+			title: "Raw Froststeel"
+			subtitle: "Optional: the cold ore."
+			description: [
+				"Mine &bRaw Froststeel&r. It is the unsmelted form of the cold metal, found in the dimension's frostier corners."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03305000000073"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03205000000073"
+				item: { count: 1, id: "undergarden:raw_froststeel" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0B03105000000031"]
+			hide_until_deps_complete: true
+			id: "0B03105000000074"
+			title: "Utheric Shard"
+			subtitle: "Optional: a crystal fragment."
+			description: [
+				"Collect a &bUtheric Shard&r. It is a smaller piece of the red crystal, the cheaper measure for recipes that do not need a whole gem."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03305000000074"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03205000000074"
+				item: { count: 1, id: "undergarden:utheric_shard" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0B03105000000021"]
+			hide_until_deps_complete: true
+			id: "0B03105000000075"
+			title: "Slingshot"
+			subtitle: "Optional: a ranged option."
+			description: [
+				"Craft a &bSlingshot&r. It lobs the dimension's bombs and berries at range, the delivery system for the &bblisterbomb&r and a handy poke at distant mobs."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03305000000075"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03205000000075"
+				item: { count: 1, id: "undergarden:slingshot" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0B03105000000075"]
+			hide_until_deps_complete: true
+			id: "0B03105000000076"
+			title: "Blisterbomb"
+			subtitle: "Optional: explosive ammo."
+			description: [
+				"Make a &bBlisterbomb&r. Fired from the &bslingshot&r it bursts on impact, the &6Undergarden&r's thrown explosive for clearing groups or cracking a wall."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03305000000076"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03205000000076"
+				item: { count: 1, id: "undergarden:blisterbomb" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["0B03105000000076"]
+			hide_until_deps_complete: true
+			id: "0B03105000000077"
+			title: "Blisterberry"
+			subtitle: "Optional: a volatile fruit."
+			description: [
+				"Gather a &bBlisterberry&r. It is the fruit behind the &bblisterbomb&r, edible in a pinch but better turned into ammunition."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03305000000077"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03205000000077"
+				item: { count: 1, id: "undergarden:blisterberry" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["0B03105000000022"]
+			hide_until_deps_complete: true
+			id: "0B03105000000078"
+			title: "Cooked Gwibling"
+			subtitle: "Optional: cook the cave fish."
+			description: [
+				"Cook a Gwibling, the &6Undergarden&r's little fish, into a meal. It is reliable cavern food once you learn where the schools swim."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03305000000078"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03205000000078"
+				item: { count: 1, id: "undergarden:cooked_gwibling" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0B03105000000078"]
+			hide_until_deps_complete: true
+			id: "0B03105000000079"
+			title: "Bucket of Gwibling"
+			subtitle: "Optional: keep one live."
+			description: [
+				"Bucket a live Gwibling. Like any fish in a bucket it travels and displays well, a catch to move rather than eat."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03305000000079"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03205000000079"
+				item: { count: 1, id: "undergarden:gwibling_bucket" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["0B03105000000037"]
+			hide_until_deps_complete: true
+			id: "0B0310500000007A"
+			title: "Inky Stew"
+			subtitle: "Optional: the first stew."
+			description: [
+				"Cook an &bInky Stew&r from the gloomgourd. It is the base of the &6Undergarden&r's stew line, a warm meal with a mild effect to it."
+			]
+			optional: true
+			rewards: [{
+				id: "0B0330500000007A"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B0320500000007A"
+				item: { count: 1, id: "undergarden:inky_stew" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0B0310500000007A"]
+			hide_until_deps_complete: true
+			id: "0B0310500000007B"
+			title: "Indigo Stew"
+			subtitle: "Optional: the next stew."
+			description: [
+				"Prepare an &bIndigo Stew&r. It builds on the inky version with stronger ingredients, a better effect for a little more effort in the pot."
+			]
+			optional: true
+			rewards: [{
+				id: "0B0330500000007B"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B0320500000007B"
+				item: { count: 1, id: "undergarden:indigo_stew" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["0B0310500000007B"]
+			hide_until_deps_complete: true
+			id: "0B0310500000007C"
+			title: "Bloody Stew"
+			subtitle: "Optional: the richest bowl."
+			description: [
+				"Cook a &bBloody Stew&r. It is the top of the dimension's stew line, the most nourishing bowl the &6Undergarden&r's kitchen turns out."
+			]
+			optional: true
+			rewards: [{
+				id: "0B0330500000007C"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B0320500000007C"
+				item: { count: 1, id: "undergarden:bloody_stew" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["0B03105000000038"]
+			hide_until_deps_complete: true
+			id: "0B0310500000007D"
+			title: "Brute Tusk"
+			subtitle: "Optional: a hunted trophy."
+			description: [
+				"Take a &bBrute Tusk&r from one of the dimension's brutes. It is a crafting reagent and a sign you have started winning the fights rather than fleeing them."
+			]
+			optional: true
+			rewards: [{
+				id: "0B0330500000007D"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B0320500000007D"
+				item: { count: 1, id: "undergarden:brute_tusk" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 6.0d
+		}
+	]
+}
