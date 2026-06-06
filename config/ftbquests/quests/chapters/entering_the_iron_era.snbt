@@ -13,13 +13,18 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["60D53613768CA1F3"]
-			hide_until_deps_complete: true
 			id: "6A1E8D4C0F2B7A11"
+			title: "Flint"
+			subtitle: "The first cutting edge."
+			description: [
+				"Break gravel until you have &bflint&r in hand. Before any metal exists, flint is the sharp edge &6Overgeared&r uses to knap primitive parts."
+				"Gravel sits under most rivers and in patches underground, so a short dig is usually enough to start."
+			]
 			rewards: [
 				{
 					id: "63BF29C8E587C73E"
 					table_id: 8849093687305634787L
+					title: "A scrap of supplies to open the workshop."
 					type: "loot"
 				}
 				{
@@ -52,9 +57,16 @@
 			dependencies: ["6A1E8D4C0F2B7A11"]
 			hide_until_deps_complete: true
 			id: "6A1E8D4C0F2B7A12"
+			title: "Knapping Rocks"
+			subtitle: "Loose stone, shaped by hand."
+			description: [
+				"Collect a few Rocks off the ground and knap them with &bflint&r. Knapping is how &6Overgeared&r turns raw stone into the first crude tool heads, no crafting grid required."
+				"Rocks scatter across most surfaces, so pick them up as you walk rather than mining for them."
+			]
 			rewards: [{
 				id: "006598A1D8B58E5A"
 				table_id: 8849093687305634787L
+				title: "A little more to keep the bench stocked."
 				type: "loot"
 			}]
 			tasks: [{
@@ -78,14 +90,16 @@
 			dependencies: ["6A1E8D4C0F2B7A12"]
 			hide_until_deps_complete: true
 			id: "6A1E8D4C0F2B7A13"
+			title: "Stone Pickaxe Head"
+			subtitle: "The working end of your first tool."
+			description: [
+				"Knap a &bStone Pickaxe Head&r from a rock. It is the business end of a pickaxe and nothing more yet, since &6Overgeared&r builds tools out of separate parts."
+				"Knap a spare while you are at it. Heads wear out and a backup saves a trip."
+			]
 			rewards: [{
-				count: 4
 				id: "390A4517301FE448"
-				item: {
-					count: 1
-					id: "minecraft:stick"
-				}
-				type: "item"
+				type: "xp"
+				xp: 25
 			}]
 			tasks: [{
 				SkillsLevel: {
@@ -107,6 +121,12 @@
 			dependencies: ["6A1E8D4C0F2B7A13"]
 			hide_until_deps_complete: true
 			id: "6A1E8D4C0F2B7A14"
+			title: "Stone Pickaxe"
+			subtitle: "Head plus handle makes a tool."
+			description: [
+				"Fit the knapped head to a handle to finish a working &bStone Pickaxe&r. Because the tool is assembled from parts, a worn one can be rebuilt instead of thrown away."
+				"This is the pick that gets you to &bcopper&r and the first real ores."
+			]
 			rewards: [
 				{
 					count: 4
@@ -147,6 +167,12 @@
 			dependencies: ["6A1E8D4C0F2B7A14"]
 			hide_until_deps_complete: true
 			id: "6A1E8D4C0F2B7A15"
+			title: "Copper"
+			subtitle: "Your first metal."
+			description: [
+				"Mine &bcopper&r ore and smelt a few ingots. Copper is the first metal the forge can work, a clear step up from knapped stone for tools and parts."
+				"Smelt more than you think you need. The smithing tools coming up all want &bcopper&r."
+			]
 			rewards: [{
 				count: 6
 				id: "3979B8BE434EF008"
@@ -154,6 +180,7 @@
 					count: 1
 					id: "minecraft:coal"
 				}
+				title: "Coal to keep the furnace hot."
 				type: "item"
 			}]
 			tasks: [
@@ -193,6 +220,12 @@
 			dependencies: ["6A1E8D4C0F2B7A15"]
 			hide_until_deps_complete: true
 			id: "6A1E8D4C0F2B7A16"
+			title: "Copper Smithing Hammer"
+			subtitle: "The tool that shapes metal."
+			description: [
+				"Forge a &bCopper Smithing Hammer&r. It is the heart of metalworking in &6Overgeared&r, used to beat heated ingots into blades, heads, and the other parts your gear is built from."
+				"Keep it close to the forge. Almost every metal part from here is shaped with it."
+			]
 			rewards: [{
 				count: 2
 				id: "5284B77AE57E5A3B"
@@ -200,6 +233,7 @@
 					count: 1
 					id: "minecraft:copper_ingot"
 				}
+				title: "Spare copper for a second tool."
 				type: "item"
 			}]
 			tasks: [{
@@ -222,14 +256,16 @@
 			dependencies: ["27631F12D97B7FA8"]
 			hide_until_deps_complete: true
 			id: "6A1E8D4C0F2B7A18"
+			title: "Wooden Tongs"
+			subtitle: "Handle hot metal without burning."
+			description: [
+				"Craft &bWooden Tongs&r. Heated ingots and parts will burn you bare-handed, and tongs are what let you move them around the forge while they are still hot."
+				"A small thing, but the smithing steps ahead expect you to have a pair."
+			]
 			rewards: [{
-				count: 4
 				id: "2933285548C23F07"
-				item: {
-					count: 1
-					id: "minecraft:charcoal"
-				}
-				type: "item"
+				type: "xp"
+				xp: 25
 			}]
 			tasks: [{
 				SkillsLevel: {
@@ -251,12 +287,19 @@
 			dependencies: ["6A1E8D4C0F2B7A18"]
 			hide_until_deps_complete: true
 			id: "6A1E8D4C0F2B7A19"
+			title: "Grindstone"
+			subtitle: "Sharpen and salvage."
+			description: [
+				"Set up a &bGrindstone&r. A ground edge performs better than a rough one, and the stone also strips usable material back out of worn gear instead of wasting it."
+				"Run finished parts across it before you assemble them for the best result."
+			]
 			rewards: [{
 				id: "0C73BB4E9359D9D3"
 				item: {
 					count: 1
 					id: "overgeared:empty_blueprint"
 				}
+				title: "A blank blueprint to draft on next."
 				type: "item"
 			}]
 			tasks: [{
@@ -279,6 +322,12 @@
 			dependencies: ["6A1E8D4C0F2B7A19"]
 			hide_until_deps_complete: true
 			id: "6A1E8D4C0F2B7A1A"
+			title: "Drafting Table"
+			subtitle: "Where designs get drawn up."
+			description: [
+				"Build a &bDrafting Table&r. This is the station where you draft blueprints, the designs that unlock &6Overgeared&r's stronger tools and armor down the line."
+				"Place it next to the forge so drafting and smithing stay one workspace."
+			]
 			rewards: [{
 				count: 6
 				id: "024F6B1A1638B4F8"
@@ -286,6 +335,7 @@
 					count: 1
 					id: "minecraft:paper"
 				}
+				title: "Paper for the drafts ahead."
 				type: "item"
 			}]
 			tasks: [{
@@ -308,13 +358,16 @@
 			dependencies: ["6A1E8D4C0F2B7B03"]
 			hide_until_deps_complete: true
 			id: "6A1E8D4C0F2B7A1B"
+			title: "Smithing Blueprint"
+			subtitle: "Your first real design."
+			description: [
+				"Draft a &bSmithing Blueprint&r at the table. Early drafts come out poor quality and the results are rough, but a drawn blueprint is what carries forging past knapped stone and basic &bcopper&r."
+				"Quality climbs as your station and materials improve, so do not judge the system by this first attempt."
+			]
 			rewards: [{
 				id: "3A6FFC6D1B61E430"
-				item: {
-					count: 1
-					id: "overgeared:empty_blueprint"
-				}
-				type: "item"
+				type: "xp"
+				xp: 50
 			}]
 			tasks: [{
 				SkillsLevel: {
@@ -326,7 +379,7 @@
 					second: 20
 				}
 				id: "7A1E8D4C0F2B770D"
-				item: { count: 1, id: "overgeared:blueprint" }
+				item: { components: { "overgeared:blueprint_data": { quality: "POOR" } }, count: 1, id: "overgeared:blueprint" }
 				type: "item"
 			}]
 			x: 4.0d
@@ -336,10 +389,16 @@
 			dependencies: ["6A1E8D4C0F2B7A1B"]
 			hide_until_deps_complete: true
 			id: "097AED7C91033D5E"
+			title: "Entering the Iron Era"
+			subtitle: "Cross into the Medieval age."
+			description: [
+				"Draft a working blueprint and the &dDark Ages&r give way to the &dMedieval&r era. A forge, a fed belly, and a roof are enough to live on now, which is the whole point of the survival chapters."
+				"Completing this grants the stage that opens the colony, the mill, and the deeper metalworking ahead."
+			]
 			rewards: [
 				{
 					auto: "enabled"
-					command: "/stage grant {p} medieval_times"
+					command: "/astages add {p} medieval_times true true"
 					icon: {
 						id: "malum:iron_impetus"
 					}
@@ -350,9 +409,34 @@
 					type: "command"
 				}
 				{
+					auto: "enabled"
+					command: "/advancement grant {p} only apotheosis:progression/haven"
+					icon: {
+						id: "minecraft:oak_sapling"
+					}
+					id: "09D8F92E8CE5B06B"
+					permission_level: 2
+					silent: true
+					team_reward: true
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/advancement grant {p} only aoa:age/medieval_times"
+					icon: {
+						id: "minecraft:clock"
+					}
+					id: "09D8F92E8CE5B06C"
+					permission_level: 2
+					silent: true
+					team_reward: true
+					type: "command"
+				}
+				{
 					exclude_from_claim_all: true
 					id: "32D51FE9E88AE022"
 					table_id: 4597731606249609751L
+					title: "A food cache to carry into the Medieval era."
 					type: "loot"
 				}
 			]
@@ -366,7 +450,8 @@
 					second: 20
 				}
 				id: "1F57854559E61136"
-				type: "checkmark"
+				item: { components: { "overgeared:blueprint_data": { quality: "POOR" } }, count: 1, id: "overgeared:blueprint" }
+				type: "item"
 			}]
 			x: 5.5d
 			y: 0.0d
@@ -375,14 +460,16 @@
 			dependencies: ["6A1E8D4C0F2B7A1A"]
 			hide_until_deps_complete: true
 			id: "6A1E8D4C0F2B7B03"
+			title: "Empty Blueprint"
+			subtitle: "A blank to draw on."
+			description: [
+				"Craft an &bEmpty Blueprint&r. It is the blank sheet you commit a design to at the &bDrafting Table&r, used up each time you lock in a new pattern."
+				"Keep a few spare. Drafting is cheap and you will redraw as better recipes open."
+			]
 			rewards: [{
-				count: 4
 				id: "704E0341BBE8333D"
-				item: {
-					count: 1
-					id: "minecraft:paper"
-				}
-				type: "item"
+				type: "xp"
+				xp: 25
 			}]
 			tasks: [{
 				SkillsLevel: {
@@ -402,7 +489,14 @@
 		}
 		{
 			dependencies: ["6A1E8D4C0F2B7A16"]
+			hide_until_deps_complete: true
 			id: "27631F12D97B7FA8"
+			title: "Copper Parts"
+			subtitle: "Forge a blade and a head."
+			description: [
+				"Hammer heated &bcopper&r into a sword blade and a pickaxe head. Forged metal parts hold a better edge than knapped stone and drop straight into the same part-built tools."
+				"Make both. One arms you, the other digs faster than the stone pick ever did."
+			]
 			tasks: [
 				{
 					SkillsLevel: {
