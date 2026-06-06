@@ -1,0 +1,2096 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ir_modern_industrialization_steam_industry"
+	group: "3F77A31B7D30C0AA"
+	hide_quest_until_deps_complete: true
+	icon: {
+		id: "modern_industrialization:large_steam_boiler"
+	}
+	id: "4954020000000000"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			hide_until_deps_complete: false
+			icon: {
+				id: "modern_industrialization:forge_hammer"
+			}
+			dependencies: ["4954011000000001"]
+			id: "4954021000000002"
+			title: "Forge Hammer"
+			subtitle: "Bootstrap by hand."
+			description: [
+				"Craft a &bForge Hammer&r. Before any machines, it lets you beat ingots into the plates, rods, and curved plates &6Modern Industrialization&r runs on."
+				"Slow going, but it is how the whole tech tree gets its first parts."
+			]
+			rewards: [
+				{
+					id: "4954023000002000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "4954023000002001"
+					table_id: 8430738502437568513L
+					title: "A starter cache for the first builds."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954022000002000"
+				item: { count: 1, id: "modern_industrialization:forge_hammer" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4954021000000002"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "modern_industrialization:coke_oven"
+			}
+			id: "4954021000000004"
+			title: "Coke Oven"
+			subtitle: "Coal into coke."
+			description: [
+				"Build a &bCoke Oven&r. It bakes coal into coke and gives &bcreosote&r on the side, the fuel the steam &bfurnace&r needs to reach steel."
+				"A small multiblock, the first real structure of the MI line."
+			]
+			rewards: [
+				{
+					id: "4954023000004000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "4954023000004001"
+					table_id: 8430738502437568513L
+					title: "A cache to start the smelting chain."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954022000004000"
+				item: { count: 1, id: "modern_industrialization:coke_oven" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4954021000000004"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "modern_industrialization:steam_blast_furnace"
+			}
+			id: "4954021000000006"
+			title: "Steam Blast Furnace"
+			subtitle: "Your first steel."
+			description: [
+				"Assemble the &bSteam Blast Furnace&r. Fed iron and coke and driven by steam, it produces &bsteel&r, the metal nearly every machine ahead is built from."
+				"This is the steam tier doing real work, no electricity in sight yet."
+			]
+			rewards: [
+				{
+					id: "4954023000006000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "4954023000006001"
+					table_id: 8430738502437568513L
+					title: "A solid cache for the steel stage."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954022000006000"
+				item: { count: 1, id: "modern_industrialization:steam_blast_furnace" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4954021000000006"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "modern_industrialization:large_steam_boiler"
+			}
+			id: "4954021000000007"
+			title: "Large Steam Boiler"
+			subtitle: "Make the steam."
+			description: [
+				"Build a &bLarge Steam Boiler&r. Heat and water in, steam out, and that steam is what powers the whole bronze tier of machines before you ever touch a cable."
+				"Pipe it to your machines and keep the water flowing."
+			]
+			rewards: [
+				{
+					id: "4954023000007000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "4954023000007001"
+					table_id: 8430738502437568513L
+					title: "Materials for the boiler room."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954022000007000"
+				item: { count: 1, id: "modern_industrialization:large_steam_boiler" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4954021000000006"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "modern_industrialization:steam_quarry"
+			}
+			id: "4954021000000009"
+			title: "Steam Quarry"
+			subtitle: "Mine on steam."
+			description: [
+				"Build a &bSteam Quarry&r. Running on steam it digs out an area automatically, the early hands-off source of the ore your macerators will double."
+				"Set it over good ground and let the steam do the digging."
+			]
+			rewards: [
+				{
+					id: "4954023000009000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "4954023000009001"
+					table_id: 8430738502437568513L
+					title: "A cache for the mining rig."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954022000009000"
+				item: { count: 1, id: "modern_industrialization:steam_quarry" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4954021000000007"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "modern_industrialization:large_tank"
+			}
+			id: "495402100000000A"
+			title: "Large Tank"
+			subtitle: "Store steam and fluids."
+			description: [
+				"Build a &bLarge Tank&r multiblock. It banks the steam your &bboiler&r makes and any other fluid your line handles, the buffer that keeps machines from stalling."
+				"Bigger tanks mean your steam survives a demand spike."
+			]
+			rewards: [
+				{
+					id: "495402300000A000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "495402300000A001"
+					table_id: 8430738502437568513L
+					title: "Supplies for the tank build."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "495402200000A000"
+				item: { count: 1, id: "modern_industrialization:large_tank" }
+				type: "item"
+			}]
+			x: 11.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["4954021000000006"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "modern_industrialization:bronze_macerator"
+			}
+			id: "495402100000000C"
+			title: "Bronze Macerator"
+			subtitle: "Double your ore."
+			description: [
+				"Build a &bBronze Macerator&r. It grinds raw ore into two dusts each, doubling your metal before smelting, the single most important step in MI ore processing."
+				"Run everything through it; the extra ingots add up fast."
+			]
+			rewards: [
+				{
+					id: "495402300000C000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "495402300000C001"
+					table_id: 8430738502437568513L
+					title: "A cache for the ore-doubling line."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "495402200000C000"
+				item: { count: 1, id: "modern_industrialization:bronze_macerator" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4954021000000006"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "modern_industrialization:bronze_compressor"
+			}
+			id: "495402100000000D"
+			title: "Bronze Compressor"
+			subtitle: "Press plates and rods."
+			description: [
+				"Craft a &bBronze Compressor&r. It presses ingots into plates, rods, and wire on steam, automating the parts the &bforge hammer&r made by hand."
+				"Retire the hammer for bulk work once this is running."
+			]
+			rewards: [
+				{
+					id: "495402300000D000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "495402300000D001"
+					table_id: 8430738502437568513L
+					title: "Parts for the pressing line."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "495402200000D000"
+				item: { count: 1, id: "modern_industrialization:bronze_compressor" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4954021000000006"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "modern_industrialization:steel_wiremill"
+			}
+			id: "495402100000000E"
+			title: "Steel Wiremill"
+			subtitle: "Spin wire on steam."
+			description: [
+				"Build a &bSteel Wiremill&r. It draws ingots into wire by the stack, feeding the constant wire demand of cables and electronics without hand-crafting."
+				"Wire is everywhere ahead, so automate it early."
+			]
+			rewards: [
+				{
+					id: "495402300000E000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "495402300000E001"
+					table_id: 8430738502437568513L
+					title: "A cache for the wire supply."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "495402200000E000"
+				item: { count: 1, id: "modern_industrialization:steel_wiremill" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4954021000000006"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "modern_industrialization:bronze_mixer"
+			}
+			id: "495402100000000F"
+			title: "Bronze Mixer"
+			subtitle: "Combine your inputs."
+			description: [
+				"Craft a &bBronze Mixer&r. It blends materials and fluids for the recipes that need more than one input, rounding out the steam-tier processing set."
+				"Macerate, compress, mix: the bronze trio covers most early needs."
+			]
+			rewards: [
+				{
+					id: "495402300000F000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "495402300000F001"
+					table_id: 8430738502437568513L
+					title: "A few parts for the mixer."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "495402200000F000"
+				item: { count: 1, id: "modern_industrialization:bronze_mixer" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4954021000000007"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "extended_industrialization:large_steam_furnace"
+			}
+			id: "4954021000000010"
+			title: "Large Steam Furnace"
+			subtitle: "Smelt in bulk."
+			description: [
+				"Build the &6Extended Industrialization&r &bLarge Steam Furnace&r. It smelts many stacks at once on steam, the throughput answer when single furnaces choke your supply."
+				"A big steam machine for a big base."
+			]
+			rewards: [
+				{
+					id: "4954023000010000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "4954023000010001"
+					table_id: 8430738502437568513L
+					title: "Materials for the bulk furnace."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954022000010000"
+				item: { count: 1, id: "extended_industrialization:large_steam_furnace" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4954021000000007"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "extended_industrialization:large_steam_macerator"
+			}
+			id: "4954021000000011"
+			title: "Large Steam Macerator"
+			subtitle: "Double ore at scale."
+			description: [
+				"Build the &bLarge Steam Macerator&r. It grinds ore in volume, the high-throughput version of the &bbronze macerator&r for a quarry running flat out."
+				"Keep your ore-doubling ahead of your mining."
+			]
+			rewards: [
+				{
+					id: "4954023000011000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "4954023000011001"
+					table_id: 8430738502437568513L
+					title: "A cache for the bulk grinder."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954022000011000"
+				item: { count: 1, id: "extended_industrialization:large_steam_macerator" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4954021000000007"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "extended_industrialization:steam_farmer"
+			}
+			id: "4954021000000012"
+			title: "Steam Farmer"
+			subtitle: "Automate the fields."
+			description: [
+				"Build a &bSteam Farmer&r. It plants and harvests crops on steam power, an &6Extended Industrialization&r machine that turns farmland into a hands-off supply line."
+				"Useful for feeding fermenters, composters, and yourself."
+			]
+			rewards: [
+				{
+					id: "4954023000012000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "4954023000012001"
+					table_id: 8430738502437568513L
+					title: "Parts for the steam farm."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954022000012000"
+				item: { count: 1, id: "extended_industrialization:steam_farmer" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["4954021000000006"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "modern_industrialization:steel_barrel"
+			}
+			id: "4954021000000014"
+			title: "Steel Barrel"
+			subtitle: "Bulk item storage."
+			description: [
+				"Craft a &bSteel Barrel&r. It holds a deep stack of a single item, the cheap, sturdy storage for the piles of dust and ingot the steam line produces."
+				"Line a wall with them and stop overflowing chests."
+			]
+			rewards: [
+				{
+					id: "4954023000014000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "4954023000014001"
+					table_id: 8430738502437568513L
+					title: "A cache for the stockroom."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954022000014000"
+				item: { count: 1, id: "modern_industrialization:steel_barrel" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"4954021000000004"
+				"4954021000000006"
+				"4954021000000007"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				id: "extended_industrialization:large_steam_macerator"
+			}
+			id: "4954021000000016"
+			title: "Steam Tier, Proven"
+			subtitle: "The bronze age of MI is done."
+			description: [
+				"With a &bcoke oven&r, a &bsteam blast furnace&r, boilers, and the bronze machines all running, the steam tier is complete. You can make &bsteel&r and double ore without a single cable."
+				"This is the launch point into the electric machines that follow."
+			]
+			rewards: [
+				{
+					id: "4954023000016000"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "4954023000016001"
+					table_id: 8430738502437568531L
+					title: "A solid cache for crossing into electric."
+					type: "loot"
+				}
+				{
+					auto: "enabled"
+					command: "/astages add {p} ir_factory_discipline_complete true true"
+					id: "4954023000016002"
+					permission_level: 2
+					silent: true
+					team_reward: true
+					type: "command"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954022000016000"
+				item: { count: 1, id: "extended_industrialization:large_steam_macerator" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4954021000000007"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "modern_industrialization:steel_boiler"
+			}
+			id: "4954021000000017"
+			title: "Steel Boiler"
+			subtitle: "A sturdier steam source."
+			description: [
+				"Build a &bSteel Boiler&r. It withstands more than the bronze boiler and feeds steam to the heavier machines, the upgrade for a steam network under real load."
+				"Step up to &bsteel&r boilers before your demand outgrows the bronze."
+			]
+			rewards: [
+				{
+					id: "51E88FE3CDE79CAD"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "7A45D049BEB5CF16"
+					table_id: 8430738502437568513L
+					title: "A cache for the upgraded boiler."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954022000000017"
+				item: { count: 1, id: "modern_industrialization:steel_boiler" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4954021000000019"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "modern_industrialization:assembler"
+			}
+			id: "4954021000000018"
+			title: "Assembler"
+			subtitle: "Build the complex parts."
+			description: [
+				"Build an &bAssembler&r. It crafts the multi-part components, circuits, and machine pieces that hand-crafting cannot, the workshop behind the electric tier."
+				"Most LV machines trace a part or two back through here."
+			]
+			rewards: [
+				{
+					id: "53DC90C1EAE5C0A0"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "17EF09BB8DCB5DF6"
+					table_id: 8430738502437568513L
+					title: "Components for the assembler line."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954022000000018"
+				item: { count: 1, id: "modern_industrialization:assembler" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["4954021000000006"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "modern_industrialization:basic_machine_hull"
+			}
+			id: "4954021000000019"
+			title: "Basic Machine Hull"
+			subtitle: "The shell of every electric machine."
+			description: [
+				"Craft a &bBasic Machine Hull&r. It is the casing every LV electric machine is built around, the part that marks your shift from steam to electricity."
+				"Make a stack; the electric tier wants one for each machine."
+			]
+			rewards: [
+				{
+					id: "475217D0340F58F7"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "3DA9AD54ED6F6E52"
+					table_id: 8430738502437568513L
+					title: "A cache to begin the electric tier."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954022000000019"
+				item: { count: 1, id: "modern_industrialization:basic_machine_hull" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4954021000000019"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "modern_industrialization:electric_furnace"
+			}
+			id: "495402100000001A"
+			title: "Electric Furnace"
+			subtitle: "Smelt on EU."
+			description: [
+				"Build an &bElectric Furnace&r. It smelts on electrical units instead of steam, faster and cleaner once you have power to spare, the first LV machine most players make."
+				"Feed it from an energy hatch and a cable."
+			]
+			rewards: [
+				{
+					id: "1B668E680254FB76"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "294C79E993D23FF8"
+					table_id: 8430738502437568513L
+					title: "A cache for the first electric build."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "495402200000001A"
+				item: { count: 1, id: "modern_industrialization:electric_furnace" }
+				type: "item"
+			}]
+			x: 11.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4954021000000019"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "modern_industrialization:electric_macerator"
+			}
+			id: "495402100000001B"
+			title: "Electric Macerator"
+			subtitle: "Ore doubling, electrified."
+			description: [
+				"Craft an &bElectric Macerator&r. It doubles ore like the bronze unit but on &6EU&r, faster and able to keep pace with a fully electric base."
+				"Move your ore processing here once the power is steady."
+			]
+			rewards: [
+				{
+					id: "26A25D522FC6015F"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "22F854979C86C6FD"
+					table_id: 8430738502437568513L
+					title: "Parts for the electric grinder."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "495402200000001B"
+				item: { count: 1, id: "modern_industrialization:electric_macerator" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["4954021000000019"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "modern_industrialization:electric_compressor"
+			}
+			id: "495402100000001C"
+			title: "Electric Compressor"
+			subtitle: "Press on power."
+			description: [
+				"Build an &bElectric Compressor&r. The electric version of the pressing line, it turns out plates, rods, and wire faster than steam ever could."
+				"Throughput climbs the moment you electrify it."
+			]
+			rewards: [
+				{
+					id: "7D126002E40D19ED"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "11F4DBC97C035A4A"
+					table_id: 8430738502437568513L
+					title: "A cache for the press upgrade."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "495402200000001C"
+				item: { count: 1, id: "modern_industrialization:electric_compressor" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["4954021000000019"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "modern_industrialization:electric_cutting_machine"
+			}
+			id: "495402100000001D"
+			title: "Electric Cutting Machine"
+			subtitle: "Cut rods and bolts."
+			description: [
+				"Craft an &bElectric Cutting Machine&r. It slices ingots and rods into bolts, rings, and finer stock, a part of the chain the &bcompressor&r cannot cover."
+				"Several recipes dead-end without cut parts."
+			]
+			rewards: [
+				{
+					id: "568B2EFC5838CC0B"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "50DC301C9FE9E9C3"
+					table_id: 8430738502437568513L
+					title: "A few parts for the cutter."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "495402200000001D"
+				item: { count: 1, id: "modern_industrialization:electric_cutting_machine" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["4954021000000019"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "modern_industrialization:electric_mixer"
+			}
+			id: "495402100000001E"
+			title: "Electric Mixer"
+			subtitle: "Blend on EU."
+			description: [
+				"Build an &bElectric Mixer&r. The electric mixer handles the multi-input recipes at speed, the powered successor to the &bbronze mixer&r."
+				"Faster blends keep the alloy lines fed."
+			]
+			rewards: [
+				{
+					id: "6BE3A6DB985FA60B"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "0EDD1BA812A16BCF"
+					table_id: 8430738502437568513L
+					title: "Parts for the mixing stage."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "495402200000001E"
+				item: { count: 1, id: "modern_industrialization:electric_mixer" }
+				type: "item"
+			}]
+			x: 11.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["4954021000000019"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "modern_industrialization:electric_packer"
+			}
+			id: "495402100000001F"
+			title: "Electric Packer"
+			subtitle: "Pack into blocks and more."
+			description: [
+				"Craft an &bElectric Packer&r. It bundles items into blocks, crates, and packed forms, tidying storage and feeding recipes that want the packed shape."
+				"The compact half of MI's packing pair."
+			]
+			rewards: [
+				{
+					id: "45E58C766C8232B9"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "7A381A8292B6B9F7"
+					table_id: 8430738502437568513L
+					title: "A cache for the packing line."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "495402200000001F"
+				item: { count: 1, id: "modern_industrialization:electric_packer" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["4954021000000019"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "modern_industrialization:electric_unpacker"
+			}
+			id: "4954021000000020"
+			title: "Electric Unpacker"
+			subtitle: "Break packed forms apart."
+			description: [
+				"Build an &bElectric Unpacker&r. It undoes what the packer does, splitting blocks and bundles back into their parts, the other half of the pair."
+				"Pack for storage, unpack for use."
+			]
+			rewards: [
+				{
+					id: "6A429A97CB994408"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "06D4D0ED321D283C"
+					table_id: 8430738502437568513L
+					title: "A few parts for the unpacker."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954022000000020"
+				item: { count: 1, id: "modern_industrialization:electric_unpacker" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["4954021000000019"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "modern_industrialization:electric_water_pump"
+			}
+			id: "4954021000000021"
+			title: "Electric Water Pump"
+			subtitle: "Draw water on demand."
+			description: [
+				"Build an &bElectric Water Pump&r. It supplies the water your boilers and chemistry need without hand-hauling buckets, the quiet utility behind a busy base."
+				"Set it on water and pipe the output where it is needed."
+			]
+			rewards: [
+				{
+					id: "5A8F6FD88BC38B7D"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "7BAA38EE0C2CE974"
+					table_id: 8430738502437568513L
+					title: "Parts for the water supply."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954022000000021"
+				item: { count: 1, id: "modern_industrialization:electric_water_pump" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["495402100000001A"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "modern_industrialization:electric_blast_furnace"
+			}
+			id: "4954021000000022"
+			title: "Electric Blast Furnace"
+			subtitle: "The gateway to better alloys."
+			description: [
+				"Build the &bElectric Blast Furnace&r. With enough heat and &6EU&r it smelts the advanced alloys &bsteel&r cannot reach, the structure that opens MI's higher materials."
+				"Add heating coils to raise its temperature for the tougher recipes."
+			]
+			rewards: [
+				{
+					id: "5422FDE8850CF0AE"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "49CA69B29F96364C"
+					table_id: 8430738502437568513L
+					title: "A solid cache for the alloy works."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954022000000022"
+				item: { count: 1, id: "modern_industrialization:electric_blast_furnace" }
+				type: "item"
+			}]
+			x: 11.0d
+			y: -11.0d
+		}
+		{
+			dependencies: ["4954021000000019"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "modern_industrialization:polarizer"
+			}
+			id: "4954021000000023"
+			title: "Polarizer"
+			subtitle: "Magnetize your rods."
+			description: [
+				"Craft a &bPolarizer&r. It magnetizes &bsteel&r rods into the magnetic parts that motors, coils, and the better machines depend on."
+				"A small machine that unblocks a surprising amount of the tree."
+			]
+			rewards: [
+				{
+					id: "6A64965A956233F5"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "091BEAB2D5545F50"
+					table_id: 8430738502437568513L
+					title: "A cache for the magnet parts."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954022000000023"
+				item: { count: 1, id: "modern_industrialization:polarizer" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["4954021000000019"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "modern_industrialization:lv_diesel_generator"
+			}
+			id: "4954021000000024"
+			title: "LV Diesel Generator"
+			subtitle: "Fuel into EU."
+			description: [
+				"Build an &bLV Diesel Generator&r. It burns the diesel from your oil chain for low-voltage power, a reliable way to electrify the first machines."
+				"Pair it with a fuel tank and let it run."
+			]
+			rewards: [
+				{
+					id: "47E50F2499DF8205"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "6231D085301D81B5"
+					table_id: 8430738502437568513L
+					title: "A cache to power the LV tier."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954022000000024"
+				item: { count: 1, id: "modern_industrialization:lv_diesel_generator" }
+				type: "item"
+			}]
+			x: 11.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4954021000000007"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "modern_industrialization:lv_steam_turbine"
+			}
+			id: "4954021000000025"
+			title: "LV Steam Turbine"
+			subtitle: "Steam into electricity."
+			description: [
+				"Build an &bLV Steam Turbine&r. It spends the steam you already make to produce &6EU&r, the bridge that carries your bronze-tier boilers into the electric age."
+				"The cleanest link between the two halves of MI."
+			]
+			rewards: [
+				{
+					id: "10B426D26F0D23F7"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "6ADC0D67C29EEC17"
+					table_id: 8430738502437568513L
+					title: "A cache for the steam-to-power bridge."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954022000000025"
+				item: { count: 1, id: "modern_industrialization:lv_steam_turbine" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["4954021000000024"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "modern_industrialization:lv_storage_unit"
+			}
+			id: "4954021000000026"
+			title: "LV Storage Unit"
+			subtitle: "Bank your power."
+			description: [
+				"Craft an &bLV Storage Unit&r. It stores &6EU&r so your generators can run steadily while demand spikes and dips, the &bbattery&r of the low-voltage grid."
+				"Size storage to the gap between supply and the worst spike."
+			]
+			rewards: [
+				{
+					id: "0C08BF120B484AF2"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "23FB3057888AB764"
+					table_id: 8430738502437568513L
+					title: "Parts for the power bank."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954022000000026"
+				item: { count: 1, id: "modern_industrialization:lv_storage_unit" }
+				type: "item"
+			}]
+			x: 14.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4954021000000026"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "modern_industrialization:lv_mv_transformer"
+			}
+			id: "4954021000000027"
+			title: "LV to MV Transformer"
+			subtitle: "Step up a tier."
+			description: [
+				"Build an &bLV to MV Transformer&r. It lifts power from low to medium voltage, the gateway to the faster machines that the next tier unlocks."
+				"MI runs in voltage tiers, and this is how you climb one."
+			]
+			rewards: [
+				{
+					id: "0197CEFCCEC2FC90"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "1EF28A77A19EF914"
+					table_id: 8430738502437568513L
+					title: "A cache for the voltage step-up."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954022000000027"
+				item: { count: 1, id: "modern_industrialization:lv_mv_transformer" }
+				type: "item"
+			}]
+			x: 13.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4954021000000019"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "modern_industrialization:configurable_chest"
+			}
+			id: "4954021000000028"
+			title: "Configurable Chest"
+			subtitle: "Storage that filters."
+			description: [
+				"Craft a &bConfigurable Chest&r. You set exactly what each slot accepts and which faces feed in or out, smart storage that sorts itself."
+				"The backbone of an organized MI item network."
+			]
+			rewards: [
+				{
+					id: "1181D6E07B42DF93"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "093274028B9BAC34"
+					table_id: 8430738502437568513L
+					title: "A cache for the smart storage."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954022000000028"
+				item: { count: 1, id: "modern_industrialization:configurable_chest" }
+				type: "item"
+			}]
+			x: 11.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["4954021000000019"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "modern_industrialization:configurable_tank"
+			}
+			id: "4954021000000029"
+			title: "Configurable Tank"
+			subtitle: "Fluids, filtered."
+			description: [
+				"Build a &bConfigurable Tank&r. The fluid counterpart to the chest, it holds a set fluid and routes it through chosen faces, keeping your plumbing predictable."
+				"Pair chests and tanks for a tidy base."
+			]
+			rewards: [
+				{
+					id: "67E9567D79DF58D6"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "461D67163CA07CE1"
+					table_id: 8430738502437568513L
+					title: "Parts for the fluid storage."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954022000000029"
+				item: { count: 1, id: "modern_industrialization:configurable_tank" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["495402100000000A"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "modern_industrialization:large_tank_hatch"
+			}
+			id: "495402100000002A"
+			title: "Large Tank Hatch"
+			subtitle: "Access the big tank."
+			description: [
+				"Craft a &bLarge Tank Hatch&r. It is the input or output port set into a Large Tank multiblock, the connection between the bank of fluid and your pipes."
+				"Multiblocks talk to the world through their hatches."
+			]
+			rewards: [
+				{
+					id: "52449DD5999E32C0"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "119F94C89397B2E4"
+					table_id: 8430738502437568513L
+					title: "A few parts for the tank ports."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "495402200000002A"
+				item: { count: 1, id: "modern_industrialization:large_tank_hatch" }
+				type: "item"
+			}]
+			x: 11.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["4954021000000019"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "modern_industrialization:trash_can"
+			}
+			id: "495402100000002B"
+			title: "Automatic Trash Can"
+			subtitle: "Void the overflow."
+			description: [
+				"Build an &bAutomatic Trash Can&r. It destroys unwanted items or fluids on contact, the relief valve for a base drowning in byproducts."
+				"&bFilter&r it carefully so it only eats what you mean to throw away."
+			]
+			rewards: [
+				{
+					id: "636744D625741F04"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "3F15DE3D1A7669AE"
+					table_id: 8430738502437568513L
+					title: "A cache for the cleanup."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "495402200000002B"
+				item: { count: 1, id: "modern_industrialization:trash_can" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["4954021000000019"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "modern_industrialization:steel_item_input_hatch"
+			}
+			id: "495402100000002C"
+			title: "Item Input Hatch"
+			subtitle: "Feed a multiblock."
+			description: [
+				"Craft a &bSteel Item Input Hatch&r. Set into a multiblock's casing it accepts the items the structure processes, the inbound port for the big machines."
+				"Every multiblock needs a way to be fed."
+			]
+			rewards: [
+				{
+					id: "1DB10B7F1D2DF6A7"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "7BA09EAA4017950E"
+					table_id: 8430738502437568513L
+					title: "Parts for the multiblock input."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "495402200000002C"
+				item: { count: 1, id: "modern_industrialization:steel_item_input_hatch" }
+				type: "item"
+			}]
+			x: 11.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["495402100000002C"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "modern_industrialization:steel_item_output_hatch"
+			}
+			id: "495402100000002D"
+			title: "Item Output Hatch"
+			subtitle: "Take the products off."
+			description: [
+				"Build a &bSteel Item Output Hatch&r. It is the port a multiblock pushes its finished items out through, the outbound counterpart to the input hatch."
+				"Input and output hatches complete the machine's plumbing."
+			]
+			rewards: [
+				{
+					id: "4F7ECF1DBFB02B1A"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "094C5C925DB182C0"
+					table_id: 8430738502437568513L
+					title: "A few parts for the multiblock output."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "495402200000002D"
+				item: { count: 1, id: "modern_industrialization:steel_item_output_hatch" }
+				type: "item"
+			}]
+			x: 11.0d
+			y: -12.5d
+		}
+		{
+			dependencies: ["4954021000000019"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "modern_industrialization:lv_energy_input_hatch"
+			}
+			id: "495402100000002E"
+			title: "Energy Input Hatch"
+			subtitle: "Power the multiblock."
+			description: [
+				"Craft an &bLV Energy Input Hatch&r. It feeds &6EU&r into a multiblock from your cables, the power connection the electric structures cannot run without."
+				"Match the hatch tier to the voltage you are supplying."
+			]
+			rewards: [
+				{
+					id: "248D8D5467DE402D"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "5B282852407C3F68"
+					table_id: 8430738502437568513L
+					title: "A cache for the power input."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "495402200000002E"
+				item: { count: 1, id: "modern_industrialization:lv_energy_input_hatch" }
+				type: "item"
+			}]
+			x: 11.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["495402100000002E"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "modern_industrialization:lv_energy_output_hatch"
+			}
+			id: "495402100000002F"
+			title: "Energy Output Hatch"
+			subtitle: "Export generated power."
+			description: [
+				"Build an &bLV Energy Output Hatch&r. It pushes &6EU&r out of a generating multiblock into your grid, the outbound power port for turbines and generators."
+				"Wire it into your storage and machines."
+			]
+			rewards: [
+				{
+					id: "350FA1F99A00314E"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "42410AD01B5C8F2A"
+					table_id: 8430738502437568513L
+					title: "Parts for the power output."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "495402200000002F"
+				item: { count: 1, id: "modern_industrialization:lv_energy_output_hatch" }
+				type: "item"
+			}]
+			x: 11.0d
+			y: -14.0d
+		}
+		{
+			dependencies: ["4954021000000007"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "extended_industrialization:steel_solar_boiler"
+			}
+			id: "4954021000000030"
+			title: "Steel Solar Boiler"
+			subtitle: "Steam from sunlight."
+			description: [
+				"Build a &bSteel Solar Boiler&r. It makes steam from sunlight with no fuel, an &6Extended Industrialization&r route to free steam for a daytime base."
+				"Stack them for more steam, then turbine it into power."
+			]
+			rewards: [
+				{
+					id: "17006AAE14BB2B67"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "7BA2EF7A9E93533C"
+					table_id: 8430738502437568513L
+					title: "A cache for the solar steam."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954022000000030"
+				item: { count: 1, id: "extended_industrialization:steel_solar_boiler" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["4954021000000019"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "extended_industrialization:electric_alloy_smelter"
+			}
+			id: "4954021000000031"
+			title: "Electric Alloy Smelter"
+			subtitle: "Alloys without the multiblock."
+			description: [
+				"Craft an &bElectric Alloy Smelter&r. It combines metals into alloys in a single machine, a simpler path for the alloys that do not need the full blast &bfurnace&r."
+				"Convenient for the lighter alloying jobs."
+			]
+			rewards: [
+				{
+					id: "69D75805C40CAAD4"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "5C565F3F7E5131EC"
+					table_id: 8430738502437568513L
+					title: "A cache for the alloy bench."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954022000000031"
+				item: { count: 1, id: "extended_industrialization:electric_alloy_smelter" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["4954021000000019"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "extended_industrialization:electric_brewery"
+			}
+			id: "4954021000000032"
+			title: "Electric Brewery"
+			subtitle: "Brew fluids at scale."
+			description: [
+				"Build an &bElectric Brewery&r. It produces the brewed fluids some recipes call for, an &6Extended Industrialization&r machine for the chemistry-adjacent steps."
+				"Another niche the base MI machines leave open."
+			]
+			rewards: [
+				{
+					id: "6E5A49E2E44BA582"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "6E6DD12A36183C5F"
+					table_id: 8430738502437568513L
+					title: "Parts for the brewery."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954022000000032"
+				item: { count: 1, id: "extended_industrialization:electric_brewery" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["4954021000000019"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "extended_industrialization:electric_canning_machine"
+			}
+			id: "4954021000000033"
+			title: "Electric Canning Machine"
+			subtitle: "Fill and empty containers."
+			description: [
+				"Craft an &bElectric Canning Machine&r. It loads fluids and items into cans and cells and pulls them back out, handy for handling fuels and gases by the unit."
+				"The packaging step for fluids."
+			]
+			rewards: [
+				{
+					id: "47CF70581495C1A8"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "4413A0FEFC77764D"
+					table_id: 8430738502437568513L
+					title: "A cache for the canning line."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954022000000033"
+				item: { count: 1, id: "extended_industrialization:electric_canning_machine" }
+				type: "item"
+			}]
+			x: 11.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["4954021000000019"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "extended_industrialization:electric_composter"
+			}
+			id: "4954021000000034"
+			title: "Electric Composter"
+			subtitle: "Turn scraps into compost."
+			description: [
+				"Build an &bElectric Composter&r. It converts plant matter into compost and &bfertilizer&r on &6EU&r, closing the loop between your farms and your soil."
+				"Feed it the surplus your steam farm produces."
+			]
+			rewards: [
+				{
+					id: "5E6718AC0477035D"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "73DFFF1E86AE92DA"
+					table_id: 8430738502437568513L
+					title: "A few parts for the composter."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954022000000034"
+				item: { count: 1, id: "extended_industrialization:electric_composter" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["4954021000000019"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "extended_industrialization:electric_honey_extractor"
+			}
+			id: "4954021000000035"
+			title: "Electric Honey Extractor"
+			subtitle: "Harvest the hives."
+			description: [
+				"Craft an &bElectric Honey Extractor&r. It pulls honey and comb from filled hives automatically, an &6Extended Industrialization&r machine for the apiary side of a base."
+				"Niche, but a clean source of honey at volume."
+			]
+			rewards: [
+				{
+					id: "0E811DFDFB4BE1EC"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "4366E26E004985A9"
+					table_id: 8430738502437568513L
+					title: "A cache for the apiary."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954022000000035"
+				item: { count: 1, id: "extended_industrialization:electric_honey_extractor" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["4954021000000019"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "extended_industrialization:electric_waste_collector"
+			}
+			id: "4954021000000036"
+			title: "Electric Waste Collector"
+			subtitle: "Gather the byproducts."
+			description: [
+				"Build an &bElectric Waste Collector&r. It collects the waste and stray output some machines produce, keeping a busy floor clean and recovering what it can."
+				"The tidy end of a heavy &dindustrial&r setup."
+			]
+			rewards: [
+				{
+					id: "08D514F25AE62A57"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "6581E1D11437ADE4"
+					table_id: 8430738502437568513L
+					title: "A cache to round out the line."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954022000000036"
+				item: { count: 1, id: "extended_industrialization:electric_waste_collector" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: 7.0d
+		}
+	]
+}
