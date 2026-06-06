@@ -1,0 +1,1421 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ren_end_threshold"
+	group: "0B038EB15EBBFD95"
+	hide_quest_until_deps_complete: true
+	icon: {
+		id: "minecraft:end_portal_frame"
+	}
+	id: "0B03001000000009"
+	order_index: 8
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"0B03104000000050"
+				"0B03105000000050"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				id: "minecraft:end_portal_frame"
+			}
+			id: "0B03109000000001"
+			title: "End Threshold"
+			subtitle: "Open the way to the End."
+			description: [
+				"Reaching the End takes more than a single ender pearl trip now. &6End Remastered&r swaps the twelve-eye portal for a set of distinct eyes you earn across the whole journey, so this chapter is where all that effort cashes in."
+				"Gather the eyes, find the &bstronghold&r, and face what guards the End."
+			]
+			rewards: [{
+				id: "0B03309000000001"
+				type: "xp"
+				xp: 25
+			}]
+			size: 1.5d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				dimension: "minecraft:overworld"
+				id: "0B03209000000001"
+				type: "dimension"
+			}]
+			x: 0.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["0B03109000000001"]
+			hide_until_deps_complete: true
+			id: "0B03109000000010"
+			title: "Magical Eye"
+			subtitle: "The first of the set."
+			description: [
+				"Produce the &bMagical Eye&r. It is one of the keys &6End Remastered&r scatters across progression, handed to you for finishing the magic chapter's milestone."
+				"Each eye is found a different way, and the portal wants the full set."
+			]
+			rewards: [{
+				id: "0B03309000000010"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03209000000010"
+				item: { count: 1, id: "endrem:magical_eye" }
+				type: "item"
+			}]
+			x: -9.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0B03109000000010"]
+			hide_until_deps_complete: true
+			id: "0B03109000000011"
+			title: "Three More Eyes"
+			subtitle: "Nether, Corrupted, and Cursed."
+			description: [
+				"Gather the &bNether Eye&r, &bCorrupted Eye&r, and &bCursed Eye&r. These came to you as rewards for clearing the nether and magic milestones, three more pieces of the portal key."
+				"Keep them safe. Losing an eye means earning it again."
+			]
+			rewards: [{
+				id: "0B03309000000011"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "0B03209000000011"
+					item: { count: 1, id: "endrem:nether_eye" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "0B03209000000012"
+					item: { count: 1, id: "endrem:corrupted_eye" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "0B03209000000013"
+					item: { count: 1, id: "endrem:cursed_eye" }
+					type: "item"
+				}
+			]
+			x: -9.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"0B03109000000011"
+				"0B03103000000031"
+				"0B03106000000050"
+			]
+			hide_until_deps_complete: true
+			id: "0B03109000000012"
+			title: "The Full Set of Eyes"
+			subtitle: "Assemble every key."
+			description: [
+				"Collect the remaining eyes: Evil, Cold, Lost, Undead, Old, Black, Cryptic, and Rogue. Between them and the earlier finds you now hold every key the End portal demands."
+				"These are the payoff for milestones spread across the pack, so a gap here means a chapter left unfinished."
+			]
+			rewards: [{
+				id: "0B03309000000012"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "0B03209000000014"
+					item: { count: 1, id: "endrem:evil_eye" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "0B03209000000015"
+					item: { count: 1, id: "endrem:cold_eye" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "0B03209000000016"
+					item: { count: 1, id: "endrem:lost_eye" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "0B03209000000017"
+					item: { count: 1, id: "endrem:undead_eye" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "0B03209000000018"
+					item: { count: 1, id: "endrem:old_eye" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "0B03209000000019"
+					item: { count: 1, id: "endrem:black_eye" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "0B0320900000001A"
+					item: { count: 1, id: "endrem:cryptic_eye" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "0B0320900000001B"
+					item: { count: 1, id: "endrem:rogue_eye" }
+					type: "item"
+				}
+			]
+			x: -9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0B03109000000001"]
+			hide_until_deps_complete: true
+			id: "0B03109000000020"
+			title: "Find a Stronghold"
+			subtitle: "Locate the portal room."
+			description: [
+				"Track down a &bStronghold&r and its portal room. The frame is built but dormant, waiting for its eyes, so confirm the location before you commit to the full set."
+				"An ender eye thrown the old way still points the path there."
+			]
+			rewards: [{
+				id: "0B03309000000020"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03209000000020"
+				structure: "minecraft:stronghold"
+				type: "structure"
+			}]
+			x: -5.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"0B03109000000012"
+				"0B03109000000020"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				id: "unusualend:ancient_shard"
+			}
+			id: "0B03109000000022"
+			title: "Into the End"
+			subtitle: "Seat the eyes and step through."
+			description: [
+				"Place every eye in the frame and drop into the End. Bring blocks to bridge with, a bow, and something for the fall, because the landing island is ringed by void."
+				"Setting foot on the central island is the milestone the whole chapter builds toward."
+			]
+			rewards: [
+				{
+					id: "0B03309000000022"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "0B03309000000021"
+					type: "xp"
+					xp: 20
+				}
+			]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				dimension: "minecraft:the_end"
+				id: "0B03209000000022"
+				type: "dimension"
+			}]
+			x: -5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0B03109000000060"]
+			hide_until_deps_complete: true
+			id: "0B03109000000040"
+			title: "Ancient Shard"
+			subtitle: "Unusual End's keystone."
+			description: [
+				"Recover an &bAncient Shard&r. It is a core material of &6Unusual End&r, the mod that fills the outer islands with new life, and several of its recipes start here."
+			]
+			rewards: [{
+				id: "0B03309000000040"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03209000000040"
+				item: { count: 1, id: "unusualend:ancient_shard" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0B03109000000022"]
+			hide_until_deps_complete: true
+			id: "0B03109000000023"
+			title: "The Ender Dragon"
+			subtitle: "Bring it down."
+			description: [
+				"Fight the &c&lEnder Dragon&r on its home island. Shoot out the healing crystals on the obsidian pillars first, then work it down with beds detonated at point-blank or a strong melee weapon when it perches."
+				"Its fall opens the outer islands, the End cities, and elytra, and unlocks the End mods this chapter is wrapped around. Mind the void the entire fight."
+			]
+			rewards: [{
+				id: "0B03309000000023"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				entity: "minecraft:ender_dragon"
+				id: "0B03209000000023"
+				type: "kill"
+				value: 1L
+			}]
+			x: -5.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0B03109000000040"]
+			hide_until_deps_complete: true
+			id: "0B03109000000042"
+			title: "Prismalite Gem"
+			subtitle: "A worked End crystal."
+			description: [
+				"Craft a &bPrismalite Gem&r. It is one of &6Unusual End&r's signature crystals, refined from shards into the form its gear and blocks call for."
+			]
+			rewards: [{
+				id: "0B03309000000042"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03209000000042"
+				item: { count: 1, id: "unusualend:prismalite_gem" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0B03109000000012"]
+			hide_until_deps_complete: true
+			id: "0B03109000000050"
+			title: "End Blob Jelly"
+			subtitle: "Optional: a slime of the void."
+			description: [
+				"Collect &bEnd Blob Jelly&r. It drops from one of &6Unusual End&r's drifting creatures, a soft reagent for that mod's stranger recipes."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03309000000050"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03209000000050"
+				item: { count: 1, id: "unusualend:end_blob_jelly" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0B03109000000050"]
+			hide_until_deps_complete: true
+			id: "0B03109000000051"
+			title: "Bolok Scale"
+			subtitle: "Optional: a hunted hide."
+			description: [
+				"Take a &bBolok Scale&r. It comes off one of the End's new beasts, a crafting material for &6Unusual End&r's armor and tools."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03309000000051"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03209000000051"
+				item: { count: 1, id: "unusualend:bolok_scale" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0B03109000000051"]
+			hide_until_deps_complete: true
+			id: "0B03109000000052"
+			title: "Bucket of Bluk"
+			subtitle: "Optional: bottled End fluid."
+			description: [
+				"Scoop a &bBucket of Bluk&r. It is a liquid unique to the outer islands, useful in the handful of &6Unusual End&r recipes that ask for it."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03309000000052"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03209000000052"
+				item: { count: 1, id: "unusualend:bluk_bucket" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0B03109000000080"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "unusualend:prismalite_gem"
+			}
+			id: "0B03109000000060"
+			title: "Back to the Overworld"
+			subtitle: "Carry the spoils home."
+			description: [
+				"Return to the overworld with your End haul. The dragon down and the islands open, this is the breath between the crossing and the deeper End work."
+				"From here the End mods are yours to dig into at leisure."
+			]
+			rewards: [
+				{
+					id: "0B03309000000060"
+					type: "xp"
+					xp: 15
+				}
+				{
+					auto: "enabled"
+					command: "/astages add {p} ren_end_threshold_complete true true"
+					icon: {
+						id: "unusualend:prismalite_gem"
+					}
+					id: "0B0330900000007F"
+					permission_level: 2
+					silent: true
+					team_reward: true
+					type: "command"
+				}
+				{
+					id: "0B033090000000FE"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				dimension: "minecraft:overworld"
+				id: "0B03209000000060"
+				type: "dimension"
+			}]
+			x: 8.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0B03109000000078"]
+			hide_until_deps_complete: true
+			id: "0B03109000000092"
+			title: "Prismalite Shard"
+			subtitle: "Optional: the raw crystal."
+			description: [
+				"Collect a &bPrismalite Shard&r. It is the rough form the gem is cut from, gathered straight off the End's crystal growths."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03309000000092"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03209000000092"
+				item: { count: 1, id: "unusualend:prismalite_shard" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["0B03109000000074"]
+			hide_until_deps_complete: true
+			id: "0B03109000000093"
+			title: "Amber Gem"
+			subtitle: "Optional: Better End's amber."
+			description: [
+				"Find an &bAmber Gem&r. &6Better End&r grows amber in its forests, a gemstone its tools and decorative blocks are built around."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03309000000093"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03209000000093"
+				item: { count: 1, id: "betterend:amber_gem" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["0B03109000000093"]
+			hide_until_deps_complete: true
+			id: "0B03109000000094"
+			title: "Aurora Crystal Shards"
+			subtitle: "Optional: shards of light."
+			description: [
+				"Mine &bAurora Crystal Shards&r. They come from the glowing crystals of &6Better End&r's brighter biomes, a luminous material for its higher crafts."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03309000000094"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03209000000094"
+				item: { count: 1, id: "betterend:crystal_shards" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["0B03109000000093"]
+			hide_until_deps_complete: true
+			id: "0B03109000000095"
+			title: "Crystalline Sulphur"
+			subtitle: "Optional: End-grown sulfur."
+			description: [
+				"Collect &bCrystalline Sulphur&r. &6Better End&r deposits it around the islands, a reagent distinct from the alchemy sulfurs you distill back home."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03309000000095"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03209000000095"
+				item: { count: 1, id: "betterend:crystalline_sulphur" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["0B03109000000094"]
+			hide_until_deps_complete: true
+			id: "0B03109000000096"
+			title: "Ender Shard"
+			subtitle: "Optional: refined ender."
+			description: [
+				"Craft an &bEnder Shard&r. It is a worked &6Better End&r material, a step up from raw &bender dust&r toward the mod's better recipes."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03309000000096"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03209000000096"
+				item: { count: 1, id: "betterend:ender_shard" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["0B03109000000060"]
+			hide_until_deps_complete: true
+			id: "0B03109000000097"
+			title: "End Fish"
+			subtitle: "Optional: fish the void pools."
+			description: [
+				"Catch an &bEnd Fish&r. &6Better End&r stocks the islands' pools with their own fish, a fresh food source for long stays in the dimension."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03309000000097"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03209000000097"
+				item: { count: 1, id: "betterend:end_fish_raw" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["0B03109000000097"]
+			hide_until_deps_complete: true
+			id: "0B03109000000098"
+			title: "Cooked End Fish"
+			subtitle: "Optional: cook the catch."
+			description: [
+				"Cook your catch into &bCooked End Fish&r. Fired up it becomes a proper meal, far better eating than the raw fillet."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03309000000098"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03209000000098"
+				item: { count: 1, id: "betterend:end_fish_cooked" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["0B03109000000097"]
+			hide_until_deps_complete: true
+			id: "0B03109000000099"
+			title: "Blossom Berry"
+			subtitle: "Optional: forage the forests."
+			description: [
+				"Pick a &bBlossom Berry&r from &6Better End&r's groves. It is an edible find that grows on the gentler islands, a sweet bite between fights."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03309000000099"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03209000000099"
+				item: { count: 1, id: "betterend:blossom_berry" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["0B03109000000099"]
+			hide_until_deps_complete: true
+			id: "0B0310900000009A"
+			title: "Shadow Berry"
+			subtitle: "Optional: the dark fruit."
+			description: [
+				"Harvest a &bShadow Berry&r. It grows in &6Better End&r's darker biomes and can be planted to spread, the shadowy counterpart to the &bblossom berry&r."
+			]
+			optional: true
+			rewards: [{
+				id: "0B0330900000009A"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B0320900000009A"
+				item: { count: 1, id: "betterend:shadow_berry_raw" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["0B0310900000009A"]
+			hide_until_deps_complete: true
+			id: "0B0310900000009B"
+			title: "Phantom Arrow"
+			subtitle: "Optional: ammunition with bite."
+			description: [
+				"Fletch a &bPhantom Arrow&r. &6Unusual End&r's special ammunition carries an effect ordinary arrows lack, worth crafting before the harder island fights."
+			]
+			optional: true
+			rewards: [{
+				id: "0B0330900000009B"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B0320900000009B"
+				item: { count: 1, id: "unusualend:phantom_arrow" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["0B03109000000098"]
+			hide_until_deps_complete: true
+			id: "0B0310900000009C"
+			title: "Citrine Amulet"
+			subtitle: "Optional: a worn charm."
+			description: [
+				"Assemble a &bCitrine Amulet&r. Set with the End's citrine it grants a passive bonus while worn, one of &6Unusual End&r's wearable trinkets."
+			]
+			optional: true
+			rewards: [{
+				id: "0B0330900000009C"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B0320900000009C"
+				item: { count: 1, id: "unusualend:citrine_amulet" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["0B0310900000009B"]
+			hide_until_deps_complete: true
+			id: "0B0310900000009D"
+			title: "Terminite Sword"
+			subtitle: "Optional: Better End's blade."
+			description: [
+				"Forge a &bTerminite Sword&r. Terminite is one of &6Better End&r's strong metals, and the blade is a real upgrade for clearing the tougher End mobs."
+			]
+			optional: true
+			rewards: [{
+				id: "0B0330900000009D"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B0320900000009D"
+				item: { count: 1, id: "betterend:terminite_sword" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["0B0310900000009D"]
+			hide_until_deps_complete: true
+			id: "0B0310900000009E"
+			title: "Terminite Pickaxe"
+			subtitle: "Optional: the matching pick."
+			description: [
+				"Craft a &bTerminite Pickaxe&r. The same metal makes a fast, durable mining tool, handy for tearing through the dense End stone."
+			]
+			optional: true
+			rewards: [{
+				id: "0B0330900000009E"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B0320900000009E"
+				item: { count: 1, id: "betterend:terminite_pickaxe" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["0B03109000000060"]
+			hide_until_deps_complete: true
+			id: "0B0310900000009F"
+			title: "Enderman Tooth"
+			subtitle: "Optional: an Enderman Overhaul drop."
+			description: [
+				"Knock loose an &bEnderman Tooth&r. &6Enderman Overhaul&r gives the dimension's natives more variety and better drops, and the tooth is the entry to its materials."
+			]
+			optional: true
+			rewards: [{
+				id: "0B0330900000009F"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B0320900000009F"
+				item: { count: 1, id: "endermanoverhaul:enderman_tooth" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["0B0310900000009F"]
+			hide_until_deps_complete: true
+			id: "0B031090000000A0"
+			title: "Soul Pearl"
+			subtitle: "Optional: a varied pearl."
+			description: [
+				"Collect a &bSoul Pearl&r from &6Enderman Overhaul&r's variants. Each biome's endermen drop a different pearl, and this is the first of that set."
+			]
+			optional: true
+			rewards: [{
+				id: "0B033090000000A0"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B032090000000A0"
+				item: { count: 1, id: "endermanoverhaul:soul_pearl" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["0B031090000000A0"]
+			hide_until_deps_complete: true
+			id: "0B031090000000A1"
+			title: "Crimson Pearl"
+			subtitle: "Optional: the crimson variant."
+			description: [
+				"Gather a &bCrimson Pearl&r. It comes from the crimson-forest endermen, another color in &6Enderman Overhaul&r's pearl collection."
+			]
+			optional: true
+			rewards: [{
+				id: "0B033090000000A1"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B032090000000A1"
+				item: { count: 1, id: "endermanoverhaul:crimson_pearl" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["0B031090000000A1"]
+			hide_until_deps_complete: true
+			id: "0B031090000000A2"
+			title: "Warped Pearl"
+			subtitle: "Optional: the warped variant."
+			description: [
+				"Take a &bWarped Pearl&r. The warped-forest endermen supply it, a third pearl variant for the set."
+			]
+			optional: true
+			rewards: [{
+				id: "0B033090000000A2"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B032090000000A2"
+				item: { count: 1, id: "endermanoverhaul:warped_pearl" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["0B031090000000A2"]
+			hide_until_deps_complete: true
+			id: "0B031090000000A3"
+			title: "Corrupted Pearl"
+			subtitle: "Optional: the rarest pearl."
+			description: [
+				"Obtain a &bCorrupted Pearl&r. It drops from the rarest of &6Enderman Overhaul&r's variants, the prize that completes the pearl run."
+			]
+			optional: true
+			rewards: [{
+				id: "0B033090000000A3"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B032090000000A3"
+				item: { count: 1, id: "endermanoverhaul:corrupted_pearl" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["0B03109000000022"]
+			hide_until_deps_complete: true
+			id: "0B03109000000074"
+			title: "Ender Dust"
+			subtitle: "Optional: Better End's grit."
+			description: [
+				"Grind &bEnder Dust&r. &6Better End&r reworks the dimension's flora and stone, and this dust is one of its common reagents, the start of that mod's material chain."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03309000000074"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03209000000074"
+				item: { count: 1, id: "betterend:ender_dust" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0B03109000000040"]
+			hide_until_deps_complete: true
+			id: "0B03109000000078"
+			title: "Spectral Scrap"
+			subtitle: "Optional: a ghostly drop."
+			description: [
+				"Gather &bSpectral Scrap&r from &6Unusual End&r's enderlings. It is a salvage material the mod's recipes draw on, picked off the wispier residents of the islands."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03309000000078"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03209000000078"
+				item: { count: 1, id: "unusualend:enderling_scrap" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0B03109000000022"]
+			hide_until_deps_complete: true
+			id: "0B03109000000080"
+			title: "Exotic Eye"
+			subtitle: "A bonus eye from the End."
+			description: [
+				"Earn the &bExotic Eye&r. Beyond the portal set, &6End Remastered&r hides a few extra eyes for the thorough, and this one is found out among the islands."
+			]
+			rewards: [{
+				id: "0B03309000000080"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03209000000080"
+				item: { count: 1, id: "endrem:exotic_eye" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["0B03109000000022"]
+			hide_until_deps_complete: true
+			id: "0B03109000000081"
+			title: "Witch Eye"
+			subtitle: "Optional: the last oddity."
+			description: [
+				"Track down the &bWitch Eye&r. It is another of &6End Remastered&r's collectible extras, a completionist's prize rather than a portal requirement."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03309000000081"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03209000000081"
+				item: { count: 1, id: "endrem:witch_eye" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["0B03109000000022"]
+			hide_until_deps_complete: true
+			id: "0B031090000000B0"
+			title: "Warped Reef"
+			subtitle: "Optional: an Unusual End biome."
+			description: [
+				"Explore the Warped Reef. It is one of &6Unusual End&r's new biomes, a coral-strewn stretch of the islands worth mapping for its unique gathers."
+			]
+			optional: true
+			rewards: [{
+				id: "0B033090000000B0"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				biome: "unusualend:warped_reef"
+				id: "0B032090000000B0"
+				type: "biome"
+			}]
+			x: 7.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0B03109000000022"]
+			hide_until_deps_complete: true
+			id: "0B031090000000B1"
+			title: "Gloopstone Highlands"
+			subtitle: "Optional: another new biome."
+			description: [
+				"Find the Gloopstone Highlands. This &6Unusual End&r biome has its own stone and growths, the source of the citrine you collect nearby."
+			]
+			optional: true
+			rewards: [{
+				id: "0B033090000000B1"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				biome: "unusualend:gloopstone_lands"
+				id: "0B032090000000B1"
+				type: "biome"
+			}]
+			x: 7.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0B031090000000B1"]
+			hide_until_deps_complete: true
+			id: "0B031090000000B2"
+			title: "Citrine Chunk"
+			subtitle: "Optional: raw citrine."
+			description: [
+				"Mine a &bCitrine Chunk&r in the highlands. It is the raw gem the &bcitrine amulet&r and its kin are cut from."
+			]
+			optional: true
+			rewards: [{
+				id: "0B033090000000B2"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B032090000000B2"
+				item: { count: 1, id: "unusualend:citrine_chunk" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0B03109000000022"]
+			hide_until_deps_complete: true
+			id: "0B031090000000B3"
+			title: "Shiny Crystal"
+			subtitle: "Optional: a glittering find."
+			description: [
+				"Collect a &bShiny Crystal&r. It is a decorative and crafting crystal from &6Unusual End&r, scattered across the brighter islands."
+			]
+			optional: true
+			rewards: [{
+				id: "0B033090000000B3"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B032090000000B3"
+				item: { count: 1, id: "unusualend:shiny_crystal" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0B03109000000022"]
+			hide_until_deps_complete: true
+			id: "0B031090000000B4"
+			title: "Wandering Pearl"
+			subtitle: "Optional: a roaming drop."
+			description: [
+				"Catch a &bWandering Pearl&r. It comes from one of &6Unusual End&r's mobile creatures, a pearl variant with its own use in the mod's recipes."
+			]
+			optional: true
+			rewards: [{
+				id: "0B033090000000B4"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B032090000000B4"
+				item: { count: 1, id: "unusualend:wandering_pearl" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 1.5d
+		}
+	]
+}
