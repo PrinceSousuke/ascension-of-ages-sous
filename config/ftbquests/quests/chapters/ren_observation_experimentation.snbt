@@ -1,0 +1,2143 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ren_observation_experimentation"
+	group: "0B038EB15EBBFD95"
+	hide_quest_until_deps_complete: true
+	icon: {
+		id: "theurgy:divination_rod_t1"
+	}
+	id: "0B03001000000008"
+	order_index: 7
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["0B03106000000050"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "theurgy:divination_rod_t1"
+			}
+			id: "0B03108000000001"
+			title: "Observation and Experimentation"
+			subtitle: "The Renaissance opens on the bench."
+			description: [
+				"The &dRenaissance&r begins with a change of habit: look closely, then test. This chapter is a workbench for the early sciences, from ore divination and alchemy to your first powered machines."
+				"Little of it is ordered. Follow the branches that interest you and circle back for the rest."
+			]
+			rewards: [{
+				id: "0B03308000000001"
+				type: "xp"
+				xp: 25
+			}]
+			size: 1.5d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				dimension: "minecraft:overworld"
+				id: "0B03208000000001"
+				type: "dimension"
+			}]
+			x: 0.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["0B03108000000001"]
+			hide_until_deps_complete: true
+			id: "0B03108000000067"
+			title: "Alchemical Salt"
+			subtitle: "Render strata into reagent."
+			description: [
+				"&6Theurgy&r is the pack's alchemy line, and it starts by distilling ordinary materials into reagents. Pull an &bAlchemical Salt&r from common strata to learn the loop."
+				"Salt is the plain base the niters and sulfurs build on, so make a little before you go further."
+			]
+			rewards: [{
+				id: "0B03308000000067"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03208000000067"
+				item: { count: 1, id: "theurgy:alchemical_salt_strata" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0B03108000000067"]
+			hide_until_deps_complete: true
+			id: "0B03108000000068"
+			title: "Niter: Common Metals"
+			subtitle: "Bottle the essence of base ores."
+			description: [
+				"Distill an &bAlchemical Niter&r keyed to the common metals. Each niter carries the signature of the source class it was drawn from, this one standing in for iron, &bcopper&r, and the everyday ores."
+				"Niters are how &6Theurgy&r stores what a material is for later work."
+			]
+			rewards: [{
+				id: "0B03308000000068"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03208000000068"
+				item: { count: 1, id: "theurgy:alchemical_niter_metals_common" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0B03108000000068"]
+			hide_until_deps_complete: true
+			id: "0B03108000000069"
+			title: "Niter: Common Gems"
+			subtitle: "Distill from the gemstone class."
+			description: [
+				"Draw a niter from the common gems. Lapis, quartz, and their kin all read as the same source class, so a single batch covers the lot."
+			]
+			rewards: [{
+				id: "0B03308000000069"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03208000000069"
+				item: { count: 1, id: "theurgy:alchemical_niter_gems_common" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0B03108000000069"]
+			hide_until_deps_complete: true
+			id: "0B03108000000070"
+			title: "Niter: Other Minerals"
+			subtitle: "The leftover mineral class."
+			description: [
+				"Produce a niter for the other minerals, the catch-all class for the stone-bound materials that are neither metal nor gem. Redstone and its neighbors live here."
+			]
+			rewards: [{
+				id: "0B03308000000070"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03208000000070"
+				item: { count: 1, id: "theurgy:alchemical_niter_other_minerals_common" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0B03108000000070"]
+			hide_until_deps_complete: true
+			id: "0B03108000000071"
+			title: "Niter: Crops"
+			subtitle: "Distill the harvest."
+			description: [
+				"Render a niter from the crops. Wheat, carrots, and the rest of the farmed plants all feed this one, and they are abundant enough that the reagent is cheap to keep stocked."
+			]
+			rewards: [{
+				id: "0B03308000000071"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03208000000071"
+				item: { count: 1, id: "theurgy:alchemical_niter_crops_abundant" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["0B03108000000071"]
+			hide_until_deps_complete: true
+			id: "0B03108000000072"
+			title: "Niter: Logs"
+			subtitle: "The forest, distilled."
+			description: [
+				"Pull a niter from the logs. Any wood will do, which makes this the easiest of the set to mass-produce when you need reagent in bulk."
+			]
+			rewards: [{
+				id: "0B03308000000072"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03208000000072"
+				item: { count: 1, id: "theurgy:alchemical_niter_logs_abundant" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["0B03108000000072"]
+			hide_until_deps_complete: true
+			id: "0B03108000000073"
+			title: "Niter: Mobs"
+			subtitle: "Essence from the hostile dead."
+			description: [
+				"Distill a niter from monster drops. The hostile mobs you cut down on a normal night supply the source material, so this one rewards the fighting you were doing anyway."
+			]
+			rewards: [{
+				id: "0B03308000000073"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03208000000073"
+				item: { count: 1, id: "theurgy:alchemical_niter_mobs_abundant" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["0B03108000000073"]
+			hide_until_deps_complete: true
+			id: "0B03108000000074"
+			title: "Niter: Animals"
+			subtitle: "Essence from the herd."
+			description: [
+				"Render a niter from the passive animals. Leather, feathers, and the rest of the farmyard drops feed it, rounding out the niter classes."
+			]
+			rewards: [{
+				id: "0B03308000000074"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03208000000074"
+				item: { count: 1, id: "theurgy:alchemical_niter_animals_common" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["0B03108000000074"]
+			hide_until_deps_complete: true
+			id: "0B03108000000075"
+			title: "Sulfur: Copper"
+			subtitle: "Distill a single material."
+			description: [
+				"Where niters cover a whole class, &bAlchemical Sulfur&r captures one specific material. Start with &bcopper&r sulfur, drawn straight from the ore."
+				"Sulfurs are the precise reagents the higher alchemy recipes call for by name."
+			]
+			rewards: [{
+				id: "0B03308000000075"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03208000000075"
+				item: { count: 1, id: "theurgy:alchemical_sulfur_copper" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0B03108000000075"]
+			hide_until_deps_complete: true
+			id: "0B03108000000076"
+			title: "Sulfur: Gold"
+			subtitle: "Bottle the gold itself."
+			description: [
+				"Distill a gold sulfur. Like every sulfur it answers to exactly one material, which is what makes it useful when a recipe wants gold and nothing else."
+			]
+			rewards: [{
+				id: "0B03308000000076"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03208000000076"
+				item: { count: 1, id: "theurgy:alchemical_sulfur_gold" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0B03108000000076"]
+			hide_until_deps_complete: true
+			id: "0B03108000000077"
+			title: "Sulfur: Lapis"
+			subtitle: "The blue stone, rendered."
+			description: [
+				"Render a lapis sulfur. It is a common reagent in the enchanting-adjacent recipes, so a small stock pays off later."
+			]
+			rewards: [{
+				id: "0B03308000000077"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03208000000077"
+				item: { count: 1, id: "theurgy:alchemical_sulfur_lapis" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0B03108000000077"]
+			hide_until_deps_complete: true
+			id: "0B03108000000078"
+			title: "Sulfur: Amethyst"
+			subtitle: "Distill the geode crystal."
+			description: [
+				"Pull an amethyst sulfur from raw amethyst. The crystal sees a lot of use across the pack, and the sulfur form lets &6Theurgy&r work it into alchemy."
+			]
+			rewards: [{
+				id: "0B03308000000078"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03208000000078"
+				item: { count: 1, id: "theurgy:alchemical_sulfur_amethyst" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0B03108000000078"]
+			hide_until_deps_complete: true
+			id: "0B0310800000007D"
+			title: "Sulfur: Echo"
+			subtitle: "Distilled from the deep dark."
+			description: [
+				"Distill an echo sulfur from echo shards. It means a trip to an ancient city to gather the source, but it opens the deep-sourced end of the sulfur list."
+			]
+			rewards: [{
+				id: "0B0330800000007D"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B0320800000007D"
+				item: { count: 1, id: "theurgy:alchemical_sulfur_echo" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0B03108000000001"]
+			hide_until_deps_complete: true
+			id: "0B031080000000B0"
+			title: "Netherite Divination Rod"
+			subtitle: "Optional: the top-tier finder."
+			description: [
+				"Upgrade your way to the &bNetherite Divination Rod&r. It is the longest-range, most durable rod &6Theurgy&r offers, and it shrugs off the lava you will be wading through to use it."
+				"Worth it if you lean on divination to find ore at all."
+			]
+			optional: true
+			rewards: [{
+				id: "0B033080000000B0"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B032080000000B0"
+				item: { count: 1, id: "theurgy:divination_rod_t4" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0B03108000000001"]
+			hide_until_deps_complete: true
+			id: "0B031080000000B1"
+			title: "Attuned Rod: Abundant"
+			subtitle: "Optional: tune a rod to a material."
+			description: [
+				"Craft a &bDivination Rod&r attuned to abundant materials. A sulfur-attuned rod points at one specific block type instead of a broad category, so it finds exactly what you tuned it for."
+				"This tier covers the common, easy-to-reach materials."
+			]
+			optional: true
+			rewards: [{
+				id: "0B033080000000B1"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B032080000000B1"
+				item: { count: 1, id: "theurgy:sulfur_attuned_divination_rod_abundant" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0B031080000000B1"]
+			hide_until_deps_complete: true
+			id: "0B031080000000B2"
+			title: "Attuned Rod: Common"
+			subtitle: "Optional: the next attunement tier."
+			description: [
+				"Attune a rod to the common materials. It trades a little reach for tighter focus than the abundant tier, useful once the surface ore is mined out."
+			]
+			optional: true
+			rewards: [{
+				id: "0B033080000000B2"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B032080000000B2"
+				item: { count: 1, id: "theurgy:sulfur_attuned_divination_rod_common" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0B031080000000B2"]
+			hide_until_deps_complete: true
+			id: "0B031080000000B3"
+			title: "Attuned Rod: Rare"
+			subtitle: "Optional: hunt the scarce stuff."
+			description: [
+				"Attune a rod to the rare materials. This is the one you carry when you are chasing the ores that do not turn up by accident."
+			]
+			optional: true
+			rewards: [{
+				id: "0B033080000000B3"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B032080000000B3"
+				item: { count: 1, id: "theurgy:sulfur_attuned_divination_rod_rare" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0B031080000000B3"]
+			hide_until_deps_complete: true
+			id: "0B031080000000B4"
+			title: "Attuned Rod: Precious"
+			subtitle: "Optional: the deepest attunement."
+			description: [
+				"Attune a rod to the precious materials, the scarcest tier the system tracks. Pair it with the netherite rod for the best odds of finding the hard-to-reach veins."
+			]
+			optional: true
+			rewards: [{
+				id: "0B033080000000B4"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B032080000000B4"
+				item: { count: 1, id: "theurgy:sulfur_attuned_divination_rod_precious" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0B03108000000001"]
+			hide_until_deps_complete: true
+			id: "0B031080000000B5"
+			title: "Niter: Rare Metals"
+			subtitle: "Optional: the scarce metal class."
+			description: [
+				"Distill a niter from the rare metals. These are the source ores you do not trip over, so the reagent is worth more per batch than the common version."
+			]
+			optional: true
+			rewards: [{
+				id: "0B033080000000B5"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B032080000000B5"
+				item: { count: 1, id: "theurgy:alchemical_niter_metals_rare" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["0B031080000000B5"]
+			hide_until_deps_complete: true
+			id: "0B031080000000B6"
+			title: "Niter: Rare Gems"
+			subtitle: "Optional: diamonds and emeralds."
+			description: [
+				"Render a niter from the rare gems. Diamond and emerald lead the class, so the reagent is as expensive as the stones that make it."
+			]
+			optional: true
+			rewards: [{
+				id: "0B033080000000B6"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B032080000000B6"
+				item: { count: 1, id: "theurgy:alchemical_niter_gems_rare" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["0B031080000000B6"]
+			hide_until_deps_complete: true
+			id: "0B031080000000B7"
+			title: "Niter: Rare Minerals"
+			subtitle: "Optional: the scarce mineral class."
+			description: [
+				"Produce a niter from the rare minerals, the harder-to-find members of the other-minerals class."
+			]
+			optional: true
+			rewards: [{
+				id: "0B033080000000B7"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B032080000000B7"
+				item: { count: 1, id: "theurgy:alchemical_niter_other_minerals_rare" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["0B031080000000B7"]
+			hide_until_deps_complete: true
+			id: "0B031080000000B8"
+			title: "Niter: Rare Animals"
+			subtitle: "Optional: uncommon beast drops."
+			description: [
+				"Distill a niter from the rarer animal drops. The unusual creatures feed this one, so it takes a wider hunt than the common version."
+			]
+			optional: true
+			rewards: [{
+				id: "0B033080000000B8"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B032080000000B8"
+				item: { count: 1, id: "theurgy:alchemical_niter_animals_rare" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["0B031080000000B8"]
+			hide_until_deps_complete: true
+			id: "0B031080000000B9"
+			title: "Niter: Rare Mobs"
+			subtitle: "Optional: tougher monster essence."
+			description: [
+				"Render a niter from the rarer monster drops. The dangerous mobs supply it, which ties the reagent to the fights you pick deliberately."
+			]
+			optional: true
+			rewards: [{
+				id: "0B033080000000B9"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B032080000000B9"
+				item: { count: 1, id: "theurgy:alchemical_niter_mobs_rare" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: 13.5d
+		}
+		{
+			dependencies: ["0B0310800000007D"]
+			hide_until_deps_complete: true
+			id: "0B031080000000BB"
+			title: "Sulfur: Lunar"
+			subtitle: "Optional: distilled by night."
+			description: [
+				"Pull a lunar sulfur. Its source is tied to the night side of the world, an oddity in the sulfur list and a reagent the stranger recipes ask for."
+			]
+			optional: true
+			rewards: [{
+				id: "0B033080000000BB"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B032080000000BB"
+				item: { count: 1, id: "theurgy:alchemical_sulfur_lunar" }
+				type: "item"
+			}]
+			x: 13.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0B031080000000BB"]
+			hide_until_deps_complete: true
+			id: "0B031080000000BC"
+			title: "Sulfur: Deepslate"
+			subtitle: "Optional: the deep stone, rendered."
+			description: [
+				"Distill a deepslate sulfur. It captures the deep stone itself, useful once your alchemy reaches the recipes that want the world's lower layers."
+			]
+			optional: true
+			rewards: [{
+				id: "0B033080000000BC"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B032080000000BC"
+				item: { count: 1, id: "theurgy:alchemical_sulfur_deepslate" }
+				type: "item"
+			}]
+			x: 13.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0B03108000000001"]
+			hide_until_deps_complete: true
+			id: "0B031080000000C0"
+			title: "Black Quartz"
+			subtitle: "Optional: Actually Additions' base crystal."
+			description: [
+				"Mine &bBlack Quartz&r. It is the foundation material for &6Actually Additions&r, the early-tech toolbox this chapter samples, and most of its machines trace back to this stone."
+			]
+			optional: true
+			rewards: [{
+				id: "0B033080000000C0"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B032080000000C0"
+				item: { count: 1, id: "actuallyadditions:black_quartz" }
+				type: "item"
+			}]
+			x: 13.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["0B031080000000C0"]
+			hide_until_deps_complete: true
+			id: "0B031080000000C1"
+			title: "Light Blue Crystal Shard"
+			subtitle: "Optional: a grown crystal fragment."
+			description: [
+				"Grow a &bLight Blue Crystal Shard&r. &6Actually Additions&r raises its crystals from seeds rather than mining them, and the shards cluster into the larger crystals its machines use."
+			]
+			optional: true
+			rewards: [{
+				id: "0B033080000000C1"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B032080000000C1"
+				item: { count: 1, id: "actuallyadditions:diamatine_crystal_shard" }
+				type: "item"
+			}]
+			x: 13.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["0B03108000000001"]
+			hide_until_deps_complete: true
+			id: "0B031080000000C2"
+			title: "Corrupt Soul"
+			subtitle: "Optional: a Forbidden Arcanus drop."
+			description: [
+				"Collect a &bCorrupt Soul&r. &6Forbidden Arcanus&r uses it as a dark reagent, and picking one up here is a quiet first contact with that mod's darker line of crafting."
+			]
+			optional: true
+			rewards: [{
+				id: "0B033080000000C2"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B032080000000C2"
+				item: { count: 1, id: "forbidden_arcanus:corrupt_soul" }
+				type: "item"
+			}]
+			x: 13.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["0B03108000000001"]
+			hide_until_deps_complete: true
+			id: "0B031080000000D1"
+			title: "Steel Dust"
+			subtitle: "Grind toward real alloys."
+			description: [
+				"Produce &bSteel Dust&r through &6Modern Industrialization&r. Grinding to dust before smelting is the mod's habit, and steel is the first proper alloy on its ladder."
+				"It feeds the bronze and &bsteel&r parts the rest of this chapter leans on."
+			]
+			rewards: [
+				{
+					id: "0B033080000000D1"
+					type: "xp"
+					xp: 20
+				}
+				{
+					id: "0B033080000000D0"
+					type: "xp"
+					xp: 25
+				}
+			]
+			shape: "gear"
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B032080000000D1"
+				item: { count: 1, id: "modern_industrialization:steel_dust" }
+				type: "item"
+			}]
+			x: 16.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0B031080000000D1"]
+			hide_until_deps_complete: true
+			id: "0B031080000000D2"
+			title: "Steam Engine"
+			subtitle: "Optional: Create's starter power."
+			description: [
+				"Build a &6Create&r &bSteam Engine&r. Mounted on a steam-filled &bboiler&r it spins a respectable amount of rotation, a quick way to power a small workshop without water wheels."
+				"Optional here, but a fine bridge from the mill chapter."
+			]
+			optional: true
+			rewards: [{
+				id: "0B033080000000D2"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "gear"
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B032080000000D2"
+				item: { count: 1, id: "create:steam_engine" }
+				type: "item"
+			}]
+			x: 18.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0B03108000000001"]
+			hide_until_deps_complete: true
+			id: "0B031080000000D3"
+			title: "Nugget of Experience"
+			subtitle: "Optional: bottled levels."
+			description: [
+				"Make a &bNugget of Experience&r. &6Create&r lets you press experience into a solid nugget, which stores and moves far more cleanly than chasing orbs around the floor."
+			]
+			optional: true
+			rewards: [{
+				id: "0B033080000000D3"
+				type: "xp"
+				xp: 15
+			}]
+			shape: "gear"
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B032080000000D3"
+				item: { count: 1, id: "create:experience_nugget" }
+				type: "item"
+			}]
+			x: 18.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0B03108000000001"]
+			hide_until_deps_complete: true
+			id: "0B031080000000D4"
+			title: "Iron Furnace"
+			subtitle: "A faster, hungrier furnace."
+			description: [
+				"Craft an &bIron Furnace&r. It smelts quicker than the vanilla furnace and burns fuel more efficiently, the first of an upgrade ladder that climbs through better metals."
+				"A simple, worthwhile early swap for any smelting you do by hand."
+			]
+			rewards: [{
+				id: "0B033080000000D4"
+				type: "xp"
+				xp: 15
+			}]
+			shape: "square"
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B032080000000D4"
+				item: { count: 1, id: "ironfurnaces:iron_furnace" }
+				type: "item"
+			}]
+			x: 16.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0B031080000000D4"]
+			hide_until_deps_complete: true
+			id: "0B031080000000E1"
+			title: "Bronze Plate"
+			subtitle: "Press your first alloy part."
+			description: [
+				"Roll a &bBronze Plate&r through &6Modern Industrialization&r. Plates are pressed from ingots and form the flat stock half its early machines are assembled from."
+			]
+			rewards: [{
+				id: "0B033080000000E1"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B032080000000E1"
+				item: { count: 1, id: "modern_industrialization:bronze_plate" }
+				type: "item"
+			}]
+			x: 18.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0B031080000000E1"]
+			hide_until_deps_complete: true
+			id: "0B031080000000E2"
+			title: "Bronze Gear"
+			subtitle: "The other half of every machine."
+			description: [
+				"Craft a &bBronze Gear&r. Between plates and gears you have the two staple parts &6Modern Industrialization&r's steam-tier machines are built around, so make a stack of each."
+			]
+			rewards: [{
+				id: "0B033080000000E2"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B032080000000E2"
+				item: { count: 1, id: "modern_industrialization:bronze_gear" }
+				type: "item"
+			}]
+			x: 18.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0B031080000000D4"]
+			hide_until_deps_complete: true
+			id: "0B031080000000F0"
+			title: "Kiln Brick"
+			subtitle: "Line the Coke Oven."
+			description: [
+				"Bake Kiln Bricks through &6Immersive Engineering&r. They are the blocks the &bCoke Oven&r is built from, the multiblock that turns coal into coke and &bcreosote&r."
+				"Coke and creosote are the feedstock the blast furnace and treated wood both need."
+			]
+			rewards: [{
+				id: "0B033080000000F0"
+				type: "xp"
+				xp: 15
+			}]
+			shape: "square"
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B032080000000F0"
+				item: { count: 1, id: "immersiveengineering:alloybrick" }
+				type: "item"
+			}]
+			x: 21.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0B031080000000F0"]
+			hide_until_deps_complete: true
+			id: "0B031080000000F2"
+			title: "Blast Brick"
+			subtitle: "Build toward real steel."
+			description: [
+				"Fire Blast Bricks for &6Immersive Engineering&r's &bImproved Blast Furnace&r. That multiblock smelts iron and coke into &bsteel&r, the metal the whole industrial spine is going to run on."
+				"Lining both the Coke Oven and the blast furnace is the real opening move of the tech tree."
+			]
+			rewards: [
+				{
+					id: "0B033080000000F2"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "0B033080000000F1"
+					type: "xp"
+					xp: 15
+				}
+				{
+					auto: "enabled"
+					command: "/astages add {p} ren_observation_experimentation_complete true true"
+					icon: {
+						id: "theurgy:divination_rod_t2"
+					}
+					id: "0B03308000000050"
+					permission_level: 2
+					silent: true
+					team_reward: true
+					type: "command"
+				}
+				{
+					id: "0B03308000000051"
+					item: {
+						count: 1
+						id: "endrem:cryptic_eye"
+					}
+					title: "Eyes Toward the End"
+					type: "item"
+				}
+				{
+					id: "0B03308000000052"
+					item: {
+						count: 1
+						id: "endrem:rogue_eye"
+					}
+					type: "item"
+				}
+				{
+					id: "0B03308000000054"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			shape: "gear"
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B032080000000F2"
+				item: { count: 1, id: "immersiveengineering:blastbrick" }
+				type: "item"
+			}]
+			x: 21.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0B03108000000001"]
+			hide_until_deps_complete: true
+			id: "0B031080000000F3"
+			title: "Iron Casing"
+			subtitle: "Actually Additions' machine frame."
+			description: [
+				"Craft an &bIron Casing&r. It is the shared housing nearly every &6Actually Additions&r machine is built inside, so a stack of them unlocks most of that mod at once."
+			]
+			rewards: [{
+				id: "0B033080000000F3"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B032080000000F3"
+				item: { count: 1, id: "actuallyadditions:iron_casing" }
+				type: "item"
+			}]
+			x: 25.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0B031080000000F3"]
+			hide_until_deps_complete: true
+			id: "0B031080000000F4"
+			title: "Basic Coil"
+			subtitle: "Optional: wind a coil."
+			description: [
+				"Wind a &bBasic Coil&r. It is the wiring component &6Actually Additions&r uses to move and shape power, and several of its mid-tier devices will not assemble without one."
+			]
+			optional: true
+			rewards: [{
+				id: "0B033080000000F4"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B032080000000F4"
+				item: { count: 1, id: "actuallyadditions:basic_coil" }
+				type: "item"
+			}]
+			x: 26.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0B031080000000F4"]
+			hide_until_deps_complete: true
+			id: "0B031080000000F6"
+			title: "Lens"
+			subtitle: "Optional: focus the atomic reconstructor."
+			description: [
+				"Make a &bLens&r. Slotted into the &bAtomic Reconstructor&r it changes what the machine's beam does, turning a single device into a whole table of conversions."
+			]
+			optional: true
+			rewards: [{
+				id: "0B033080000000F6"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B032080000000F6"
+				item: { count: 1, id: "actuallyadditions:lens" }
+				type: "item"
+			}]
+			x: 25.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0B031080000000F4"]
+			hide_until_deps_complete: true
+			id: "0B031080000000F7"
+			title: "Diamatine Crystal"
+			subtitle: "Optional: grown from shards."
+			description: [
+				"Cluster shards into a &bDiamatine Crystal&r. It is one of &6Actually Additions&r' two high-grade crystals, standing in where a recipe would otherwise want diamond."
+			]
+			optional: true
+			rewards: [{
+				id: "0B033080000000F7"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B032080000000F7"
+				item: { count: 1, id: "actuallyadditions:diamatine_crystal" }
+				type: "item"
+			}]
+			x: 26.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0B031080000000F4"]
+			hide_until_deps_complete: true
+			id: "0B031080000000F8"
+			title: "Emeradic Crystal"
+			subtitle: "Optional: the green crystal."
+			description: [
+				"Grow an &bEmeradic Crystal&r. The emerald-grade counterpart to diamatine, it covers the recipes that lean on the green gem instead."
+			]
+			optional: true
+			rewards: [{
+				id: "0B033080000000F8"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B032080000000F8"
+				item: { count: 1, id: "actuallyadditions:emeradic_crystal" }
+				type: "item"
+			}]
+			x: 28.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0B031080000000F3"]
+			hide_until_deps_complete: true
+			id: "0B031080000000F9"
+			title: "Coffee Maker"
+			subtitle: "Optional: brew a buff."
+			description: [
+				"Build a &bCoffee Maker&r. Fed beans and the right extras it brews coffee that hands you timed buffs, a small quality-of-life win from &6Actually Additions&r."
+			]
+			optional: true
+			rewards: [{
+				id: "0B033080000000F9"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B032080000000F9"
+				item: { count: 1, id: "actuallyadditions:coffee_machine" }
+				type: "item"
+			}]
+			x: 29.5d
+			y: 0.75d
+		}
+		{
+			dependencies: ["0B03108000000001"]
+			hide_until_deps_complete: true
+			id: "0B031080000000FA"
+			title: "Gold Generator"
+			subtitle: "Burn gold for power."
+			description: [
+				"Build a &bGold Generator&r from &6Generator Galore&r. It burns fuel for a steady trickle of energy, a no-fuss starter generator for the machines that want power rather than rotation."
+				"It anchors a small branch of swappable generators."
+			]
+			rewards: [{
+				id: "0B033080000000FA"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B032080000000FA"
+				item: { count: 1, id: "generatorgalore:gold_generator" }
+				type: "item"
+			}]
+			x: 25.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["0B031080000000FA"]
+			hide_until_deps_complete: true
+			id: "0B031080000000FB"
+			title: "Copper Generator"
+			subtitle: "Optional: the cheaper burner."
+			description: [
+				"Build a &bCopper Generator&r. It is the budget end of the &6Generator Galore&r line, fine for keeping one or two machines fed while you scale up."
+			]
+			optional: true
+			rewards: [{
+				id: "0B033080000000FB"
+				type: "xp"
+				xp: 5
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B032080000000FB"
+				item: { count: 1, id: "generatorgalore:copper_generator" }
+				type: "item"
+			}]
+			x: 26.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["0B031080000000FB"]
+			hide_until_deps_complete: true
+			id: "0B031080000000FC"
+			title: "Iron Generator"
+			subtitle: "Optional: a sturdier burner."
+			description: [
+				"Build an &bIron Generator&r. It outputs more than the &bcopper&r unit and accepts an upgrade, the middle rung of the burner ladder."
+			]
+			optional: true
+			rewards: [{
+				id: "0B033080000000FC"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B032080000000FC"
+				item: { count: 1, id: "generatorgalore:iron_generator" }
+				type: "item"
+			}]
+			x: 28.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["0B031080000000FC"]
+			hide_until_deps_complete: true
+			id: "0B031080000000FD"
+			title: "Iron to Gold Upgrade"
+			subtitle: "Optional: promote a generator."
+			description: [
+				"Craft the &bIron to Gold Upgrade&r. Applied to an &biron generator&r it lifts the unit to gold-tier output without rebuilding from scratch."
+			]
+			optional: true
+			rewards: [{
+				id: "0B033080000000FD"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B032080000000FD"
+				item: { count: 1, id: "generatorgalore:iron_to_gold_upgrade" }
+				type: "item"
+			}]
+			x: 29.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["0B031080000000FA"]
+			hide_until_deps_complete: true
+			id: "0B031080000000FE"
+			title: "Culinary Generator"
+			subtitle: "Optional: burn food for power."
+			description: [
+				"Build a &bCulinary Generator&r. It runs on food instead of fuel, which turns a surplus harvest into electricity and pairs neatly with a busy farm."
+			]
+			optional: true
+			rewards: [{
+				id: "0B033080000000FE"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B032080000000FE"
+				item: { count: 1, id: "generatorgalore:culinary_generator" }
+				type: "item"
+			}]
+			x: 25.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["0B031080000000FE"]
+			hide_until_deps_complete: true
+			id: "0B031080000000FF"
+			title: "Potion Generator"
+			subtitle: "Optional: power from brews."
+			description: [
+				"Build a &bPotion Generator&r. It draws energy from potions, giving your brewing stand a second purpose once you have more potions than you can drink."
+			]
+			optional: true
+			rewards: [{
+				id: "0B033080000000FF"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B032080000000FF"
+				item: { count: 1, id: "generatorgalore:potion_generator" }
+				type: "item"
+			}]
+			x: 26.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["0B03108000000001"]
+			hide_until_deps_complete: true
+			id: "0B03108000000100"
+			title: "Diamond Wand"
+			subtitle: "Optional: place blocks in bulk."
+			description: [
+				"Craft a &bDiamond Wand&r from &6Construction Wand&r. It extends a row or face of matching blocks in one click, which turns tedious wall-and-floor work into a single motion."
+				"The diamond tier reaches furthest of the basic wands."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03308000000100"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03208000000100"
+				item: { count: 1, id: "constructionwand:diamond_wand" }
+				type: "item"
+			}]
+			x: 32.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0B03108000000100"]
+			hide_until_deps_complete: true
+			id: "0B03108000000101"
+			title: "Angel Wand Core"
+			subtitle: "Optional: build into open air."
+			description: [
+				"Make the &bAngel Wand Core&r. Fitted to a wand it lets you place blocks out into empty space with no anchor to start from, a real help for bridges and platforms."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03308000000101"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03208000000101"
+				item: { count: 1, id: "constructionwand:core_angel" }
+				type: "item"
+			}]
+			x: 33.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0B03108000000001"]
+			hide_until_deps_complete: true
+			id: "0B03108000000102"
+			title: "Pickup Upgrade"
+			subtitle: "Optional: route drops to the pack."
+			description: [
+				"Add a &bPickup Upgrade&r to a &6Sophisticated Backpack&r. It funnels matching drops straight into the pack as you collect them, so your inventory stops filling with clutter."
+				"It anchors a branch of &bbackpack&r upgrades."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03308000000102"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03208000000102"
+				item: { count: 1, id: "sophisticatedbackpacks:pickup_upgrade" }
+				type: "item"
+			}]
+			x: 32.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0B03108000000102"]
+			hide_until_deps_complete: true
+			id: "0B03108000000103"
+			title: "Magnet Upgrade"
+			subtitle: "Optional: pull items in."
+			description: [
+				"Install a &bMagnet Upgrade&r. It draws nearby drops and experience toward you, which pairs well with the &bpickup upgrade&r for hands-off gathering."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03308000000103"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03208000000103"
+				item: { count: 1, id: "sophisticatedbackpacks:magnet_upgrade" }
+				type: "item"
+			}]
+			x: 33.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0B03108000000103"]
+			hide_until_deps_complete: true
+			id: "0B03108000000104"
+			title: "Deposit Upgrade"
+			subtitle: "Optional: auto-sort into chests."
+			description: [
+				"Add a &bDeposit Upgrade&r. Standing near a chest it offloads matching items from the pack automatically, cutting the busywork of restocking storage."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03308000000104"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03208000000104"
+				item: { count: 1, id: "sophisticatedbackpacks:deposit_upgrade" }
+				type: "item"
+			}]
+			x: 35.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0B03108000000102"]
+			hide_until_deps_complete: true
+			id: "0B03108000000105"
+			title: "Refill Upgrade"
+			subtitle: "Optional: keep your hotbar full."
+			description: [
+				"Install a &bRefill Upgrade&r. It tops your hotbar stacks back up from the pack as they run low, so torches and blocks never quietly run out mid-task."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03308000000105"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03208000000105"
+				item: { count: 1, id: "sophisticatedbackpacks:refill_upgrade" }
+				type: "item"
+			}]
+			x: 32.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0B03108000000105"]
+			hide_until_deps_complete: true
+			id: "0B03108000000106"
+			title: "Restock Upgrade"
+			subtitle: "Optional: feed the pack from storage."
+			description: [
+				"Add a &bRestock Upgrade&r. It pulls items into the pack from adjacent storage, the inbound counterpart to the &bdeposit upgrade&r."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03308000000106"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03208000000106"
+				item: { count: 1, id: "sophisticatedbackpacks:restock_upgrade" }
+				type: "item"
+			}]
+			x: 33.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0B03108000000106"]
+			hide_until_deps_complete: true
+			id: "0B03108000000107"
+			title: "Feeding Upgrade"
+			subtitle: "Optional: eat without looking."
+			description: [
+				"Install a &bFeeding Upgrade&r. It feeds you from the pack whenever your hunger drops, which keeps you fighting and building without breaking to eat."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03308000000107"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03208000000107"
+				item: { count: 1, id: "sophisticatedbackpacks:feeding_upgrade" }
+				type: "item"
+			}]
+			x: 35.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0B03108000000001"]
+			hide_until_deps_complete: true
+			id: "0B03108000000110"
+			title: "Circuit Plate"
+			subtitle: "Optional: ProjectRed's base part."
+			description: [
+				"Press a &bCircuit Plate&r. It is the foundation piece &6ProjectRed&r builds its logic gates and wiring from, the start of a compact redstone toolkit."
+				"This branch is for anyone who wants real circuits without the bulk of vanilla redstone."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03308000000110"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03208000000110"
+				item: { count: 1, id: "projectred_core:plate" }
+				type: "item"
+			}]
+			x: 38.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0B03108000000110"]
+			hide_until_deps_complete: true
+			id: "0B03108000000111"
+			title: "Red Iron Compound"
+			subtitle: "Optional: the alloy precursor."
+			description: [
+				"Make &bRed Iron Compound&r. Iron dusted with redstone, it is the intermediate that smelts down into &6ProjectRed&r's signature alloy."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03308000000111"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03208000000111"
+				item: { count: 1, id: "projectred_core:red_iron_comp" }
+				type: "item"
+			}]
+			x: 39.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0B03108000000111"]
+			hide_until_deps_complete: true
+			id: "0B03108000000112"
+			title: "Red Alloy Ingot"
+			subtitle: "Optional: conductive metal."
+			description: [
+				"Smelt a &bRed Alloy Ingot&r. It carries a redstone charge through itself, which is what lets &6ProjectRed&r run wire and gates far more densely than dust on the ground."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03308000000112"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03208000000112"
+				item: { count: 1, id: "projectred_core:red_ingot" }
+				type: "item"
+			}]
+			x: 41.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0B03108000000112"]
+			hide_until_deps_complete: true
+			id: "0B03108000000113"
+			title: "Red Alloy Wire"
+			subtitle: "Optional: flat redstone wire."
+			description: [
+				"Lay &bRed Alloy Wire&r. It carries a signal like redstone dust but sits flat against walls and ceilings, so your circuits stop sprawling across the floor."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03308000000113"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03208000000113"
+				item: { count: 1, id: "projectred_transmission:red_alloy_wire" }
+				type: "item"
+			}]
+			x: 38.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0B03108000000112"]
+			hide_until_deps_complete: true
+			id: "0B03108000000114"
+			title: "Conductive Plate"
+			subtitle: "Optional: a charged circuit plate."
+			description: [
+				"Craft a &bConductive Plate&r. It is a &bcircuit plate&r that carries current, a building block for the gates that come next."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03308000000114"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03208000000114"
+				item: { count: 1, id: "projectred_core:conductive_plate" }
+				type: "item"
+			}]
+			x: 39.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0B03108000000114"]
+			hide_until_deps_complete: true
+			id: "0B03108000000115"
+			title: "Anode"
+			subtitle: "Optional: the positive terminal."
+			description: [
+				"Make an &bAnode&r. With the &bcathode&r it forms the pair &6ProjectRed&r's powered components draw across, a small but required pair of parts."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03308000000115"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03208000000115"
+				item: { count: 1, id: "projectred_core:anode" }
+				type: "item"
+			}]
+			x: 41.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0B03108000000115"]
+			hide_until_deps_complete: true
+			id: "0B03108000000116"
+			title: "Cathode"
+			subtitle: "Optional: the negative terminal."
+			description: [
+				"Make a &bCathode&r. Paired with the &banode&r it completes the terminals the logic gates are wired between."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03308000000116"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03208000000116"
+				item: { count: 1, id: "projectred_core:cathode" }
+				type: "item"
+			}]
+			x: 42.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0B03108000000116"]
+			hide_until_deps_complete: true
+			id: "0B03108000000117"
+			title: "NOT Gate"
+			subtitle: "Optional: invert a signal."
+			description: [
+				"Assemble a &bNOT Gate&r. It flips a signal on to off and back, the simplest logic tile and proof your circuit parts work together."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03308000000117"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03208000000117"
+				item: { count: 1, id: "projectred_integration:not_gate" }
+				type: "item"
+			}]
+			x: 38.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0B03108000000117"]
+			hide_until_deps_complete: true
+			id: "0B03108000000118"
+			title: "Timer"
+			subtitle: "Optional: a repeating pulse."
+			description: [
+				"Build a &bTimer&r gate. It fires a signal on a set interval, the clock that drives any automation you want running on its own schedule."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03308000000118"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03208000000118"
+				item: { count: 1, id: "projectred_integration:timer_gate" }
+				type: "item"
+			}]
+			x: 39.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0B03108000000112"]
+			hide_until_deps_complete: true
+			id: "0B03108000000119"
+			title: "Red Lantern"
+			subtitle: "Optional: switchable light."
+			description: [
+				"Craft a &bRed Lantern&r. It is a colored light &6ProjectRed&r can wire into a circuit, so a redstone signal turns whole rooms on and off."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03308000000119"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03208000000119"
+				item: { count: 1, id: "projectred_illumination:red_lantern" }
+				type: "item"
+			}]
+			x: 41.0d
+			y: 3.0d
+		}
+	]
+}
