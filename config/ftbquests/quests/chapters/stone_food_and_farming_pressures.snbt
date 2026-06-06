@@ -13,9 +13,13 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["60D53613768CA1F3"]
-			hide_until_deps_complete: true
 			id: "34000000000003C1"
+			title: "Stone Hoe"
+			subtitle: "Break ground and start farming."
+			description: [
+				"Craft a &bStone Hoe&r and till a patch of grass near water. Tilled soil is where every crop in this chapter starts, so pick a flat, lit spot you can fence off later."
+				"Seeds drop from breaking tall grass. Get a small plot going before nightfall, because food runs short fast in the &dDark Ages&r."
+			]
 			rewards: [{
 				count: 8
 				id: "34000000000003C2"
@@ -23,6 +27,7 @@
 					count: 1
 					id: "minecraft:wheat_seeds"
 				}
+				title: "A handful of seeds to plant your first row."
 				type: "item"
 			}]
 			shape: "diamond"
@@ -47,6 +52,12 @@
 			dependencies: ["34000000000003C1"]
 			hide_until_deps_complete: true
 			id: "3400000000001414"
+			title: "Sow the Field"
+			subtitle: "Plant your first real crop."
+			description: [
+				"Gather wheat seeds from grass and plant them across your tilled soil. Keep water within four blocks of every plant so the whole plot stays hydrated and grows faster."
+				"Bone meal will rush a stubborn plant, but a wide field beats forcing one row. Widen the plot now and harvests stop being a worry."
+			]
 			rewards: [
 				{
 					id: "484FD4D59AB24225"
@@ -87,6 +98,12 @@
 			dependency_requirement: "one_completed"
 			hide_until_deps_complete: true
 			id: "34000000000003C5"
+			title: "Wheat Harvest"
+			subtitle: "Replant as you reap."
+			description: [
+				"Bring in a real wheat harvest and save part of every cut for reseeding. Wheat feeds bread, animal breeding, and a few early trades, so a steady supply pays off."
+				"Mature plants give one seed back at minimum, so a field that is replanted as it is cut keeps itself going."
+			]
 			rewards: [
 				{
 					id: "2EB54F7A3BF02DE3"
@@ -130,6 +147,12 @@
 				id: "minecraft:potato"
 			}
 			id: "34000000000003CD"
+			title: "Potato Stockpile"
+			subtitle: "The crop you can eat raw in a pinch."
+			description: [
+				"Grow and stockpile potatoes. They plant from the potato itself instead of a seed, they yield several per harvest, and baked potatoes are some of the cheapest filling food you can make."
+				"A deep potato store is your buffer for the nights when nothing else is ready."
+			]
 			rewards: [
 				{
 					count: 4
@@ -168,6 +191,12 @@
 			dependencies: ["34000000000003CD"]
 			hide_until_deps_complete: true
 			id: "3400000000001424"
+			title: "Bread"
+			subtitle: "Turn the harvest into a meal."
+			description: [
+				"Bake bread from three wheat at a crafting table. It needs no furnace and no fuel, which makes it the food you fall back on while the rest of your kitchen comes together."
+				"Keep a stack on you. Hunger ticks down whether or not you have something better waiting at home."
+			]
 			tasks: [{
 				SkillsLevel: {
 					category: ""
@@ -189,6 +218,12 @@
 			dependencies: ["3400000000001424"]
 			hide_until_deps_complete: true
 			id: "3400000000001427"
+			title: "Composter"
+			subtitle: "Spare crops become bone meal."
+			description: [
+				"Build a &bComposter&r and feed it seeds, leaves, and surplus crops. Fill it seven times and it gives back bone meal, which speeds your next planting without hunting skeletons."
+				"Run it next to the field so overflow goes straight in instead of rotting in a chest."
+			]
 			tasks: [{
 				SkillsLevel: {
 					category: ""
@@ -209,6 +244,12 @@
 			dependencies: ["3400000000001424"]
 			hide_until_deps_complete: true
 			id: "34000000000003D1"
+			title: "Fishing Rod"
+			subtitle: "Pull food straight out of the water."
+			description: [
+				"Craft a &bFishing Rod&r and work a pond or river. Fishing costs almost nothing and returns food, bonus loot, and the fish the &bsmoker&r turns into a proper meal."
+				"It is the most reliable early food source that does not depend on a field surviving the night."
+			]
 			rewards: [{
 				count: 2
 				id: "34000000000003D2"
@@ -216,6 +257,7 @@
 					count: 1
 					id: "minecraft:cooked_cod"
 				}
+				title: "A couple of cooked cod to tide you over."
 				type: "item"
 			}]
 			tasks: [{
@@ -238,10 +280,17 @@
 			dependencies: ["34000000000003C5"]
 			hide_until_deps_complete: true
 			id: "3F33D0F200BD6ED5"
+			title: "Blackwood Sapling"
+			subtitle: "Start a renewable wood supply."
+			description: [
+				"Plant a &6Regions Unexplored&r &bBlackwood Sapling&r and let it grow into a tree. A planted grove near base means you stop strip-mining the landscape for logs every time you build."
+				"Bone meal hurries it along if you want shade and lumber sooner."
+			]
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "476665FBF45E5307"
 				table_id: 4597731606249609751L
+				title: "Pick a crop to round out the larder."
 				type: "random"
 			}]
 			tasks: [{
@@ -265,6 +314,12 @@
 			disable_recipe_mod: false
 			hide_until_deps_complete: true
 			id: "2973560A44DEC9A5"
+			title: "Fishing Line"
+			subtitle: "The part that makes better rods."
+			description: [
+				"Craft &bFishing Line&r. On its own it is a component, but it is the gate to the &6Aquaculture&r rods and tackle that catch far more than a vanilla rod ever will."
+				"Once you can make line, the upgraded fishing gear in later chapters opens up."
+			]
 			tasks: [{
 				SkillsLevel: {
 					category: ""
@@ -285,10 +340,17 @@
 			dependencies: ["34000000000003D1"]
 			hide_until_deps_complete: true
 			id: "6F697569C417FCCE"
+			title: "Stone Fillet Knife"
+			subtitle: "More meals from the same catch."
+			description: [
+				"Craft a &bStone Fillet Knife&r and use it on your catch. Filleting a fish gives two cookable portions instead of one, so the same trip to the water feeds more mouths."
+				"Keep it on your hotbar next to the rod and processing fish becomes one quick step."
+			]
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "5BFE8926DD427D40"
 				table_id: 8142508126285856770L
+				title: "A survival cache to settle the camp in."
 				type: "choice"
 			}]
 			tasks: [{
@@ -311,6 +373,12 @@
 			dependencies: ["34000000000003C5"]
 			hide_until_deps_complete: true
 			id: "15F65C76BE09F690"
+			title: "Smoker"
+			subtitle: "Cook food at double speed."
+			description: [
+				"Build a &bSmoker&r. It cooks meat and fish twice as fast as a furnace, which matters when a single furnace is juggling food and ore at the same time."
+				"Pair it with the fishing setup so your catch becomes meals as fast as you haul it in."
+			]
 			tasks: [{
 				SkillsLevel: {
 					category: ""
@@ -334,6 +402,12 @@
 				id: "eclipticseasons:calendar"
 			}
 			id: "62FF13481B0696BA"
+			title: "Calendar"
+			subtitle: "Read the season before you plant."
+			description: [
+				"Place a &bCalendar&r to track the date and current season from &6Ecliptic Seasons&r. Crops grow on the season they belong to, so knowing whether spring or winter is coming decides what is worth sowing."
+				"Check it before a big planting. A field sown out of season is wasted seed."
+			]
 			tasks: [{
 				SkillsLevel: {
 					category: ""
@@ -354,12 +428,19 @@
 			dependencies: ["62FF13481B0696BA"]
 			hide_until_deps_complete: true
 			id: "11C25203906C0FD4"
+			title: "Greenhouse"
+			subtitle: "Grow through the off-season."
+			description: [
+				"Assemble the &bgreenhouse&r from its core container, a &bGrowth Detector&r, a &bWooden Grate Humidifier&r, a Thermometer, and a Seasonal Prayer Scroll. Together they hold a warm, humid pocket where crops keep growing even when the season outside would stall them."
+				"This is how Ecliptic Seasons stops being a hard wall on winter farming. Build one before the cold sets in."
+			]
 			rewards: [{
 				id: "5B2002743C9714CA"
 				item: {
 					count: 1
 					id: "eclipticseasons:hygrometer"
 				}
+				title: "A Hygrometer to read the humidity inside."
 				type: "item"
 			}]
 			tasks: [
