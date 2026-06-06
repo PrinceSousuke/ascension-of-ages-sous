@@ -1,0 +1,1266 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ren_starlight_observation"
+	group: "0B038EB15EBBFD95"
+	hide_quest_until_deps_complete: true
+	icon: {
+		id: "eternal_starlight:lunar_crystal"
+	}
+	id: "0B03001000000004"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"0B03103000000031"
+				"0B03107000000050"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				id: "eternal_starlight:lunar_crystal"
+			}
+			id: "0B03104000000001"
+			title: "Starlight Observation"
+			subtitle: "A dimension of endless night."
+			description: [
+				"&6Eternal Starlight&r is a world held in perpetual moonlit dark, cold and quiet and full of strange materials. This chapter charts the way in, the metals and crystals worth hauling out, and the bosses that guard them."
+				"Dress warm before you cross. The cold here bites the way the &dDark Age&r taught you to respect."
+			]
+			rewards: [{
+				id: "0B03304000000001"
+				type: "xp"
+				xp: 25
+			}]
+			size: 1.5d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				dimension: "minecraft:overworld"
+				id: "0B03204000000001"
+				type: "dimension"
+			}]
+			x: 0.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["0B03104000000001"]
+			hide_until_deps_complete: true
+			id: "0B03104000000010"
+			title: "Common Portal Ruins"
+			subtitle: "Find the way across."
+			description: [
+				"Locate a set of &bCommon Portal Ruins&r. The portal to &6Eternal Starlight&r is not built but found, half-collapsed in the overworld, and repairing one is how you open the crossing."
+				"Scout the structure before you commit to the trip."
+			]
+			rewards: [{
+				id: "0B03304000000010"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03204000000010"
+				structure: "eternal_starlight:portal_ruins_common"
+				type: "structure"
+			}]
+			x: -4.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0B03104000000010"]
+			hide_until_deps_complete: true
+			id: "0B03104000000011"
+			title: "Forest Portal Ruins"
+			subtitle: "Optional: a second ruin type."
+			description: [
+				"Find the &bForest Portal Ruins&r variant. It is an alternate flavor of the same gateway, worth logging for the explorer who wants to map every entrance."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03304000000011"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03204000000011"
+				structure: "eternal_starlight:portal_ruins_forest"
+				type: "structure"
+			}]
+			x: -4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0B03104000000010"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "eternal_starlight:lunar_crystal"
+			}
+			id: "0B03104000000012"
+			title: "Into Eternal Starlight"
+			subtitle: "Step through the repaired portal."
+			description: [
+				"Cross into &6Eternal Starlight&r. The moon never sets here, so light is steady but the chill is constant, and warm gear earns its place the moment you arrive."
+				"Setting foot in the dimension is the chapter's first real milestone."
+			]
+			rewards: [{
+				id: "0B03304000000012"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				dimension: "eternal_starlight:starlight"
+				id: "0B03204000000012"
+				type: "dimension"
+			}]
+			x: -4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0B03104000000012"]
+			hide_until_deps_complete: true
+			id: "0B03104000000020"
+			title: "Lunar Berries"
+			subtitle: "First food of the moon world."
+			description: [
+				"Pick &bLunar Berries&r. They grow across the dimension and make a reliable trail food, the easiest thing to gather while you find your feet here."
+			]
+			rewards: [{
+				id: "0B03304000000020"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03204000000020"
+				item: { count: 1, id: "eternal_starlight:lunar_berries" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0B03104000000012"]
+			hide_until_deps_complete: true
+			id: "0B03104000000030"
+			title: "Lunaris Cactus Fruit"
+			subtitle: "Forage the pale cacti."
+			description: [
+				"Harvest &bLunaris Cactus Fruit&r. It is both food and the raw material for the cactus gel further along, so a stand of the plants is worth marking."
+			]
+			rewards: [{
+				id: "0B03304000000030"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03204000000030"
+				item: { count: 1, id: "eternal_starlight:lunaris_cactus_fruit" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0B03104000000030"]
+			hide_until_deps_complete: true
+			id: "0B03104000000031"
+			title: "Saltpeter Powder"
+			subtitle: "A common reagent."
+			description: [
+				"Gather &bSaltpeter Powder&r. &6Eternal Starlight&r uses it as a base crafting reagent, the kind of bulk material the dimension's recipes quietly assume you have."
+			]
+			rewards: [{
+				id: "0B03304000000031"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03204000000031"
+				item: { count: 1, id: "eternal_starlight:saltpeter_powder" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0B03104000000031"]
+			hide_until_deps_complete: true
+			id: "0B03104000000032"
+			title: "Deepsilver Ingot"
+			subtitle: "The dimension's first metal."
+			description: [
+				"Smelt a &bDeepsilver Ingot&r. Deepsilver is &6Eternal Starlight&r's entry metal, the one its early tools and the next tier of materials are built from."
+				"Most of the crafting branches here trace back through it."
+			]
+			rewards: [{
+				id: "0B03304000000032"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03204000000032"
+				item: { count: 1, id: "eternal_starlight:deepsilver_ingot" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0B03104000000041"]
+			hide_until_deps_complete: true
+			id: "0B03104000000033"
+			title: "Starcore"
+			subtitle: "Optional: a concentrated core."
+			description: [
+				"Forge a &bStarcore&r. It is a dense crafting component the higher &6Eternal Starlight&r recipes call for, drawn from the dimension's springstone work."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03304000000033"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03204000000033"
+				item: { count: 1, id: "eternal_starlight:starcore" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0B03104000000034"]
+			hide_until_deps_complete: true
+			id: "0B03104000000040"
+			title: "Glacite Shard"
+			subtitle: "Optional: shard of deep ice."
+			description: [
+				"Mine a &bGlacite Shard&r. The frozen crystal feeds the cold-themed gear, the raw piece behind the &bcoldsnap&r line."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03304000000040"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03204000000040"
+				item: { count: 1, id: "eternal_starlight:glacite_shard" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0B03104000000032"]
+			hide_until_deps_complete: true
+			id: "0B03104000000034"
+			title: "Lunar Crystal"
+			subtitle: "The signature crystal."
+			description: [
+				"Harvest a &bLunar Crystal&r. It is &6Eternal Starlight&r's defining material, glowing faintly with the dimension's light, and a key ingredient across its mid-tier crafts."
+			]
+			rewards: [{
+				id: "0B03304000000034"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03204000000034"
+				item: { count: 1, id: "eternal_starlight:lunar_crystal" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0B03104000000034"]
+			hide_until_deps_complete: true
+			id: "0B03104000000035"
+			title: "Red Starlight Crystal Shard"
+			subtitle: "Crystal in red."
+			description: [
+				"Collect a &bRed Starlight Crystal Shard&r. The starlight crystals come in colors, and the red shard pairs with the cactus gel into the dimension's amber alloy."
+			]
+			rewards: [{
+				id: "0B03304000000035"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03204000000035"
+				item: { count: 1, id: "eternal_starlight:red_starlight_crystal_shard" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0B03104000000034"]
+			hide_until_deps_complete: true
+			id: "0B03104000000036"
+			title: "Lunaris Cactus Gel"
+			subtitle: "Render the fruit into gel."
+			description: [
+				"Process &bLunaris Cactus Fruit&r into &bLunaris Cactus Gel&r. The gel is the worked reagent the recipes want, a binder for the metalwork ahead."
+			]
+			rewards: [{
+				id: "0B03304000000036"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03204000000036"
+				item: { count: 1, id: "eternal_starlight:lunaris_cactus_gel" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"0B03104000000035"
+				"0B03104000000036"
+			]
+			hide_until_deps_complete: true
+			id: "0B03104000000037"
+			title: "Amaramber Ingot"
+			subtitle: "An amber alloy."
+			description: [
+				"Alloy an &bAmaramber Ingot&r from the red shard and the cactus gel. It is one of &6Eternal Starlight&r's stronger metals, the base for its better gear and the prophecy orb."
+			]
+			rewards: [{
+				id: "0B03304000000037"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "diamond"
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03204000000037"
+				item: { count: 1, id: "eternal_starlight:amaramber_ingot" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0B03104000000032"]
+			hide_until_deps_complete: true
+			id: "0B03104000000041"
+			title: "Thermal Springstone Ingot"
+			subtitle: "Warmth in metal."
+			description: [
+				"Smelt a &bThermal Springstone Ingot&r. The warm stone runs counter to the dimension's chill, and it feeds the golem &bsteel&r and &bstarcore&r branches both."
+			]
+			rewards: [{
+				id: "0B03304000000041"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03204000000041"
+				item: { count: 1, id: "eternal_starlight:thermal_springstone_ingot" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0B03104000000032"]
+			hide_until_deps_complete: true
+			id: "0B03104000000043"
+			title: "Wand of Teleportation"
+			subtitle: "Optional: blink across gaps."
+			description: [
+				"Craft a &bWand of Teleportation&r. It throws you a short distance in a blink, a real help for crossing the dimension's broken terrain and dodging in a fight."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03304000000043"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03204000000043"
+				item: { count: 1, id: "eternal_starlight:wand_of_teleportation" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0B03104000000030"]
+			hide_until_deps_complete: true
+			id: "0B03104000000044"
+			title: "Abyssal Fruit"
+			subtitle: "Optional: fruit of the deep."
+			description: [
+				"Find an &bAbyssal Fruit&r. It grows in the dimension's lower reaches, a food with its own quirks and a gateway to the fishing chains down there."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03304000000044"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03204000000044"
+				item: { count: 1, id: "eternal_starlight:abyssal_fruit" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0B03104000000032"]
+			hide_until_deps_complete: true
+			id: "0B03104000000045"
+			title: "Mana Crystal"
+			subtitle: "Optional: stored magic."
+			description: [
+				"Grow a &bMana Crystal&r. It stores magical energy for &6Eternal Starlight&r's enchanted gear, the source the &bsoul dew&r and crystal shards branch from."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03304000000045"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03204000000045"
+				item: { count: 1, id: "eternal_starlight:mana_crystal" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0B03104000000035"]
+			hide_until_deps_complete: true
+			id: "0B03104000000060"
+			title: "Blue Starlight Crystal Shard"
+			subtitle: "Optional: crystal in blue."
+			description: [
+				"Collect a &bBlue Starlight Crystal Shard&r. It is the cooler-toned partner to the red shard, used where a recipe wants the blue variant."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03304000000060"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03204000000060"
+				item: { count: 1, id: "eternal_starlight:blue_starlight_crystal_shard" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["0B03104000000041"]
+			hide_until_deps_complete: true
+			id: "0B03104000000061"
+			title: "Golem Steel Ingot"
+			subtitle: "Optional: steel of the golems."
+			description: [
+				"Forge a &bGolem Steel Ingot&r. It is the metal the dimension's golems are built from, a tough alloy for armor and the heavier tools."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03304000000061"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03204000000061"
+				item: { count: 1, id: "eternal_starlight:golem_steel_ingot" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["0B03104000000061"]
+			hide_until_deps_complete: true
+			id: "0B03104000000062"
+			title: "Oxidized Golem Steel"
+			subtitle: "Optional: weathered steel."
+			description: [
+				"Make &bOxidized Golem Steel&r. The aged form has its own uses in the golem-themed recipes, a variant rather than a straight upgrade."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03304000000062"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03204000000062"
+				item: { count: 1, id: "eternal_starlight:oxidized_golem_steel_ingot" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["0B03104000000040"]
+			hide_until_deps_complete: true
+			id: "0B03104000000063"
+			title: "Coldsnap"
+			subtitle: "Optional: weaponized cold."
+			description: [
+				"Craft &bColdsnap&r from glacite. It carries the dimension's bite into a usable form, the basis of its frost gear and the &bshivering gel&r ahead."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03304000000063"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03204000000063"
+				item: { count: 1, id: "eternal_starlight:coldsnap" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["0B03104000000045"]
+			hide_until_deps_complete: true
+			id: "0B03104000000064"
+			title: "Soul Dew"
+			subtitle: "Optional: distilled essence."
+			description: [
+				"Gather &bSoul Dew&r. Drawn from the mana crystals, it is a potent reagent for the enchanted end of &6Eternal Starlight&r's crafting."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03304000000064"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03204000000064"
+				item: { count: 1, id: "eternal_starlight:soul_dew" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["0B03104000000044"]
+			hide_until_deps_complete: true
+			id: "0B03104000000065"
+			title: "Luminofish"
+			subtitle: "Optional: catch the glowing fish."
+			description: [
+				"Catch a &bLuminofish&r. The glowing swimmer is both food and a light-giving curiosity, the start of one of the dimension's two fishing lines."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03304000000065"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03204000000065"
+				item: { count: 1, id: "eternal_starlight:luminofish" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["0B03104000000065"]
+			hide_until_deps_complete: true
+			id: "0B03104000000066"
+			title: "Luminofish Bucket"
+			subtitle: "Optional: keep one alive."
+			description: [
+				"Scoop a &bLuminofish&r into a bucket. Kept live it makes a glowing ornament for a tank back home, or a fish to release where you like."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03304000000066"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03204000000066"
+				item: { count: 1, id: "eternal_starlight:luminofish_bucket" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["0B03104000000066"]
+			hide_until_deps_complete: true
+			id: "0B03104000000067"
+			title: "Cooked Luminofish"
+			subtitle: "Optional: cook the catch."
+			description: [
+				"Cook a &bLuminofish&r. Fired up it is a decent meal, the practical end of catching the glowing fish."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03304000000067"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03204000000067"
+				item: { count: 1, id: "eternal_starlight:cooked_luminofish" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["0B03104000000044"]
+			hide_until_deps_complete: true
+			id: "0B03104000000068"
+			title: "Rookfish"
+			subtitle: "Optional: the second fish."
+			description: [
+				"Catch a &bRookfish&r. It is the other fish of &6Eternal Starlight&r's waters, with its own drops and a swim bladder worth keeping."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03304000000068"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03204000000068"
+				item: { count: 1, id: "eternal_starlight:rookfish" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["0B03104000000068"]
+			hide_until_deps_complete: true
+			id: "0B03104000000069"
+			title: "Rookfish Bucket"
+			subtitle: "Optional: bucket a rookfish."
+			description: [
+				"Bucket a live &bRookfish&r. Like the &bluminofish&r it travels and displays well, a catch you can move rather than eat."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03304000000069"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03204000000069"
+				item: { count: 1, id: "eternal_starlight:rookfish_bucket" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["0B03104000000069"]
+			hide_until_deps_complete: true
+			id: "0B0310400000006A"
+			title: "Cooked Rookfish"
+			subtitle: "Optional: cook it."
+			description: [
+				"Cook a &bRookfish&r into a meal. It rounds out the dimension's home-grown food, useful on a long expedition far from your farm."
+			]
+			optional: true
+			rewards: [{
+				id: "0B0330400000006A"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B0320400000006A"
+				item: { count: 1, id: "eternal_starlight:cooked_rookfish" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["0B03104000000068"]
+			hide_until_deps_complete: true
+			id: "0B0310400000006B"
+			title: "Rookfish Air Sac"
+			subtitle: "Optional: a useful organ."
+			description: [
+				"Recover a &bRookfish Air Sac&r. The swim bladder is a crafting reagent in &6Eternal Starlight&r's recipes, the reason to gut your catch rather than just cook it."
+			]
+			optional: true
+			rewards: [{
+				id: "0B0330400000006B"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B0320400000006B"
+				item: { count: 1, id: "eternal_starlight:rookfish_air_sac" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["0B03104000000041"]
+			hide_until_deps_complete: true
+			id: "0B0310400000006C"
+			title: "Creteor Hide"
+			subtitle: "Optional: a beast's hide."
+			description: [
+				"Take a &bCreteor Hide&r. It comes off one of the dimension's creatures, a leather-like material for its armor and bound recipes."
+			]
+			optional: true
+			rewards: [{
+				id: "0B0330400000006C"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B0320400000006C"
+				item: { count: 1, id: "eternal_starlight:creteor_hide" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["0B03104000000063"]
+			hide_until_deps_complete: true
+			id: "0B0310400000006D"
+			title: "Shivering Gel"
+			subtitle: "Optional: refined cold."
+			description: [
+				"Process &bColdsnap&r into &bShivering Gel&r. The gel is the worked form of the dimension's cold, a reagent for its frostier enchanted gear."
+			]
+			optional: true
+			rewards: [{
+				id: "0B0330400000006D"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B0320400000006D"
+				item: { count: 1, id: "eternal_starlight:shivering_gel" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["0B03104000000041"]
+			hide_until_deps_complete: true
+			id: "0B0310400000006E"
+			title: "Thioquartz Shard"
+			subtitle: "Optional: a strange quartz."
+			description: [
+				"Mine a &bThioquartz Shard&r. The dimension's own quartz carries odd properties, a component the springstone-side recipes draw on."
+			]
+			optional: true
+			rewards: [{
+				id: "0B0330400000006E"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B0320400000006E"
+				item: { count: 1, id: "eternal_starlight:thioquartz_shard" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["0B03104000000045"]
+			hide_until_deps_complete: true
+			id: "0B0310400000006F"
+			title: "Mana Crystal Shard"
+			subtitle: "Optional: a fragment of mana."
+			description: [
+				"Split off a &bMana Crystal Shard&r. The smaller fraction is what the lighter enchanted recipes ask for, cheaper than spending a whole crystal."
+			]
+			optional: true
+			rewards: [{
+				id: "0B0330400000006F"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B0320400000006F"
+				item: { count: 1, id: "eternal_starlight:mana_crystal_shard" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["0B03104000000037"]
+			hide_until_deps_complete: true
+			id: "0B03104000000070"
+			title: "Starlit Diamond"
+			subtitle: "Optional: a charged gem."
+			description: [
+				"Forge a &bStarlit Diamond&r. Steeped in the dimension's light, it is a high-grade gem for &6Eternal Starlight&r's best gear, the payoff of the amber-alloy line."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03304000000070"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03204000000070"
+				item: { count: 1, id: "eternal_starlight:starlit_diamond" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"0B03104000000037"
+				"0B03104000000041"
+			]
+			hide_until_deps_complete: true
+			id: "0B03104000000071"
+			title: "Orb of Prophecy"
+			subtitle: "The key to the Gatekeeper."
+			description: [
+				"Assemble the &bOrb of Prophecy&r. It is the summoning key for the dimension's guardian, built from the amaramber and springstone work you have done."
+				"Crafting it is the last step before the boss fight."
+			]
+			min_required_dependencies: 2
+			rewards: [{
+				id: "0B03304000000071"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "diamond"
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03204000000071"
+				item: { count: 1, id: "eternal_starlight:orb_of_prophecy" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["0B03104000000071"]
+			hide_until_deps_complete: true
+			id: "0B03104000000050"
+			title: "The Gatekeeper"
+			subtitle: "Face the dimension's guardian."
+			description: [
+				"Use the &bOrb of Prophecy&r to summon &c&lThe Gatekeeper&r, &6Eternal Starlight&r's central boss. Keep warm gear on, stay mobile across its arena, and watch for the ranged attacks that punish standing still."
+				"It drops the Cold Eye your End portal still needs, which makes this fight a required stop rather than a detour."
+			]
+			min_required_dependencies: 1
+			rewards: [
+				{
+					auto: "enabled"
+					command: "/astages add {p} ren_starlight_observation_complete true true"
+					icon: {
+						id: "eternal_starlight:orb_of_prophecy"
+					}
+					id: "0B03304000000050"
+					permission_level: 2
+					silent: true
+					team_reward: true
+					type: "command"
+				}
+				{
+					id: "0B03304000000051"
+					item: {
+						count: 1
+						id: "endrem:cold_eye"
+					}
+					title: "Eye of the Frozen Gate"
+					type: "item"
+				}
+				{
+					id: "0B03304000000053"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				entity: "eternal_starlight:the_gatekeeper"
+				id: "0B03204000000050"
+				type: "kill"
+				value: 1L
+			}]
+			x: 0.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["0B03104000000050"]
+			hide_until_deps_complete: true
+			id: "0B03104000000072"
+			title: "Permafrost"
+			subtitle: "Optional: the ice boss."
+			description: [
+				"Hunt down &c&lPermafrost&r, an optional boss of the frozen reaches. It hits with deep cold, so the warmest gear you have and a fast weapon are the order of the day."
+				"Its drops feed the dimension's coldest gear, a reward for the fight rather than a gate."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03304000000072"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				entity: "eternal_starlight:permafrost"
+				id: "0B03204000000072"
+				type: "kill"
+				value: 1L
+			}]
+			x: -3.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["0B03104000000050"]
+			hide_until_deps_complete: true
+			id: "0B03104000000073"
+			title: "Starlight Golem"
+			subtitle: "Optional: the steel guardian."
+			description: [
+				"Take on the &c&lStarlight Golem&r, an optional construct boss. It is slow but heavy-hitting, so circle it and chip away rather than trading blows head-on."
+				"Felling it is the surest source of the golem &bsteel&r the armor line wants."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03304000000073"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				entity: "eternal_starlight:starlight_golem"
+				id: "0B03204000000073"
+				type: "kill"
+				value: 1L
+			}]
+			x: 3.0d
+			y: 10.5d
+		}
+	]
+}
