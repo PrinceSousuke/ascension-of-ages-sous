@@ -1,0 +1,2237 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ir_create_industrial_addons"
+	group: "3F77A31B7D30C0AA"
+	hide_quest_until_deps_complete: true
+	icon: {
+		id: "createoreexcavation:drilling_machine"
+	}
+	id: "4954080000000000"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			hide_until_deps_complete: false
+			icon: {
+				id: "create:precision_mechanism"
+			}
+			dependencies: ["4954011000000001"]
+			id: "4954081000000001"
+			title: "Precision Mechanism"
+			subtitle: "The gateway Create component."
+			description: [
+				"Craft a &bPrecision Mechanism&r. It is the keystone part behind &6Create&r's advanced machinery, assembled in a &bmechanical crafter&r from cogs, gold, and an iron sheet."
+				"Almost everything in this chapter wants one, so set up to make them in quantity."
+			]
+			rewards: [
+				{
+					id: "4954083000001000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "4954083000001001"
+					table_id: 8358680908399640577L
+					title: "A starter cache for the Create build-out."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954082000001001"
+				item: { count: 1, id: "create:precision_mechanism" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["4954081000000001"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "create:mechanical_crafter"
+			}
+			id: "4954081000000002"
+			title: "Mechanical Crafter"
+			subtitle: "Automate the crafting grid."
+			description: [
+				"Build Mechanical Crafters. Arranged in a grid and driven by rotation they assemble recipes automatically, including the precision mechanisms you just started needing."
+				"Lay them out to match the recipe's shape and pipe the ingredients in."
+			]
+			rewards: [
+				{
+					id: "4954083000002000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "4954083000002001"
+					table_id: 8358680908399640577L
+					title: "Parts to keep the crafters fed."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954082000002000"
+				item: { count: 1, id: "create:mechanical_crafter" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["4954081000000001"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "create:mechanical_saw"
+			}
+			id: "4954081000000003"
+			title: "Mechanical Saw"
+			subtitle: "Cut wood and stone on power."
+			description: [
+				"Craft a &bMechanical Saw&r. Fixed in place it processes logs and cutting recipes; mounted on a contraption it fells whole trees, the heart of an automated tree farm."
+				"Point it the right way before you spin it up."
+			]
+			rewards: [
+				{
+					id: "4954083000003000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "4954083000003001"
+					table_id: 8358680908399640577L
+					title: "A few parts for the lumber line."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954082000003000"
+				item: { count: 1, id: "create:mechanical_saw" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["4954081000000001"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "create:steam_engine"
+			}
+			id: "4954081000000004"
+			title: "Steam Engine"
+			subtitle: "Rotation from a boiler."
+			description: [
+				"Build a &bSteam Engine&r. Mounted on a water-filled &bboiler&r it delivers strong, scalable rotation, the power source that carries &6Create&r past water wheels."
+				"Bigger boilers and more burners mean more engines and more output."
+			]
+			rewards: [
+				{
+					id: "4954083000004000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "4954083000004001"
+					table_id: 8358680908399640577L
+					title: "Supplies for the power room."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954082000004000"
+				item: { count: 1, id: "create:steam_engine" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["4954081000000001"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "create:mechanical_drill"
+			}
+			id: "4954081000000005"
+			title: "Mechanical Drill"
+			subtitle: "Break blocks under power."
+			description: [
+				"Craft a &bMechanical Drill&r. Stationary it processes crushing recipes; on a moving contraption it bores through stone, the digging half of an automated mining rig."
+				"Pair it with a gantry or a train for serious excavation."
+			]
+			rewards: [
+				{
+					id: "4954083000005000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "4954083000005001"
+					table_id: 8358680908399640577L
+					title: "A parts cache for the drilling rig."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954082000005000"
+				item: { count: 1, id: "create:mechanical_drill" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -8.0d
+		}
+		{
+			hide_until_deps_complete: false
+			icon: {
+				id: "createoreexcavation:vein_finder"
+			}
+			dependencies: ["4954011000000001"]
+			id: "4954081000000006"
+			title: "Ore Vein Finder"
+			subtitle: "Locate the deep veins."
+			description: [
+				"Craft an &bOre Vein Finder&r. &6Create Ore Excavation&r seeds large ore veins deep underground, and this tool tells you what lies beneath where you stand."
+				"Bulk mining starts with knowing where to dig."
+			]
+			rewards: [
+				{
+					id: "4954083000006000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "4954083000006001"
+					table_id: 8358680908399640577L
+					title: "A starter cache for the prospecting kit."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954082000006000"
+				item: { count: 1, id: "createoreexcavation:vein_finder" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["4954081000000006"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "createoreexcavation:drilling_machine"
+			}
+			id: "4954081000000007"
+			title: "Drilling Machine"
+			subtitle: "Mine a whole vein from the top."
+			description: [
+				"Build a &bDrilling Machine&r. Set over a located vein it bores straight down and pulls the entire deposit up to the surface, no shafts or torches required."
+				"Feed it power and let it work the vein dry."
+			]
+			rewards: [
+				{
+					id: "4954083000007000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "4954083000007001"
+					table_id: 8358680908399640577L
+					title: "Components for the bulk miner."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954082000007000"
+				item: { count: 1, id: "createoreexcavation:drilling_machine" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["4954081000000007"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "createoreexcavation:extractor"
+			}
+			id: "4954081000000009"
+			title: "Fluid Well Extractor"
+			subtitle: "Pump a fluid well."
+			description: [
+				"Craft a &bFluid Well Extractor&r. Where the &bdrilling machine&r pulls ore, this one taps the underground fluid wells, drawing oil or lava up in volume."
+				"The surface-side answer to a buried lake of fuel."
+			]
+			rewards: [
+				{
+					id: "4954083000009000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "4954083000009001"
+					table_id: 8358680908399640577L
+					title: "A cache for the fluid rig."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954082000009000"
+				item: { count: 1, id: "createoreexcavation:extractor" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 11.5d
+		}
+		{
+			dependencies: ["4954081000000006"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "createoreexcavation:vein_atlas"
+			}
+			id: "495408100000000A"
+			title: "Ore Vein Atlas"
+			subtitle: "Map what you have found."
+			description: [
+				"Make an &bOre Vein Atlas&r. It records the veins you locate so you can plan a mining route instead of rediscovering the same deposits, a logbook for the prospector."
+				"Handy once you are working more than one site."
+			]
+			rewards: [
+				{
+					id: "495408300000A000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "495408300000A001"
+					table_id: 8358680908399640577L
+					title: "A few supplies for the survey work."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "495408200000A000"
+				item: { count: 1, id: "createoreexcavation:vein_atlas" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["4954081000000006"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "createoreexcavation:sample_drill"
+			}
+			id: "495408100000000B"
+			title: "Sample Drill"
+			subtitle: "Test before you commit."
+			description: [
+				"Build a &bSample Drill&r. It takes a quick core sample of what is below, confirming a vein is worth the full &bdrilling machine&r before you haul one out."
+				"Cheaper to sample than to set up over nothing."
+			]
+			rewards: [
+				{
+					id: "495408300000B000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "495408300000B001"
+					table_id: 8358680908399640577L
+					title: "A small kit for the sampling."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "495408200000B000"
+				item: { count: 1, id: "createoreexcavation:sample_drill" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["4954081000000001"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "create:mechanical_arm"
+			}
+			id: "495408100000000D"
+			title: "Mechanical Arm"
+			subtitle: "Sort and place items."
+			description: [
+				"Craft a &bMechanical Arm&r. It picks items from set inputs and drops them on set outputs, the flexible robot that loads crafters, depots, and belts on a schedule."
+				"Program its targets in order to control where everything goes."
+			]
+			rewards: [
+				{
+					id: "495408300000D000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "495408300000D001"
+					table_id: 8358680908399640577L
+					title: "Parts for the automation arm."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "495408200000D000"
+				item: { count: 1, id: "create:mechanical_arm" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["4954081000000001"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "create:portable_storage_interface"
+			}
+			id: "495408100000000E"
+			title: "Portable Storage Interface"
+			subtitle: "Load a moving contraption."
+			description: [
+				"Build a &bPortable Storage Interface&r. A fixed and a moving half exchange items as a contraption passes, the way to fill and empty a cart or train without stopping it."
+				"The item counterpart to the energy interface."
+			]
+			rewards: [
+				{
+					id: "495408300000E000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "495408300000E001"
+					table_id: 8358680908399640577L
+					title: "A cache for the contraption logistics."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "495408200000E000"
+				item: { count: 1, id: "create:portable_storage_interface" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["4954081000000001"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "create:smart_chute"
+			}
+			id: "495408100000000F"
+			title: "Smart Chute"
+			subtitle: "Filtered vertical transfer."
+			description: [
+				"Craft a &bSmart Chute&r. It moves items straight up or down with a &bfilter&r and a count limit, the tidy vertical link between belts and storage."
+				"Use it where a funnel cannot reach across height."
+			]
+			rewards: [
+				{
+					id: "495408300000F000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "495408300000F001"
+					table_id: 8358680908399640577L
+					title: "A few parts for the item routing."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "495408200000F000"
+				item: { count: 1, id: "create:smart_chute" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -9.5d
+		}
+		{
+			hide_until_deps_complete: false
+			icon: {
+				id: "immersivepetroleum:projector"
+			}
+			dependencies: ["4954011000000001"]
+			id: "4954071000000001"
+			title: "Projector"
+			subtitle: "Preview the oil multiblocks."
+			description: [
+				"Craft an &6Immersive Petroleum&r &bProjector&r. It shows a ghost preview of a multiblock so you can build the &bderrick&r and pumpjack correctly the first time."
+				"Immersive Petroleum owns the oil chain here, and the projector is its opening move."
+			]
+			rewards: [
+				{
+					id: "4954073000001000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "4954073000001001"
+					table_id: 8430738502437568513L
+					title: "A starter cache for the oil works."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954072000001000"
+				item: { count: 1, id: "immersivepetroleum:projector" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4954071000000001"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "immersivepetroleum:derrick"
+			}
+			id: "4954071000000002"
+			title: "Derrick"
+			subtitle: "Drill for a reservoir."
+			description: [
+				"Build the &bDerrick&r multiblock. It drills down to find and tap an underground oil reservoir, the first structure of the petroleum chain."
+				"Use the &bprojector&r to lay it out, then power it and wait for it to strike oil."
+			]
+			rewards: [
+				{
+					id: "4954073000002000"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "4954073000002001"
+					table_id: 8430738502437568515L
+					title: "Materials for the derrick site."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				advancement: "immersivepetroleum:main/mb_derrick"
+				criterion: ""
+				id: "4954072000002000"
+				type: "advancement"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4954071000000002"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "immersivepetroleum:pumpjack"
+			}
+			id: "4954071000000003"
+			title: "Pumpjack"
+			subtitle: "Extract the crude."
+			description: [
+				"Assemble the &bPumpjack&r multiblock. Once the &bderrick&r has found a reservoir, the pumpjack draws the &bcrude oil&r up steadily for as long as the field holds out."
+				"A single field can run a base for a very long time."
+			]
+			rewards: [
+				{
+					id: "4954073000003000"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "4954073000003001"
+					table_id: 8430738502437568515L
+					title: "A cache for the extraction rig."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				advancement: "immersivepetroleum:main/mb_pumpjack"
+				criterion: ""
+				id: "4954072000003000"
+				type: "advancement"
+			}]
+			x: 5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4954071000000003"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "immersivepetroleum:crudeoil_bucket"
+			}
+			id: "4954071000000004"
+			title: "Crude Oil"
+			subtitle: "The raw feedstock."
+			description: [
+				"Collect a &bBucket of Crude Oil&r from your &bpumpjack&r. On its own it does little, but refined it becomes the &bdiesel&r, gasoline, and lubricant the whole industrial age runs on."
+				"Everything downstream starts as this thick black fluid."
+			]
+			rewards: [
+				{
+					id: "4954073000004000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "4954073000004001"
+					table_id: 8430738502437568513L
+					title: "A reserve to prime the refinery."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954072000004000"
+				item: { count: 1, id: "immersivepetroleum:crudeoil_bucket" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4954071000000003"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "immersivepetroleum:oiltank"
+			}
+			id: "4954071000000005"
+			title: "Oil Tank"
+			subtitle: "Buffer the crude."
+			description: [
+				"Build the &bOil Tank&r multiblock. It stores the crude your &bpumpjack&r produces so extraction never stalls waiting on refining, the buffer between well and tower."
+				"Size your storage to the gap between pumping and processing."
+			]
+			rewards: [
+				{
+					id: "4954073000005000"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "4954073000005001"
+					table_id: 8430738502437568515L
+					title: "Supplies for the tank farm."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				advancement: "immersivepetroleum:main/mb_oiltank"
+				criterion: ""
+				id: "4954072000005000"
+				type: "advancement"
+			}]
+			x: 5.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4954071000000004"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "immersivepetroleum:distillation_tower"
+			}
+			id: "4954071000000006"
+			title: "Distillation Tower"
+			subtitle: "Crack crude into fuels."
+			description: [
+				"Raise the &bDistillation Tower&r multiblock. It splits &bcrude oil&r into its useful fractions, &bdiesel&r, gasoline, lubricant, and naphtha, the core of the petroleum chain."
+				"This is the machine that turns raw sludge into power and plastic."
+			]
+			rewards: [
+				{
+					id: "4954073000006000"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "4954073000006001"
+					table_id: 8430738502437568515L
+					title: "A solid cache for the refining stage."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				advancement: "immersivepetroleum:main/mb_distillationtower"
+				criterion: ""
+				id: "4954072000006000"
+				type: "advancement"
+			}]
+			x: 11.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4954071000000006"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "immersivepetroleum:diesel_bucket"
+			}
+			id: "4954071000000007"
+			title: "Diesel"
+			subtitle: "The workhorse fuel."
+			description: [
+				"Refine a &bBucket of Diesel&r at the tower. Diesel is the staple fuel of the &dindustrial&r age, burned in engines for serious, steady power."
+				"Keep a tank of it; the &bdiesel&r engines are thirsty."
+			]
+			rewards: [
+				{
+					id: "4954073000007000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "4954073000007001"
+					table_id: 8430738502437568513L
+					title: "A cache to fuel the first engines."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954072000007000"
+				item: { count: 1, id: "immersivepetroleum:diesel_bucket" }
+				type: "item"
+			}]
+			x: 9.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["4954071000000006"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "immersivepetroleum:coker_unit"
+			}
+			id: "4954071000000008"
+			title: "Coker Unit"
+			subtitle: "Work the heavy residue."
+			description: [
+				"Build the &bCoker Unit&r multiblock. It processes the heaviest leftovers of distillation into &bbitumen&r and further products, squeezing value from what the tower cannot."
+				"The deep end of the refining chain."
+			]
+			rewards: [
+				{
+					id: "4954073000008000"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "4954073000008001"
+					table_id: 8430738502437568515L
+					title: "Materials for the coker build."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				advancement: "immersivepetroleum:main/mb_cokerunit"
+				criterion: ""
+				id: "4954072000008000"
+				type: "advancement"
+			}]
+			x: 14.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4954071000000008"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "immersivepetroleum:bitumen"
+			}
+			id: "4954071000000009"
+			title: "Bitumen"
+			subtitle: "The thick residue."
+			description: [
+				"Produce &bBitumen&r from the coker. It is the tarry bottom of the &bbarrel&r, a building and crafting material that puts the last fraction of crude to use."
+				"Nothing from the oil chain has to go to waste."
+			]
+			rewards: [
+				{
+					id: "4954073000009000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "4954073000009001"
+					table_id: 8430738502437568513L
+					title: "A few supplies from the bottom of the barrel."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954072000009000"
+				item: { count: 1, id: "immersivepetroleum:bitumen" }
+				type: "item"
+			}]
+			x: 13.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4954071000000006"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "immersivepetroleum:hydrotreater"
+			}
+			id: "495407100000000A"
+			title: "Hydrotreater"
+			subtitle: "Clean and upgrade the fuels."
+			description: [
+				"Build the &bHydrotreater&r multiblock. It refines the tower's output further, cleaning fuels and lifting their grade for the recipes that demand the better product."
+				"The finishing step for high-quality fuel."
+			]
+			rewards: [
+				{
+					id: "495407300000A000"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "495407300000A001"
+					table_id: 8430738502437568515L
+					title: "A cache for the upgrade stage."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				advancement: "immersivepetroleum:main/mb_hydrotreater"
+				criterion: ""
+				id: "495407200000A000"
+				type: "advancement"
+			}]
+			x: 11.0d
+			y: 2.5d
+		}
+		{
+			hide_until_deps_complete: false
+			icon: {
+				id: "pneumaticcraft:refinery"
+			}
+			dependencies: ["4954011000000001"]
+			id: "495407100000000B"
+			title: "Refinery Controller"
+			subtitle: "PneumaticCraft's oil cracking."
+			description: [
+				"Craft a &bRefinery Controller&r. Stacked refinery blocks crack oil into fractions by temperature, &6PneumaticCraft&r's route to LPG, kerosene, and the &bdiesel&r that follows."
+				"Taller stacks split out more products at once."
+			]
+			rewards: [
+				{
+					id: "495407300000B000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "495407300000B001"
+					table_id: 8430738502437568513L
+					title: "A starter cache for the cracking tower."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "495407200000B000"
+				item: { count: 1, id: "pneumaticcraft:refinery" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["495407100000000B"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "pneumaticcraft:plastic"
+			}
+			id: "495407100000000D"
+			title: "Plastic Sheet"
+			subtitle: "Mold oil into plastic."
+			description: [
+				"Produce a &bPlastic Sheet&r. Cooled liquid plastic from the refining chain sets into sheets, the material a great deal of &6PneumaticCraft&r and modern tech is built from."
+				"&bPlastic&r is a quiet bottleneck, so start a steady supply early."
+			]
+			rewards: [
+				{
+					id: "495407300000D000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "495407300000D001"
+					table_id: 8430738502437568513L
+					title: "A cache of the new material."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "495407200000D000"
+				item: { count: 1, id: "pneumaticcraft:plastic" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			hide_until_deps_complete: false
+			icon: {
+				id: "createdieselgenerators:pumpjack_bearing"
+			}
+			dependencies: ["4954011000000001"]
+			id: "495407100000000E"
+			title: "Pumpjack Bearing"
+			subtitle: "A Create-style pumpjack part."
+			description: [
+				"Craft a &bPumpjack Bearing&r. &6Create Diesel Generators&r offers its own kinetic pumpjack built from Create parts, and the bearing is the first piece of that rig."
+				"A rotation-driven alternative to the &6Immersive Petroleum&r multiblock."
+			]
+			rewards: [
+				{
+					id: "495407300000E000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "495407300000E001"
+					table_id: 8430738502437568513L
+					title: "Parts for the kinetic pumpjack."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "495407200000E000"
+				item: { count: 1, id: "createdieselgenerators:pumpjack_bearing" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["495407100000000E"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "createdieselgenerators:distillation_controller"
+			}
+			id: "495407100000000F"
+			title: "Distillation Controller"
+			subtitle: "Create-side refining."
+			description: [
+				"Build a &bDistillation Tank&r and Controller. &6Create Diesel Generators&r distills crude through stacked tanks, a kinetic counterpart to the &6Immersive Petroleum&r tower."
+				"Pick the refining route that fits the gear you already run."
+			]
+			rewards: [
+				{
+					id: "495407300000F000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "495407300000F001"
+					table_id: 8430738502437568513L
+					title: "A cache for the distillation stack."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "495407200000F000"
+					item: { count: 1, id: "createdieselgenerators:distillation_tank" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "495407200000F001"
+					item: { count: 1, id: "createdieselgenerators:distillation_controller" }
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["495407100000000F"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "createdieselgenerators:large_diesel_engine"
+			}
+			id: "4954071000000010"
+			title: "Modular Diesel Engine"
+			subtitle: "Burn fuel for big power."
+			description: [
+				"Assemble the &bModular Diesel Engine&r. Fed diesel or &bbiodiesel&r it puts out heavy power, the payoff that makes the whole oil chain worth refining."
+				"Build it modular, so you can scale the engine to your fuel supply."
+			]
+			rewards: [
+				{
+					id: "4954073000010000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "4954073000010001"
+					table_id: 8430738502437568513L
+					title: "A solid cache for the engine room."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954072000010000"
+				item: { count: 1, id: "createdieselgenerators:large_diesel_engine" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["495407100000000E"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "createdieselgenerators:bulk_fermenter"
+			}
+			id: "4954071000000011"
+			title: "Bulk Fermenter"
+			subtitle: "Grow your own fuel."
+			description: [
+				"Build a &bBulk Fermenter&r. It ferments biomass into &bbiodiesel&r, a renewable fuel that frees the &bdiesel&r engine from the finite oil fields."
+				"Pair it with a big farm and the engines never run dry."
+			]
+			rewards: [
+				{
+					id: "4954073000011000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "4954073000011001"
+					table_id: 8430738502437568513L
+					title: "Supplies for the biofuel setup."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954072000011000"
+				item: { count: 1, id: "createdieselgenerators:bulk_fermenter" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["4954071000000011"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "createdieselgenerators:biodiesel_bucket"
+			}
+			id: "4954071000000012"
+			title: "Biodiesel"
+			subtitle: "Renewable engine fuel."
+			description: [
+				"Produce a &bBiodiesel&r Bucket from the fermenter. It burns in the same engines as petroleum &bdiesel&r, a grown-not-drilled fuel for a base that wants to stay self-sufficient."
+				"Crops in, power out, indefinitely."
+			]
+			rewards: [
+				{
+					id: "4954073000012000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "4954073000012001"
+					table_id: 8430738502437568513L
+					title: "A cache of home-grown fuel."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954072000012000"
+				item: { count: 1, id: "createdieselgenerators:biodiesel_bucket" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["4954071000000006"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "immersivepetroleum:lubricant_bucket"
+			}
+			id: "4954071000000014"
+			title: "Lubricant"
+			subtitle: "Keep the machines running."
+			description: [
+				"Refine a &bBucket of Lubricant&r. Several heavy machines and the better engines run smoother or faster with it, a side product of the tower well worth bottling."
+				"A small input that pays back in throughput."
+			]
+			rewards: [
+				{
+					id: "4954073000014000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "4954073000014001"
+					table_id: 8430738502437568513L
+					title: "A few supplies for upkeep."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954072000014000"
+				item: { count: 1, id: "immersivepetroleum:lubricant_bucket" }
+				type: "item"
+			}]
+			x: 12.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["4954071000000006"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "immersivepetroleum:gasoline_bucket"
+			}
+			id: "4954071000000015"
+			title: "Gasoline"
+			subtitle: "The high-octane fraction."
+			description: [
+				"Refine a &bBucket of Gasoline&r. It is the lighter, more energetic fuel from the tower, demanded by the fastest engines and certain vehicles."
+				"Reserve it for the machines that specifically ask for it."
+			]
+			rewards: [
+				{
+					id: "4954073000015000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "4954073000015001"
+					table_id: 8430738502437568513L
+					title: "A cache of the lighter fuel."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954072000015000"
+				item: { count: 1, id: "immersivepetroleum:gasoline_bucket" }
+				type: "item"
+			}]
+			x: 9.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["4954081000000012"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "create_new_age:reinforced_motor"
+			}
+			id: "4954081000000010"
+			title: "Reinforced Motor"
+			subtitle: "Create New Age's drive."
+			description: [
+				"Craft a &bReinforced Motor&r. &6Create New Age&r builds electric generation and drive from magnets and coils, and the reinforced motor is its sturdy workhorse output."
+				"A parallel electrical path layered onto &6Create&r rotation."
+			]
+			rewards: [
+				{
+					id: "4529F42F26447AA3"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "2C06E9B507B978D6"
+					table_id: 8430738502437568513L
+					title: "A starter cache for the New Age gear."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954082000000010"
+				item: { count: 1, id: "create_new_age:reinforced_motor" }
+				type: "item"
+			}]
+			x: 11.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4954081000000010"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "create_new_age:reinforced_energiser"
+			}
+			id: "4954081000000011"
+			title: "Reinforced Energiser"
+			subtitle: "Charge and store."
+			description: [
+				"Build a &bReinforced Energiser&r. It is &6Create New Age&r's stronger energy handler, moving and banking the current the magnets and coils produce."
+				"The storage side of this addon's electrical setup."
+			]
+			rewards: [
+				{
+					id: "675BF1349B5D1AD1"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "0904D788189FF292"
+					table_id: 8430738502437568513L
+					title: "Parts for the energiser build."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954082000000011"
+				item: { count: 1, id: "create_new_age:reinforced_energiser" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4954081000000019"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "create_new_age:netherite_magnet"
+			}
+			id: "4954081000000012"
+			title: "Netherite Magnet"
+			subtitle: "The strongest field."
+			description: [
+				"Forge a &bNetherite Magnet&r. It is the top magnet in &6Create New Age&r's ladder, the field strength behind its best generators and motors."
+				"Worth the netherite once you are running the addon seriously."
+			]
+			rewards: [
+				{
+					id: "0886653417F408E1"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "07379E691313BA9C"
+					table_id: 8430738502437568513L
+					title: "A cache for the high-end magnets."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954082000000012"
+				item: { count: 1, id: "create_new_age:netherite_magnet" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4954081000000010"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "create_new_age:advanced_motor_extension"
+			}
+			id: "4954081000000013"
+			title: "Advanced Motor Extension"
+			subtitle: "Push the motor further."
+			description: [
+				"Craft an &bAdvanced Motor Extension&r. Bolted to a &breinforced motor&r it raises what the drive can deliver, the upgrade for a strained &6Create New Age&r line."
+				"Add it when the base motor stops keeping up."
+			]
+			rewards: [
+				{
+					id: "151B26093302FAEE"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "47CD2AEDA35F8205"
+					table_id: 8430738502437568513L
+					title: "Components for the motor upgrade."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954082000000013"
+				item: { count: 1, id: "create_new_age:advanced_motor_extension" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4954081000000001"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "create_new_age:generator_coil"
+			}
+			id: "4954081000000014"
+			title: "Generator Coil"
+			subtitle: "Wind the windings."
+			description: [
+				"Craft a &bGenerator Coil&r. Spun past a magnet it induces current, the wound core every &6Create New Age&r generator turns on."
+				"Coils and magnets together are this addon's whole trick."
+			]
+			rewards: [
+				{
+					id: "34B984FE489C91BD"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "071DBE69E0C696B6"
+					table_id: 8430738502437568513L
+					title: "A spool of parts for the coil work."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954082000000014"
+				item: { count: 1, id: "create_new_age:generator_coil" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["4954081000000014"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "create_new_age:carbon_brushes"
+			}
+			id: "4954081000000015"
+			title: "Carbon Brushes"
+			subtitle: "Pick off the current."
+			description: [
+				"Make &bCarbon Brushes&r. They draw the induced current off a spinning generator, the contact piece between the moving coil and your wiring."
+				"Small, consumable, and necessary."
+			]
+			rewards: [
+				{
+					id: "1E0C788CC9061C8A"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "22BE19BCD48AB3D5"
+					table_id: 8430738502437568513L
+					title: "A few parts for the contacts."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954082000000015"
+				item: { count: 1, id: "create_new_age:carbon_brushes" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -11.5d
+		}
+		{
+			dependencies: ["4954081000000001"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "create_new_age:heat_pipe"
+			}
+			id: "4954081000000016"
+			title: "Heat Pipe"
+			subtitle: "Move heat where you need it."
+			description: [
+				"Craft a &bHeat Pipe&r. It carries heat between blocks, the conductor &6Create New Age&r's thermal machines use to feed and shed warmth."
+				"The plumbing for the addon's heat side."
+			]
+			rewards: [
+				{
+					id: "227EF98D7F3A3D34"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "1D76D5BAE63013E4"
+					table_id: 8430738502437568513L
+					title: "A cache for the thermal plumbing."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954082000000016"
+				item: { count: 1, id: "create_new_age:heat_pipe" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["4954081000000016"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "create_new_age:heater"
+			}
+			id: "4954081000000017"
+			title: "Heater"
+			subtitle: "Make the heat."
+			description: [
+				"Build a &bHeater&r. It is the source feeding the heat pipes, generating the warmth &6Create New Age&r's heat-driven recipes consume."
+				"Pair it with the pipes to run a thermal loop."
+			]
+			rewards: [
+				{
+					id: "7763FAD45B03E148"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "123FE0BC117B4939"
+					table_id: 8430738502437568513L
+					title: "Materials for the heat source."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954082000000017"
+				item: { count: 1, id: "create_new_age:heater" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -13.0d
+		}
+		{
+			dependencies: ["4954081000000001"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "create_new_age:redstone_magnet"
+			}
+			id: "4954081000000018"
+			title: "Redstone Magnet"
+			subtitle: "The base magnet."
+			description: [
+				"Craft a &bRedstone Magnet&r. It is the entry magnet in &6Create New Age&r's ladder, fine for the early generators before you reach the layered and netherite tiers."
+				"Start here, then build up."
+			]
+			rewards: [
+				{
+					id: "4084B25FC9F8BFEF"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "0C42CE601F407E84"
+					table_id: 8430738502437568513L
+					title: "A starter cache for the magnets."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954082000000018"
+				item: { count: 1, id: "create_new_age:redstone_magnet" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["4954081000000018"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "create_new_age:layered_magnet"
+			}
+			id: "4954081000000019"
+			title: "Layered Magnet"
+			subtitle: "A stronger field."
+			description: [
+				"Build a &bLayered Magnet&r. It is the mid magnet, a clear step over redstone and the prerequisite for the netherite tier above it."
+				"The middle rung of the magnet climb."
+			]
+			rewards: [
+				{
+					id: "12DD5E5802E1BFBB"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "7B2EE7ED620B6E70"
+					table_id: 8430738502437568513L
+					title: "Parts for the better magnets."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954082000000019"
+				item: { count: 1, id: "create_new_age:layered_magnet" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4954081000000010"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "create_new_age:electrical_connector"
+			}
+			id: "495408100000001A"
+			title: "Electrical Connector"
+			subtitle: "Wire the New Age grid."
+			description: [
+				"Craft an &bElectrical Connector&r. It is the attachment point for &6Create New Age&r's wiring, linking its motors and generators into a working circuit."
+				"Where the addon's power enters and leaves a machine."
+			]
+			rewards: [
+				{
+					id: "18E987C58B7848BB"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "77C6D42B5608322F"
+					table_id: 8430738502437568513L
+					title: "A cache for the New Age wiring."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "495408200000001A"
+				item: { count: 1, id: "create_new_age:electrical_connector" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4954081000000001"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "createaddition:redstone_relay"
+			}
+			id: "495408100000001B"
+			title: "Redstone Relay"
+			subtitle: "Switch a power line."
+			description: [
+				"Craft a &6Create Addition&r &bRedstone Relay&r. It opens or closes an &6FE&r line on a redstone signal, the simple switch for cutting power to a circuit on command."
+				"A light-duty control piece for the wired grid."
+			]
+			rewards: [
+				{
+					id: "5B37CAEDF684D4C1"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "2323BD3D27017C1A"
+					table_id: 8430738502437568513L
+					title: "A few parts for the switchgear."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "495408200000001B"
+				item: { count: 1, id: "createaddition:redstone_relay" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["495408100000001B"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "createaddition:large_connector"
+			}
+			id: "495408100000001C"
+			title: "Large Connector"
+			subtitle: "High-throughput wire point."
+			description: [
+				"Build a &bLarge Connector&r. It carries far more power than the &bsmall connector&r, the trunk-line tap for feeding heavy machines or whole subgrids."
+				"Use it where the &bsmall connector&r would bottleneck."
+			]
+			rewards: [
+				{
+					id: "5B50B7BC9A385895"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "7325CC5A257CAE59"
+					table_id: 8430738502437568513L
+					title: "Components for the trunk lines."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "495408200000001C"
+				item: { count: 1, id: "createaddition:large_connector" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["495408100000001B"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "createaddition:small_light_connector"
+			}
+			id: "495408100000001D"
+			title: "Small Connector With Light"
+			subtitle: "A connector that glows."
+			description: [
+				"Craft a &bSmall Connector With Light&r. It taps a light run of power and lights the area while doing it, a tidy two-in-one for a working corner."
+				"Function and a little ambience at once."
+			]
+			rewards: [
+				{
+					id: "44DD04F3CADFE17E"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "0ADFCE2B597A8874"
+					table_id: 8430738502437568513L
+					title: "A few parts for the lit wiring."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "495408200000001D"
+				item: { count: 1, id: "createaddition:small_light_connector" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -14.5d
+		}
+		{
+			dependencies: ["495407100000000E"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "createdieselgenerators:pumpjack_crank"
+			}
+			id: "495408100000001E"
+			title: "Pumpjack Crank"
+			subtitle: "The pumpjack's drive arm."
+			description: [
+				"Craft the &bPumpjack Bearing&r B, the crank piece of the &6Create&r-style pumpjack. It couples the rig's nodding motion to the rotation that drives it."
+				"Another part toward the kinetic oil rig."
+			]
+			rewards: [
+				{
+					id: "7CAA7A17C210CEE0"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "0F62AFB5896CB5A1"
+					table_id: 8430738502437568513L
+					title: "Parts for the pumpjack drive."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "495408200000001E"
+				item: { count: 1, id: "createdieselgenerators:pumpjack_bearing_b" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["495407100000000E"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "createdieselgenerators:pumpjack_head"
+			}
+			id: "495408100000001F"
+			title: "Pumpjack Head"
+			subtitle: "The nodding donkey's head."
+			description: [
+				"Build the &bPumpjack Head&r. It is the visible arm that rocks up and down over the well, the working end of the &6Create Diesel Generators&r pumpjack."
+				"Set it over the hole to draw the oil."
+			]
+			rewards: [
+				{
+					id: "2DAEB49378019813"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "4E397E7D5A080DE1"
+					table_id: 8430738502437568513L
+					title: "A cache for the pumpjack head."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "495408200000001F"
+				item: { count: 1, id: "createdieselgenerators:pumpjack_head" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["495408100000001F"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "createdieselgenerators:pumpjack_hole"
+			}
+			id: "4954081000000020"
+			title: "Pumpjack Hole"
+			subtitle: "Drill the well casing."
+			description: [
+				"Place a &bPumpjack Hole&r. It is the cased well the head pumps from, the bottom of the &6Create&r-style oil rig that reaches the reservoir."
+				"Line up the head, the hole, and the drive to complete the rig."
+			]
+			rewards: [
+				{
+					id: "062316C1137DAA83"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "593A6B0E0F8C38F4"
+					table_id: 8430738502437568513L
+					title: "Materials for the well casing."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954082000000020"
+				item: { count: 1, id: "createdieselgenerators:pumpjack_hole" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["4954071000000010"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "createdieselgenerators:engine_piston"
+			}
+			id: "4954081000000021"
+			title: "Powered Engine Shaft"
+			subtitle: "Take power off the engine."
+			description: [
+				"Craft a &bPowered Engine Shaft&r. It is the output shaft of the &bmodular diesel engine&r, the piece that turns burned fuel into the rotation your machines use."
+				"The engine's connection to the rest of your factory."
+			]
+			rewards: [
+				{
+					id: "4A1870E6F510B94D"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "610E5D60EE0E27F7"
+					table_id: 8430738502437568513L
+					title: "A cache to finish the engine."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954082000000021"
+				item: { count: 1, id: "createdieselgenerators:powered_engine_shaft" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 4.0d
+		}
+	]
+}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
