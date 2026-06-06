@@ -1,0 +1,2121 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ir_ir_side_gear_hidden_equipment"
+	group: "3F77A31B7D30C0AA"
+	hide_quest_until_deps_complete: true
+	icon: {
+		id: "immersiveengineering:revolver"
+	}
+	id: "49540D0000000000"
+	order_index: 8
+	quest_links: [ ]
+	quests: [
+		{
+			hide_until_deps_complete: false
+			icon: {
+				id: "aether:valkyrie_cape"
+			}
+			dependencies: ["4954011000000001"]
+			id: "49540D1000000001"
+			title: "Valkyrie Queen"
+			subtitle: "Earn the Aether's best."
+			description: [
+				"Challenge and defeat the &c&lValkyrie Queen&r in the &6Aether&r's &bSilver Dungeon&r. She fights with a lance and teleports around the arena, so close the distance fast and do not let her reset."
+				"Her defeat hands over the Valkyrie gear, the finest armor and weapon the Aether offers."
+			]
+			rewards: [
+				{
+					id: "49540D3000001000"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "49540D3000001001"
+					table_id: 8430738502437568515L
+					title: "A combat cache from the dungeon fight."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				entity: "aether:valkyrie_queen"
+				id: "49540D2000001000"
+				type: "kill"
+				value: 1L
+			}]
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			hide_until_deps_complete: false
+			icon: {
+				id: "block_factorys_bosses:yeti_spawn_egg"
+			}
+			dependencies: ["4954011000000001"]
+			id: "49540D1000000002"
+			title: "Skor, the Yeti"
+			subtitle: "Optional: a cold-country boss."
+			description: [
+				"Hunt &c&lSkor, the Yeti&r, a &6Block Factory's Bosses&r fight. It hits with heavy cold and raw force, so warm gear and a fast weapon serve you best."
+				"A side boss with its own drops for the trophy hunter."
+			]
+			optional: true
+			rewards: [
+				{
+					id: "49540D3000002000"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "49540D3000002001"
+					table_id: 8430738502437568515L
+					title: "A combat cache from the cold."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				entity: "block_factorys_bosses:yeti"
+				id: "49540D2000002000"
+				type: "kill"
+				value: 1L
+			}]
+			x: -5.0d
+			y: 6.0d
+		}
+		{
+			hide_until_deps_complete: false
+			icon: {
+				id: "cataclysm:gauntlet_of_guard"
+			}
+			dependencies: ["4954011000000001"]
+			id: "49540D1000000003"
+			title: "Ender Guardian"
+			subtitle: "Optional: the End's sentinel."
+			description: [
+				"Take on the &c&lEnder Guardian&r, a &6Cataclysm&r boss that guards the End. It teleports and strikes hard, so bring your best End-tier gear and watch the void."
+				"Its gauntlet drop is a prize worth the fight."
+			]
+			optional: true
+			rewards: [
+				{
+					id: "49540D3000003000"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "49540D3000003001"
+					table_id: 8430738502437568515L
+					title: "A combat cache from the End fight."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				entity: "cataclysm:ender_guardian"
+				id: "49540D2000003000"
+				type: "kill"
+				value: 1L
+			}]
+			x: -6.5d
+			y: 6.0d
+		}
+		{
+			hide_until_deps_complete: false
+			icon: {
+				id: "unusualend:spectral_leggings"
+			}
+			dependencies: ["4954011000000001"]
+			id: "49540D1000000004"
+			title: "Spectral Leggings"
+			subtitle: "Unusual End armor."
+			description: [
+				"Forge &bSpectral Leggings&r from &6Unusual End&r materials. They are a solid mid-tier armor piece and the anchor for a wide spread of optional gear in this chapter."
+				"Most of the side equipment branches off from here."
+			]
+			rewards: [
+				{
+					id: "49540D3000004000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "49540D3000004001"
+					table_id: 8430738502437568513L
+					title: "A gear cache to open the armory."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540D2000004000"
+				item: { count: 1, id: "unusualend:spectral_leggings" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			hide_until_deps_complete: false
+			icon: {
+				id: "immersiveengineering:revolver"
+			}
+			dependencies: ["4954011000000001"]
+			id: "49540D1000000005"
+			title: "Revolver"
+			subtitle: "Immersive Engineering sidearm."
+			description: [
+				"Craft an &6Immersive Engineering&r &bRevolver&r. It fires cartridges you load yourself, from buckshot to specialized rounds, a versatile sidearm for the &dindustrial&r age."
+				"Reload between fights and pick the cartridge to suit the target."
+			]
+			rewards: [
+				{
+					id: "49540D3000005000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "49540D3000005001"
+					table_id: 8430738502437568513L
+					title: "An ammunition cache for the sidearm."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540D2000005000"
+				item: { count: 1, id: "immersiveengineering:revolver" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			hide_until_deps_complete: false
+			icon: {
+				id: "immersiveengineering:railgun"
+			}
+			dependencies: ["4954011000000001"]
+			id: "49540D1000000006"
+			title: "Railgun"
+			subtitle: "Power-fed precision."
+			description: [
+				"Build the &bRailgun&r. Charged from your power grid it fires metal rods at brutal velocity, a heavy-hitting ranged weapon for the toughest targets."
+				"Keep it charged; an empty &brailgun&r is an awkward club."
+			]
+			rewards: [
+				{
+					id: "49540D3000006000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "49540D3000006001"
+					table_id: 8430738502437568513L
+					title: "A combat cache for the gunline."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540D2000006000"
+				item: { count: 1, id: "immersiveengineering:railgun" }
+				type: "item"
+			}]
+			x: -8.0d
+			y: 4.0d
+		}
+		{
+			hide_until_deps_complete: false
+			icon: {
+				id: "pneumaticcraft:pneumatic_chestplate"
+			}
+			dependencies: ["4954011000000001"]
+			id: "49540D1000000007"
+			title: "Pneumatic Chestplate"
+			subtitle: "Air-powered armor."
+			description: [
+				"Craft a &bPneumatic Chestplate&r. Charged with compressed air and fitted with upgrades it can grant flight, protection, and more, the centerpiece of &6PneumaticCraft&r armor."
+				"Slot upgrades to tune it, and keep a &bcharging station&r handy."
+			]
+			rewards: [
+				{
+					id: "49540D3000007000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "49540D3000007001"
+					table_id: 8430738502437568513L
+					title: "An upgrade cache for the armor."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540D2000007000"
+				item: { count: 1, id: "pneumaticcraft:pneumatic_chestplate" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			hide_until_deps_complete: false
+			icon: {
+				id: "oritech:jetpack"
+			}
+			dependencies: ["4954011000000001"]
+			id: "49540D1000000008"
+			title: "Jetpack"
+			subtitle: "Oritech flight."
+			description: [
+				"Build an &6Oritech&r &bJetpack&r. Fueled and worn it lifts you off the ground, the simplest path to flight in the &dindustrial&r age."
+				"Mind your fuel gauge before you commit to a long climb."
+			]
+			rewards: [
+				{
+					id: "49540D3000008000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "49540D3000008001"
+					table_id: 8430738502437568513L
+					title: "A cache to keep you airborne."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540D2000008000"
+				item: { count: 1, id: "oritech:jetpack" }
+				type: "item"
+			}]
+			x: -6.5d
+			y: 4.0d
+		}
+		{
+			hide_until_deps_complete: false
+			icon: {
+				id: "immersiveengineering:drill"
+			}
+			dependencies: ["4954011000000001"]
+			id: "49540D1000000009"
+			title: "Mining Drill"
+			subtitle: "Tear through stone."
+			description: [
+				"Craft an &6Immersive Engineering&r &bMining Drill&r. Powered and fitted with a head it breaks blocks in a wide pattern, clearing tunnels far faster than a pickaxe."
+				"Swap heads and keep it charged for serious digging."
+			]
+			rewards: [
+				{
+					id: "49540D3000009000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "49540D3000009001"
+					table_id: 8430738502437568513L
+					title: "A parts cache for the drill."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540D2000009000"
+				item: { count: 1, id: "immersiveengineering:drill" }
+				type: "item"
+			}]
+			x: -8.0d
+			y: 6.0d
+		}
+		{
+			hide_until_deps_complete: false
+			icon: {
+				id: "immersiveengineering:chemthrower"
+			}
+			dependencies: ["4954011000000001"]
+			id: "49540D100000000A"
+			title: "Chemical Thrower"
+			subtitle: "Spray fire or worse."
+			description: [
+				"Build the &bChemical Thrower&r. Loaded with a fluid it sprays fire, acid, or other effects in a stream, a crowd weapon and a tool both."
+				"What it does depends entirely on what you fill it with."
+			]
+			rewards: [
+				{
+					id: "49540D300000A000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "49540D300000A001"
+					table_id: 8430738502437568513L
+					title: "A fluid cache for the thrower."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540D200000A000"
+				item: { count: 1, id: "immersiveengineering:chemthrower" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["49540D1000000001"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "aether:valkyrie_lance"
+			}
+			id: "49540D100000000B"
+			title: "Valkyrie Lance"
+			subtitle: "The queen's weapon."
+			description: [
+				"Forge a &bValkyrie Lance&r from the queen's drop. It strikes with reach and power and carries a piece of the &6Aether&r's grace, one of the best melee weapons available."
+				"The reward for surviving the &bSilver Dungeon&r."
+			]
+			rewards: [
+				{
+					id: "49540D300000B000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "49540D300000B001"
+					table_id: 8430738502437568513L
+					title: "A combat cache for the lance."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540D200000B000"
+				item: { count: 1, id: "aether:valkyrie_lance" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["49540D1000000005"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "immersiveengineering:armor_faraday_chestplate"
+			}
+			id: "49540D100000000D"
+			title: "Faraday Chestplate"
+			subtitle: "Insulate against shock."
+			description: [
+				"Craft the &bFaraday Chestplate&r. It shields you from electrical damage, the tesla coils and lightning that would otherwise punish a careless engineer."
+				"Niche, but invaluable around high-voltage gear."
+			]
+			rewards: [
+				{
+					id: "49540D300000D000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "49540D300000D001"
+					table_id: 8430738502437568513L
+					title: "An armor cache for the workshop."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540D200000D000"
+				item: { count: 1, id: "immersiveengineering:armor_faraday_chestplate" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["49540D1000000005"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "immersiveengineering:armor_steel_chestplate"
+			}
+			id: "49540D100000000E"
+			title: "Steel Chestplate"
+			subtitle: "Immersive Engineering's solid plate."
+			description: [
+				"Forge an &6Immersive Engineering&r &bSteel&r Chestplate. It is dependable mid-tier armor built from your own steel, a clean step up from iron for the &dindustrial&r era."
+				"A reliable default while you chase the fancier sets."
+			]
+			rewards: [
+				{
+					id: "49540D300000E000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "49540D300000E001"
+					table_id: 8430738502437568513L
+					title: "An armor cache for the line."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540D200000E000"
+				item: { count: 1, id: "immersiveengineering:armor_steel_chestplate" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["49540D1000000007"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "pneumaticcraft:jackhammer"
+			}
+			id: "49540D100000000F"
+			title: "Pneumatic Jackhammer"
+			subtitle: "Dig on air."
+			description: [
+				"Craft a &bPneumatic Jackhammer&r. Powered by compressed air it breaks stone in a wide swing, &6PneumaticCraft&r's answer to fast tunneling."
+				"Keep the air topped up and the tunnels fly by."
+			]
+			rewards: [
+				{
+					id: "49540D300000F000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "49540D300000F001"
+					table_id: 8430738502437568513L
+					title: "A cache for the dig kit."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540D200000F000"
+				item: { count: 1, id: "pneumaticcraft:jackhammer" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 17.0d
+		}
+		{
+			dependencies: ["49540D1000000007"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "pneumaticcraft:minigun"
+			}
+			id: "49540D1000000010"
+			title: "Minigun"
+			subtitle: "Sustained fire."
+			description: [
+				"Build the &bMinigun&r. Spun up on compressed air it pours out a stream of fire, the &6PneumaticCraft&r weapon for when one shot is never enough."
+				"Thirsty for both ammo and air, but devastating up close."
+			]
+			rewards: [
+				{
+					id: "49540D3000010000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "49540D3000010001"
+					table_id: 8430738502437568513L
+					title: "An ammunition cache for the gun."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540D2000010000"
+				item: { count: 1, id: "pneumaticcraft:minigun" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 15.5d
+		}
+		{
+			dependencies: ["49540D1000000005"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "immersiveengineering:skyhook"
+			}
+			id: "49540D1000000011"
+			title: "Engineer's Skyhook"
+			subtitle: "Ride the wires."
+			description: [
+				"Craft an &bEngineer's Skyhook&r. Hooked onto a wire connection it zips you along the line, turning your power cables into a fast transit network."
+				"String connectors across the base and travel by skyhook."
+			]
+			rewards: [
+				{
+					id: "49540D3000011000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "49540D3000011001"
+					table_id: 8430738502437568513L
+					title: "A cache for the wire-rider."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540D2000011000"
+				item: { count: 1, id: "immersiveengineering:skyhook" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 15.5d
+		}
+		{
+			dependencies: ["49540D1000000004"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "arsenal:unique_claymore_1"
+			}
+			id: "49540D1000000012"
+			title: "Cataclysm's Edge"
+			subtitle: "Optional: a unique claymore."
+			description: [
+				"Acquire &bCataclysm's Edge&r, a unique claymore from &6Arsenal&r. The mod adds whole new weapon classes with their own movesets, and the named uniques are the standouts of each."
+				"A heavy two-hander for the front line."
+			]
+			optional: true
+			rewards: [
+				{
+					id: "2674E1E31CF08334"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "533F1202840408FA"
+					table_id: 8430738502437568513L
+					title: "A combat cache for the blade."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540D2000000012"
+				item: { count: 1, id: "arsenal:unique_claymore_1" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["49540D1000000004"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "arsenal:unique_dagger_1"
+			}
+			id: "49540D1000000013"
+			title: "Frost Fang"
+			subtitle: "Optional: a unique dagger."
+			description: [
+				"Claim &bFrost Fang&r, &6Arsenal&r's unique dagger. Daggers strike fast and reward mobility, and this one carries a chill into every hit."
+				"For the player who fights light and quick."
+			]
+			optional: true
+			rewards: [
+				{
+					id: "3EC770B57307B00F"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "7F21524CEC48FE00"
+					table_id: 8430738502437568513L
+					title: "A combat cache for the quick blade."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540D2000000013"
+				item: { count: 1, id: "arsenal:unique_dagger_1" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["49540D1000000004"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "arsenal:unique_double_axe_1"
+			}
+			id: "49540D1000000014"
+			title: "Dual-blade Butcher"
+			subtitle: "Optional: a unique double axe."
+			description: [
+				"Wield the &bDual-blade Butcher&r, a unique &6Arsenal&r double axe. It is a wide, brutal weapon that rewards swinging into a crowd."
+				"Heavy, slow, and merciless."
+			]
+			optional: true
+			rewards: [
+				{
+					id: "2E23F20F8CC10CC0"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "240849985B059802"
+					table_id: 8430738502437568513L
+					title: "A combat cache for the axe."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540D2000000014"
+				item: { count: 1, id: "arsenal:unique_double_axe_1" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["49540D1000000004"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "arsenal:unique_glaive_1"
+			}
+			id: "49540D1000000015"
+			title: "Hellreaver"
+			subtitle: "Optional: a unique glaive."
+			description: [
+				"Take up &bHellreaver&r, &6Arsenal&r's unique glaive. Glaives sweep with reach, keeping enemies at the end of the blade where you want them."
+				"Control the space and they never close in."
+			]
+			optional: true
+			rewards: [
+				{
+					id: "0AFE6F28E566BC2B"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "65F22A96A5B4111F"
+					table_id: 8430738502437568513L
+					title: "A combat cache for the polearm."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540D2000000015"
+				item: { count: 1, id: "arsenal:unique_glaive_1" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["49540D1000000004"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "arsenal:unique_hammer_1"
+			}
+			id: "49540D1000000016"
+			title: "Hammer of Destiny"
+			subtitle: "Optional: a unique hammer."
+			description: [
+				"Swing the &bHammer of Destiny&r, a unique &6Arsenal&r warhammer. Hammers land slow but stagger and crush, trading speed for sheer impact."
+				"One good hit is worth three quick ones here."
+			]
+			optional: true
+			rewards: [
+				{
+					id: "6D04A273B9E10D4C"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "4477D26D83D43C6C"
+					table_id: 8430738502437568513L
+					title: "A combat cache for the hammer."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540D2000000016"
+				item: { count: 1, id: "arsenal:unique_hammer_1" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["49540D1000000004"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "arsenal:unique_heavy_crossbow_1"
+			}
+			id: "49540D1000000017"
+			title: "Heavy Crossbow of the Phoenix"
+			subtitle: "Optional: a unique heavy crossbow."
+			description: [
+				"Load the &bHeavy Crossbow of the Phoenix&r, a unique &6Arsenal&r ranged weapon. It hits harder than a bow at the cost of a slower draw."
+				"For measured, heavy ranged shots."
+			]
+			optional: true
+			rewards: [
+				{
+					id: "7B4254DEF6CBAB36"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "10266E8FF2E6C31A"
+					table_id: 8430738502437568513L
+					title: "A bolt cache for the crossbow."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540D2000000017"
+				item: { count: 1, id: "arsenal:unique_heavy_crossbow_1" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["49540D1000000004"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "arsenal:unique_longbow_1"
+			}
+			id: "49540D1000000018"
+			title: "Sunfury Hawk-Bow"
+			subtitle: "Optional: a unique longbow."
+			description: [
+				"Draw the &bSunfury Hawk-Bow&r, &6Arsenal&r's unique longbow. Longbows reach further and fly straighter, the choice for picking targets off at range."
+				"Range and accuracy over rate of fire."
+			]
+			optional: true
+			rewards: [
+				{
+					id: "1862CB5F6C26A7DC"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "7EDCCAB2AF30D739"
+					table_id: 8430738502437568513L
+					title: "An arrow cache for the bow."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540D2000000018"
+				item: { count: 1, id: "arsenal:unique_longbow_1" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["49540D1000000004"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "arsenal:unique_mace_1"
+			}
+			id: "49540D1000000019"
+			title: "Bonecracker"
+			subtitle: "Optional: a unique mace."
+			description: [
+				"Take &bBonecracker&r, &6Arsenal&r's unique mace. Maces are blunt and punishing, built to break guards and bones alike."
+				"Simple, heavy, effective."
+			]
+			optional: true
+			rewards: [
+				{
+					id: "5FA312683954B829"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "5537F12F2496FD10"
+					table_id: 8430738502437568513L
+					title: "A combat cache for the mace."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540D2000000019"
+				item: { count: 1, id: "arsenal:unique_mace_1" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["49540D1000000004"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "arsenal:unique_shield_1"
+			}
+			id: "49540D100000001A"
+			title: "Bulwark of Azzinoth"
+			subtitle: "Optional: a unique shield."
+			description: [
+				"Raise the &bBulwark of Azzinoth&r, &6Arsenal&r's unique shield. A good shield turns a deadly hit into a glancing one, and this is among the best the mod offers."
+				"Defense as a weapon in its own right."
+			]
+			optional: true
+			rewards: [
+				{
+					id: "2E8DAC0B6849F153"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "186DA158CBC5ED96"
+					table_id: 8430738502437568513L
+					title: "A defensive cache for the shield wall."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540D200000001A"
+				item: { count: 1, id: "arsenal:unique_shield_1" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["49540D1000000004"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "arsenal:unique_sickle_1"
+			}
+			id: "49540D100000001B"
+			title: "Toxic Sickle"
+			subtitle: "Optional: a unique sickle."
+			description: [
+				"Harvest with the &bToxic Sickle&r, &6Arsenal&r's unique sickle. Sickles sweep wide and suit both farming and fighting, and this one leaves poison in its wake."
+				"A tool and a weapon at once."
+			]
+			optional: true
+			rewards: [
+				{
+					id: "60F7150E95FEB379"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "6396C017480131CE"
+					table_id: 8430738502437568513L
+					title: "A combat cache for the reaper."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540D200000001B"
+				item: { count: 1, id: "arsenal:unique_sickle_1" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["49540D1000000004"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "arsenal:unique_spear_1"
+			}
+			id: "49540D100000001C"
+			title: "Sonic Spear"
+			subtitle: "Optional: a unique spear."
+			description: [
+				"Level the &bSonic Spear&r, &6Arsenal&r's unique spear. Spears thrust with reach and speed, the disciplined dueling weapon of the set."
+				"Keep the point between you and the threat."
+			]
+			optional: true
+			rewards: [
+				{
+					id: "2F9D71B00204A37D"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "4F7BB4ED678519FF"
+					table_id: 8430738502437568513L
+					title: "A combat cache for the spear."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540D200000001C"
+				item: { count: 1, id: "arsenal:unique_spear_1" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["49540D1000000004"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "arsenal:unique_staff_damage_2"
+			}
+			id: "49540D100000001D"
+			title: "Antonidas's Staff"
+			subtitle: "Optional: a unique damage staff."
+			description: [
+				"Wield &bAntonidas's Staff&r of Rapt Concentration, an &6Arsenal&r damage staff. Staves cast at range and lean on power rather than muscle, for a more arcane fighter."
+				"Magic as your main hand."
+			]
+			optional: true
+			rewards: [
+				{
+					id: "7446D618D4E4F2A2"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "1CD25693E5961E45"
+					table_id: 8430738502437568513L
+					title: "A reagent cache for the staff."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540D200000001D"
+				item: { count: 1, id: "arsenal:unique_staff_damage_2" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["49540D1000000004"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "arsenal:unique_staff_heal_1"
+			}
+			id: "49540D100000001E"
+			title: "Crystalline Life-Staff"
+			subtitle: "Optional: a unique healing staff."
+			description: [
+				"Carry the &bCrystalline Life-Staff&r, &6Arsenal&r's unique healing staff. It mends rather than harms, a support weapon for keeping yourself or allies standing."
+				"The healer's choice among the uniques."
+			]
+			optional: true
+			rewards: [
+				{
+					id: "2B595F67827EF60D"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "74F49834B01E21F3"
+					table_id: 8430738502437568513L
+					title: "A support cache for the healer."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540D200000001E"
+				item: { count: 1, id: "arsenal:unique_staff_heal_1" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["49540D1000000004"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "mekanismtools:wood_paxel"
+			}
+			id: "49540D100000001F"
+			title: "Wood Paxel"
+			subtitle: "Optional: one tool, three jobs."
+			description: [
+				"Craft a &bWood Paxel&r from &6Mekanism Tools&r. A paxel is a pickaxe, axe, and shovel in one, freeing hotbar slots from the moment you make the first."
+				"Mekanism gear starts at the &dindustrial&r age here, paxels included."
+			]
+			optional: true
+			rewards: [
+				{
+					id: "3B0863070A36C071"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "781287EDABB5AC23"
+					table_id: 8430738502437568513L
+					title: "A tool cache for the starter paxel."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540D200000001F"
+				item: { count: 1, id: "mekanismtools:wood_paxel" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["49540D1000000004"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "mekanismtools:stone_paxel"
+			}
+			id: "49540D1000000020"
+			title: "Stone Paxel"
+			subtitle: "Optional: the next paxel up."
+			description: [
+				"Build a &bStone Paxel&r. It is the second rung of the paxel ladder, the same three-in-one convenience with a little more durability."
+				"The paxels climb the same tiers your tools do."
+			]
+			optional: true
+			rewards: [
+				{
+					id: "51212CC989C2217F"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "5DA5832D03EDE95F"
+					table_id: 8430738502437568513L
+					title: "A tool cache for the paxel line."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540D2000000020"
+				item: { count: 1, id: "mekanismtools:stone_paxel" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["49540D1000000004"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "mekanismtools:lapis_lazuli_helmet"
+			}
+			id: "49540D1000000021"
+			title: "Lapis Lazuli Helmet"
+			subtitle: "Optional: Mekanism armor."
+			description: [
+				"Forge a &bLapis Lazuli Helmet&r from &6Mekanism Tools&r. The lapis set is a colorful mid-tier armor with respectable protection, the first piece of a matching suit."
+			]
+			optional: true
+			rewards: [
+				{
+					id: "745A124C099205BE"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "4526F615B22B5C3A"
+					table_id: 8430738502437568513L
+					title: "An armor cache for the set."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540D2000000021"
+				item: { count: 1, id: "mekanismtools:lapis_lazuli_helmet" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["49540D1000000004"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "mekanismtools:lapis_lazuli_chestplate"
+			}
+			id: "49540D1000000022"
+			title: "Lapis Lazuli Chestplate"
+			subtitle: "Optional: the body piece."
+			description: [
+				"Craft a &bLapis Lazuli Chestplate&r. The chest is the heaviest defense of the set, the piece worth making first if you only make one."
+			]
+			optional: true
+			rewards: [
+				{
+					id: "6D4099687BD32C9C"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "4B314D3B594761A1"
+					table_id: 8430738502437568513L
+					title: "An armor cache for the chest."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540D2000000022"
+				item: { count: 1, id: "mekanismtools:lapis_lazuli_chestplate" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["49540D1000000004"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "mekanismtools:lapis_lazuli_leggings"
+			}
+			id: "49540D1000000023"
+			title: "Lapis Lazuli Leggings"
+			subtitle: "Optional: the leg piece."
+			description: [
+				"Build &bLapis Lazuli Leggings&r. They round out the lower half of the lapis set, second only to the chest in protection."
+			]
+			optional: true
+			rewards: [
+				{
+					id: "48CF822C3EE9D0BA"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "15679B109599D70B"
+					table_id: 8430738502437568513L
+					title: "An armor cache for the legs."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540D2000000023"
+				item: { count: 1, id: "mekanismtools:lapis_lazuli_leggings" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["49540D1000000004"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "mekanismtools:lapis_lazuli_boots"
+			}
+			id: "49540D1000000024"
+			title: "Lapis Lazuli Boots"
+			subtitle: "Optional: finish the set."
+			description: [
+				"Craft &bLapis Lazuli Boots&r. They complete the lapis suit, and a full set carries its own small bonus over mismatched pieces."
+			]
+			optional: true
+			rewards: [
+				{
+					id: "352E0FAC95B61605"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "1C1C97E5D514EE33"
+					table_id: 8430738502437568513L
+					title: "An armor cache for the boots."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540D2000000024"
+				item: { count: 1, id: "mekanismtools:lapis_lazuli_boots" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["49540D1000000004"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "mekanismtools:steel_chestplate"
+			}
+			id: "49540D1000000025"
+			title: "Steel Armor Set"
+			subtitle: "Optional: the full Mekanism steel suit."
+			description: [
+				"Forge the complete &6Mekanism Tools&r &bSteel&r armor: helmet, chestplate, leggings, and boots. It is a sturdy &dindustrial&r-grade suit, a dependable wall between you and the world."
+				"A solid default set built from metal you already smelt."
+			]
+			optional: true
+			rewards: [
+				{
+					id: "1DB1ED8268D13D31"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "5A2033FC8D0F75B9"
+					table_id: 8430738502437568513L
+					title: "An armor cache for the steel suit."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "2BBC5B7E12C3AD82"
+					item: { count: 1, id: "mekanismtools:steel_helmet" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "04131EB995428854"
+					item: { count: 1, id: "mekanismtools:steel_chestplate" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "7CE2846BE445DA84"
+					item: { count: 1, id: "mekanismtools:steel_leggings" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "7362F769ABC0734D"
+					item: { count: 1, id: "mekanismtools:steel_boots" }
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["49540D100000000B"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "aether:valkyrie_chestplate"
+			}
+			id: "49540D1000000026"
+			title: "Valkyrie Armor Set"
+			subtitle: "Optional: the Aether's finest."
+			description: [
+				"Assemble the full Valkyrie set: helmet, chestplate, leggings, boots, and gloves, all from the queen's drops. Worn together it grants flight and the &6Aether&r's best protection."
+				"The reward for clearing the &bSilver Dungeon&r in full."
+			]
+			optional: true
+			rewards: [
+				{
+					id: "76F2C23FB061B3EE"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "79A6DDB2267362E1"
+					table_id: 8430738502437568513L
+					title: "An armor cache for the winged suit."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "3323E7B3670501CD"
+					item: { count: 1, id: "aether:valkyrie_helmet" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "5146269CFF0ED378"
+					item: { count: 1, id: "aether:valkyrie_chestplate" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "3AEFC5B240AF5C14"
+					item: { count: 1, id: "aether:valkyrie_leggings" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "5F895009F3772567"
+					item: { count: 1, id: "aether:valkyrie_boots" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "37C19731856885E7"
+					item: { count: 1, id: "aether:valkyrie_gloves" }
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["49540D1000000004"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "unusualend:pearlescent_pickaxe"
+			}
+			id: "49540D1000000027"
+			title: "Pearlescent Pickaxe"
+			subtitle: "Optional: an Unusual End tool."
+			description: [
+				"Forge a &bPearlescent Pickaxe&r. Cut from &6Unusual End&r's pearlescent alloy it is a fast, durable miner, the tool tier above the dimension's earlier gear."
+				"The pick that finishes the pearlescent set."
+			]
+			optional: true
+			rewards: [
+				{
+					id: "0F6719EEBD1CA570"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "1251624B69A0F833"
+					table_id: 8430738502437568513L
+					title: "A tool cache for the pearlescent pick."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "7FA07BB3E2E89273"
+				item: { count: 1, id: "unusualend:pearlescent_pickaxe" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["49540D1000000004"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "unusualend:pearlescent_sword"
+			}
+			id: "49540D1000000028"
+			title: "Pearlescent Sword"
+			subtitle: "Optional: the matching blade."
+			description: [
+				"Craft a &bPearlescent Sword&r. The same alloy makes a strong, light blade, a fitting weapon to carry alongside the pickaxe."
+				"Pearlescent gear is the End-side endgame here."
+			]
+			optional: true
+			rewards: [
+				{
+					id: "36A09035435C683D"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "21B15D4A1142B7DA"
+					table_id: 8430738502437568513L
+					title: "A combat cache for the pearlescent blade."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "40AFF74473AF9234"
+				item: { count: 1, id: "unusualend:pearlescent_sword" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["49540D1000000004"]
+			hide_until_deps_complete: true
+			icon: {
+				components: {
+					"!minecraft:custom_data": { }
+				}
+				id: "unusualend:pearlescent_ring"
+			}
+			id: "49540D1000000029"
+			title: "Pearlescent Ring"
+			subtitle: "Optional: a worn charm."
+			description: [
+				"Craft a &bPearlescent Ring&r. Worn, it grants a passive bonus drawn from the End's pearlescent alloy, a trinket for the well-equipped explorer."
+			]
+			optional: true
+			rewards: [
+				{
+					id: "2F9F6D347DF37075"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "1A1D295645211D6E"
+					table_id: 8430738502437568513L
+					title: "A trinket cache for the ring."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "09254AD6E3F059C8"
+				item: { components: { "!minecraft:custom_data": { } }, count: 1, id: "unusualend:pearlescent_ring" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["49540D1000000004"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "unusualend:pearlescent_infuser"
+			}
+			id: "49540D100000002A"
+			title: "Pearlescent Infuser"
+			subtitle: "Optional: the alloy station."
+			description: [
+				"Build the &bPearlescent Infuser&r. It is the workstation that fuses &6Unusual End&r materials into pearlescent alloy, the source of the whole pearlescent tier."
+				"Everything pearlescent passes through here first."
+			]
+			optional: true
+			rewards: [
+				{
+					id: "27676EA3F96EBD79"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "38CCE6E1EE00BBD2"
+					table_id: 8430738502437568513L
+					title: "A cache for the infuser build."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "5B79D652F6F082A0"
+				item: { count: 1, id: "unusualend:pearlescent_infuser" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["49540D100000002A"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "unusualend:pearlescent_block"
+			}
+			id: "49540D100000002B"
+			title: "Block of Pearlescent Alloy"
+			subtitle: "Optional: the refined metal."
+			description: [
+				"Produce a &bBlock of Pearlescent Alloy&r. It is the dense, storable form of the End's top alloy, the material behind the mirror and the rest of the pearlescent endgame."
+				"Stockpile it for the highest &6Unusual End&r crafts."
+			]
+			optional: true
+			rewards: [
+				{
+					id: "589B8EA11F579A0D"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "4C10583E14490D25"
+					table_id: 8430738502437568513L
+					title: "A materials cache for the alloy."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4E9DA9A9DBD5B2EB"
+				item: { count: 1, id: "unusualend:pearlescent_block" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0B03103000000022"
+				"4954011000000001"
+			]
+			hide_until_deps_complete: true
+			icon: { id: "aether:silver_dungeon_key" }
+			id: "0B03103000000040"
+			title: "Silver Dungeon"
+			subtitle: "Find the queen's hall."
+			description: [
+				"Locate a &bSilver Dungeon&r in the &6Aether&r. It is the labyrinth the &c&lValkyrie Queen&r rules, a puzzle-and-combat structure that guards the dimension's best gear."
+				"Scout it before you provoke a fight you cannot leave."
+			]
+			rewards: [{
+				id: "0B03303000000040"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03203000000040"
+				structure: "aether:silver_dungeon"
+				type: "structure"
+			}]
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["0B03103000000040"]
+			hide_until_deps_complete: true
+			id: "0B03103000000084"
+			title: "Victory Medal"
+			subtitle: "Optional: proof of the duel."
+			description: [
+				"Collect a &bVictory Medal&r. The Valkyries drop them, and gathering enough is part of earning the right to challenge their queen."
+				"A token of every winged duel you win."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03303000000084"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03203000000084"
+				item: { count: 1, id: "aether:victory_medal" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -6.5d
+		}
+		{
+			dependencies: [
+				"0B03109000000050"
+				"49540D100000002B"
+			]
+			hide_until_deps_complete: true
+			id: "0B03109000000090"
+			title: "Prismatic Mirror"
+			subtitle: "Optional: the pearlescent capstone."
+			description: [
+				"Craft a &bPrismatic Mirror&r. It is one of &6Unusual End&r's highest trinkets, built from pearlescent alloy and the End's rarest materials."
+				"Reaching it means you have worked the pearlescent tier to its end."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03309000000090"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03209000000090"
+				item: { components: { "!minecraft:custom_data": { } }, count: 1, id: "unusualend:prismatic_mirror" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0B03109000000090"]
+			hide_until_deps_complete: true
+			id: "0B03109000000091"
+			title: "The Finished Mirror"
+			subtitle: "Optional: charge it up."
+			description: [
+				"Complete and charge your &bPrismatic Mirror&r. The finished trinket earns its place among your best gear, the quiet capstone of the whole side-equipment chapter."
+				"A fitting last entry in the hidden armory."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03309000000091"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03209000000091"
+				item: { components: { "!minecraft:custom_data": { } }, count: 1, id: "unusualend:prismatic_mirror" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: -1.5d
+		}
+	]
+}
