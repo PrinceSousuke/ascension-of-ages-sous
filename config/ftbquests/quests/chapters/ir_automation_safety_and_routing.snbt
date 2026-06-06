@@ -1,0 +1,2026 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ir_automation_safety_and_routing"
+	group: "3F77A31B7D30C0AA"
+	hide_quest_until_deps_complete: true
+	icon: {
+		id: "projectred_expansion:deployer"
+	}
+	id: "49540A0000000000"
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			hide_until_deps_complete: false
+			icon: {
+				id: "projectred_expansion:deployer"
+			}
+			dependencies: ["4954011000000001"]
+			id: "49540A1000000004"
+			title: "Deployer"
+			subtitle: "Use an item on the world."
+			description: [
+				"Craft a &6ProjectRed&r &bDeployer&r. On a redstone pulse it uses whatever item it holds on the block in front, right-clicking for you: tilling, planting, bucketing, and more."
+				"The first building block of hands-off automation."
+			]
+			rewards: [
+				{
+					id: "49540A3000004000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "49540A3000004001"
+					table_id: 8358680908399640577L
+					title: "A starter cache for the automation line."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540A2000004000"
+				item: { count: 1, id: "projectred_expansion:deployer" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["49540A1000000004"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "projectred_expansion:block_breaker"
+			}
+			id: "49540A1000000005"
+			title: "Block Breaker"
+			subtitle: "Mine on a signal."
+			description: [
+				"Build a &6ProjectRed&r &bBlock Breaker&r. Pulsed with redstone it breaks the block in front and drops it for collection, the harvesting half of an automated farm or quarry."
+				"Pair it with a &bdeployer&r and a tube to close the loop."
+			]
+			rewards: [
+				{
+					id: "49540A3000005000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "49540A3000005001"
+					table_id: 8358680908399640577L
+					title: "Parts for the breaker setup."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540A2000005000"
+				item: { count: 1, id: "projectred_expansion:block_breaker" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["49540A1000000004"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "projectred_expansion:transposer"
+			}
+			id: "49540A1000000006"
+			title: "Transposer"
+			subtitle: "Pull items into tubes."
+			description: [
+				"Craft a &bTransposer&r. It draws items out of an adjacent inventory and pushes them into a &bpneumatic tube&r, the on-ramp that feeds the routing network."
+				"Where the tubes meet your chests, a &btransposer&r does the loading."
+			]
+			rewards: [
+				{
+					id: "49540A3000006000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "49540A3000006001"
+					table_id: 8358680908399640577L
+					title: "A cache for the tube feeders."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540A2000006000"
+				item: { count: 1, id: "projectred_expansion:transposer" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["49540A1000000004"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "projectred_expansion:auto_crafter"
+			}
+			id: "49540A1000000007"
+			title: "Auto Crafter"
+			subtitle: "Craft on demand."
+			description: [
+				"Build a &6ProjectRed&r &bAuto Crafter&r. Loaded with a recipe and fed ingredients it assembles the result automatically, the crafting node of a routed factory."
+				"Set the pattern once and let the tubes keep it stocked."
+			]
+			rewards: [
+				{
+					id: "49540A3000007000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "49540A3000007001"
+					table_id: 8358680908399640577L
+					title: "Components for the crafting node."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540A2000007000"
+				item: { count: 1, id: "projectred_expansion:auto_crafter" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 5.0d
+		}
+		{
+			hide_until_deps_complete: false
+			icon: {
+				id: "integrateddynamics:logic_programmer"
+			}
+			dependencies: ["4954011000000001"]
+			id: "49540A1000000009"
+			title: "Logic Programmer"
+			subtitle: "Write logic onto cards."
+			description: [
+				"Craft a &bLogic Programmer&r and a &bVariable Card&r. The programmer is where you write &6Integrated Dynamics&r logic onto cards, the start of a system that reads the world and reacts to it."
+				"Integrated Dynamics is powerful and fiddly, so start small and build up."
+			]
+			rewards: [
+				{
+					id: "49540A3000009000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "49540A3000009001"
+					table_id: 8358680908399640577L
+					title: "A cache to begin the logic work."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "49540A2000009000"
+					item: { count: 1, id: "integrateddynamics:logic_programmer" }
+					type: "item"
+				}
+				{
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "49540A2000009001"
+					item: { count: 1, id: "integrateddynamics:variable" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["49540A1000000007"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "projectred_expansion:frame_motor"
+			}
+			id: "49540A100000000D"
+			title: "Frame Motor"
+			subtitle: "Move a frame of blocks."
+			description: [
+				"Build a &bFrame Motor&r. It shifts a connected frame of blocks on a signal, the basis for moving platforms, doors, and simple machines built from frames."
+				"Motion without a &6Create&r contraption, the &6ProjectRed&r way."
+			]
+			rewards: [
+				{
+					id: "49540A300000D000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "49540A300000D001"
+					table_id: 8358680908399640577L
+					title: "Parts for the moving frame."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540A200000D000"
+				item: { count: 1, id: "projectred_expansion:frame_motor" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"49540A1000000004"
+				"49540A1000000007"
+				"49540A1000000009"
+				"49540A1000000017"
+				"49540A1000000011"
+				"49540A100000001C"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				id: "integrateddynamics:materializer"
+			}
+			id: "49540A100000000F"
+			title: "Logic and Routing, Proven"
+			subtitle: "The control layer is running."
+			description: [
+				"With deployers, crafters, conduits, tubes, and an &6Integrated Dynamics&r network all in hand, your base can now sense and act on its own. The &bmaterializer&r ties the logic layer to real items."
+				"Automation stops being a pile of machines and starts being a system."
+			]
+			rewards: [
+				{
+					id: "49540A300000F000"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "49540A300000F001"
+					table_id: 8358680908399640595L
+					title: "A solid cache for the automated base."
+					type: "loot"
+				}
+				{
+					auto: "enabled"
+					command: "/astages add {p} ir_digital_logistics_complete true true"
+					id: "49540A300000F002"
+					permission_level: 2
+					silent: true
+					team_reward: true
+					type: "command"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540A200000F000"
+				item: { count: 1, id: "integrateddynamics:materializer" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["49540A1000000009"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "integrateddynamics:proxy"
+			}
+			id: "49540A1000000011"
+			title: "Proxy"
+			subtitle: "Reach the network from afar."
+			description: [
+				"Craft an &6Integrated Dynamics&r &bProxy&r. It exposes a distant part of your network as if it were right here, letting logic read and write across a sprawling base."
+				"The piece that keeps a big network from needing everything in one room."
+			]
+			rewards: [
+				{
+					id: "49540A3000011000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "49540A3000011001"
+					table_id: 8358680908399640577L
+					title: "A few parts for the network reach."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540A2000011000"
+				item: { count: 1, id: "integrateddynamics:proxy" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["49540A1000000011"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "integrateddynamics:materializer"
+			}
+			id: "49540A1000000012"
+			title: "Materializer"
+			subtitle: "Turn values into items."
+			description: [
+				"Build a &bMaterializer&r. It reads a variable from your logic network and produces the matching item, or writes an item's value back, the bridge between data and stuff."
+				"Where the logic meets the chest."
+			]
+			rewards: [
+				{
+					id: "49540A3000012000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "49540A3000012001"
+					table_id: 8358680908399640577L
+					title: "A cache for the materializer."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540A2000012000"
+				item: { count: 1, id: "integrateddynamics:materializer" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["49540A1000000009"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "integrateddynamics:mechanical_squeezer"
+			}
+			id: "49540A1000000013"
+			title: "Mechanical Squeezer"
+			subtitle: "Squeeze for fluids."
+			description: [
+				"Craft a &bMechanical Squeezer&r. It presses items for their fluids and byproducts, an &6Integrated Dynamics&r processing block that feeds its own crafting chains."
+				"Powered, it runs faster than the hand-cranked version."
+			]
+			rewards: [
+				{
+					id: "49540A3000013000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "49540A3000013001"
+					table_id: 8358680908399640577L
+					title: "Parts for the squeezer."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540A2000013000"
+				item: { count: 1, id: "integrateddynamics:mechanical_squeezer" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["49540A1000000013"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "integrateddynamics:drying_basin"
+			}
+			id: "49540A1000000014"
+			title: "Drying Basin"
+			subtitle: "Dry and cure inputs."
+			description: [
+				"Build a &bDrying Basin&r. It slowly processes items by drying them, the patient counterpart to the squeezer in the &6Integrated Dynamics&r recipe set."
+				"Set it and let time do the work."
+			]
+			rewards: [
+				{
+					id: "49540A3000014000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "49540A3000014001"
+					table_id: 8358680908399640577L
+					title: "A few parts for the basin."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540A2000014000"
+				item: { count: 1, id: "integrateddynamics:drying_basin" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["49540A1000000009"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "integrateddynamics:coal_generator"
+			}
+			id: "49540A1000000015"
+			title: "Generator"
+			subtitle: "Power the logic network."
+			description: [
+				"Craft the &6Integrated Dynamics&r Generator. It burns fuel to power the network's machines, the small dedicated source that keeps your logic running."
+				"Modest, but enough to drive a squeezer and a &bbasin&r."
+			]
+			rewards: [
+				{
+					id: "49540A3000015000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "49540A3000015001"
+					table_id: 8358680908399640577L
+					title: "A cache to power the network."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540A2000015000"
+				item: { count: 1, id: "integrateddynamics:coal_generator" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: -1.5d
+		}
+		{
+			hide_until_deps_complete: false
+			icon: {
+				id: "enderio:conduit_binder"
+			}
+			dependencies: ["4954011000000001"]
+			id: "49540A1000000016"
+			title: "Conduit Binder"
+			subtitle: "EnderIO's routing material."
+			description: [
+				"Make &bConduit Binder&r. It is the base material &6EnderIO&r conduits and machines are built from, the start of that mod's tidy all-in-one routing."
+				"&6EnderIO&r bundles power, items, and fluids into one slim conduit, so this is worth a stack."
+			]
+			rewards: [
+				{
+					id: "49540A3000016000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "49540A3000016001"
+					table_id: 8358680908399640577L
+					title: "A cache for the conduit material."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540A2000016000"
+				item: { count: 1, id: "enderio:conduit_binder" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["49540A1000000016"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "enderio:conduit"
+			}
+			id: "49540A1000000017"
+			title: "Conduit"
+			subtitle: "One block, many networks."
+			description: [
+				"Craft an &6EnderIO&r &bConduit&r. Several conduit types share a single block space, so power, items, fluids, and redstone can all run down the same tidy line."
+				"The neatest wiring in the pack, once you learn its filters."
+			]
+			rewards: [
+				{
+					id: "49540A3000017000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "49540A3000017001"
+					table_id: 8358680908399640577L
+					title: "A cache for the conduit run."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540A2000017000"
+				item: { count: 1, id: "enderio:conduit" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["49540A1000000017"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "enderio:basic_item_filter"
+			}
+			id: "49540A1000000018"
+			title: "Basic Item Filter"
+			subtitle: "Control what items flow."
+			description: [
+				"Build a &bBasic Item Filter&r. Slotted into a &bconduit&r it whitelists or blacklists what passes, the control that keeps the right items going to the right machine."
+				"Filters turn a pile of conduits into an actual sorting system."
+			]
+			rewards: [
+				{
+					id: "49540A3000018000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "49540A3000018001"
+					table_id: 8358680908399640577L
+					title: "A few parts for the filters."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540A2000018000"
+				item: { count: 1, id: "enderio:basic_item_filter" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["49540A1000000017"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "enderio:basic_fluid_filter"
+			}
+			id: "49540A1000000019"
+			title: "Basic Fluid Filter"
+			subtitle: "Control what fluids flow."
+			description: [
+				"Craft a &bBasic Fluid Filter&r. The fluid counterpart to the item filter, it keeps your oils, fuels, and waters from mixing in a shared &bconduit&r run."
+				"Essential once more than one fluid shares a line."
+			]
+			rewards: [
+				{
+					id: "49540A3000019000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "49540A3000019001"
+					table_id: 8358680908399640577L
+					title: "A cache for the fluid filters."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540A2000019000"
+				item: { count: 1, id: "enderio:basic_fluid_filter" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["49540A1000000006"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "projectred_expansion:pneumatic_tube"
+			}
+			id: "49540A100000001C"
+			title: "Pneumatic Tube"
+			subtitle: "Route items by suction."
+			description: [
+				"Lay Pneumatic Tubes. They carry items between transposers and inventories on air, &6ProjectRed&r's item-routing network alongside its redstone logic."
+				"Color and &bfilter&r them to keep the flows separate."
+			]
+			rewards: [
+				{
+					id: "49540A300001C000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "49540A300001C001"
+					table_id: 8358680908399640577L
+					title: "A cache for the tube network."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540A200001C000"
+				item: { count: 1, id: "projectred_expansion:pneumatic_tube" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 7.5d
+		}
+		{
+			hide_until_deps_complete: false
+			icon: {
+				id: "projectred_expansion:battery_box"
+			}
+			dependencies: ["4954011000000001"]
+			id: "49540A100000001D"
+			title: "Battery Box"
+			subtitle: "Store electrotine power."
+			description: [
+				"Build a &bBattery Box&r. It stores the power &6ProjectRed&r's machinery runs on, the buffer that keeps your deployers and breakers fed during a spike."
+				"Charge it from your generators and draw it down as needed."
+			]
+			rewards: [
+				{
+					id: "49540A300001D000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "49540A300001D001"
+					table_id: 8358680908399640577L
+					title: "Parts for the power store."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540A200001D000"
+				item: { count: 1, id: "projectred_expansion:battery_box" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["49540A1000000004"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "projectred_core:silicon"
+			}
+			id: "49540A100000001E"
+			title: "Silicon"
+			subtitle: "The base of every chip."
+			description: [
+				"Produce &bSilicon&r. It is the raw material &6ProjectRed&r's integrated circuits start from, melted and cut into the chips that drive its logic gates."
+				"The first step of the chip-making chain."
+			]
+			rewards: [
+				{
+					id: "082555B0842A8D4F"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "4327E31518E69D91"
+					table_id: 8430738502437568513L
+					title: "A cache to start the chips."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540A200000001E"
+				item: { count: 1, id: "projectred_core:silicon" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["49540A100000001E"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "projectred_core:silicon_chip"
+			}
+			id: "49540A100000001F"
+			title: "Silicon Chip"
+			subtitle: "Cut the wafer."
+			description: [
+				"Cut a &bSilicon Chip&r from raw silicon. It is the plain chip behind the simpler &6ProjectRed&r gates, the workhorse component of small circuits."
+				"Make these in quantity; gates eat them."
+			]
+			rewards: [
+				{
+					id: "13CCCB27C5C61D66"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "4DD2CB3403B1D4E1"
+					table_id: 8430738502437568513L
+					title: "A few parts for the chip line."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540A200000001F"
+				item: { count: 1, id: "projectred_core:silicon_chip" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["49540A100000001E"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "projectred_core:infused_silicon"
+			}
+			id: "49540A1000000020"
+			title: "Infused Silicon"
+			subtitle: "Charge the silicon."
+			description: [
+				"Make &bInfused Silicon&r. Treated with redstone, it carries the charge the more capable chips need, the step between plain silicon and energized."
+				"The middle of the &bsilicon&r ladder."
+			]
+			rewards: [
+				{
+					id: "072899FAA2385429"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "7876665F0CCB1C14"
+					table_id: 8430738502437568513L
+					title: "A cache for the infused batch."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540A2000000020"
+				item: { count: 1, id: "projectred_core:infused_silicon" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["49540A1000000020"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "projectred_core:energized_silicon"
+			}
+			id: "49540A1000000021"
+			title: "Energized Silicon"
+			subtitle: "The top-grade wafer."
+			description: [
+				"Produce &bEnergized Silicon&r. It is the highest grade of &6ProjectRed&r silicon, infused with electrotine for the most capable circuits the mod builds."
+				"Reserved for the complex gates and timing chips."
+			]
+			rewards: [
+				{
+					id: "4C3CEE1F79E3C3B4"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "0ED7B03DF6091944"
+					table_id: 8430738502437568513L
+					title: "A cache for the high-grade silicon."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540A2000000021"
+				item: { count: 1, id: "projectred_core:energized_silicon" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["49540A1000000021"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "projectred_core:energized_silicon_chip"
+			}
+			id: "49540A1000000022"
+			title: "Energized Silicon Chip"
+			subtitle: "The best chip."
+			description: [
+				"Cut an &bEnergized Silicon Chip&r. It drives &6ProjectRed&r's most advanced gates, the chip behind anything that counts, times, or remembers."
+				"The keystone of serious circuitry."
+			]
+			rewards: [
+				{
+					id: "44332A0A417AD0C0"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "199502C350B67424"
+					table_id: 8430738502437568513L
+					title: "Parts for the advanced chips."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540A2000000022"
+				item: { count: 1, id: "projectred_core:energized_silicon_chip" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["49540A100000001F"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "projectred_integration:state_cell_gate"
+			}
+			id: "49540A1000000023"
+			title: "State Cell"
+			subtitle: "A timing gate."
+			description: [
+				"Build a &bState Cell&r gate. It produces a timed pulse you can tune, the clock behind any &6ProjectRed&r circuit that needs to act on a schedule."
+				"Set the interval and let it tick."
+			]
+			rewards: [
+				{
+					id: "1BF128F1D4408AC6"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "6F57D54DF7435CEE"
+					table_id: 8430738502437568513L
+					title: "A few parts for the timing gate."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540A2000000023"
+				item: { count: 1, id: "projectred_integration:state_cell_gate" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["49540A1000000009"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "integrateddynamics:cable"
+			}
+			id: "49540A1000000024"
+			title: "Logic Cable"
+			subtitle: "Carry the network."
+			description: [
+				"Lay &bLogic Cable&r. It is the backbone that carries &6Integrated Dynamics&r variables and signals between your parts, the wiring your whole logic network rides on."
+				"Run it everywhere the network needs to reach."
+			]
+			rewards: [
+				{
+					id: "45AF37D817599933"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "2BDDD181E7B1160E"
+					table_id: 8430738502437568513L
+					title: "A cache for the network cabling."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540A2000000024"
+				item: { count: 1, id: "integrateddynamics:cable" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["49540A1000000032"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "enderio:sag_mill"
+			}
+			id: "49540A1000000025"
+			title: "SAG Mill"
+			subtitle: "Grind ore, with bonuses."
+			description: [
+				"Build a &bSAG Mill&r. It crushes ore into dust and, with grinding balls loaded, squeezes out bonus output, &6EnderIO&r's answer to ore doubling."
+				"Keep it stocked with grinding balls for the best yield."
+			]
+			rewards: [
+				{
+					id: "01C48CDC71DF678A"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "2FDF261BB5A31370"
+					table_id: 8430738502437568513L
+					title: "A cache for the ore mill."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540A2000000025"
+				item: { count: 1, id: "enderio:sag_mill" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["49540A1000000032"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "enderio:alloy_smelter"
+			}
+			id: "49540A1000000026"
+			title: "Alloy Smelter"
+			subtitle: "Combine into alloys."
+			description: [
+				"Craft an &6EnderIO&r &bAlloy Smelter&r. It fuses up to three inputs into an alloy in one machine, a compact route to the metals other machines need."
+				"Handy for the everyday alloys without a multiblock."
+			]
+			rewards: [
+				{
+					id: "1AD529D42F93FEEB"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "19BCA1C6E1C534B6"
+					table_id: 8430738502437568513L
+					title: "A cache for the alloy bench."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540A2000000026"
+				item: { count: 1, id: "enderio:alloy_smelter" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["49540A1000000032"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "enderio:stirling_generator"
+			}
+			id: "49540A1000000027"
+			title: "Stirling Generator"
+			subtitle: "Burn fuel for EnderIO power."
+			description: [
+				"Build a &bStirling Generator&r. It burns solid fuel for a steady stream of power, the simple starter source for an &6EnderIO&r machine room."
+				"Reliable, if unglamorous, base power."
+			]
+			rewards: [
+				{
+					id: "61EC54A33C2BFC21"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "249FE661DB19AB38"
+					table_id: 8430738502437568513L
+					title: "A cache to power the machines."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540A2000000027"
+				item: { count: 1, id: "enderio:stirling_generator" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["49540A1000000026"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "enderio:vat"
+			}
+			id: "49540A1000000028"
+			title: "VAT"
+			subtitle: "Run fluid chemistry."
+			description: [
+				"Build a &bVAT&r. It mixes items and fluids into new fluids, the chemistry station behind several &6EnderIO&r materials and the &bpainting machine&r's inks."
+				"The mod's processing branches lean on it."
+			]
+			rewards: [
+				{
+					id: "3E9EAA67441FC2E3"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "3EB2166410F42FFC"
+					table_id: 8430738502437568513L
+					title: "Parts for the fluid chemistry."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540A2000000028"
+				item: { count: 1, id: "enderio:vat" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["49540A1000000032"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "enderio:painting_machine"
+			}
+			id: "49540A1000000029"
+			title: "Painting Machine"
+			subtitle: "Disguise your blocks."
+			description: [
+				"Craft a &bPainting Machine&r. It paints one block to wear the texture of another, so your conduits, anchors, and machine covers can blend into any build."
+				"Function stays the same; only the look changes."
+			]
+			rewards: [
+				{
+					id: "176ADAB5A500E91C"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "45846C4F19A40C5E"
+					table_id: 8430738502437568513L
+					title: "A cache for the finishing work."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540A2000000029"
+				item: { count: 1, id: "enderio:painting_machine" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["49540A1000000017"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "enderio:impulse_hopper"
+			}
+			id: "49540A100000002A"
+			title: "Impulse Hopper"
+			subtitle: "Move a batch at once."
+			description: [
+				"Build an &bImpulse Hopper&r. It transfers a filtered batch of items between inventories on a signal, a precise alternative to a constant hopper stream."
+				"Good where you want exactly so many items moved, not a trickle."
+			]
+			rewards: [
+				{
+					id: "2E9597D151514DCA"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "456028D75A6DDC75"
+					table_id: 8430738502437568513L
+					title: "A few parts for the batch mover."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540A200000002A"
+				item: { count: 1, id: "enderio:impulse_hopper" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -10.5d
+		}
+		{
+			dependencies: ["49540A1000000017"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "enderio:drain"
+			}
+			id: "49540A100000002B"
+			title: "Drain"
+			subtitle: "Pump fluids in or out."
+			description: [
+				"Craft a &bDrain&r. It pulls fluid from the world into your conduits, or places it back, the &6EnderIO&r way to harvest a lake or fill a pool."
+				"Pair it with a fluid &bconduit&r and a tank."
+			]
+			rewards: [
+				{
+					id: "47F7758F977F8578"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "4BAFBD8CDAB1C5ED"
+					table_id: 8430738502437568513L
+					title: "A cache for the fluid intake."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540A200000002B"
+				item: { count: 1, id: "enderio:drain" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["49540A1000000031"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "enderio:wired_charger"
+			}
+			id: "49540A100000002C"
+			title: "Wired Charger"
+			subtitle: "Charge items off the grid."
+			description: [
+				"Build a &bWired Charger&r. Fed power through a &bconduit&r it recharges your tools and armor, a fixed charging point wherever the grid reaches."
+				"Park your gear on it between jobs."
+			]
+			rewards: [
+				{
+					id: "12301C5C128CDA40"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "5369D544A5233EB0"
+					table_id: 8430738502437568513L
+					title: "A cache for the charging post."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540A200000002C"
+				item: { count: 1, id: "enderio:wired_charger" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["49540A1000000017"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "enderio:vacuum_chest"
+			}
+			id: "49540A100000002D"
+			title: "Vacuum Chest"
+			subtitle: "Hoover up drops."
+			description: [
+				"Craft a &bVacuum Chest&r. It pulls nearby items off the ground straight into itself, the collector under a mob farm or beside a harvester."
+				"&bFilter&r it so it only grabs what you want."
+			]
+			rewards: [
+				{
+					id: "1B5A582A62BD4021"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "7113E2D359C09D7E"
+					table_id: 8430738502437568513L
+					title: "A cache for the item collector."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540A200000002D"
+				item: { count: 1, id: "enderio:vacuum_chest" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["49540A100000002D"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "enderio:xp_vacuum"
+			}
+			id: "49540A100000002E"
+			title: "XP Vacuum"
+			subtitle: "Collect experience."
+			description: [
+				"Build an &bXP Vacuum&r. It gathers nearby experience orbs and banks them, feeding your enchanting setup without you standing in the drop zone."
+				"Pairs naturally with a mob farm and an &benchanter&r."
+			]
+			rewards: [
+				{
+					id: "660FE9CAE3553DE8"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "1FD82BBC396723D8"
+					table_id: 8430738502437568513L
+					title: "A cache for the XP catcher."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540A200000002E"
+				item: { count: 1, id: "enderio:xp_vacuum" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: -11.5d
+		}
+		{
+			dependencies: ["49540A1000000026"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "enderio:enchanter"
+			}
+			id: "49540A100000002F"
+			title: "Enchanter"
+			subtitle: "Craft your enchantments."
+			description: [
+				"Craft an &6EnderIO&r &bEnchanter&r. Given a book, lapis, and the right material it produces an enchanted book directly, picking exactly the enchantment you want."
+				"No more gambling at the enchanting table."
+			]
+			rewards: [
+				{
+					id: "693612760AA9FFD3"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "4AD82BDC32E53931"
+					table_id: 8430738502437568513L
+					title: "A cache for the enchanting bench."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540A200000002F"
+				item: { count: 1, id: "enderio:enchanter" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["49540A1000000017"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "enderio:travel_anchor"
+			}
+			id: "49540A1000000030"
+			title: "Travel Anchor"
+			subtitle: "Hop between points."
+			description: [
+				"Place Travel Anchors. With a travel staff or the right armor you teleport between them at a glance, a fast transit network across your base and beyond."
+				"Set anchors at the spots you visit most."
+			]
+			rewards: [
+				{
+					id: "2CAB45DDF7859A48"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "2C0FC3DB6E380E41"
+					table_id: 8430738502437568513L
+					title: "A cache for the travel network."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540A2000000030"
+				item: { count: 1, id: "enderio:travel_anchor" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: -10.5d
+		}
+		{
+			dependencies: ["49540A1000000032"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "enderio:basic_capacitor_bank"
+			}
+			id: "49540A1000000031"
+			title: "Basic Capacitor Bank"
+			subtitle: "EnderIO power storage."
+			description: [
+				"Build a &bBasic Capacitor Bank&r. It banks &6EnderIO&r power and grows by adding more banks, the storage wall that smooths your generation."
+				"Start with one and extend it as the base grows."
+			]
+			rewards: [
+				{
+					id: "3C9320A359302A89"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "4C9289C7FAE4E019"
+					table_id: 8430738502437568513L
+					title: "A cache for the power wall."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540A2000000031"
+				item: { count: 1, id: "enderio:basic_capacitor_bank" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["49540A1000000016"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "enderio:basic_capacitor"
+			}
+			id: "49540A1000000032"
+			title: "Basic Capacitor"
+			subtitle: "The upgrade component."
+			description: [
+				"Craft a &bBasic Capacitor&r. It is the core component that powers and upgrades most &6EnderIO&r machines, slotted in to set their tier."
+				"Nearly every &6EnderIO&r machine wants one, so make a stack."
+			]
+			rewards: [
+				{
+					id: "4BA344F9EBFFF92F"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "3568B5C58B319067"
+					table_id: 8430738502437568513L
+					title: "A cache of the core components."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540A2000000032"
+				item: { count: 1, id: "enderio:basic_capacitor" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["49540A100000000D"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "assemblyline:conveyorbelt"
+			}
+			id: "49540A1000000033"
+			title: "Conveyor Belt"
+			subtitle: "Assembly Line's mover."
+			description: [
+				"Build an &6Assembly Line&r &bConveyor Belt&r. It carries items and even mobs along its length, the foundation of that mod's belt-based factories."
+				"Everything in this branch rides the belt."
+			]
+			rewards: [
+				{
+					id: "484233F6715F1418"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "2DDD2C56CC2AA2BB"
+					table_id: 8430738502437568513L
+					title: "A cache for the belt line."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540A2000000033"
+				item: { count: 1, id: "assemblyline:conveyorbelt" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["49540A1000000033"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "assemblyline:sorterbelt"
+			}
+			id: "49540A1000000034"
+			title: "Sorter Belt"
+			subtitle: "Split the stream."
+			description: [
+				"Craft a &bSorter Belt&r. It pulls chosen items off the conveyor onto a side branch, the sorting junction of a belt factory."
+				"&bFilter&r it to route each item where it belongs."
+			]
+			rewards: [
+				{
+					id: "29E3F7081E3C139F"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "0D1C093E172CFC85"
+					table_id: 8430738502437568513L
+					title: "A few parts for the sorter."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540A2000000034"
+				item: { count: 1, id: "assemblyline:sorterbelt" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["49540A1000000033"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "assemblyline:blockbreaker"
+			}
+			id: "49540A1000000035"
+			title: "Block Breaker (Belt)"
+			subtitle: "Belt-fed mining."
+			description: [
+				"Build an &6Assembly Line&r &bBlock Breaker&r. Set over the belt it breaks blocks and drops the harvest straight onto the line, the breaking station of a belt farm."
+				"The belt does the hauling for you."
+			]
+			rewards: [
+				{
+					id: "75C95DC8DAA57F0E"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "0DA1969009D0A75F"
+					table_id: 8430738502437568513L
+					title: "Parts for the belt breaker."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540A2000000035"
+				item: { count: 1, id: "assemblyline:blockbreaker" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["49540A1000000033"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "assemblyline:blockplacer"
+			}
+			id: "49540A1000000036"
+			title: "Block Placer"
+			subtitle: "Belt-fed building."
+			description: [
+				"Craft a &bBlock Placer&r. Fed blocks from the belt it sets them in the world, the planting and building counterpart to the breaker."
+				"Breaker and placer together make a closed farm loop."
+			]
+			rewards: [
+				{
+					id: "3EB12C09AAAD7BB0"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "0CCC8B949E8DB3D4"
+					table_id: 8430738502437568513L
+					title: "A cache for the placer."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540A2000000036"
+				item: { count: 1, id: "assemblyline:blockplacer" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["49540A1000000033"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "assemblyline:detector"
+			}
+			id: "49540A1000000037"
+			title: "Detector"
+			subtitle: "Sense the belt."
+			description: [
+				"Build a &bDetector&r. It reads what passes on the belt and emits a signal, the sensor that lets a belt factory make decisions."
+				"Wire it to gate the rest of the line."
+			]
+			rewards: [
+				{
+					id: "3F4413BA4AD2F6EA"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "3FE2496918BDC032"
+					table_id: 8430738502437568513L
+					title: "A few parts for the belt sensor."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540A2000000037"
+				item: { count: 1, id: "assemblyline:detector" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["49540A1000000033"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "assemblyline:farmer"
+			}
+			id: "49540A1000000038"
+			title: "Farmer"
+			subtitle: "Automate the harvest."
+			description: [
+				"Craft an &6Assembly Line&r &bFarmer&r. It tends and harvests crops onto the belt, closing the loop from seed to storage with no hands involved."
+				"The capstone of a self-running belt farm."
+			]
+			rewards: [
+				{
+					id: "1269C7CCB2B435D4"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "3A721E99A77468F6"
+					table_id: 8430738502437568513L
+					title: "A cache to finish the farm line."
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540A2000000038"
+				item: { count: 1, id: "assemblyline:farmer" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: 4.0d
+		}
+	]
+}
