@@ -1,0 +1,758 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ren_maledictus_vigil"
+	group: "0B038EB15EBBFD95"
+	hide_quest_until_deps_complete: true
+	icon: {
+		id: "cataclysm:cursium_ingot"
+	}
+	id: "0B0300100000000A"
+	order_index: 9
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"0B03106000000050"
+				"0B03109000000060"
+			]
+			hide_until_deps_complete: true
+			id: "0B0310A000000010"
+			title: "The Cursed Pyramid"
+			subtitle: "Find the Maledictus' tomb."
+			description: [
+				"Track down a &bCursed Pyramid&r out in the desert. &6Cataclysm&r buries one of its bosses here, and the structure itself is a trapped, treasure-laden gauntlet on the way in."
+				"This vigil is the &dRenaissance&r's proving ground, a run of bosses that tests everything the age taught you."
+			]
+			rewards: [
+				{
+					id: "0B0330A000000010"
+					type: "xp"
+					xp: 15
+				}
+				{
+					id: "0B0330A000000001"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B0320A000000010"
+				structure: "cataclysm:cursed_pyramid"
+				type: "structure"
+			}]
+			x: -8.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["0B0310A000000010"]
+			hide_until_deps_complete: true
+			id: "0B0310A000000011"
+			title: "Black Steel Ingot"
+			subtitle: "Forge the cursed metal."
+			description: [
+				"Smelt a &bBlack Steel Ingot&r. It is &6Cataclysm&r's mid-tier metal, the material its weapons and the gear you will want against the &c&lMaledictus&r are forged from."
+				"Make a stack before you wake what sleeps in the pyramid."
+			]
+			rewards: [{
+				id: "0B0330A000000011"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B0320A000000011"
+				item: { count: 1, id: "cataclysm:black_steel_ingot" }
+				type: "item"
+			}]
+			x: -8.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"0B0310A000000010"
+				"0B0310A000000011"
+				"0B03102000000047"
+			]
+			hide_until_deps_complete: true
+			id: "0B0310A000000014"
+			title: "The Maledictus"
+			subtitle: "Break the pyramid's curse."
+			description: [
+				"Fight the &c&lMaledictus&r at the heart of the &bCursed Pyramid&r. The cursed pharaoh teleports, lays curses that twist your own attacks against you, and calls swarms to wear you down, so keep moving and deal with the adds fast."
+				"Felling it is the central trophy of the vigil and the source of the cursed materials the rest of this chapter plays with."
+			]
+			min_required_dependencies: 3
+			rewards: [
+				{
+					auto: "enabled"
+					command: "/astages add {p} ren_maledictus_defeated true true"
+					icon: {
+						id: "cataclysm:cursium_ingot"
+					}
+					id: "0B0330A000000014"
+					permission_level: 2
+					silent: true
+					team_reward: true
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/astages add {p} ren_maledictus_vigil_complete true true"
+					icon: {
+						id: "cataclysm:cursium_ingot"
+					}
+					id: "0B0330A000000016"
+					permission_level: 2
+					silent: true
+					team_reward: true
+					type: "command"
+				}
+				{
+					id: "0B0330A000000015"
+					type: "xp"
+					xp: 200
+				}
+				{
+					id: "0B0330A000000012"
+					type: "xp"
+					xp: 15
+				}
+				{
+					id: "0B0330A0000000FE"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+			shape: "diamond"
+			size: 1.3d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				entity: "cataclysm:maledictus"
+				id: "0B0320A000000014"
+				type: "kill"
+				value: 1L
+			}]
+			x: -8.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"0B03101000000007"
+				"0B03101000000019"
+				"0B03101000000029"
+				"0B03101000000039"
+				"0B03102000000047"
+				"0B03102000000062"
+				"0B03103000000031"
+				"0B03104000000050"
+				"0B03105000000022"
+				"0B03105000000034"
+				"0B03105000000050"
+				"0B03106000000021"
+				"0B03106000000034"
+				"0B03106000000050"
+				"0B03107000000010"
+				"0B03107000000036"
+				"0B03107000000078"
+				"0B03107000000079"
+				"0B03107000000077"
+				"0B031080000000D1"
+				"0B031080000000E2"
+				"0B031080000000F2"
+				"0B03109000000012"
+				"0B03109000000022"
+				"0B03109000000023"
+				"0B03109000000042"
+				"0B03109000000060"
+			]
+			hide_until_deps_complete: true
+			id: "0B0310A000000031"
+			title: "Goat Fur Pants"
+			subtitle: "Gear up for the cold hunt."
+			description: [
+				"Craft &bGoat Fur Pants&r. This gate opens only once you have cleared the &dRenaissance&r's defining milestones, and it points you at the frozen hunt ahead."
+				"&c&lFrostmaw&r country is brutally cold, so warm legs are not optional. Cold Sweat will punish you for skipping them."
+			]
+			rewards: [{
+				id: "0B0330A000000031"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B0320A000000031"
+				item: { count: 1, id: "cold_sweat:goat_fur_leggings" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["0B0310A000000031"]
+			hide_until_deps_complete: true
+			id: "0B0310A000000032"
+			title: "Naga Fang Dagger"
+			subtitle: "A blade with reach."
+			description: [
+				"Forge a &bNaga Fang Dagger&r from a Naga's fang. It is a fast, venomous blade, exactly the kind of quick weapon that serves against a slow, heavy beast."
+				"Bring it to the snow."
+			]
+			rewards: [{
+				id: "0B0330A000000032"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B0320A000000032"
+				item: { count: 1, id: "mowziesmobs:naga_fang_dagger" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0B0310A000000032"]
+			hide_until_deps_complete: true
+			id: "0B0310A000000033"
+			title: "Snowy Taiga"
+			subtitle: "Find Frostmaw's range."
+			description: [
+				"Travel to a &bSnowy Taiga&r. &c&lFrostmaw&r sleeps among the frozen pines, so finding the right biome is the first half of hunting it."
+				"Keep your warm gear on the moment you arrive."
+			]
+			rewards: [{
+				id: "0B0330A000000033"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				biome: "minecraft:snowy_taiga"
+				id: "0B0320A000000033"
+				type: "biome"
+			}]
+			x: 2.0d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"0B0310A000000031"
+				"0B0310A000000032"
+				"0B0310A000000033"
+			]
+			hide_until_deps_complete: true
+			id: "0B0310A000000034"
+			title: "Frostmaw"
+			subtitle: "Wake the ice beast."
+			description: [
+				"Hunt down &c&lFrostmaw&r, the great frozen beast of the taiga. It slams the ground, breathes killing cold, and hits like an avalanche, so dodge the telegraphed swings and punish the recovery."
+				"Its frozen heart and trophy are the reward, and the kill opens the side hunts for the &c&lSculptor&r and the &c&lNaga&r."
+			]
+			min_required_dependencies: 3
+			rewards: [{
+				id: "0B0330A000000034"
+				type: "xp"
+				xp: 150
+			}]
+			shape: "diamond"
+			size: 1.3d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				entity: "mowziesmobs:frostmaw"
+				id: "0B0320A000000034"
+				type: "kill"
+				value: 1L
+			}]
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"0B03101000000007"
+				"0B03101000000019"
+				"0B03101000000029"
+				"0B03101000000039"
+				"0B03102000000047"
+				"0B03102000000062"
+				"0B03103000000031"
+				"0B03104000000050"
+				"0B03105000000022"
+				"0B03105000000034"
+				"0B03105000000050"
+				"0B03106000000021"
+				"0B03106000000034"
+				"0B03106000000050"
+				"0B03107000000010"
+				"0B03107000000036"
+				"0B03107000000078"
+				"0B03107000000079"
+				"0B03107000000077"
+				"0B031080000000D1"
+				"0B031080000000E2"
+				"0B031080000000F2"
+				"0B03109000000012"
+				"0B03109000000022"
+				"0B03109000000023"
+				"0B03109000000042"
+				"0B03109000000060"
+			]
+			hide_until_deps_complete: true
+			id: "0B0310A000000041"
+			title: "Black Steel Sword"
+			subtitle: "Arm for the nightmare hunt."
+			description: [
+				"Forge a &bBlack Steel Sword&r. Like the &bgoat fur&r gate, this one waits on broad &dRenaissance&r progress, then arms you for the second branch of the vigil."
+				"The cursed blade is your answer to the things that walk in the dark ahead."
+			]
+			rewards: [{
+				id: "0B0330A000000041"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B0320A000000041"
+				item: { count: 1, id: "cataclysm:black_steel_sword" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["0B0310A000000041"]
+			hide_until_deps_complete: true
+			id: "0B0310A000000044"
+			title: "Nightmare Stalker"
+			subtitle: "Cut down the night-walker."
+			description: [
+				"Slay the &c&lNightmare Stalker&r. The &6Born in Chaos&r boss is fast and relentless, striking from the dark and shrugging off light hits, so commit to your swings and keep your footing."
+				"Its fall opens the deeper &6Born in Chaos&r hunts."
+			]
+			min_required_dependencies: 1
+			rewards: [{
+				id: "0B0330A000000044"
+				type: "xp"
+				xp: 150
+			}]
+			shape: "diamond"
+			size: 1.3d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				entity: "born_in_chaos_v1:nightmare_stalker"
+				id: "0B0320A000000044"
+				type: "kill"
+				value: 1L
+			}]
+			x: 7.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["0B0310A000000014"]
+			hide_until_deps_complete: true
+			id: "0B0310A000000051"
+			title: "Maledictus Disc"
+			subtitle: "Optional: a boss's record."
+			description: [
+				"Recover the &c&lMaledictus&r &bmusic disc&r. It is a trophy drop from the pyramid fight, a fitting soundtrack for the room where you finally won."
+			]
+			optional: true
+			rewards: [{
+				id: "0B0330A000000051"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B0320A000000051"
+				item: { count: 1, id: "cataclysm:music_disc_maledictus" }
+				type: "item"
+			}]
+			x: -10.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["0B0310A000000014"]
+			hide_until_deps_complete: true
+			id: "0B0310A000000052"
+			title: "Eye of Curse"
+			subtitle: "Optional: a cursed relic."
+			description: [
+				"Claim the &bEye of Curse&r from the &c&lMaledictus&r. It is a &6Cataclysm&r relic with its own dark uses, a keepsake of the pyramid for the collector."
+			]
+			optional: true
+			rewards: [{
+				id: "0B0330A000000052"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B0320A000000052"
+				item: { count: 1, id: "cataclysm:cursed_eye" }
+				type: "item"
+			}]
+			x: -9.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["0B0310A000000014"]
+			hide_until_deps_complete: true
+			id: "0B0310A000000054"
+			title: "Night Lich"
+			subtitle: "Optional: the floating necromancer."
+			description: [
+				"Take on the &c&lNight Lich&r, a &6Bosses of Mass Destruction&r fight. It hovers out of reach, teleports, and rains projectiles, so bring cover, a bow, and patience to close the gaps."
+				"A genuine test of a ranged loadout."
+			]
+			optional: true
+			rewards: [{
+				id: "0B0330A000000054"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				entity: "bosses_of_mass_destruction:lich"
+				id: "0B0320A000000054"
+				type: "kill"
+				value: 1L
+			}]
+			x: -7.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["0B0310A000000034"]
+			hide_until_deps_complete: true
+			id: "0B0310A000000057"
+			title: "Tongbi, the Sculptor"
+			subtitle: "Optional: the geomancer."
+			description: [
+				"Challenge the &c&lSculptor&r, Tongbi, a &6Mowzie's Mobs&r boss who shapes the ground itself. It raises stone walls and hurls debris, so stay mobile and strike in the gaps between its constructions."
+			]
+			optional: true
+			rewards: [{
+				id: "0B0330A000000057"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				entity: "mowziesmobs:sculptor"
+				id: "0B0320A000000057"
+				type: "kill"
+				value: 1L
+			}]
+			x: 0.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["0B0310A000000034"]
+			hide_until_deps_complete: true
+			id: "0B0310A000000058"
+			title: "Naga"
+			subtitle: "Optional: the flying serpent."
+			description: [
+				"Hunt the &c&lNaga&r, the winged serpent of the cliffs. It strafes and dives, hard to pin down on foot, so time your hits to its passes and use the terrain to limit its angles."
+				"Its fang feeds the dagger you may already carry."
+			]
+			optional: true
+			rewards: [{
+				id: "0B0330A000000058"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				entity: "mowziesmobs:naga"
+				id: "0B0320A000000058"
+				type: "kill"
+				value: 1L
+			}]
+			x: 0.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["0B0310A000000044"]
+			hide_until_deps_complete: true
+			id: "0B0310A000000059"
+			title: "Supreme Bonescaller"
+			subtitle: "Optional: the bone summoner."
+			description: [
+				"Put down the &c&lSupreme Bonescaller&r. The &6Born in Chaos&r boss raises skeletal servants without end, so cut the summons down and force your way to the caller before it rebuilds its wall of bone."
+			]
+			optional: true
+			rewards: [{
+				id: "0B0330A000000059"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				entity: "born_in_chaos_v1:supreme_bonescaller"
+				id: "0B0320A000000059"
+				type: "kill"
+				value: 1L
+			}]
+			x: 5.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["0B0310A000000044"]
+			hide_until_deps_complete: true
+			id: "0B0310A00000005A"
+			title: "Lord Pumpkinhead"
+			subtitle: "Optional: the harvest tyrant."
+			description: [
+				"Face &c&lLord Pumpkinhead&r, the grander cousin of the pumpkin knights. It hits harder and summons more than its lesser kin, a real fight rather than a seasonal scare."
+			]
+			optional: true
+			rewards: [{
+				id: "0B0330A00000005A"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				entity: "born_in_chaos_v1:lord_pumpkinhead"
+				id: "0B0320A000000060"
+				type: "kill"
+				value: 1L
+			}]
+			x: 5.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["0B0310A000000044"]
+			hide_until_deps_complete: true
+			id: "0B0310A00000005B"
+			title: "Helvar, the Underworld Knight"
+			subtitle: "Optional: the armored revenant."
+			description: [
+				"Battle &c&lHelvar, the Underworld Knight&r. The armored boss trades heavy, deliberate blows, so read its wind-ups, block or sidestep, and answer in the openings."
+				"One of the sterner optional duels of the vigil."
+			]
+			optional: true
+			rewards: [{
+				id: "0B0330A00000005B"
+				type: "xp"
+				xp: 75
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				entity: "block_factorys_bosses:underworld_knight"
+				id: "0B0320A00000005B"
+				type: "kill"
+				value: 1L
+			}]
+			x: 8.5d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"0B03101000000039"
+				"0B03102000000062"
+				"0B03103000000031"
+				"0B03104000000050"
+				"0B03105000000050"
+				"0B03106000000050"
+				"0B03107000000050"
+				"0B031080000000F2"
+				"0B03109000000060"
+				"0B0310A000000014"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				id: "modern_industrialization:steel_dust"
+			}
+			id: "0B0310A0000000F0"
+			title: "Cursium Ingot"
+			subtitle: "A reward for the whole age."
+			description: [
+				"Refine a &bCursium Ingot&r from the &c&lMaledictus&r' spoils. The cursed metal only comes together once you have cleared a defining milestone in every age so far, the pyramid fight included."
+				"It is the vigil's bragging-rights trophy, proof the &dRenaissance&r is well and truly behind you."
+			]
+			rewards: [
+				{
+					id: "0B0330A0000000F1"
+					type: "xp"
+					xp: 250
+				}
+				{
+					auto: "enabled"
+					command: "/astages add {p} industrial_revolution true true"
+					icon: {
+						id: "modern_industrialization:steel_dust"
+					}
+					id: "0B0330A0000000F2"
+					permission_level: 2
+					silent: true
+					team_reward: true
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/advancement grant {p} only aoa:age/industrial_revolution"
+					icon: {
+						id: "modern_industrialization:steel_dust"
+					}
+					id: "0B0330A0000000F3"
+					permission_level: 2
+					silent: true
+					team_reward: true
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/astages add {p} ren_seal_obtained true true"
+					icon: {
+						id: "cataclysm:cursium_ingot"
+					}
+					id: "0B0330A0000000F4"
+					permission_level: 2
+					silent: true
+					team_reward: true
+					type: "command"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B0320A0000000F0"
+				item: { count: 1, id: "cataclysm:cursium_ingot" }
+				type: "item"
+			}]
+			x: -8.0d
+			y: 6.5d
+		}
+	]
+}
