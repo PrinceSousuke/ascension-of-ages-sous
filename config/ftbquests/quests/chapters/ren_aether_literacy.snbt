@@ -1,0 +1,705 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ren_aether_literacy"
+	group: "0B038EB15EBBFD95"
+	hide_quest_until_deps_complete: true
+	icon: {
+		id: "aether:bronze_dungeon_key"
+	}
+	id: "0B03001000000003"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"0B03101000000039"
+				"0B03102000000062"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				id: "aether:bronze_dungeon_key"
+			}
+			id: "0B03103000000001"
+			title: "Aether Literacy"
+			subtitle: "Up, for once, instead of down."
+			description: [
+				"Most of the &dRenaissance&r digs deeper. The &6Aether&r goes the other way, a bright dimension of floating islands reached through a glowstone frame filled with water."
+				"There is no lava and no cold here. The danger is the long fall off the edge, so keep blocks in hand and watch your footing."
+			]
+			rewards: [{
+				id: "0B03303000000001"
+				type: "xp"
+				xp: 25
+			}]
+			size: 1.5d
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				dimension: "minecraft:overworld"
+				id: "0B03203000000001"
+				type: "dimension"
+			}]
+			x: 0.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["0B03103000000001"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "aether:holystone"
+			}
+			id: "0B03103000000012"
+			title: "Into the Aether"
+			subtitle: "Cross to the floating isles."
+			description: [
+				"Build a glowstone portal, fill it with a water bucket, and step into the &6Aether&r. The islands drift over open void, so the first rule is simple: do not walk off an edge you cannot bridge back from."
+				"Arriving is the chapter's opening milestone."
+			]
+			rewards: [{
+				id: "0B03303000000012"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				dimension: "aether:the_aether"
+				id: "0B03203000000012"
+				type: "dimension"
+			}]
+			x: -7.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0B03103000000012"]
+			hide_until_deps_complete: true
+			id: "0B03103000000020"
+			title: "Skyroot Pickaxe"
+			subtitle: "The Aether's wooden tier."
+			description: [
+				"Cut skyroot and craft a &bSkyroot Pickaxe&r. The &6Aether&r starts you over at the wood tier, since the dimension has its own ladder of tools, and this is the first rung."
+				"It mines &bholystone&r, which is all you need to climb the next step."
+			]
+			rewards: [{
+				id: "0B03303000000020"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03203000000020"
+				item: { count: 1, id: "aether:skyroot_pickaxe" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["0B03103000000020"]
+			hide_until_deps_complete: true
+			id: "0B03103000000021"
+			title: "Holystone Pickaxe"
+			subtitle: "The stone tier of the sky."
+			description: [
+				"Forge a &bHolystone Pickaxe&r. Holystone is the &6Aether&r's bedrock-grade stone, and a pickaxe of it is sturdy enough to mine the dimension's zanite gems."
+				"This is the tool that unlocks the metal-equivalent tier here."
+			]
+			rewards: [{
+				id: "0B03303000000021"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03203000000021"
+				item: { count: 1, id: "aether:holystone_pickaxe" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0B03103000000021"]
+			hide_until_deps_complete: true
+			id: "0B03103000000022"
+			title: "Zanite Gemstone"
+			subtitle: "Mine the sky's gem."
+			description: [
+				"Mine a &bZanite Gemstone&r with your &bholystone pickaxe&r. Zanite is the &6Aether&r's signature material, the base for its mid-tier tools and armor."
+				"Its gear has a quirk worth knowing: it mines faster as it wears down."
+			]
+			rewards: [{
+				id: "0B03303000000022"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03203000000022"
+				item: { count: 1, id: "aether:zanite_gemstone" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0B03103000000022"]
+			hide_until_deps_complete: true
+			id: "0B03103000000023"
+			title: "Golden Amber"
+			subtitle: "Harvest the golden oaks."
+			description: [
+				"Collect &bGolden Amber&r from the golden oak trees. The amber drops when you work the golden leaves, a crafting material for some of the dimension's finer items."
+			]
+			rewards: [{
+				id: "0B03303000000023"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03203000000023"
+				item: { count: 1, id: "aether:golden_amber" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0B03103000000020"]
+			hide_until_deps_complete: true
+			id: "0B03103000000030"
+			title: "Bronze Dungeon"
+			subtitle: "Find the locked vault."
+			description: [
+				"Locate a &bBronze Dungeon&r, a sealed stone structure floating among the islands. It holds the &6Aether&r's first boss and the loot behind it, the destination this chapter builds toward."
+				"Scout the outside before you break in. What waits inside does not negotiate."
+			]
+			rewards: [{
+				id: "0B03303000000030"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03203000000030"
+				structure: "aether:bronze_dungeon"
+				type: "structure"
+			}]
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["0B03103000000030"]
+			hide_until_deps_complete: true
+			id: "0B03103000000031"
+			title: "The Slider"
+			subtitle: "Crack open the bronze vault."
+			description: [
+				"Wake and defeat the &c&lSlider&r inside the &bBronze Dungeon&r. The stone boss hurls itself in straight lines to crush you against the walls, so put the room's pillars between you and it and strike its face when it stops."
+				"Good armor and a strong blade matter far more than a bow here. It drops the Evil Eye your End portal needs, which makes the fight a required one."
+			]
+			rewards: [
+				{
+					id: "0B03303000000031"
+					type: "xp"
+					xp: 35
+				}
+				{
+					auto: "enabled"
+					command: "/astages add {p} ren_aether_literacy_complete true true"
+					icon: {
+						id: "aether:bronze_dungeon_key"
+					}
+					id: "0B03303000000070"
+					permission_level: 2
+					silent: true
+					team_reward: true
+					type: "command"
+				}
+				{
+					id: "0B03303000000071"
+					item: {
+						count: 1
+						id: "endrem:evil_eye"
+					}
+					title: "Eye of the Bronze Dungeon"
+					type: "item"
+				}
+				{
+					id: "0B03303000000073"
+					type: "xp_levels"
+					xp_levels: 8
+				}
+			]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				entity: "aether:slider"
+				id: "0B03203000000031"
+				type: "kill"
+				value: 1L
+			}]
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0B03103000000031"]
+			hide_until_deps_complete: true
+			id: "0B03103000000032"
+			title: "Bronze Key"
+			subtitle: "Optional: a spare key."
+			description: [
+				"Claim a &bBronze Key&r from the dungeon. It opens the locked chests and doors of the bronze vaults, so a spare in your pack saves a trip when you find the next one."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03303000000032"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03203000000032"
+				item: { count: 1, id: "aether:bronze_dungeon_key" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0B03103000000012"]
+			hide_until_deps_complete: true
+			id: "0B03103000000071"
+			title: "Ambrosium Shard"
+			subtitle: "Optional: the sky's coal."
+			description: [
+				"Gather Ambrosium Shards from &bholystone&r. They serve the &6Aether&r as both fuel and a light reagent, the common resource its healing stones and lamps draw on."
+			]
+			optional: true
+			rewards: [{
+				id: "212FD17C6C32096B"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03203000000071"
+				item: { count: 1, id: "aether:ambrosium_shard" }
+				type: "item"
+			}]
+			x: -9.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0B03103000000012"]
+			hide_until_deps_complete: true
+			id: "0B03103000000072"
+			title: "Swet Ball"
+			subtitle: "Optional: a slime of the sky."
+			description: [
+				"Collect a &bSwet Ball&r from the &6Aether&r's swets. The gelatinous drop is a crafting reagent and the input for the gummy swet treat."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03303000000072"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03203000000072"
+				item: { count: 1, id: "aether:swet_ball" }
+				type: "item"
+			}]
+			x: -9.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0B03103000000012"]
+			hide_until_deps_complete: true
+			id: "0B03103000000073"
+			title: "Blue Berry"
+			subtitle: "Optional: forage the bushes."
+			description: [
+				"Pick Blue Berries from the &6Aether&r's bushes. They make a light, plentiful food, the easiest thing to graze on while you explore the islands."
+			]
+			optional: true
+			rewards: [{
+				id: "471BE887B20FE406"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03203000000073"
+				item: { count: 1, id: "aether:blue_berry" }
+				type: "item"
+			}]
+			x: -7.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0B03103000000012"]
+			hide_until_deps_complete: true
+			id: "0B03103000000074"
+			title: "Cloud Staff"
+			subtitle: "Optional: summon cloud minions."
+			description: [
+				"Craft a &bCloud Staff&r. It calls up small cloud allies that swarm whatever you point them at, a handy bit of summoned help in a fight."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03303000000074"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03203000000074"
+				item: { count: 1, id: "aether:cloud_staff" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0B03103000000021"]
+			hide_until_deps_complete: true
+			id: "0B03103000000080"
+			title: "Zanite Sword"
+			subtitle: "Optional: the gem blade."
+			description: [
+				"Forge a &bZanite Sword&r. Cut from the dimension's gem, it is a real step up from &bholystone&r for the &6Aether&r's tougher mobs and a fine companion into the dungeon."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03303000000080"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03203000000080"
+				item: { count: 1, id: "aether:zanite_sword" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0B03103000000080"]
+			hide_until_deps_complete: true
+			id: "0B03103000000081"
+			title: "Zanite Pickaxe"
+			subtitle: "Optional: the gem pick."
+			description: [
+				"Craft a &bZanite Pickaxe&r. Like all zanite gear it speeds up as it wears, so a near-broken pick mines remarkably fast before it gives out."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03303000000081"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03203000000081"
+				item: { count: 1, id: "aether:zanite_pickaxe" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0B03103000000071"]
+			hide_until_deps_complete: true
+			id: "0B03103000000085"
+			title: "Healing Stone"
+			subtitle: "Optional: passive regeneration."
+			description: [
+				"Make a &bHealing Stone&r from ambrosium and &bholystone&r. Held or carried it grants slow regeneration, a quiet way to stay topped up between fights."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03303000000085"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03203000000085"
+				item: { count: 1, id: "aether:healing_stone" }
+				type: "item"
+			}]
+			x: -10.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0B03103000000071"]
+			hide_until_deps_complete: true
+			id: "0B03103000000086"
+			title: "Incubator"
+			subtitle: "Optional: hatch a Moa."
+			description: [
+				"Build the &6Aether&r's &bIncubator&r. Fed a &bMoa&r egg and ambrosium it hatches a Moa, the rideable bird that lets you glide between islands instead of bridging."
+				"A mount changes how the whole dimension plays."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03303000000086"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03203000000086"
+				item: { count: 1, id: "aether:incubator" }
+				type: "item"
+			}]
+			x: -10.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0B03103000000072"]
+			hide_until_deps_complete: true
+			id: "0B03103000000087"
+			title: "Blue Gummy Swet"
+			subtitle: "Optional: a chewy treat."
+			description: [
+				"Cook up a &bBlue Gummy Swet&r from a &bswet ball&r. It is a small food item with a bit of bounce to it, a sweet use for the slime drops."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03303000000087"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03203000000087"
+				item: { count: 1, id: "aether:blue_gummy_swet" }
+				type: "item"
+			}]
+			x: -9.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0B03103000000074"]
+			hide_until_deps_complete: true
+			id: "0B03103000000088"
+			title: "Aechor Petal"
+			subtitle: "Optional: a thorny harvest."
+			description: [
+				"Take an &bAechor Petal&r from an aechor plant. The petals are the reagent behind the &6Aether&r's darts and poison skyroot tools, gathered from a plant that fights back."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03303000000088"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03203000000088"
+				item: { count: 1, id: "aether:aechor_petal" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0B03103000000073"]
+			hide_until_deps_complete: true
+			id: "0B03103000000089"
+			title: "Sulfur: Skyroot"
+			subtitle: "Optional: Theurgy in the sky."
+			description: [
+				"Distill an &bAlchemical Sulfur&r from skyroot. &6Theurgy&r reaches even here, and the &6Aether&r's wood reads as its own source for a sky-flavored reagent."
+			]
+			optional: true
+			rewards: [{
+				id: "0B03303000000089"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03203000000089"
+				item: { count: 1, id: "theurgy:alchemical_sulfur_skyroot" }
+				type: "item"
+			}]
+			x: -7.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0B03103000000089"]
+			hide_until_deps_complete: true
+			id: "0B0310300000008A"
+			title: "Sulfur: Blueberry"
+			subtitle: "Optional: distill the berry."
+			description: [
+				"Render an &bAlchemical Sulfur&r from blue berries. It rounds out the &6Aether&r's small contribution to the sulfur collection, drawn from the dimension's fruit."
+			]
+			optional: true
+			rewards: [{
+				id: "0B0330300000008A"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B0320300000008A"
+				item: { count: 1, id: "theurgy:alchemical_sulfur_blueberry" }
+				type: "item"
+			}]
+			x: -7.5d
+			y: 6.0d
+		}
+	]
+}
