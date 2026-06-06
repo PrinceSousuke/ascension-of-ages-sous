@@ -15,6 +15,12 @@
 			dependencies: ["2902E58DB70F942A"]
 			hide_until_deps_complete: true
 			id: "2902E58DB70F9404"
+			title: "Fire Clay"
+			subtitle: "Raw material for the foundry shell."
+			description: [
+				"Mix &bFire Clay&r. It bakes into the heat-resistant bricks the foundry is built from, the first step toward melting metal in bulk."
+				"&6Productive Metalworks&r leans on it heavily, so make more than one batch."
+			]
 			rewards: [
 				{
 					id: "2902E58DB70F9104"
@@ -24,6 +30,7 @@
 				{
 					id: "2902E58DB70F9204"
 					table_id: 8849093687305634787L
+					title: "Spare material toward the first bricks."
 					type: "loot"
 				}
 			]
@@ -49,6 +56,11 @@
 			dependencies: ["2902E58DB70F9404"]
 			hide_until_deps_complete: true
 			id: "2902E58DB70F9405"
+			title: "Fire Brick"
+			subtitle: "Bricks that hold the heat."
+			description: [
+				"Smelt &bFire Clay&r into Fire Bricks. They take a foundry's heat without cracking, so they form its inner shell. Stock a stack before you start laying the structure."
+			]
 			rewards: [{
 				id: "2902E58DB70F9105"
 				type: "xp"
@@ -76,6 +88,11 @@
 			dependencies: ["2902E58DB70F9405"]
 			hide_until_deps_complete: true
 			id: "2902E58DB70F9407"
+			title: "Black Fire Bricks"
+			subtitle: "The wall of the foundry."
+			description: [
+				"Craft &bBlack Fire Bricks&r. They are the structural block of the &bBlack Foundry&r, the &6Productive Metalworks&r take on a melting smeltery. A full wall of them encloses the heat that does the work."
+			]
 			rewards: [
 				{
 					id: "2902E58DB70F9107"
@@ -85,6 +102,7 @@
 				{
 					id: "2902E58DB70F9207"
 					table_id: 8849093687305634787L
+					title: "More bricks toward the foundry walls."
 					type: "loot"
 				}
 			]
@@ -113,6 +131,12 @@
 			]
 			hide_until_deps_complete: true
 			id: "43EB13F2C3D91789"
+			title: "Black Foundry Controller"
+			subtitle: "The brain of the smeltery."
+			description: [
+				"Place the &bBlack Foundry Controller&r and raise the foundry around it. The controller runs the multiblock, melting ores and metals into fluid you can pour into shapes."
+				"Follow the layout in the foundry's own guide. A misplaced block keeps the whole structure from forming."
+			]
 			rewards: [
 				{
 					id: "43EB13F2C3D91889"
@@ -122,6 +146,7 @@
 				{
 					id: "43EB13F2C3D91989"
 					table_id: 8849093687305634787L
+					title: "Components toward finishing the build."
 					type: "loot"
 				}
 			]
@@ -147,6 +172,11 @@
 			dependencies: ["43EB13F2C3D91789"]
 			hide_until_deps_complete: true
 			id: "2902E58DB70F9409"
+			title: "Black Foundry Drain"
+			subtitle: "How molten metal gets out."
+			description: [
+				"Add a &bBlack Foundry Drain&r to the wall. It is the port molten metal leaves through, feeding a &bcasting table&r or &bbasin&r placed against it. Set it at the height you want to pour from."
+			]
 			rewards: [{
 				id: "2902E58DB70F9109"
 				type: "xp"
@@ -174,6 +204,11 @@
 			dependencies: ["43EB13F2C3D91789"]
 			hide_until_deps_complete: true
 			id: "2902E58DB70F940A"
+			title: "Black Foundry Tank"
+			subtitle: "Hold more metal and fuel."
+			description: [
+				"Build a &bBlack Foundry Tank&r into the structure. It raises how much molten metal and fuel the foundry can hold, so a bigger tank means longer runs between refills. Add more as your batches grow."
+			]
 			rewards: [{
 				id: "2902E58DB70F910A"
 				type: "xp"
@@ -201,6 +236,11 @@
 			dependencies: ["43EB13F2C3D91789"]
 			hide_until_deps_complete: true
 			id: "2902E58DB70F940B"
+			title: "Black Foundry Window"
+			subtitle: "See what is melting."
+			description: [
+				"Set a &bBlack Foundry Window&r into the wall. It lets you watch the molten levels inside, which is the easiest way to tell what is melting and how full the foundry is. One or two covers it."
+			]
 			rewards: [{
 				id: "2902E58DB70F910B"
 				type: "xp"
@@ -228,6 +268,11 @@
 			dependencies: ["43EB13F2C3D91789"]
 			hide_until_deps_complete: true
 			id: "2902E58DB70F940C"
+			title: "Foundry Tap"
+			subtitle: "The spout for liquid metal."
+			description: [
+				"Install a &bFoundry Tap&r. It draws molten metal out on demand and pours it onto whatever sits below. This is the valve that turns a pool of liquid metal into solid parts."
+			]
 			rewards: [{
 				id: "2902E58DB70F910C"
 				type: "xp"
@@ -255,6 +300,11 @@
 			dependencies: ["43EB13F2C3D91789"]
 			hide_until_deps_complete: true
 			id: "2902E58DB70F940D"
+			title: "Casting Table"
+			subtitle: "Pour metal into shapes."
+			description: [
+				"Place a &bCasting Table&r under the tap. Pour molten metal over a cast set on it and you get ingots, rods, plates, or tools, depending on the mold. The foundry earns its keep at this table."
+			]
 			rewards: [{
 				id: "2902E58DB70F910D"
 				type: "xp"
@@ -282,6 +332,11 @@
 			dependencies: ["2902E58DB70F940D"]
 			hide_until_deps_complete: true
 			id: "2902E58DB70F940E"
+			title: "Casting Basin"
+			subtitle: "For blocks and bigger pours."
+			description: [
+				"Add a &bCasting Basin&r beside the table. Like the table but for blocks and larger castings, it shapes bulk metal and the heavier components. Keep one next to the table for the big jobs."
+			]
 			rewards: [{
 				id: "2902E58DB70F910E"
 				type: "xp"
@@ -309,6 +364,11 @@
 			dependencies: ["2902E58DB70F940D"]
 			hide_until_deps_complete: true
 			id: "2902E58DB70F940F"
+			title: "Ingot Cast"
+			subtitle: "The mold you use most."
+			description: [
+				"Make an &bIngot Cast&r and set it on the &bcasting table&r. Molten metal poured over it sets into ingots, the reusable mold for the most common shape. Almost every metal you melt becomes ingots first."
+			]
 			rewards: [{
 				id: "2902E58DB70F910F"
 				type: "xp"
@@ -336,6 +396,11 @@
 			dependencies: ["2902E58DB70F940D"]
 			hide_until_deps_complete: true
 			id: "2902E58DB70F9411"
+			title: "Rod Cast"
+			subtitle: "Shape metal into rods."
+			description: [
+				"Craft a &bRod Cast&r. It pours molten metal into rods, the long thin parts that gears, tools, and machine frames ask for. Keep it on the table next to the &bingot cast&r."
+			]
 			rewards: [{
 				id: "2902E58DB70F9111"
 				type: "xp"
@@ -363,6 +428,11 @@
 			dependencies: ["2902E58DB70F940D"]
 			hide_until_deps_complete: true
 			id: "2902E58DB70F9412"
+			title: "Plate Cast"
+			subtitle: "Shape metal into plates."
+			description: [
+				"Make a &bPlate Cast&r. It pours metal into plates, the flat parts that armor and many machines need. The &bbrass&r plates a few steps from here come straight off this cast."
+			]
 			rewards: [{
 				id: "2902E58DB70F9112"
 				type: "xp"
@@ -390,6 +460,11 @@
 			dependencies: ["43EB13F2C3D91789"]
 			hide_until_deps_complete: true
 			id: "2902E58DB70F9413"
+			title: "Liquid Heating Coil"
+			subtitle: "The foundry's burner."
+			description: [
+				"Build a &bLiquid Heating Coil&r. It supplies the heat that melts metal inside the foundry, so nothing liquefies without it. Treat it as the burner the whole structure depends on."
+			]
 			rewards: [{
 				id: "2902E58DB70F9113"
 				type: "xp"
@@ -417,6 +492,12 @@
 			dependencies: ["43EB13F2C3D91789"]
 			hide_until_deps_complete: true
 			id: "2902E58DB70F9414"
+			title: "Fire the Foundry"
+			subtitle: "Melt ore into more than it was."
+			description: [
+				"Finish the &bBlack Foundry&r with its controller, drain, tap, and heat all in place, then run it. A complete, heated foundry turns raw ore into more metal than plain smelting ever would, which is the whole point of building it."
+				"From here, casting is your main way of working metal. Everything downstream assumes a foundry you can pour from."
+			]
 			rewards: [
 				{
 					id: "2902E58DB70F9114"
@@ -430,6 +511,7 @@
 						count: 1
 						id: "productivemetalworks:liquid_heating_coil"
 					}
+					title: "Extra heating coils to keep it hot."
 					type: "item"
 				}
 			]
@@ -455,6 +537,11 @@
 			dependencies: ["2902E58DB70F9414"]
 			hide_until_deps_complete: true
 			id: "2902E58DB70F9418"
+			title: "Upgrade: Speed"
+			subtitle: "Run a foundry machine faster."
+			description: [
+				"Craft a Speed upgrade. Slotted into a &6Productive Metalworks&r machine it processes faster, the first of the upgrade tokens these machines accept. Spend them on the machines you run constantly."
+			]
 			rewards: [{
 				id: "2902E58DB70F9118"
 				type: "xp"
@@ -482,6 +569,12 @@
 			dependencies: ["2902E58DB70F9405"]
 			hide_until_deps_complete: true
 			id: "2902E58DB70F9422"
+			title: "Coke Oven"
+			subtitle: "Coal coke and creosote start here."
+			description: [
+				"Craft Coke Bricks and form a &bCoke Oven&r with the hammer. The oven cooks coal into &bcoal coke&r and &bcreosote&r, the two materials the rest of this chapter runs on."
+				"Build it early and build it once you can afford a second. One oven is slow once demand picks up."
+			]
 			rewards: [
 				{
 					id: "2902E58DB70F9122"
@@ -491,6 +584,7 @@
 				{
 					id: "2902E58DB70F9222"
 					table_id: 8849093687305634787L
+					title: "A head start on the oven build."
 					type: "loot"
 				}
 			]
@@ -516,6 +610,11 @@
 			dependencies: ["2902E58DB70F9422"]
 			hide_until_deps_complete: true
 			id: "2902E58DB70F9423"
+			title: "Coal Coke"
+			subtitle: "Hotter fuel, denser carbon."
+			description: [
+				"Pull &bCoal Coke&r from the &bCoke Oven&r. It burns hotter than coal and is the dense carbon the foundry and later &bsteel&r both want. Let the oven stockpile a supply while you work."
+			]
 			rewards: [{
 				id: "2902E58DB70F9123"
 				type: "xp"
@@ -543,6 +642,11 @@
 			dependencies: ["2902E58DB70F9423"]
 			hide_until_deps_complete: true
 			id: "2902E58DB70F9424"
+			title: "Coke Block"
+			subtitle: "Long-burning block fuel."
+			description: [
+				"Compress &bcoal coke&r into a Coke block. As a solid block it burns a long time, handy for a &bfurnace&r you want running unattended. Keep a few for slow background smelting."
+			]
 			rewards: [{
 				id: "2902E58DB70F9124"
 				type: "xp"
@@ -570,6 +674,12 @@
 			dependencies: ["2902E58DB70F9423"]
 			hide_until_deps_complete: true
 			id: "2902E58DB70F9425"
+			title: "Creosote"
+			subtitle: "The byproduct that treats wood."
+			description: [
+				"Bottle &bCreosote&r from the &bCoke Oven&r. It is the oily byproduct that weatherproofs wood, and it feeds both the treated-wood and &bfertilizer&r lines in this chapter."
+				"Bucket or pipe it out as the oven makes it so it does not back the oven up."
+			]
 			rewards: [{
 				id: "2902E58DB70F9125"
 				type: "xp"
@@ -597,6 +707,12 @@
 			dependencies: ["2902E58DB70F9425"]
 			hide_until_deps_complete: true
 			id: "2902E58DB70F9426"
+			title: "Treated Wood"
+			subtitle: "The frame for IE parts."
+			description: [
+				"Soak planks in &bcreosote&r to make &bTreated Wood&r. It resists rot and weather and is the material most &6Immersive Engineering&r parts are framed with."
+				"Run a steady batch. Almost everything wooden ahead, from wiring to scaffolds, wants treated wood."
+			]
 			rewards: [
 				{
 					id: "2902E58DB70F9126"
@@ -606,6 +722,7 @@
 				{
 					id: "2902E58DB70F9226"
 					table_id: 8849093687305634787L
+					title: "Extra treated wood for the build queue."
 					type: "loot"
 				}
 			]
@@ -631,6 +748,11 @@
 			dependencies: ["2902E58DB70F9426"]
 			hide_until_deps_complete: true
 			id: "2902E58DB70F9427"
+			title: "Treated Fence"
+			subtitle: "Railings that survive the weather."
+			description: [
+				"Craft a &bTreated Wood&r Fence. The treated variants hold up outdoors where plain wood rots, so use them for railings and pen walls around the workshop."
+			]
 			rewards: [{
 				id: "2902E58DB70F9127"
 				type: "xp"
@@ -658,6 +780,11 @@
 			dependencies: ["2902E58DB70F9426"]
 			hide_until_deps_complete: true
 			id: "2902E58DB70F9428"
+			title: "Treated Scaffold"
+			subtitle: "Climbable, weatherproof build scaffold."
+			description: [
+				"Make Treated Scaffold. It is climbable scaffolding that shrugs off the weather, useful for raising the tall multiblocks coming up. Keep a stack on hand for vertical work."
+			]
 			rewards: [{
 				id: "2902E58DB70F9128"
 				type: "xp"
@@ -685,6 +812,11 @@
 			dependencies: ["2902E58DB70F9426"]
 			hide_until_deps_complete: true
 			id: "2902E58DB70F9429"
+			title: "Treated Trapdoor"
+			subtitle: "A weatherproof hatch."
+			description: [
+				"Craft a &bTreated Wood&r Trapdoor. A hatch that does not rot, for vents and access points around the base. A small thing that rounds out the treated set."
+			]
 			rewards: [{
 				id: "2902E58DB70F9129"
 				type: "xp"
@@ -712,6 +844,12 @@
 			dependencies: ["7A1F010000000002"]
 			hide_until_deps_complete: true
 			id: "2902E58DB70F942A"
+			title: "Engineer's Hammer"
+			subtitle: "The tool that builds the rest."
+			description: [
+				"Forge the &bEngineer's Hammer&r. It is the &6Immersive Engineering&r tool that forms multiblocks and connects wire, and almost nothing in this chapter assembles without it."
+				"Keep it on your hotbar. The &bcoke oven&r, the wiring, and the structures ahead all expect you to have one."
+			]
 			rewards: [
 				{
 					id: "2902E58DB70F912A"
@@ -721,6 +859,7 @@
 				{
 					id: "2902E58DB70F922A"
 					table_id: 8849093687305634787L
+					title: "A few odds and ends to open the workshop."
 					type: "loot"
 				}
 			]
@@ -746,6 +885,11 @@
 			dependencies: ["2902E58DB70F942A"]
 			hide_until_deps_complete: true
 			id: "2902E58DB70F942B"
+			title: "Wirecutter"
+			subtitle: "Handle wire cleanly."
+			description: [
+				"Forge a &bWirecutter&r. It cuts and removes &6Immersive Engineering&r wire without dropping a tangle, and you need it to work the &bcopper&r wiring coming up. Keep it with the hammer."
+			]
 			rewards: [{
 				id: "2902E58DB70F912B"
 				type: "xp"
@@ -773,6 +917,12 @@
 			dependencies: ["2902E58DB70F942B"]
 			hide_until_deps_complete: true
 			id: "2902E58DB70F942C"
+			title: "Copper Wire Coil"
+			subtitle: "The first power line."
+			description: [
+				"Wind a &bCopper Wire Coil&r. It is the low-voltage line that carries power between connectors, the first wiring tier in &6Immersive Engineering&r. String it where you need to move a little energy."
+				"It is enough to light a lamp or feed a small machine well before any heavy power exists."
+			]
 			rewards: [
 				{
 					id: "2902E58DB70F912C"
@@ -782,6 +932,7 @@
 				{
 					id: "2902E58DB70F922C"
 					table_id: 8849093687305634787L
+					title: "Spare coil for the first runs."
 					type: "loot"
 				}
 			]
@@ -807,6 +958,11 @@
 			dependencies: ["2902E58DB70F942C"]
 			hide_until_deps_complete: true
 			id: "2902E58DB70F942D"
+			title: "LV Connector"
+			subtitle: "Where wire meets machine."
+			description: [
+				"Craft a Low-Voltage Connector. It is the terminal a wire coil attaches to, joining a power source to a machine. You need a pair to complete any run, one at each end."
+			]
 			rewards: [{
 				id: "2902E58DB70F912D"
 				type: "xp"
@@ -834,6 +990,11 @@
 			dependencies: ["2902E58DB70F942D"]
 			hide_until_deps_complete: true
 			id: "2902E58DB70F942E"
+			title: "LV Relay"
+			subtitle: "Carry wire across the gaps."
+			description: [
+				"Make a Low-Voltage Relay. It carries wire across distance without plugging into a machine, so a line can turn corners and span open ground. Use relays for the long stretches between connectors."
+			]
 			rewards: [{
 				id: "2902E58DB70F912E"
 				type: "xp"
@@ -861,6 +1022,12 @@
 			dependencies: ["2902E58DB70F942A"]
 			hide_until_deps_complete: true
 			id: "2141A51DFA5E7349"
+			title: "Engineer's Manual"
+			subtitle: "Read it before you build."
+			description: [
+				"Craft the &bEngineer's Manual&r and open it. &6Immersive Engineering&r multiblocks have exact shapes, and the manual shows each one with a 3D preview you can rotate."
+				"Check it first whenever a structure refuses to form. It answers most of the questions this chapter raises."
+			]
 			rewards: [{
 				id: "2141A51DFA5E7449"
 				type: "xp"
@@ -888,6 +1055,12 @@
 			dependencies: ["2902E58DB70F942A"]
 			hide_until_deps_complete: true
 			id: "2902E58DB70F9430"
+			title: "Iron Dust"
+			subtitle: "The form most recipes expect."
+			description: [
+				"Grind iron into &bIron Dust&r. Dust smelts straight back into ingots and is the form most ore-doubling and alloy recipes are written around."
+				"A small pile now means the casting and alloy steps ahead do not stall waiting on it."
+			]
 			rewards: [{
 				id: "2902E58DB70F9130"
 				type: "xp"
@@ -915,6 +1088,11 @@
 			dependencies: ["2902E58DB70F942C"]
 			hide_until_deps_complete: true
 			id: "2902E58DB70F9431"
+			title: "Mechanical Mixer"
+			subtitle: "Blend alloys and building mixes."
+			description: [
+				"Build a &6Create&r Mechanical &bMixer&r over a &bbasin&r. It blends items and fluids for alloys and building materials, including the concrete steps later in this chapter. Power it from your mill."
+			]
 			rewards: [{
 				id: "2902E58DB70F9131"
 				type: "xp"
@@ -942,6 +1120,12 @@
 			dependencies: ["2902E58DB70F940F"]
 			hide_until_deps_complete: true
 			id: "2902E58DB70F9434"
+			title: "Brass"
+			subtitle: "Your first cast alloy."
+			description: [
+				"Melt &bcopper&r and zinc together in the foundry and cast &bBrass&r ingots. Brass is the first real alloy here and the gateway metal for &6Create&r's second tier and a pile of machine parts."
+				"Pour a steady supply. The mill chapter is waiting on this brass to build its casings."
+			]
 			rewards: [
 				{
 					id: "2902E58DB70F9134"
@@ -951,6 +1135,7 @@
 				{
 					id: "2902E58DB70F9234"
 					table_id: 8849093687305634787L
+					title: "A starter pour of brass."
 					type: "loot"
 				}
 			]
@@ -976,6 +1161,11 @@
 			dependencies: ["2902E58DB70F9418"]
 			hide_until_deps_complete: true
 			id: "2902E58DB70F9435"
+			title: "Upgrade: Stability"
+			subtitle: "Keep it running under load."
+			description: [
+				"Make a Stability upgrade. It steadies a Productive machine so it holds up under heavy use, the counterpart to the speed upgrade. Pair the two on your busiest machine for the smoothest run."
+			]
 			rewards: [{
 				id: "2902E58DB70F9135"
 				type: "xp"
@@ -1003,6 +1193,11 @@
 			dependencies: ["2902E58DB70F9435"]
 			hide_until_deps_complete: true
 			id: "2902E58DB70F9436"
+			title: "Upgrade: Speed (Stacked)"
+			subtitle: "More slots, more output."
+			description: [
+				"Craft a second Speed upgrade. Most Productive machines take more than one upgrade, so a stack of these keeps paying off as the foundry line grows. Keep making them as you scale up."
+			]
 			rewards: [{
 				id: "2902E58DB70F9136"
 				type: "xp"
@@ -1020,7 +1215,7 @@
 					second: 20
 				}
 				id: "2902E58DB70F9036"
-				item: { count: 1, id: "productivelib:upgrade_time_2" }
+				item: { count: 1, id: "productivelib:upgrade_time" }
 				type: "item"
 			}]
 			x: 17.0d
@@ -1030,6 +1225,11 @@
 			dependencies: ["2902E58DB70F9426"]
 			hide_until_deps_complete: true
 			id: "2902E58DB70F9438"
+			title: "Treated Sticks"
+			subtitle: "The sticks IE recipes ask for."
+			description: [
+				"Make &bTreated Wood&r Sticks. Several &6Immersive Engineering&r recipes call for the treated stick specifically rather than a plain one. Keep a couple stacks, since wiring and tools both eat them."
+			]
 			rewards: [{
 				id: "2902E58DB70F9138"
 				type: "xp"
@@ -1057,6 +1257,11 @@
 			dependencies: ["2902E58DB70F942B"]
 			hide_until_deps_complete: true
 			id: "2902E58DB70F9439"
+			title: "Copper Wire"
+			subtitle: "The strand coils are wound from."
+			description: [
+				"Cut &bCopper Wire&r from a copper ingot. It is the raw strand the wire coils are made of, the smallest piece of a power network. A few are enough to get started."
+			]
 			rewards: [{
 				id: "2902E58DB70F9139"
 				type: "xp"
@@ -1084,6 +1289,11 @@
 			dependencies: ["2902E58DB70F9431"]
 			hide_until_deps_complete: true
 			id: "2902E58DB70F9440"
+			title: "Fluid Pipe"
+			subtitle: "Move creosote and water."
+			description: [
+				"Craft &6Immersive Engineering&r Fluid Pipes. They carry &bcreosote&r, water, and other fluids between the oven, tanks, and machines. Plan the run so two fluids never share a line."
+			]
 			rewards: [{
 				id: "2902E58DB70F9140"
 				type: "xp"
@@ -1111,6 +1321,11 @@
 			dependencies: ["2902E58DB70F9440"]
 			hide_until_deps_complete: true
 			id: "2902E58DB70F9441"
+			title: "Fluid Tank"
+			subtitle: "Buffer the lines."
+			description: [
+				"Build a &bFluid Tank&r. It buffers the &bcreosote&r and water your pipes move, keeping a producer and a consumer from stalling each other. Build it tall so there is room to grow."
+			]
 			rewards: [{
 				id: "2902E58DB70F9141"
 				type: "xp"
@@ -1138,6 +1353,11 @@
 			dependencies: ["2902E58DB70F9412"]
 			hide_until_deps_complete: true
 			id: "2902E58DB70F9442"
+			title: "Brass Plate"
+			subtitle: "Flat brass for machines."
+			description: [
+				"Pour &bBrass&r Plates on the &bplate cast&r. Plates are the flat parts armor and machines need, and brass plates specifically feed several builds ahead. Cast a stack while the foundry is hot."
+			]
 			rewards: [{
 				id: "2902E58DB70F9142"
 				type: "xp"
@@ -1165,6 +1385,11 @@
 			dependencies: ["2902E58DB70F9449"]
 			hide_until_deps_complete: true
 			id: "2902E58DB70F9445"
+			title: "Hempcrete"
+			subtitle: "Light block, built-in insulation."
+			description: [
+				"Craft &bHempcrete&r. It is a light building block that doubles as insulation, made from hemp fiber and the mix you just set up. Use it for walls that should hold their temperature."
+			]
 			rewards: [
 				{
 					id: "2902E58DB70F9145"
@@ -1174,6 +1399,7 @@
 				{
 					id: "2902E58DB70F9245"
 					table_id: 8849093687305634787L
+					title: "Blocks toward the next build."
 					type: "loot"
 				}
 			]
@@ -1199,6 +1425,11 @@
 			dependencies: ["2902E58DB70F9445"]
 			hide_until_deps_complete: true
 			id: "2902E58DB70F9446"
+			title: "Concrete"
+			subtitle: "Strong, blast-resistant walls."
+			description: [
+				"Mix &bConcrete&r. Poured from the &bmixer&r it sets into a tough, blast-resistant block, the workhorse material for machine rooms and reinforced builds. Keep a stock for the heavier construction ahead."
+			]
 			rewards: [
 				{
 					id: "2902E58DB70F9146"
@@ -1208,6 +1439,7 @@
 				{
 					id: "2902E58DB70F9246"
 					table_id: 8849093687305634787L
+					title: "A batch of concrete to pour."
 					type: "loot"
 				}
 			]
@@ -1233,6 +1465,11 @@
 			dependencies: ["2902E58DB70F9425"]
 			hide_until_deps_complete: true
 			id: "2902E58DB70F9449"
+			title: "Fertilizer"
+			subtitle: "Push your crops harder."
+			description: [
+				"Make &6Immersive Engineering&r &bFertilizer&r. It speeds crop growth and feeds the garden systems later, worked up from &bcreosote&r and farm scraps. A little spread on a field goes a long way."
+			]
 			rewards: [{
 				id: "2902E58DB70F9149"
 				type: "xp"
@@ -1260,6 +1497,12 @@
 			dependencies: ["43EB13F2C3D91789"]
 			hide_until_deps_complete: true
 			id: "2902E58DB70F95F1"
+			title: "Edelwood Log"
+			subtitle: "A dark, oily tree."
+			description: [
+				"Get an &bEdelwood&r Log from &6Forbidden Arcanus&r. Edelwood is a dark tree heavy with oil, and its log is what the press wrings that oil out of. Find one in the world or grow your own first."
+				"It looks ominous and it is meant to. The oil it holds is worth the trouble."
+			]
 			rewards: [
 				{
 					id: "2902E58DB70F95A1"
@@ -1269,6 +1512,7 @@
 				{
 					id: "2902E58DB70F95B1"
 					table_id: 8849093687305634787L
+					title: "A little extra to keep tapping."
 					type: "loot"
 				}
 			]
@@ -1294,6 +1538,11 @@
 			dependencies: ["2902E58DB70F95F1"]
 			hide_until_deps_complete: true
 			id: "2902E58DB70F95F2"
+			title: "Edelwood Oil"
+			subtitle: "A potent fuel and reagent."
+			description: [
+				"Press &bEdelwood Oil&r from the log. &6Forbidden Arcanus&r uses it as both a fuel and a magical reagent, and it makes a strong burn for heat-hungry work. Store it for the steps that call for it."
+			]
 			rewards: [{
 				id: "2902E58DB70F95A2"
 				type: "xp"
@@ -1319,7 +1568,14 @@
 		}
 		{
 			dependencies: ["2902E58DB70F9442"]
+			hide_until_deps_complete: true
 			id: "16720DA722F1938F"
+			title: "Backpack"
+			subtitle: "Storage that travels with you."
+			description: [
+				"Craft a Sophisticated &bBackpack&r. It is portable storage you upgrade with filters, magnets, and feeding slots, which keeps a long mining or foundry run from filling up."
+				"Start with the plain pack and add upgrades as you go. It grows with you instead of being replaced."
+			]
 			tasks: [{
 				SkillsLevel: {
 					category: ""
@@ -1338,7 +1594,14 @@
 		}
 		{
 			dependencies: ["2902E58DB70F9442"]
+			hide_until_deps_complete: true
 			id: "1237BB77A090C2D5"
+			title: "Copper Chest"
+			subtitle: "The first upgradeable chest."
+			description: [
+				"Build a &bCopper Chest&r. Sophisticated Storage chests hold more than vanilla and take upgrades for sorting and auto-pickup, the start of a storage system that scales with the base."
+				"&bCopper&r is the entry tier. Better chests and more upgrade slots follow as you find the metals."
+			]
 			tasks: [{
 				SkillsLevel: {
 					category: ""
