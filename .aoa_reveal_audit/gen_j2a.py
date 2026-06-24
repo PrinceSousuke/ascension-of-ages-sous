@@ -123,8 +123,12 @@ def load_quest_blocks():
     return out
 
 def all_existing_ids():
+    # Exclude the journey chapter itself so minted ids stay STABLE across re-runs
+    # (otherwise a second --write sees the prior run's ids and shifts the new ones).
     ids = set()
     for f in glob.glob(os.path.join(ROOT,'config','ftbquests','quests','**','*.snbt'), recursive=True):
+        if os.path.basename(f) == 'journey_to_ascension.snbt':
+            continue
         raw = open(f,'rb').read().decode('utf-8','ignore')
         ids.update(x.upper() for x in re.findall(r'"([0-9A-Fa-f]{16})"', raw))
     return ids
@@ -194,11 +198,16 @@ def deps_for(ordered, node_id):
     for band, items in bands.items():
         caps = [rid for rid,gw in items if not gw]
         gws  = [rid for rid,gw in items if gw]
-        cap_nids = [node_id[r] for r in caps]
         for rid in caps:
             deps[rid] = [prev_gateway_nid]
         for rid in gws:
-            deps[rid] = cap_nids if cap_nids else [prev_gateway_nid]
+            # Gateway hangs off the PRIOR gateway (age spine), NOT its band's caps.
+            # Fanning in caps would stall the gateway (and the whole downstream chain) for
+            # any player who skips an OPTIONAL boss-kill node in the band (Obsidilith,
+            # Void Titan, the Macabre bosses, Tremorzilla, Leviathan, ...). The prior
+            # gateway grants a prerequisite age stage, so it always completes first ->
+            # binding dep stays the node's own real quest, with zero false stalls.
+            deps[rid] = [prev_gateway_nid]
             prev_gateway_nid = node_id[rid]
     return deps
 
@@ -331,13 +340,14 @@ def lang_entries(ordered, qmap, node_id):
 def merge_lang(entries, eol):
     raw = open(LANG,'rb').read().decode('utf-8')
     lines = [ln.rstrip('\r') for ln in raw.split('\n')]
-    # prune ALL old journey node keys 0000..000E (incl. start 0000) so regenerated keys don't duplicate
-    orphan_ids = {format(0x5350010000010000 + k,'X').rjust(16,'0') for k in range(0,15)}
+    # Prune EVERY journey-node lang key before re-adding so the merge is idempotent and
+    # self-cleaning: legacy nodes 5350010000010000..535001000001000E AND any minted mirror
+    # id in the 535001000002xxxx range (incl. stale ones left by an earlier re-run).
+    JOURNEY_KEY = re.compile(r'\tquest\.(535001000001000[0-9A-Ea-e]|535001000002[0-9A-Fa-f]{4})\.')
     keep, i = [], 0
     while i < len(lines):
         ln = lines[i]
-        m = re.match(r'\tquest\.([0-9A-Fa-f]{16})\.', ln)
-        if m and m.group(1).upper() in orphan_ids:
+        if JOURNEY_KEY.match(ln):
             # single-line key -> skip it; array key ( ... [ ) -> skip until matching ]
             if ln.rstrip().endswith('['):
                 depth = ln.count('[') - ln.count(']'); i += 1
