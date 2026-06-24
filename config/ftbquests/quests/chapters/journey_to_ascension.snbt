@@ -55,7 +55,7 @@
 			icon: {
 			id: "malum:iron_impetus"
 			}
-			id: "5350010000020036"
+			id: "5350010000020000"
 			rewards: [
 				{
 					auto: "enabled"
@@ -83,7 +83,7 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["6D7E8F901A2B1054", "5350010000020036"]
+			dependencies: ["6D7E8F901A2B1054", "5350010000020000"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -91,7 +91,7 @@
 			icon: {
 			id: "mowziesmobs:wrought_helmet"
 			}
-			id: "5350010000020037"
+			id: "5350010000020001"
 			rewards: [
 				{
 					auto: "enabled"
@@ -119,7 +119,7 @@
 			y: 5.0d
 		}
 		{
-			dependencies: ["0B03101000000039", "5350010000020037"]
+			dependencies: ["0B03101000000039", "5350010000020001"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -127,7 +127,7 @@
 			icon: {
 			id: "minecraft:experience_bottle"
 			}
-			id: "5350010000020038"
+			id: "5350010000020002"
 			rewards: [
 				{
 					auto: "enabled"
@@ -146,7 +146,7 @@
 			y: 8.0d
 		}
 		{
-			dependencies: ["0B03102000000062", "5350010000020037"]
+			dependencies: ["0B03102000000062", "5350010000020001"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -154,7 +154,7 @@
 			icon: {
 			id: "forbidden_arcanus:mundabitur_dust"
 			}
-			id: "5350010000020039"
+			id: "5350010000020003"
 			rewards: [
 				{
 					auto: "enabled"
@@ -173,7 +173,7 @@
 			y: 8.0d
 		}
 		{
-			dependencies: ["0B03103000000031", "5350010000020037"]
+			dependencies: ["0B03103000000031", "5350010000020001"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -181,7 +181,7 @@
 			icon: {
 			id: "aether:bronze_dungeon_key"
 			}
-			id: "535001000002003A"
+			id: "5350010000020004"
 			rewards: [
 				{
 					auto: "enabled"
@@ -200,7 +200,7 @@
 			y: 8.0d
 		}
 		{
-			dependencies: ["0B03104000000050", "5350010000020037"]
+			dependencies: ["0B03104000000050", "5350010000020001"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -208,7 +208,7 @@
 			icon: {
 			id: "eternal_starlight:orb_of_prophecy"
 			}
-			id: "535001000002003B"
+			id: "5350010000020005"
 			rewards: [
 				{
 					auto: "enabled"
@@ -227,7 +227,7 @@
 			y: 8.0d
 		}
 		{
-			dependencies: ["0B03105000000050", "5350010000020037"]
+			dependencies: ["0B03105000000050", "5350010000020001"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -235,7 +235,7 @@
 			icon: {
 			id: "undergarden:utherium_crystal"
 			}
-			id: "535001000002003C"
+			id: "5350010000020006"
 			rewards: [
 				{
 					auto: "enabled"
@@ -254,7 +254,7 @@
 			y: 8.0d
 		}
 		{
-			dependencies: ["0B03106000000050", "5350010000020037"]
+			dependencies: ["0B03106000000050", "5350010000020001"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -262,7 +262,7 @@
 			icon: {
 			id: "deeperdarker:soul_dust"
 			}
-			id: "535001000002003D"
+			id: "5350010000020007"
 			rewards: [
 				{
 					auto: "enabled"
@@ -281,7 +281,7 @@
 			y: 8.0d
 		}
 		{
-			dependencies: ["0B03107000000050", "5350010000020037"]
+			dependencies: ["0B03107000000050", "5350010000020001"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -289,7 +289,7 @@
 			icon: {
 			id: "minecraft:lectern"
 			}
-			id: "535001000002003E"
+			id: "5350010000020008"
 			rewards: [
 				{
 					auto: "enabled"
@@ -308,7 +308,7 @@
 			y: 8.0d
 		}
 		{
-			dependencies: ["0B031080000000F2", "5350010000020037"]
+			dependencies: ["0B031080000000F2", "5350010000020001"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -316,7 +316,7 @@
 			icon: {
 			id: "theurgy:divination_rod_t2"
 			}
-			id: "535001000002003F"
+			id: "5350010000020009"
 			rewards: [
 				{
 					auto: "enabled"
@@ -335,7 +335,7 @@
 			y: 8.0d
 		}
 		{
-			dependencies: ["0B03109000000060", "5350010000020037"]
+			dependencies: ["0B03109000000060", "5350010000020001"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -343,7 +343,7 @@
 			icon: {
 			id: "unusualend:prismalite_gem"
 			}
-			id: "5350010000020040"
+			id: "535001000002000A"
 			rewards: [
 				{
 					auto: "enabled"
@@ -362,7 +362,7 @@
 			y: 10.0d
 		}
 		{
-			dependencies: ["0B0310A000000014", "5350010000020037"]
+			dependencies: ["0B0310A000000014", "5350010000020001"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -370,7 +370,7 @@
 			icon: {
 			id: "cataclysm:cursium_ingot"
 			}
-			id: "5350010000020041"
+			id: "535001000002000B"
 			rewards: [
 				{
 					auto: "enabled"
@@ -398,7 +398,7 @@
 			y: 10.0d
 		}
 		{
-			dependencies: ["0B0310A0000000F0", "5350010000020038", "5350010000020039", "535001000002003A", "535001000002003B", "535001000002003C", "535001000002003D", "535001000002003E", "535001000002003F", "5350010000020040", "5350010000020041"]
+			dependencies: ["0B0310A0000000F0", "5350010000020001"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -406,7 +406,7 @@
 			icon: {
 			id: "modern_industrialization:steel_dust"
 			}
-			id: "5350010000020042"
+			id: "535001000002000C"
 			rewards: [
 				{
 					auto: "enabled"
@@ -443,7 +443,7 @@
 			y: 12.0d
 		}
 		{
-			dependencies: ["4954021000000016", "5350010000020042"]
+			dependencies: ["4954021000000016", "535001000002000C"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -451,7 +451,7 @@
 			icon: {
 			id: "extended_industrialization:large_steam_macerator"
 			}
-			id: "5350010000020043"
+			id: "535001000002000D"
 			rewards: [
 				{
 					auto: "enabled"
@@ -470,7 +470,7 @@
 			y: 15.0d
 		}
 		{
-			dependencies: ["4954051000000011", "5350010000020042"]
+			dependencies: ["4954051000000011", "535001000002000C"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -478,7 +478,7 @@
 			icon: {
 			id: "createaddition:electric_motor"
 			}
-			id: "5350010000020044"
+			id: "535001000002000E"
 			rewards: [
 				{
 					auto: "enabled"
@@ -497,7 +497,7 @@
 			y: 15.0d
 		}
 		{
-			dependencies: ["495406100000001D", "5350010000020042"]
+			dependencies: ["495406100000001D", "535001000002000C"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -505,7 +505,7 @@
 			icon: {
 			id: "pneumaticcraft:thermopneumatic_processing_plant"
 			}
-			id: "5350010000020045"
+			id: "535001000002000F"
 			rewards: [
 				{
 					auto: "enabled"
@@ -524,7 +524,7 @@
 			y: 15.0d
 		}
 		{
-			dependencies: ["49540A100000000F", "5350010000020042"]
+			dependencies: ["49540A100000000F", "535001000002000C"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -532,7 +532,7 @@
 			icon: {
 			id: "integrateddynamics:materializer"
 			}
-			id: "5350010000020046"
+			id: "5350010000020010"
 			rewards: [
 				{
 					auto: "enabled"
@@ -551,7 +551,7 @@
 			y: 15.0d
 		}
 		{
-			dependencies: ["49540B1000000015", "5350010000020042"]
+			dependencies: ["49540B1000000015", "535001000002000C"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -559,7 +559,7 @@
 			icon: {
 			id: "pneumaticcraft:spawner_agitator"
 			}
-			id: "5350010000020047"
+			id: "5350010000020011"
 			rewards: [
 				{
 					auto: "enabled"
@@ -578,7 +578,7 @@
 			y: 15.0d
 		}
 		{
-			dependencies: ["49540C1000000006", "5350010000020042"]
+			dependencies: ["49540C1000000006", "535001000002000C"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -586,7 +586,7 @@
 			icon: {
 			id: "bosses_of_mass_destruction:obsidian_heart"
 			}
-			id: "5350010000020048"
+			id: "5350010000020012"
 			rewards: [
 				{
 					auto: "enabled"
@@ -605,7 +605,7 @@
 			y: 15.0d
 		}
 		{
-			dependencies: ["4954631000000000", "5350010000020043", "5350010000020044", "5350010000020045", "5350010000020046", "5350010000020047", "5350010000020048"]
+			dependencies: ["4954631000000000", "535001000002000C"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -613,7 +613,7 @@
 			icon: {
 			id: "bosses_of_mass_destruction:obsidian_heart"
 			}
-			id: "5350010000020049"
+			id: "5350010000020013"
 			rewards: [
 				{
 					auto: "enabled"
@@ -650,7 +650,7 @@
 			y: 17.0d
 		}
 		{
-			dependencies: ["5246011000000007", "5350010000020049"]
+			dependencies: ["5246011000000007", "5350010000020013"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -658,7 +658,7 @@
 			icon: {
 			id: "industrialforegoing:laser_drill"
 			}
-			id: "535001000002004A"
+			id: "5350010000020014"
 			rewards: [
 				{
 					auto: "enabled"
@@ -677,7 +677,7 @@
 			y: 20.0d
 		}
 		{
-			dependencies: ["4D4E011000000006", "5350010000020049"]
+			dependencies: ["4D4E011000000006", "5350010000020013"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -685,7 +685,7 @@
 			icon: {
 			id: "refinedstorage:autocrafter"
 			}
-			id: "535001000002004B"
+			id: "5350010000020015"
 			rewards: [
 				{
 					auto: "enabled"
@@ -704,7 +704,7 @@
 			y: 20.0d
 		}
 		{
-			dependencies: ["4D4F011000000005", "5350010000020049"]
+			dependencies: ["4D4F011000000005", "5350010000020013"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -712,7 +712,7 @@
 			icon: {
 			id: "actuallyadditions:empowerer"
 			}
-			id: "535001000002004C"
+			id: "5350010000020016"
 			rewards: [
 				{
 					auto: "enabled"
@@ -731,7 +731,7 @@
 			y: 20.0d
 		}
 		{
-			dependencies: ["4D50011000000003", "5350010000020049"]
+			dependencies: ["4D50011000000003", "5350010000020013"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -739,7 +739,7 @@
 			icon: {
 			id: "nautec:aquatic_catalyst"
 			}
-			id: "535001000002004D"
+			id: "5350010000020017"
 			rewards: [
 				{
 					auto: "enabled"
@@ -758,7 +758,7 @@
 			y: 20.0d
 		}
 		{
-			dependencies: ["4F47011000000002", "5350010000020049"]
+			dependencies: ["4F47011000000002", "5350010000020013"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -766,7 +766,7 @@
 			icon: {
 			id: "oritech:processing_unit"
 			}
-			id: "535001000002004E"
+			id: "5350010000020018"
 			rewards: [
 				{
 					auto: "enabled"
@@ -785,7 +785,7 @@
 			y: 20.0d
 		}
 		{
-			dependencies: ["4341011000000004", "5350010000020049"]
+			dependencies: ["4341011000000004", "5350010000020013"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -793,7 +793,7 @@
 			icon: {
 			id: "spectrum:spirit_instiller"
 			}
-			id: "535001000002004F"
+			id: "5350010000020019"
 			rewards: [
 				{
 					auto: "enabled"
@@ -812,7 +812,7 @@
 			y: 20.0d
 		}
 		{
-			dependencies: ["5057011000000003", "5350010000020049"]
+			dependencies: ["5057011000000003", "5350010000020013"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -820,7 +820,7 @@
 			icon: {
 			id: "astral_dimension:void_boots_helmet"
 			}
-			id: "5350010000020050"
+			id: "535001000002001A"
 			rewards: [
 				{
 					auto: "enabled"
@@ -848,7 +848,7 @@
 			y: 20.0d
 		}
 		{
-			dependencies: ["5057011000000004", "535001000002004A", "535001000002004B", "535001000002004C", "535001000002004D", "535001000002004E", "535001000002004F", "5350010000020050"]
+			dependencies: ["5057011000000004", "5350010000020013"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -856,7 +856,7 @@
 			icon: {
 			id: "mekanism:atomic_disassembler"
 			}
-			id: "5350010000020051"
+			id: "535001000002001B"
 			rewards: [
 				{
 					auto: "enabled"
@@ -884,7 +884,7 @@
 			y: 22.0d
 		}
 		{
-			dependencies: ["4E44010000010004", "5350010000020051"]
+			dependencies: ["4E44010000010004", "535001000002001B"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -892,7 +892,7 @@
 			icon: {
 			id: "createnuclear:reactor_core"
 			}
-			id: "5350010000020052"
+			id: "535001000002001C"
 			rewards: [
 				{
 					auto: "enabled"
@@ -920,7 +920,7 @@
 			y: 25.0d
 		}
 		{
-			dependencies: ["4348010000010004", "5350010000020051"]
+			dependencies: ["4348010000010004", "535001000002001B"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -928,7 +928,7 @@
 			icon: {
 			id: "mekanismgenerators:fission_reactor_casing"
 			}
-			id: "5350010000020053"
+			id: "535001000002001D"
 			rewards: [
 				{
 					auto: "enabled"
@@ -947,7 +947,7 @@
 			y: 25.0d
 		}
 		{
-			dependencies: ["4D53010000010003", "5350010000020051"]
+			dependencies: ["4D53010000010003", "535001000002001B"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -955,7 +955,7 @@
 			icon: {
 			id: "nuclearscience:logisticscontroller"
 			}
-			id: "5350010000020054"
+			id: "535001000002001E"
 			rewards: [
 				{
 					auto: "enabled"
@@ -983,7 +983,7 @@
 			y: 25.0d
 		}
 		{
-			dependencies: ["5457010000010003", "5350010000020051"]
+			dependencies: ["5457010000010003", "535001000002001B"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -991,7 +991,7 @@
 			icon: {
 			id: "ballistix:radar"
 			}
-			id: "5350010000020055"
+			id: "535001000002001F"
 			rewards: [
 				{
 					auto: "enabled"
@@ -1019,7 +1019,7 @@
 			y: 25.0d
 		}
 		{
-			dependencies: ["4646010000010000", "5350010000020051"]
+			dependencies: ["4646010000010000", "535001000002001B"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -1027,7 +1027,7 @@
 			icon: {
 			id: "macabre:valamon_heart"
 			}
-			id: "5350010000020056"
+			id: "5350010000020020"
 			rewards: [
 				{
 					auto: "enabled"
@@ -1046,7 +1046,7 @@
 			y: 25.0d
 		}
 		{
-			dependencies: ["4646010000010001", "5350010000020051"]
+			dependencies: ["4646010000010001", "535001000002001B"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -1054,7 +1054,7 @@
 			icon: {
 			id: "macabre:gomoria_heart"
 			}
-			id: "5350010000020057"
+			id: "5350010000020021"
 			rewards: [
 				{
 					auto: "enabled"
@@ -1073,7 +1073,7 @@
 			y: 25.0d
 		}
 		{
-			dependencies: ["4646010000010002", "5350010000020051"]
+			dependencies: ["4646010000010002", "535001000002001B"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -1081,7 +1081,7 @@
 			icon: {
 			id: "macabre:gargamaw_heart"
 			}
-			id: "5350010000020058"
+			id: "5350010000020022"
 			rewards: [
 				{
 					auto: "enabled"
@@ -1100,7 +1100,7 @@
 			y: 25.0d
 		}
 		{
-			dependencies: ["4646010000010003", "5350010000020051"]
+			dependencies: ["4646010000010003", "535001000002001B"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -1108,7 +1108,7 @@
 			icon: {
 			id: "macabre:baal_heart"
 			}
-			id: "5350010000020059"
+			id: "5350010000020023"
 			rewards: [
 				{
 					auto: "enabled"
@@ -1127,7 +1127,7 @@
 			y: 25.0d
 		}
 		{
-			dependencies: ["4358010000010001", "5350010000020051"]
+			dependencies: ["4358010000010001", "535001000002001B"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -1135,7 +1135,7 @@
 			icon: {
 			id: "alexscaves:tremorzilla_egg"
 			}
-			id: "535001000002005A"
+			id: "5350010000020024"
 			rewards: [
 				{
 					auto: "enabled"
@@ -1154,7 +1154,7 @@
 			y: 27.0d
 		}
 		{
-			dependencies: ["4358010000010002", "5350010000020051"]
+			dependencies: ["4358010000010002", "535001000002001B"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -1162,7 +1162,7 @@
 			icon: {
 			id: "fdbosses:justice_core"
 			}
-			id: "535001000002005B"
+			id: "5350010000020025"
 			rewards: [
 				{
 					auto: "enabled"
@@ -1181,7 +1181,7 @@
 			y: 27.0d
 		}
 		{
-			dependencies: ["4358010000010003", "5350010000020052", "5350010000020053", "5350010000020054", "5350010000020055", "5350010000020056", "5350010000020057", "5350010000020058", "5350010000020059", "535001000002005A", "535001000002005B"]
+			dependencies: ["4358010000010003", "535001000002001B"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -1189,7 +1189,7 @@
 			icon: {
 			id: "fdbosses:justice_core"
 			}
-			id: "535001000002005C"
+			id: "5350010000020026"
 			rewards: [
 				{
 					auto: "enabled"
@@ -1226,7 +1226,7 @@
 			y: 29.0d
 		}
 		{
-			dependencies: ["4C57010000010004", "535001000002005C"]
+			dependencies: ["4C57010000010004", "5350010000020026"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -1234,7 +1234,7 @@
 			icon: {
 			id: "stellaris:rocket"
 			}
-			id: "535001000002005D"
+			id: "5350010000020027"
 			rewards: [
 				{
 					auto: "enabled"
@@ -1253,7 +1253,7 @@
 			y: 32.0d
 		}
 		{
-			dependencies: ["4C58010000010005", "535001000002005C"]
+			dependencies: ["4C58010000010005", "5350010000020026"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -1261,7 +1261,7 @@
 			icon: {
 			id: "stellaris:desh_ingot"
 			}
-			id: "535001000002005E"
+			id: "5350010000020028"
 			rewards: [
 				{
 					auto: "enabled"
@@ -1280,7 +1280,7 @@
 			y: 32.0d
 		}
 		{
-			dependencies: ["4454010000010005", "535001000002005C"]
+			dependencies: ["4454010000010005", "5350010000020026"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -1288,7 +1288,7 @@
 			icon: {
 			id: "draconicevolution:energy_transfuser"
 			}
-			id: "535001000002005F"
+			id: "5350010000020029"
 			rewards: [
 				{
 					auto: "enabled"
@@ -1307,7 +1307,7 @@
 			y: 32.0d
 		}
 		{
-			dependencies: ["4C59010000010004", "535001000002005C"]
+			dependencies: ["4C59010000010004", "5350010000020026"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -1315,7 +1315,7 @@
 			icon: {
 			id: "stellaris:antenna"
 			}
-			id: "5350010000020060"
+			id: "535001000002002A"
 			rewards: [
 				{
 					auto: "enabled"
@@ -1334,7 +1334,7 @@
 			y: 32.0d
 		}
 		{
-			dependencies: ["4443010000010006", "535001000002005C"]
+			dependencies: ["4443010000010006", "5350010000020026"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -1342,7 +1342,7 @@
 			icon: {
 			id: "advanced_ae:quantum_multi_threader"
 			}
-			id: "5350010000020061"
+			id: "535001000002002B"
 			rewards: [
 				{
 					auto: "enabled"
@@ -1361,7 +1361,7 @@
 			y: 32.0d
 		}
 		{
-			dependencies: ["4256010000010004", "535001000002005C"]
+			dependencies: ["4256010000010004", "5350010000020026"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -1369,7 +1369,7 @@
 			icon: {
 			id: "cataclysm:tidal_claws"
 			}
-			id: "5350010000020062"
+			id: "535001000002002C"
 			rewards: [
 				{
 					auto: "enabled"
@@ -1388,7 +1388,7 @@
 			y: 32.0d
 		}
 		{
-			dependencies: ["4256010000010005", "535001000002005C"]
+			dependencies: ["4256010000010005", "5350010000020026"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -1396,7 +1396,7 @@
 			icon: {
 			id: "mekanismgenerators:hohlraum"
 			}
-			id: "5350010000020063"
+			id: "535001000002002D"
 			rewards: [
 				{
 					auto: "enabled"
@@ -1415,7 +1415,7 @@
 			y: 32.0d
 		}
 		{
-			dependencies: ["4256010000010006", "535001000002005D", "535001000002005E", "535001000002005F", "5350010000020060", "5350010000020061", "5350010000020062", "5350010000020063"]
+			dependencies: ["4256010000010006", "5350010000020026"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -1423,7 +1423,7 @@
 			icon: {
 			id: "cataclysm:tidal_claws"
 			}
-			id: "5350010000020064"
+			id: "535001000002002E"
 			rewards: [
 				{
 					auto: "enabled"
@@ -1460,7 +1460,7 @@
 			y: 34.0d
 		}
 		{
-			dependencies: ["5449010000010006", "5350010000020064"]
+			dependencies: ["5449010000010006", "535001000002002E"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -1468,7 +1468,7 @@
 			icon: {
 			id: "extendedcrafting:ultimate_catalyst"
 			}
-			id: "5350010000020065"
+			id: "535001000002002F"
 			rewards: [
 				{
 					auto: "enabled"
@@ -1487,7 +1487,7 @@
 			y: 37.0d
 		}
 		{
-			dependencies: ["5044010000010006", "5350010000020064"]
+			dependencies: ["5044010000010006", "535001000002002E"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -1495,7 +1495,7 @@
 			icon: {
 			id: "avaritia:eternal_singularity"
 			}
-			id: "5350010000020066"
+			id: "5350010000020030"
 			rewards: [
 				{
 					auto: "enabled"
@@ -1514,7 +1514,7 @@
 			y: 37.0d
 		}
 		{
-			dependencies: ["5347010000010002", "5350010000020064"]
+			dependencies: ["5347010000010002", "535001000002002E"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -1522,7 +1522,7 @@
 			icon: {
 			id: "oritech:black_hole_block"
 			}
-			id: "5350010000020067"
+			id: "5350010000020031"
 			rewards: [
 				{
 					auto: "enabled"
@@ -1541,7 +1541,7 @@
 			y: 37.0d
 		}
 		{
-			dependencies: ["4448010000010005", "5350010000020064"]
+			dependencies: ["4448010000010005", "535001000002002E"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -1549,7 +1549,7 @@
 			icon: {
 			id: "draconicadditions:item_chaos_injector"
 			}
-			id: "5350010000020068"
+			id: "5350010000020032"
 			rewards: [
 				{
 					auto: "enabled"
@@ -1568,7 +1568,7 @@
 			y: 37.0d
 		}
 		{
-			dependencies: ["425201000001000B", "5350010000020064"]
+			dependencies: ["425201000001000B", "535001000002002E"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -1576,7 +1576,7 @@
 			icon: {
 			id: "draconicevolution:chaos_shard"
 			}
-			id: "5350010000020069"
+			id: "5350010000020033"
 			rewards: [
 				{
 					auto: "enabled"
@@ -1604,7 +1604,7 @@
 			y: 37.0d
 		}
 		{
-			dependencies: ["4153010000010001", "5350010000020064"]
+			dependencies: ["4153010000010001", "535001000002002E"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -1612,7 +1612,7 @@
 			icon: {
 			id: "extendedcrafting:the_ultimate_block"
 			}
-			id: "535001000002006A"
+			id: "5350010000020034"
 			rewards: [
 				{
 					auto: "enabled"
@@ -1631,7 +1631,7 @@
 			y: 37.0d
 		}
 		{
-			dependencies: ["4153010000010002", "5350010000020065", "5350010000020066", "5350010000020067", "5350010000020068", "5350010000020069", "535001000002006A"]
+			dependencies: ["4153010000010002", "535001000002002E"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -1639,7 +1639,7 @@
 			icon: {
 			id: "avaritia:infinity_ingot"
 			}
-			id: "535001000002006B"
+			id: "5350010000020035"
 			rewards: [
 				{
 					auto: "enabled"
