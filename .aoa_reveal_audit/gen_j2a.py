@@ -300,7 +300,8 @@ def lang_entries(ordered, qmap, node_id):
 def merge_lang(entries, eol):
     raw = open(LANG,'rb').read().decode('utf-8')
     lines = [ln.rstrip('\r') for ln in raw.split('\n')]
-    orphan_ids = {format(0x5350010000010000 + k,'X').rjust(16,'0') for k in range(1,15)}
+    # prune ALL old journey node keys 0000..000E (incl. start 0000) so regenerated keys don't duplicate
+    orphan_ids = {format(0x5350010000010000 + k,'X').rjust(16,'0') for k in range(0,15)}
     keep, i = [], 0
     while i < len(lines):
         ln = lines[i]
