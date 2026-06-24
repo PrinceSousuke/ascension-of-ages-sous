@@ -244,7 +244,37 @@ def emit(ordered, qmap, node_id, pos, deps, eol):
         if rid != START_ID:
             icon = qmap.get(rid,{}).get('icon')
         else:
-            icon = 'icon: {\n\t\t\t\tid: "minecraft:campfire"\n\t\t\t}'
+            # Use eol-safe multiline icon for start node
+            icon = None
+            w(T*2+"{")
+            if dep_ids:
+                w(T*3+'dependencies: [%s]' % ", ".join('"%s"' % v for v in dep_ids))
+            w(T*3+'hide_details_until_startable: false')
+            w(T*3+'hide_text_until_complete: false')
+            w(T*3+'hide_until_deps_complete: false')
+            w(T*3+'hide_until_deps_visible: false')
+            w(T*3+'icon: {'); w(T*4+'id: "minecraft:campfire"'); w(T*3+'}')
+            w(T*3+'id: "%s"' % nid)
+            if rblocks:
+                w(T*3+'rewards: [')
+                for cmd, rrid in rblocks:
+                    w(T*4+'{')
+                    w(T*5+'auto: "enabled"')
+                    w(T*5+'command: "%s"' % cmd)
+                    w(T*5+'id: "%s"' % format(rrid,'X').rjust(16,'0'))
+                    w(T*5+'permission_level: 2')
+                    w(T*5+'silent: true')
+                    w(T*5+'team_reward: true')
+                    w(T*5+'type: "command"')
+                    w(T*4+'}')
+                w(T*3+']')
+            w(T*3+'shape: "%s"' % ("hexagon" if gw else "circle"))
+            w(T*3+'size: %sd' % ("1.5" if gw else "1.0"))
+            w(T*3+'tasks: [ ]')
+            w(T*3+'x: %sd' % x)
+            w(T*3+'y: %sd' % y)
+            w(T*2+"}")
+            continue
         w(T*2+"{")
         if dep_ids:
             w(T*3+'dependencies: [%s]' % ", ".join('"%s"' % v for v in dep_ids))
@@ -253,9 +283,10 @@ def emit(ordered, qmap, node_id, pos, deps, eol):
         w(T*3+'hide_until_deps_complete: false')
         w(T*3+'hide_until_deps_visible: false')
         if icon:
-            ic = re.sub(r'^\t*', '', icon, flags=re.M)
-            ic = "\n".join(T*3 + ln if ln.strip() else ln for ln in ic.splitlines())
-            w(ic)
+            # Strip leading tabs, re-indent to T*3 depth, join with eol-safe separator
+            ic_lines = re.sub(r'^\t*', '', icon, flags=re.M).splitlines()
+            for ic_ln in ic_lines:
+                w(T*3 + ic_ln if ic_ln.strip() else ic_ln)
         else:
             w(T*3+'icon: {'); w(T*4+'id: "minecraft:paper"'); w(T*3+'}')
         w(T*3+'id: "%s"' % nid)
