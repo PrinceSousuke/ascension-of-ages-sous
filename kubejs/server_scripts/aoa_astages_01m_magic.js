@@ -137,10 +137,11 @@
     ["industrial_revolution", "neovitae:tabula_robur", "item"],
     ["industrial_revolution", "neovitae:tabula_animata", "item"],
     ["industrial_revolution", "neovitae:tabula_spiritus", "item"],
-    // Gilded: high orbs, Sentient gear, Hellforged chain
+    // Gilded: high orbs, Sentient gear
     ["gilded_age", "neovitae:blood_orb_magician", "item"],
     ["gilded_age", "neovitae:blood_orb_master", "item"],
     ["gilded_age", "neovitae:blood_orb_archmage", "item"],
+    // Industrial: Hellforged chain (dungeon-sourced at IR, supports Sentient later)
     ["industrial_revolution", "neovitae:ingot_hellforged", "item"],
     ["industrial_revolution", "neovitae:hellforged_dust", "item"],
     ["industrial_revolution", "neovitae:hellforged_parts", "item"],

@@ -1,6 +1,6 @@
 // AoA KubeJS: magic_spine_bridges.js
-// Batch 9 verified bridge recipes only. Keep broad material policy and tech
-// bridge rollout in their own batches.
+// Magic-to-industry feedstock bridges: Oritech Foundry (FA Deorum, NV Hellforged, Spectrum).
+// See aoa_recipes_ir_magic_feedstock_bridges.js for the full bridge portfolio.
 
 ServerEvents.recipes(event => {
   // Oritech Core 5 stays an Oritech advanced-computing milestone, but now

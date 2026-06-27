@@ -4361,8 +4361,8 @@
 	quest.49540B1000000004.quest_subtitle: "Use the hellfire crucible."
 	quest.49540B1000000004.title: "Hellfire Forge"
 	quest.49540B1000000005.quest_desc: [
-		"Build the &6Oritech&r &bFoundry&r. Here the recipe is coupled to &6Forbidden Arcanus&r: the foundry takes Deorum as feedstock, the first of three deliberate bridges between magic and industry."
-		"The divine metal becomes an industrial input."
+		"Build the &6Oritech&r &bFoundry&r. Here the recipe is coupled to &6Neo Vitae&r and &6Forbidden Arcanus&r: the foundry accepts Hellforged and Deorum (magic feedstock) as inputs, burning them into industrial catalysts. The first of three deliberate bridges between magic and industry."
+		"Magic feedstock becomes an industrial input."
 	]
 	quest.49540B1000000005.quest_subtitle: "Magic feeds the foundry."
 	quest.49540B1000000005.title: "Aureal Foundry"

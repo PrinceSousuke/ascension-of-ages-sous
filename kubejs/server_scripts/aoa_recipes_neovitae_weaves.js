@@ -38,7 +38,7 @@ ServerEvents.recipes(event => {
   // ── NV3 — Otherworld Bloom Flask (Occultism -> NV) ──────────────────────────
   // ADDITIVE (alchemy_flask's only native route is an ara_vitae_recipe on a DIFFERENT machine,
   // so this alchemy-table route is genuinely new, not a duplicate -> no remove needed).
-  // (alchemytable schema: input[] SINGULAR, output{count,id}, syphon, ticks, upgradeLevel)
+  // (alchemytable schema: "input" is a singular key with an array value, output{count,id}, syphon, ticks, upgradeLevel)
   event.custom({
     type: 'neovitae:alchemytable',
     input: [
