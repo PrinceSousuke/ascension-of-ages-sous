@@ -4337,11 +4337,11 @@
 	quest.49540B1000000003.quest_subtitle: "Stockpile your spirits."
 	quest.49540B1000000003.title: "Spirit Jar"
 	quest.49540B1000000004.quest_desc: [
-		"Upgrade your &bHephaestus Forge&r to its second tier. The higher tier raises how much aureal and soul essence the forge can hold and opens its tier-two rituals, the &6Forbidden Arcanus&r recipes the first tier refuses."
-		"The forge is the engine of this mod's magic feedstock."
+		"Right-click the &bHellfire Forge&r. It is &6Neo Vitae&r's master crafting station — the block where blood and hellfire fuse raw materials into the mod's highest-tier outputs."
+		"The forge is the engine of this magic feedstock line."
 	]
-	quest.49540B1000000004.quest_subtitle: "Upgrade the divine furnace."
-	quest.49540B1000000004.title: "Hephaestus Forge II"
+	quest.49540B1000000004.quest_subtitle: "Use the hellfire crucible."
+	quest.49540B1000000004.title: "Hellfire Forge"
 	quest.49540B1000000005.quest_desc: [
 		"Build the &6Oritech&r &bFoundry&r. Here the recipe is coupled to &6Forbidden Arcanus&r: the foundry takes Deorum as feedstock, the first of three deliberate bridges between magic and industry."
 		"The divine metal becomes an industrial input."
@@ -4433,35 +4433,35 @@
 	quest.49540B1000000017.quest_subtitle: "Spectrum feeds the logic grid."
 	quest.49540B1000000017.title: "Resonant Logic Director"
 	quest.49540B1000000018.quest_desc: [
-		"Forge a &bDeorum Block&r. It packs the divine metal into a dense storable form and feeds the &bfoundry&r bridge that comes next."
-		"Stockpile it; the &bAureal&r Foundry is hungry for it."
+		"Craft a &bHellforged Block&r at the &bHellfire Forge&r. It packs blood-forged metal into a dense storable form and feeds the &bfoundry&r bridge that comes next."
+		"Stockpile it; the Oritech Foundry uses it as direct feedstock."
 	]
-	quest.49540B1000000018.quest_subtitle: "Divine metal, in bulk."
-	quest.49540B1000000018.title: "Deorum Block"
+	quest.49540B1000000018.quest_subtitle: "Blood-forged metal, in bulk."
+	quest.49540B1000000018.title: "Hellforged Block"
 	quest.49540B1000000019.quest_desc: [
-		"Build an &bAureal Tank&r. It banks the Aureal the &bHephaestus Forge&r and its kin run on, the buffer that keeps your divine &bfurnace&r from starving."
-		"Aureal handling at scale starts here."
+		"Build a &bBlood Tank&r. It stores the blood that fuels &6Neo Vitae&r's rituals and the &bHellfire Forge&r, the buffer that keeps the line from starving mid-run."
+		"Blood handling at scale starts here."
 	]
-	quest.49540B1000000019.quest_subtitle: "Store the magic energy."
-	quest.49540B1000000019.title: "Aureal Tank"
+	quest.49540B1000000019.quest_subtitle: "Store the lifeblood reserve."
+	quest.49540B1000000019.title: "Blood Tank"
 	quest.49540B100000001A.quest_desc: [
-		"Craft a &bSmelter Prism&r at the &bHephaestus Forge&r. Smith it onto a tool afterward and the tool gains the Fiery modifier, smelting what it breaks as it digs."
-		"A forge product you wear on your pickaxe."
+		"Forge a &bHellforged Resonator&r at the &bHellfire Forge&r. It is a blood-imbued amplifier that extends &6Neo Vitae&r's rituals, pushing their range and intensity beyond base."
+		"A forge product that unlocks deeper ritual work."
 	]
-	quest.49540B100000001A.quest_subtitle: "Add a smelting trick."
-	quest.49540B100000001A.title: "Smelter Prism"
-	quest.49540B100000001B.quest_desc: ["Forge a &bTyr Helmet&r. Tyr gear is the tier-four ritual upgrade of the Draco Arcanus set: lay the netherite-based helmet on the forge with dragon scales and the ritual transmutes it."]
-	quest.49540B100000001B.quest_subtitle: "Optional: ritual-forged armor."
-	quest.49540B100000001B.title: "Tyr Helmet"
-	quest.49540B100000001C.quest_desc: ["Craft a &bTyr Chestplate&r by the same ritual, transmuted from a Draco Arcanus Chestplate with dragon scales on the forge."]
-	quest.49540B100000001C.quest_subtitle: "Ritual-forged Forbidden Arcanus armor."
-	quest.49540B100000001C.title: "Tyr Armor: Chestplate"
-	quest.49540B100000001D.quest_desc: ["Build &bTyr Leggings&r to cover the lower half of the &6Forbidden Arcanus&r ritual suit."]
-	quest.49540B100000001D.quest_subtitle: "Lower-half armor for the Tyr suit."
-	quest.49540B100000001D.title: "Tyr Armor: Leggings"
-	quest.49540B100000001E.quest_desc: ["Forge &bTyr Boots&r to complete the Tyr suit, one of the finest armors the magic line produces."]
-	quest.49540B100000001E.quest_subtitle: "Complete the ritual armor set."
-	quest.49540B100000001E.title: "Tyr Armor: Boots"
+	quest.49540B100000001A.quest_subtitle: "Amplify your rituals."
+	quest.49540B100000001A.title: "Hellforged Resonator"
+	quest.49540B100000001B.quest_desc: ["Forge a &bSentient Helmet&r at the &bHellfire Forge&r. The sentient set is &6Neo Vitae&r's blood-imbued combat armor — crafted from hellforged metal and attuned to the wearer's life force."]
+	quest.49540B100000001B.quest_subtitle: "Optional: blood-imbued armor."
+	quest.49540B100000001B.title: "Sentient Helmet"
+	quest.49540B100000001C.quest_desc: ["Forge a &bSentient Plate&r — the chestpiece of &6Neo Vitae&r's sentient set. Like the helmet it is built at the &bHellfire Forge&r from hellforged metal, blood-bound to increase with your vitality."]
+	quest.49540B100000001C.quest_subtitle: "Sentient armor: chestpiece."
+	quest.49540B100000001C.title: "Sentient Plate"
+	quest.49540B100000001D.quest_desc: ["Forge &bSentient Leggings&r to cover the lower half of the &6Neo Vitae&r sentient set. Blood-bound and hellforged like the rest of the suit."]
+	quest.49540B100000001D.quest_subtitle: "Lower-half armor for the sentient set."
+	quest.49540B100000001D.title: "Sentient Leggings"
+	quest.49540B100000001E.quest_desc: ["Forge &bSentient Boots&r to complete the sentient set, &6Neo Vitae&r's finest blood-imbued combat armor."]
+	quest.49540B100000001E.quest_subtitle: "Complete the sentient armor set."
+	quest.49540B100000001E.title: "Sentient Boots"
 	quest.49540B100000001F.quest_desc: [
 		"Build a &bDimensional Mineshaft&r. Bound to a spirit it pulls ore from the Otherworld on its own, &6Occultism&r's hands-off mining, no quarry required."
 		"Magic labor replacing the pickaxe entirely."
