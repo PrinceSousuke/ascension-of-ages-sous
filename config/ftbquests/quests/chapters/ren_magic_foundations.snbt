@@ -1219,6 +1219,7 @@
 			entity_vis_size: 1.0f
 			hide_until_deps_visible: true
 			id: "0B03101000000037"
+			optional: true
 			rewards: [{
 				id: "0B03301000000037"
 				type: "xp"
@@ -1253,6 +1254,7 @@
 			entity_vis_size: 1.0f
 			hide_until_deps_visible: true
 			id: "0B03101000000038"
+			optional: true
 			rewards: [{
 				id: "0B03301000000038"
 				type: "xp"
@@ -1282,7 +1284,7 @@
 			y: 10.5d
 		}
 		{
-			dependencies: ["0B03101000000038"]
+			dependencies: ["0B03101000000036"]
 			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "0B03101000000039"
@@ -1427,7 +1429,7 @@
 			y: 13.5d
 		}
 		{
-			dependencies: ["0B03101000000037"]
+			dependencies: ["0B03101000000036"]
 			entity_vis_size: 1.0f
 			hide_until_deps_visible: true
 			id: "0B0310100000003D"
