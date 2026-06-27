@@ -5,25 +5,20 @@
 	group: "0B038EB15EBBFD95"
 	hide_quest_until_deps_complete: true
 	icon: {
-		id: "forbidden_arcanus:mundabitur_dust"
+		id: "neovitae:ingot_hellforged"
 	}
 	id: "0B03001000000002"
 	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["6D7E8F901A2B1054"]
+			dependencies: ["0B0310100000003D"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: {
-				id: "forbidden_arcanus:mundabitur_dust"
+				id: "neovitae:ingot_hellforged"
 			}
 			id: "0B03102000000001"
-			title: "Nether Threshold"
-			subtitle: "The lower world opens."
-			description: [
-				"The &dRenaissance&r is when the Nether stops being a quick errand and becomes a place you work in. Waiting below are the &bHephaestus Forge&r and its divine metal, blaze-powered heat for &6Create&r, and a clutch of mods that rebuild the dimension entirely."
-				"Pack fire resistance before you go. Almost everything down here burns."
-			]
 			rewards: [{
 				id: "0B03302000000001"
 				type: "xp"
@@ -31,6 +26,12 @@
 			}]
 			size: 1.5d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -48,23 +49,24 @@
 		}
 		{
 			dependencies: ["0B03102000000001"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "minecraft:netherrack"
 			}
 			id: "0B03102000000011"
-			title: "Into the Nether"
-			subtitle: "Light the portal and step through."
-			description: [
-				"Open a portal and enter the Nether. Bring a fire resistance source, a bow for ghasts, and gold on your body to keep the piglins calm."
-				"Pick your landing carefully, since the far side can drop you straight into a lava sea."
-			]
 			rewards: [{
 				id: "0B03302000000011"
 				type: "xp"
 				xp: 15
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -82,20 +84,21 @@
 		}
 		{
 			dependencies: ["0B03102000000011"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03102000000021"
-			title: "A Nether Fortress"
-			subtitle: "Find the blaze-haunted halls."
-			description: [
-				"Track down a &bNether Fortress&r. The pack's fortresses are larger and meaner than vanilla's, packed with blazes and wither skeletons but also the loot and spawners you came for."
-				"Blazes here are your only early source of rods, so the trip is not optional for long."
-			]
 			rewards: [{
 				id: "0B03302000000021"
 				type: "xp"
 				xp: 15
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -113,20 +116,21 @@
 		}
 		{
 			dependencies: ["0B03102000000001"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03102000000040"
-			title: "Hephaestus Forge"
-			subtitle: "Forbidden Arcanus' divine furnace."
-			description: [
-				"Build the &bHephaestus Forge&r. It is the centerpiece of &6Forbidden Arcanus&r: fuel it with &bAureal&r and it combusts materials into things no ordinary furnace can make."
-				"Everything in this lane, the divine metal especially, comes out of this block."
-			]
 			rewards: [{
 				id: "0B03302000000040"
 				type: "xp"
 				xp: 20
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -136,7 +140,7 @@
 					second: 20
 				}
 				id: "0B03202000000040"
-				item: { count: 1, id: "forbidden_arcanus:hephaestus_forge_tier_1" }
+				item: { count: 1, id: "neovitae:rune_speed" }
 				type: "item"
 			}]
 			x: 6.0d
@@ -147,20 +151,21 @@
 				"0B03102000000021"
 				"0B03102000000040"
 			]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03102000000041"
-			title: "Mundabitur Dust"
-			subtitle: "The cleansing reagent."
-			description: [
-				"Craft &bMundabitur Dust&r. The forge uses it as a purifying agent, the catalyst that strips the impurity out of base materials before they are reforged."
-				"You will spend it making the divine metal a step from here."
-			]
 			rewards: [{
 				id: "0B03302000000041"
 				type: "xp"
 				xp: 25
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -170,7 +175,7 @@
 					second: 20
 				}
 				id: "0B03202000000041"
-				item: { count: 1, id: "forbidden_arcanus:mundabitur_dust" }
+				item: { count: 1, id: "neovitae:hellforged_dust" }
 				type: "item"
 			}]
 			x: 6.0d
@@ -178,20 +183,21 @@
 		}
 		{
 			dependencies: ["0B03102000000041"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03102000000042"
-			title: "Deorum Ingot"
-			subtitle: "Gold, made divine."
-			description: [
-				"Combust gold in the &bHephaestus Forge&r with &bMundabitur Dust&r to produce a &bDeorum Ingot&r. Deorum is Forbidden Arcanus' divine metal, the base for its strongest tools and armor."
-				"Reaching it confirms your forge and your Aureal supply both work."
-			]
 			rewards: [{
 				id: "0B03302000000042"
 				type: "xp"
 				xp: 20
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -201,7 +207,7 @@
 					second: 20
 				}
 				id: "0B03202000000042"
-				item: { count: 1, id: "forbidden_arcanus:deorum_ingot" }
+				item: { count: 1, id: "neovitae:ingot_hellforged" }
 				type: "item"
 			}]
 			x: 6.0d
@@ -209,13 +215,9 @@
 		}
 		{
 			dependencies: ["0B03102000000011"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03102000000050"
-			title: "Cincinnasite"
-			subtitle: "Optional: Better Nether's base ore."
-			description: [
-				"Mine &bCincinnasite&r. It is the workhorse material of &6Better Nether&r, the mod that fills the dimension with new biomes and stone, and most of its recipes trace back to this ore."
-			]
 			optional: true
 			rewards: [{
 				id: "0B03302000000050"
@@ -223,6 +225,12 @@
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -240,19 +248,21 @@
 		}
 		{
 			dependencies: ["0B03102000000042"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03102000000046"
-			title: "Deorum Nugget"
-			subtitle: "The metal in small change."
-			description: [
-				"Break a &bDeorum Ingot&r into nuggets, or forge nuggets directly. The smaller denomination is what several finer recipes call for, so keep a few on hand."
-			]
 			rewards: [{
 				id: "0B03302000000046"
 				type: "xp"
 				xp: 15
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -262,7 +272,7 @@
 					second: 20
 				}
 				id: "0B03202000000046"
-				item: { count: 1, id: "forbidden_arcanus:deorum_nugget" }
+				item: { count: 1, id: "neovitae:hellforged_parts" }
 				type: "item"
 			}]
 			x: 9.0d
@@ -270,13 +280,9 @@
 		}
 		{
 			dependencies: ["0B03102000000046"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03102000000047"
-			title: "Gilded Darkstone"
-			subtitle: "Deorum-trimmed stone."
-			description: [
-				"Craft &bGilded Chiseled Polished Darkstone&r. It is a showpiece block, dark stone inlaid with divine metal, for anyone who wants their forge room to look the part."
-			]
 			rewards: [{
 				id: "0B03302000000047"
 				type: "xp"
@@ -284,6 +290,12 @@
 			}]
 			shape: "diamond"
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -293,7 +305,7 @@
 					second: 20
 				}
 				id: "0B03202000000047"
-				item: { count: 1, id: "forbidden_arcanus:gilded_chiseled_polished_darkstone" }
+				item: { count: 1, id: "neovitae:hellforged_block" }
 				type: "item"
 			}]
 			x: 9.0d
@@ -301,13 +313,9 @@
 		}
 		{
 			dependencies: ["0B03102000000050"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03102000000051"
-			title: "Nether Ruby"
-			subtitle: "Optional: a fiery gem."
-			description: [
-				"Find a &bNether Ruby&r. It is &6Better Nether&r's signature gemstone, the stone its better tools and the flaming-ruby upgrade are cut from."
-			]
 			optional: true
 			rewards: [{
 				id: "0B03302000000051"
@@ -315,6 +323,12 @@
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -332,13 +346,9 @@
 		}
 		{
 			dependencies: ["0B03102000000050"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03102000000052"
-			title: "Cincinnasite Ingot"
-			subtitle: "Optional: smelt the ore."
-			description: [
-				"Smelt a &bCincinnasite Ingot&r. It is the usable metal form of the ore, the rung between raw Cincinnasite and the gear &6Better Nether&r builds from it."
-			]
 			optional: true
 			rewards: [{
 				id: "0B03302000000052"
@@ -346,6 +356,12 @@
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -363,13 +379,9 @@
 		}
 		{
 			dependencies: ["0B03102000000011"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03102000000053"
-			title: "Withered Bone Meal"
-			subtitle: "Optional: Eternal Nether grit."
-			description: [
-				"Grind &bWithered Bone Meal&r. &6Eternal Nether&r adds its own corner of the dimension, and this is one of its base materials, ground from the bones the wither leaves behind."
-			]
 			optional: true
 			rewards: [{
 				id: "0B03302000000053"
@@ -377,6 +389,12 @@
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -394,13 +412,9 @@
 		}
 		{
 			dependencies: ["0B03102000000053"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03102000000054"
-			title: "Withered Bone"
-			subtitle: "Optional: the whole bone."
-			description: [
-				"Collect a &bWithered Bone&r. It is the intact source the bone meal is ground from, and a crafting component in &6Eternal Nether&r's recipes in its own right."
-			]
 			optional: true
 			rewards: [{
 				id: "0B03302000000054"
@@ -408,6 +422,12 @@
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -425,13 +445,9 @@
 		}
 		{
 			dependencies: ["0B03102000000053"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03102000000055"
-			title: "Warped Ender Pearl"
-			subtitle: "Optional: a stabilized pearl."
-			description: [
-				"Obtain a &bWarped Ender Pearl&r. &6Eternal Nether&r's twist on the pearl behaves differently from the vanilla throw, a curiosity worth picking up while you are exploring."
-			]
 			optional: true
 			rewards: [{
 				id: "0B03302000000055"
@@ -439,6 +455,12 @@
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -456,14 +478,9 @@
 		}
 		{
 			dependencies: ["0B03102000000021"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03102000000061"
-			title: "Empty Blaze Burner"
-			subtitle: "A burner waiting for fire."
-			description: [
-				"Craft an &bEmpty Blaze Burner&r. On its own it does nothing, but catch a blaze in it and it becomes one of &6Create&r's most useful heat sources."
-				"Bring it to a fortress where the blazes are."
-			]
 			rewards: [{
 				id: "0B03302000000065"
 				type: "xp"
@@ -471,6 +488,12 @@
 			}]
 			shape: "square"
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -488,48 +511,21 @@
 		}
 		{
 			dependencies: ["0B03102000000061"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "0B03102000000062"
-			title: "Blaze Burner"
-			subtitle: "Capture a blaze for heat."
-			description: [
-				"Catch a blaze in the empty burner to make a working &bBlaze Burner&r. Fed the right fuel it heats &6Create&r's mixing and cooking recipes, the heart of the mod's mid-game processing."
-				"Bagging a live blaze is the real milestone of this trip."
-			]
 			rewards: [
-				{
-					id: "0B03302000000066"
-					type: "xp"
-					xp: 25
-				}
 				{
 					auto: "enabled"
 					command: "/astages add {p} ren_nether_threshold_complete true true"
 					icon: {
-						id: "forbidden_arcanus:mundabitur_dust"
+						id: "neovitae:ingot_hellforged"
 					}
 					id: "0B03302000000060"
 					permission_level: 2
 					silent: true
 					team_reward: true
 					type: "command"
-				}
-				{
-					id: "0B03302000000061"
-					item: {
-						count: 1
-						id: "endrem:nether_eye"
-					}
-					title: "Eyes of the Nether"
-					type: "item"
-				}
-				{
-					id: "0B03302000000062"
-					item: {
-						count: 1
-						id: "endrem:cursed_eye"
-					}
-					type: "item"
 				}
 				{
 					id: "0B03302000000064"
@@ -539,6 +535,12 @@
 			]
 			shape: "gear"
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -556,13 +558,9 @@
 		}
 		{
 			dependencies: ["0B03102000000062"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03102000000063"
-			title: "Blaze Cake"
-			subtitle: "Optional: the hottest fuel."
-			description: [
-				"Bake a &bBlaze Cake&r. Burned in a &bBlaze Burner&r it reaches the highest heat tier &6Create&r offers, which a handful of its recipes specifically demand."
-			]
 			optional: true
 			rewards: [{
 				id: "0B03302000000067"
@@ -570,6 +568,12 @@
 				xp: 15
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -587,19 +591,21 @@
 		}
 		{
 			dependencies: ["0B03102000000011"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03102000000070"
-			title: "Strata Salt"
-			subtitle: "Theurgy comes to the Nether."
-			description: [
-				"Distill an &bAlchemical Salt&r from the local strata. The Nether's stone reads as its own source, the base for a whole branch of nether-flavored sulfurs."
-			]
 			rewards: [{
 				id: "0B03302000000070"
 				type: "xp"
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -617,13 +623,9 @@
 		}
 		{
 			dependencies: ["0B03102000000070"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03102000000071"
-			title: "Sulfur: Glowstone"
-			subtitle: "Optional: distill the light."
-			description: [
-				"Extract an &bAlchemical Sulfur&r from glowstone. It opens the nether sulfur set, each one keyed to a block you can only gather down here."
-			]
 			optional: true
 			rewards: [{
 				id: "0B03302000000071"
@@ -631,6 +633,12 @@
 				xp: 15
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -648,13 +656,9 @@
 		}
 		{
 			dependencies: ["0B03102000000071"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03102000000072"
-			title: "Sulfur: Netherrack"
-			subtitle: "Optional: the common stone."
-			description: [
-				"Render a netherrack sulfur. The dimension's bedrock-to-ceiling filler is endless, which makes this the cheapest of the nether sulfurs to keep stocked."
-			]
 			optional: true
 			rewards: [{
 				id: "0B03302000000072"
@@ -662,6 +666,12 @@
 				xp: 15
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -679,13 +689,9 @@
 		}
 		{
 			dependencies: ["0B03102000000072"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03102000000073"
-			title: "Sulfur: Soul Sand"
-			subtitle: "Optional: the clinging sand."
-			description: [
-				"Distill a soul sand sulfur. It captures the strange essence of the soul-bound blocks, a reagent for the recipes that lean on that side of the Nether."
-			]
 			optional: true
 			rewards: [{
 				id: "0B03302000000073"
@@ -693,6 +699,12 @@
 				xp: 15
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -710,13 +722,9 @@
 		}
 		{
 			dependencies: ["0B03102000000073"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03102000000074"
-			title: "Sulfur: Quartz"
-			subtitle: "Optional: nether quartz."
-			description: [
-				"Extract a quartz sulfur. Nether quartz is plentiful in the ceiling and walls, so this one stocks up quickly as you mine."
-			]
 			optional: true
 			rewards: [{
 				id: "0B03302000000074"
@@ -724,6 +732,12 @@
 				xp: 15
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -741,13 +755,9 @@
 		}
 		{
 			dependencies: ["0B03102000000074"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03102000000075"
-			title: "Sulfur: Obsidian"
-			subtitle: "Optional: the hard black stone."
-			description: [
-				"Render an obsidian sulfur. It demands the slow mining obsidian always does, but the reagent feeds the sturdier end of the alchemy recipes."
-			]
 			optional: true
 			rewards: [{
 				id: "0B03302000000075"
@@ -755,6 +765,12 @@
 				xp: 15
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -772,13 +788,9 @@
 		}
 		{
 			dependencies: ["0B03102000000075"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03102000000076"
-			title: "Sulfur: Soul Soil"
-			subtitle: "Optional: the soul-bound soil."
-			description: [
-				"Distill a soul soil sulfur. Gathered from the soul valleys, it is the soil counterpart to the soul sand reagent."
-			]
 			optional: true
 			rewards: [{
 				id: "0B03302000000076"
@@ -786,6 +798,12 @@
 				xp: 15
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -803,13 +821,9 @@
 		}
 		{
 			dependencies: ["0B03102000000076"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03102000000077"
-			title: "Sulfur: Crying Obsidian"
-			subtitle: "Optional: the weeping stone."
-			description: [
-				"Extract a crying obsidian sulfur. The rarer weeping stone gives a scarcer reagent, one the more demanding recipes ask for by name."
-			]
 			optional: true
 			rewards: [{
 				id: "0B03302000000077"
@@ -817,6 +831,12 @@
 				xp: 15
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -834,13 +854,9 @@
 		}
 		{
 			dependencies: ["0B03102000000077"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03102000000078"
-			title: "Sulfur: Magma Cream"
-			subtitle: "Optional: from the slimes."
-			description: [
-				"Render a magma cream sulfur. Its source comes off magma cubes rather than the ground, tying this reagent to the fighting you do down here."
-			]
 			optional: true
 			rewards: [{
 				id: "0B03302000000078"
@@ -848,6 +864,12 @@
 				xp: 15
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -865,13 +887,9 @@
 		}
 		{
 			dependencies: ["0B03102000000078"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03102000000079"
-			title: "Sulfur: Basalt"
-			subtitle: "Optional: the columned stone."
-			description: [
-				"Distill a basalt sulfur. The basalt deltas supply it in bulk, an easy gather once you find that biome."
-			]
 			optional: true
 			rewards: [{
 				id: "0B03302000000079"
@@ -879,6 +897,12 @@
 				xp: 15
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -896,13 +920,9 @@
 		}
 		{
 			dependencies: ["0B03102000000079"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B0310200000007A"
-			title: "Sulfur: Blackstone"
-			subtitle: "Optional: the dark filler."
-			description: [
-				"Extract a blackstone sulfur. It rounds out the nether sulfur set, drawn from the dark stone that fills the dimension's lower reaches."
-			]
 			optional: true
 			rewards: [{
 				id: "0B0330200000007A"
@@ -911,6 +931,12 @@
 			}]
 			shape: "diamond"
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -928,14 +954,9 @@
 		}
 		{
 			dependencies: ["0B03102000000042"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03102000000080"
-			title: "Xpetrified Orb"
-			subtitle: "Optional: experience, petrified."
-			description: [
-				"Forge an &bXpetrified Orb&r in the &bHephaestus Forge&r. It is a dense store of experience the forge presses into solid form, a component the deeper &6Forbidden Arcanus&r crafts require."
-				"Producing it means feeding the forge a real surplus of levels."
-			]
 			optional: true
 			rewards: [{
 				id: "0B03302000000080"
@@ -943,6 +964,12 @@
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -952,7 +979,7 @@
 					second: 20
 				}
 				id: "0B03202000000080"
-				item: { count: 1, id: "forbidden_arcanus:xpetrified_orb" }
+				item: { count: 1, id: "neovitae:blood_pearl" }
 				type: "item"
 			}]
 			x: 1.5d
@@ -960,13 +987,9 @@
 		}
 		{
 			dependencies: ["0B03102000000080"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03102000000081"
-			title: "Stellarite Piece"
-			subtitle: "Optional: a shard of star matter."
-			description: [
-				"Obtain a &bStellarite Piece&r. It is one of &6Forbidden Arcanus&r' rarest materials, fragments of fallen star the highest recipes are built around."
-			]
 			optional: true
 			rewards: [{
 				id: "0B03302000000081"
@@ -974,6 +997,12 @@
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -983,7 +1012,7 @@
 					second: 20
 				}
 				id: "0B03202000000081"
-				item: { count: 1, id: "forbidden_arcanus:stellarite_piece" }
+				item: { count: 1, id: "neovitae:spiritus_gem_petty" }
 				type: "item"
 			}]
 			x: 1.5d
@@ -991,13 +1020,9 @@
 		}
 		{
 			dependencies: ["0B03102000000051"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03102000000082"
-			title: "Nether Ruby Pickaxe"
-			subtitle: "Optional: a gem-cut pick."
-			description: [
-				"Forge a &bNether Ruby Pickaxe&r. Cut from &6Better Nether&r's signature gem, it is a strong mining tool and the base the flaming-ruby upgrade improves on."
-			]
 			optional: true
 			rewards: [{
 				id: "0B03302000000082"
@@ -1005,6 +1030,12 @@
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1022,13 +1053,9 @@
 		}
 		{
 			dependencies: ["0B03102000000082"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03102000000083"
-			title: "Flaming Ruby Template"
-			subtitle: "Optional: a smithing upgrade."
-			description: [
-				"Find the &bFlaming Ruby&r smithing template. Applied at a smithing table it upgrades gear with the gem's fiery properties, &6Better Nether&r's answer to the netherite step."
-			]
 			optional: true
 			rewards: [{
 				id: "0B03302000000083"
@@ -1036,6 +1063,12 @@
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1053,13 +1086,9 @@
 		}
 		{
 			dependencies: ["0B03102000000050"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03102000000084"
-			title: "Agave Medicine"
-			subtitle: "Optional: a nether remedy."
-			description: [
-				"Brew &bAgave Medicine&r from &6Better Nether&r's plants. It is a healing item grown from the dimension's flora, useful when potions run short far from home."
-			]
 			optional: true
 			rewards: [{
 				id: "0B03302000000084"
@@ -1067,6 +1096,12 @@
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1084,13 +1119,9 @@
 		}
 		{
 			dependencies: ["0B03102000000084"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03102000000085"
-			title: "Herbal Medicine"
-			subtitle: "Optional: a stronger remedy."
-			description: [
-				"Prepare &bHerbal Medicine&r. It is the upgraded healing item in &6Better Nether&r's line, worth the extra plants when the fighting gets serious."
-			]
 			optional: true
 			rewards: [{
 				id: "0B03302000000085"
@@ -1098,6 +1129,12 @@
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1115,13 +1152,9 @@
 		}
 		{
 			dependencies: ["0B03102000000050"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03102000000086"
-			title: "Bone Mushroom Spores"
-			subtitle: "Optional: seed a nether fungus."
-			description: [
-				"Gather &bBone Mushroom Spores&r. Planted, they grow one of &6Better Nether&r's fungi, a renewable source of its mushroom materials back at base."
-			]
 			optional: true
 			rewards: [{
 				id: "0B03302000000086"
@@ -1129,6 +1162,12 @@
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1146,13 +1185,9 @@
 		}
 		{
 			dependencies: ["0B03102000000053"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03102000000087"
-			title: "Mungal Spores"
-			subtitle: "Optional: an Alex's Mobs find."
-			description: [
-				"Collect &bMungal Spores&r. They come from &6Alex's Mobs&r' nether creatures, the seed of a fungal line unique to that mod's take on the dimension."
-			]
 			optional: true
 			rewards: [{
 				id: "0B03302000000087"
@@ -1160,6 +1195,12 @@
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1177,13 +1218,9 @@
 		}
 		{
 			dependencies: ["0B03102000000087"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03102000000088"
-			title: "Warped Muscle"
-			subtitle: "Optional: a creature drop."
-			description: [
-				"Obtain &bWarped Muscle&r. It drops from one of &6Alex's Mobs&r' warped-forest beasts, a crafting reagent for that mod's nether recipes."
-			]
 			optional: true
 			rewards: [{
 				id: "0B03302000000088"
@@ -1191,6 +1228,12 @@
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1208,13 +1251,9 @@
 		}
 		{
 			dependencies: ["0B03102000000011"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B031020000000B0"
-			title: "Fungi Forest"
-			subtitle: "Optional: a NetherEx biome."
-			description: [
-				"Find the &bFungi Forest&r. &6NetherEx&r layers its own biomes over the dimension, and this towering fungal woodland is the gateway to that mod's materials and mobs."
-			]
 			optional: true
 			rewards: [{
 				id: "0B033020000000B0"
@@ -1222,6 +1261,12 @@
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1239,13 +1284,9 @@
 		}
 		{
 			dependencies: ["0B031020000000B0"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B031020000000B1"
-			title: "Shroomfruit"
-			subtitle: "Optional: forage the forest."
-			description: [
-				"Pick &bShroomfruit&r from the &bFungi Forest&r. It is an edible &6NetherEx&r crop, a rare bit of food that actually grows in the Nether."
-			]
 			optional: true
 			rewards: [{
 				id: "0B033020000000B1"
@@ -1253,6 +1294,12 @@
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1270,13 +1317,9 @@
 		}
 		{
 			dependencies: ["0B03102000000011"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B031020000000B2"
-			title: "Hoglin Tusk"
-			subtitle: "Optional: a hunted drop."
-			description: [
-				"Take a &bHoglin Tusk&r. &6NetherEx&r uses the tusk as a crafting material, so the hoglins you fight for food give up something useful besides meat."
-			]
 			optional: true
 			rewards: [{
 				id: "0B033020000000B2"
@@ -1284,6 +1327,12 @@
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1301,13 +1350,9 @@
 		}
 		{
 			dependencies: ["0B03102000000011"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B031020000000B3"
-			title: "Ribs"
-			subtitle: "Optional: raw nether meat."
-			description: [
-				"Collect &bRibs&r, a raw food drop from &6NetherEx&r's creatures. On their own they are poor eating, the before to the cooked version."
-			]
 			optional: true
 			rewards: [{
 				id: "0B033020000000B3"
@@ -1315,6 +1360,12 @@
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1332,13 +1383,9 @@
 		}
 		{
 			dependencies: ["0B031020000000B3"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B031020000000B4"
-			title: "Cooked Ribs"
-			subtitle: "Optional: cook them up."
-			description: [
-				"Cook your &bribs&r into &bCooked Ribs&r. Properly fired they become a solid meal, a reliable food source for long stints in the dimension."
-			]
 			optional: true
 			rewards: [{
 				id: "0B033020000000B4"
@@ -1346,6 +1393,12 @@
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1363,13 +1416,9 @@
 		}
 		{
 			dependencies: ["0B03102000000011"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B031020000000B5"
-			title: "Kiln"
-			subtitle: "Optional: NetherEx's furnace."
-			description: [
-				"Build the &6NetherEx&r &bKiln&r. It is the mod's dedicated smelting block, processing its ores and foods more efficiently than a plain &bfurnace&r down here."
-			]
 			optional: true
 			rewards: [{
 				id: "0B033020000000B5"
@@ -1377,6 +1426,12 @@
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b

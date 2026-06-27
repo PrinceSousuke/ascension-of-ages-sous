@@ -428,29 +428,29 @@
 	quest.0B03102000000021.quest_subtitle: "Find the blaze-haunted halls."
 	quest.0B03102000000021.title: "A Nether Fortress"
 	quest.0B03102000000040.quest_desc: [
-		"Build the &bHephaestus Forge&r. It is the centerpiece of &6Forbidden Arcanus&r: fuel it with &bAureal&r and it combusts materials into things no ordinary furnace can make."
-		"Everything in this lane, the divine metal especially, comes out of this block."
+		"Place a &bSpeed Rune&r. Neo Vitae's runes are the first permanent installations in your hellforged metal work, attuned blocks that hold the resonance the later steps demand."
+		"This one unlocks the lane; the metal follows."
 	]
-	quest.0B03102000000040.quest_subtitle: "Forbidden Arcanus' divine furnace."
-	quest.0B03102000000040.title: "Hephaestus Forge"
+	quest.0B03102000000040.quest_subtitle: "Neo Vitae rune — the lane's entry."
+	quest.0B03102000000040.title: "Speed Rune"
 	quest.0B03102000000041.quest_desc: [
-		"Craft &bMundabitur Dust&r. The forge uses it as a purifying agent, the catalyst that strips the impurity out of base materials before they are reforged."
-		"You will spend it making the divine metal a step from here."
+		"Craft &bHellforged Dust&r. Drawn from nether materials and refined through &6Neo Vitae&r's process, it is the intermediate reagent the ingot requires."
+		"Keep a stock; you will spend it before this lane is done."
 	]
-	quest.0B03102000000041.quest_subtitle: "The cleansing reagent."
-	quest.0B03102000000041.title: "Mundabitur Dust"
+	quest.0B03102000000041.quest_subtitle: "Nether-refined reagent dust."
+	quest.0B03102000000041.title: "Hellforged Dust"
 	quest.0B03102000000042.quest_desc: [
-		"Craft a &bDeorum Ingot&r from gold, &bMundabitur Dust&r, arcane crystal dust, and charcoal at a plain crafting table. Deorum is Forbidden Arcanus' divine metal, the base for its strongest tools and armor."
-		"Reaching it confirms your arcane crystal and dust supply lines both work."
+		"Smelt a &bHellforged Ingot&r from the dust. It is the core metal of &6Neo Vitae&r's nether tier, the material the parts and block downstream are built from."
+		"Reaching it confirms your dust supply line works."
 	]
-	quest.0B03102000000042.quest_subtitle: "Gold, made divine."
-	quest.0B03102000000042.title: "Deorum Ingot"
-	quest.0B03102000000046.quest_desc: ["Break a &bDeorum Ingot&r into nuggets. The smaller denomination is what several finer recipes call for, so keep a few on hand."]
-	quest.0B03102000000046.quest_subtitle: "The metal in small change."
-	quest.0B03102000000046.title: "Deorum Nugget"
-	quest.0B03102000000047.quest_desc: ["Craft &bGilded Chiseled Polished Darkstone&r. It is a showpiece block, dark stone inlaid with divine metal, for anyone who wants their forge room to look the part."]
-	quest.0B03102000000047.quest_subtitle: "Deorum-trimmed stone."
-	quest.0B03102000000047.title: "Gilded Darkstone"
+	quest.0B03102000000042.quest_subtitle: "Neo Vitae's nether-forged metal."
+	quest.0B03102000000042.title: "Hellforged Ingot"
+	quest.0B03102000000046.quest_desc: ["Craft &bHellforged Parts&r from the ingot. The smaller component form is what the finer &6Neo Vitae&r recipes call for — keep a few in reserve."]
+	quest.0B03102000000046.quest_subtitle: "Ingot broken into components."
+	quest.0B03102000000046.title: "Hellforged Parts"
+	quest.0B03102000000047.quest_desc: ["Craft a &bHellforged Block&r. It is a dense storage and decoration form of the metal, the showpiece that proves you have the ingot supply to spare."]
+	quest.0B03102000000047.quest_subtitle: "Dense hellforged storage block."
+	quest.0B03102000000047.title: "Hellforged Block"
 	quest.0B03102000000050.quest_desc: ["Mine &bCincinnasite&r. It is the workhorse material of &6Better Nether&r, the mod that fills the dimension with new biomes and stone, and most of its recipes trace back to this ore."]
 	quest.0B03102000000050.quest_subtitle: "Better Nether base ore."
 	quest.0B03102000000050.title: "Cincinnasite"
@@ -518,14 +518,14 @@
 	quest.0B0310200000007A.quest_subtitle: "Blackstone sulfur reagent."
 	quest.0B0310200000007A.title: "Sulfur: Blackstone"
 	quest.0B03102000000080.quest_desc: [
-		"Condense an &bXpetrified Orb&r. Create an Obelisk with &bMundabitur Dust&r and let its black hole drink your experience orbs; it presses them into solid form, a component the deeper &6Forbidden Arcanus&r crafts require."
-		"Producing it means feeding the obelisk a real surplus of levels."
+		"Obtain a &bBlood Pearl&r from &6Neo Vitae&r. It crystallises from blood magic processes and is one of the mod's rarer optional outputs, a gem forged from essence rather than stone."
+		"Acquiring one shows the blood-side of the hellforged lane is in reach."
 	]
-	quest.0B03102000000080.quest_subtitle: "Petrified experience item."
-	quest.0B03102000000080.title: "Xpetrified Orb"
-	quest.0B03102000000081.quest_desc: ["Obtain a &bStellarite Piece&r. It is one of &6Forbidden Arcanus&r' rarest materials, fragments of fallen star the highest recipes are built around."]
-	quest.0B03102000000081.quest_subtitle: "Forbidden Arcanus star material."
-	quest.0B03102000000081.title: "Stellarite Piece"
+	quest.0B03102000000080.quest_subtitle: "Blood-magic crystallised gem."
+	quest.0B03102000000080.title: "Blood Pearl"
+	quest.0B03102000000081.quest_desc: ["Obtain a &bPetty Spiritus Gem&r. &6Neo Vitae&r's spiritus gems are condensed spirit essence — even the smallest grade is a rare find and a component in the mod's highest crafts."]
+	quest.0B03102000000081.quest_subtitle: "Petty-grade Neo Vitae spirit gem."
+	quest.0B03102000000081.title: "Spiritus Gem (Petty)"
 	quest.0B03102000000082.quest_desc: ["Forge a &bNether Ruby Pickaxe&r. Cut from &6Better Nether&r's signature gem, it is a strong mining tool and the base the flaming-ruby upgrade improves on."]
 	quest.0B03102000000082.quest_subtitle: "Nether Ruby tool."
 	quest.0B03102000000082.title: "Nether Ruby Pickaxe"
