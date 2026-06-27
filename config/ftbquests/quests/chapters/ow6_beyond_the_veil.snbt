@@ -5,118 +5,38 @@
 	group: "080F7BA9FFB8FC07"
 	hide_quest_until_deps_complete: true
 	icon: {
-		id: "betterend:eternal_crystal"
+		id: "mekanismgenerators:fusion_reactor_controller"
 	}
 	id: "4256010000000000"
-	order_index: 4
+	order_index: 5
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["4256010000001003"]
+			dependencies: [
+				"4454010000010005"
+				"4C59010000010004"
+			]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: {
-				id: "betterend:eternal_crystal"
+				id: "modern_industrialization:fusion_reactor"
 			}
-			id: "4256010000001002"
+			id: "4256010000010001"
 			rewards: [{
-				id: "4256010000003002"
+				id: "4256030000010101"
 				type: "xp"
-				xp: 150
-			}]
-			shape: "diamond"
-			tasks: [{
-				SkillsLevel: {
-					category: ""
-					check: 0b
-					comparison: "GREATER_OR_EQUAL"
-					first: 10
-					mode: "TOTAL_LEVEL"
-					second: 20
-				}
-				id: "4256010000002002"
-				item: { count: 1, id: "betterend:eternal_crystal" }
-				type: "item"
-			}]
-			x: 5.0d
-			y: -5.0d
-		}
-		{
-			dependencies: ["4C57010000010001"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "betterend:aeternium_ingot"
-			}
-			id: "4256010000001003"
-			rewards: [{
-				id: "4256010000003003"
-				type: "xp"
-				xp: 150
+				xp: 50
 			}]
 			shape: "rsquare"
-			size: 1.5d
-			tasks: [{
-				SkillsLevel: {
-					category: ""
-					check: 0b
-					comparison: "GREATER_OR_EQUAL"
-					first: 10
-					mode: "TOTAL_LEVEL"
-					second: 20
-				}
-				id: "4256010000002003"
-				item: { count: 1, id: "betterend:aeternium_ingot" }
-				type: "item"
-			}]
-			x: 2.5d
-			y: -6.0d
-		}
-		{
-			dependencies: [
-				"4256010000001002"
-				"39E394F665C85341"
-			]
-			hide_until_deps_complete: true
-			icon: {
-				id: "betterend:aeternium_forged_plate"
-			}
-			id: "4256010000001004"
-			rewards: [{
-				id: "4256010000003004"
-				type: "xp"
-				xp: 150
-			}]
-			tasks: [{
-				SkillsLevel: {
-					category: ""
-					check: 0b
-					comparison: "GREATER_OR_EQUAL"
-					first: 10
-					mode: "TOTAL_LEVEL"
-					second: 20
-				}
-				id: "4256010000002004"
-				item: { count: 1, id: "betterend:aeternium_forged_plate" }
-				type: "item"
-			}]
-			x: 7.5d
-			y: -5.0d
-		}
-		{
-			dependencies: ["4256010000001004"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "betterend:aeternium_chestplate"
-			}
-			id: "4256010000001005"
-			rewards: [{
-				id: "4256010000003005"
-				type: "xp"
-				xp: 500
-			}]
-			shape: "gear"
-			size: 1.5d
+			size: 1.0d
 			tasks: [
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -125,11 +45,17 @@
 						mode: "TOTAL_LEVEL"
 						second: 20
 					}
-					id: "4256010000002005"
-					item: { count: 1, id: "betterend:aeternium_helmet" }
+					id: "4256020000010101"
+					item: { count: 1, id: "modern_industrialization:fusion_reactor" }
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -138,11 +64,17 @@
 						mode: "TOTAL_LEVEL"
 						second: 20
 					}
-					id: "425601000000200A"
-					item: { count: 1, id: "betterend:aeternium_chestplate" }
+					id: "4256020000010102"
+					item: { count: 1, id: "modern_industrialization:fusion_chamber" }
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -151,755 +83,340 @@
 						mode: "TOTAL_LEVEL"
 						second: 20
 					}
-					id: "425601000000200B"
-					item: { count: 1, id: "betterend:aeternium_leggings" }
-					type: "item"
-				}
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "425601000000200C"
-					item: { count: 1, id: "betterend:aeternium_boots" }
-					type: "item"
-				}
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "425601000000200D"
-					item: { count: 1, id: "betterend:aeternium_upgrade_smithing_template" }
+					id: "4256020000010103"
+					item: { count: 1, id: "modern_industrialization:plasma_turbine" }
 					type: "item"
 				}
 			]
-			x: 10.0d
-			y: -5.0d
-		}
-		{
-			dependencies: ["4256010000010105"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "betterend:infusion_pedestal"
-			}
-			id: "4651A4663CCFF1E8"
-			rewards: [{
-				id: "1DBB88E210604BB3"
-				type: "xp"
-				xp: 50
-			}]
-			tasks: [{
-				SkillsLevel: {
-					category: ""
-					check: 0b
-					comparison: "GREATER_OR_EQUAL"
-					first: 10
-					mode: "TOTAL_LEVEL"
-					second: 20
-				}
-				id: "3E2085755FE4D4CD"
-				item: { count: 1, id: "betterend:infusion_pedestal" }
-				type: "item"
-			}]
-			x: 7.5d
-			y: -0.75d
-		}
-		{
-			dependencies: [
-				"4256010000010200"
-				"5E11A3CD8044F7EA"
-				"6A451493A964873E"
-			]
-			hide_until_deps_complete: true
-			id: "25245C85CEA5F613"
-			rewards: [{
-				id: "36C86E154D6C46F9"
-				type: "xp"
-				xp: 75
-			}]
-			tasks: [{
-				SkillsLevel: {
-					category: ""
-					check: 0b
-					comparison: "GREATER_OR_EQUAL"
-					first: 10
-					mode: "TOTAL_LEVEL"
-					second: 20
-				}
-				id: "14638B205A6E4A90"
-				item: { count: 1, id: "betterend:thallasium_ingot" }
-				type: "item"
-			}]
-			x: 7.5d
-			y: 3.5d
-		}
-		{
-			dependencies: [
-				"4256010000010200"
-				"00B7F9EBC0426F32"
-				"3BE223E78D122C17"
-				"7B01000000000001"
-			]
-			hide_until_deps_complete: true
-			id: "42A905649E3D66A0"
-			rewards: [{
-				id: "36F839E4F1B9C230"
-				type: "xp"
-				xp: 75
-			}]
-			tasks: [
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "1B52F710FE932BAF"
-					item: { count: 1, id: "betterend:shadow_berry_cooked" }
-					type: "item"
-				}
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "5ED9EE53037800FB"
-					item: { count: 1, id: "betterend:blossom_berry" }
-					type: "item"
-				}
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "344F844E65F64374"
-					item: { count: 1, id: "betterend:end_fish_raw" }
-					type: "item"
-				}
-			]
-			x: 10.0d
-			y: 2.0d
-		}
-		{
-			dependencies: ["4256010000010200"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "betterend:cyan_moss"
-			}
-			id: "7B0200000000000A"
-			rewards: [{
-				id: "7B0200000000100A"
-				type: "xp"
-				xp: 50
-			}]
-			tasks: [
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "7B0200000000020A"
-					item: { count: 1, id: "betterend:cyan_moss" }
-					type: "item"
-				}
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "7B0200000000030A"
-					item: { count: 1, id: "betterend:amber_root_seed" }
-					type: "item"
-				}
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "7B0200000000040A"
-					item: { count: 1, id: "betterend:chorus_grass" }
-					type: "item"
-				}
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "7B0200000000050A"
-					item: { count: 1, id: "betterend:blossom_berry_seed" }
-					type: "item"
-				}
-			]
-			x: 7.5d
-			y: 4.0d
-		}
-		{
-			dependencies: ["7B0200000000000A"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "betterend:shadow_berry"
-			}
-			id: "7B0200000000000D"
-			rewards: [{
-				id: "7B0200000000100D"
-				type: "xp"
-				xp: 50
-			}]
-			tasks: [{
-				SkillsLevel: {
-					category: ""
-					check: 0b
-					comparison: "GREATER_OR_EQUAL"
-					first: 10
-					mode: "TOTAL_LEVEL"
-					second: 20
-				}
-				id: "7B0200000000200D"
-				item: { count: 1, id: "betterend:shadow_berry" }
-				type: "item"
-			}]
-			x: 10.0d
-			y: 4.0d
-		}
-		{
-			dependencies: [
-				"625A3B821819029F"
-				"39E394F665C85341"
-			]
-			hide_until_deps_complete: true
-			icon: {
-				id: "betterend:aeternium_pickaxe"
-			}
-			id: "7B02000000000001"
-			rewards: [{
-				id: "7B02000000001001"
-				type: "xp"
-				xp: 50
-			}]
-			size: 1.5d
-			tasks: [{
-				SkillsLevel: {
-					category: ""
-					check: 0b
-					comparison: "GREATER_OR_EQUAL"
-					first: 10
-					mode: "TOTAL_LEVEL"
-					second: 20
-				}
-				id: "7B02000000002001"
-				item: { count: 1, id: "betterend:aeternium_pickaxe" }
-				type: "item"
-			}]
-			x: 10.0d
-			y: -7.0d
-		}
-		{
-			dependencies: ["7B02000000000001"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "betterend:aeternium_axe"
-			}
-			id: "7B02000000000002"
-			rewards: [{
-				id: "7B02000000001002"
-				type: "xp"
-				xp: 50
-			}]
-			tasks: [{
-				SkillsLevel: {
-					category: ""
-					check: 0b
-					comparison: "GREATER_OR_EQUAL"
-					first: 10
-					mode: "TOTAL_LEVEL"
-					second: 20
-				}
-				id: "7B02000000002002"
-				item: { count: 1, id: "betterend:aeternium_axe" }
-				type: "item"
-			}]
-			x: 12.5d
-			y: -7.5d
-		}
-		{
-			dependencies: ["7B02000000000001"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "betterend:aeternium_shovel"
-			}
-			id: "7B02000000000003"
-			rewards: [{
-				id: "7B02000000001003"
-				type: "xp"
-				xp: 50
-			}]
-			tasks: [{
-				SkillsLevel: {
-					category: ""
-					check: 0b
-					comparison: "GREATER_OR_EQUAL"
-					first: 10
-					mode: "TOTAL_LEVEL"
-					second: 20
-				}
-				id: "7B02000000002003"
-				item: { count: 1, id: "betterend:aeternium_shovel" }
-				type: "item"
-			}]
-			x: 12.5d
-			y: -7.0d
-		}
-		{
-			dependencies: ["7B02000000000001"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "betterend:aeternium_hoe"
-			}
-			id: "7B02000000000004"
-			rewards: [{
-				id: "7B02000000001004"
-				type: "xp"
-				xp: 50
-			}]
-			tasks: [{
-				SkillsLevel: {
-					category: ""
-					check: 0b
-					comparison: "GREATER_OR_EQUAL"
-					first: 10
-					mode: "TOTAL_LEVEL"
-					second: 20
-				}
-				id: "7B02000000002004"
-				item: { count: 1, id: "betterend:aeternium_hoe" }
-				type: "item"
-			}]
-			x: 12.5d
-			y: -6.5d
-		}
-		{
-			dependencies: ["4256010000001005"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "betterend:aeternium_block"
-			}
-			id: "7B02000000000006"
-			rewards: [{
-				id: "7B02000000001006"
-				type: "xp"
-				xp: 50
-			}]
-			tasks: [{
-				SkillsLevel: {
-					category: ""
-					check: 0b
-					comparison: "GREATER_OR_EQUAL"
-					first: 10
-					mode: "TOTAL_LEVEL"
-					second: 20
-				}
-				id: "7B02000000002006"
-				item: { count: 1, id: "betterend:aeternium_block" }
-				type: "item"
-			}]
-			x: 12.5d
-			y: -5.0d
-		}
-		{
-			dependencies: ["4C57010000010001"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "oritech:enderic_lens"
-			}
-			id: "4256010000010100"
-			rewards: [{
-				id: "4256010000080100"
-				type: "xp"
-				xp: 200
-			}]
-			shape: "hexagon"
-			size: 1.5d
-			tasks: [{
-				SkillsLevel: {
-					category: ""
-					check: 0b
-					comparison: "GREATER_OR_EQUAL"
-					first: 10
-					mode: "TOTAL_LEVEL"
-					second: 20
-				}
-				id: "4256010000070100"
-				item: { count: 1, id: "oritech:enderic_lens" }
-				type: "item"
-			}]
-			x: 2.5d
-			y: -1.25d
-		}
-		{
-			dependencies: ["4256010000010100"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "oritech:endstone_platinum_ore"
-			}
-			id: "4256010000010101"
-			rewards: [{
-				id: "4256010000080101"
-				type: "xp"
-				xp: 100
-			}]
-			tasks: [{
-				SkillsLevel: {
-					category: ""
-					check: 0b
-					comparison: "GREATER_OR_EQUAL"
-					first: 10
-					mode: "TOTAL_LEVEL"
-					second: 20
-				}
-				id: "4256010000070101"
-				item: { count: 1, id: "oritech:endstone_platinum_ore" }
-				type: "item"
-			}]
-			x: 7.5d
+			x: -4.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["4256010000010100"]
+			dependencies: ["4256010000010001"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: {
-				id: "oritech:still_strange_matter_bucket"
+				id: "modern_industrialization:quantum_machine_hull"
 			}
-			id: "4256010000010102"
+			id: "4256010000010002"
 			rewards: [{
-				id: "4256010000080102"
+				id: "4256030000010201"
 				type: "xp"
-				xp: 150
+				xp: 50
 			}]
-			shape: "hexagon"
-			size: 1.5d
-			tasks: [{
-				SkillsLevel: {
-					category: ""
-					check: 0b
-					comparison: "GREATER_OR_EQUAL"
-					first: 10
-					mode: "TOTAL_LEVEL"
-					second: 20
-				}
-				id: "4256010000070102"
-				item: { count: 1, id: "oritech:still_strange_matter_bucket" }
-				type: "item"
-			}]
-			x: 5.0d
-			y: -3.12d
-		}
-		{
-			dependencies: ["4256010000010102"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "oritech:shrinker_block"
-			}
-			id: "4256010000010103"
-			rewards: [{
-				id: "4256010000080103"
-				type: "xp"
-				xp: 200
-			}]
-			shape: "gear"
+			shape: "rsquare"
 			size: 1.0d
-			tasks: [{
-				SkillsLevel: {
-					category: ""
-					check: 0b
-					comparison: "GREATER_OR_EQUAL"
-					first: 10
-					mode: "TOTAL_LEVEL"
-					second: 20
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4256020000010201"
+					item: { count: 1, id: "modern_industrialization:quantum_machine_hull" }
+					type: "item"
 				}
-				block: { count: 1, id: "oritech:shrinker_block" }
-				id: "4256010000070103"
-				type: "place_block"
-				value: 1L
-			}]
-			x: 7.5d
-			y: -3.75d
-		}
-		{
-			dependencies: ["4256010000010100"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "oritechthings:addon_block_cross_dimensional"
-			}
-			id: "4256010000010105"
-			rewards: [{
-				id: "4256010000080105"
-				type: "xp"
-				xp: 250
-			}]
-			shape: "gear"
-			size: 1.5d
-			tasks: [{
-				SkillsLevel: {
-					category: ""
-					check: 0b
-					comparison: "GREATER_OR_EQUAL"
-					first: 10
-					mode: "TOTAL_LEVEL"
-					second: 20
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4256020000010202"
+					item: { count: 1, id: "modern_industrialization:replicator" }
+					type: "item"
 				}
-				id: "4256010000070105"
-				item: { count: 1, id: "oritechthings:addon_block_cross_dimensional" }
-				type: "item"
-			}]
-			x: 5.0d
-			y: -1.38d
-		}
-		{
-			dependencies: ["4256010000010105"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "oritech:drone_port_block"
-			}
-			id: "4256010000010106"
-			rewards: [{
-				id: "4256010000080106"
-				type: "xp"
-				xp: 150
-			}]
-			tasks: [{
-				SkillsLevel: {
-					category: ""
-					check: 0b
-					comparison: "GREATER_OR_EQUAL"
-					first: 10
-					mode: "TOTAL_LEVEL"
-					second: 20
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4256020000010203"
+					item: { count: 1, id: "modern_industrialization:superconductor_coil" }
+					type: "item"
 				}
-				id: "4256010000070106"
-				item: { count: 1, id: "oritech:drone_port_block" }
-				type: "item"
-			}]
-			x: 7.5d
-			y: -2.0d
-		}
-		{
-			dependencies: ["4256010000010100"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "oritech:low_yield_nuke"
-			}
-			id: "425601000001010A"
-			rewards: [{
-				id: "425601000008010A"
-				type: "xp"
-				xp: 200
-			}]
-			shape: "hexagon"
-			tasks: [{
-				SkillsLevel: {
-					category: ""
-					check: 0b
-					comparison: "GREATER_OR_EQUAL"
-					first: 10
-					mode: "TOTAL_LEVEL"
-					second: 20
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4256020000010204"
+					item: { count: 1, id: "moderndynamics:superconductor_cable" }
+					type: "item"
 				}
-				id: "425601000007010A"
-				item: { count: 1, id: "oritech:low_yield_nuke" }
-				type: "item"
-			}]
-			x: 7.5d
-			y: 1.25d
-		}
-		{
-			dependencies: ["425601000001010A"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "oritech:nuke"
-			}
-			id: "425601000001010B"
-			rewards: [{
-				id: "425601000008010B"
-				type: "xp"
-				xp: 250
-			}]
-			tasks: [{
-				SkillsLevel: {
-					category: ""
-					check: 0b
-					comparison: "GREATER_OR_EQUAL"
-					first: 10
-					mode: "TOTAL_LEVEL"
-					second: 20
-				}
-				id: "425601000007010B"
-				item: { count: 1, id: "oritech:nuke" }
-				type: "item"
-			}]
-			x: 10.0d
-			y: 1.0d
-		}
-		{
-			dependencies: ["4256010000010102"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "oritech:wither_crop_block"
-			}
-			id: "425601000001010C"
-			rewards: [{
-				id: "425601000008010C"
-				type: "xp"
-				xp: 100
-			}]
-			tasks: [{
-				SkillsLevel: {
-					category: ""
-					check: 0b
-					comparison: "GREATER_OR_EQUAL"
-					first: 10
-					mode: "TOTAL_LEVEL"
-					second: 20
-				}
-				id: "425601000007010C"
-				item: { count: 1, id: "oritech:wither_crop_block" }
-				type: "item"
-			}]
-			x: 7.5d
-			y: -2.5d
-		}
-		{
-			dependencies: ["4256010000010105"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "oritech:resource_node_lapis"
-			}
-			id: "425601000001010D"
-			rewards: [{
-				id: "425601000008010D"
-				type: "xp"
-				xp: 75
-			}]
-			tasks: [{
-				SkillsLevel: {
-					category: ""
-					check: 0b
-					comparison: "GREATER_OR_EQUAL"
-					first: 10
-					mode: "TOTAL_LEVEL"
-					second: 20
-				}
-				id: "425601000007010D"
-				item: { count: 1, id: "oritech:resource_node_lapis" }
-				type: "item"
-			}]
-			x: 7.5d
-			y: -1.5d
-		}
-		{
-			dependencies: ["4256010000010101"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "oritech:resource_node_emerald"
-			}
-			id: "425601000001010E"
-			rewards: [{
-				id: "425601000008010E"
-				type: "xp"
-				xp: 75
-			}]
-			tasks: [{
-				SkillsLevel: {
-					category: ""
-					check: 0b
-					comparison: "GREATER_OR_EQUAL"
-					first: 10
-					mode: "TOTAL_LEVEL"
-					second: 20
-				}
-				id: "425601000007010E"
-				item: { count: 1, id: "oritech:resource_node_emerald" }
-				type: "item"
-			}]
-			x: 10.0d
+			]
+			x: -1.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["4256010000010100"]
+			dependencies: ["4256010000010002"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: {
-				id: "oritech:exo_chestplate"
+				id: "mekanismgenerators:fusion_reactor_controller"
 			}
-			id: "4256010000010111"
+			id: "4256010000010003"
 			rewards: [{
-				id: "4256010000080111"
+				id: "4256030000010301"
 				type: "xp"
-				xp: 100
+				xp: 50
 			}]
-			tasks: [{
-				SkillsLevel: {
-					category: ""
-					check: 0b
-					comparison: "GREATER_OR_EQUAL"
-					first: 10
-					mode: "TOTAL_LEVEL"
-					second: 20
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4256020000010301"
+					item: { count: 1, id: "mekanismgenerators:fusion_reactor_controller" }
+					type: "item"
 				}
-				id: "4256010000070111"
-				item: { count: 1, id: "oritech:exo_chestplate" }
-				type: "item"
-			}]
-			x: 10.0d
-			y: 0.5d
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4256020000010302"
+					item: { count: 1, id: "mekanismgenerators:fusion_reactor_frame" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4256020000010303"
+					item: { count: 1, id: "mekanismgenerators:fusion_reactor_port" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4256020000010304"
+					item: { count: 1, id: "mekanismgenerators:laser_focus_matrix" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4256020000010305"
+					item: { count: 1, id: "mekanismgenerators:hohlraum" }
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 0.0d
 		}
 		{
-			dependencies: ["425601000001010A"]
+			dependencies: ["4C58010000010005"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: {
-				id: "deeperdarker:dark_heart_gloomsherd"
+				id: "cataclysm:tidal_claws"
 			}
-			id: "4256010000010114"
+			id: "4256010000010004"
+			rewards: [
+				{
+					auto: "enabled"
+					command: "/advancement grant {p} only aoa:journey/leviathan"
+					id: "67C227CAF49889C5"
+					permission_level: 2
+					silent: true
+					team_reward: true
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/astages add {p} leviathan_defeated true true"
+					icon: {
+						id: "cataclysm:tidal_claws"
+					}
+					id: "4256030000010402"
+					permission_level: 2
+					silent: true
+					team_reward: true
+					type: "command"
+				}
+			]
+			shape: "diamond"
+			size: 1.0d
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					entity: "cataclysm:the_leviathan"
+					entity_vis_idle_mode: "USE_GLOBAL"
+					entity_vis_offset_x: 0.0f
+					entity_vis_offset_y: 0.0f
+					entity_vis_rotation: 0.0f
+					entity_vis_silhouette_mode: "NONE"
+					entity_vis_size: 1.0f
+					entity_vis_spin_mode: "USE_GLOBAL"
+					entity_vis_use_as_quest_icon: false
+					entity_vis_walk_mode: "USE_GLOBAL"
+					id: "4256020000010401"
+					type: "kill"
+					value: 1L
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4256020000010402"
+					item: { count: 1, id: "cataclysm:tidal_claws" }
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4256010000010003"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "mekanismgenerators:hohlraum"
+			}
+			id: "4256010000010005"
 			rewards: [{
-				id: "4256010000080114"
-				type: "xp"
-				xp: 100
+				auto: "enabled"
+				command: "/astages add {p} ow_beyond_the_veil_theme_complete true true"
+				icon: {
+					id: "mekanismgenerators:hohlraum"
+				}
+				id: "4256030000010502"
+				permission_level: 2
+				silent: true
+				team_reward: true
+				type: "command"
 			}]
+			shape: "gear"
+			size: 1.3d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -908,31 +425,76 @@
 					mode: "TOTAL_LEVEL"
 					second: 20
 				}
-				id: "4256010000070114"
-				item: { count: 1, id: "deeperdarker:dark_heart_gloomsherd" }
+				id: "4256020000010501"
+				item: { count: 1, id: "mekanismgenerators:hohlraum" }
 				type: "item"
 			}]
-			x: 10.0d
-			y: 1.5d
+			x: 5.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
-				"4256010000010102"
-				"4256010000010106"
+				"4C57010000010004"
+				"4C58010000010005"
+				"4454010000010005"
+				"4C59010000010004"
+				"4443010000010006"
+				"4256010000010004"
+				"4256010000010005"
 			]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: {
-				id: "oritech:unholy_intelligence"
+				id: "cataclysm:tidal_claws"
 			}
-			id: "4256010000010117"
-			rewards: [{
-				id: "4256010000080117"
-				type: "xp"
-				xp: 500
-			}]
+			id: "4256010000010006"
+			rewards: [
+				{
+					auto: "enabled"
+					command: "/astages add {p} ow_capstone_complete true true"
+					icon: {
+						id: "cataclysm:tidal_claws"
+					}
+					id: "4256030000010604"
+					permission_level: 2
+					silent: true
+					team_reward: true
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/astages add {p} ascension true true"
+					icon: {
+						id: "minecraft:nether_star"
+					}
+					id: "4256030000010602"
+					permission_level: 2
+					silent: true
+					team_reward: true
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/advancement grant {p} only aoa:age/ascension"
+					icon: {
+						id: "minecraft:nether_star"
+					}
+					id: "4256030000010603"
+					permission_level: 2
+					silent: true
+					team_reward: true
+					type: "command"
+				}
+			]
 			shape: "gear"
-			size: 1.0d
+			size: 1.6d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -941,75 +503,74 @@
 					mode: "TOTAL_LEVEL"
 					second: 20
 				}
-				id: "4256010000070117"
-				item: { count: 1, id: "oritech:unholy_intelligence" }
+				id: "4256020000010601"
+				item: { count: 1, id: "cataclysm:tidal_claws" }
 				type: "item"
 			}]
-			x: 12.5d
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4256010000010001"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "neovitae:sentient_sword"
+			}
+			id: "4256011000EE0001"
+			optional: true
+			rewards: [{
+				id: "4256013000EE0001"
+				type: "xp"
+				xp: 200
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4256012000EE0001"
+				item: { count: 1, id: "neovitae:sentient_sword" }
+				type: "item"
+			}]
+			x: -4.0d
 			y: -3.0d
 		}
 		{
-			dependencies: [
-				"4C57010000010001"
-				"4D5301000001000A"
-			]
-			hide_until_deps_complete: false
-			icon: {
-				id: "ifeu:rubber_sapling"
-			}
-			id: "4256010000010200"
-			rewards: [{
-				id: "4256010000030200"
-				type: "xp"
-				xp: 200
-			}]
-			shape: "gear"
-			size: 1.5d
-			tasks: [
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "4256010000020200"
-					item: { count: 1, id: "ifeu:rubber_sapling" }
-					type: "item"
-				}
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "4256010000020300"
-					item: { count: 1, id: "ifeu:rubber_log" }
-					type: "item"
-				}
-			]
-			x: 2.5d
-			y: 4.81d
-		}
-		{
-			dependencies: ["4256010000010200"]
+			dependencies: ["4256011000EE0001"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: {
-				id: "ifeu:sacred_rubber_sapling"
+				id: "neovitae:sentient_helmet"
 			}
-			id: "4256010000010201"
+			id: "4256011000EE0002"
 			optional: true
 			rewards: [{
-				id: "4256010000030201"
+				id: "4256013000EE0002"
 				type: "xp"
-				xp: 100
+				xp: 300
 			}]
+			shape: "rsquare"
+			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1018,129 +579,36 @@
 					mode: "TOTAL_LEVEL"
 					second: 20
 				}
-				id: "4256010000020201"
-				item: { count: 1, id: "ifeu:sacred_rubber_sapling" }
+				id: "4256012000EE0002"
+				item: { components: { "ftbfiltersystem:filter": "root(or(item(neovitae:sentient_helmet),item(neovitae:sentient_plate),item(neovitae:sentient_leggings),item(neovitae:sentient_boots)))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 5.0d
-			y: 4.5d
+			x: -4.0d
+			y: -5.0d
 		}
 		{
-			dependencies: ["4256010000010200"]
+			dependencies: ["4256011000EE0002"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: {
-				id: "ifeu:precision_crafting_table"
+				id: "neovitae:sentient_pickaxe"
 			}
-			id: "4256010000010202"
+			id: "4256011000EE0003"
+			optional: true
 			rewards: [{
-				id: "4256010000030202"
-				type: "xp"
-				xp: 200
-			}]
-			shape: "hexagon"
-			size: 1.5d
-			tasks: [
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "4256010000020202"
-					item: { count: 1, id: "ifeu:precision_crafting_table" }
-					type: "item"
-				}
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "4256010000020302"
-					item: { count: 1, id: "ifeu:fluid_crafting_table" }
-					type: "item"
-				}
-			]
-			x: 5.0d
-			y: 6.38d
-		}
-		{
-			dependencies: ["4256010000010202"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "ifeu:big_dissolution_chamber"
-			}
-			id: "4256010000010203"
-			rewards: [{
-				id: "4256010000030203"
-				type: "xp"
-				xp: 150
-			}]
-			tasks: [{
-				SkillsLevel: {
-					category: ""
-					check: 0b
-					comparison: "GREATER_OR_EQUAL"
-					first: 10
-					mode: "TOTAL_LEVEL"
-					second: 20
-				}
-				id: "4256010000020203"
-				item: { count: 1, id: "ifeu:big_dissolution_chamber" }
-				type: "item"
-			}]
-			x: 7.5d
-			y: 5.5d
-		}
-		{
-			dependencies: ["4256010000010202"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "ifeu:fermenter"
-			}
-			id: "4256010000010204"
-			rewards: [{
-				id: "4256010000030204"
-				type: "xp"
-				xp: 100
-			}]
-			tasks: [{
-				SkillsLevel: {
-					category: ""
-					check: 0b
-					comparison: "GREATER_OR_EQUAL"
-					first: 10
-					mode: "TOTAL_LEVEL"
-					second: 20
-				}
-				id: "4256010000020204"
-				item: { count: 1, id: "ifeu:fermenter" }
-				type: "item"
-			}]
-			x: 7.5d
-			y: 6.5d
-		}
-		{
-			dependencies: ["4256010000010202"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "ifeu:infuser"
-			}
-			id: "4256010000010205"
-			rewards: [{
-				id: "4256010000030205"
+				id: "4256013000EE0003"
 				type: "xp"
 				xp: 250
 			}]
-			shape: "hexagon"
-			size: 1.5d
+			shape: "rsquare"
+			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1149,481 +617,153 @@
 					mode: "TOTAL_LEVEL"
 					second: 20
 				}
-				id: "4256010000020205"
-				item: { count: 1, id: "ifeu:infuser" }
+				id: "4256012000EE0003"
+				item: { components: { "ftbfiltersystem:filter": "root(or(item(neovitae:sentient_pickaxe),item(neovitae:sentient_axe)))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 7.5d
-			y: 7.25d
+			x: -4.0d
+			y: -7.0d
 		}
 		{
-			dependencies: ["4256010000010205"]
+			dependencies: ["4256010000010001"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: {
-				id: "ifeu:liquid_dragon_breath_bucket"
+				id: "neovitae:spiritus_gem_petty"
 			}
-			id: "4256010000010206"
-			rewards: [{
-				id: "4256010000030206"
-				type: "xp"
-				xp: 150
-			}]
-			tasks: [
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "4256010000020206"
-					item: { count: 1, id: "ifeu:liquid_dragon_breath_bucket" }
-					type: "item"
-				}
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "4256010000020306"
-					item: { count: 1, id: "ifeu:liquid_sculk_matter_bucket" }
-					type: "item"
-				}
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "4256010000020406"
-					item: { count: 1, id: "ifeu:liquid_malic_acid_bucket" }
-					type: "item"
-				}
-			]
-			x: 10.0d
-			y: 7.0d
-		}
-		{
-			dependencies: ["4256010000010203"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "ifeu:laser_lens_sculk"
-			}
-			id: "4256010000010207"
-			rewards: [{
-				id: "4256010000030207"
-				type: "xp"
-				xp: 150
-			}]
-			tasks: [
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "4256010000020207"
-					item: { count: 1, id: "ifeu:laser_lens_sculk" }
-					type: "item"
-				}
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "4256010000020307"
-					item: { count: 1, id: "ifeu:laser_lens_dragon" }
-					type: "item"
-				}
-			]
-			x: 10.0d
-			y: 5.0d
-		}
-		{
-			dependencies: ["4256010000010203"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "ifeu:netherite_gear"
-			}
-			id: "4256010000010208"
-			rewards: [{
-				id: "4256010000030208"
-				type: "xp"
-				xp: 100
-			}]
-			tasks: [
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "4256010000020208"
-					item: { count: 1, id: "ifeu:netherite_gear" }
-					type: "item"
-				}
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "4256010000020308"
-					item: { count: 1, id: "ifeu:sculk_gear" }
-					type: "item"
-				}
-			]
-			x: 10.0d
-			y: 5.5d
-		}
-		{
-			dependencies: ["4256010000010204"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "ifeu:apple_addon_3"
-			}
-			id: "4256010000010209"
-			rewards: [{
-				id: "4256010000030209"
-				type: "xp"
-				xp: 150
-			}]
-			tasks: [
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "4256010000020209"
-					item: { count: 1, id: "ifeu:apple_addon_3" }
-					type: "item"
-				}
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "4256010000020309"
-					item: { count: 1, id: "ifeu:chance_addon_3" }
-					type: "item"
-				}
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "4256010000020409"
-					item: { count: 1, id: "ifeu:energy_addon_3" }
-					type: "item"
-				}
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "4256010000020509"
-					item: { count: 1, id: "ifeu:heal_addon_3" }
-					type: "item"
-				}
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "4256010000020609"
-					item: { count: 1, id: "ifeu:thread_addon_3" }
-					type: "item"
-				}
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "4256010000020709"
-					item: { count: 1, id: "ifeu:silk_addon" }
-					type: "item"
-				}
-			]
-			x: 10.0d
-			y: 6.5d
-		}
-		{
-			dependencies: [
-				"4256010000010209"
-				"4256010000010205"
-			]
-			hide_until_deps_complete: true
-			icon: {
-				id: "ifeu:apple_addon_6"
-			}
-			id: "425601000001020A"
-			rewards: [{
-				id: "425601000003020A"
-				type: "xp"
-				xp: 300
-			}]
-			shape: "hexagon"
-			size: 1.0d
-			tasks: [
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "425601000002020A"
-					item: { count: 1, id: "ifeu:apple_addon_6" }
-					type: "item"
-				}
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "425601000002030A"
-					item: { count: 1, id: "ifeu:chance_addon_6" }
-					type: "item"
-				}
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "425601000002040A"
-					item: { count: 1, id: "ifeu:energy_addon_6" }
-					type: "item"
-				}
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "425601000002050A"
-					item: { count: 1, id: "ifeu:heal_addon_6" }
-					type: "item"
-				}
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "425601000002060A"
-					item: { count: 1, id: "ifeu:thread_addon_6" }
-					type: "item"
-				}
-			]
-			x: 12.5d
-			y: 6.5d
-		}
-		{
-			dependencies: ["4256010000010205"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "ifeu:dragon_generator"
-			}
-			id: "425601000001020B"
-			rewards: [{
-				id: "425601000003020B"
-				type: "xp"
-				xp: 300
-			}]
-			shape: "hexagon"
-			size: 1.0d
-			tasks: [{
-				SkillsLevel: {
-					category: ""
-					check: 0b
-					comparison: "GREATER_OR_EQUAL"
-					first: 10
-					mode: "TOTAL_LEVEL"
-					second: 20
-				}
-				id: "425601000002020B"
-				item: { count: 1, id: "ifeu:dragon_generator" }
-				type: "item"
-			}]
-			x: 10.0d
-			y: 7.5d
-		}
-		{
-			dependencies: ["4256010000010203"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "ifeu:platform_builder"
-			}
-			id: "425601000001020C"
+			id: "4256011000EE0004"
 			optional: true
 			rewards: [{
-				id: "425601000003020C"
+				id: "4256013000EE0004"
 				type: "xp"
 				xp: 100
 			}]
-			tasks: [
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "425601000002020C"
-					item: { count: 1, id: "ifeu:platform_builder" }
-					type: "item"
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
 				}
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "425601000002030C"
-					item: { count: 1, id: "ifeu:saucepan" }
-					type: "item"
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
 				}
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "425601000002040C"
-					item: { count: 1, id: "ifeu:wrench" }
-					type: "item"
+				id: "4256012000EE0004"
+				item: { count: 1, id: "neovitae:spiritus_gem_petty" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["4256011000EE0004"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "neovitae:spiritus_gem_greater"
+			}
+			id: "4256011000EE0005"
+			optional: true
+			rewards: [{
+				id: "4256013000EE0005"
+				type: "xp"
+				xp: 200
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
 				}
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "425601000002050C"
-					item: { count: 1, id: "ifeu:configuration_tool" }
-					type: "item"
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
 				}
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "425601000002060C"
-					item: { count: 1, id: "ifeu:connect_tool" }
-					type: "item"
+				id: "4256012000EE0005"
+				item: { components: { "ftbfiltersystem:filter": "root(or(item(neovitae:spiritus_gem_lesser),item(neovitae:spiritus_gem_common),item(neovitae:spiritus_gem_greater),item(neovitae:spiritus_gem_grand)))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["4256011000EE0005"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "neovitae:base_spiritus_soul_raw"
+			}
+			id: "4256011000EE0006"
+			optional: true
+			rewards: [{
+				id: "4256013000EE0006"
+				type: "xp"
+				xp: 400
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
 				}
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "425601000002070C"
-					item: { count: 1, id: "ifeu:empty_nether_star" }
-					type: "item"
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
 				}
-			]
-			x: 10.0d
-			y: 6.0d
+				id: "4256012000EE0006"
+				item: { components: { "ftbfiltersystem:filter": "root(or(item(neovitae:base_spiritus_soul_raw),item(neovitae:base_spiritus_soul_invictus),item(neovitae:base_spiritus_soul_nihilum),item(neovitae:base_spiritus_soul_ruina),item(neovitae:base_spiritus_soul_vindicta)))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -7.0d
 		}
 		{
 			dependencies: [
-				"425601000001020A"
-				"425601000001020B"
+				"4256011000EE0003"
+				"4256011000EE0006"
 			]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: {
-				id: "ifeu:dragon_generator"
+				id: "neovitae:blood_orb_transcendent"
 			}
-			id: "425601000001020D"
+			id: "4256011000EE0007"
+			optional: true
 			rewards: [{
-				id: "425601000003020D"
+				id: "4256013000EE0007"
 				type: "xp"
 				xp: 500
 			}]
-			shape: "pentagon"
+			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1632,152 +772,12 @@
 					mode: "TOTAL_LEVEL"
 					second: 20
 				}
-				id: "425601000002020D"
-				item: { count: 1, id: "ifeu:dragon_generator" }
+				id: "4256012000EE0007"
+				item: { count: 1, id: "neovitae:blood_orb_transcendent" }
 				type: "item"
 			}]
-			x: 15.0d
-			y: 6.5d
-		}
-		{
-			dependencies: ["4256010000001002"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "betterend:aeternium_anvil"
-			}
-			id: "182BAF3009C3C6FE"
-			rewards: [{
-				id: "671127D95539A170"
-				type: "xp"
-				xp: 50
-			}]
-			tasks: [{
-				SkillsLevel: {
-					category: ""
-					check: 0b
-					comparison: "GREATER_OR_EQUAL"
-					first: 10
-					mode: "TOTAL_LEVEL"
-					second: 20
-				}
-				id: "6BE5F27241F16DF9"
-				item: { count: 1, id: "betterend:aeternium_anvil" }
-				type: "item"
-			}]
-			x: 7.5d
-			y: -5.5d
-		}
-		{
-			dependencies: ["4256010000001003"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "betterend:aeternium_hoe_head"
-			}
-			id: "2C8B79C0ADE72F34"
-			rewards: [{
-				id: "6AA7BF415BE7C4DE"
-				type: "xp"
-				xp: 50
-			}]
-			tasks: [{
-				SkillsLevel: {
-					category: ""
-					check: 0b
-					comparison: "GREATER_OR_EQUAL"
-					first: 10
-					mode: "TOTAL_LEVEL"
-					second: 20
-				}
-				id: "054C397B63F62FF3"
-				item: { count: 1, id: "betterend:aeternium_hoe_head" }
-				type: "item"
-			}]
-			x: 5.0d
-			y: -7.0d
-		}
-		{
-			dependencies: ["4256010000001003"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "betterend:aeternium_shovel_head"
-			}
-			id: "39E394F665C85341"
-			rewards: [{
-				id: "7DE39E65357CA140"
-				type: "xp"
-				xp: 50
-			}]
-			tasks: [{
-				SkillsLevel: {
-					category: ""
-					check: 0b
-					comparison: "GREATER_OR_EQUAL"
-					first: 10
-					mode: "TOTAL_LEVEL"
-					second: 20
-				}
-				id: "2214408CECF285F2"
-				item: { count: 1, id: "betterend:aeternium_shovel_head" }
-				type: "item"
-			}]
-			x: 5.0d
-			y: -6.0d
-		}
-		{
-			dependencies: ["2C8B79C0ADE72F34"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "betterend:aeternium_axe_head"
-			}
-			id: "625A3B821819029F"
-			rewards: [{
-				id: "3919BD76E428B643"
-				type: "xp"
-				xp: 50
-			}]
-			tasks: [{
-				SkillsLevel: {
-					category: ""
-					check: 0b
-					comparison: "GREATER_OR_EQUAL"
-					first: 10
-					mode: "TOTAL_LEVEL"
-					second: 20
-				}
-				id: "4285A188D8C27980"
-				item: { count: 1, id: "betterend:aeternium_axe_head" }
-				type: "item"
-			}]
-			x: 7.5d
-			y: -7.0d
-		}
-		{
-			dependencies: ["4256010000001002"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "betterend:aeternium_pickaxe_head"
-			}
-			id: "6C5164B682F4F1F4"
-			rewards: [{
-				id: "4724F3AC6B9AB240"
-				type: "xp"
-				xp: 50
-			}]
-			tasks: [{
-				SkillsLevel: {
-					category: ""
-					check: 0b
-					comparison: "GREATER_OR_EQUAL"
-					first: 10
-					mode: "TOTAL_LEVEL"
-					second: 20
-				}
-				id: "019C2D512BF5EA5A"
-				item: { count: 1, id: "betterend:aeternium_pickaxe_head" }
-				type: "item"
-			}]
-			x: 7.5d
-			y: -4.5d
+			x: -2.5d
+			y: -9.0d
 		}
 	]
 }
