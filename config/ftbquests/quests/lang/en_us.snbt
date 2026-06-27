@@ -2527,6 +2527,33 @@
 	quest.4358011000000107.quest_desc: ["Finish the set with the &binfinity hammer&r and &binfinity trident&r. One crushes crowds, the other returns to hand through any weather, and both drink from the same bottomless battery."]
 	quest.4358011000000107.quest_subtitle: "Optional: the wet and the loud."
 	quest.4358011000000107.title: "Infinity Arms"
+	quest.4358011000EE0001.quest_desc: ["Grow and harvest a &bCrystal Cluster&r — the keystone material of the Transcendent altar tier. This luminous growth is Blood Magic's highest structural ingredient. Place it in your sanctum and begin constructing the altar that will let you bind a Transcendent Blood Orb."]
+	quest.4358011000EE0001.quest_subtitle: "Optional: the altar's keystone crystal."
+	quest.4358011000EE0001.title: "Crystalline Resonance"
+	quest.4358011000EE0002.quest_desc: ["Craft &bCrystal Cluster Bricks&r to construct the Transcendent altar structure. The altar's power is encoded in its geometry — the bricks are the loadbearing element that focuses ritual energy into the orb slot above."]
+	quest.4358011000EE0002.quest_subtitle: "Optional: build the altar's body."
+	quest.4358011000EE0002.title: "The Sacred Masonry"
+	quest.4358011000EE0003.quest_desc: ["Attune a &bTranscendent Blood Orb&r at the completed altar. This is the culmination of every blood ritual you have performed — the orb at the apex of the covenant. It amplifies your self-sacrifice into ritual power that lesser orbs cannot approach."]
+	quest.4358011000EE0003.quest_subtitle: "Optional: the apex of the covenant."
+	quest.4358011000EE0003.title: "Apex of the Covenant"
+	quest.4358011000EE0004.quest_desc: ["Forge a &bSimple Key&r from hellforged reagents. The Neo Vitae dungeon does not announce itself — you must locate the entrance yourself and unlock it. The key is the first of three tiers; the corridors demand progressively heavier authorization to descend."]
+	quest.4358011000EE0004.quest_subtitle: "Optional: the dungeon's first gate."
+	quest.4358011000EE0004.title: "Key to the Pit"
+	quest.4358011000EE0005.quest_desc: ["Enter the &bNeo Vitae dungeon&r dimension. The architecture is alien and deliberately hostile — every room is both an obstacle and a resource. Enemies here drop the keys and reagents that define the dungeon's economy."]
+	quest.4358011000EE0005.quest_subtitle: "Optional: descend into the ritual complex."
+	quest.4358011000EE0005.title: "Descent into the Dungeon"
+	quest.4358011000EE0006.quest_desc: ["Obtain a &bStandard Key&r from the dungeon's inhabitants. The deeper corridors require this authorization. Enemies in the mid-levels carry them; the Standard Key unlocks the passages that lead to the dungeon's most dangerous inhabitants."]
+	quest.4358011000EE0006.quest_subtitle: "Optional: clear the mid-level passage."
+	quest.4358011000EE0006.title: "Standard Clearance"
+	quest.4358011000EE0007.quest_desc: ["Craft a &bHellforged Explosive Cell&r — the dungeon's deep reagent, distilled from demonite and blood ritual. It functions as both a weapon and a ritual component: the concentrated destructive energy of the dungeon's own ore, packaged for use against its inhabitants."]
+	quest.4358011000EE0007.quest_subtitle: "Optional: the dungeon's signature reagent."
+	quest.4358011000EE0007.title: "Hellforged Ordnance"
+	quest.4358011000EE0008.quest_desc: ["Mine &bDemonite&r from the dungeon's ore veins. The ore's dark resonance makes it uniquely useful for weapon augmentation and trim work. The dungeon's geology yields it in quantity; the trim ingot is the refined form you will use in higher-tier smithing."]
+	quest.4358011000EE0008.quest_subtitle: "Optional: the dungeon's signature ore."
+	quest.4358011000EE0008.title: "Demonite Cache"
+	quest.4358011000EE0009.quest_desc: ["Obtain a &bBoss Key&r from the dungeon's Foreman encounter. The reward is not the key itself — it is what the Foreman drops: demonite trim and the satisfaction of knowing the dungeon's most fortified resident has been removed."]
+	quest.4358011000EE0009.quest_subtitle: "Optional: the Foreman's authorization."
+	quest.4358011000EE0009.title: "The Foreman's Gate"
 	quest.43EB13F2C3D91789.quest_desc: [
 		"Place the &bBlack Foundry Controller&r and raise the foundry around it. The controller runs the multiblock, melting ores and metals into fluid you can pour into shapes."
 		"Follow the layout in the foundry's own guide. A misplaced block keeps the whole structure from forming."
