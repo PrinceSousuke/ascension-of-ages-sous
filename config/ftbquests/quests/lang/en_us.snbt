@@ -2731,9 +2731,9 @@
 	quest.4757011000000121.quest_desc: ["Secure a &bVoid Totem&r. Held like its vanilla cousin, it catches you the moment the void would take you and sets you back on solid ground. For End-side construction over open sky, there is no better insurance."]
 	quest.4757011000000121.quest_subtitle: "Void-fall safety charm."
 	quest.4757011000000121.title: "Void Totem"
-	quest.4757011020010001.quest_desc: ["Raise your &bHephaestus Forge&r to tier three and put it to use. The third tier holds enough essence for the heavy rituals, and working at it is what opens the Gilded workshop: the chapters beyond all take their cue from this block."]
-	quest.4757011020010001.quest_subtitle: "Required: tier-three forge unlock."
-	quest.4757011020010001.title: "Hephaestus Forge Tier 3"
+	quest.4757011020010001.quest_desc: ["Construct and activate the &bAthanor&r — Neo Vitae's apex Vitae-refinement station and the heart of the Gilded workshop. The Athanor channels life-force at a scale that unlocks every craft in the chapters beyond; building it is the gateway to the golden age of Vitae mastery."]
+	quest.4757011020010001.quest_subtitle: "Required: the Athanor — Neo Vitae's Vitae apex station."
+	quest.4757011020010001.title: "The Athanor"
 	quest.48AC8545D66B71B7.quest_desc: [
 		"Upgrade the &bBuilder's Hut&r to level two. A higher-level Builder works faster and can put up taller, more complex buildings."
 		"Every upgrade after this pays for itself in build speed alone."
