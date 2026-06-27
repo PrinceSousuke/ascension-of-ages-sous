@@ -48,16 +48,16 @@ Generated 2026-06-27. Jars cracked: `neovitae-1.21.1-1.0.25.jar`, `spectrum-1.11
 
 ## 4. PILLAR_BLOCKS
 
-**Status: CONFIRMED — 4 candidates**
+**Status: CONFIRMED — 4 candidates (NV fallback inversion_pillar BLOCKED, others usable)**
 
-The `#neovitae:altar/pillars` tag is currently empty (`data/neovitae/tags/block/altar/pillars.json` = `{"values":[]}`). All four must be added via data pack.
+The `#neovitae:altar/pillars` tag is currently empty (`data/neovitae/tags/block/altar/pillars.json` = `{"values":[]}`). All four must be added via data pack. Spectrum onyx_pillar is the **preferred Spectrum choice** for the pillar slot, replacing the onyx_block/onyx_bricks fallback.
 
 | Role | ID | Name | Jar Evidence | Craftable From |
 |------|-----|------|--------------|----------------|
 | NV fallback pillar | `neovitae:inversion_pillar` | Inversion Pillar | `data/neovitae/loot_table/blocks/inversion_pillar.json`; lang key `block.neovitae.inversion_pillar` | Verify recipe in-game (dungeon block but likely craftable); **BLOCKED-NEEDS-INGAME** for exact recipe — use `neovitae:bloodstone_brick` as fallback if inversion_pillar has no recipe |
 | F&A darkstone-style pillar | `forbidden_arcanus:arcane_polished_darkstone_pillar` | Arcane Polished Darkstone Pillar | `data/forbidden_arcanus/recipe/arcane_polished_darkstone_pillar.json` | 2× arcane_polished_darkstone → 1 pillar; arcane_polished_darkstone = 8× polished_darkstone + 1 deorum_ingot (Gilded tier) |
 | Malum pillar | `malum:tainted_rock_column` | Tainted Rock Column | `data/malum/recipe/tainted_rock_column.json` | 3× tainted_rock → 3 columns (basic Renaissance-accessible crafting) |
-| Spectrum pillar | `spectrum:onyx_pillar` | Onyx Pillar | `assets/spectrum/lang/en_us.json` key `block.spectrum.onyx_pillar = Onyx Pillar` — model exists | Likely stonecutting from onyx_block; **BLOCKED-NEEDS-INGAME** for recipe confirmation. Fallback: `spectrum:onyx_bricks` |
+| Spectrum pillar | `spectrum:onyx_pillar` | Onyx Pillar | `data/spectrum/recipe/crafting_table/gem_blocks/onyx_pillar.json` | 2× spectrum:polished_onyx → 2× spectrum:onyx_pillar (CONFIRMED; **preferred Spectrum PILLAR**) |
 
 **Note on `runic_darkstone`:** `forbidden_arcanus:runic_darkstone` exists in lang and has a loot table, but **has NO crafting recipe** (only world-gen drop / no recipe file in jar). Do not use as a pillar unless AoA adds a recipe for it. Use `arcane_polished_darkstone_pillar` instead.
 
@@ -191,7 +191,7 @@ Both `forbidden_arcanus:arcane_crystal_dust` and `neovitae:weak_blood_shard` are
 | 4a | PILLAR - NV | BLOCKED-NEEDS-INGAME | `neovitae:inversion_pillar` recipe unconfirmed; fallback `neovitae:bloodstone_brick` |
 | 4b | PILLAR - F&A | CONFIRMED | `forbidden_arcanus:arcane_polished_darkstone_pillar` |
 | 4c | PILLAR - Malum | CONFIRMED | `malum:tainted_rock_column` |
-| 4d | PILLAR - Spectrum | BLOCKED-NEEDS-INGAME | `spectrum:onyx_pillar` model exists; recipe unconfirmed; fallback `spectrum:onyx_bricks` |
+| 4d | PILLAR - Spectrum | CONFIRMED | `spectrum:onyx_pillar` (2× polished_onyx → 2× onyx_pillar); **preferred Spectrum PILLAR** |
 | 5 | MALUM_SPIRIT | CONFIRMED | `malum:arcane_spirit` (or `wicked_spirit`) — both Ren-gated via spirit_altar, no earlier |
 | 6 | THEURGY_SALT | CONFIRMED | Per-family items; use tag `#theurgy:alchemical_salts` |
 | 7 | NV_SENTIENT_UPGRADE_OK | YES | `neovitae:hellfire_forge_upgrade` recipe type confirmed |
@@ -199,4 +199,4 @@ Both `forbidden_arcanus:arcane_crystal_dust` and `neovitae:weak_blood_shard` are
 | 9 | FNA_CLIBANO_RESIDUE | CONFIRMED | `forbidden_arcanus:arcane_crystal_dust` (output from Clibano combustion of arcane_crystal) |
 | 9 | NV_PROCESSED_OUTPUT | CONFIRMED | `neovitae:weak_blood_shard` (Athanor hydration recipe consuming strong_tau + essentia_vitae) |
 
-**Counts:** 10 of 12 sub-IDs CONFIRMED, 2 BLOCKED-NEEDS-INGAME (NV inversion pillar recipe, Spectrum onyx pillar recipe) with confirmed fallbacks.
+**Counts:** 11 of 12 sub-IDs CONFIRMED, 1 BLOCKED-NEEDS-INGAME (NV inversion pillar recipe) with confirmed fallback.
