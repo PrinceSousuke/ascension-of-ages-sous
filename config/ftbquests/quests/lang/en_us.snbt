@@ -1357,9 +1357,9 @@
 	quest.0B031080000000C1.quest_desc: ["Grow a &bLight Blue Crystal Shard&r. &6Actually Additions&r raises its crystals from seeds rather than mining them, and the shards cluster into the larger crystals its machines use."]
 	quest.0B031080000000C1.quest_subtitle: "Grown crystal shard."
 	quest.0B031080000000C1.title: "Light Blue Crystal Shard"
-	quest.0B031080000000C2.quest_desc: ["Collect a &bCorrupt Soul&r. &6Forbidden Arcanus&r uses it as a dark reagent, and picking one up here is a quiet first contact with that mod's darker line of crafting."]
-	quest.0B031080000000C2.quest_subtitle: "Forbidden Arcanus reagent."
-	quest.0B031080000000C2.title: "Corrupt Soul"
+	quest.0B031080000000C2.quest_desc: ["Collect a &bRaw Spiritus Soul&r from &6Neo Vitae&r. This unrefined essence drifts at the edge of death — a first contact with the soul economy that runs the mod's deeper rituals."]
+	quest.0B031080000000C2.quest_subtitle: "Neo Vitae soul essence."
+	quest.0B031080000000C2.title: "Raw Spiritus Soul"
 	quest.0B031080000000D1.quest_desc: [
 		"Produce &bSteel Dust&r through &6Modern Industrialization&r. Grinding to dust before smelting is the mod's habit, and steel is the first proper alloy on its ladder."
 		"It feeds the bronze and &bsteel&r parts the rest of this chapter leans on."
@@ -2089,15 +2089,6 @@
 	quest.2902E58DB70F9449.quest_desc: ["Make &6Immersive Engineering&r &bFertilizer&r. It speeds crop growth and feeds the garden systems later, worked up from &bcreosote&r and farm scraps. A little spread on a field goes a long way."]
 	quest.2902E58DB70F9449.quest_subtitle: "Push your crops harder."
 	quest.2902E58DB70F9449.title: "Fertilizer"
-	quest.2902E58DB70F95F1.quest_desc: [
-		"Get an &bEdelwood&r Log from &6Forbidden Arcanus&r. Edelwood is a dark tree heavy with oil, and its log is what the press wrings that oil out of. Find one in the world or grow your own first."
-		"It looks ominous and it is meant to. The oil it holds is worth the trouble."
-	]
-	quest.2902E58DB70F95F1.quest_subtitle: "A dark, oily tree."
-	quest.2902E58DB70F95F1.title: "Edelwood Log"
-	quest.2902E58DB70F95F2.quest_desc: ["Press &bEdelwood Oil&r from the log. &6Forbidden Arcanus&r uses it as both a fuel and a magical reagent, and it makes a strong burn for heat-hungry work. Store it for the steps that call for it."]
-	quest.2902E58DB70F95F2.quest_subtitle: "A potent fuel and reagent."
-	quest.2902E58DB70F95F2.title: "Edelwood Oil"
 	quest.29055EFFDCC6576E.quest_desc: [
 		"Hunt down the Yeti, a large cold-country beast that hits hard and shrugs off the cold you cannot. Keep warm gear on and do not let it pin you against the ice."
 		"Its drops open the garden's staff line."
