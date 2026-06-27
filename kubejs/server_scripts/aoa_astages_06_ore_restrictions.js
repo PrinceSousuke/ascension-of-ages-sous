@@ -843,12 +843,12 @@
   ;['fluorite', 'monazite', 'thorium', 'uranium'].forEach(function (material) { addAdvancedMaterialTags('atomic', material) })
   ;['corronium', 'desh', 'neptunium', 'ostrum', 'plutonium', 'solerium', 'tharsite'].forEach(function (material) { addAdvancedMaterialTags('otherworldly', material) })
 
-  // Neo Vitae hellforged material tags — defense-in-depth (dungeon already gated at gilded_age)
-  softTagLock('gilded_age', 'c:raw_materials/hellforged', 'material')
-  softTagLock('gilded_age', 'c:dusts/hellforged', 'material')
-  softTagLock('gilded_age', 'c:fragments/hellforged', 'material')
-  softTagLock('gilded_age', 'c:gravels/hellforged', 'material')
-  softTagLock('gilded_age', 'c:ingots/hellforged', 'material')
+  // Neo Vitae hellforged material tags — defense-in-depth (dungeon gated at industrial_revolution)
+  softTagLock('industrial_revolution', 'c:raw_materials/hellforged', 'material')
+  softTagLock('industrial_revolution', 'c:dusts/hellforged', 'material')
+  softTagLock('industrial_revolution', 'c:fragments/hellforged', 'material')
+  softTagLock('industrial_revolution', 'c:gravels/hellforged', 'material')
+  softTagLock('industrial_revolution', 'c:ingots/hellforged', 'material')
 
   addDirectItems('the_renaissance', ['minecraft:diamond', 'minecraft:diamond_block'], 'vanilla_drop')
   addDirectItems('the_renaissance', ['minecraft:emerald', 'minecraft:emerald_block'], 'vanilla_drop')
