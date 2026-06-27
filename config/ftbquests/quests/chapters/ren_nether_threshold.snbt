@@ -154,6 +154,7 @@
 			entity_vis_size: 1.0f
 			hide_until_deps_visible: true
 			id: "0B03102000000041"
+			optional: true
 			rewards: [{
 				id: "0B03302000000041"
 				type: "xp"
@@ -186,6 +187,7 @@
 			entity_vis_size: 1.0f
 			hide_until_deps_visible: true
 			id: "0B03102000000042"
+			optional: true
 			rewards: [{
 				id: "0B03302000000042"
 				type: "xp"
@@ -251,6 +253,7 @@
 			entity_vis_size: 1.0f
 			hide_until_deps_visible: true
 			id: "0B03102000000046"
+			optional: true
 			rewards: [{
 				id: "0B03302000000046"
 				type: "xp"
@@ -283,6 +286,7 @@
 			entity_vis_size: 1.0f
 			hide_until_deps_visible: true
 			id: "0B03102000000047"
+			optional: true
 			rewards: [{
 				id: "0B03302000000047"
 				type: "xp"
