@@ -923,8 +923,10 @@
 					second: 20
 				}
 				id: "0B032080000000D2"
-				item: { count: 1, id: "create:steam_engine" }
-				type: "item"
+				mode: "ALL"
+				required: 1L
+				targets: ["0B031B1000000002"]
+				type: "check_quest"
 			}]
 			x: 18.0d
 			y: -3.0d

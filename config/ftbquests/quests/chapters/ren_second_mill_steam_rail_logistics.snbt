@@ -1,0 +1,609 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ren_second_mill_steam_rail_logistics"
+	group: "0B038EB15EBBFD95"
+	hide_quest_until_deps_complete: true
+	icon: {
+		id: "create:steam_engine"
+	}
+	id: "0B0310B000000001"
+	order_index: 10
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["6D7E8F901A2B1054"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "create:blaze_burner"
+			}
+			id: "0B031B1000000001"
+			rewards: [{
+				id: "0B031B3000000001"
+				type: "xp"
+				xp: 20
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "0B031B2000000001"
+				mode: "ALL"
+				required: 1L
+				targets: ["0B03102000000062"]
+				type: "check_quest"
+			}]
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["0B031B1000000001"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "create:steam_engine"
+			}
+			id: "0B031B1000000002"
+			rewards: [{
+				id: "0B031B3000000002"
+				type: "xp"
+				xp: 30
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B031B2000000002"
+				item: { count: 1, id: "create:steam_engine" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0B031B1000000002"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			id: "0B031B1000000003"
+			optional: true
+			rewards: [{
+				id: "0B031B3000000003"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B031B2000000003"
+				item: { count: 1, id: "create:steam_whistle" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0B031B1000000002"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			id: "0B031B1000000010"
+			rewards: [{
+				id: "0B031B3000000010"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B031B2000000010"
+				item: { count: 1, id: "create:track" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0B031B1000000010"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			id: "0B031B1000000011"
+			rewards: [{
+				id: "0B031B3000000011"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B031B2000000011"
+				item: { count: 1, id: "create:track_station" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0B031B1000000011"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			id: "0B031B1000000012"
+			rewards: [{
+				id: "0B031B3000000012"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "0B031B2000000012"
+					item: { count: 1, id: "create:small_bogey" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "0B031B2000000112"
+					item: { count: 1, id: "create:large_bogey" }
+					type: "item"
+				}
+			]
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0B031B1000000012"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			id: "0B031B1000000013"
+			rewards: [{
+				id: "0B031B3000000013"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "diamond"
+			size: 1.2d
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "0B031B2000000013"
+					item: { count: 1, id: "create:controls" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "0B031B2000000113"
+					item: { count: 1, id: "create:schedule" }
+					type: "item"
+				}
+			]
+			x: -3.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0B031B1000000013"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			id: "0B031B1000000014"
+			optional: true
+			rewards: [{
+				id: "0B031B3000000014"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "0B031B2000000014"
+					item: { count: 1, id: "create:track_signal" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "0B031B2000000114"
+					item: { count: 1, id: "create:track_observer" }
+					type: "item"
+				}
+			]
+			x: -3.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0B031B1000000013"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			id: "0B031B1000000020"
+			optional: true
+			rewards: [{
+				id: "0B031B3000000020"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B031B2000000020"
+				item: { count: 1, id: "createrailwaysnavigator:advanced_display" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["0B031B1000000020"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			id: "0B031B1000000021"
+			optional: true
+			rewards: [{
+				id: "0B031B3000000021"
+				type: "xp"
+				xp: 15
+			}]
+			shape: "gear"
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B031B2000000021"
+				item: { count: 1, id: "createrailwaysnavigator:navigator" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["0B031B1000000013"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			id: "0B031B1000000030"
+			optional: true
+			rewards: [{
+				id: "0B031B3000000030"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B031B2000000030"
+				item: { count: 1, id: "create:display_board" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0B031B1000000002"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			id: "0B031B1000000040"
+			rewards: [{
+				id: "0B031B3000000040"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B031B2000000040"
+				item: { count: 1, id: "create:packager" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0B031B1000000040"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			id: "0B031B1000000041"
+			rewards: [{
+				id: "0B031B3000000041"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "0B031B2000000041"
+					item: { count: 1, id: "create:stock_link" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "0B031B2000000141"
+					item: { count: 1, id: "create:stock_ticker" }
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0B031B1000000041"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			id: "0B031B1000000042"
+			rewards: [{
+				id: "0B031B3000000042"
+				type: "xp"
+				xp: 30
+			}]
+			shape: "diamond"
+			size: 1.2d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B031B2000000042"
+				item: { count: 1, id: "create:factory_gauge" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0B031B1000000042"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			id: "0B031B1000000043"
+			optional: true
+			rewards: [{
+				id: "0B031B3000000043"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "0B031B2000000043"
+					item: { count: 1, id: "create:package_frogport" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "0B031B2000000143"
+					item: { count: 1, id: "create:redstone_requester" }
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 4.5d
+		}
+	]
+}

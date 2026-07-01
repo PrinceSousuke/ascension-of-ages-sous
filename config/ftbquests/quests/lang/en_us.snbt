@@ -19,6 +19,8 @@
 	chapter.0B03001000000009.title: "&dThe End Threshold&r"
 	chapter.0B0300100000000A.chapter_subtitle: ["Defeat the vigil to seal the Renaissance gate."]
 	chapter.0B0300100000000A.title: "&cThe Maledictus Vigil&r"
+	chapter.0B0310B000000001.chapter_subtitle: ["Bridge to real steam, then branch into trains and factory logistics."]
+	chapter.0B0310B000000001.title: "&3The Second Mill&r"
 	chapter.0E21FB2EFB41A583.chapter_subtitle: ["Build and govern a full colonial settlement."]
 	chapter.0E21FB2EFB41A583.title: "&9Minecolonies&r"
 	chapter.2902E58DB70F942F.chapter_subtitle: ["Work metals past iron and unlock stronger alloys."]
@@ -1362,10 +1364,10 @@
 	quest.0B031080000000D1.quest_subtitle: "Grind toward real alloys."
 	quest.0B031080000000D1.title: "Steel Dust"
 	quest.0B031080000000D2.quest_desc: [
-		"Build a &6Create&r &bSteam Engine&r. Mounted on a steam-filled &bboiler&r it spins a respectable amount of rotation, a quick way to power a small workshop without water wheels."
-		"Optional here, but a fine bridge from the mill chapter."
+		"Steam power is taught in full over in &5The Second Mill&r. Build the &bSteam Engine&r there and this node clears itself, tying your alchemical studies to the workshop's new boiler."
+		"Mounted on a steam-filled &bboiler&r the engine spins a respectable amount of rotation, a quick way to power a workshop without a field of water wheels."
 	]
-	quest.0B031080000000D2.quest_subtitle: "Create rotational power."
+	quest.0B031080000000D2.quest_subtitle: "Steam theory, cross-referenced."
 	quest.0B031080000000D2.title: "Steam Engine"
 	quest.0B031080000000D3.quest_desc: ["Make a &bNugget of Experience&r. &6Create&r lets you press experience into a solid nugget, which stores and moves far more cleanly than chasing orbs around the floor."]
 	quest.0B031080000000D3.quest_subtitle: "Compact experience storage."
@@ -1737,6 +1739,90 @@
 	]
 	quest.0B0310A0000000F0.quest_subtitle: "Age capstone handoff."
 	quest.0B0310A0000000F0.title: "Cursium Ingot"
+	quest.0B031B1000000001.quest_desc: [
+		"You already forged a &bBlaze Burner&r back in the Nether chapter. That burner is the heat source for a steam boiler, so this node clears once you have one."
+		"To build a boiler, stack &bFluid Tanks&r, fill them with water, and set lit &bBlaze Burners&r underneath. A taller tank with more burners makes more steam and drives a stronger engine. Press W on any block to Ponder the exact layout."
+	]
+	quest.0B031B1000000001.quest_subtitle: "Water, heat, and a tall tank."
+	quest.0B031B1000000001.title: "Fire the Boiler"
+	quest.0B031B1000000002.quest_desc: [
+		"Place a &bSteam Engine&r on the side of a heated boiler tank. The engine reads the steam the boiler produces and outputs rotation, far more Stress Units than a water wheel of the same footprint."
+		"This frees a large factory from a sprawl of wheels. One good boiler can carry the whole workshop. The rest of this chapter forks from here: trains on the left, factory logistics on the right."
+	]
+	quest.0B031B1000000002.quest_subtitle: "Trade water wheels for real SU."
+	quest.0B031B1000000002.title: "Steam Power"
+	quest.0B031B1000000003.quest_desc: ["A &bSteam Whistle&r mounts on a boiler and sounds a note whose pitch you tune with a wrench. Pure flavor for a rail yard, no mechanics attached. Optional."]
+	quest.0B031B1000000003.quest_subtitle: "Sound the yard."
+	quest.0B031B1000000003.title: "Steam Whistle"
+	quest.0B031B1000000010.quest_desc: [
+		"Craft &bTrain Track&r and lay it with a track paver. Create trains ride Create track, not vanilla rails, so this is the foundation of every rail line you build."
+		"Aim at the ground and hold use to pave straight runs and curves. Track can climb, bank, and turn far more freely than vanilla rail."
+	]
+	quest.0B031B1000000010.quest_subtitle: "Create trains need Create track."
+	quest.0B031B1000000010.title: "Lay the Track"
+	quest.0B031B1000000011.quest_desc: [
+		"Place a &bTrain Station&r against your track. A station assembles a parked train into a driveable vehicle, disassembles it back into blocks, and hands out schedules."
+		"Name the station in its interface. The name is how schedules and the route tools later refer to this stop."
+	]
+	quest.0B031B1000000011.quest_subtitle: "Assemble, disassemble, dispatch."
+	quest.0B031B1000000011.title: "Build a Station"
+	quest.0B031B1000000012.quest_desc: [
+		"Bogeys are a train's wheels. Place a &bSmall Bogey&r or a &bLarge Bogey&r on the track under the carriage you glued together, then assemble at the station."
+		"Small bogeys turn tight and suit short cars. Large bogeys carry longer, heavier carriages. Craft one of each so you know both before you design a train."
+	]
+	quest.0B031B1000000012.quest_subtitle: "Put the carriage on wheels."
+	quest.0B031B1000000012.title: "Wheels on the Rail"
+	quest.0B031B1000000013.quest_desc: [
+		"Sit in a &bTrain Controls&r seat to drive the train by hand with your movement keys. This is the manual way to run a line."
+		"For automation, write a &bTrain Schedule&r item: list the stations to visit and the conditions to depart, then hand it to the train at a station. The train runs the route on its own from then on."
+	]
+	quest.0B031B1000000013.quest_subtitle: "Drive it, or let a schedule run it."
+	quest.0B031B1000000013.title: "Drive and Schedule"
+	quest.0B031B1000000014.quest_desc: [
+		"A &bTrain Signal&r splits a shared line into blocks and holds a train until the block ahead is clear, which is what keeps two trains from colliding on the same track."
+		"A &bTrack Observer&r detects a passing train and emits redstone, handy for triggering doors, crossings, or displays. Optional, since a single-train line never collides with itself."
+	]
+	quest.0B031B1000000014.quest_subtitle: "Keep two trains off one block."
+	quest.0B031B1000000014.title: "Block Signalling"
+	quest.0B031B1000000020.quest_desc: [
+		"&6Create Railways Navigator&r upgrades Create display boards into rail-aware &bAdvanced Displays&r. Craft one from a &bDisplay Board&r ringed with obsidian plates."
+		"Placed at a platform and configured with a wrench, it shows live line, destination, delay, and boarding info pulled straight from your scheduled trains. Optional quality-of-life for a busy station."
+	]
+	quest.0B031B1000000020.quest_subtitle: "A real departure board."
+	quest.0B031B1000000020.title: "Read the Departure Board"
+	quest.0B031B1000000021.quest_desc: [
+		"Craft the &bNavigator&r on a &bMechanical Crafter&r, which needs a &bPrecision Mechanism&r in the pattern, so it sits squarely in the Create tier you are already working in."
+		"Right-click it to open a route search: pick a start and a destination station and it plans the connections, departures, transfers, and delays across your network. The nearest-station button seeds the start from where you stand. Optional."
+	]
+	quest.0B031B1000000021.quest_subtitle: "Plan a route across the network."
+	quest.0B031B1000000021.title: "Plan Your Journey"
+	quest.0B031B1000000030.quest_desc: ["A &bDisplay Board&r shows text or item data written to it by a &bDisplay Link&r: stock counts, timers, station names. Wire one up as a readout for any Create system, not just rail. Optional signage."]
+	quest.0B031B1000000030.quest_subtitle: "Put your data on the wall."
+	quest.0B031B1000000030.title: "Display Board"
+	quest.0B031B1000000040.quest_desc: [
+		"A &bPackager&r wraps a stack of items into a shippable &bPackage&r, the atom of the Create 6 Logistics Network. Feed it items and it seals them into a package entity that the network can move and address."
+		"This is the entry point to factory logistics. Everything downstream moves packages, not loose items."
+	]
+	quest.0B031B1000000040.quest_subtitle: "Seal a stack into a package."
+	quest.0B031B1000000040.title: "Package It"
+	quest.0B031B1000000041.quest_desc: [
+		"Attach a &bStock Link&r to an inventory to enroll it in the Logistics Network. Every linked container becomes part of one shared pool the network can see."
+		"Then place a &bStock Ticker&r and open its shopping list. Request items by name and the network gathers them from every linked inventory and ships them to you as packages. This is the order-from-anywhere beat."
+	]
+	quest.0B031B1000000041.quest_subtitle: "Link the shelves, order from a list."
+	quest.0B031B1000000041.title: "Request from the Network"
+	quest.0B031B1000000042.quest_desc: [
+		"A &bFactory Gauge&r watches a linked inventory and keeps it stocked at a target you set. When the count drops, it dispatches crafting orders through the network to refill it automatically."
+		"This is the automation backbone of Create 6. Point gauges at the inputs of your machines and the network keeps every stage fed without you hauling anything. This is why the whole logistics system exists."
+	]
+	quest.0B031B1000000042.quest_subtitle: "Set a target, let it restock."
+	quest.0B031B1000000042.title: "Auto-Restock"
+	quest.0B031B1000000043.quest_desc: [
+		"A &bPackage Frogport&r launches and catches packages between distant nodes on your network, moving goods across gaps that belts and pipes cannot bridge."
+		"A &bRedstone Requester&r fires off a network order on a redstone pulse, so a lever, timer, or sensor can trigger a restock. Optional, since the Stock Ticker and Factory Gauge already close the loop."
+	]
+	quest.0B031B1000000043.quest_subtitle: "Ship packages across the map."
+	quest.0B031B1000000043.title: "Deliver by Air"
 	quest.0B96EC5055E6B817.quest_desc: [
 		"Finish every tower on the &bBarracks&r. A fully towered barracks posts a complete complement of guards. It is the strongest fixed defense a colony fields."
 		"Complete it before raids start scaling up against you."
