@@ -12,18 +12,14 @@
 	quest_links: [ ]
 	quests: [
 		{
-			hide_until_deps_complete: false
+			dependencies: ["0B0310A0000000F0"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
 			icon: {
 				id: "immersiveengineering:connector_lv"
 			}
-			dependencies: ["4954011000000001"]
 			id: "4954051000000001"
-			title: "LV Wire Connector"
-			subtitle: "Tap the low-voltage grid."
-			description: [
-				"Craft an &6Immersive Engineering&r &bLV Wire Connector&r. It is the attachment point that lets LV wire carry power into and out of a machine, the first piece of any wired setup."
-				"Two connectors and a length of wire make your first real power line."
-			]
 			rewards: [
 				{
 					id: "4954053000001000"
@@ -33,13 +29,18 @@
 				{
 					id: "4954053000001001"
 					table_id: 8430738502437568513L
-					title: "A starter cache for the wiring ahead."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -48,26 +49,22 @@
 					mode: "TOTAL_LEVEL"
 					second: 20
 				}
+				advancement: "immersiveengineering:main/connect_wire"
+				criterion: ""
 				id: "4954052000001000"
-				item: { count: 1, id: "immersiveengineering:connector_lv" }
-				type: "item"
+				type: "advancement"
 			}]
 			x: 0.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["4954051000000001"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "immersiveengineering:capacitor_lv"
 			}
 			id: "4954051000000002"
-			title: "LV Accumulator"
-			subtitle: "Store a low-voltage charge."
-			description: [
-				"Build an &bLV Accumulator&r. It banks the power your generators make so machines keep running when production dips, the simplest &bbattery&r in the IE line."
-				"Wire it between your source and your load to smooth out the flow."
-			]
 			rewards: [
 				{
 					id: "4954053000002000"
@@ -77,13 +74,18 @@
 				{
 					id: "4954053000002001"
 					table_id: 8430738502437568513L
-					title: "Spare parts to keep the build moving."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -100,18 +102,14 @@
 			y: -2.5d
 		}
 		{
-			hide_until_deps_complete: false
+			dependencies: ["0B0310A0000000F0"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
 			icon: {
 				id: "createaddition:alternator"
 			}
-			dependencies: ["4954011000000001"]
 			id: "4954051000000003"
-			title: "Alternator"
-			subtitle: "Rotation becomes current."
-			description: [
-				"Craft a &6Create Addition&r &bAlternator&r. Spun by a Create &bshaft&r it turns rotational force into FE, the bridge that lets your windmills and water wheels feed an electric grid."
-				"Faster rotation means more power, up to the machine's limit."
-			]
 			rewards: [
 				{
 					id: "4954053000003000"
@@ -121,13 +119,18 @@
 				{
 					id: "4954053000003001"
 					table_id: 8430738502437568513L
-					title: "A few parts for the next machine."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -145,17 +148,12 @@
 		}
 		{
 			dependencies: ["4954051000000003"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "createaddition:electric_motor"
 			}
 			id: "4954051000000004"
-			title: "Electric Motor"
-			subtitle: "Current becomes rotation."
-			description: [
-				"Build a &6Create Addition&r &bElectric Motor&r. It runs the &balternator&r in reverse, spending FE to spin a shaft, so stored power can drive your kinetic contraptions on demand."
-				"Together the two let you move freely between rotation and electricity."
-			]
 			rewards: [
 				{
 					id: "4954053000004000"
@@ -165,13 +163,18 @@
 				{
 					id: "4954053000004001"
 					table_id: 8430738502437568513L
-					title: "Components to ease the grid out."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -189,17 +192,12 @@
 		}
 		{
 			dependencies: ["4954051000000003"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "createaddition:modular_accumulator"
 			}
 			id: "4954051000000005"
-			title: "Accumulator"
-			subtitle: "A bigger FE bank."
-			description: [
-				"Craft a &6Create Addition&r &bAccumulator&r. It stores a larger charge than the IE unit and stacks with its neighbors, the buffer that keeps a growing grid steady."
-				"Size your storage to the gap between your peak draw and your supply."
-			]
 			rewards: [
 				{
 					id: "4954053000005000"
@@ -209,13 +207,18 @@
 				{
 					id: "4954053000005001"
 					table_id: 8430738502437568513L
-					title: "A cache for the power build."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -233,17 +236,12 @@
 		}
 		{
 			dependencies: ["4954051000000005"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "oritech:basic_generator_block"
 			}
 			id: "4954051000000007"
-			title: "Basic Generator"
-			subtitle: "Oritech's first power source."
-			description: [
-				"Build an &6Oritech&r &bBasic Generator&r. It burns fuel for a steady trickle of energy, a no-rotation starter for the Oritech machines that want &6FE&r straight away."
-				"Respect the placement canon here: this tier of tech belongs to the industrial era, not before."
-			]
 			rewards: [
 				{
 					id: "4954053000007000"
@@ -253,13 +251,18 @@
 				{
 					id: "4954053000007001"
 					table_id: 8430738502437568513L
-					title: "Starter supplies for the generator line."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -277,17 +280,12 @@
 		}
 		{
 			dependencies: ["4954051000000005"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "enderio:basic_capacitor_bank"
 			}
 			id: "4954051000000008"
-			title: "Capacitor Bank"
-			subtitle: "EnderIO's modular storage."
-			description: [
-				"Place an &6EnderIO&r &bCapacitor Bank&r. It is a multiblock &bbattery&r you extend by adding more banks together, scaling capacity as your demands grow."
-				"Start with one and bolt on more once the grid outpaces it."
-			]
 			rewards: [
 				{
 					id: "4954053000008000"
@@ -297,13 +295,18 @@
 				{
 					id: "4954053000008001"
 					table_id: 8430738502437568515L
-					title: "A reserve for the storage wall."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -322,17 +325,12 @@
 		}
 		{
 			dependencies: ["4954051000000004"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "createaddition:connector"
 			}
 			id: "4954051000000009"
-			title: "Small Connector"
-			subtitle: "Create Addition's wire tap."
-			description: [
-				"Craft a &bSmall Connector&r. It is &6Create Addition&r's low-throughput wire point, fine for feeding a single machine without the bulk of a heavier connector."
-				"Use these for the light runs and save the big connectors for trunk lines."
-			]
 			rewards: [
 				{
 					id: "4954053000009000"
@@ -342,13 +340,18 @@
 				{
 					id: "4954053000009001"
 					table_id: 8430738502437568513L
-					title: "A handful of parts for the next run."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -366,17 +369,12 @@
 		}
 		{
 			dependencies: ["4954051000000008"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "powergrid:battery"
 			}
 			id: "495405100000000B"
-			title: "Battery"
-			subtitle: "PowerGrid's portable charge."
-			description: [
-				"Craft a &6PowerGrid&r &bBattery&r. It stores energy you can carry between setups, the entry point into PowerGrid's deeper electrical engineering."
-				"&6PowerGrid&r models real circuits, so expect to think in voltage and current rather than FE in a pipe."
-			]
 			rewards: [
 				{
 					id: "495405300000B000"
@@ -386,13 +384,18 @@
 				{
 					id: "495405300000B001"
 					table_id: 8430738502437568513L
-					title: "A small cache to open the grid work."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -410,17 +413,12 @@
 		}
 		{
 			dependencies: ["4954051000000004"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "createaddition:tesla_coil"
 			}
 			id: "495405100000000C"
-			title: "Tesla Coil"
-			subtitle: "Power through the air."
-			description: [
-				"Build a &6Create Addition&r &bTesla Coil&r. Charged with &6FE&r it arcs power to nearby coils and zaps hostile mobs that wander too close, part utility and part defense."
-				"Handy for short wireless hops and for guarding a perimeter."
-			]
 			rewards: [
 				{
 					id: "495405300000C000"
@@ -430,13 +428,18 @@
 				{
 					id: "495405300000C001"
 					table_id: 8430738502437568513L
-					title: "Spare materials for the coil work."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -454,17 +457,12 @@
 		}
 		{
 			dependencies: ["4954051000000004"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "createaddition:rolling_mill"
 			}
 			id: "495405100000000D"
-			title: "Rolling Mill"
-			subtitle: "Press ingots into rods."
-			description: [
-				"Craft a &bRolling Mill&r. Driven by rotation it rolls ingots into rods and other shaped stock, sparing you a pile of hand-crafting for the parts machines eat constantly."
-				"Pair it with the motor for an automated rod supply."
-			]
 			rewards: [
 				{
 					id: "495405300000D000"
@@ -474,41 +472,30 @@
 				{
 					id: "495405300000D001"
 					table_id: 8430738502437568513L
-					title: "A parts cache for the mill."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
-				SkillsLevel: {
-					category: ""
-					check: 0b
-					comparison: "GREATER_OR_EQUAL"
-					first: 10
-					mode: "TOTAL_LEVEL"
-					second: 20
-				}
 				id: "495405200000D000"
-				item: { count: 1, id: "createaddition:rolling_mill" }
-				type: "item"
+				mode: "ALL"
+				required: 1L
+				targets: ["7A1F050000000005"]
+				type: "check_quest"
 			}]
 			x: 4.5d
 			y: -4.0d
 		}
 		{
-			hide_until_deps_complete: false
+			dependencies: ["0B0310A0000000F0"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
 			icon: {
 				id: "create:redstone_link"
 			}
-			dependencies: ["4954011000000001"]
 			id: "495405100000000F"
-			title: "Redstone Link"
-			subtitle: "Wireless redstone signals."
-			description: [
-				"Craft a &6Create&r &bRedstone Link&r. A linked pair passes a redstone signal across any distance, the clean way to switch a remote machine without trailing dust everywhere."
-				"Set the frequency with the items in its slots."
-			]
 			rewards: [
 				{
 					id: "495405300000F000"
@@ -518,13 +505,18 @@
 				{
 					id: "495405300000F001"
 					table_id: 8430738502437568513L
-					title: "A few odds and ends to keep going."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -541,6 +533,165 @@
 			y: -2.5d
 		}
 		{
+			dependencies: ["0B0310A0000000F0"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
+			icon: {
+				id: "createaddition:copper_spool"
+			}
+			id: "4954051000000040"
+			rewards: [
+				{
+					id: "4954053000040000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "4954053000040001"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954052000000040"
+				item: { count: 1, id: "createaddition:copper_spool" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4954051000000040"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "createaddition:electrum_spool"
+			}
+			id: "4954051000000041"
+			optional: true
+			rewards: [
+				{
+					id: "4954053000041000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "4954053000041001"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4954052000000041"
+					item: { count: 1, id: "createaddition:electrum_ingot" }
+					type: "item"
+				}
+				{
+					id: "4954052000000141"
+					item: { count: 1, id: "createaddition:electrum_spool" }
+					type: "item"
+				}
+				{
+					id: "4954052000000241"
+					item: { count: 1, id: "createaddition:capacitor" }
+					type: "item"
+				}
+			]
+			x: -3.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4954051000000040"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "createaddition:liquid_blaze_burner"
+			}
+			id: "4954051000000042"
+			optional: true
+			rewards: [
+				{
+					id: "4954053000042000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "4954053000042001"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4954052000000042"
+					item: { count: 1, id: "createaddition:biomass" }
+					type: "item"
+				}
+				{
+					id: "4954052000000142"
+					item: { count: 1, id: "createaddition:liquid_blaze_burner" }
+					type: "item"
+				}
+				{
+					id: "4954052000000242"
+					item: { count: 1, id: "createaddition:straw" }
+					type: "item"
+				}
+			]
+			x: -2.5d
+			y: 1.5d
+		}
+		{
 			dependencies: [
 				"4954051000000001"
 				"4954051000000003"
@@ -548,42 +699,30 @@
 				"4954051000000007"
 				"4954051000000012"
 			]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: {
 				id: "createaddition:electric_motor"
 			}
 			id: "4954051000000011"
-			title: "Rotation and Current, Joined"
-			subtitle: "The power core is online."
-			description: [
-				"With an &belectric motor&r, &balternator&r, &baccumulator&r, and an Oritech generator in hand, your core power loop is complete. You can make FE, store it, and turn it back into rotation at will."
-				"This is the foundation the rest of the chapter's grids and machines plug into."
-			]
-			rewards: [
-				{
-					id: "4954053000011000"
-					type: "xp"
-					xp: 100
-				}
-				{
-					id: "4954053000011001"
-					table_id: 8430738502437568531L
-					title: "A solid cache for crossing into the grid proper."
-					type: "loot"
-				}
-				{
-					auto: "enabled"
-					command: "/astages add {p} ir_power_motion_complete true true"
-					id: "4954053000011002"
-					permission_level: 2
-					silent: true
-					team_reward: true
-					type: "command"
-				}
-			]
+			rewards: [{
+				auto: "enabled"
+				command: "/astages add {p} ir_power_motion_complete true true"
+				id: "4954053000011002"
+				permission_level: 2
+				silent: true
+				team_reward: true
+				type: "command"
+			}]
 			shape: "gear"
 			size: 1.5d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -593,7 +732,7 @@
 					second: 20
 				}
 				id: "4954052000011000"
-				item: { count: 1, id: "createaddition:electric_motor" }
+				item: { count: 1, id: "createaddition:digital_adapter" }
 				type: "item"
 			}]
 			x: 8.5d
@@ -601,17 +740,12 @@
 		}
 		{
 			dependencies: ["4954051000000004"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "createaddition:portable_energy_interface"
 			}
 			id: "4954051000000012"
-			title: "Portable Energy Interface"
-			subtitle: "Power a moving contraption."
-			description: [
-				"Build a &bPortable Energy Interface&r. It transfers &6FE&r to and from a &6Create&r contraption as it passes, the way to keep a moving rig charged without a trailing cable."
-				"Mount one on the contraption and one on the track."
-			]
 			rewards: [
 				{
 					id: "4954053000012000"
@@ -621,13 +755,18 @@
 				{
 					id: "4954053000012001"
 					table_id: 8430738502437568513L
-					title: "Components for the mobile rigs."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -645,17 +784,12 @@
 		}
 		{
 			dependencies: ["4954051000000004"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "createaddition:digital_adapter"
 			}
 			id: "4954051000000013"
-			title: "Digital Adapter"
-			subtitle: "Wire Create into logic."
-			description: [
-				"Craft a &bDigital Adapter&r. It reads and reports the state of &6Create&r blocks as redstone or computer signals, the bridge between kinetic machinery and control logic."
-				"The start of automating your factory's decisions as well as its motions."
-			]
 			rewards: [
 				{
 					id: "4954053000013000"
@@ -665,13 +799,18 @@
 				{
 					id: "4954053000013001"
 					table_id: 8430738502437568513L
-					title: "A small kit for the control wiring."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -689,17 +828,12 @@
 		}
 		{
 			dependencies: ["495405100000000B"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "powergrid:generator_housing"
 			}
 			id: "4954051000000014"
-			title: "Generator Housing"
-			subtitle: "The shell of a real generator."
-			description: [
-				"Craft a &6PowerGrid&r &bGenerator Housing&r. It is the frame a custom generator is assembled inside, holding the rotor, commutator, and &bclutch&r you fit into it."
-				"From here PowerGrid stops handing you finished machines and starts handing you parts to build them."
-			]
 			rewards: [
 				{
 					id: "7284E43A72B462B0"
@@ -709,13 +843,18 @@
 				{
 					id: "09980B5EF3E6FCAC"
 					table_id: 8430738502437568513L
-					title: "A parts cache for the generator build."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -733,17 +872,12 @@
 		}
 		{
 			dependencies: ["4954051000000014"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "powergrid:vertical_generator_housing"
 			}
 			id: "4954051000000015"
-			title: "Vertical Generator Housing"
-			subtitle: "The upright variant."
-			description: [
-				"Build a &bVertical Generator Housing&r. It is the same shell oriented for a vertical drive, for when your rotation comes down a column rather than across the floor."
-				"Pick the housing that matches how your shafts run."
-			]
 			rewards: [
 				{
 					id: "6FD5115A4795F0A2"
@@ -753,13 +887,18 @@
 				{
 					id: "06F6C377FDE9085B"
 					table_id: 8430738502437568513L
-					title: "More frame parts for the build."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -777,17 +916,12 @@
 		}
 		{
 			dependencies: ["4954051000000014"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "powergrid:generator_induction_rotor"
 			}
 			id: "4954051000000016"
-			title: "Generator Induction Rotor"
-			subtitle: "The spinning heart."
-			description: [
-				"Craft a &bGenerator Induction Rotor&r. Spun inside the housing it is what actually induces current, the moving core every &6PowerGrid&r generator turns on."
-				"Match the rotor to the rotation speed you can supply."
-			]
 			rewards: [
 				{
 					id: "0535C030E01A6C47"
@@ -797,13 +931,18 @@
 				{
 					id: "5BDD37E3FD6ED59B"
 					table_id: 8430738502437568513L
-					title: "A cache for the rotor assembly."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -821,17 +960,12 @@
 		}
 		{
 			dependencies: ["4954051000000014"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "powergrid:generator_commutator"
 			}
 			id: "4954051000000017"
-			title: "Generator Commutator"
-			subtitle: "Collect the current."
-			description: [
-				"Build a &bGenerator Commutator&r. It picks the current off the spinning rotor and feeds it to your wiring, the contact piece between motion and output."
-				"Without it the rotor spins for nothing."
-			]
 			rewards: [
 				{
 					id: "400718F20C1DD820"
@@ -841,13 +975,18 @@
 				{
 					id: "74ED8F83C8123761"
 					table_id: 8430738502437568513L
-					title: "Contacts and parts for the next step."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -865,17 +1004,12 @@
 		}
 		{
 			dependencies: ["4954051000000015"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "powergrid:generator_vertical_commutator"
 			}
 			id: "4954051000000018"
-			title: "Vertical Commutator"
-			subtitle: "The upright pickup."
-			description: [
-				"Craft a &bVertical Generator Commutator&r. It is the commutator sized for the vertical housing, completing the upright generator's output path."
-				"Use it where your housing stands on end."
-			]
 			rewards: [
 				{
 					id: "3B4D153FDBE74EBB"
@@ -885,13 +1019,18 @@
 				{
 					id: "690560BBC0E4D0EC"
 					table_id: 8430738502437568513L
-					title: "A few parts for the vertical build."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -909,17 +1048,12 @@
 		}
 		{
 			dependencies: ["4954051000000014"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "powergrid:generator_clutch"
 			}
 			id: "4954051000000019"
-			title: "Generator Clutch"
-			subtitle: "Engage and disengage."
-			description: [
-				"Build a &bGenerator Clutch&r. It couples or frees the rotor from the drive, letting you spin a generator up or idle it without tearing down the rotation behind it."
-				"Useful for cutting output without stopping the whole line."
-			]
 			rewards: [
 				{
 					id: "37AF12E81B35CBEC"
@@ -929,13 +1063,18 @@
 				{
 					id: "0EED8F347928AD47"
 					table_id: 8430738502437568513L
-					title: "Spare components for the drivetrain."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -953,17 +1092,12 @@
 		}
 		{
 			dependencies: ["4954051000000016"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "powergrid:constant_speed_motor"
 			}
 			id: "495405100000001A"
-			title: "Constant Speed Motor"
-			subtitle: "Steady rotation from power."
-			description: [
-				"Craft a &bConstant Speed Motor&r. It spends electricity to turn at a fixed rate regardless of load, the dependable drive for machines that need an even rotation."
-				"Where a &6Create&r motor wavers under strain, this holds its speed."
-			]
 			rewards: [
 				{
 					id: "42BA642034521346"
@@ -973,13 +1107,18 @@
 				{
 					id: "71247ED7931EA135"
 					table_id: 8430738502437568513L
-					title: "A cache for the motor work."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -997,17 +1136,12 @@
 		}
 		{
 			dependencies: ["4954051000000014"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "powergrid:circuit_design_table"
 			}
 			id: "495405100000001B"
-			title: "Circuit Design Table"
-			subtitle: "Lay out a control circuit."
-			description: [
-				"Build the &bCircuit Design Table&r. It is where you draft &6PowerGrid&r's control circuits, arranging the logic that will run your grid before you commit it to a card."
-				"This is the brain of the operation, the bench the punch cards come off."
-			]
 			rewards: [
 				{
 					id: "30AE5002B3D02ACD"
@@ -1017,13 +1151,18 @@
 				{
 					id: "7A6F36BD18BB02DC"
 					table_id: 8430738502437568513L
-					title: "Materials for the control bench."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1041,17 +1180,12 @@
 		}
 		{
 			dependencies: ["495405100000001B"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "powergrid:punch_card_reader"
 			}
 			id: "495405100000001C"
-			title: "Punch Card Reader"
-			subtitle: "Run a saved program."
-			description: [
-				"Craft a &bPunch Card Reader&r. It executes the circuits you punch out at the design table, so a working layout becomes a card you can plug in and reuse."
-				"Design once, stamp a card, run it anywhere."
-			]
 			rewards: [
 				{
 					id: "197AC3F5F1FD197B"
@@ -1061,13 +1195,18 @@
 				{
 					id: "4EE7A6E0D893738E"
 					table_id: 8430738502437568513L
-					title: "A small kit for the reader."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1085,17 +1224,12 @@
 		}
 		{
 			dependencies: ["495405100000001B"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "powergrid:crt"
 			}
 			id: "495405100000001D"
-			title: "Cathode Ray Tube"
-			subtitle: "Read the grid at a glance."
-			description: [
-				"Build a &bCathode Ray Tube&r. It is &6PowerGrid&r's display, showing the state of your circuits and power so you can see what is happening instead of guessing."
-				"A screen on the wall beats chasing a fault by hand."
-			]
 			rewards: [
 				{
 					id: "5D9AA2B6FC861EE9"
@@ -1105,13 +1239,18 @@
 				{
 					id: "3D1D7220EA6A97EC"
 					table_id: 8430738502437568513L
-					title: "Parts for the display panel."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1129,17 +1268,12 @@
 		}
 		{
 			dependencies: ["495405100000001F"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "powergrid:resistive_coil"
 			}
 			id: "495405100000001E"
-			title: "Carbon Pile"
-			subtitle: "A variable load."
-			description: [
-				"Craft a &bCarbon Pile&r. It acts as an adjustable resistance in a circuit, a load you can dial to test or tune how your grid behaves under draw."
-				"An engineer's bench piece more than a production block."
-			]
 			rewards: [
 				{
 					id: "232677AEBD1AC0CF"
@@ -1149,13 +1283,18 @@
 				{
 					id: "249509C42D9DAFEC"
 					table_id: 8430738502437568513L
-					title: "A handful of parts for the bench."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1165,7 +1304,7 @@
 					second: 20
 				}
 				id: "495405200000001E"
-				item: { count: 1, id: "powergrid:carbon_pile" }
+				item: { components: { "ftbquests:missing_item": "powergrid:carbon_pile" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 14.0d
@@ -1173,17 +1312,12 @@
 		}
 		{
 			dependencies: ["4954051000000014"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "powergrid:carbon_pile_coil"
 			}
 			id: "495405100000001F"
-			title: "Carbon Pile Coil"
-			subtitle: "The pile's wound core."
-			description: [
-				"Build a &bCarbon Pile Coil&r. It is the wound component the carbon pile is built around, the piece that gives the load its adjustable range."
-				"Make it before you can finish the pile itself."
-			]
 			rewards: [
 				{
 					id: "50B0CF7C60D20E28"
@@ -1193,13 +1327,18 @@
 				{
 					id: "41642075017974CC"
 					table_id: 8430738502437568513L
-					title: "A few wound parts for the coil work."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1217,17 +1356,12 @@
 		}
 		{
 			dependencies: ["4954051000000014"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "powergrid:basin_heater"
 			}
 			id: "4954051000000020"
-			title: "Basin Heater"
-			subtitle: "Heat a basin with power."
-			description: [
-				"Craft a &bBasin Heater&r. It warms a &6Create&r basin using electricity instead of a &bblaze burner&r, swapping a fuel run for a wire once your grid can spare the draw."
-				"Clean heat for the mixing and cooking recipes that need it."
-			]
 			rewards: [
 				{
 					id: "294942BE802F758D"
@@ -1237,13 +1371,18 @@
 				{
 					id: "719A0B8C8A0F2F4B"
 					table_id: 8430738502437568513L
-					title: "A cache for the heating setup."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1261,17 +1400,12 @@
 		}
 		{
 			dependencies: ["4954051000000014"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "powergrid:transformer_core"
 			}
 			id: "4954051000000021"
-			title: "Transformer (Small)"
-			subtitle: "Step the voltage."
-			description: [
-				"Build a &bSmall Transformer&r. It shifts power between voltage levels, the piece that lets a high-voltage trunk feed a low-voltage machine without frying it."
-				"Matching voltages is how &6PowerGrid&r keeps the magic smoke inside the wires."
-			]
 			rewards: [
 				{
 					id: "399C01696FBF2613"
@@ -1281,13 +1415,18 @@
 				{
 					id: "0B991A080B8D45B0"
 					table_id: 8430738502437568513L
-					title: "Components for the transformer pass."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1297,7 +1436,7 @@
 					second: 20
 				}
 				id: "4954052000000021"
-				item: { count: 1, id: "powergrid:transformer_small" }
+				item: { components: { "ftbquests:missing_item": "powergrid:transformer_small" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 14.0d
@@ -1305,17 +1444,12 @@
 		}
 		{
 			dependencies: ["4954051000000021"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "powergrid:copper_coil"
 			}
 			id: "4954051000000022"
-			title: "Transformer (Medium)"
-			subtitle: "Handle a heavier load."
-			description: [
-				"Craft a &bMedium Transformer&r. It carries more power than the small unit at the same job, the step up for trunk lines feeding several machines."
-				"Size the &btransformer&r to the current it has to pass."
-			]
 			rewards: [
 				{
 					id: "15CC33DA90EF7BFF"
@@ -1325,13 +1459,18 @@
 				{
 					id: "58D6E8AE83004EC5"
 					table_id: 8430738502437568513L
-					title: "More parts for the wiring stage."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1341,7 +1480,7 @@
 					second: 20
 				}
 				id: "4954052000000022"
-				item: { count: 1, id: "powergrid:transformer_medium" }
+				item: { components: { "ftbquests:missing_item": "powergrid:transformer_medium" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 12.5d
@@ -1349,17 +1488,12 @@
 		}
 		{
 			dependencies: ["4954051000000014"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "powergrid:contactor"
 			}
 			id: "4954051000000023"
-			title: "Contactor"
-			subtitle: "Switch power under load."
-			description: [
-				"Build a &bContactor&r. It is a heavy electrical switch, opening or closing a circuit on a signal so you can cut power to a section without pulling wire."
-				"The relay behind any automated grid control."
-			]
 			rewards: [
 				{
 					id: "0CF04EAD765C85A3"
@@ -1369,13 +1503,18 @@
 				{
 					id: "48E398FB689C04D5"
 					table_id: 8430738502437568513L
-					title: "A small cache for the switchgear."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1393,17 +1532,12 @@
 		}
 		{
 			dependencies: ["4954051000000021"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "powergrid:variac"
 			}
 			id: "4954051000000024"
-			title: "Variac"
-			subtitle: "Dial the voltage by hand."
-			description: [
-				"Craft a &bVariac&r. It is a variable &btransformer&r, letting you trim output voltage smoothly rather than in fixed steps, for fine-tuning a finicky machine."
-				"Where the &btransformer&r sets a tier, the variac sets the exact level."
-			]
 			rewards: [
 				{
 					id: "3FD79EB7856631C9"
@@ -1413,13 +1547,18 @@
 				{
 					id: "42720EFF6C088D08"
 					table_id: 8430738502437568513L
-					title: "Parts for the tuning gear."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1437,17 +1576,12 @@
 		}
 		{
 			dependencies: ["4954051000000023"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "powergrid:rheostat"
 			}
 			id: "4954051000000025"
-			title: "Rheostat"
-			subtitle: "Adjustable resistance."
-			description: [
-				"Build a &bRheostat&r. It is a variable resistor you set by hand to limit current in a line, useful for throttling a load without rewiring it."
-				"Another knob for the grid engineer's panel."
-			]
 			rewards: [
 				{
 					id: "2FA2B8A7166368FA"
@@ -1457,13 +1591,18 @@
 				{
 					id: "69B48151F644B303"
 					table_id: 8430738502437568513L
-					title: "A few components for the panel."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1481,17 +1620,12 @@
 		}
 		{
 			dependencies: ["495405100000001A"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "powergrid:electric_motor"
 			}
 			id: "4954051000000026"
-			title: "Electric Motor"
-			subtitle: "PowerGrid's drive output."
-			description: [
-				"Craft a &6PowerGrid&r &bElectric Motor&r. It converts the dimension's electricity back into rotation, the output end of everything you built upstream."
-				"Close the loop: generator to grid to motor to machine."
-			]
 			rewards: [
 				{
 					id: "6F3BBE75C4E75976"
@@ -1501,13 +1635,18 @@
 				{
 					id: "515574EB04E8B8EA"
 					table_id: 8430738502437568513L
-					title: "A cache to round out the drive train."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1525,17 +1664,12 @@
 		}
 		{
 			dependencies: ["4954051000000011"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "moderndynamics:lv_cable"
 			}
 			id: "4954051000000027"
-			title: "LV EU Cable"
-			subtitle: "Modern Dynamics, low voltage."
-			description: [
-				"Craft a &6Modern Dynamics&r &bLV EU Cable&r. It carries low-voltage power with tidy, connectable runs, the cleaner alternative to scattering connectors everywhere."
-				"&6Modern Dynamics&r is the logistics backbone for cables, pipes, and item routing both."
-			]
 			rewards: [
 				{
 					id: "6ECD84BF27D137AB"
@@ -1545,13 +1679,18 @@
 				{
 					id: "383C9E5CBADA5958"
 					table_id: 8430738502437568513L
-					title: "A spool of supplies for the cabling."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1569,17 +1708,12 @@
 		}
 		{
 			dependencies: ["4954051000000027"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "moderndynamics:item_pipe"
 			}
 			id: "4954051000000028"
-			title: "Item Pipe"
-			subtitle: "Route items cleanly."
-			description: [
-				"Build a &6Modern Dynamics&r &bItem Pipe&r. It moves items between machines and storage along a routed network, the item side of the same tidy logistics system."
-				"Set filters and priorities to keep the flow going where you want."
-			]
 			rewards: [
 				{
 					id: "321561C9C2350D1E"
@@ -1589,13 +1723,18 @@
 				{
 					id: "42DDC739F3410826"
 					table_id: 8430738502437568513L
-					title: "A cache for the pipe network."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1613,17 +1752,12 @@
 		}
 		{
 			dependencies: ["4954051000000027"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "moderndynamics:machine_extender"
 			}
 			id: "4954051000000029"
-			title: "Machine Extender"
-			subtitle: "Reach into a machine's guts."
-			description: [
-				"Craft a &bMachine Extender&r. It exposes a machine's input or output to the side you need, so a pipe or cable can reach a face that is otherwise boxed in."
-				"A small fix for the tight spots in a packed build."
-			]
 			rewards: [
 				{
 					id: "33068EF026B80677"
@@ -1633,13 +1767,18 @@
 				{
 					id: "52B568EEF2C20FDF"
 					table_id: 8430738502437568513L
-					title: "A few parts to ease the plumbing."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1657,17 +1796,12 @@
 		}
 		{
 			dependencies: ["4954051000000011"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "dynamicelectricity:alternator"
 			}
 			id: "495405100000002A"
-			title: "Dynamic Electricity Alternator"
-			subtitle: "Another rotation-to-power option."
-			description: [
-				"Build a &6Dynamic Electricity&r &bAlternator&r. It is a parallel route from rotation to current, giving you a second mod's take on the same conversion step."
-				"Pick whichever &balternator&r slots best into the gear you already run."
-			]
 			rewards: [
 				{
 					id: "47AAE01C154AE29A"
@@ -1677,13 +1811,18 @@
 				{
 					id: "32ECF373D9580FEC"
 					table_id: 8430738502437568513L
-					title: "Spare parts for the alternator swap."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1701,17 +1840,12 @@
 		}
 		{
 			dependencies: ["4954051000000034"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "electrodynamics:electricfurnacetriple"
 			}
 			id: "495405100000002B"
-			title: "Triple Electric Furnace"
-			subtitle: "Smelt three at once."
-			description: [
-				"Craft an &6Electrodynamics&r &bTriple Electric Furnace&r. It smelts three stacks in parallel on electric power, a serious throughput jump over single furnaces."
-				"&6Electrodynamics&r machines run on real voltage tiers, so feed it the power it expects."
-			]
 			rewards: [
 				{
 					id: "04598EBBB02261BD"
@@ -1721,13 +1855,18 @@
 				{
 					id: "18BA2F9679018886"
 					table_id: 8430738502437568513L
-					title: "A cache for the smelting upgrade."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1745,17 +1884,12 @@
 		}
 		{
 			dependencies: ["495405100000002B"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "electrodynamics:electricarcfurnacetriple"
 			}
 			id: "495405100000002C"
-			title: "Triple Electric Arc Furnace"
-			subtitle: "Alloys at volume."
-			description: [
-				"Build a &bTriple Electric Arc Furnace&r. It runs alloying and high-heat recipes three at a time, the heavy smelter for when one arc furnace is a bottleneck."
-				"Reserve it for the recipes a plain &bfurnace&r cannot do."
-			]
 			rewards: [
 				{
 					id: "1E0A19D2AACF5462"
@@ -1765,13 +1899,18 @@
 				{
 					id: "53540406BDBDBCD7"
 					table_id: 8430738502437568513L
-					title: "Materials for the arc furnace line."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1789,17 +1928,12 @@
 		}
 		{
 			dependencies: ["495405100000002B"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "electrodynamics:mineralgrindertriple"
 			}
 			id: "495405100000002D"
-			title: "Triple Mineral Grinder"
-			subtitle: "Double your ore yield, in bulk."
-			description: [
-				"Craft a &bTriple Mineral Grinder&r. It crushes ore into dust three lines at once, the bulk step that turns each ore into two ingots' worth of output."
-				"The backbone of any serious ore-processing setup."
-			]
 			rewards: [
 				{
 					id: "648F5ED67F3DA05B"
@@ -1809,13 +1943,18 @@
 				{
 					id: "0C843093F42E9687"
 					table_id: 8430738502437568513L
-					title: "A parts cache for the grinder."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1833,17 +1972,12 @@
 		}
 		{
 			dependencies: ["495405100000002B"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "electrodynamics:wiremilltriple"
 			}
 			id: "495405100000002E"
-			title: "Triple Wire Mill"
-			subtitle: "Spin wire at scale."
-			description: [
-				"Build a &bTriple Wire Mill&r. It draws ingots into wire three at a time, feeding the constant wire demand of an electrical base without hand-crafting."
-				"Wire is cheap to make and tedious to make by hand, so automate it early."
-			]
 			rewards: [
 				{
 					id: "608E41063274EDB1"
@@ -1853,13 +1987,18 @@
 				{
 					id: "3B2459893ACD21F5"
 					table_id: 8430738502437568513L
-					title: "A cache for the wire supply."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1877,17 +2016,12 @@
 		}
 		{
 			dependencies: ["4954051000000011"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "electrodynamics:solarpanel"
 			}
 			id: "495405100000002F"
-			title: "Solar Panel"
-			subtitle: "Power from daylight."
-			description: [
-				"Craft an &6Electrodynamics&r &bSolar Panel&r. It generates a quiet stream of power in sunlight with no fuel and no upkeep, the lazy baseline for a daytime grid."
-				"Output drops at night and in bad weather, so pair it with storage."
-			]
 			rewards: [
 				{
 					id: "3F73670640E98F00"
@@ -1897,13 +2031,18 @@
 				{
 					id: "25769F4EE9C60CE3"
 					table_id: 8430738502437568513L
-					title: "A starter cache for the solar array."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1921,17 +2060,12 @@
 		}
 		{
 			dependencies: ["495405100000002F"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "electrodynamics:advancedsolarpanel"
 			}
 			id: "4954051000000030"
-			title: "Advanced Solar Panel"
-			subtitle: "More watts per tile."
-			description: [
-				"Build an &bAdvanced Solar Panel&r. It produces considerably more than the basic panel for the same footprint, the upgrade once roof space gets tight."
-				"Swap up to these before you tile the whole base in basics."
-			]
 			rewards: [
 				{
 					id: "4BF827E7C636D030"
@@ -1941,13 +2075,18 @@
 				{
 					id: "0E1DEABBB32B3314"
 					table_id: 8430738502437568513L
-					title: "Components for the panel upgrade."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1965,17 +2104,12 @@
 		}
 		{
 			dependencies: ["4954051000000011"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "electrodynamics:thermoelectricgenerator"
 			}
 			id: "4954051000000031"
-			title: "Thermoelectric Generator"
-			subtitle: "Power from a heat gap."
-			description: [
-				"Craft a &bThermoelectric Generator&r. It makes power from the difference between a hot side and a cold side, free energy wherever you already have lava and ice or water."
-				"Site it on a natural temperature divide for the best return."
-			]
 			rewards: [
 				{
 					id: "797239F579C077E7"
@@ -1985,13 +2119,18 @@
 				{
 					id: "5DE1E691EBF6670E"
 					table_id: 8430738502437568513L
-					title: "A cache for the thermal rig."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -2009,17 +2148,12 @@
 		}
 		{
 			dependencies: ["4954051000000011"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "electrodynamics:hydroelectricgenerator"
 			}
 			id: "4954051000000032"
-			title: "Hydroelectric Generator"
-			subtitle: "Power from flowing water."
-			description: [
-				"Build a &bHydroelectric Generator&r. Set in moving water it spins out steady power with no fuel, a reliable base load near any river or fall."
-				"Strong, quiet, and fuel-free if you have the water for it."
-			]
 			rewards: [
 				{
 					id: "5BA909AC90666C3F"
@@ -2029,13 +2163,18 @@
 				{
 					id: "2FFB53897595AD77"
 					table_id: 8430738502437568513L
-					title: "Supplies for the water build."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -2053,17 +2192,12 @@
 		}
 		{
 			dependencies: ["4954051000000011"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "electrodynamics:windmill"
 			}
 			id: "4954051000000033"
-			title: "Windmill"
-			subtitle: "Power from the breeze."
-			description: [
-				"Craft an &6Electrodynamics&r &bWindmill&r. Mounted high in open air it turns wind into power, output rising with altitude and exposure."
-				"Put it up where nothing blocks the sky for the best yield."
-			]
 			rewards: [
 				{
 					id: "680502F3A17E9147"
@@ -2073,13 +2207,18 @@
 				{
 					id: "1DB2FD7E7BD8E11C"
 					table_id: 8430738502437568513L
-					title: "A cache for the wind setup."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -2097,17 +2236,12 @@
 		}
 		{
 			dependencies: ["4954051000000011"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "electrodynamics:coalgenerator"
 			}
 			id: "4954051000000034"
-			title: "Coal Generator"
-			subtitle: "Burn for reliable power."
-			description: [
-				"Build an &6Electrodynamics&r &bCoal Generator&r. It burns solid fuel for dependable output regardless of weather, the workhorse that carries a grid through the night."
-				"Not clean, but it never cares whether the sun is up."
-			]
 			rewards: [
 				{
 					id: "687D270D9D5B2370"
@@ -2117,13 +2251,18 @@
 				{
 					id: "5C0D333DA7162E46"
 					table_id: 8430738502437568513L
-					title: "A starter cache for the burner."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -2141,17 +2280,12 @@
 		}
 		{
 			dependencies: ["4954051000000034"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "electrodynamics:combustionchamber"
 			}
 			id: "4954051000000035"
-			title: "Combustion Chamber"
-			subtitle: "Liquid fuel, more power."
-			description: [
-				"Craft a &bCombustion Chamber&r. It burns liquid fuels for a stronger output than solid burning, the step up once you have a &brefinery&r feeding it."
-				"Feed it the fuels your oil chain produces for the best return."
-			]
 			rewards: [
 				{
 					id: "4B642F74FBC2D791"
@@ -2161,13 +2295,18 @@
 				{
 					id: "4F53236ED6081360"
 					table_id: 8430738502437568513L
-					title: "Materials for the fuel burner."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -2185,17 +2324,12 @@
 		}
 		{
 			dependencies: ["495405100000002B"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "electrodynamics:compressor"
 			}
 			id: "4954051000000036"
-			title: "Compressor"
-			subtitle: "Squeeze materials into shape."
-			description: [
-				"Build an &6Electrodynamics&r &bCompressor&r. It presses materials into denser forms and the plates and parts other Electrodynamics machines need, a key intermediate step."
-				"Several of the mod's recipes dead-end without it."
-			]
 			rewards: [
 				{
 					id: "77528D370A7C44F6"
@@ -2205,13 +2339,18 @@
 				{
 					id: "11C16393F107F3A6"
 					table_id: 8430738502437568513L
-					title: "A parts cache for the compressor line."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -2229,4 +2368,3 @@
 		}
 	]
 }
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                     

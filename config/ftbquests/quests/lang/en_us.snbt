@@ -3320,8 +3320,11 @@
 	]
 	quest.495405100000000C.quest_subtitle: "Power through the air."
 	quest.495405100000000C.title: "Tesla Coil"
-	quest.495405100000000D.quest_desc: ["Craft a &bRolling Mill&r. The Medieval mill introduced this block; here it belongs beside motors and alternators as part of an automated rod and wire-stock supply."]
-	quest.495405100000000D.quest_subtitle: "Automate rolled stock."
+	quest.495405100000000D.quest_desc: [
+		"You built the &bRolling Mill&r back in the Medieval mill, so there is nothing new to craft here. This node just confirms you still have one, because the mill is what turns your ingots into the pressed plates and copper spools every electric machine below needs."
+		"If this quest is not already complete, go back and finish the Medieval Rolling Mill quest. The rolled stock it makes feeds directly into the connectors and wire work in this chapter."
+	]
+	quest.495405100000000D.quest_subtitle: "Rolled stock, already earned."
 	quest.495405100000000D.title: "Rolling Mill"
 	quest.495405100000000F.quest_desc: [
 		"Craft a &6Create&r &bRedstone Link&r. A linked pair passes a redstone signal across any distance, the clean way to switch a remote machine without trailing dust everywhere."
@@ -3552,6 +3555,25 @@
 	]
 	quest.4954051000000036.quest_subtitle: "Squeeze materials into shape."
 	quest.4954051000000036.title: "Compressor"
+	quest.4954051000000040.quest_desc: [
+		"Craft a &bCopper Spool&r. This is how &6Create Crafts and Additions&r wires machines together. Wind a spool, right-click one &bConnector&r and then a second, and a wire link forms between them while the spool stays in your hand."
+		"There are two current levels and they do not mix. A &bCopper Spool&r with small &bConnectors&r carries &blow current&r and reaches up to four links per connector. A &bGold&r or &bElectrum Spool&r with a &bLarge Connector&r carries &bhigh current&r and reaches up to six. Feed a hungry machine off a low-current copper line and it tells you it needs a high-current wire instead."
+		"A wrench on a connector cycles its mode between &bPush&r, &bPull&r, and &bNone&r, so one node can send energy, draw it, or sit idle. Start with copper and small connectors; the high-current gear below is only worth it once a copper line cannot keep up."
+	]
+	quest.4954051000000040.quest_subtitle: "Low current versus high current."
+	quest.4954051000000040.title: "Low vs High Current"
+	quest.4954051000000041.quest_desc: [
+		"Build the high-current path. Alloy an &bElectrum Ingot&r from gold and silver, wind it into an &bElectrum Spool&r, and craft a &bCapacitor&r for buffering. Electrum spools feed &bLarge Connectors&r, which is the only wiring a big machine will accept."
+		"This branch is optional. A copper low-current line already runs the early electric machines. Come back here when a single machine draws more than a copper wire can deliver and starts asking for high current."
+	]
+	quest.4954051000000041.quest_subtitle: "Wire for the hungry machines."
+	quest.4954051000000041.title: "High-Current Materials"
+	quest.4954051000000042.quest_desc: [
+		"Set up a renewable fuel loop. Compost or process organic matter into &bBiomass&r, give a &bBlaze Burner&r a &bStraw&r so it accepts liquid fuel, and it becomes a &bLiquid Blaze Burner&r you can feed by bucket or pipe. &bStraw&r itself comes from milling wheat or hay."
+		"This is optional. It gives &6Create Crafts and Additions&r a fuel source you can farm instead of mining, handy for keeping a heat source lit without burning through coal."
+	]
+	quest.4954051000000042.quest_subtitle: "Farm your own burner fuel."
+	quest.4954051000000042.title: "Renewable Blaze Fuel"
 	quest.4954061000000001.quest_desc: [
 		"Build an &bAir Compressor&r. It burns fuel to pack air into pressure, the force every &6PneumaticCraft&r machine runs on, measured in bar."
 		"Watch the gauge: push a machine past its danger pressure and it does not warn you twice. It explodes."
@@ -3937,6 +3959,7 @@
 	quest.4954071000000012.quest_desc: [
 		"Produce a &bBiodiesel&r Bucket from the fermenter. It burns in the same engines as petroleum &bdiesel&r, a grown-not-drilled fuel for a base that wants to stay self-sufficient."
 		"Crops in, power out, indefinitely."
+		"&6Create Diesel Generators&r fuels are not all equal. Raw &bethanol&r or &bplant oil&r burn weakest, &bbiodiesel&r blended from plant oil and ethanol is the renewable sweet spot you just made, and refined &bdiesel&r from crude oil burns hottest of the three. Match the fuel to how much power the engine needs rather than always reaching for the strongest."
 	]
 	quest.4954071000000012.quest_subtitle: "Renewable engine fuel."
 	quest.4954071000000012.title: "Biodiesel"
@@ -4073,6 +4096,7 @@
 	quest.4954081000000017.quest_desc: [
 		"Build a &bHeater&r. It is the source feeding the heat pipes, generating the warmth &6Create New Age&r's heat-driven recipes consume."
 		"Pair it with the pipes to run a thermal loop."
+		"One thing to know with &6Create Cold Sweat&r installed: hot blocks radiate real body-temperature heat. A lit blaze burner or a running boiler warms you nearby, scaling up from smouldering to seething, and hot fluid sitting in pipes or tanks heats the room around it while cold fluid cools it. Keep this in mind when you build a thermal loop indoors."
 	]
 	quest.4954081000000017.quest_subtitle: "Make the heat."
 	quest.4954081000000017.title: "Heater"
@@ -4135,6 +4159,48 @@
 	]
 	quest.4954081000000021.quest_subtitle: "Take power off the engine."
 	quest.4954081000000021.title: "Powered Engine Shaft"
+	quest.4954081000000030.quest_desc: [
+		"You already crafted the &bGenerator Coil&r; this node teaches how it actually makes power. A &bGenerator Coil&r only produces electricity when two things are true at once: it is being spun by &6Create&r kinetics, and it is ringed by &bmagnets&r on its sides. It does not turn anything itself. Instead it &beats&r stress units off the shaft driving it and converts that rotation into current."
+		"The &bCarbon Brushes&r are what collect the electricity the coil generates, so a working setup is shaft into coil, magnets around the coil, brushes pulling the output. Stronger magnets raise how much of the incoming rotation becomes electricity, going &bRedstone&r to &bLayered&r to &bNetherite&r, but a stronger field also draws more stress units, so size your kinetic source to match."
+	]
+	quest.4954081000000030.quest_subtitle: "How the coil makes power."
+	quest.4954081000000030.title: "First Electricity"
+	quest.4954081000000031.quest_desc: [
+		"Craft &bCopper Wire&r to carry the current your coil produces. &6Create New Age&r wire runs between its &belectrical connectors&r, and each connector has a mode you set with a wrench: &bInert&r leaves it idle, while &bPull&r has it actively draw power down the line."
+		"A wire run has a maximum length, so plan connector placement for long hauls and hop through intermediate connectors when a single span will not reach. Keep the source connector pushing and the far end pulling and the power flows where you want it."
+	]
+	quest.4954081000000031.quest_subtitle: "Run the current down a wire."
+	quest.4954081000000031.title: "Move the Power"
+	quest.4954081000000032.quest_desc: [
+		"Turn the electricity back into work. Craft a &bBasic Motor&r and a &bBasic Energiser&r. The &bBasic Motor&r takes the current your line delivers and spins a shaft with it, the reverse of the generator coil, giving you rotation wherever you have wire instead of dragging a driveshaft across the base. It turns at a fixed speed you tune with a wrench."
+		"The &bBasic Energiser&r is the other half of the tier. Fed enough power it energises materials into &bovercharged iron&r, &bovercharged gold&r, and &bovercharged diamond&r, and it can turn a plain glass bottle into an &bexperience bottle&r. You do not need to craft those here; just know the Energiser is where that chain begins."
+	]
+	quest.4954081000000032.quest_subtitle: "Electricity back to rotation."
+	quest.4954081000000032.title: "Use the Power"
+	quest.4954081000000033.quest_desc: [
+		"Craft a &bMolten Iron Bucket&r to learn &6Create Metalwork&r's yield loop. Crush your raw material as usual, then heat-mix the crushed item in a &bBasin&r until it becomes a &bmolten fluid&r. That fluid is buffered at roughly 111 mB per ingot and can be piped and stored like any other."
+		"Pour or compact the molten metal back into ingots and you get more metal per ore than a plain furnace would give. The crushing itself is the same ore doubling your Medieval crushing wheels already do; what Metalwork adds is the molten buffer in the middle, which lets you batch and pipe the metal instead of smelting one item at a time."
+	]
+	quest.4954081000000033.quest_subtitle: "Crush, melt, pour for more."
+	quest.4954081000000033.title: "Molten Metalwork"
+	quest.4954081000000034.quest_desc: [
+		"The payoff pour. Crush four gold and four &bnetherite scrap&r, heat-mix them, and pour the result to get &bnetherite&r straight from the &bMolten Netherite Bucket&r, no smithing table smelting step in the way."
+		"This node is optional. It is the one distinctive result &6Create Metalwork&r offers over ordinary crushing, and it carries you into the netherite you will lean on heading toward the Gilded Age."
+	]
+	quest.4954081000000034.quest_subtitle: "Pour your own netherite."
+	quest.4954081000000034.title: "Molten Netherite"
+	quest.4954081000000035.quest_desc: [
+		"An optional detour into &6Create Confectionery&r. Press and crush cocoa beans down the chain into &bCocoa Powder&r, the base ingredient the addon's caramel and chocolate recipes build on."
+		"Nothing on the main line needs this. It is here as a food branch if you want to run a small sweets factory alongside your machines."
+	]
+	quest.4954081000000035.quest_subtitle: "Press beans into powder."
+	quest.4954081000000035.title: "Cocoa Powder"
+	quest.4954081000000036.quest_desc: [
+		"Dress up the workshop. Craft a &bBrass Chair&r from &6Create New Furnitures&r, a purely decorative branch of matching factory-styled furniture."
+		"This is optional flavor. It grants no progression, just a place to sit while the machines run."
+	]
+	quest.4954081000000036.quest_subtitle: "A seat for the shop floor."
+	quest.4954081000000036.title: "Workshop Dressing"
 	quest.49540A1000000004.quest_desc: [
 		"Craft a &6ProjectRed&r &bDeployer&r. On a redstone pulse it uses whatever item it holds on the block in front, right-clicking for you: tilling, planting, bucketing, and more."
 		"The first building block of hands-off automation."
