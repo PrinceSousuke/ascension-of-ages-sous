@@ -4,6 +4,7 @@
 	default_quest_shape: ""
 	filename: "m3_relics_and_burrows"
 	group: "508B59840C508057"
+	hide_quest_until_deps_complete: true
 	icon: {
 		id: "alchemists_garden:leather_glove"
 	}
@@ -12,18 +13,13 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["2902E58DB70F940F"]
+			dependencies: ["097AED7C91033D5E"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: {
 				id: "productivemetalworks:ingot_cast"
 			}
 			id: "49BBE54BCF735A82"
-			title: "Ingot Cast"
-			subtitle: "Borrow the foundry's mold."
-			description: [
-				"Have an &bIngot Cast&r from the foundry chapter ready. The garden's &bMushroomite Chunk&r is poured like any other metal, so the same cast you use for ingots shapes it."
-				"This is the bridge that ties the alchemist's craft back to your metalworking."
-			]
 			rewards: [{
 				id: "3030BC36BB8FE638"
 				type: "xp"
@@ -32,6 +28,12 @@
 			shape: "gear"
 			size: 2.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -41,7 +43,7 @@
 					second: 20
 				}
 				id: "6A394994489959FD"
-				item: { count: 1, id: "productivemetalworks:ingot_cast" }
+				item: { count: 1, id: "alchemists_garden:mixed_soil_pot" }
 				type: "item"
 			}]
 			x: -20.0d
@@ -49,17 +51,12 @@
 		}
 		{
 			dependencies: ["49BBE54BCF735A82"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: {
 				id: "explorerscompass:explorerscompass"
 			}
 			id: "4B2D3C5E8F7A7C00"
-			title: "Explorer's Compass"
-			subtitle: "Point yourself at a structure."
-			description: [
-				"Craft an &bExplorer's Compass&r. It locates a chosen structure type, which cuts a lot of aimless wandering when you are hunting down burrows, groves, and the like."
-				"Optional, but a real time-saver for an exploration-heavy chapter."
-			]
 			optional: true
 			rewards: [{
 				id: "4B2D3C5E8F7A7C02"
@@ -69,6 +66,12 @@
 			shape: "circle"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -86,13 +89,9 @@
 		}
 		{
 			dependencies: ["49BBE54BCF735A82"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "7D36D95D74E1588E"
-			title: "Alchemist's Glove"
-			subtitle: "Pick the thorny plants safely."
-			description: [
-				"Craft the &bAlchemist's Glove&r. It lets you harvest the prickly plants, brambleroot above all, without taking damage for the trouble. Keep it on before you reach into the garden's nastier beds."
-			]
 			rewards: [{
 				id: "5190DBA080337994"
 				type: "xp"
@@ -101,6 +100,12 @@
 			shape: "diamond"
 			size: 1.2d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -118,13 +123,9 @@
 		}
 		{
 			dependencies: ["49BBE54BCF735A82"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "5607E15F448C5DC8"
-			title: "Mortar and Pestle"
-			subtitle: "Grind herbs into reagents."
-			description: [
-				"Craft a &bMortar and Pestle&r. It grinds herbs and oddments into the powders and pastes the &6Alchemist's Garden&r recipes are built on. Set it on the workbench you will be brewing at."
-			]
 			rewards: [{
 				id: "68BE232409915F7F"
 				type: "xp"
@@ -133,6 +134,12 @@
 			shape: "square"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -150,14 +157,9 @@
 		}
 		{
 			dependencies: ["5607E15F448C5DC8"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "46BC26894174159C"
-			title: "Mixed Soil"
-			subtitle: "The only bed they will grow in."
-			description: [
-				"Make &bMixed Soil&r and a Mixed Soil Pot. The magical plants ahead root only in this enriched soil, so lay down a bed of it before you start planting."
-				"The pot lets you keep a plant or two indoors near your brewing setup."
-			]
 			rewards: [{
 				id: "4B7DF2FF61C650A9"
 				type: "xp"
@@ -167,6 +169,12 @@
 			size: 1.0d
 			tasks: [
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -180,6 +188,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -198,14 +212,9 @@
 		}
 		{
 			dependencies: ["49BBE54BCF735A82"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "451E7BC527C955B7"
-			title: "First Herbs"
-			subtitle: "Start the garden."
-			description: [
-				"Grow the first plants: blood rose, bubblis, cloudelion, glow fungus, and toxic cap. Each is an alchemy ingredient, so a small bed of every kind keeps your brewing stocked."
-				"Plant them in &bmixed soil&r and harvest as they mature."
-			]
 			rewards: [{
 				id: "5A59F01D6CA813CA"
 				type: "xp"
@@ -215,6 +224,12 @@
 			size: 1.3d
 			tasks: [
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -228,6 +243,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -241,6 +262,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -254,6 +281,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -267,6 +300,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -285,14 +324,9 @@
 		}
 		{
 			dependencies: ["72A736B300C6F055"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "3B1DBEF6FB655D29"
-			title: "Harder Herbs"
-			subtitle: "The plants that bite back."
-			description: [
-				"Grow the trickier crops: brambleroot, creep orchid, exaustum allium, hungry grass, and sthirn bush. Brambleroot draws blood, so wear the &bAlchemist's Glove&r to pick it."
-				"Together with the first set they fill out your reagent shelf."
-			]
 			rewards: [{
 				id: "16FA404D2E24A771"
 				type: "xp"
@@ -302,6 +336,12 @@
 			size: 1.3d
 			tasks: [
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -315,6 +355,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -328,6 +374,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -341,6 +393,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -354,6 +412,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -372,13 +436,9 @@
 		}
 		{
 			dependencies: ["451E7BC527C955B7"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "57E439CDF7D76BB1"
-			title: "Blood Bottle"
-			subtitle: "Bottled from blood roses."
-			description: [
-				"Brew a &bBlood Bottle&r from blood roses. The garden uses it as both a reagent in stronger recipes and a drink in its own right."
-			]
 			rewards: [{
 				id: "61E9CF204542140D"
 				type: "xp"
@@ -387,6 +447,12 @@
 			shape: "circle"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -404,13 +470,9 @@
 		}
 		{
 			dependencies: ["3B1DBEF6FB655D29"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "252ADD929CB55CBF"
-			title: "Energy Ball"
-			subtitle: "A quick burst of vigor."
-			description: [
-				"Craft an &bEnergy Ball&r. Consumed, it hands you a short burst of energy, a fast pick-me-up worked up from the garden's stranger crops."
-			]
 			rewards: [{
 				id: "0BCB86148259567F"
 				type: "xp"
@@ -419,6 +481,12 @@
 			shape: "circle"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -436,13 +504,9 @@
 		}
 		{
 			dependencies: ["3B1DBEF6FB655D29"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "5786EDCFEBE0F04B"
-			title: "Bezoar Stone"
-			subtitle: "The garden's antidote."
-			description: [
-				"Make a &bBezoar Stone&r. It is the garden's cure-all against poison, which you will want on hand the moment you start handling the more toxic plants."
-			]
 			rewards: [{
 				id: "3297ABE4B1830BAF"
 				type: "xp"
@@ -451,6 +515,12 @@
 			shape: "circle"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -468,13 +538,9 @@
 		}
 		{
 			dependencies: ["3B1DBEF6FB655D29"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "0A05779A920E548B"
-			title: "High Quality Mulch"
-			subtitle: "Push the crops faster."
-			description: [
-				"Produce &bHigh Quality Mulch&r. Worked into your beds it speeds the magical crops along, the garden's own &bfertilizer&r for a faster harvest."
-			]
 			rewards: [{
 				id: "3A2FA7BA84AC4A61"
 				type: "xp"
@@ -483,6 +549,12 @@
 			shape: "circle"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -500,13 +572,9 @@
 		}
 		{
 			dependencies: ["49BBE54BCF735A82"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "4FB724CDDCB6E709"
-			title: "Molten Amethyst"
-			subtitle: "Amethyst, rendered down."
-			description: [
-				"Smelt &bMolten Amethyst&r from raw amethyst. It is a liquid alchemy material the higher garden recipes call for, so render a batch before you reach them."
-			]
 			rewards: [{
 				id: "6539014B8AB555A1"
 				type: "xp"
@@ -515,6 +583,12 @@
 			shape: "square"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -532,13 +606,9 @@
 		}
 		{
 			dependencies: ["4FB724CDDCB6E709"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "0C1D90EE8814578B"
-			title: "Chrysite String"
-			subtitle: "A tough magical fiber."
-			description: [
-				"Spin &bChrysite String&r. It is a strong magical thread the garden's better crafts and gear are bound with."
-			]
 			rewards: [{
 				id: "26C085D9813FAC53"
 				type: "xp"
@@ -547,6 +617,12 @@
 			shape: "square"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -564,13 +640,9 @@
 		}
 		{
 			dependencies: ["451E7BC527C955B7"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "7218362698C1805A"
-			title: "Mushroom Spores"
-			subtitle: "Seed the fungal line."
-			description: [
-				"Gather &bMushroom Spores&r and a &bGlittering Spore&r. Plain spores grow the magical mushrooms, and the glittering kind feeds the higher-tier mushroom work that follows."
-			]
 			rewards: [{
 				id: "588EBE592AF6EB1F"
 				type: "xp"
@@ -580,6 +652,12 @@
 			size: 1.0d
 			tasks: [
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -594,6 +672,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -612,13 +696,9 @@
 		}
 		{
 			dependencies: ["7218362698C1805A"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "084EF9CB7FD7C395"
-			title: "Mushrooms on a Stick"
-			subtitle: "Skewered, three ways."
-			description: [
-				"Cook the mushrooms on a stick, from raw through cooked to golden. They are food first, but the golden skewer carries a real effect worth saving for the work ahead."
-			]
 			rewards: [{
 				id: "697EB288C85FC6FF"
 				type: "xp"
@@ -628,6 +708,12 @@
 			size: 1.0d
 			tasks: [
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -641,6 +727,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -654,6 +746,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -672,14 +770,9 @@
 		}
 		{
 			dependencies: ["7218362698C1805A"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "5570BA2E7BCC50C2"
-			title: "Mushroomite Chunk"
-			subtitle: "Metal grown from mushrooms."
-			description: [
-				"Cast a &bMushroomite Chunk&r. The garden's mushrooms render into a metal-like material, and the foundry's &bingot cast&r is what shapes it into a usable chunk."
-				"It is the feedstock the mushroom-tier tools are forged from."
-			]
 			rewards: [{
 				id: "6BD8FC1D88EF54FF"
 				type: "xp"
@@ -688,6 +781,12 @@
 			shape: "diamond"
 			size: 1.2d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -705,13 +804,9 @@
 		}
 		{
 			dependencies: ["5570BA2E7BCC50C2"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "6689B369ECBF5D7C"
-			title: "Mushroomite Tools"
-			subtitle: "A full set from the garden."
-			description: [
-				"Forge the complete &bMushroomite&r set: sword, pickaxe, axe, shovel, and hoe. They are the garden's own tier of gear, the payoff for working the mushroom line end to end."
-			]
 			rewards: [{
 				id: "29BCA9E549FFA0BA"
 				type: "xp"
@@ -721,6 +816,12 @@
 			size: 1.2d
 			tasks: [
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -734,6 +835,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -747,6 +854,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -760,6 +873,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -773,6 +892,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -791,13 +916,9 @@
 		}
 		{
 			dependencies: ["3B1DBEF6FB655D29"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "1E26C1DB07329371"
-			title: "Brambler"
-			subtitle: "Turn the thorns on your enemies."
-			description: [
-				"Craft the &bBrambler&r. It is a weapon that can lash out with brambleroot thorns, putting the garden's meanest plant to work for you in a fight."
-			]
 			rewards: [{
 				id: "4F74732EEC245F55"
 				type: "xp"
@@ -806,6 +927,12 @@
 			shape: "circle"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -823,13 +950,9 @@
 		}
 		{
 			dependencies: ["46BC26894174159C"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "7B598669D634519A"
-			title: "Gnome Burrow"
-			subtitle: "Bait a gnome out of hiding."
-			description: [
-				"Place an Empty &bGnome Burrow&r. It is the home a gnome moves into, so setting one down is how you get a gnome to show up and fight at all."
-			]
 			rewards: [{
 				id: "7BA39E8F5D7F5D10"
 				type: "xp"
@@ -838,6 +961,12 @@
 			shape: "square"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -855,13 +984,9 @@
 		}
 		{
 			dependencies: ["7B598669D634519A"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "6D061DBB350F5529"
-			title: "Gnome"
-			subtitle: "Small, quick, and full of tricks."
-			description: [
-				"Hunt the gnome that claims the burrow. It is more nuisance than threat, but its drops are the start of the gnome gear and brew."
-			]
 			rewards: [{
 				id: "53514BAB2D562974"
 				type: "xp"
@@ -870,6 +995,12 @@
 			shape: "circle"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -879,6 +1010,15 @@
 					second: 20
 				}
 				entity: "alchemists_garden:gnome"
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				id: "7A25EF63FE8D9081"
 				type: "kill"
 				value: 1L
@@ -888,13 +1028,9 @@
 		}
 		{
 			dependencies: ["6D061DBB350F5529"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "4066BDA88DF29832"
-			title: "Gnome Shovel"
-			subtitle: "A digging tool with mischief in it."
-			description: [
-				"Claim the &bGnome Shovel&r from a slain gnome. It is a light, quick digging tool that carries a bit of the gnome's character."
-			]
 			rewards: [{
 				id: "44467943A70CF65A"
 				type: "xp"
@@ -903,6 +1039,12 @@
 			shape: "circle"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -920,13 +1062,9 @@
 		}
 		{
 			dependencies: ["6D061DBB350F5529"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "53967D6D1E7151E0"
-			title: "Gnome Gear"
-			subtitle: "Hat and boots, more charm than armor."
-			description: [
-				"Collect the Gnome Hat and Gnome Boots from the gnomes. The little set is light protection, but it wears well around the garden and finishes the gnome drops."
-			]
 			rewards: [{
 				id: "1E4C802380B9D75A"
 				type: "xp"
@@ -936,6 +1074,12 @@
 			size: 1.0d
 			tasks: [
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -949,6 +1093,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -967,13 +1117,9 @@
 		}
 		{
 			dependencies: ["6D061DBB350F5529"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "7733FF946E05AB9C"
-			title: "Gnome's Brew"
-			subtitle: "A potion with a kick."
-			description: [
-				"Brew a Gnome's Brew from gnome ingredients. It is a garden potion with a distinctly gnomish bite to it."
-			]
 			rewards: [{
 				id: "4523C2D0F82D896B"
 				type: "xp"
@@ -982,6 +1128,12 @@
 			shape: "circle"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -999,13 +1151,9 @@
 		}
 		{
 			dependencies: ["5570BA2E7BCC50C2"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "093C52800DAF4913"
-			title: "Yeti Antler"
-			subtitle: "A cold-country crafting drop."
-			description: [
-				"Get a &bYeti Antler&r. It is a crafting material from the garden's frozen reaches, and you need one before you can take the fight to the yeti itself."
-			]
 			rewards: [{
 				id: "13D32102D1F1FE8A"
 				type: "xp"
@@ -1014,6 +1162,12 @@
 			shape: "circle"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1031,14 +1185,9 @@
 		}
 		{
 			dependencies: ["093C52800DAF4913"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "29055EFFDCC6576E"
-			title: "Yeti"
-			subtitle: "Bring warmth and good armor."
-			description: [
-				"Hunt down the Yeti, a large cold-country beast that hits hard and shrugs off the cold you cannot. Keep warm gear on and do not let it pin you against the ice."
-				"Its drops open the garden's staff line."
-			]
 			rewards: [{
 				id: "45D2C7F0660F71F4"
 				type: "xp"
@@ -1047,6 +1196,12 @@
 			shape: "pentagon"
 			size: 1.3d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1056,6 +1211,15 @@
 					second: 20
 				}
 				entity: "alchemists_garden:yeti"
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				id: "1EFA694CE92B2B72"
 				type: "kill"
 				value: 1L
@@ -1065,13 +1229,9 @@
 		}
 		{
 			dependencies: ["5607E15F448C5DC8"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "72A736B300C6F055"
-			title: "Golden Ring Base"
-			subtitle: "The blank every ring starts as."
-			description: [
-				"Craft a &bGolden Ring Base&r. On its own it does nothing, but it is the blank that each of the garden's enchanted rings is built on."
-			]
 			rewards: [{
 				id: "0B68E432D2A80715"
 				type: "xp"
@@ -1080,6 +1240,12 @@
 			shape: "square"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1097,14 +1263,9 @@
 		}
 		{
 			dependencies: ["451E7BC527C955B7"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "3B177A2622E16785"
-			title: "Garden Rings"
-			subtitle: "Light, life-steal, and speed."
-			description: [
-				"Upgrade ring bases into the garden's rings: the &bRing of Shining&r for light, the &bRing of Vampirism&r for life-steal on your hits, and the &bRing of Winds&r for a speed boost."
-				"Each one sets a magical stone into the gold base, so make the bases first."
-			]
 			rewards: [{
 				id: "77537645458E5511"
 				type: "xp"
@@ -1114,6 +1275,12 @@
 			size: 1.3d
 			tasks: [
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1127,6 +1294,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1140,6 +1313,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1158,13 +1337,9 @@
 		}
 		{
 			dependencies: ["29055EFFDCC6576E"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "1E2CC1305BAFB7E2"
-			title: "Broken Staff Pieces"
-			subtitle: "Fragments to rebuild."
-			description: [
-				"Collect the broken staff pieces, the baby yeti and spiderling fragments. They are the parts you reassemble the garden's summoning staffs from."
-			]
 			rewards: [{
 				id: "13DE8CA1AD4E52D4"
 				type: "xp"
@@ -1174,6 +1349,12 @@
 			size: 1.0d
 			tasks: [
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1187,6 +1368,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1205,14 +1392,9 @@
 		}
 		{
 			dependencies: ["29055EFFDCC6576E"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "305697393DA2FAE8"
-			title: "Summoning Staffs"
-			subtitle: "Call allies to your side."
-			description: [
-				"Assemble the garden's staffs, from the shroom and spiderling staffs up to the ent, gnome, and yeti staffs. Each one summons an ally to fight for you."
-				"The full set turns the garden into a warband you can call up at will."
-			]
 			rewards: [{
 				id: "670D7BDCB79551A9"
 				type: "xp"
@@ -1222,6 +1404,12 @@
 			size: 1.5d
 			tasks: [
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1235,6 +1423,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1248,6 +1442,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1261,6 +1461,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1274,6 +1480,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1287,6 +1499,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1300,6 +1518,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1313,6 +1537,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1331,13 +1561,9 @@
 		}
 		{
 			dependencies: ["5607E15F448C5DC8"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "2BA66AAE2E7B0103"
-			title: "Brick Fireplace"
-			subtitle: "Warmth for the workshop."
-			description: [
-				"Build a &bBrick Fireplace&r. It is a tidy heat source and a bit of decor for the corner of the alchemist's workshop where you do your brewing."
-			]
 			rewards: [{
 				id: "409208C35B6759F5"
 				type: "xp"
@@ -1346,6 +1572,12 @@
 			shape: "square"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1372,17 +1604,13 @@
 				"6689B369ECBF5D7C"
 				"53967D6D1E7151E0"
 				"29055EFFDCC6576E"
+				"7D36D95D74E1588E"
 			]
+			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			hide_dependent_lines: true
 			hide_until_deps_complete: true
 			id: "771A0BD657D158BA"
-			title: "Marks of the Craft"
-			subtitle: "Soil to staff, proven."
-			description: [
-				"Bring together three marks of the work: a &bMushroomite Chunk&r, an &bAlchemist's Glove&r, and a &bGolden Ring Base&r. Holding all three shows you have taken the garden from raw soil through metal, harvest, and enchantment."
-				"It pulls the chapter's threads into one place."
-			]
 			rewards: [{
 				id: "4DFCA2A90B9952C6"
 				type: "xp"
@@ -1392,6 +1620,12 @@
 			size: 1.5d
 			tasks: [
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1401,10 +1635,16 @@
 						second: 20
 					}
 					id: "03B7D181734C5ED0"
-					item: { count: 1, id: "alchemists_garden:mushroomite_ingot" }
+					item: { count: 1, id: "alchemists_garden:golden_mushrooms_on_a_stick" }
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1414,10 +1654,16 @@
 						second: 20
 					}
 					id: "031137B7A21A3D08"
-					item: { count: 1, id: "alchemists_garden:leather_glove" }
+					item: { count: 1, id: "alchemists_garden:gnomes_brew" }
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1427,7 +1673,7 @@
 						second: 20
 					}
 					id: "309FAF3AADAB5C88"
-					item: { count: 1, id: "alchemists_garden:golden_ring" }
+					item: { count: 1, id: "alchemists_garden:speed_ring" }
 					type: "item"
 				}
 			]
@@ -1436,17 +1682,12 @@
 		}
 		{
 			dependencies: ["49BBE54BCF735A82"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: {
 				id: "farmersdelight:stove"
 			}
 			id: "4B2D3C5E8F7A7B10"
-			title: "The Homestead Pantry"
-			subtitle: "Optional: settle in and cook."
-			description: [
-				"Stock the full homestead kit, from &6Farmer's Delight&r cooking gear and Cooking for Blockheads kitchen blocks to botany pots, fishing tackle, and farming station blocks. It is a deep dive into the pack's food and farming mods for anyone who wants their table to match their colony."
-				"Skip it if you are racing ahead, or settle in and turn the garden into a proper kitchen."
-			]
 			optional: true
 			rewards: [{
 				id: "4B2D3C5E8F7A7B11"
@@ -1457,6 +1698,12 @@
 			size: 1.2d
 			tasks: [
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1470,6 +1717,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1483,6 +1736,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1496,6 +1755,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1509,6 +1774,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1522,6 +1793,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1535,6 +1812,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1548,6 +1831,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1561,6 +1850,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1574,6 +1869,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1587,6 +1888,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1600,6 +1907,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1613,6 +1926,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1626,6 +1945,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1639,6 +1964,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1652,6 +1983,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1665,6 +2002,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1678,6 +2021,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1691,6 +2040,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1704,6 +2059,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1717,6 +2078,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1730,6 +2097,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1743,6 +2116,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1756,6 +2135,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1769,6 +2154,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1782,6 +2173,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1795,6 +2192,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1808,6 +2211,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1821,6 +2230,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1834,6 +2249,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1847,6 +2268,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1860,6 +2287,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1873,6 +2306,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1886,6 +2325,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1899,6 +2344,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1912,6 +2363,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1925,6 +2382,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1938,6 +2401,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1953,6 +2422,42 @@
 			]
 			x: -22.2d
 			y: 1.7999999999999998d
+		}
+		{
+			dependencies: ["4B2D3C5E8F7A7B10"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			id: "7A55C1000000000F"
+			optional: true
+			rewards: [{
+				id: "7A55D100000000F0"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [
+				{
+					id: "7A55B100000000F1"
+					item: { count: 1, id: "hybrid-aquatic:diving_helmet" }
+					type: "item"
+				}
+				{
+					id: "7A55B100000000F2"
+					item: { count: 1, id: "hybrid-aquatic:diving_suit" }
+					type: "item"
+				}
+				{
+					id: "7A55B100000000F3"
+					item: { count: 1, id: "hybrid-aquatic:diving_leggings" }
+					type: "item"
+				}
+				{
+					id: "7A55B100000000F4"
+					item: { count: 1, id: "hybrid-aquatic:diving_boots" }
+					type: "item"
+				}
+			]
+			x: -23.5d
+			y: 1.8d
 		}
 	]
 }
