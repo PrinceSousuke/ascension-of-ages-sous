@@ -5128,6 +5128,12 @@
 	]
 	quest.4B2D3C5E8F7A7C00.quest_subtitle: "Point yourself at a structure."
 	quest.4B2D3C5E8F7A7C00.title: "Explorer's Compass"
+	quest.4B2D3C5E8F7C0001.quest_desc: ["Craft a &bSlicer&r from &6Create: Slice & Dice&r. It is a machine in the Mechanical Mixer and Mechanical Press family that automates &6Farmer's Delight&r cutting-board work. Give it rotation from below or the side, then right-click a knife or an axe into it to load the cutting tool.", "It sits on a basin or takes items from a belt or Mechanical Arm, so it slots into a normal Create line. Note that many cutting outputs are plain vanilla items, so this quest asks for the Slicer block itself, not a cut result."]
+	quest.4B2D3C5E8F7C0001.quest_subtitle: "Optional. Automate the cutting board."
+	quest.4B2D3C5E8F7C0001.title: "Slicer"
+	quest.4B2D3C5E8F7C0002.quest_desc: ["Close the fertilizer loop. You need a &bBucket of Liquid Fertilizer&r and a &bSprinkler&r. There is no crafting recipe for the bucket. First make the fluid with Create Mixing from Farmer's Delight Organic Compost and water in a basin, which yields Liquid Fertilizer. Then take an empty bucket and fill it from that fluid, either by right-clicking the source or by draining it through a Create Spout or Item Drain.", "Place a Sprinkler below a fluid pipe and it sprays the fluid over the area beneath it. Fed Liquid Fertilizer it grows crops like bonemeal. You can also fill Rich Soil directly with Create Filling using compost and the fertilizer fluid. A Sprinkler also works mounted on a moving contraption, applying its effect as the contraption advances."]
+	quest.4B2D3C5E8F7C0002.quest_subtitle: "Optional. Liquid fertilizer and spray."
+	quest.4B2D3C5E8F7C0002.title: "Liquid Fertilizer Loop"
 	quest.4C57010000010001.quest_desc: ["Gather every &brocket engine&r part on the list. The launch pad wants the full set before it fires."]
 	quest.4C57010000010001.quest_subtitle: "Engine parts before launch."
 	quest.4C57010000010001.title: "Rocket Engine"
@@ -7462,6 +7468,15 @@
 	]
 	quest.7A1F0C0000000001.quest_subtitle: "Order from your own warehouse."
 	quest.7A1F0C0000000001.title: "Shopping List"
+	quest.7A1F0D0000000001.quest_desc: ["Build an &bAlloy Forge&r from &6Alloyed&r: five iron ingots, a furnace, and three deepslate. It is a fuel-burning station with its own input, fuel, and output slots. It is not a Create machine and needs no rotation, and it is not a plain furnace either.", "Feed it a furnace fuel such as coal or charcoal and it works through its input over a cook time, the same way a furnace burns fuel. This is your early upgrade bench for turning iron into steel and copper into bronze."]
+	quest.7A1F0D0000000001.quest_subtitle: "Optional. A fuel-burning alloy bench."
+	quest.7A1F0D0000000001.title: "Alloy Forge"
+	quest.7A1F0D0000000002.quest_desc: ["Smelt &bSteel&r in the Alloy Forge, then forge a steel gear set. Steel is three iron ingots plus one coal and one fire charge in the Forge. Turn the steel into a &bSteel Pickaxe&r, a &bSteel Chestplate&r, and a &bSteel Sheet&r.", "Steel tools and armor sit a tier above iron and hold up longer. The Steel Sheet is the plate you press for later decorative and structural steel blocks. These are the real Alloyed items, so hand them in directly."]
+	quest.7A1F0D0000000002.quest_subtitle: "Optional. Iron to steel gear."
+	quest.7A1F0D0000000002.title: "Steel Gear"
+	quest.7A1F0D0000000003.quest_desc: ["Cast a &bBronze Bell&r. Bronze is copper plus zinc plus fire in the Forge. With Create installed the recipe uses one copper ingot, three zinc nuggets, and one Cinder Flour, so gather those rather than iron nuggets.", "The bell itself is not made from bare ingots. Press a bronze ingot into a Bronze Sheet on a Mechanical Press, and compact nine bronze ingots into a Bronze Block. Then stack the block over the sheet in a crafting grid to get the bell.", "The Bronze Bell rings when you hit it or feed it a redstone pulse. A wrench tunes its pitch, and a Create Deployer can ring it on a timer. Hang it from chains, fences, or iron bars for a working redstone instrument."]
+	quest.7A1F0D0000000003.quest_subtitle: "Optional. A tunable redstone bell."
+	quest.7A1F0D0000000003.title: "Bronze Bell"
 	quest.7B26069EC5CF71D4.quest_desc: ["Hunt the Desert Sorceress and her Acolyte. The sorceress casts from range while the acolyte shields and supports her, so cut through the minion first."]
 	quest.7B26069EC5CF71D4.quest_subtitle: "Break the minion to reach the mage."
 	quest.7B26069EC5CF71D4.title: "Desert Casters"

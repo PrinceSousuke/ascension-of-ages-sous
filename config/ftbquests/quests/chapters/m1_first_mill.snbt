@@ -13,15 +13,9 @@
 	quests: [
 		{
 			dependencies: ["097AED7C91033D5E"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
-			hide_until_deps_visible: true
 			id: "7A1F010000000002"
-			title: "Andesite Alloy"
-			subtitle: "The material everything starts from."
-			description: [
-				"Combine andesite and iron to make &bAndesite Alloy&r. It is the base material for nearly every early &6Create&r component, so stand up a small stock before you build anything else."
-				"Almost every quest in this chapter routes back through it. Make a stack and keep it handy."
-			]
 			rewards: [
 				{
 					id: "20CA87E0228F6308"
@@ -31,11 +25,16 @@
 				{
 					id: "20CA87E0228F6309"
 					table_id: 8849093687305634787L
-					title: "A starter cache to get the first build going."
 					type: "loot"
 				}
 			]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -48,24 +47,26 @@
 				item: { count: 1, id: "create:andesite_alloy" }
 				type: "item"
 			}]
-			x: 1.5d
-			y: 0.0d
+			x: 0.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["7A1F010000000002"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "7A1F010000000003"
-			title: "Shaft"
-			subtitle: "Rotation in a straight line."
-			description: [
-				"Craft a &bShaft&r. Shafts carry rotational force from a power source to a machine, the simplest link in any setup. Everything that spins begins with one."
-			]
 			rewards: [{
 				id: "221B034CEF98BA59"
 				type: "xp"
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -79,17 +80,13 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 0.0d
+			y: -7.5d
 		}
 		{
 			dependencies: ["7A1F010000000003"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "7A1F020000000005"
-			title: "Wrench"
-			subtitle: "Rotate, configure, pick up."
-			description: [
-				"Make a &bWrench&r. It rotates blocks, adjusts their settings, and picks them up without breaking them. Keep it on your hotbar, because you will reach for it constantly."
-			]
 			rewards: [
 				{
 					id: "00E145F6A35C1905"
@@ -99,11 +96,16 @@
 				{
 					id: "00E145F6A35C1906"
 					table_id: 8849093687305634787L
-					title: "Spare parts for the next few placements."
 					type: "loot"
 				}
 			]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -116,19 +118,14 @@
 				item: { count: 1, id: "create:wrench" }
 				type: "item"
 			}]
-			x: 4.5d
-			y: 0.0d
+			x: 5.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["7A1F010000000003"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "7A1F010000000004"
-			title: "Water Wheel"
-			subtitle: "Free power from a stream."
-			description: [
-				"Build a &bWater Wheel&r over flowing water. It is your first real power source, turning a current into steady rotation with no fuel to feed."
-				"Line a few in a row along a river and the output climbs. This is the cheapest way to get a network spinning."
-			]
 			rewards: [
 				{
 					id: "59CF4B1BC22E0595"
@@ -138,13 +135,18 @@
 				{
 					id: "59CF4B1BC22E0596"
 					table_id: 8849093687305634787L
-					title: "A small cache while the wheel spins up."
 					type: "loot"
 				}
 			]
 			shape: "diamond"
 			size: 1.2d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -157,24 +159,26 @@
 				item: { count: 1, id: "create:water_wheel" }
 				type: "item"
 			}]
-			x: 3.0d
-			y: -1.5d
+			x: 5.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["7A1F010000000003"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "7A1F020000000001"
-			title: "Hand Crank"
-			subtitle: "A burst of power by hand."
-			description: [
-				"Craft a &bHand Crank&r. Right-click it for a short burst of rotation, enough to run a single machine before you have a real power network. It is handy for testing a build."
-			]
 			rewards: [{
 				id: "7F239DB8C0D121D4"
 				type: "xp"
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -187,18 +191,14 @@
 				item: { count: 1, id: "create:hand_crank" }
 				type: "item"
 			}]
-			x: 3.0d
-			y: -3.0d
+			x: 2.0d
+			y: -9.0d
 		}
 		{
 			dependencies: ["7A1F010000000004"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "7A1F020000000002"
-			title: "Windmill Bearing"
-			subtitle: "Power from open sky."
-			description: [
-				"Place a &bWindmill Bearing&r and build sails onto it. Spun by wind it makes rotation without water, which suits a base away from a river. Glue the sails on first, then engage the bearing."
-			]
 			rewards: [
 				{
 					id: "014AB328867D1C56"
@@ -208,11 +208,16 @@
 				{
 					id: "014AB328867D1C57"
 					table_id: 8849093687305634787L
-					title: "Cloth and parts toward a bigger rotor."
 					type: "loot"
 				}
 			]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -225,24 +230,26 @@
 				item: { count: 1, id: "create:windmill_bearing" }
 				type: "item"
 			}]
-			x: 4.5d
-			y: -1.5d
+			x: 8.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["7A1F020000000002"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "7A1F020000000003"
-			title: "Sail Frame"
-			subtitle: "The skeleton of a windmill."
-			description: [
-				"Craft Sail Frames. They are the bare frame a &bwindmill&r is built from, cheaper than full sails and fine for a first rotor. Ring at least eight around the bearing to get it turning."
-			]
 			rewards: [{
 				id: "12920D8B2399FE24"
 				type: "xp"
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -255,24 +262,26 @@
 				item: { count: 1, id: "create:sail_frame" }
 				type: "item"
 			}]
-			x: 6.0d
-			y: -1.5d
+			x: 11.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["7A1F020000000003"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "7A1F020000000004"
-			title: "Windmill Sail"
-			subtitle: "More wind, more speed."
-			description: [
-				"Make &bWindmill&r Sails. They catch more wind than bare frames, so a rotor of sails spins faster and carries more machines. Swap frames for sails once you can spare the wool."
-			]
 			rewards: [{
 				id: "0347B67E445F03E5"
 				type: "xp"
 				xp: 15
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -285,24 +294,26 @@
 				item: { count: 1, id: "create:white_sail" }
 				type: "item"
 			}]
-			x: 7.5d
+			x: 9.5d
 			y: -1.5d
 		}
 		{
 			dependencies: ["7A1F010000000004"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "7A1F010000000006"
-			title: "Cogwheel"
-			subtitle: "Pass rotation between shafts."
-			description: [
-				"Craft a &bCogwheel&r. Cogwheels mesh to hand rotation from one &bshaft&r to another, and paired with a &blarge cogwheel&r they change its speed. Gearing starts here."
-			]
 			rewards: [{
 				id: "79517CBD41232D1E"
 				type: "xp"
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -315,24 +326,26 @@
 				item: { count: 1, id: "create:cogwheel" }
 				type: "item"
 			}]
-			x: 3.0d
-			y: 1.5d
+			x: 8.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["7A1F010000000006"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "7A1F010000000007"
-			title: "Large Cogwheel"
-			subtitle: "Trade speed for strength."
-			description: [
-				"Make a &bLarge Cogwheel&r. Meshed with a small one it steps speed up or down depending on which drives which. Use it to get the slower, stronger rotation that some machines want."
-			]
 			rewards: [{
 				id: "42DFEFE692B8C964"
 				type: "xp"
 				xp: 15
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -345,24 +358,26 @@
 				item: { count: 1, id: "create:large_cogwheel" }
 				type: "item"
 			}]
-			x: 4.5d
-			y: 1.5d
+			x: 11.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["7A1F010000000007"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "7A1F030000000001"
-			title: "Gearbox"
-			subtitle: "Turn power around corners."
-			description: [
-				"Build a &bGearbox&r. It carries rotation around corners and splits it down several shafts, which keeps a power layout tidy instead of a snarl of loose cogs. Encase it once the line is set."
-			]
 			rewards: [{
 				id: "7A1F030000000101"
 				type: "xp"
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -375,24 +390,26 @@
 				item: { count: 1, id: "create:gearbox" }
 				type: "item"
 			}]
-			x: 6.0d
-			y: 1.5d
+			x: 14.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["7A1F030000000001"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "7A1F030000000002"
-			title: "Gearshift"
-			subtitle: "Reverse direction on a signal."
-			description: [
-				"Craft a &bGearshift&r. A redstone signal flips rotation direction through it, which matters for anything that has to run both ways, like a piston bridge. Wire it where you need to switch."
-			]
 			rewards: [{
 				id: "7A1F030000000102"
 				type: "xp"
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -405,24 +422,26 @@
 				item: { count: 1, id: "create:gearshift" }
 				type: "item"
 			}]
-			x: 7.5d
-			y: 1.5d
+			x: 13.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["7A1F030000000001"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "7A1F030000000003"
-			title: "Clutch"
-			subtitle: "Cut power without stopping the source."
-			description: [
-				"Make a &bClutch&r. A redstone signal stops rotation past it while the source keeps turning, so you can pause one machine and leave the rest running. It pairs naturally with the &bgearshift&r."
-			]
 			rewards: [{
 				id: "7A1F030000000103"
 				type: "xp"
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -435,24 +454,26 @@
 				item: { count: 1, id: "create:clutch" }
 				type: "item"
 			}]
-			x: 7.5d
-			y: 3.0d
+			x: 15.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["7A1F010000000007"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "7A1F030000000004"
-			title: "Encased Chain Drive"
-			subtitle: "Carry power across a row."
-			description: [
-				"Craft Encased Chain Drives. Chained in a line they pass rotation across a row of blocks at one speed, a clean alternative to long &bshaft&r-and-cog runs. Good for feeding a wall of machines."
-			]
 			rewards: [{
 				id: "7A1F030000000104"
 				type: "xp"
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -465,24 +486,26 @@
 				item: { count: 1, id: "create:encased_chain_drive" }
 				type: "item"
 			}]
-			x: 4.5d
-			y: 3.0d
+			x: 14.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["7A1F030000000004"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "7A1F030000000005"
-			title: "Adjustable Chain Gearshift"
-			subtitle: "Vary the speed on demand."
-			description: [
-				"Make an &bAdjustable Chain Gearshift&r. Set it in a chain drive and a redstone signal scales the speed of everything downstream. Use it where one line needs to change pace on the fly."
-			]
 			rewards: [{
 				id: "7A1F030000000105"
 				type: "xp"
 				xp: 15
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -495,19 +518,14 @@
 				item: { count: 1, id: "create:adjustable_chain_gearshift" }
 				type: "item"
 			}]
-			x: 6.0d
-			y: 3.0d
+			x: 13.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["7A1F020000000005"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "7A1F040000000001"
-			title: "Engineer's Goggles"
-			subtitle: "See stress and speed at a glance."
-			description: [
-				"Craft the &bGoggles&r and wear them. They show the stress and speed of any kinetic block you look at, which is how you find the stall or overload in a network."
-				"Do not run a serious build without them. Half of &6Create&r is reading what the &bgoggles&r tell you."
-			]
 			rewards: [
 				{
 					id: "7A1F040000000101"
@@ -517,11 +535,16 @@
 				{
 					id: "7A1F040000000102"
 					table_id: 8849093687305634787L
-					title: "A spare pair while you learn the network."
 					type: "loot"
 				}
 			]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -534,24 +557,26 @@
 				item: { count: 1, id: "create:goggles" }
 				type: "item"
 			}]
-			x: 6.0d
+			x: 8.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["7A1F040000000001"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "7A1F040000000002"
-			title: "Speedometer"
-			subtitle: "Read the exact rotation speed."
-			description: [
-				"Build a &bSpeedometer&r onto a &bshaft&r. It reports the precise speed at that point, which matters because many machines have a minimum and maximum they will run at. Check it wherever a machine misbehaves."
-			]
 			rewards: [{
 				id: "7A1F040000000103"
 				type: "xp"
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -564,24 +589,26 @@
 				item: { count: 1, id: "create:speedometer" }
 				type: "item"
 			}]
-			x: 7.5d
-			y: 0.0d
+			x: 11.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["7A1F0A0000000001"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "7A1F040000000003"
-			title: "Rotation Speed Controller"
-			subtitle: "Dial in an exact speed."
-			description: [
-				"Make a &bRotation Speed Controller&r and set it under a &blarge cogwheel&r. It outputs an exact speed from a scroll value, with no gearing math to work out. This is the precise way to tune a line."
-			]
 			rewards: [{
 				id: "7A1F040000000104"
 				type: "xp"
 				xp: 25
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -594,19 +621,14 @@
 				item: { count: 1, id: "create:rotation_speed_controller" }
 				type: "item"
 			}]
-			x: 10.0d
-			y: 3.0d
+			x: 3.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["7A1F010000000007"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "7A1F050000000001"
-			title: "Millstone"
-			subtitle: "Single-block grinding."
-			description: [
-				"Build a &bMillstone&r and give it rotation. It grinds ore, crops, and blocks into useful outputs from one spinning block, the cheapest processing &6Create&r offers."
-				"This is the mill the chapter is named for. Feed it from a belt and it runs itself."
-			]
 			rewards: [
 				{
 					id: "7A1F050000000101"
@@ -616,11 +638,16 @@
 				{
 					id: "7A1F050000000102"
 					table_id: 8849093687305634787L
-					title: "A first batch of ground material."
 					type: "loot"
 				}
 			]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -633,18 +660,14 @@
 				item: { count: 1, id: "create:millstone" }
 				type: "item"
 			}]
-			x: 0.0d
-			y: 1.5d
+			x: 14.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["7A1F050000000001"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "7A1F050000000002"
-			title: "Mechanical Press"
-			subtitle: "Sheets, plates, and compacting."
-			description: [
-				"Set up a &bMechanical Press&r over a &bdepot&r or belt. It presses ingots into sheets and compacts blocks, a step in dozens of recipes ahead. Run it off a steady source so it does not stall mid-press."
-			]
 			rewards: [
 				{
 					id: "7A1F050000000103"
@@ -654,13 +677,18 @@
 				{
 					id: "7A1F050000000104"
 					table_id: 8849093687305634787L
-					title: "Sheets and parts from an early run."
 					type: "loot"
 				}
 			]
 			shape: "diamond"
 			size: 1.2d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -673,24 +701,68 @@
 				item: { count: 1, id: "create:mechanical_press" }
 				type: "item"
 			}]
-			x: -1.5d
+			x: 17.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A1F050000000002"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "createaddition:rolling_mill"
+			}
+			id: "7A1F050000000005"
+			rewards: [
+				{
+					id: "7A1F050000000108"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "7A1F050000000109"
+					table_id: 8849093687305634787L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "7A1F050000000205"
+				item: { count: 1, id: "createaddition:rolling_mill" }
+				type: "item"
+			}]
+			x: 17.0d
 			y: 1.5d
 		}
 		{
 			dependencies: ["7A1F050000000002"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "7A1F050000000003"
-			title: "Basin"
-			subtitle: "Where mixing and pressing happen."
-			description: [
-				"Place a &bBasin&r. It holds the items and fluids a press or &bmixer&r works on and catches the result underneath. Most multi-step &6Create&r recipes sit on one."
-			]
 			rewards: [{
 				id: "7A1F050000000105"
 				type: "xp"
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -703,18 +775,14 @@
 				item: { count: 1, id: "create:basin" }
 				type: "item"
 			}]
-			x: -3.0d
-			y: 1.5d
+			x: 16.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["7A1F050000000002"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "7A1F050000000004"
-			title: "Encased Fan"
-			subtitle: "Smelt, wash, and smoke in bulk."
-			description: [
-				"Build an &bEncased Fan&r. Blow its air through fire, water, or lava and it smelts, washes, or smokes whatever passes in front, a stack at a time. Aim it at the right block for the job you want."
-			]
 			rewards: [
 				{
 					id: "7A1F050000000106"
@@ -724,11 +792,16 @@
 				{
 					id: "7A1F050000000107"
 					table_id: 8849093687305634787L
-					title: "Materials from a first washing run."
 					type: "loot"
 				}
 			]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -741,24 +814,26 @@
 				item: { count: 1, id: "create:encased_fan" }
 				type: "item"
 			}]
-			x: -1.5d
-			y: 3.0d
+			x: 19.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["7A1F010000000002"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "7A1F060000000001"
-			title: "Mechanical Belt"
-			subtitle: "Move items across the floor."
-			description: [
-				"Craft a &bMechanical Belt&r and stretch it between two shafts. Belts carry items across distance and feed machines, the backbone of any &6Create&r layout. Lay your first line out from the &bmillstone&r."
-			]
 			rewards: [{
 				id: "7A1F060000000101"
 				type: "xp"
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -771,24 +846,26 @@
 				item: { count: 1, id: "create:belt_connector" }
 				type: "item"
 			}]
-			x: 0.0d
-			y: -1.5d
+			x: 3.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["7A1F060000000001"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "7A1F060000000002"
-			title: "Chute"
-			subtitle: "Items, straight up and down."
-			description: [
-				"Make a &bChute&r. It moves items vertically between belts and inventories, covering the gaps a flat belt cannot. Stack them to climb a wall."
-			]
 			rewards: [{
 				id: "7A1F060000000102"
 				type: "xp"
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -801,24 +878,26 @@
 				item: { count: 1, id: "create:chute" }
 				type: "item"
 			}]
-			x: -1.5d
-			y: -1.5d
+			x: 3.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["7A1F060000000001"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "7A1F060000000003"
-			title: "Depot"
-			subtitle: "Hold one item out in the open."
-			description: [
-				"Place a &bDepot&r. It holds a single item where a press, fan, or &bdeployer&r can work on it, the still counterpart to a moving belt. Good for one-off processing without a full line."
-			]
 			rewards: [{
 				id: "7A1F060000000103"
 				type: "xp"
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -831,24 +910,26 @@
 				item: { count: 1, id: "create:depot" }
 				type: "item"
 			}]
-			x: -1.5d
-			y: -3.0d
+			x: 5.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["7A1F060000000001"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "7A1F060000000004"
-			title: "Andesite Funnel"
-			subtitle: "Bridge belts and chests."
-			description: [
-				"Craft an &bAndesite Funnel&r. It pulls items onto a belt or pushes them into storage, the basic link between &6Create&r logistics and a normal chest. Point the arrow the way you want items to move."
-			]
 			rewards: [{
 				id: "7A1F060000000104"
 				type: "xp"
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -861,24 +942,26 @@
 				item: { count: 1, id: "create:andesite_funnel" }
 				type: "item"
 			}]
-			x: 0.0d
-			y: -3.0d
+			x: 5.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["7A1F060000000004"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "7A1F060000000005"
-			title: "Filter"
-			subtitle: "Let only the right items through."
-			description: [
-				"Make a &bFilter&r. Slot it into a funnel or tunnel and only the items you list pass, which keeps a sorting line from jamming on the wrong thing. Set one wherever a stream needs to split."
-			]
 			rewards: [{
 				id: "7A1F060000000105"
 				type: "xp"
 				xp: 15
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -891,24 +974,26 @@
 				item: { count: 1, id: "create:filter" }
 				type: "item"
 			}]
-			x: 1.5d
-			y: -3.0d
+			x: 4.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["7A1F060000000003"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "7A1F060000000006"
-			title: "Portable Storage Interface"
-			subtitle: "Load and unload moving builds."
-			description: [
-				"Build a &bPortable Storage Interface&r. It empties or fills a moving contraption's inventory at a fixed point, which is how a mobile harvester or drill hands off its haul. Face two at each other for a clean transfer."
-			]
 			rewards: [{
 				id: "7A1F060000000106"
 				type: "xp"
 				xp: 25
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -921,24 +1006,26 @@
 				item: { count: 1, id: "create:portable_storage_interface" }
 				type: "item"
 			}]
-			x: -3.0d
-			y: -3.0d
+			x: 5.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["7A1F010000000002"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "7A1F070000000001"
-			title: "Fluid Pipe"
-			subtitle: "Carry fluids between machines."
-			description: [
-				"Craft Fluid Pipes. They move water, lava, and other fluids between tanks, pumps, and machines, but they need a pump to actually push anything. Plan the route before you place it."
-			]
 			rewards: [{
 				id: "7A1F070000000101"
 				type: "xp"
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -951,24 +1038,26 @@
 				item: { count: 1, id: "create:fluid_pipe" }
 				type: "item"
 			}]
-			x: -1.5d
-			y: 0.0d
+			x: 3.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["7A1F070000000001"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "7A1F070000000002"
-			title: "Fluid Tank"
-			subtitle: "Buffer your fluids."
-			description: [
-				"Build a &bFluid Tank&r. It stores whatever your pipes carry, and a buffer keeps a pump and a consumer from stalling each other. Stack it taller for more capacity."
-			]
 			rewards: [{
 				id: "7A1F070000000102"
 				type: "xp"
 				xp: 15
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -981,24 +1070,26 @@
 				item: { count: 1, id: "create:fluid_tank" }
 				type: "item"
 			}]
-			x: -3.0d
-			y: 0.0d
+			x: 5.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["7A1F070000000001"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "7A1F070000000003"
-			title: "Mechanical Pump"
-			subtitle: "Make fluids actually flow."
-			description: [
-				"Make a &bMechanical Pump&r and power it. It drives fluid through pipes in the direction it faces, and without one a pipe network just sits full. Set it inline and give it rotation."
-			]
 			rewards: [{
 				id: "7A1F070000000103"
 				type: "xp"
 				xp: 15
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1011,24 +1102,26 @@
 				item: { count: 1, id: "create:mechanical_pump" }
 				type: "item"
 			}]
-			x: -3.0d
-			y: -1.5d
+			x: 3.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["7A1F050000000004"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "7A1F080000000001"
-			title: "Super Glue"
-			subtitle: "Bind blocks into one contraption."
-			description: [
-				"Craft &bSuper Glue&r. It binds blocks together so they move as a single contraption when pushed or rotated. This is what stops a moving build from flying apart."
-			]
 			rewards: [{
 				id: "7A1F080000000101"
 				type: "xp"
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1041,24 +1134,26 @@
 				item: { count: 1, id: "create:super_glue" }
 				type: "item"
 			}]
-			x: 0.0d
-			y: 4.5d
+			x: 22.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["7A1F080000000001"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "7A1F080000000002"
-			title: "Linear Chassis"
-			subtitle: "Grip a structure together."
-			description: [
-				"Make a &bLinear Chassis&r. It holds neighboring blocks along one axis so a piston or pulley can move a whole structure, not a single block. Set its range with the &bwrench&r."
-			]
 			rewards: [{
 				id: "7A1F080000000102"
 				type: "xp"
 				xp: 15
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1071,18 +1166,14 @@
 				item: { count: 1, id: "create:linear_chassis" }
 				type: "item"
 			}]
-			x: 1.5d
-			y: 4.5d
+			x: 25.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["7A1F080000000002"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "7A1F080000000003"
-			title: "Mechanical Piston"
-			subtitle: "Push and pull a whole build."
-			description: [
-				"Build a &bMechanical Piston&r. Driven by rotation it pushes and pulls an entire glued or chassis-held contraption, the foundation of doors, bridges, and elevators. Watch the stress, since long pushes cost more."
-			]
 			rewards: [
 				{
 					id: "7A1F080000000103"
@@ -1092,13 +1183,18 @@
 				{
 					id: "7A1F080000000104"
 					table_id: 8849093687305634787L
-					title: "Parts toward your first moving build."
 					type: "loot"
 				}
 			]
 			shape: "diamond"
 			size: 1.2d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1111,24 +1207,26 @@
 				item: { count: 1, id: "create:mechanical_piston" }
 				type: "item"
 			}]
-			x: 3.0d
-			y: 4.5d
+			x: 28.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["7A1F080000000002"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "7A1F080000000004"
-			title: "Rope Pulley"
-			subtitle: "Raise and lower a contraption."
-			description: [
-				"Craft a &bRope Pulley&r. It lifts and drops a contraption straight up and down, ideal for elevators and retracting drills. Anchor it above whatever you want to move."
-			]
 			rewards: [{
 				id: "7A1F080000000105"
 				type: "xp"
 				xp: 20
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1141,24 +1239,26 @@
 				item: { count: 1, id: "create:rope_pulley" }
 				type: "item"
 			}]
-			x: 4.5d
-			y: 4.5d
+			x: 23.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["7A1F080000000002"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "7A1F080000000005"
-			title: "Mechanical Bearing"
-			subtitle: "Spin a contraption."
-			description: [
-				"Make a &bMechanical Bearing&r. It rotates an attached structure, which is how windmills turn and how spinning builds work. Engage it by redstone or by hand."
-			]
 			rewards: [{
 				id: "7A1F080000000106"
 				type: "xp"
 				xp: 20
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1171,24 +1271,26 @@
 				item: { count: 1, id: "create:mechanical_bearing" }
 				type: "item"
 			}]
-			x: 3.0d
-			y: 6.0d
+			x: 28.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["7A1F080000000005"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "7A1F080000000006"
-			title: "Cart Assembler"
-			subtitle: "Put a build on rails."
-			description: [
-				"Place a &bCart Assembler&r on a track. It mounts a contraption onto a minecart so it can drive itself along the rail, a simple mobile platform. Drop a cart under it and power the assembler."
-			]
 			rewards: [{
 				id: "7A1F080000000107"
 				type: "xp"
 				xp: 20
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1201,19 +1303,14 @@
 				item: { count: 1, id: "create:cart_assembler" }
 				type: "item"
 			}]
-			x: 4.5d
-			y: 6.0d
+			x: 26.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["7A1F080000000003"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "7A1F080000000008"
-			title: "Contraption Tools"
-			subtitle: "Harvest, cut, and till on the move."
-			description: [
-				"Craft the &bMechanical Harvester&r, &bMechanical Saw&r, and &bMechanical Plough&r. Mounted on a moving contraption they reap crops, fell trees, and till soil as they pass, turning a cart or piston into a field crew."
-				"Build all three and a single moving rig can run a whole farm."
-			]
 			rewards: [{
 				id: "7A1F080000000109"
 				type: "xp"
@@ -1221,6 +1318,12 @@
 			}]
 			tasks: [
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1234,6 +1337,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1247,6 +1356,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1260,18 +1375,14 @@
 					type: "item"
 				}
 			]
-			x: 4.5d
-			y: 3.0d
+			x: 31.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["7A1F040000000002"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "7A1F090000000001"
-			title: "Schematic and Quill"
-			subtitle: "Capture a build to reprint."
-			description: [
-				"Make a &bSchematic and Quill&r. Box in any build and it saves the layout as a reusable schematic, which a Schematicannon can then print elsewhere. Record your best designs before you tear them down."
-			]
 			rewards: [
 				{
 					id: "7A1F090000000101"
@@ -1281,13 +1392,18 @@
 				{
 					id: "7A1F090000000102"
 					table_id: 8849093687305634787L
-					title: "A clean schematic to start your library."
 					type: "loot"
 				}
 			]
 			shape: "diamond"
 			size: 1.2d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1300,20 +1416,15 @@
 				item: { count: 1, id: "create:schematic_and_quill" }
 				type: "item"
 			}]
-			x: 9.0d
-			y: 0.0d
+			x: 10.0d
+			y: 4.0d
 		}
 		{
-			dependencies: ["2902E58DB70F9434"]
+			dependencies: ["7A1F080000000008"]
+			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "7A1F0A0000000001"
-			title: "Brass Casing"
-			subtitle: "The second tier opens here."
-			description: [
-				"Forge a &bBrass Casing&r. Brass unlocks &6Create&r's smarter machines, and the casing is the shared shell most of them are built around. You need brass from the foundry chapter first."
-				"Once casings are flowing, the &bdeployer&r, tunnels, and crafters all come within reach."
-			]
 			rewards: [
 				{
 					id: "7A1F0A0000000101"
@@ -1323,13 +1434,18 @@
 				{
 					id: "7A1F0A0000000102"
 					table_id: 8849093687305634787L
-					title: "Spare casing for the brass machines ahead."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.3d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1342,18 +1458,14 @@
 				item: { count: 1, id: "create:brass_casing" }
 				type: "item"
 			}]
-			x: 10.5d
-			y: 1.5d
+			x: 0.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["7A1F0A0000000001"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "7A1F0A0000000002"
-			title: "Deployer"
-			subtitle: "A mechanical hand."
-			description: [
-				"Build a &bDeployer&r. It uses an item or tool exactly as a player would, placing blocks, tilling soil, or crafting in the world. Give it a &bfilter&r so it only acts on the right input."
-			]
 			rewards: [
 				{
 					id: "7A1F0A0000000103"
@@ -1363,13 +1475,18 @@
 				{
 					id: "7A1F0A0000000104"
 					table_id: 8849093687305634787L
-					title: "A tool or two to put in its hand."
 					type: "loot"
 				}
 			]
 			shape: "diamond"
 			size: 1.2d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1382,24 +1499,26 @@
 				item: { count: 1, id: "create:deployer" }
 				type: "item"
 			}]
-			x: 12.0d
-			y: 0.0d
+			x: 3.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["7A1F0A0000000001"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "7A1F0A0000000004"
-			title: "Brass Funnel"
-			subtitle: "Funnels that read and filter."
-			description: [
-				"Craft a &bBrass Funnel&r. Like the andesite version but smarter, it filters by item and reads stack counts, which makes precise routing possible. Use it where a line needs exact control."
-			]
 			rewards: [{
 				id: "7A1F0A0000000106"
 				type: "xp"
 				xp: 15
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1412,24 +1531,26 @@
 				item: { count: 1, id: "create:brass_funnel" }
 				type: "item"
 			}]
-			x: 12.0d
-			y: 3.0d
+			x: 3.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["7A1F0A0000000004"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "7A1F0A0000000005"
-			title: "Brass Tunnel"
-			subtitle: "Split and balance a belt."
-			description: [
-				"Make a &bBrass Tunnel&r. Set across belts it splits and balances items between several outputs, the clean way to fan one input out to many machines. Pick the distribution mode you need."
-			]
 			rewards: [{
 				id: "7A1F0A0000000107"
 				type: "xp"
 				xp: 20
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1442,18 +1563,14 @@
 				item: { count: 1, id: "create:brass_tunnel" }
 				type: "item"
 			}]
-			x: 13.5d
-			y: 3.0d
+			x: 1.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["7A1F0A0000000002"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "7A1F0A0000000006"
-			title: "Mechanical Crafter"
-			subtitle: "Automate the crafting grid."
-			description: [
-				"Assemble a group of Mechanical Crafters. Arranged in the recipe's shape they craft multi-step and contraption parts on their own, including items you cannot make by hand. Wire the paths so inputs meet at the output."
-			]
 			rewards: [
 				{
 					id: "7A1F0A0000000108"
@@ -1463,13 +1580,18 @@
 				{
 					id: "7A1F0A0000000109"
 					table_id: 8849093687305634787L
-					title: "Components toward an automated line."
 					type: "loot"
 				}
 			]
 			shape: "diamond"
 			size: 1.2d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1482,24 +1604,26 @@
 				item: { count: 1, id: "create:mechanical_crafter" }
 				type: "item"
 			}]
-			x: 13.5d
-			y: 0.0d
+			x: 5.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["7A1F0A0000000002"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "7A1F0A0000000007"
-			title: "Sequenced Gearshift"
-			subtitle: "Choreograph a contraption."
-			description: [
-				"Craft a &bSequenced Gearshift&r. It runs a timed list of rotation moves, so a piston can extend, wait, and retract on its own. This is how precise contraption timing is set up."
-			]
 			rewards: [{
 				id: "7A1F0A000000010A"
 				type: "xp"
 				xp: 30
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1512,18 +1636,14 @@
 				item: { count: 1, id: "create:sequenced_gearshift" }
 				type: "item"
 			}]
-			x: 13.5d
-			y: -1.5d
+			x: 5.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["7A1F0A0000000001"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "7A1F0A0000000008"
-			title: "Crushing Wheels"
-			subtitle: "Double your ore at scale."
-			description: [
-				"Build a pair of Crushing Wheels. Spun toward each other they crush ore for roughly double output and chew through a stream of material fast, a real step up from the &bmillstone&r. Space them exactly one block apart."
-			]
 			rewards: [
 				{
 					id: "7A1F0A000000010B"
@@ -1533,11 +1653,16 @@
 				{
 					id: "7A1F0A000000010C"
 					table_id: 8849093687305634787L
-					title: "Crushed ore from a test run."
 					type: "loot"
 				}
 			]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1550,24 +1675,26 @@
 				item: { count: 1, id: "create:crushing_wheel" }
 				type: "item"
 			}]
-			x: 12.0d
-			y: 1.5d
+			x: 3.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["7A1F0A0000000008"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "7A1F0B0000000001"
-			title: "Flywheel"
-			subtitle: "Smooth, stored power."
-			description: [
-				"Make a &bFlywheel&r. It steadies and stores rotation, and hooked to a &bfurnace&r engine it becomes a strong, reliable source for a growing base. Keep it fed and it carries a large network."
-			]
 			rewards: [{
 				id: "7A1F0B0000000101"
 				type: "xp"
 				xp: 25
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1580,24 +1707,26 @@
 				item: { count: 1, id: "create:flywheel" }
 				type: "item"
 			}]
-			x: 13.5d
-			y: 1.5d
+			x: 2.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["7A1F0A0000000006"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "7A1F0B0000000002"
-			title: "Electron Tube"
-			subtitle: "The brass-era smart component."
-			description: [
-				"Craft an &bElectron Tube&r from &brose quartz&r. It is the small part behind smarter blocks like the &bRotation Speed Controller&r and display links. Keep a few in stock for logistics builds."
-			]
 			rewards: [{
 				id: "7A1F0B0000000102"
 				type: "xp"
 				xp: 20
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1610,24 +1739,26 @@
 				item: { count: 1, id: "create:electron_tube" }
 				type: "item"
 			}]
-			x: 15.0d
-			y: 0.0d
+			x: 5.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["7A1F0A0000000006"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "7A1F0B0000000003"
-			title: "Rose Quartz"
-			subtitle: "A small but required crystal."
-			description: [
-				"Make &bRose Quartz&r. It is the pink crystal behind Electron Tubes and a handful of rose quartz blocks, a minor brass-era material you will need a steady trickle of. A few go a long way."
-			]
 			rewards: [{
 				id: "7A1F0B0000000103"
 				type: "xp"
 				xp: 15
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1640,18 +1771,14 @@
 				item: { count: 1, id: "create:rose_quartz" }
 				type: "item"
 			}]
-			x: 16.5d
-			y: 0.0d
+			x: 6.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["7A1F0A0000000006"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "7A1F0B0000000004"
-			title: "Mechanical Arm"
-			subtitle: "Sort items between set points."
-			description: [
-				"Build a &bMechanical Arm&r. It moves items between several points you assign, sorting inputs to outputs with no belt between them. Program its targets with the &bwrench&r, in the order it should run."
-			]
 			rewards: [
 				{
 					id: "7A1F0B0000000104"
@@ -1661,13 +1788,18 @@
 				{
 					id: "7A1F0B0000000105"
 					table_id: 8849093687305634787L
-					title: "Parts to extend its reach."
 					type: "loot"
 				}
 			]
 			shape: "diamond"
 			size: 1.2d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1680,24 +1812,26 @@
 				item: { count: 1, id: "create:mechanical_arm" }
 				type: "item"
 			}]
-			x: 15.0d
-			y: -1.5d
+			x: 8.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["7A1F0A0000000007"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "7A1F0B0000000005"
-			title: "Clockwork Bearing"
-			subtitle: "A contraption that tracks time."
-			description: [
-				"Make a &bClockwork Bearing&r. It rotates a contraption to match the time of day, which is what drives working clock hands and timed displays. Build it onto a clock face for the effect."
-			]
 			rewards: [{
 				id: "7A1F0B0000000106"
 				type: "xp"
 				xp: 25
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1710,8 +1844,8 @@
 				item: { count: 1, id: "create:clockwork_bearing" }
 				type: "item"
 			}]
-			x: 15.0d
-			y: -3.0d
+			x: 8.5d
+			y: 5.0d
 		}
 		{
 			dependencies: [
@@ -1720,15 +1854,10 @@
 				"7A1F0B0000000005"
 				"7A1F040000000003"
 			]
+			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "7A1F0C0000000001"
-			title: "Shopping List"
-			subtitle: "Order from your own warehouse."
-			description: [
-				"Craft a &bShopping List&r. It is the request slip for &6Create&r's stock network, letting you order finished items from an automated warehouse instead of hand-crafting each one."
-				"Reaching this means the mill has grown into a real factory floor. The next chapters lean on exactly this kind of automation."
-			]
 			min_width: 320
 			rewards: [
 				{
@@ -1739,13 +1868,18 @@
 				{
 					id: "7A1F0C0000000102"
 					table_id: 8849093687305634787L
-					title: "A working cache pulled from your own stock."
 					type: "loot"
 				}
 			]
 			shape: "hexagon"
 			size: 1.5d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1758,20 +1892,21 @@
 				item: { count: 1, id: "create:shopping_list" }
 				type: "item"
 			}]
-			x: 18.0d
-			y: 0.0d
+			x: 29.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["7A1F070000000002"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "5EB4C3D826C19D59"
-			title: "Sand Filter"
-			subtitle: "Purify water in bulk."
-			description: [
-				"Build a &bSand Filter&r and pipe water through it. With fluid handling in place you can clean dirty water at scale now, which keeps the whole base hydrated without bottling one drink at a time."
-				"Store the purified output in a tank and &6Thirst&r stops being a daily chore."
-			]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1784,8 +1919,86 @@
 				item: { count: 1, id: "thirst:sand_filter" }
 				type: "item"
 			}]
-			x: -4.5d
-			y: 0.0d
+			x: 5.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7A1F010000000002"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "alloyed:forge"
+			}
+			id: "7A1F0D0000000001"
+			optional: true
+			rewards: [{
+				id: "7A1F0D0000000101"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "7A1F0D0000000201"
+				item: { count: 1, id: "alloyed:forge" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7A1F0D0000000001"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "alloyed:steel_pickaxe"
+			}
+			id: "7A1F0D0000000002"
+			optional: true
+			rewards: [{
+				id: "7A1F0D0000000102"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [
+				{
+					id: "7A1F0D0000000202"
+					item: { count: 1, id: "alloyed:steel_pickaxe" }
+					type: "item"
+				}
+				{
+					id: "7A1F0D0000000203"
+					item: { count: 1, id: "alloyed:steel_chestplate" }
+					type: "item"
+				}
+				{
+					id: "7A1F0D0000000204"
+					item: { count: 1, id: "alloyed:steel_sheet" }
+					type: "item"
+				}
+			]
+			x: -5.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7A1F0D0000000001"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "alloyed:bronze_bell"
+			}
+			id: "7A1F0D0000000003"
+			optional: true
+			rewards: [{
+				id: "7A1F0D0000000103"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "7A1F0D0000000205"
+				item: { count: 1, id: "alloyed:bronze_bell" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -3.0d
 		}
 	]
 }

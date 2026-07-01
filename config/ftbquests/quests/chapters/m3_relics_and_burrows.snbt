@@ -2459,5 +2459,56 @@
 			x: -23.5d
 			y: 1.8d
 		}
+		{
+			dependencies: ["4B2D3C5E8F7A7B10"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "sliceanddice:slicer"
+			}
+			id: "4B2D3C5E8F7C0001"
+			optional: true
+			rewards: [{
+				id: "4B2D3C5E8F7C0101"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "4B2D3C5E8F7C0201"
+				item: { count: 1, id: "sliceanddice:slicer" }
+				type: "item"
+			}]
+			x: -24.0d
+			y: 0.3d
+		}
+		{
+			dependencies: ["4B2D3C5E8F7C0001"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "sliceanddice:sprinkler"
+			}
+			id: "4B2D3C5E8F7C0002"
+			optional: true
+			rewards: [{
+				id: "4B2D3C5E8F7C0102"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [
+				{
+					id: "4B2D3C5E8F7C0202"
+					item: { count: 1, id: "sliceanddice:fertilizer_bucket" }
+					type: "item"
+				}
+				{
+					id: "4B2D3C5E8F7C0203"
+					item: { count: 1, id: "sliceanddice:sprinkler" }
+					type: "item"
+				}
+			]
+			x: -26.0d
+			y: 0.3d
+		}
 	]
 }
