@@ -128,9 +128,13 @@ const AOA_BOSS_PROOF = {
   // optional task: Cataclysm Harbinger/Ignis/Ender Guardian/Netherite
   // Monstrosity/Ancient Remnant/Revenant/Clawdian/Ender Golem, BFB roster,
   // BOMD Lich/Void Blossom/Gauntlet, and fdbosses Malkuth/Chesed.
+  // PROMOTED to REQUIRED Ascension apex (boss-ladder BL4, 2026-07-02): asc6 scylla
+  // node uses an item task on essence_of_the_storm, which is a guaranteed single-roll
+  // entity drop. Guarantee it on real-player kills so the Ascension fan-in is not
+  // RNG-blocked, and strip it on non-player kills so the gate is not bypassable.
   'cataclysm:scylla': {
     proof: 'cataclysm:essence_of_the_storm',
-    guaranteeProofDrop: false,
+    guaranteeProofDrop: true,
     strip: [
       'cataclysm:essence_of_the_storm',
       'cataclysm:astrape',
@@ -139,6 +143,36 @@ const AOA_BOSS_PROOF = {
       'cataclysm:ceraunus',
       'cataclysm:music_disc_scylla',
       'cataclysm:scylla_spawn_egg'
+    ]
+  },
+
+  // ============================================================================
+  // REQUIRED - ATOMIC ALEX'S CAVES APEX BOSSES (boss-ladder BL4, 2026-07-02)
+  // ============================================================================
+  // Tremorzilla (promoted required) is kill-only in at7 (its item task is the
+  // obtainable tremorzilla_egg summon item), so it needs no LootJS guarantee. The
+  // two co-required AC apex bosses below feed the Atomic capstone fan-in via at7
+  // quest dependencies (geburah -> luxtructosaurus -> watcher -> tremorzilla ->
+  // atomic grant 4358010000010003). Both carry a single item-proof task, so
+  // guarantee the proof on real-player kills and strip it on non-player kills.
+  // Watcher's occult_gem is a 0-1 roll (not natively guaranteed) so the LootJS
+  // addLoot(killedByPlayer) makes it reliable; Luxtructosaurus's tectonic_shard is
+  // a bulk 7-11 drop, guaranteed either way but normalized here for consistency.
+  'alexscaves:watcher': {
+    proof: 'alexscaves:occult_gem',
+    guaranteeProofDrop: true,
+    strip: [
+      'alexscaves:occult_gem',
+      'alexscaves:dark_tatters',
+      'alexscaves:spawn_egg_watcher'
+    ]
+  },
+  'alexscaves:luxtructosaurus': {
+    proof: 'alexscaves:tectonic_shard',
+    guaranteeProofDrop: true,
+    strip: [
+      'alexscaves:tectonic_shard',
+      'alexscaves:spawn_egg_luxtructosaurus'
     ]
   },
 

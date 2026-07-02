@@ -482,14 +482,13 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["4358010000010000"]
+			dependencies: ["4358010000EE0F01"]
 			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: {
 				id: "alexscaves:tremorzilla_egg"
 			}
 			id: "4358010000010001"
-			optional: true
 			rewards: [{
 				auto: "enabled"
 				command: "/astages add {p} tremorzilla_defeated true true"
@@ -552,7 +551,7 @@
 					value: 0L
 				}
 			]
-			x: 14.0d
+			x: 19.0d
 			y: -2.5d
 		}
 		{
@@ -961,6 +960,7 @@
 				"5457010000010003"
 				"4646010000010003"
 				"4358010000010002"
+				"4358010000010001"
 			]
 			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
@@ -1386,6 +1386,138 @@
 			}]
 			x: 15.0d
 			y: -12.0d
+		}
+		{
+			dependencies: ["4358010000010002"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "alexscaves:tectonic_shard"
+			}
+			id: "4358010000EE0F02"
+			rewards: [{
+				id: "4358013000EE0F21"
+				type: "xp"
+				xp: 300
+			}]
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					entity: "alexscaves:luxtructosaurus"
+					entity_vis_idle_mode: "USE_GLOBAL"
+					entity_vis_offset_x: 0.0f
+					entity_vis_offset_y: 0.0f
+					entity_vis_rotation: 0.0f
+					entity_vis_silhouette_mode: "NONE"
+					entity_vis_size: 1.0f
+					entity_vis_spin_mode: "USE_GLOBAL"
+					entity_vis_use_as_quest_icon: false
+					entity_vis_walk_mode: "USE_GLOBAL"
+					id: "4358010000EE0F21"
+					type: "kill"
+					value: 0L
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4358010000EE0F22"
+					item: { count: 1, id: "alexscaves:tectonic_shard" }
+					type: "item"
+				}
+			]
+			x: 15.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4358010000EE0F02"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "alexscaves:occult_gem"
+			}
+			id: "4358010000EE0F01"
+			rewards: [{
+				id: "4358013000EE0F11"
+				type: "xp"
+				xp: 300
+			}]
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					entity: "alexscaves:watcher"
+					entity_vis_idle_mode: "USE_GLOBAL"
+					entity_vis_offset_x: 0.0f
+					entity_vis_offset_y: 0.0f
+					entity_vis_rotation: 0.0f
+					entity_vis_silhouette_mode: "NONE"
+					entity_vis_size: 1.0f
+					entity_vis_spin_mode: "USE_GLOBAL"
+					entity_vis_use_as_quest_icon: false
+					entity_vis_walk_mode: "USE_GLOBAL"
+					id: "4358010000EE0F11"
+					type: "kill"
+					value: 0L
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4358010000EE0F12"
+					item: { count: 1, id: "alexscaves:occult_gem" }
+					type: "item"
+				}
+			]
+			x: 17.0d
+			y: -2.5d
 		}
 	]
 }

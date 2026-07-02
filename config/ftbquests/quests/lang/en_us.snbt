@@ -7797,4 +7797,13 @@
 	quest.42560000EE010000.title: "[STUB] The Void Worm"
 	quest.42560000EE010000.quest_subtitle: "[STUB] defeat the End-void apex"
 	quest.42560000EE010000.quest_desc: ["[BRIEF] teaches: Alex's Mobs Void Worm (entity alexsmobs:void_worm), an End-void apex boss. Kill task + item task alexsmobs:void_worm_eye (guaranteed single-roll drop, guaranteed via boss_progression_proof.js). REQUIRED Otherworldly boss (9th of the OW set). Terminal of the OW6 apex line; this node is a dependency of the OW capstone 4256010000010006 that grants ascension. Opus: 2-4 para instruction-first, no em dashes."]
+	quest.4358010000EE0F02.title: "[STUB] title"
+	quest.4358010000EE0F02.quest_subtitle: "[STUB] subtitle"
+	quest.4358010000EE0F02.quest_desc: ["[BRIEF] teaches: Alex's Caves Luxtructosaurus apex kill; REQUIRED Atomic boss (boss-ladder BL4). Kill entity alexscaves:luxtructosaurus and turn in proof item alexscaves:tectonic_shard (guaranteed bulk drop). Summoned via Amber Monolith in the Primordial Caves. Chapter=at7 Atomic; prior node = geburah exam 4358010000010002; feeds watcher 4358010000EE0F01. This lane (geburah -> luxtructosaurus -> watcher -> tremorzilla) fans into the Atomic capstone grant 4358010000010003. Opus: 2-4 para instruction-first, no em dashes."]
+	quest.4358010000EE0F01.title: "[STUB] title"
+	quest.4358010000EE0F01.quest_subtitle: "[STUB] subtitle"
+	quest.4358010000EE0F01.quest_desc: ["[BRIEF] teaches: Alex's Caves Watcher apex kill; REQUIRED Atomic boss (boss-ladder BL4). Kill entity alexscaves:watcher and turn in proof item alexscaves:occult_gem (drop guaranteed on player kill via boss_progression_proof.js). Occult horror boss from the Abyssal Chasm. Chapter=at7 Atomic; prior node = luxtructosaurus 4358010000EE0F02; feeds tremorzilla 4358010000010001 which feeds the Atomic capstone grant 4358010000010003. Opus: 2-4 para instruction-first, no em dashes."]
+	quest.4252010000EE0001.title: "[STUB] title"
+	quest.4252010000EE0001.quest_subtitle: "[STUB] subtitle"
+	quest.4252010000EE0001.quest_desc: ["[BRIEF] teaches: Cataclysm Scylla ocean-storm apex kill; REQUIRED Ascension boss (boss-ladder BL4). Kill entity cataclysm:scylla and turn in proof item cataclysm:essence_of_the_storm (guaranteed single-roll drop on player kill). Natural ocean/storm spawn. Chapter=asc6 bosses_rise; prior node = kraken 425201000001000A; this node is a dependency of the final convergence 425201000001000B (Draconic Guardian), so scylla + kraken + infernal_dragon are all required before the finale. Opus: 2-4 para instruction-first, no em dashes."]
 }
