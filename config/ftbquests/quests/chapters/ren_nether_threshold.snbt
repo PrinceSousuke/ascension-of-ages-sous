@@ -5,7 +5,7 @@
 	group: "0B038EB15EBBFD95"
 	hide_quest_until_deps_complete: true
 	icon: {
-		id: "neovitae:ingot_hellforged"
+		id: "neovitae:blood_pearl"
 	}
 	id: "0B03001000000002"
 	order_index: 1
@@ -16,7 +16,7 @@
 			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: {
-				id: "neovitae:ingot_hellforged"
+				id: "neovitae:blood_pearl"
 			}
 			id: "0B03102000000001"
 			rewards: [{
@@ -147,75 +147,6 @@
 			y: -4.5d
 		}
 		{
-			dependencies: [
-				"0B03102000000021"
-				"0B03102000000040"
-			]
-			entity_vis_size: 1.0f
-			hide_until_deps_visible: true
-			id: "0B03102000000041"
-			optional: true
-			rewards: [{
-				id: "0B03302000000041"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				PlayerSpells: {
-					check: 0b
-					mode: "ALL"
-					required: 0L
-					spells: [ ]
-				}
-				SkillsLevel: {
-					category: ""
-					check: 0b
-					comparison: "GREATER_OR_EQUAL"
-					first: 10
-					mode: "TOTAL_LEVEL"
-					second: 20
-				}
-				id: "0B03202000000041"
-				item: { count: 1, id: "neovitae:hellforged_dust" }
-				type: "item"
-			}]
-			x: 6.0d
-			y: -1.5d
-		}
-		{
-			dependencies: ["0B03102000000041"]
-			entity_vis_size: 1.0f
-			hide_until_deps_visible: true
-			id: "0B03102000000042"
-			optional: true
-			rewards: [{
-				id: "0B03302000000042"
-				type: "xp"
-				xp: 20
-			}]
-			tasks: [{
-				PlayerSpells: {
-					check: 0b
-					mode: "ALL"
-					required: 0L
-					spells: [ ]
-				}
-				SkillsLevel: {
-					category: ""
-					check: 0b
-					comparison: "GREATER_OR_EQUAL"
-					first: 10
-					mode: "TOTAL_LEVEL"
-					second: 20
-				}
-				id: "0B03202000000042"
-				item: { count: 1, id: "neovitae:ingot_hellforged" }
-				type: "item"
-			}]
-			x: 6.0d
-			y: 0.0d
-		}
-		{
 			dependencies: ["0B03102000000011"]
 			entity_vis_size: 1.0f
 			hide_until_deps_visible: true
@@ -247,73 +178,6 @@
 			}]
 			x: 0.0d
 			y: 4.5d
-		}
-		{
-			dependencies: ["0B03102000000042"]
-			entity_vis_size: 1.0f
-			hide_until_deps_visible: true
-			id: "0B03102000000046"
-			optional: true
-			rewards: [{
-				id: "0B03302000000046"
-				type: "xp"
-				xp: 15
-			}]
-			tasks: [{
-				PlayerSpells: {
-					check: 0b
-					mode: "ALL"
-					required: 0L
-					spells: [ ]
-				}
-				SkillsLevel: {
-					category: ""
-					check: 0b
-					comparison: "GREATER_OR_EQUAL"
-					first: 10
-					mode: "TOTAL_LEVEL"
-					second: 20
-				}
-				id: "0B03202000000046"
-				item: { count: 1, id: "neovitae:hellforged_parts" }
-				type: "item"
-			}]
-			x: 9.0d
-			y: 3.0d
-		}
-		{
-			dependencies: ["0B03102000000046"]
-			entity_vis_size: 1.0f
-			hide_until_deps_visible: true
-			id: "0B03102000000047"
-			optional: true
-			rewards: [{
-				id: "0B03302000000047"
-				type: "xp"
-				xp: 25
-			}]
-			shape: "diamond"
-			tasks: [{
-				PlayerSpells: {
-					check: 0b
-					mode: "ALL"
-					required: 0L
-					spells: [ ]
-				}
-				SkillsLevel: {
-					category: ""
-					check: 0b
-					comparison: "GREATER_OR_EQUAL"
-					first: 10
-					mode: "TOTAL_LEVEL"
-					second: 20
-				}
-				id: "0B03202000000047"
-				item: { count: 1, id: "neovitae:hellforged_block" }
-				type: "item"
-			}]
-			x: 9.0d
-			y: 6.0d
 		}
 		{
 			dependencies: ["0B03102000000050"]
@@ -523,7 +387,7 @@
 					auto: "enabled"
 					command: "/astages add {p} ren_nether_threshold_complete true true"
 					icon: {
-						id: "neovitae:ingot_hellforged"
+						id: "neovitae:blood_pearl"
 					}
 					id: "0B03302000000060"
 					permission_level: 2
@@ -957,7 +821,7 @@
 			y: 19.5d
 		}
 		{
-			dependencies: ["0B03102000000042"]
+			dependencies: ["0B03102000000040"]
 			entity_vis_size: 1.0f
 			hide_until_deps_visible: true
 			id: "0B03102000000080"
@@ -986,41 +850,8 @@
 				item: { count: 1, id: "neovitae:blood_pearl" }
 				type: "item"
 			}]
-			x: 1.5d
-			y: 10.5d
-		}
-		{
-			dependencies: ["0B03102000000080"]
-			entity_vis_size: 1.0f
-			hide_until_deps_visible: true
-			id: "0B03102000000081"
-			optional: true
-			rewards: [{
-				id: "0B03302000000081"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				PlayerSpells: {
-					check: 0b
-					mode: "ALL"
-					required: 0L
-					spells: [ ]
-				}
-				SkillsLevel: {
-					category: ""
-					check: 0b
-					comparison: "GREATER_OR_EQUAL"
-					first: 10
-					mode: "TOTAL_LEVEL"
-					second: 20
-				}
-				id: "0B03202000000081"
-				item: { count: 1, id: "neovitae:spiritus_gem_petty" }
-				type: "item"
-			}]
-			x: 1.5d
-			y: 12.0d
+			x: 6.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["0B03102000000051"]
@@ -1450,6 +1281,72 @@
 			}]
 			x: -4.5d
 			y: 21.0d
+		}
+		{
+			dependencies: ["0B03102000000001"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			id: "FAB07684061A284D"
+			optional: true
+			rewards: [{
+				id: "45AE292DA28BCF77"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "76EF7B6AF733969C"
+				item: { count: 1, id: "cnb:cinder_furnace" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 24.0d
+		}
+		{
+			dependencies: ["FAB07684061A284D"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			id: "1E5A8AEE45E9DDCA"
+			optional: true
+			rewards: [{
+				id: "F4B2A325EA7ED1AB"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "CCED306103FD9695"
+				item: { count: 1, id: "cnb:cinder_sword" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 24.0d
 		}
 	]
 }

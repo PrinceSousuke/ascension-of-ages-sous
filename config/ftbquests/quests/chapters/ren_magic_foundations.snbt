@@ -1250,40 +1250,6 @@
 			y: 9.0d
 		}
 		{
-			dependencies: ["0B03101000000037"]
-			entity_vis_size: 1.0f
-			hide_until_deps_visible: true
-			id: "0B03101000000038"
-			optional: true
-			rewards: [{
-				id: "0B03301000000038"
-				type: "xp"
-				xp: 15
-			}]
-			shape: "gear"
-			tasks: [{
-				PlayerSpells: {
-					check: 0b
-					mode: "ALL"
-					required: 0L
-					spells: [ ]
-				}
-				SkillsLevel: {
-					category: ""
-					check: 0b
-					comparison: "GREATER_OR_EQUAL"
-					first: 10
-					mode: "TOTAL_LEVEL"
-					second: 20
-				}
-				id: "0B03201000000038"
-				item: { count: 1, id: "neovitae:spiritus_gem_petty" }
-				type: "item"
-			}]
-			x: 9.0d
-			y: 10.5d
-		}
-		{
 			dependencies: ["0B03101000000036"]
 			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
@@ -1866,38 +1832,6 @@
 			dependencies: ["0B03101000000001"]
 			entity_vis_size: 1.0f
 			hide_until_deps_visible: true
-			id: "0B03101000000070"
-			rewards: [{
-				id: "0B03301000000070"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				PlayerSpells: {
-					check: 0b
-					mode: "ALL"
-					required: 0L
-					spells: [ ]
-				}
-				SkillsLevel: {
-					category: ""
-					check: 0b
-					comparison: "GREATER_OR_EQUAL"
-					first: 10
-					mode: "TOTAL_LEVEL"
-					second: 20
-				}
-				id: "0B03201000000070"
-				item: { count: 1, id: "neovitae:spiritus_gem_lesser" }
-				type: "item"
-			}]
-			x: 18.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["0B03101000000070"]
-			entity_vis_size: 1.0f
-			hide_until_deps_visible: true
 			id: "0B03101000000071"
 			optional: true
 			rewards: [{
@@ -1925,7 +1859,7 @@
 				type: "item"
 			}]
 			x: 18.0d
-			y: 1.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["0B03101000000071"]
@@ -2028,39 +1962,6 @@
 		}
 		{
 			dependencies: ["0B03101000000074"]
-			entity_vis_size: 1.0f
-			hide_until_deps_visible: true
-			id: "0B03101000000075"
-			optional: true
-			rewards: [{
-				id: "0B03301000000075"
-				type: "xp"
-				xp: 15
-			}]
-			tasks: [{
-				PlayerSpells: {
-					check: 0b
-					mode: "ALL"
-					required: 0L
-					spells: [ ]
-				}
-				SkillsLevel: {
-					category: ""
-					check: 0b
-					comparison: "GREATER_OR_EQUAL"
-					first: 10
-					mode: "TOTAL_LEVEL"
-					second: 20
-				}
-				id: "0B03201000000075"
-				item: { count: 1, id: "neovitae:spiritus_gem_common" }
-				type: "item"
-			}]
-			x: 18.0d
-			y: 7.5d
-		}
-		{
-			dependencies: ["0B03101000000075"]
 			entity_vis_size: 1.0f
 			hide_until_deps_visible: true
 			id: "0B03101000000076"

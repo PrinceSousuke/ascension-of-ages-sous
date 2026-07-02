@@ -150,10 +150,16 @@
     ["industrial_revolution", "neovitae:demonite_trim_ingot", "item"],
     ["gilded_age", "neovitae:spiritus_gem_greater", "item"],
     ["gilded_age", "neovitae:spiritus_gem_grand", "item"],
-    ["gilded_age", "neovitae:sentient_helmet", "item"],
-    ["gilded_age", "neovitae:sentient_plate", "item"],
-    ["gilded_age", "neovitae:sentient_leggings", "item"],
-    ["gilded_age", "neovitae:sentient_boots", "item"],
+    // Sentient armor down-tiered Gilded -> IR (2026-07-02, J_neovitae_curve fix):
+    // jar makes sentient armor from a Common gem + iron armor on an Alchemy Array,
+    // all reachable once the IR-locked Hellfire Forge is built. These are required
+    // IR-chapter nodes (ir_magic_feedstock 49540B100000001B-1E) that the player
+    // physically could not complete at IR under the old Gilded lock.
+    ["industrial_revolution", "neovitae:sentient_helmet", "item"],
+    ["industrial_revolution", "neovitae:sentient_plate", "item"],
+    ["industrial_revolution", "neovitae:sentient_leggings", "item"],
+    ["industrial_revolution", "neovitae:sentient_boots", "item"],
+    // Sentient tools stay Gilded: only OW6 (optional depth) quests them; no IR node does.
     ["gilded_age", "neovitae:sentient_sword", "item"],
     ["gilded_age", "neovitae:sentient_pickaxe", "item"],
     ["gilded_age", "neovitae:sentient_axe", "item"],
