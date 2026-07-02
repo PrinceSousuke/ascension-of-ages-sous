@@ -1,101 +1,78 @@
-# 00 — BRIEFING + STRATEGY: using Fable to finish the AoA questlines
+# 00 — BRIEFING + STRATEGY: finishing EVERY not-done mod in AoA
 
-_Compiled 2026-07-01. Every number verified on disk this session (agents + independent
-recount). Supersedes the 2026-06-10 memory claim that Atomic/OW/Ascension prose was still
-placeholder — that work has since shipped._
+_Compiled 2026-07-01, expanded to the full roster 2026-07-02. Census + depth audit verified on
+disk (546 jars) and hand-spot-checked. This supersedes the earlier Create-only framing._
 
 ---
 
 ## The one-paragraph version
-The premise "finish the prose" is mostly already true: IR, Gilded, and Atomic are done and
-dense (1,052 quests, ~99.6% real prose). The real remaining work is four buckets — (1)
-Otherworldly + Ascension are **spines, not chapters** (~40 quests each vs 270–410 for the
-lower ages); (2) the **Create add-on rollout is mid-flight** (Phases 1/2/4 shipped, **Phase 3
-= Gilded flight/propulsion never started**, Aeronautics + Stuff & Additions fully unquested
-AND ungated); (3) a short **defect list** (87 em dashes in the lang file, 4 missing g6
-descriptions, one misnamed chapter); (4) a **real tier/softlock audit** has never run (only
-a surface check). And the key strategic correction from you: **Fable authors structure,
-quests, and cross-weaves; Opus writes prose; Fable does not spend cycles on language.**
+The pack is far less finished than a chapter-by-chapter glance suggests. The *chapters that
+exist* are prose-complete, but **216 of 303 content mods (71%) are not fully quested**, and the
+gap is systemic: the big tech mods have dense **endgame** chapters while their **mid-game
+onboarding is missing**. A player following quests never learns to place an AE2 controller, a
+Refined Storage grid, a Mekanism enrichment chamber, an Oritech machine core, or an Immersive
+Engineering blast furnace — all hand-verified at **0 quests**. Avaritia's compression tables,
+the entire reason that mod exists, are unquested. Spectrum's pedestal front door is unquested.
+On top of that, **139 content mods have no stage gate at all**. This is the real body of work,
+and your instinct to use Fable to *build* it (structure/quests/cross-weaves) with Opus on prose
+is the right division.
 
-## Verified state (recounted on disk)
+## Verified reality
+| Bucket | Count | Meaning |
+|---|---:|---|
+| Content mods | 303 | mods with a questable surface (items/machines/mobs/structures) |
+| DONE | 87 | broad task coverage |
+| PARTIAL | 56 | some quests, major features/foundations missing |
+| ZERO | 160 | questable, no quests at all |
+| **Not fully done** | **216 (71%)** | the completion program's scope |
+| Ungated | 139 | no AStages entry (some intentional decor, most not) |
+| Non-questable | 252 | libraries / APIs / perf / compat / pure decor — correctly skipped |
 
-| Age | Chapters | Quests | Real prose | Status |
-|---|---:|---:|---|---|
-| Industrial Revolution | 9 | 411 | 100% | Done, dense |
-| Gilded | 7 | 368 | 98.9% | Done except 4 missing descs in `g6` |
-| Atomic | 7 | 273 | 100% | Done, dense |
-| Otherworldly | 6 | **39** | 100% real | **Spine only** — build out |
-| Ascension | 7 | **40** | 100% real | **Spine only** — build out |
+The five ages I earlier called "done" are done *as written chapters*, not *as mods*: IR/Gilded/
+Atomic carry the endgame; the foundations underneath them are the largest gap in the pack.
+Otherworldly + Ascension remain thin spines (~40 quests each) needing full buildout, and there
+Avaritia + Draconic top tiers are unquested. Full data:
+`AoA redo/30_workflow/mod_quest_coverage_census_2026-07-02.md` + `02a_COMPLETION_BACKLOG.md`.
 
-Create add-ons: 20 installed + doc'd, all jars present. Coverage is partial and uneven.
-Confirmed **zero-coverage AND ungated:** `create-aeronautics-bundled`,
-`create-stuff-additions`. Thin/partial: Create 6.0 Factory Logistics, New Age entry rung,
-Metalwork alloy-by-pour, Aquatic Ambitions mechanics, Propulsion (~97% open). Correctly
-un-questable (no items): `create_ultimate_factory`, `create_cold_sweat`.
+## The dominant defect: endgame without onboarding
+This keeps recurring, so it's the organizing principle of the whole program:
 
-Canon state is **mixed, not shipped**: Neo Vitae is the live magic spine but capstone
-anchor A1 still points at Forbidden & Arcanus; Hephaestus Forge tier gating is non-monotonic
-(likely a bug); the Renaissance redistribution + Apotheosis tier moves are still a runbook,
-not executed. These are flagged for canon calls, not silently "fixed."
-
-Note on your ask: the **AoA redo folder is inside the workspace**, not outside it, and it's
-now small — only `30_workflow/` (invasions) and `40_create_addons/`. The old
-`fable5_completion_2026-06-09` folder was cleaned up (gitignored → gone). This pack replaces
-it.
-
----
-
-## The strategy: four models, one lane each
-
-You told me Fable should build and Opus should write. That inverts the usual "Fable = prose"
-assumption, and it works here because of one structural fact about this pack: **prose and
-structure live in different files.** Structure is in
-`config/ftbquests/quests/chapters/*.snbt`; every player-facing string is in
-`config/ftbquests/quests/lang/en_us.snbt`, keyed by quest id. So the models can't step on
-each other.
-
-| Model | Lane | Why |
+| Mod | Endgame taught? | Foundation quested? |
 |---|---|---|
-| **Fable** | Structure: quest-node graphs, dependency wiring, AStages gates, cross-weave recipe scripts, mod fleshing-out, edge cases. Emits stub lang keys with teaching briefs. | Fast, follows structured mechanical specs. Its ID-hallucination hazard is contained by the mandatory verify-first protocol + logs. |
-| **Opus** | Prose: writes `en_us.snbt` from Fable's briefs. Voice QA. | Quality spent where players actually read. Never touches structure. |
-| **Codex** | Deterministic bulk: mass find/replace, format normalization, `node --check` sweeps, crossing computation, gate-audit runs. | Long-context deterministic transforms; boring at scale. |
-| **Claude Code** | Reasoning verification: age-discipline review, softlock re-audit, canon-call judgment, final merge gate. | Judgment + independent verification, per the canon "always verify before reading back." |
+| AE2 | yes (molecular assembler, spatial, quantum) | **no** — controller/drive/cells = 0 |
+| Refined Storage | yes (autocrafter, wireless) | **no** — controller/grid/disk drive = 0 |
+| Mekanism | yes (uranium, Mekasuit, QIO) | **no** — enrichment/purification spine = 0 |
+| Oritech | yes (atomic forge convergence) | **no** — machine cores 1–3 = 0, no IR home chapter |
+| Immersive Engineering | yes (arc furnace, Gilded tier) | **no** — blast furnace/crusher/squeezer = 0 |
+| Avaritia | partial (singularity chain) | **no** — the compression tables = 0 |
+| Spectrum | yes (fusion shrine, Deeper Down) | **no** — pedestal crafting = 0 |
 
-**The safety spine (this is what makes it OK to let Fable author structure):** every
-structural deliverable ships a VERIFICATION LOG — for each item id, the grep + the file/jar
-that proves it exists + the AStages line proving it's legal at that age; for each script, a
-`node --check` PASS. No log = rejected. Then CC independently re-verifies a sample. This is
-how you use a hallucination-prone model on high-stakes work without eating softlocks.
+"Foundations-first" is now rule 6 of the master preamble: author the entry rungs, then re-wire
+the existing endgame quests to depend on them so the graph teaches in order.
 
-## The handshake, per unit of work
-```
-Fable (structure + stub briefs + verification log)
-   → Opus (fills prose from briefs, lang file only)
-      → Codex (normalize format, node --check, crossing math)
-         → CC (age-discipline re-audit + capstone-chain + merge gate)
-```
-
----
+## Strategy: four models, one lane each (unchanged, and validated by this scope)
+Because prose lives in `en_us.snbt` and structure in the `.snbt` chapters, the models never
+collide. **Fable** builds structure, quests, gates, and cross-weaves; **Opus** writes prose from
+Fable's stub briefs; **Codex** does deterministic bulk + `node --check`; **Claude Code** does
+age-discipline/softlock review + the merge gate. The safety spine: every Fable structural output
+ships a verification log (grep-proof of each id + the gate proving its age), and CC re-verifies a
+sample. This is what makes it safe to point a fast, hallucination-prone model at high-stakes
+structural authoring across 216 mods.
 
 ## How to run it (sequence)
-
-1. **`02_VERIFICATION_PASS`** — FIRST. Produces `LEDGER.md`: the real tier/softlock audit,
-   Create coverage delta, Neo Vitae anchor status, defect list. Nothing else starts until
-   CC signs the ledger. This is your "does the current questline make sense" answer.
-2. **`03_CREATE_GAPS_AND_QA`** — close all Create gaps (Phase 3 flight, Stuff & Additions,
-   Factory Logistics, New Age, Metalwork, Aquatic) + gate the two ungated add-ons + QA read.
-3. **`04_OTHERWORLDLY_BUILDOUT`** then **`05_ASCENSION_BUILDOUT`** — spine → full, in order
-   (Ascension roots on OW's capstone). Census-verify each age's mods first.
-4. **`06_CROSS_WEAVES`** — runs alongside 03/04/05; a chapter needing a cross-mod item is
-   only safe once its recipe path is legal at that age.
-5. **`07_PROSE_PASS_OPUS`** — Opus fills every stub + clears the 87 em dashes + the 4 g6
-   descs.
-6. **`08_CLEANUP_AND_FINAL_VALIDATION`** — Codex deterministic cleanup; CC final merge gate.
-
-`01_MASTER_PREAMBLE` prepends every prompt. Prompts are model-agnostic paste blocks — drop
-the preamble + the task file into whichever model owns that lane.
+1. `02_VERIFICATION_PASS` → `LEDGER.md` (now includes a whole-roster coverage re-check).
+2. `02a_COMPLETION_BACKLOG` is the target list for everything below.
+3. Per-age completion, foundations-first, in order:
+   `02b` Renaissance + earlier → `02c` **IR foundations (the big one)** → `02d` Gilded →
+   `02e` Atomic → `04` Otherworldly buildout → `05` Ascension buildout.
+4. `08_CREATE_GAPS_AND_QA` — the Create sub-program (Phase 3 flight + the rest), runs with the
+   Gilded/IR ages.
+5. `06_CROSS_WEAVES` alongside all authoring; `07_PROSE_PASS_OPUS` fills language.
+6. `08_CLEANUP_AND_FINAL_VALIDATION` — Codex cleanup (incl. the `aoacore` duplicate-jar),
+   the **canon decision queue** (12 items needing your call, incl. the 139-ungated sweep), and
+   CC's final merge gate.
 
 ## What I did NOT do
-I did not edit a single quest file. This session is research + strategy + the prompt pack, so
-you can delegate the actual authoring the way you asked. Everything above is verified; the
-canon-call items are surfaced, not decided.
+No quest files were edited. This is research + strategy + the prompt pack, so you can delegate
+the authoring. Every gap above is verified; every judgment call is surfaced to the decision
+queue, not decided for you.

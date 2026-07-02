@@ -3,89 +3,76 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AoA questline completion state — 2026-07-01</title>
+<title>AoA full-roster quest coverage — 2026-07-02</title>
 <style>
   :root{--bg:#faf9f5;--card:#fff;--soft:#f1efe8;--ink:#2c2c2a;--muted:#5f5e5a;--hint:#888780;--line:#e5e3da;
-    --blue:#378ADD;--amber:#EF9F27;--teal:#1D9E75;--red:#E24B4A;--gray:#888780;--purple:#7F77DD;}
+    --teal:#1D9E75;--amber:#EF9F27;--red:#E24B4A;--tealink:#0F6E56;--redink:#A32D2D;}
   *{box-sizing:border-box;}
   body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;line-height:1.6;padding:2rem;}
-  .wrap{max-width:760px;margin:0 auto;}
+  .wrap{max-width:820px;margin:0 auto;}
   h1{font-size:22px;font-weight:500;margin:0 0 2px;}
-  h3{font-size:16px;font-weight:500;margin:0 0 10px;}
+  h3{font-size:16px;font-weight:500;margin:0 0 4px;}
   .sub{color:var(--muted);font-size:14px;margin:0 0 1.75rem;}
   .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-bottom:1.75rem;}
   .metric{background:var(--soft);border-radius:8px;padding:1rem;}
   .metric .l{font-size:13px;color:var(--muted);margin-bottom:6px;}
   .metric .v{font-size:24px;font-weight:500;}
-  .legend{display:flex;gap:14px;font-size:12px;color:var(--muted);}
-  .legend span{display:flex;align-items:center;gap:5px;}
-  .dot{width:10px;height:10px;border-radius:2px;display:inline-block;}
-  .chartbox{position:relative;width:100%;height:240px;margin-bottom:1.75rem;}
-  .pipe{display:grid;grid-template-columns:1fr auto 1fr auto 1fr auto 1fr;align-items:stretch;gap:8px;margin-bottom:1.75rem;}
-  .step{border-radius:12px;padding:12px;text-align:center;}
-  .step .n{font-size:14px;font-weight:500;margin-top:2px;}
-  .step .d{font-size:12px;}
-  .arrow{display:flex;align-items:center;justify-content:center;color:var(--hint);font-size:18px;}
-  .cov{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px;}
-  .chip{background:var(--soft);padding:10px 12px;}
-  .chip .t{font-size:13px;font-weight:500;}
-  .chip .d{font-size:12px;color:var(--muted);}
+  .row{display:grid;grid-template-columns:240px 1fr;gap:24px;align-items:center;margin-bottom:1.75rem;}
+  .chartbox{position:relative;height:190px;}
+  .leg{display:flex;flex-direction:column;gap:10px;font-size:13px;}
+  .leg span{display:flex;align-items:center;gap:8px;}
+  .dot{width:11px;height:11px;border-radius:2px;display:inline-block;}
+  table{width:100%;border-collapse:collapse;font-size:13px;border:0.5px solid var(--line);border-radius:12px;overflow:hidden;}
+  th,td{padding:8px 12px;text-align:left;border-top:0.5px solid var(--line);}
+  th{background:var(--soft);font-weight:500;border-top:none;}
+  .c{text-align:center;}
   .foot{margin-top:2rem;font-size:12px;color:var(--hint);}
 </style>
 </head>
 <body>
 <div class="wrap">
-  <h1>Ascension of Ages — questline completion state</h1>
-  <p class="sub">Verified on disk 2026-07-01. Prose is done for the lower ages; the real work is Otherworldly + Ascension buildout, Create gaps, and a tier audit.</p>
+  <h1>Ascension of Ages — full-roster quest coverage</h1>
+  <p class="sub">Census of 546 jars, verified 2026-07-02. The written chapters are polished, but most mods are not fully quested — and the big tech mods teach their endgame, not their foundation.</p>
 
   <div class="cards">
-    <div class="metric"><div class="l">Quests written, IR to Ascension</div><div class="v">1,131</div></div>
-    <div class="metric"><div class="l">Ages built / to build</div><div class="v">3 / 2</div></div>
-    <div class="metric"><div class="l">Otherworldly + Ascension</div><div class="v">79</div></div>
-    <div class="metric"><div class="l">Create add-on gaps</div><div class="v">8</div></div>
+    <div class="metric"><div class="l">Content mods</div><div class="v">303</div></div>
+    <div class="metric"><div class="l">Not fully quested</div><div class="v">216 <span style="font-size:14px;color:var(--hint);">71%</span></div></div>
+    <div class="metric"><div class="l">Ungated (no stage)</div><div class="v">139</div></div>
+    <div class="metric"><div class="l">Fully done</div><div class="v">87</div></div>
   </div>
 
-  <div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:4px;">
-    <h3>Quests per age</h3>
-    <div class="legend">
-      <span><span class="dot" style="background:var(--blue);"></span>Built, dense</span>
-      <span><span class="dot" style="background:var(--amber);"></span>Spine only, build out</span>
+  <div class="row">
+    <div class="chartbox"><canvas id="cov" role="img" aria-label="Coverage doughnut: 87 done, 56 partial, 160 zero."></canvas></div>
+    <div class="leg">
+      <span><span class="dot" style="background:var(--teal);"></span>Done — 87 <span style="color:var(--hint);">broad coverage</span></span>
+      <span><span class="dot" style="background:var(--amber);"></span>Partial — 56 <span style="color:var(--hint);">foundations/features missing</span></span>
+      <span><span class="dot" style="background:var(--red);"></span>Zero — 160 <span style="color:var(--hint);">no quests at all</span></span>
     </div>
   </div>
-  <div class="chartbox"><canvas id="ageChart" role="img" aria-label="Quests per age: Industrial Revolution 411, Gilded 368, Atomic 273 built; Otherworldly 39, Ascension 40 spine only."></canvas></div>
 
-  <h3>The pipeline, one lane per model</h3>
-  <div class="pipe">
-    <div class="step" style="background:#EEEDFE;color:#26215C;"><div>&#9874;</div><div class="n">Fable</div><div class="d">structure, quests, weaves, gates</div></div>
-    <div class="arrow">&#8594;</div>
-    <div class="step" style="background:#E1F5EE;color:#04342C;"><div>&#9998;</div><div class="n">Opus</div><div class="d">prose, lang file only</div></div>
-    <div class="arrow">&#8594;</div>
-    <div class="step" style="background:#F1EFE8;color:#2C2C2A;"><div>&#9881;</div><div class="n">Codex</div><div class="d">bulk transforms, node check</div></div>
-    <div class="arrow">&#8594;</div>
-    <div class="step" style="background:#E6F1FB;color:#042C53;"><div>&#10004;</div><div class="n">Claude Code</div><div class="d">tier audit, merge gate</div></div>
-  </div>
+  <h3>The pattern: endgame taught, foundation missing</h3>
+  <p class="sub" style="margin-bottom:12px;">Each mod's flashy endgame is quested; its onboarding is at zero (hand-verified).</p>
+  <table>
+    <tr><th>Mod</th><th class="c">Endgame</th><th class="c">Foundation</th></tr>
+    <tr><td>Applied Energistics 2</td><td class="c" style="color:var(--tealink);">&#10004;</td><td class="c" style="color:var(--redink);">&#10007; 0</td></tr>
+    <tr><td>Refined Storage</td><td class="c" style="color:var(--tealink);">&#10004;</td><td class="c" style="color:var(--redink);">&#10007; 0</td></tr>
+    <tr><td>Mekanism</td><td class="c" style="color:var(--tealink);">&#10004;</td><td class="c" style="color:var(--redink);">&#10007; 0</td></tr>
+    <tr><td>Oritech</td><td class="c" style="color:var(--tealink);">&#10004;</td><td class="c" style="color:var(--redink);">&#10007; 0</td></tr>
+    <tr><td>Immersive Engineering</td><td class="c" style="color:var(--tealink);">&#10004;</td><td class="c" style="color:var(--redink);">&#10007; 0</td></tr>
+    <tr><td>Avaritia (compression tables)</td><td class="c" style="color:var(--tealink);">&#10004;</td><td class="c" style="color:var(--redink);">&#10007; 0</td></tr>
+    <tr><td>Spectrum (pedestals)</td><td class="c" style="color:var(--tealink);">&#10004;</td><td class="c" style="color:var(--redink);">&#10007; 0</td></tr>
+  </table>
 
-  <h3>Create add-on coverage</h3>
-  <div class="cov">
-    <div class="chip" style="border-left:3px solid var(--teal);"><div class="t">Fully quested</div><div class="d">Nuclear, Ore Excavation, base tutorial</div></div>
-    <div class="chip" style="border-left:3px solid var(--amber);"><div class="t">Partial</div><div class="d">Factory Logistics, New Age, Metalwork, Aquatic</div></div>
-    <div class="chip" style="border-left:3px solid var(--red);"><div class="t">Gap, ungated</div><div class="d">Aeronautics (Phase 3), Stuff &amp; Additions</div></div>
-    <div class="chip" style="border-left:3px solid var(--gray);"><div class="t">Defer, no items</div><div class="d">Ultimate Factory, Cold Sweat</div></div>
-  </div>
-
-  <p class="foot">Source: fable_completion_2026-07-01 pack. Counts recounted from config/ftbquests/quests. Prompts in this same folder.</p>
+  <p class="foot">Source: mod_quest_coverage_census_2026-07-02.md + 02a_COMPLETION_BACKLOG.md. Prompts in this folder. Fable builds structure, Opus writes prose, Codex normalizes, Claude Code guards age discipline.</p>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
 <script>
-  new Chart(document.getElementById('ageChart'), {
-    type:'bar',
-    data:{labels:['Industrial Revolution','Gilded','Atomic','Otherworldly','Ascension'],
-      datasets:[{data:[411,368,273,39,40],backgroundColor:['#378ADD','#378ADD','#378ADD','#EF9F27','#EF9F27'],borderRadius:4,barPercentage:0.7}]},
-    options:{responsive:true,maintainAspectRatio:false,
-      plugins:{legend:{display:false},tooltip:{callbacks:{label:(c)=>c.parsed.y+' quests'}}},
-      scales:{x:{grid:{display:false},ticks:{autoSkip:false,font:{size:11},color:'#5f5e5a'}},
-        y:{beginAtZero:true,grid:{color:'rgba(120,120,110,0.15)'},ticks:{color:'#5f5e5a'}}}}
+  new Chart(document.getElementById('cov'), {
+    type:'doughnut',
+    data:{ labels:['Done','Partial','Zero'], datasets:[{ data:[87,56,160], backgroundColor:['#1D9E75','#EF9F27','#E24B4A'], borderWidth:0 }] },
+    options:{ responsive:true, maintainAspectRatio:false, cutout:'62%',
+      plugins:{ legend:{ display:false }, tooltip:{ callbacks:{ label:(c)=> c.label + ': ' + c.parsed + ' mods' } } } }
   });
 </script>
 </body>

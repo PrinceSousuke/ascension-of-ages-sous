@@ -8,6 +8,14 @@ final age — it should feel like a prestige capstone, not a machine grind, but 
 Ascension-tier mod must be fully fleshed out and reach a real, earned end. Endgame-calibrated
 depth: fewer but heavier nodes, each a real build.
 
+**Census-verified Ascension gaps to hit** (from `02a`, hand-confirmed 0 on disk):
+`avaritia:extreme_crafting_table` and the whole **compression-table ladder** (compressed →
+double → nether/end/sculk → extreme) = **0 quests** — the mod's entire reason to exist is
+currently unquested; plus `extreme_smithing_table`, `tesseract`, the neutron density ladder,
+and a representative infinity-gear sample. Also the Draconic **awakened/chaotic/reactor** tier
++ its chaos-tier crystal energy network (chains up from the Atomic/OW Draconic base). These are
+P1 — build the ladders, don't sample.
+
 ---
 
 ## Step 1 — CENSUS (verify each id against the jar)

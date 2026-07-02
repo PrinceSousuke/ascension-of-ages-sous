@@ -154,6 +154,14 @@ the language entirely while still handing Opus everything it needs.
    false-positives on `autofocus_id:`.
 5. **Icons:** `icon = task item`; for non-item quests use a verified distinct mod icon
    (check the jar's item models, never guess an id).
+6. **Teach foundations, not just capstones.** The pack's dominant defect is big tech mods with
+   dense endgame chapters but ZERO onboarding (AE2 controller, Mekanism enrichment chamber,
+   Oritech machine core — all currently unquested). When completing a mod, author its entry
+   rungs FIRST, then re-point the existing endgame quests to depend on them. A player must be
+   able to path from the foundation to the taught endgame by following quests alone.
+7. **Coverage source of truth:** `02a_COMPLETION_BACKLOG.md` (per-age, from the verified census
+   at `AoA redo/30_workflow/mod_quest_coverage_census_2026-07-02.md`). 216 of 303 content mods
+   are not fully quested — work the backlog, do not re-derive scope from scratch.
 
 ---
 

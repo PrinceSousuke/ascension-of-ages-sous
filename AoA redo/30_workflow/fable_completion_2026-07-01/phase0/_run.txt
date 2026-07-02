@@ -1,0 +1,55 @@
+{
+  "n_item_locks": 3470,
+  "n_tag_locks": 35,
+  "n_tables": 65,
+  "n_leaks": 0,
+  "reward_count_by_age": {
+    "ascension": 17,
+    "atomic": 428,
+    "dark_ages": 18,
+    "gilded_age": 505,
+    "industrial_revolution": 803,
+    "medieval_times": 220,
+    "null": 120,
+    "otherworldly": 31,
+    "the_renaissance": 302
+  },
+  "xp_by_age": {
+    "ascension": 3500,
+    "atomic": 34000,
+    "dark_ages": 75,
+    "gilded_age": 26770,
+    "industrial_revolution": 10770,
+    "medieval_times": 15750,
+    "null": 1090,
+    "otherworldly": 2550,
+    "the_renaissance": 4700
+  }
+}
+
+=== LEAKS ===
+
+=== TABLE REFS (hexid | file | loot_size | #entries | referencing chapters | lowest age) ===
+7ACE4BD2F80103E3 | choice_compost | ls=1 | 5 entries | ['entering_the_iron_era', 'm1_first_mill', 'metallurgy', 'minecolonies', 'what_waits_in_the_grove'] | dark_ages
+3FCE6C893B181A17 | choice_food | ls=1 | 27 entries | ['minecolonies', 'stone_food_and_farming_pressures'] | dark_ages
+7100000000000002 | stone_choice_cache | ls=1 | 7 entries | ['stone_food_and_farming_pressures'] | dark_ages
+7100000000000003 | stone_loot_cache | ls=2 | 10 entries | ['stone_food_and_farming_pressures', 'stone_water_weather_and_wounds'] | dark_ages
+7100000000000001 | stone_random_cache | ls=2 | 8 entries | ['stone_water_weather_and_wounds'] | dark_ages
+7400000000000001 | automation_random_cache | ls=2 | 8 entries | ['ir_automation_safety_and_routing', 'ir_create_industrial_addons'] | industrial_revolution
+7500000000000003 | industrial_loot_cache | ls=2 | 10 entries | ['ir_create_industrial_addons', 'ir_immersive_engineering_early_factory', 'ir_ir_side_gear_hidden_equipment', 'ir_magic_feedstock_and_spectrum_network', 'ir_netherite_citadel_obsidilith', 'ir_pneumaticcraft_pressure_plastic', 'ir_power_motion_and_grid'] | industrial_revolution
+7500000000000001 | industrial_random_cache | ls=2 | 9 entries | ['g1_the_golden_workshop', 'g4_the_infinite_grid', 'g6_circuits_and_current', 'ir_automation_safety_and_routing', 'ir_create_industrial_addons', 'ir_immersive_engineering_early_factory', 'ir_ir_side_gear_hidden_equipment', 'ir_magic_feedstock_and_spectrum_network', 'ir_modern_industrialization_steam_industry', 'ir_netherite_citadel_obsidilith', 'ir_pneumaticcraft_pressure_plastic', 'ir_power_motion_and_grid'] | industrial_revolution
+7600000000000001 | nuclear_random_cache | ls=2 | 8 entries | ['at2_the_periodic_table', 'atomic_oritech_convergence'] | atomic
+732BC3249916AB5F | choice_crush | ls=1 | 5 entries | ['minecolonies'] | ?
+6BECD56C7F7B27C5 | choice_flowers | ls=1 | 13 entries | ['minecolonies'] | ?
+44D355363D3500BF | choice_hospital | ls=1 | 6 entries | ['minecolonies'] | ?
+7207C95EDFE6DFFD | choice_logs | ls=1 | 8 entries | ['minecolonies'] | ?
+14C4691141636B06 | choice_sapling | ls=1 | 7 entries | ['minecolonies'] | ?
+11DC90A8AF7A34C3 | choice_stone | ls=1 | 7 entries | ['minecolonies'] | ?
+23A030D0854BAACF | minecolonies_common | ls=1 | 58 entries | ['minecolonies'] | ?
+
+=== UNREFERENCED TABLES ===
+['ascension_bundle_common', 'ascension_bundle_prestige', 'ascension_bundle_rare', 'ascension_bundle_useful', 'ascension_choice_relic', 'ascension_loot_relic', 'ascension_random_relic', 'automation_bundle_common', 'automation_bundle_rare', 'automation_bundle_useful', 'automation_choice_cache', 'automation_loot_cache', 'automation_obsidilith_cache', 'expedition_bundle_common', 'expedition_bundle_rare', 'expedition_bundle_useful', 'expedition_choice_cache', 'expedition_loot_cache', 'expedition_maledictus_cache', 'expedition_random_cache', 'industrial_bundle_common', 'industrial_bundle_rare', 'industrial_bundle_useful', 'industrial_choice_cache', 'industrial_void_titan_cache', 'mechanical_bundle_common', 'mechanical_bundle_rare', 'mechanical_bundle_useful', 'mechanical_choice_cache', 'mechanical_loot_cache', 'mechanical_random_cache', 'nuclear_bundle_common', 'nuclear_bundle_rare', 'nuclear_bundle_useful', 'nuclear_choice_cache', 'nuclear_geburah_prestige_cache', 'nuclear_loot_cache', 'nuclear_macabre_cache', 'space_bundle_common', 'space_bundle_rare', 'space_bundle_useful', 'space_choice_cache', 'space_leviathan_prestige_cache', 'space_loot_cache', 'space_random_cache', 'stone_bundle_common', 'stone_bundle_rare', 'stone_bundle_useful', 'wda_food']
+
+=== COMMAND REWARDS ===
+
+Dump written.

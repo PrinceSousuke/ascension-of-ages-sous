@@ -24,6 +24,16 @@ Build or reuse a script for this (memory references `aoa_gate_audit.py` — veri
 exists on disk first; if not, write a fresh one and save it under this folder). Output: a
 table of `chapter | quest id | item | item unlock stage | chapter age | VERDICT`.
 
+### B0. Whole-roster coverage reconciliation (the big one)
+Load `AoA redo/30_workflow/mod_quest_coverage_census_2026-07-02.md` (546 jars, 303 content
+mods, 216 not fully done) and `02a_COMPLETION_BACKLOG.md`. Re-verify a 15% random sample of
+its PARTIAL/ZERO verdicts by grepping the chapters yourself (the census can go stale as
+authoring proceeds). Confirm the foundation gaps by hand: `ae2:controller`, `ae2:drive`,
+`refinedstorage:controller`, `mekanism:enrichment_chamber`, `oritech:machine_core_1`,
+`immersiveengineering:blast_furnace`, `spectrum:pedestal_moonstone`,
+`avaritia:extreme_crafting_table` should all still be 0 across chapters. Refresh the backlog
+with any drift. This reconciliation is the coverage baseline for every per-age prompt.
+
 ### B. Create machine coverage reconciliation
 Cross-reference `AoA redo/40_create_addons/*.md` (the per-mod research) against actual quest
 coverage (`grep` the chapters for each Create namespace). Confirm every installed Create

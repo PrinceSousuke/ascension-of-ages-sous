@@ -7,6 +7,14 @@ currently 6 chapters / **39 quests** — a spine, not a set of chapters. Build i
 comparable, endgame-calibrated depth. Quality over count, but these chapters must actually
 teach and reward the OW-tier mods, not stub them.
 
+**Census-verified OW gaps to hit** (from `02a`, confirmed 0/thin on disk): `evolvedmekanism`
++ `mekmm` quantum/multiversal tiers (gated to OW but **0 coverage** — the mod tier the gate
+exists for is untaught), `industrialforegoing` `supreme_black_hole_unit`/`tank`, `ballistix`
+antimatter/darkmatter tier (its true endgame, 0 quests), `occultism` Marid tier
+(`book_of_binding_marid`, `iesnium_anvil`), and the Draconic IO/relay/wireless crystal network
+(base tier authored in `02e`, wyvern tier here). Fold these into the census + chapter plan
+below.
+
 ---
 
 ## Step 1 — CENSUS (verify before authoring; produce a census table)
