@@ -12,7 +12,10 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["4D53010000010003"]
+			dependencies: [
+				"4D53010000010003"
+				"4954121000000009"
+			]
 			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: {

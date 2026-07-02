@@ -830,6 +830,50 @@
 			entity_vis_size: 1.0f
 			hide_until_deps_visible: true
 			icon: {
+				id: "immersivepetroleum:gas_generator"
+			}
+			id: "4954071000000103"
+			rewards: [
+				{
+					id: "4954073000103000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "4954073000103001"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954072000103000"
+				item: { count: 1, id: "immersivepetroleum:gas_generator" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4954071000000003"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
 				id: "immersivepetroleum:crudeoil_bucket"
 			}
 			id: "4954071000000004"

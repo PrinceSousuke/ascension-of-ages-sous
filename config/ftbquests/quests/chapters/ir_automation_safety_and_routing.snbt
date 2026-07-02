@@ -1314,6 +1314,94 @@
 			y: -6.5d
 		}
 		{
+			dependencies: ["49540A1000000028"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "enderio:fluid_tank"
+			}
+			id: "49540A1000000039"
+			rewards: [
+				{
+					id: "49540A3000000039"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "49540A3000000139"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540A2000000039"
+				item: { count: 1, id: "enderio:fluid_tank" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["49540A1000000039"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "enderio:pressurized_fluid_tank"
+			}
+			id: "49540A100000003A"
+			rewards: [
+				{
+					id: "49540A300000003A"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "49540A300000013A"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540A200000003A"
+				item: { count: 1, id: "enderio:pressurized_fluid_tank" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: -8.0d
+		}
+		{
 			dependencies: ["49540A1000000032"]
 			entity_vis_size: 1.0f
 			hide_until_deps_visible: true

@@ -8132,4 +8132,13 @@
 	quest.4D4E0120002400A2.title: "[STUB] Antimatter"
 	quest.4D4E0120002400A2.quest_subtitle: "[STUB] Produce the impossible material"
 	quest.4D4E0120002400A2.quest_desc: ["[BRIEF] teaches: running the SPS to produce mekanism:pellet_antimatter. Task: item mekanism:pellet_antimatter (icon = pellet_antimatter, ungated). Depends on node 4D4E0120002400A1. Opus: explain the SPS consumes polonium pellets plus a large sustained energy draw to condense antimatter pellets, that antimatter is the top-tier Mekanism nucleosynthesis reagent, and that its main consumer (the Antiprotonic Nucleosynthesizer) waits in a later age so this is the Atomic-tier production milestone. 2-4 short paragraphs, instruction-first, no em dashes."]
+	quest.4954071000000103.title: "[STUB] Portable Generator"
+	quest.4954071000000103.quest_subtitle: "[STUB] Burn gasoline for field power"
+	quest.4954071000000103.quest_desc: ["[BRIEF] teaches: the Immersive Petroleum Portable Generator (immersivepetroleum:gas_generator) burns gasoline to make RF away from a fixed grid; requires immersivepetroleum:gas_generator (crafted from an IE generator + capacitor_lv + iron plates); prior node: pumpjack (4954071000000003) so the well-to-generator loop reads; Opus: 2-4 para instruction-first, explain feeding it gasoline (from the distillation lane) and where a portable RF source helps at the rig."]
+	quest.49540A1000000039.title: "[STUB] Fluid Tank"
+	quest.49540A1000000039.quest_subtitle: "[STUB] Buffer fluids for your machines"
+	quest.49540A1000000039.quest_desc: ["[BRIEF] teaches: the Ender IO Fluid Tank (enderio:fluid_tank) stores and buffers a single fluid so machines like the Vat never starve or back up; requires enderio:fluid_tank; prior node: Vat (49540A1000000028) which is the fluid-consuming machine the tank feeds; Opus: 2-4 para instruction-first, explain fluid capacity, insert/extract sides, and pairing a tank with conduits."]
+	quest.49540A100000003A.title: "[STUB] Pressurized Fluid Tank"
+	quest.49540A100000003A.quest_subtitle: "[STUB] Higher-capacity fluid storage"
+	quest.49540A100000003A.quest_desc: ["[BRIEF] teaches: the Ender IO Pressurized Fluid Tank (enderio:pressurized_fluid_tank) is the upgraded tank with more capacity and throughput for busy fluid networks; requires enderio:pressurized_fluid_tank; prior node: Fluid Tank (49540A1000000039); Opus: 2-4 para instruction-first, contrast it with the basic Fluid Tank and note when the extra buffer matters."]
 }

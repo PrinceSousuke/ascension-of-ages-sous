@@ -453,7 +453,10 @@
 			y: -4.5d
 		}
 		{
-			dependencies: ["4D4D011000000003"]
+			dependencies: [
+				"4D4D011000000003"
+				"495410100000000E"
+			]
 			entity_vis_size: 1.0f
 			hide_until_deps_visible: true
 			icon: {
@@ -1140,7 +1143,10 @@
 			y: -8.0d
 		}
 		{
-			dependencies: ["4D4E011000000005"]
+			dependencies: [
+				"4D4E011000000005"
+				"495410100000002A"
+			]
 			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: {
