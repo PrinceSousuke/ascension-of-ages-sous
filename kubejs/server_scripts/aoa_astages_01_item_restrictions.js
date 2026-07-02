@@ -843,7 +843,7 @@
     ["gilded_age", "aether:ice_pendant", "item"],
     ["gilded_age", "aether:ice_ring", "item"],
     ["gilded_age", "aether:aerogel", "item"],
-    ["industrial_revolution", "aether:silver_dungeon_key", "item"],
+    ["the_renaissance", "aether:silver_dungeon_key", "item"],
     ["industrial_revolution", "aether:victory_medal", "item"],
     ["gilded_age", "deep_aether:aercloud_necklace", "item"],
     ["gilded_age", "deep_aether:brass_dungeon_key", "item"],

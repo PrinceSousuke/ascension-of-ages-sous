@@ -204,6 +204,66 @@ const AOA_BOSS_PROOF = {
       'cataclysm:music_disc_the_leviathan',
       'cataclysm:the_leviathan_spawn_egg'
     ]
+  },
+
+  // ============================================================================
+  // REQUIRED - RENAISSANCE DIMENSION/EXPLORATION BOSSES (boss-ladder BL2, 2026-07-02)
+  // ============================================================================
+  // Nine Renaissance required bosses feed their own dimension chapter's proof-grant
+  // quest (which already fans into the Renaissance age grant 0B0310A0000000F0).
+  // Each item-proof drop is a guaranteed single-roll entity drop, so guarantee it on
+  // real-player kills and strip proof/utility drops on non-player kills to keep the
+  // chapter fan-in un-bypassable. Kill-only bosses (starlight_golem, gatekeeper) use an
+  // MQT kill task as their proof; no LootJS guarantee is needed there.
+
+  // Nether threshold: Ignis (ignitium_ingot).
+  'cataclysm:ignis': {
+    proof: 'cataclysm:ignitium_ingot',
+    guaranteeProofDrop: true,
+    strip: [
+      'cataclysm:ignitium_ingot',
+      'cataclysm:music_disc_ignis',
+      'cataclysm:ignis_spawn_egg'
+    ]
+  },
+  // Nether threshold: The Harbinger (witherite_block).
+  'cataclysm:the_harbinger': {
+    proof: 'cataclysm:witherite_block',
+    guaranteeProofDrop: true,
+    strip: [
+      'cataclysm:witherite_block',
+      'cataclysm:music_disc_the_harbinger',
+      'cataclysm:the_harbinger_spawn_egg'
+    ]
+  },
+  // Nether threshold: Nether Gauntlet. Native blazing_eye drops from a death-spawned
+  // chest table, not the entity table, so move it onto the real-player kill path (see
+  // the addTableModifier below) exactly like Obsidilith's heart.
+  'bosses_of_mass_destruction:gauntlet': {
+    proof: 'bosses_of_mass_destruction:blazing_eye',
+    guaranteeProofDrop: true,
+    strip: [
+      'bosses_of_mass_destruction:blazing_eye',
+      'bosses_of_mass_destruction:gauntlet_spawn_egg'
+    ]
+  },
+  // Aether literacy: Valkyrie Queen (silver_dungeon_key).
+  'aether:valkyrie_queen': {
+    proof: 'aether:silver_dungeon_key',
+    guaranteeProofDrop: true,
+    strip: [
+      'aether:silver_dungeon_key',
+      'aether:valkyrie_queen_spawn_egg'
+    ]
+  },
+  // Undergarden descent: Forgotten Guardian (forgotten_nugget).
+  'undergarden:forgotten_guardian': {
+    proof: 'undergarden:forgotten_nugget',
+    guaranteeProofDrop: true,
+    strip: [
+      'undergarden:forgotten_nugget',
+      'undergarden:forgotten_guardian_spawn_egg'
+    ]
   }
 
   // ============================================================================
@@ -348,5 +408,10 @@ LootJS.modifiers(event => {
   // to the real-player kill path above so opening an arena chest is never proof.
   event.addTableModifier('bosses_of_mass_destruction:chests/obsidilith')
     .removeLoot('bosses_of_mass_destruction:obsidian_heart')
+
+  // Nether Gauntlet's native proof (blazing_eye) is a death-spawned arena chest table.
+  // Move it onto the real-player kill path above so opening the chest is never proof.
+  event.addTableModifier('bosses_of_mass_destruction:chests/gauntlet')
+    .removeLoot('bosses_of_mass_destruction:blazing_eye')
 })
 

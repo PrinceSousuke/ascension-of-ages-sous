@@ -1,5 +1,5 @@
 {
- "total_qids": 1935,
+ "total_qids": 1945,
  "dup_ids": {},
  "emdash_count": 0,
  "endash_count": 0,
@@ -228,6 +228,14 @@
   ],
   [
    "5350010000020036",
+   "journey_to_ascension"
+  ],
+  [
+   "5350010000020037",
+   "journey_to_ascension"
+  ],
+  [
+   "5350010000020038",
    "journey_to_ascension"
   ],
   [

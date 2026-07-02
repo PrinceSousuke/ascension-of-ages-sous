@@ -48,8 +48,8 @@ AGE_STAGES = {"dark_ages","medieval_times","the_renaissance","industrial_revolut
 BANDS = [
     ("Dark",         ["097AED7C91033D5E"]),                         # gateway -> medieval_times (start node prepended separately)
     ("Medieval",     ["6D7E8F901A2B1054"]),                         # gateway -> the_renaissance
-    ("Renaissance",  ["0B03101000000039","0B03102000000062","0B03103000000031","0B03104000000050",
-                      "0B03105000000050","0B03106000000050","0B03107000000050","0B031080000000F2",
+    ("Renaissance",  ["0B03101000000039","0B03102000000062","0B03103000000101","0B03104000000100",
+                      "0B03105000000100","0B03106000000050","0B03107000000050","0B031080000000F2",
                       "0B03109000000060","0B0310A000000014","0B0310A0000000F0"]),   # last = gateway -> industrial_revolution
     ("Industrial",   ["4954021000000016","4954051000000011","495406100000001D","49540A100000000F",
                       "49540B1000000015","49540C1000000006","49540C100000002F","4954631000000000"]),   # last = gateway -> gilded_age; 2F = Chesed exam
@@ -67,8 +67,8 @@ BANDS = [
 # friendly titles per real quest id (roadmap readability; colour-coded by band)
 TITLES = {
  "5350010000010000":"Dark Ages","097AED7C91033D5E":"Medieval Times","6D7E8F901A2B1054":"The Renaissance",
- "0B03101000000039":"Magic Foundations","0B03102000000062":"Nether Threshold","0B03103000000031":"Aether Literacy",
- "0B03104000000050":"Starlight Observation","0B03105000000050":"Undergarden Descent","0B03106000000050":"Deeper & Darker",
+ "0B03101000000039":"Magic Foundations","0B03102000000062":"Nether Threshold","0B03103000000101":"Aether Literacy",
+ "0B03104000000100":"Starlight Observation","0B03105000000100":"Undergarden Descent","0B03106000000050":"Deeper & Darker",
  "0B03107000000050":"Archive Recordkeeping","0B031080000000F2":"Observation & Experimentation","0B03109000000060":"End Threshold",
  "0B0310A000000014":"Maledictus Vigil","0B0310A0000000F0":"Industrial Revolution",
  "4954021000000016":"Factory Discipline","4954051000000011":"Power & Motion","495406100000001D":"Pressure Chemistry",

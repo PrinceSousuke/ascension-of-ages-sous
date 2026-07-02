@@ -7627,6 +7627,30 @@
 	quest.505701100000000C.quest_desc: [
 		"[BRIEF] teaches: defeating fdbosses:malkuth and collecting its guaranteed drop fdbosses:fire_and_ice_core (kill task + item task). Completing this is the Gilded co-required exam: it grants the malkuth_defeated stage and is fanned into the Gilded capstone aggregator 5057011000000004 alongside the Void Titan, so the Gilded to Atomic grant now needs BOTH. Note the Fire and Ice Core attaches to any damage-dealing item to summon a fireball (use) or iceball (crouch+use). Prior = arena node 505701100000000B. Opus: 2-4 para, instruction-first, no em dashes."
 	]
+	quest.0B03102000000100.title: "[STUB] Ignis"
+	quest.0B03102000000100.quest_subtitle: "[STUB] defeat the Nether forge boss"
+	quest.0B03102000000100.quest_desc: ["[BRIEF] teaches: Cataclysm Ignis, a Renaissance-tier Nether boss (spawns in Nether Fortresses). Kill task fdbosses n/a; entity cataclysm:ignis. Guaranteed proof drop cataclysm:ignitium_ingot (single-roll loot table; guaranteed on real-player kill via boss_progression_proof.js). This node combines a kill task + an ignitium_ingot item task. Rooted on the blaze-burner node; part of the Nether required-boss line that fans into the Nether chapter grant. Opus: 2-4 para instruction-first, no em dashes."]
+	quest.0B03102000000101.title: "[STUB] The Harbinger"
+	quest.0B03102000000101.quest_subtitle: "[STUB] defeat the wither-touched Nether boss"
+	quest.0B03102000000101.quest_desc: ["[BRIEF] teaches: Cataclysm The Harbinger, Renaissance Nether boss (spawns in ancient factory structures). entity cataclysm:the_harbinger. Guaranteed proof cataclysm:witherite_block. kill + item task. Deps on Ignis node. Opus: instruction-first."]
+	quest.0B03102000000102.title: "[STUB] Locate the Gauntlet Arena"
+	quest.0B03102000000102.quest_subtitle: "[STUB] find a Nether Gauntlet arena"
+	quest.0B03102000000102.quest_desc: ["[BRIEF] teaches: locating the bosses_of_mass_destruction:gauntlet_arena structure (naturally generated). structure task. Deps on Harbinger. Prep node for the Gauntlet fight. Opus: short, tell player to explore the Nether for the arena."]
+	quest.0B03102000000103.title: "[STUB] Nether Gauntlet"
+	quest.0B03102000000103.quest_subtitle: "[STUB] defeat the Nether Gauntlet"
+	quest.0B03102000000103.quest_desc: ["[BRIEF] teaches: BOMD Nether Gauntlet boss. entity bosses_of_mass_destruction:gauntlet. Proof bosses_of_mass_destruction:blazing_eye (native drop is a death-chest; rerouted onto real-player kill via boss_progression_proof.js addTableModifier). kill + item task. Terminal of Nether boss line; feeds the Nether chapter grant 0B03102000000062. Opus: instruction-first."]
+	quest.0B03103000000100.title: "[STUB] Silver Dungeon"
+	quest.0B03103000000100.quest_subtitle: "[STUB] find the Aether Silver Dungeon"
+	quest.0B03103000000100.quest_desc: ["[BRIEF] teaches: locating aether:silver_dungeon structure (floating Aether island vault). structure task. Deps on the slider (Bronze Dungeon) node. Prep for Valkyrie Queen. Opus: short."]
+	quest.0B03103000000101.title: "[STUB] Valkyrie Queen"
+	quest.0B03103000000101.quest_subtitle: "[STUB] defeat the Valkyrie Queen"
+	quest.0B03103000000101.quest_desc: ["[BRIEF] teaches: Aether Valkyrie Queen, required Renaissance Aether boss (Silver Dungeon). entity aether:valkyrie_queen. Proof aether:silver_dungeon_key (guaranteed drop). kill + item task. This node CARRIES the ren_aether_literacy_complete stage grant (moved here from the slider node so the boss is required before the chapter proof). It is the Aether chapter climax; the Renaissance age grant now depends on this node. Opus: instruction-first, note the Silver Key is dropped by the Queen."]
+	quest.0B03104000000100.title: "[STUB] Starlight Proven"
+	quest.0B03104000000100.quest_subtitle: "[STUB] record the Starlight boss victory"
+	quest.0B03104000000100.quest_desc: ["[BRIEF] teaches: proof terminal for the Eternal Starlight boss line. item task eternal_starlight:orb_of_prophecy. Deps on the now-REQUIRED Starlight Golem kill (0B03104000000073). CARRIES the ren_starlight_observation_complete grant (moved here so the Golem is required before the chapter proof). Renaissance age grant depends on this node. NOTE for Opus: the Starlight Golem node 0B03104000000073 text still says 'optional construct boss / not a required chapter gate' - that is now FALSE (promoted required); re-prose the golem node too. Opus: instruction-first."]
+	quest.0B03105000000100.title: "[STUB] Forgotten Guardian Proven"
+	quest.0B03105000000100.quest_subtitle: "[STUB] claim the Forgotten Nugget"
+	quest.0B03105000000100.quest_desc: ["[BRIEF] teaches: proof terminal for the Undergarden Forgotten Guardian. item task undergarden:forgotten_nugget (guaranteed drop, killed_by_player). Deps on the now-REQUIRED Forgotten Guardian kill (0B03105000000041, in the Catacombs). CARRIES the ren_undergarden_descent_complete grant (moved from the return-to-overworld node so the Guardian is required before the chapter proof). Renaissance age grant depends on this node. Opus: instruction-first, tell player the nugget drops from the Guardian."]
 	quest.5350010000010000.quest_subtitle: "Granted at world entry."
 	quest.5350010000010000.title: "&8Dark Ages&r"
 	quest.5350010000020000.quest_subtitle: "Age gate. Clears when its capstone quest is complete."

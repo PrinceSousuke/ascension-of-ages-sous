@@ -121,7 +121,7 @@
 			hide_until_deps_complete: false
 			hide_until_deps_visible: false
 			icon: {
-			id: "aether:bronze_dungeon_key"
+			id: "aether:silver_dungeon_key"
 			}
 			id: "5350010000020004"
 			shape: "circle"
@@ -130,7 +130,7 @@
 				id: "5350010000005004"
 				mode: "ALL"
 				required: 1L
-				targets: ["0B03103000000031"]
+				targets: ["0B03103000000101"]
 				type: "check_quest"
 			}]
 			x: -3.0d
@@ -152,7 +152,7 @@
 				id: "5350010000005005"
 				mode: "ALL"
 				required: 1L
-				targets: ["0B03104000000050"]
+				targets: ["0B03104000000100"]
 				type: "check_quest"
 			}]
 			x: -1.0d
@@ -165,7 +165,7 @@
 			hide_until_deps_complete: false
 			hide_until_deps_visible: false
 			icon: {
-			id: "undergarden:utherium_crystal"
+			id: "undergarden:forgotten_nugget"
 			}
 			id: "5350010000020006"
 			shape: "circle"
@@ -174,7 +174,7 @@
 				id: "5350010000005006"
 				mode: "ALL"
 				required: 1L
-				targets: ["0B03105000000050"]
+				targets: ["0B03105000000100"]
 				type: "check_quest"
 			}]
 			x: 1.0d

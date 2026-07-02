@@ -30,8 +30,8 @@
     ["the_renaissance", "cataclysm:ender_guardian", "End boss tier"],
     ["industrial_revolution", "cataclysm:netherite_monstrosity", "Nether boss tier", "The monstrosity ignores your feeble strikes."],
     ["gilded_age", "cataclysm:ancient_remnant", "late Cataclysm boss tier"],
-    ["gilded_age", "cataclysm:the_harbinger", "late Cataclysm boss tier"],
-    ["gilded_age", "cataclysm:ignis", "late Cataclysm boss tier", "Flames consume your weapon before it connects."],
+    ["the_renaissance", "cataclysm:the_harbinger", "Renaissance Nether required boss (BL2)"],
+    ["the_renaissance", "cataclysm:ignis", "Renaissance Nether required boss (BL2)", "Flames consume your weapon before it connects."],
     ["gilded_age", "astral_dimension:void_titan", "Astral Dimension Gilded proof boss"],
     ["gilded_age", "astral_dimension:angel_boss", "Astral Dimension Gilded boss belt"],
     ["gilded_age", "astral_dimension:tower_of_malice", "Astral Dimension Gilded boss belt"],
@@ -44,7 +44,7 @@
 
     ["the_renaissance", "bosses_of_mass_destruction:lich", "BOMD boss", "The lich phases through your attack. It does not consider you a threat."],
     ["the_renaissance", "bosses_of_mass_destruction:void_blossom", "BOMD boss"],
-    ["industrial_revolution", "bosses_of_mass_destruction:gauntlet", "BOMD boss"],
+    ["the_renaissance", "bosses_of_mass_destruction:gauntlet", "Renaissance Nether required boss (BL2)"],
     ["industrial_revolution", "bosses_of_mass_destruction:obsidilith", "Gilded handoff proof boss", "The obsidian heart pulses, but your strikes pass through harmlessly."],
 
     // Qliphoth boss-tier gates per age (boss-ladder BL1, 2026-07-02): Chesed = IR co-required
@@ -73,7 +73,7 @@
     ["otherworldly", "block_factorys_bosses:kraken", "Block Factory boss"],
 
     ["the_renaissance", "aether:slider", "Aether dungeon boss"],
-    ["industrial_revolution", "aether:valkyrie_queen", "Aether dungeon boss"],
+    ["the_renaissance", "aether:valkyrie_queen", "Renaissance Aether required boss (BL2)"],
     ["gilded_age", "aether:sun_spirit", "Gilded Aether culmination boss"],
     ["gilded_age", "deep_aether:eots_controller", "Deep Aether culmination boss"],
     ["the_renaissance", "deeperdarker:stalker", "Otherside elite mob"],

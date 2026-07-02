@@ -12,21 +12,13 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: [
-				"0B03101000000039"
-				"0B03102000000062"
-			]
+			dependencies: ["0B03101000000039"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: {
 				id: "minecraft:lectern"
 			}
 			id: "0B03107000000001"
-			title: "Archive and Recordkeeping"
-			subtitle: "Write it down, store it, dig up the rest."
-			description: [
-				"A working civilization keeps records. This chapter gathers the tools for it: in-game manuals, real storage, the archeology to recover the past, and the jewelry trade to catalogue what you find."
-				"None of it gates your progress. Treat it as the &blibrary&r wing of the &dRenaissance&r."
-			]
 			rewards: [{
 				id: "0B03307000000001"
 				type: "xp"
@@ -34,6 +26,12 @@
 			}]
 			size: 1.5d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -51,20 +49,21 @@
 		}
 		{
 			dependencies: ["0B03107000000001"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03107000000010"
-			title: "Modonomicon"
-			subtitle: "Your shelf of mod manuals."
-			description: [
-				"Craft the &bModonomicon&r. It is a single book that collects the in-game guidebooks many of the pack's mods register, so the documentation you keep ignoring finally lives in one place."
-				"Open it whenever a new system has you guessing."
-			]
 			rewards: [{
 				id: "0B03307000000010"
 				type: "xp"
 				xp: 15
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -74,7 +73,7 @@
 					second: 20
 				}
 				id: "0B03207000000010"
-				item: { count: 1, id: "modonomicon:modonomicon" }
+				item: { components: { "modonomicon:book_id": "aoa:renaissance_compendium" }, count: 1, id: "modonomicon:modonomicon" }
 				type: "item"
 			}]
 			x: -6.0d
@@ -82,19 +81,21 @@
 		}
 		{
 			dependencies: ["0B03107000000001"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03107000000030"
-			title: "Barrel"
-			subtitle: "Sophisticated Storage, the base unit."
-			description: [
-				"Build a &6Sophisticated Storage&r &bBarrel&r. It works like a vanilla barrel but takes upgrade slots, the foundation the whole mod's storage line extends from."
-			]
 			rewards: [{
 				id: "0B03307000000030"
 				type: "xp"
 				xp: 15
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -112,19 +113,21 @@
 		}
 		{
 			dependencies: ["0B03107000000030"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03107000000031"
-			title: "Iron Chest"
-			subtitle: "More slots, sturdier box."
-			description: [
-				"Craft an &bIron Chest&r. It holds far more than wood and accepts the same upgrades, the natural next size up once a &bbarrel&r fills."
-			]
 			rewards: [{
 				id: "0B03307000000031"
 				type: "xp"
 				xp: 15
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -142,19 +145,21 @@
 		}
 		{
 			dependencies: ["0B03107000000031"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03107000000032"
-			title: "Limited Barrel I"
-			subtitle: "A barrel that shows its stock."
-			description: [
-				"Make a &bLimited Barrel&r. It displays its contents on the front and caps each slot, which makes it ideal for a tidy wall of single-item stockpiles."
-			]
 			rewards: [{
 				id: "0B03307000000032"
 				type: "xp"
 				xp: 15
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -172,20 +177,21 @@
 		}
 		{
 			dependencies: ["0B03107000000001"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03107000000040"
-			title: "Skyroot Planks"
-			subtitle: "A specimen from the Aether."
-			description: [
-				"Bring back &bSkyroot Planks&r from the &6Aether&r. Filing a sample of each dimension's basic wood is the recordkeeper's habit, and it marks your first trip skyward."
-				"The &6Aether&r gets its own chapter when you are ready to go properly."
-			]
 			rewards: [{
 				id: "0B03307000000040"
 				type: "xp"
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -203,19 +209,21 @@
 		}
 		{
 			dependencies: ["0B03107000000040"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03107000000041"
-			title: "Shiverstone"
-			subtitle: "A specimen from the Undergarden."
-			description: [
-				"Collect &bShiverstone&r from the &6Undergarden&r. It is a signature stone of that frozen underworld, a second sample for the archive and a taste of the descent to come."
-			]
 			rewards: [{
 				id: "0B03307000000041"
 				type: "xp"
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -232,21 +240,25 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["0B03107000000001"]
+			dependencies: [
+				"0B03106000000050"
+				"0B03107000000001"
+			]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "0B03107000000060"
-			title: "Iron Brush"
-			subtitle: "The archeologist's first tool."
-			description: [
-				"Craft an &bIron Brush&r. &6Better Archeology&r is dug, not mined: you sweep suspicious blocks with a brush to recover what is buried in them."
-				"Everything in this lane starts with the brush in hand."
-			]
 			rewards: [{
 				id: "0B03307000000060"
 				type: "xp"
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -264,19 +276,21 @@
 		}
 		{
 			dependencies: ["0B03107000000060"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03107000000061"
-			title: "Artifact Shards"
-			subtitle: "Broken pieces, brushed loose."
-			description: [
-				"Recover &bArtifact Shards&r by brushing suspicious blocks. They are the fragments that combine into a whole artifact, the raw output of any dig."
-			]
 			rewards: [{
 				id: "0B03307000000061"
 				type: "xp"
 				xp: 15
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -294,19 +308,21 @@
 		}
 		{
 			dependencies: ["0B03107000000061"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03107000000062"
-			title: "Unidentified Artifact"
-			subtitle: "Assemble the pieces."
-			description: [
-				"Combine shards into an &bUnidentified Artifact&r. You cannot tell what it is yet, only that it is whole, the step before the table tells you what you found."
-			]
 			rewards: [{
 				id: "0B03307000000062"
 				type: "xp"
 				xp: 15
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -324,20 +340,21 @@
 		}
 		{
 			dependencies: ["0B03107000000062"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03107000000063"
-			title: "Archeology Table"
-			subtitle: "Identify what you dug up."
-			description: [
-				"Build the &bArcheology Table&r. It identifies your unknown artifacts into the real finds: totems, fossils, vases, and the rest."
-				"It is the centerpiece the whole digging loop feeds."
-			]
 			rewards: [{
 				id: "0B03307000000063"
 				type: "xp"
 				xp: 15
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -355,19 +372,21 @@
 		}
 		{
 			dependencies: ["0B03107000000061"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03107000000064"
-			title: "Ancient Vase"
-			subtitle: "A crafted display piece."
-			description: [
-				"Make an &bAncient Vase&r. It is a decorative piece for the museum corner, the tidy reward for keeping your finds rather than selling them off."
-			]
 			rewards: [{
 				id: "0B03307000000064"
 				type: "xp"
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -385,19 +404,21 @@
 		}
 		{
 			dependencies: ["0B03107000000061"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03107000000065"
-			title: "Chicken-Fossil Skull"
-			subtitle: "A mounted fossil trophy."
-			description: [
-				"Identify a &bChicken-Fossil Skull&r. It is one of several mountable fossil heads, more curiosity than tool, exactly the sort of thing a record-keeper hangs on the wall."
-			]
 			rewards: [{
 				id: "0B03307000000065"
 				type: "xp"
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -415,19 +436,21 @@
 		}
 		{
 			dependencies: ["0B03107000000060"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03107000000066"
-			title: "Rotten Planks"
-			subtitle: "Salvaged old timber."
-			description: [
-				"Gather &bRotten Planks&r from a dig site. They are a weathered building block recovered from ruins, useful for giving a build that lived-in, ancient look."
-			]
 			rewards: [{
 				id: "0B03307000000066"
 				type: "xp"
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -440,24 +463,26 @@
 				item: { count: 1, id: "betterarcheology:rotten_planks" }
 				type: "item"
 			}]
-			x: 13.5d
-			y: 0.0d
+			x: 7.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["0B03107000000066"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03107000000067"
-			title: "Cracked Mud Bricks"
-			subtitle: "Aged masonry."
-			description: [
-				"Recover &bCracked Mud Bricks&r. Like the &brotten planks&r they are a decorative salvage block, the worn cousin of ordinary mud bricks for ruined-looking builds."
-			]
 			rewards: [{
 				id: "0B03307000000067"
 				type: "xp"
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -470,24 +495,26 @@
 				item: { count: 1, id: "betterarcheology:cracked_mud_bricks" }
 				type: "item"
 			}]
-			x: 13.5d
-			y: 1.5d
+			x: 6.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["0B03107000000063"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03107000000068"
-			title: "Totem of Growth"
-			subtitle: "An identified totem."
-			description: [
-				"Identify a &bTotem of Growth&r. Placed down it nudges nearby crops along, one of the genuinely useful finds the &barcheology table&r can turn up."
-			]
 			rewards: [{
 				id: "0B03307000000068"
 				type: "xp"
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -505,19 +532,21 @@
 		}
 		{
 			dependencies: ["0B03107000000063"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03107000000069"
-			title: "Rusty Bomb"
-			subtitle: "An old explosive, still live."
-			description: [
-				"Unearth a &bRusty Bomb&r. It is a thrown explosive recovered from a dig, handy for breaking into the next ruin or clearing a stubborn patch of stone."
-			]
 			rewards: [{
 				id: "0B03307000000069"
 				type: "xp"
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -535,19 +564,21 @@
 		}
 		{
 			dependencies: ["0B03107000000060"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03107000000070"
-			title: "Diamond Brush"
-			subtitle: "A faster, tougher brush."
-			description: [
-				"Upgrade to a &bDiamond Brush&r. It sweeps suspicious blocks quicker and lasts far longer than iron, the brush to carry once you are digging seriously."
-			]
 			rewards: [{
 				id: "0B03307000000070"
 				type: "xp"
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -573,14 +604,9 @@
 				"0B03107000000070"
 				"0B03107000000078"
 			]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03107000000071"
-			title: "Curator's Collection"
-			subtitle: "A wide spread of finds."
-			description: [
-				"Bring together a broad sample of what the dig sites offer: vases, fossils, salvaged blocks, totems, and a &bdiamond brush&r to keep finding more."
-				"This one simply marks that your archive has real breadth rather than one lucky pull."
-			]
 			min_required_dependencies: 7
 			rewards: [{
 				id: "0B03307000000071"
@@ -593,19 +619,21 @@
 		}
 		{
 			dependencies: ["0B03107000000032"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03107000000033"
-			title: "Storage Tool"
-			subtitle: "Configure storage at a touch."
-			description: [
-				"Craft the &bStorage Tool&r. It tweaks settings on your storage blocks and their upgrades without opening each one, a real time-saver once you run more than a few."
-			]
 			rewards: [{
 				id: "0B03307000000033"
 				type: "xp"
 				xp: 15
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -623,20 +651,21 @@
 		}
 		{
 			dependencies: ["0B03107000000033"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03107000000034"
-			title: "Packing Tape"
-			subtitle: "Move a full storage block."
-			description: [
-				"Make &bPacking Tape&r. Applied to a storage block it seals the contents so you can pick the whole thing up and set it down elsewhere, inventory intact."
-				"Moving base is a lot less painful with a roll on hand."
-			]
 			rewards: [{
 				id: "0B03307000000034"
 				type: "xp"
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -654,19 +683,21 @@
 		}
 		{
 			dependencies: ["0B03107000000034"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03107000000035"
-			title: "Upgrade Base"
-			subtitle: "The blank every upgrade starts as."
-			description: [
-				"Craft an &bUpgrade Base&r. It is the common blank that every storage upgrade is built on, from stacking to magnets, so make a stack before you specialize them."
-			]
 			rewards: [{
 				id: "0B03307000000035"
 				type: "xp"
 				xp: 15
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -684,19 +715,21 @@
 		}
 		{
 			dependencies: ["0B03107000000035"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03107000000036"
-			title: "Limited Barrel II"
-			subtitle: "A larger display barrel."
-			description: [
-				"Build a &bLimited Barrel&r II. It carries more per slot than the first tier while keeping the contents on show, for stockpiles that outgrew the starter."
-			]
 			rewards: [{
 				id: "0B03307000000036"
 				type: "xp"
 				xp: 15
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -714,19 +747,21 @@
 		}
 		{
 			dependencies: ["0B03107000000060"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03107000000072"
-			title: "Suspicious Dirt"
-			subtitle: "A block worth brushing."
-			description: [
-				"Find &bSuspicious Dirt&r. It is one of the buried-loot blocks &6Better Archeology&r scatters around, the overworld cousin of vanilla's suspicious sand."
-			]
 			rewards: [{
 				id: "0B03307000000072"
 				type: "xp"
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -744,19 +779,21 @@
 		}
 		{
 			dependencies: ["0B03107000000072"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03107000000073"
-			title: "Suspicious Red Sand"
-			subtitle: "Another dig candidate."
-			description: [
-				"Locate &bSuspicious Red Sand&r. Brushed carefully it gives up its buried find, a desert-side source of shards for the table."
-			]
 			rewards: [{
 				id: "0B03307000000073"
 				type: "xp"
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -774,19 +811,21 @@
 		}
 		{
 			dependencies: ["0B03107000000073"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03107000000074"
-			title: "Fossiliferous Dirt"
-			subtitle: "Dirt that hides bones."
-			description: [
-				"Dig up &bFossiliferous Dirt&r. As the name promises it tends to hold fossils, the richest of the suspicious blocks for skull and bone finds."
-			]
 			rewards: [{
 				id: "0B03307000000074"
 				type: "xp"
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -804,19 +843,21 @@
 		}
 		{
 			dependencies: ["0B03107000000074"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03107000000075"
-			title: "Loot Vase"
-			subtitle: "A vase worth breaking."
-			description: [
-				"Recover a &bLoot Vase&r from a ruin. Unlike the decorative kind this one spills loot when broken, a small gamble baked into the dig sites."
-			]
 			rewards: [{
 				id: "0B03307000000075"
 				type: "xp"
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -834,19 +875,21 @@
 		}
 		{
 			dependencies: ["0B03107000000075"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03107000000076"
-			title: "Creeper-Fossil Skull"
-			subtitle: "Another wall trophy."
-			description: [
-				"Identify a &bCreeper-Fossil Skull&r. It joins the fossil-head set, a recognizable trophy for anyone building out a proper collection."
-			]
 			rewards: [{
 				id: "0B03307000000076"
 				type: "xp"
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -864,19 +907,21 @@
 		}
 		{
 			dependencies: ["0B03107000000076"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03107000000077"
-			title: "Wolf-Fossil Skull"
-			subtitle: "The third fossil head."
-			description: [
-				"Turn up a &bWolf-Fossil Skull&r. With the chicken and creeper heads it rounds out the easy fossil trophies, more bones for the display."
-			]
 			rewards: [{
 				id: "0B03307000000077"
 				type: "xp"
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -894,19 +939,21 @@
 		}
 		{
 			dependencies: ["0B03107000000077"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03107000000078"
-			title: "Totem of Radiance"
-			subtitle: "An identified light totem."
-			description: [
-				"Identify a &bTotem of Radiance&r. Set down it sheds light over an area, a tidy way to keep a dig site or a room lit without scattering torches."
-			]
 			rewards: [{
 				id: "0B03307000000078"
 				type: "xp"
 				xp: 15
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -924,13 +971,9 @@
 		}
 		{
 			dependencies: ["0B03107000000078"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03107000000079"
-			title: "Music Disc: Swings"
-			subtitle: "A recovered recording."
-			description: [
-				"Recover a &bMusic Disc&r from the ruins. The archive keeps its records in every form, and an old tune playing in the museum is a fitting end to the digging line."
-			]
 			rewards: [{
 				id: "0B03307000000079"
 				type: "xp"
@@ -938,6 +981,12 @@
 			}]
 			shape: "square"
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -955,13 +1004,9 @@
 		}
 		{
 			dependencies: ["0B03107000000001"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B031070000000A8"
-			title: "Cloggrum Shield"
-			subtitle: "Optional: an Undergarden specimen."
-			description: [
-				"Forge a &bCloggrum Shield&r from &6Undergarden&r metal. It is a sturdy shield in its own right and another logged sample from the underworld below."
-			]
 			optional: true
 			rewards: [{
 				id: "0B033070000000A8"
@@ -969,6 +1014,12 @@
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -986,13 +1037,9 @@
 		}
 		{
 			dependencies: ["0B03107000000001"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B031070000000A9"
-			title: "Ancient Compass"
-			subtitle: "Optional: points toward the deep."
-			description: [
-				"Craft an &bAncient Compass&r. It orients you toward the structures of the &6Deeper Darker&r, a useful keepsake for when that descent gets its own chapter."
-			]
 			optional: true
 			rewards: [{
 				id: "0B033070000000A9"
@@ -1000,6 +1047,12 @@
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1016,14 +1069,13 @@
 			y: 4.5d
 		}
 		{
-			dependencies: ["0B03107000000060"]
+			dependencies: [
+				"0B03107000000060"
+				"16720DA722F1938F"
+			]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "0B031070000000B0"
-			title: "Backpack"
-			subtitle: "Optional: carry the archive with you."
-			description: [
-				"Craft a &6Sophisticated Backpack&r. Worn storage that grows with upgrades, it is the field counterpart to the chests back home and pairs with the digging you do out in the world."
-			]
 			optional: true
 			rewards: [{
 				id: "0B033070000000B0"
@@ -1032,6 +1084,12 @@
 			}]
 			shape: "square"
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1049,13 +1107,9 @@
 		}
 		{
 			dependencies: ["0B03107000000035"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B031070000000B1"
-			title: "Basic to Iron Upgrade"
-			subtitle: "Optional: promote a storage block."
-			description: [
-				"Apply a Basic to Iron Tier Upgrade. It lifts a wooden storage block to iron capacity in place, no need to rebuild and re-sort."
-			]
 			optional: true
 			rewards: [{
 				id: "0B033070000000B1"
@@ -1064,6 +1118,12 @@
 			}]
 			shape: "square"
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1085,14 +1145,9 @@
 				"0B03107000000036"
 				"0B03107000000071"
 			]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "0B03107000000050"
-			title: "The Complete Record"
-			subtitle: "Library, storage, and dig, all stocked."
-			description: [
-				"With the &bModonomicon&r shelved, your storage built out, and the archeology underway, the archive is a working institution. This milestone ties the three threads together."
-				"It is the recordkeeper's proof of a job done thoroughly."
-			]
 			min_required_dependencies: 3
 			rewards: [
 				{
@@ -1108,23 +1163,6 @@
 					type: "command"
 				}
 				{
-					id: "0B03307000000051"
-					item: {
-						count: 1
-						id: "endrem:old_eye"
-					}
-					title: "Eyes for the Archive"
-					type: "item"
-				}
-				{
-					id: "0B03307000000052"
-					item: {
-						count: 1
-						id: "endrem:black_eye"
-					}
-					type: "item"
-				}
-				{
 					id: "0B03307000000054"
 					type: "xp_levels"
 					xp_levels: 5
@@ -1133,6 +1171,12 @@
 			shape: "hexagon"
 			size: 2.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1142,7 +1186,7 @@
 					second: 20
 				}
 				id: "0B03207000000050"
-				item: { count: 1, id: "modonomicon:modonomicon" }
+				item: { count: 1, id: "sophisticatedstorage:storage_tool" }
 				type: "item"
 			}]
 			x: 0.0d
@@ -1150,20 +1194,21 @@
 		}
 		{
 			dependencies: ["0B03107000000001"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B031070000000B2"
-			title: "Jeweler's Kit"
-			subtitle: "Open the gem trade."
-			description: [
-				"Craft the &bJeweler's Kit&r. It is the workstation the Jewelry mod builds its rings and necklaces on, the start of cataloguing and wearing real gemstones."
-				"Worn jewelry grants quiet passive bonuses."
-			]
 			rewards: [{
 				id: "0B033070000000B2"
 				type: "xp"
 				xp: 15
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1181,13 +1226,9 @@
 		}
 		{
 			dependencies: ["0B031070000000B2"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B031070000000B3"
-			title: "Gem Vein"
-			subtitle: "Optional: the surface gem ore."
-			description: [
-				"Mine a &bGem Vein&r. It is the Jewelry mod's ore, the source the rough gemstones are cut from before they ever reach the kit."
-			]
 			optional: true
 			rewards: [{
 				id: "0B033070000000B3"
@@ -1195,6 +1236,12 @@
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1212,13 +1259,9 @@
 		}
 		{
 			dependencies: ["0B031070000000B3"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B031070000000B4"
-			title: "Deepslate Gem Vein"
-			subtitle: "Optional: the deep gem ore."
-			description: [
-				"Find a &bDeepslate Gem Vein&r. It is the lower-layer version of the gem ore, richer ground for the rarer stones."
-			]
 			optional: true
 			rewards: [{
 				id: "0B033070000000B4"
@@ -1226,6 +1269,12 @@
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1243,13 +1292,9 @@
 		}
 		{
 			dependencies: ["0B031070000000B2"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B031070000000B5"
-			title: "Ruby"
-			subtitle: "Optional: cut the red stone."
-			description: [
-				"Cut a &bRuby&r from a &bgem vein&r. It is one of the three stones the rings and necklaces are set with, each lending a different bonus to the wearer."
-			]
 			optional: true
 			rewards: [{
 				id: "0B033070000000B5"
@@ -1257,6 +1302,12 @@
 				xp: 5
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1274,13 +1325,9 @@
 		}
 		{
 			dependencies: ["0B031070000000B2"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B031070000000B6"
-			title: "Sapphire"
-			subtitle: "Optional: the blue stone."
-			description: [
-				"Cut a &bSapphire&r. Like the &bruby&r it slots into Jewelry's wearables, so a mix of stones lets you tune the bonuses you carry."
-			]
 			optional: true
 			rewards: [{
 				id: "0B033070000000B6"
@@ -1288,6 +1335,12 @@
 				xp: 5
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1305,13 +1358,9 @@
 		}
 		{
 			dependencies: ["0B031070000000B2"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B031070000000B7"
-			title: "Tanzanite"
-			subtitle: "Optional: the violet stone."
-			description: [
-				"Cut a &bTanzanite&r. It is the third of the gemstones, rounding out the set the better jewelry recipes draw on."
-			]
 			optional: true
 			rewards: [{
 				id: "0B033070000000B7"
@@ -1319,6 +1368,12 @@
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1340,13 +1395,9 @@
 				"0B031070000000B6"
 				"0B031070000000B7"
 			]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B031070000000B8"
-			title: "Gold Ring"
-			subtitle: "Optional: set a gem in gold."
-			description: [
-				"Forge a &bGold Ring&r at the kit. Set with one of your cut stones it becomes a wearable that grants a passive effect, the first real piece of jewelry."
-			]
 			optional: true
 			rewards: [{
 				id: "0B033070000000B8"
@@ -1354,6 +1405,12 @@
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1371,13 +1428,9 @@
 		}
 		{
 			dependencies: ["0B031070000000B8"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B031070000000B9"
-			title: "Diamond Ring"
-			subtitle: "Optional: a stronger band."
-			description: [
-				"Craft a &bDiamond Ring&r. The sturdier band holds its gem's bonus more strongly than gold, a step up for anyone leaning on jewelry effects."
-			]
 			optional: true
 			rewards: [{
 				id: "0B033070000000B9"
@@ -1385,6 +1438,12 @@
 				xp: 15
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1402,13 +1461,9 @@
 		}
 		{
 			dependencies: ["0B031070000000B9"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B031070000000BA"
-			title: "Emerald Necklace"
-			subtitle: "Optional: the showpiece."
-			description: [
-				"Assemble an &bEmerald Necklace&r. It is the high end of the Jewelry line, the kind of piece worth the trip through every gem and ring before it."
-			]
 			optional: true
 			rewards: [{
 				id: "0B033070000000BA"
@@ -1416,6 +1471,12 @@
 				xp: 15
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1432,14 +1493,13 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["0B03107000000001"]
+			dependencies: [
+				"0B03107000000001"
+				"4B2D3C5E8F7A7B10"
+			]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "0B031070000000BB"
-			title: "Stove"
-			subtitle: "Optional: cook off the wall."
-			description: [
-				"Build a &6Farmer's Delight&r &bStove&r. It pan-fries food without a crafting grid and fits the kitchen corner of any well-kept base, a small comfort beside the archive."
-			]
 			optional: true
 			rewards: [{
 				id: "0B033070000000BB"
@@ -1447,6 +1507,12 @@
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1456,7 +1522,7 @@
 					second: 20
 				}
 				id: "0B032070000000BB"
-				item: { count: 1, id: "farmersdelight:stove" }
+				item: { components: { "ftbfiltersystem:filter": "root(or(item(farmersdelight:stove),item(cookingforblockheads:white_oven)))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: 35.0d
@@ -1464,13 +1530,9 @@
 		}
 		{
 			dependencies: ["0B031070000000BB"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B031070000000BC"
-			title: "Magnet Upgrade"
-			subtitle: "Optional: pull drops into storage."
-			description: [
-				"Add a &bMagnet Upgrade&r to a storage block. It draws nearby items straight into the container, handy under a mob farm or beside a harvest dump."
-			]
 			optional: true
 			rewards: [{
 				id: "0B033070000000BC"
@@ -1478,6 +1540,12 @@
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1495,13 +1563,9 @@
 		}
 		{
 			dependencies: ["0B031070000000BB"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B031070000000BD"
-			title: "Stack Upgrade I"
-			subtitle: "Optional: pack slots deeper."
-			description: [
-				"Install a &bStack Upgrade&r. It multiplies how much each slot in a storage block can hold, the cleanest way to fight clutter without building outward."
-			]
 			optional: true
 			rewards: [{
 				id: "0B033070000000BD"
@@ -1509,6 +1573,12 @@
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1526,13 +1596,9 @@
 		}
 		{
 			dependencies: ["0B031070000000BD"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B031070000000BE"
-			title: "Stack Upgrade II"
-			subtitle: "Optional: deeper still."
-			description: [
-				"Add a second-tier &bStack Upgrade&r. It pushes slot capacity higher again, for the bulk materials you produce by the thousand."
-			]
 			optional: true
 			rewards: [{
 				id: "0B033070000000BE"
@@ -1540,6 +1606,12 @@
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1557,13 +1629,9 @@
 		}
 		{
 			dependencies: ["0B031070000000BB"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B031070000000BF"
-			title: "Basic to Gold Upgrade"
-			subtitle: "Optional: jump straight to gold."
-			description: [
-				"Apply a Basic to Gold Tier Upgrade. It promotes a wooden storage block two tiers in one step, more slots without the iron stop in between."
-			]
 			optional: true
 			rewards: [{
 				id: "0B033070000000BF"
@@ -1571,6 +1639,12 @@
 				xp: 15
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1585,6 +1659,72 @@
 			}]
 			x: 38.0d
 			y: 0.75d
+		}
+		{
+			dependencies: ["0B03107000000001"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			id: "936044D132622461"
+			optional: true
+			rewards: [{
+				id: "DC33ADA0925E4368"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0DD6942347507F63"
+				item: { count: 1, id: "arcanelanterns:lantern_maker" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 16.5d
+		}
+		{
+			dependencies: ["936044D132622461"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			id: "3D0C727EB7D7D9FC"
+			optional: true
+			rewards: [{
+				id: "FB06B0F839EAD184"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "17528045257C22CC"
+				item: { count: 1, id: "arcanelanterns:life_lantern" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 16.5d
 		}
 	]
 }

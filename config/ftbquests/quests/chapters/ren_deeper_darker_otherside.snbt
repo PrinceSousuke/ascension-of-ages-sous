@@ -12,21 +12,14 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: [
-				"0B03104000000050"
-				"0B03105000000050"
-			]
+			dependencies: ["6D7E8F901A2B1054"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
+			hide_until_deps_visible: true
 			icon: {
 				id: "deeperdarker:soul_dust"
 			}
 			id: "0B03106000000001"
-			title: "The Otherside"
-			subtitle: "Through the deep dark, into the dark."
-			description: [
-				"&6Deeper Darker&r extends the &bdeep dark&r into a whole dimension, the Otherside, a sculk-choked mirror of the world reached from an &bancient city&r. This chapter charts the way in and the resonarium gear waiting there."
-				"The road runs through the Warden's home, so quiet and caution matter more than firepower at first."
-			]
 			rewards: [{
 				id: "0B03306000000001"
 				type: "xp"
@@ -34,6 +27,12 @@
 			}]
 			size: 1.5d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -42,7 +41,7 @@
 					mode: "TOTAL_LEVEL"
 					second: 20
 				}
-				dimension: "minecraft:overworld"
+				dimension: "deeperdarker:otherside"
 				id: "0B03206000000001"
 				type: "dimension"
 			}]
@@ -51,20 +50,21 @@
 		}
 		{
 			dependencies: ["0B03106000000001"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03106000000010"
-			title: "Ancient City"
-			subtitle: "Find the sculk cathedral."
-			description: [
-				"Locate an &bAncient City&r in the &bdeep dark&r. The portal to the Otherside is built from one of its frames, so the city is your first destination."
-				"Move on wool, give the shriekers a wide berth, and do not wake what sleeps here."
-			]
 			rewards: [{
 				id: "0B03306000000010"
 				type: "xp"
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -82,20 +82,21 @@
 		}
 		{
 			dependencies: ["0B03106000000010"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03106000000011"
-			title: "The Deep Dark"
-			subtitle: "Stand in the sculk."
-			description: [
-				"Spend time in the &bDeep Dark&r biome itself. The sculk reacts to every sound you make, so this is the place to learn its rules before you need them under pressure."
-				"Crouch, watch the sensors, and keep an escape route at your back."
-			]
 			rewards: [{
 				id: "0B03306000000011"
 				type: "xp"
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -113,14 +114,9 @@
 		}
 		{
 			dependencies: ["0B03106000000011"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03106000000012"
-			title: "Heart of the Deep"
-			subtitle: "The key to the Otherside."
-			description: [
-				"Recover a &bHeart of the Deep&r. It is the activator for the Otherside portal, found in the depths of the &bancient city&r, which is what makes the city run worth the danger."
-				"With it in hand the crossing is one step away."
-			]
 			rewards: [{
 				id: "0B03306000000012"
 				type: "xp"
@@ -128,6 +124,12 @@
 			}]
 			shape: "square"
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -145,23 +147,24 @@
 		}
 		{
 			dependencies: ["0B03106000000012"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "deeperdarker:sculk_stone"
 			}
 			id: "0B03106000000013"
-			title: "Into the Otherside"
-			subtitle: "Open the portal and cross."
-			description: [
-				"Use the &bHeart of the Deep&r on an &bancient city&r frame and step into the Otherside. It is a dim, sculk-grown dimension, beautiful in its way and quietly hostile, so bring your own light."
-				"Setting foot here is the milestone the deep-dark run earns you."
-			]
 			rewards: [{
 				id: "0B03306000000013"
 				type: "xp"
 				xp: 20
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -179,19 +182,21 @@
 		}
 		{
 			dependencies: ["0B03106000000013"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03106000000020"
-			title: "Gleam Gel"
-			subtitle: "Bottle the dimension's glow."
-			description: [
-				"Gather &bGleam Gel&r. The luminous gel is the Otherside's answer to the dark, the base of its light items and a reagent for several of its recipes."
-			]
 			rewards: [{
 				id: "0B03306000000020"
 				type: "xp"
 				xp: 20
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -209,19 +214,21 @@
 		}
 		{
 			dependencies: ["0B03106000000020"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03106000000021"
-			title: "Bloom Berries"
-			subtitle: "Forage the glowing fruit."
-			description: [
-				"Pick &bBloom Berries&r. They grow in the Otherside's gloom and make a steady food, the easiest thing to live on while you explore."
-			]
 			rewards: [{
 				id: "0B03306000000021"
 				type: "xp"
 				xp: 15
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -239,19 +246,21 @@
 		}
 		{
 			dependencies: ["0B03106000000013"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03106000000030"
-			title: "Soul Dust"
-			subtitle: "The dimension's base reagent."
-			description: [
-				"Collect &bSoul Dust&r. It is a common Otherside material, ground from the dimension's soul-bound blocks and used throughout &6Deeper Darker&r's crafting."
-			]
 			rewards: [{
 				id: "0B03306000000030"
 				type: "xp"
 				xp: 15
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -269,13 +278,9 @@
 		}
 		{
 			dependencies: ["0B03106000000030"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03106000000092"
-			title: "Ancient Temple"
-			subtitle: "Optional: a deeper ruin."
-			description: [
-				"Find an &bAncient Temple&r in the Otherside. The structure holds the dimension's better loot and sherds, the destination for anyone exploring past the basics."
-			]
 			optional: true
 			rewards: [{
 				id: "0B03306000000092"
@@ -285,6 +290,12 @@
 			shape: "diamond"
 			size: 1.2d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -302,13 +313,9 @@
 		}
 		{
 			dependencies: ["0B03106000000030"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03106000000032"
-			title: "Sculk Bone"
-			subtitle: "Optional: a sculk-touched bone."
-			description: [
-				"Recover a &bSculk Bone&r. It is a crafting reagent unique to the Otherside, drawn from the sculk-grown remains scattered across the dimension."
-			]
 			optional: true
 			rewards: [{
 				id: "0B03306000000032"
@@ -316,6 +323,12 @@
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -333,23 +346,13 @@
 		}
 		{
 			dependencies: ["0B03106000000030"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: {
 				id: "deeperdarker:soul_dust"
 			}
 			id: "0B03106000000050"
-			title: "Back to the Light"
-			subtitle: "Surface with the Undead Eye."
-			description: [
-				"Return to the overworld from the Otherside. The crossing earns you the Undead Eye, another key your End portal still wants."
-				"Climbing back into daylight closes the chapter's required line."
-			]
 			rewards: [
-				{
-					id: "0B03306000000050"
-					type: "xp"
-					xp: 15
-				}
 				{
 					auto: "enabled"
 					command: "/astages add {p} ren_deeper_darker_otherside_complete true true"
@@ -363,21 +366,18 @@
 					type: "command"
 				}
 				{
-					id: "0B03306000000061"
-					item: {
-						count: 1
-						id: "endrem:undead_eye"
-					}
-					title: "Eye from the Deep"
-					type: "item"
-				}
-				{
 					id: "0B03306000000063"
 					type: "xp_levels"
 					xp_levels: 6
 				}
 			]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -395,20 +395,21 @@
 		}
 		{
 			dependencies: ["0B03106000000030"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03106000000033"
-			title: "Reinforced Echo Shard"
-			subtitle: "Strengthen the deep-dark drop."
-			description: [
-				"Craft a &bReinforced Echo Shard&r. It is the worked form of the echo shard, the building block for &bresonarium&r and the dimension's better gear."
-				"Gathering the base shards means braving the &bancient city&r again."
-			]
 			rewards: [{
 				id: "0B03306000000033"
 				type: "xp"
 				xp: 15
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -426,20 +427,21 @@
 		}
 		{
 			dependencies: ["0B03106000000033"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03106000000034"
-			title: "Resonarium"
-			subtitle: "The Otherside's signature metal."
-			description: [
-				"Forge &bResonarium&r. It is &6Deeper Darker&r's prize material, refined from reinforced echo shards, and the base for the dimension's armor, staff, and upgrades."
-				"Most of what is worth making here runs through it."
-			]
 			rewards: [{
 				id: "0B03306000000034"
 				type: "xp"
 				xp: 20
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -457,13 +459,9 @@
 		}
 		{
 			dependencies: ["0B03106000000030"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03106000000041"
-			title: "Gloomsherd"
-			subtitle: "Optional: a plain pottery sherd."
-			description: [
-				"Recover a &bGloomsherd&r. The Otherside scatters decorated pottery sherds through its ruins, and this is the common one, the start of a collectible set."
-			]
 			optional: true
 			rewards: [{
 				id: "0B03306000000041"
@@ -471,6 +469,12 @@
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -488,13 +492,9 @@
 		}
 		{
 			dependencies: ["0B03106000000030"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03106000000042"
-			title: "Grime Ball"
-			subtitle: "Optional: clumped grime."
-			description: [
-				"Collect a &bGrime Ball&r. It is a low-grade Otherside material that bakes into building bricks, the dimension's version of clay."
-			]
 			optional: true
 			rewards: [{
 				id: "0B03306000000042"
@@ -502,6 +502,12 @@
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -519,13 +525,9 @@
 		}
 		{
 			dependencies: ["0B03106000000034"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03106000000044"
-			title: "Soul Crystal"
-			subtitle: "Optional: crystallized soul."
-			description: [
-				"Grow a &bSoul Crystal&r. It concentrates the soul energy of the Otherside into solid form, a reagent for the dimension's light items and the staff."
-			]
 			optional: true
 			rewards: [{
 				id: "0B03306000000044"
@@ -533,6 +535,12 @@
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -549,14 +557,13 @@
 			y: 4.5d
 		}
 		{
-			dependencies: ["0B03106000000034"]
+			dependencies: [
+				"0B03106000000034"
+				"0B031070000000A9"
+			]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "0B03106000000045"
-			title: "Ancient Compass"
-			subtitle: "Optional: point to the cities."
-			description: [
-				"Craft an &bAncient Compass&r. It orients you toward ancient cities and their portals, which turns the next deep-dark expedition from a search into a straight line."
-			]
 			optional: true
 			rewards: [{
 				id: "0B03306000000045"
@@ -564,6 +571,12 @@
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -573,7 +586,7 @@
 					second: 20
 				}
 				id: "0B03206000000045"
-				item: { count: 1, id: "deeperdarker:ancient_compass" }
+				item: { count: 1, id: "deeperdarker:sonorous_staff" }
 				type: "item"
 			}]
 			x: 7.5d
@@ -581,13 +594,9 @@
 		}
 		{
 			dependencies: ["0B03106000000021"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03106000000080"
-			title: "Raw Angler Fish"
-			subtitle: "Optional: fish the Otherside."
-			description: [
-				"Catch a &bRaw Angler Fish&r from the Otherside's pools. The glowing fish is a food source for long stays, raw for now and better cooked."
-			]
 			optional: true
 			rewards: [{
 				id: "0B03306000000080"
@@ -595,6 +604,12 @@
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -612,13 +627,9 @@
 		}
 		{
 			dependencies: ["0B03106000000080"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03106000000081"
-			title: "Cooked Angler Fish"
-			subtitle: "Optional: cook the catch."
-			description: [
-				"Cook your Angler Fish. Fired up it becomes a solid meal, the practical end of fishing the dimension's waters."
-			]
 			optional: true
 			rewards: [{
 				id: "0B03306000000081"
@@ -626,6 +637,12 @@
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -643,13 +660,9 @@
 		}
 		{
 			dependencies: ["0B03106000000041"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03106000000082"
-			title: "Brittle Gloomsherd"
-			subtitle: "Optional: a sherd variant."
-			description: [
-				"Find a &bBrittle Gloomsherd&r. It is one of the decorated pottery sherds, each carrying a different motif for the pots you assemble from them."
-			]
 			optional: true
 			rewards: [{
 				id: "0B03306000000082"
@@ -657,6 +670,12 @@
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -674,13 +693,9 @@
 		}
 		{
 			dependencies: ["0B03106000000082"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03106000000083"
-			title: "Dark Heart Gloomsherd"
-			subtitle: "Optional: another sherd."
-			description: [
-				"Recover a &bDark Heart Gloomsherd&r. Another face for the pottery set, gathered from the Otherside's ruins and brushed loose like any sherd."
-			]
 			optional: true
 			rewards: [{
 				id: "0B03306000000083"
@@ -688,6 +703,12 @@
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -705,13 +726,9 @@
 		}
 		{
 			dependencies: ["0B03106000000083"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03106000000084"
-			title: "Listener Gloomsherd"
-			subtitle: "Optional: the listener motif."
-			description: [
-				"Collect a &bListener Gloomsherd&r. Its design nods to the sculk that hears everything, one more sherd for the collection."
-			]
 			optional: true
 			rewards: [{
 				id: "0B03306000000084"
@@ -719,6 +736,12 @@
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -736,13 +759,9 @@
 		}
 		{
 			dependencies: ["0B03106000000084"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03106000000085"
-			title: "Snapper Gloomsherd"
-			subtitle: "Optional: the snapper motif."
-			description: [
-				"Find a &bSnapper Gloomsherd&r. It joins the growing set of Otherside pottery, each variant distinct on a finished pot."
-			]
 			optional: true
 			rewards: [{
 				id: "0B03306000000085"
@@ -750,6 +769,12 @@
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -767,13 +792,9 @@
 		}
 		{
 			dependencies: ["0B03106000000085"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03106000000086"
-			title: "Temple Gloomsherd"
-			subtitle: "Optional: from the temples."
-			description: [
-				"Recover a &bTemple Gloomsherd&r. As the name suggests it turns up in the ancient temples, a rarer face for the pottery set."
-			]
 			optional: true
 			rewards: [{
 				id: "0B03306000000086"
@@ -781,6 +802,12 @@
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -798,13 +825,9 @@
 		}
 		{
 			dependencies: ["0B03106000000086"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03106000000087"
-			title: "Transmission Gloomsherd"
-			subtitle: "Optional: the transmission motif."
-			description: [
-				"Collect a &bTransmission Gloomsherd&r. Its pattern echoes the sculk's signal-passing, another piece of the decorative set."
-			]
 			optional: true
 			rewards: [{
 				id: "0B03306000000087"
@@ -812,6 +835,12 @@
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -829,13 +858,9 @@
 		}
 		{
 			dependencies: ["0B03106000000087"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03106000000088"
-			title: "Ward Gloomsherd"
-			subtitle: "Optional: the ward motif."
-			description: [
-				"Find a &bWard Gloomsherd&r. Marked with a guardian's sign, it is one of the harder sherds to turn up."
-			]
 			optional: true
 			rewards: [{
 				id: "0B03306000000088"
@@ -843,6 +868,12 @@
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -860,13 +891,9 @@
 		}
 		{
 			dependencies: ["0B03106000000088"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03106000000089"
-			title: "Wayfinder Gloomsherd"
-			subtitle: "Optional: the last sherd."
-			description: [
-				"Recover a &bWayfinder Gloomsherd&r. It completes the Otherside's pottery set, the prize for brushing every ruin the dimension offers."
-			]
 			optional: true
 			rewards: [{
 				id: "0B03306000000089"
@@ -874,6 +901,12 @@
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -891,13 +924,9 @@
 		}
 		{
 			dependencies: ["0B03106000000042"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B0310600000008A"
-			title: "Grime Brick"
-			subtitle: "Optional: bake the grime."
-			description: [
-				"Fire Grime Balls into Grime Bricks. The bricks are a sturdy Otherside building block, giving your base down here a fitting dark masonry."
-			]
 			optional: true
 			rewards: [{
 				id: "0B0330600000008A"
@@ -905,6 +934,12 @@
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -922,13 +957,9 @@
 		}
 		{
 			dependencies: ["0B03106000000033"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B0310600000008B"
-			title: "Sculk Transmitter"
-			subtitle: "Optional: wireless redstone."
-			description: [
-				"Craft a &bSculk Transmitter&r. Tuned to a partner it passes a redstone signal across any distance, the Otherside's clever take on wireless circuitry."
-			]
 			optional: true
 			rewards: [{
 				id: "0B0330600000008B"
@@ -936,6 +967,12 @@
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -953,13 +990,9 @@
 		}
 		{
 			dependencies: ["0B0310600000008B"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B0310600000008C"
-			title: "A Linked Pair"
-			subtitle: "Optional: the matching transmitter."
-			description: [
-				"Build the second &bSculk Transmitter&r and link the two. A transmitter only matters with its partner, so the pair together is what actually carries a signal."
-			]
 			optional: true
 			rewards: [{
 				id: "0B0330600000008C"
@@ -967,6 +1000,12 @@
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -984,13 +1023,9 @@
 		}
 		{
 			dependencies: ["0B03106000000034"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B0310600000008D"
-			title: "Resonarium Upgrade Template"
-			subtitle: "Optional: the armor trim."
-			description: [
-				"Find the &bResonarium Upgrade&r smithing template. Paired with resonarium at a smithing table it improves your gear, the dimension's mid-tier armor step."
-			]
 			optional: true
 			rewards: [{
 				id: "0B0330600000008D"
@@ -998,6 +1033,12 @@
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1015,13 +1056,9 @@
 		}
 		{
 			dependencies: ["0B03106000000033"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B0310600000008E"
-			title: "Warden Carapace"
-			subtitle: "Optional: plate from the deep."
-			description: [
-				"Obtain a &bWarden Carapace&r. The hardened plating is the rarest &6Deeper Darker&r material, the key ingredient in the dimension's strongest upgrade."
-			]
 			optional: true
 			rewards: [{
 				id: "0B0330600000008E"
@@ -1029,6 +1066,12 @@
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1046,13 +1089,9 @@
 		}
 		{
 			dependencies: ["0B0310600000008E"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B0310600000008F"
-			title: "Warden Upgrade Template"
-			subtitle: "Optional: the top armor trim."
-			description: [
-				"Find the &bWarden Upgrade&r smithing template. With the carapace it pushes your armor to &6Deeper Darker&r's highest tier, the payoff of the whole &bresonarium&r line."
-			]
 			optional: true
 			rewards: [{
 				id: "0B0330600000008F"
@@ -1060,6 +1099,12 @@
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1077,13 +1122,9 @@
 		}
 		{
 			dependencies: ["0B03106000000044"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03106000000090"
-			title: "Lite"
-			subtitle: "Optional: a throwable light."
-			description: [
-				"Craft a &bLite&r. The little light can be thrown to brighten a space from a distance, exactly what the pitch-dark Otherside calls for."
-			]
 			optional: true
 			rewards: [{
 				id: "0B03306000000090"
@@ -1091,6 +1132,12 @@
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1108,13 +1155,9 @@
 		}
 		{
 			dependencies: ["0B03106000000034"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03106000000091"
-			title: "Sonorous Staff"
-			subtitle: "Optional: a sonic weapon."
-			description: [
-				"Forge the &bSonorous Staff&r. Built from &bresonarium&r and soul energy, it strikes with the &c&lWarden&r's own sonic force, the dimension's signature weapon."
-			]
 			optional: true
 			rewards: [{
 				id: "0B03306000000091"
@@ -1122,6 +1165,12 @@
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1139,13 +1188,9 @@
 		}
 		{
 			dependencies: ["0B03106000000001"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			id: "0B03106000000070"
-			title: "Mimi-Dust"
-			subtitle: "Optional: a curious find."
-			description: [
-				"Track down &bMimi-Dust&r from &6Reliquified Artifacts&r. It is an oddment tied to that mod's hidden relics, a collector's curiosity tucked into this chapter for the thorough."
-			]
 			optional: true
 			rewards: [{
 				id: "0B03306000000070"
@@ -1153,6 +1198,12 @@
 				xp: 10
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
