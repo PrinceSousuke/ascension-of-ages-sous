@@ -1,0 +1,52 @@
+{
+	icon: {
+		id: "stellaris:antenna"
+	}
+	id: "7700000000000011"
+	loot_size: 1
+	order_index: 54
+	rewards: [
+		{
+			count: 4
+			id: "7711000000000001"
+			item: {
+				count: 1
+				id: "stellaris:desh_ingot"
+			}
+		}
+		{
+			count: 16
+			id: "7711000000000002"
+			item: {
+				count: 1
+				id: "stellaris:cable_t2"
+			}
+		}
+		{
+			count: 16
+			id: "7711000000000003"
+			item: {
+				count: 1
+				id: "stellaris:pipe_t2"
+			}
+		}
+		{ id: "7711000000000004", item: { count: 1, id: "stellaris:t3_tank" } }
+		{
+			count: 2
+			id: "7711000000000005"
+			item: {
+				count: 1
+				id: "minecraft:echo_shard"
+			}
+		}
+		{
+			count: 8
+			id: "7711000000000006"
+			item: {
+				count: 1
+				id: "stellaris:raw_steel_ingot"
+			}
+		}
+	]
+	use_title: true
+}

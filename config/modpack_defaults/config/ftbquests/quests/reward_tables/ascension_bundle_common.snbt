@@ -1,0 +1,52 @@
+{
+	icon: {
+		id: "minecraft:dragon_egg"
+	}
+	id: "7800000000000011"
+	loot_size: 1
+	order_index: 61
+	rewards: [
+		{
+			count: 4
+			id: "7811000000000001"
+			item: {
+				count: 1
+				id: "apotheosis:common_material"
+			}
+		}
+		{
+			count: 2
+			id: "7811000000000002"
+			item: {
+				count: 1
+				id: "apotheosis:uncommon_material"
+			}
+		}
+		{
+			count: 2
+			id: "7811000000000003"
+			item: {
+				count: 1
+				id: "minecraft:echo_shard"
+			}
+		}
+		{
+			count: 2
+			id: "7811000000000004"
+			item: {
+				count: 1
+				id: "minecraft:dragon_breath"
+			}
+		}
+		{
+			count: 8
+			id: "7811000000000005"
+			item: {
+				count: 1
+				id: "minecraft:experience_bottle"
+			}
+		}
+		{ id: "7811000000000006", item: { count: 1, id: "apotheosis:rare_material" } }
+	]
+	use_title: true
+}

@@ -1,0 +1,1059 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "at7_chaos_convergence"
+	group: "7D28E4AEBC440F10"
+	hide_quest_until_deps_complete: true
+	icon: {
+		id: "fdbosses:justice_core"
+	}
+	id: "4358010000000000"
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["5457010000010003"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "macabre:valamon_heart"
+			}
+			id: "4646010000010000"
+			rewards: [{
+				auto: "enabled"
+				command: "/astages add {p} macabre_valamon_defeated true true"
+				icon: {
+					id: "macabre:valamon_heart"
+				}
+				id: "4646010000030000"
+				permission_level: 2
+				silent: true
+				team_reward: true
+				type: "command"
+			}]
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					entity: "macabre:valamon"
+					entity_vis_idle_mode: "USE_GLOBAL"
+					entity_vis_offset_x: 0.0f
+					entity_vis_offset_y: 0.0f
+					entity_vis_rotation: 0.0f
+					entity_vis_silhouette_mode: "NONE"
+					entity_vis_size: 1.0f
+					entity_vis_spin_mode: "USE_GLOBAL"
+					entity_vis_use_as_quest_icon: false
+					entity_vis_walk_mode: "USE_GLOBAL"
+					id: "4646010000020000"
+					type: "kill"
+					value: 0L
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4646010000020001"
+					item: { count: 1, id: "macabre:valamon_heart" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		,
+		{
+			dependencies: ["4646010000010000"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "macabre:gomoria_heart"
+			}
+			id: "4646010000010001"
+			rewards: [{
+				auto: "enabled"
+				command: "/astages add {p} macabre_gomoria_defeated true true"
+				icon: {
+					id: "macabre:gomoria_heart"
+				}
+				id: "4646010000030001"
+				permission_level: 2
+				silent: true
+				team_reward: true
+				type: "command"
+			}]
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					entity: "macabre:gomoria"
+					entity_vis_idle_mode: "USE_GLOBAL"
+					entity_vis_offset_x: 0.0f
+					entity_vis_offset_y: 0.0f
+					entity_vis_rotation: 0.0f
+					entity_vis_silhouette_mode: "NONE"
+					entity_vis_size: 1.0f
+					entity_vis_spin_mode: "USE_GLOBAL"
+					entity_vis_use_as_quest_icon: false
+					entity_vis_walk_mode: "USE_GLOBAL"
+					id: "4646010000020002"
+					type: "kill"
+					value: 0L
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4646010000020003"
+					item: { count: 1, id: "macabre:gomoria_heart" }
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 0.0d
+		}
+		,
+		{
+			dependencies: ["4646010000010001"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "macabre:gargamaw_heart"
+			}
+			id: "4646010000010002"
+			rewards: [{
+				auto: "enabled"
+				command: "/astages add {p} macabre_gargamaw_defeated true true"
+				icon: {
+					id: "macabre:gargamaw_heart"
+				}
+				id: "4646010000030002"
+				permission_level: 2
+				silent: true
+				team_reward: true
+				type: "command"
+			}]
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					entity: "macabre:gargamaw"
+					entity_vis_idle_mode: "USE_GLOBAL"
+					entity_vis_offset_x: 0.0f
+					entity_vis_offset_y: 0.0f
+					entity_vis_rotation: 0.0f
+					entity_vis_silhouette_mode: "NONE"
+					entity_vis_size: 1.0f
+					entity_vis_spin_mode: "USE_GLOBAL"
+					entity_vis_use_as_quest_icon: false
+					entity_vis_walk_mode: "USE_GLOBAL"
+					id: "4646010000020004"
+					type: "kill"
+					value: 0L
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4646010000020005"
+					item: { count: 1, id: "macabre:gargamaw_heart" }
+					type: "item"
+				}
+			]
+			x: 5.5d
+			y: 0.0d
+		}
+		,
+		{
+			dependencies: ["4646010000010002"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "macabre:baal_heart"
+			}
+			id: "4646010000010003"
+			rewards: [{
+				auto: "enabled"
+				command: "/astages add {p} macabre_baal_defeated true true"
+				icon: {
+					id: "macabre:baal_heart"
+				}
+				id: "4646010000030003"
+				permission_level: 2
+				silent: true
+				team_reward: true
+				type: "command"
+			}]
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					entity: "macabre:baal"
+					entity_vis_idle_mode: "USE_GLOBAL"
+					entity_vis_offset_x: 0.0f
+					entity_vis_offset_y: 0.0f
+					entity_vis_rotation: 0.0f
+					entity_vis_silhouette_mode: "NONE"
+					entity_vis_size: 1.0f
+					entity_vis_spin_mode: "USE_GLOBAL"
+					entity_vis_use_as_quest_icon: false
+					entity_vis_walk_mode: "USE_GLOBAL"
+					id: "4646010000020006"
+					type: "kill"
+					value: 0L
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4646010000020007"
+					item: { count: 1, id: "macabre:baal_heart" }
+					type: "item"
+				}
+			]
+			x: 8.5d
+			y: 0.0d
+		}
+		,
+		{
+			dependencies: ["4646010000010003"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "spectrum:ender_splice"
+			}
+			id: "4358010000010000"
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4358010000020000"
+					item: { count: 1, id: "spectrum:ender_splice" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4358010000020001"
+					item: { count: 1, id: "spectrum:perturbed_eye" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4358010000020002"
+					item: { count: 1, id: "spectrum:radiating_ender" }
+					type: "item"
+				}
+			]
+			x: 11.0d
+			y: 0.0d
+		}
+		,
+		{
+			dependencies: ["4358010000010000"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "spectrum:bedrock_anvil"
+			}
+			id: "4358011000000100"
+			optional: true
+			rewards: [
+				{
+					id: "4358013000060001"
+					type: "xp"
+					xp: 250
+				}
+				{
+					id: "3C74EEB7ADAFFE81"
+					type: "random"
+				}
+			]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4358012000060001"
+				item: { count: 1, id: "spectrum:bedrock_anvil" }
+				type: "item"
+			}]
+			x: 14.0d
+			y: 2.5d
+		}
+		,
+		{
+			dependencies: ["4358011000000100"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "spectrum:deeper_down_portal"
+			}
+			id: "4358011000000101"
+			optional: true
+			rewards: [
+				{
+					id: "4358013000070001"
+					type: "xp"
+					xp: 300
+				}
+				{
+					id: "393E012FF95925B1"
+					type: "random"
+				}
+			]
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4358012000070001"
+					item: { count: 1, id: "spectrum:deeper_down_portal" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4358012000070002"
+					item: { count: 1, id: "spectrum:midnight_solution_bucket" }
+					type: "item"
+				}
+			]
+			x: 13.0d
+			y: 4.0d
+		}
+		,
+		{
+			dependencies: ["4358010000010000"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "alexscaves:tremorzilla_egg"
+			}
+			id: "4358010000010001"
+			optional: true
+			rewards: [{
+				auto: "enabled"
+				command: "/astages add {p} tremorzilla_defeated true true"
+				icon: {
+					id: "alexscaves:tremorzilla_egg"
+				}
+				id: "4358010000030000"
+				permission_level: 2
+				silent: true
+				team_reward: true
+				type: "command"
+			}]
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4358010000020003"
+					item: { count: 1, id: "alexscaves:tremorzilla_egg" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					entity: "alexscaves:tremorzilla"
+					entity_vis_idle_mode: "USE_GLOBAL"
+					entity_vis_offset_x: 0.0f
+					entity_vis_offset_y: 0.0f
+					entity_vis_rotation: 0.0f
+					entity_vis_silhouette_mode: "NONE"
+					entity_vis_size: 1.0f
+					entity_vis_spin_mode: "USE_GLOBAL"
+					entity_vis_use_as_quest_icon: false
+					entity_vis_walk_mode: "USE_GLOBAL"
+					id: "4358010000020004"
+					type: "kill"
+					value: 0L
+				}
+			]
+			x: 14.0d
+			y: -2.5d
+		}
+		,
+		{
+			dependencies: ["4358010000010001"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "alexscaves:ortholance"
+			}
+			id: "4358011000000102"
+			optional: true
+			rewards: [
+				{
+					id: "4358013000090001"
+					type: "xp"
+					xp: 250
+				}
+				{
+					id: "626F8AF9F317343F"
+					type: "random"
+				}
+			]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4358012000090001"
+				item: { components: { "ftbfiltersystem:filter": "root(or(item(alexscaves:ortholance),item(alexscaves:sea_staff),item(alexscaves:desolate_dagger)))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 13.0d
+			y: -4.0d
+		}
+		,
+		{
+			dependencies: ["4358010000010001"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "alexscaves:occult_gem"
+			}
+			id: "4358011000000103"
+			optional: true
+			rewards: [
+				{
+					id: "43580130000A0001"
+					type: "xp"
+					xp: 250
+				}
+				{
+					id: "4DD8179EB1D5C1C4"
+					type: "random"
+				}
+			]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "43580120000A0001"
+				item: { components: { "ftbfiltersystem:filter": "root(or(item(alexscaves:magic_conch),item(alexscaves:gazing_pearl),item(alexscaves:occult_gem),item(alexscaves:telecore),item(alexscaves:notor_gizmo)))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 15.0d
+			y: -4.0d
+		}
+		,
+		{
+			dependencies: ["4358010000010002"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "fdbosses:eye_of_geburah"
+			}
+			id: "4358011000000104"
+			optional: true
+			rewards: [
+				{
+					id: "43580130000B0001"
+					type: "xp"
+					xp: 300
+				}
+				{
+					id: "2901170F08A1165C"
+					type: "random"
+				}
+			]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "43580120000B0001"
+				item: { components: { "ftbfiltersystem:filter": "root(or(item(fdbosses:eye_of_chesed),item(fdbosses:eye_of_geburah),item(fdbosses:eye_of_malkuth)))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 13.0d
+			y: -1.5d
+		}
+		,
+		{
+			dependencies: ["4358010000010002"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "cataclysm:laser_gatling"
+			}
+			id: "4358011000000105"
+			optional: true
+			rewards: [
+				{
+					id: "43580130000C0001"
+					type: "xp"
+					xp: 250
+				}
+				{
+					id: "162BC08A06497BC1"
+					type: "random"
+				}
+			]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "43580120000C0001"
+				item: { count: 1, id: "cataclysm:laser_gatling" }
+				type: "item"
+			}]
+			x: 15.0d
+			y: -1.5d
+		}
+		,
+		{
+			dependencies: ["4358010000010002"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				components: {
+					"industrialforegoing:infinity_can_charge": 1b
+					"industrialforegoing:infinity_item_power": 0L
+					"industrialforegoing:infinity_item_selected_tier": "poor"
+					"industrialforegoing:infinity_item_special": 0b
+				}
+				id: "industrialforegoing:infinity_drill"
+			}
+			id: "4358011000000106"
+			optional: true
+			rewards: [
+				{
+					id: "43580130000D0001"
+					type: "xp"
+					xp: 300
+				}
+				{
+					id: "096375FFB61809D0"
+					type: "random"
+				}
+			]
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "43580120000D0001"
+					item: { components: { "industrialforegoing:infinity_can_charge": 1b, "industrialforegoing:infinity_item_power": 0L, "industrialforegoing:infinity_item_selected_tier": "poor", "industrialforegoing:infinity_item_special": 0b }, count: 1, id: "industrialforegoing:infinity_drill" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "43580120000D0002"
+					item: { components: { "industrialforegoing:infinity_can_charge": 1b, "industrialforegoing:infinity_item_power": 0L, "industrialforegoing:infinity_item_selected_tier": "poor", "industrialforegoing:infinity_item_special": 0b }, count: 1, id: "industrialforegoing:infinity_saw" }
+					type: "item"
+				}
+			]
+			x: 17.0d
+			y: 0.0d
+		}
+		,
+		{
+			dependencies: ["4358011000000106"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				components: {
+					"industrialforegoing:infinity_can_charge": 1b
+					"industrialforegoing:infinity_hammer_beheading": 0
+					"industrialforegoing:infinity_item_power": 0L
+					"industrialforegoing:infinity_item_selected_tier": "poor"
+					"industrialforegoing:infinity_item_special": 0b
+				}
+				id: "industrialforegoing:infinity_hammer"
+			}
+			id: "4358011000000107"
+			optional: true
+			rewards: [
+				{
+					id: "43580130000E0001"
+					type: "xp"
+					xp: 300
+				}
+				{
+					id: "0B15454CA51CEE8B"
+					type: "random"
+				}
+			]
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "43580120000E0001"
+					item: { components: { "industrialforegoing:infinity_can_charge": 1b, "industrialforegoing:infinity_hammer_beheading": 0, "industrialforegoing:infinity_item_power": 0L, "industrialforegoing:infinity_item_selected_tier": "poor", "industrialforegoing:infinity_item_special": 0b }, count: 1, id: "industrialforegoing:infinity_hammer" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "43580120000E0002"
+					item: { components: { "industrialforegoing:infinity_can_charge": 1b, "industrialforegoing:infinity_item_power": 0L, "industrialforegoing:infinity_item_selected_tier": "poor", "industrialforegoing:infinity_item_special": 0b, "industrialforegoing:infinity_trident_channeling": 0b, "industrialforegoing:infinity_trident_loyalty": 0, "industrialforegoing:infinity_trident_riptide": 0 }, count: 1, id: "industrialforegoing:infinity_trident" }
+					type: "item"
+				}
+			]
+			x: 16.0d
+			y: -1.5d
+		}
+		,
+		{
+			dependencies: ["4358010000010000"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "fdbosses:justice_core"
+			}
+			id: "4358010000010002"
+			rewards: [{
+				auto: "enabled"
+				command: "/astages add {p} geburah_defeated true true"
+				icon: {
+					id: "fdbosses:justice_core"
+				}
+				id: "4358010000030001"
+				permission_level: 2
+				silent: true
+				team_reward: true
+				type: "command"
+			}]
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					entity: "fdbosses:geburah"
+					entity_vis_idle_mode: "USE_GLOBAL"
+					entity_vis_offset_x: 0.0f
+					entity_vis_offset_y: 0.0f
+					entity_vis_rotation: 0.0f
+					entity_vis_silhouette_mode: "NONE"
+					entity_vis_size: 1.0f
+					entity_vis_spin_mode: "USE_GLOBAL"
+					entity_vis_use_as_quest_icon: false
+					entity_vis_walk_mode: "USE_GLOBAL"
+					id: "4358010000020005"
+					type: "kill"
+					value: 0L
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4358010000020006"
+					item: { count: 1, id: "fdbosses:justice_core" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "0D88DDD523FBC1E4"
+					type: "custom"
+				}
+			]
+			x: 15.0d
+			y: -2.0d
+		}
+		,
+		{
+			dependencies: [
+				"4E44010000010004"
+				"4348010000010004"
+				"4D53010000010003"
+				"5457010000010003"
+				"4646010000010003"
+				"4358010000010002"
+			]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "fdbosses:justice_core"
+			}
+			id: "4358010000010003"
+			rewards: [
+				{
+					auto: "enabled"
+					command: "/astages add {p} at_capstone_complete true true"
+					icon: {
+						id: "fdbosses:justice_core"
+					}
+					id: "4358010000030002"
+					permission_level: 2
+					silent: true
+					team_reward: true
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/astages add {p} otherworldly true true"
+					icon: {
+						id: "fdbosses:justice_core"
+					}
+					id: "4358010000030003"
+					permission_level: 2
+					silent: true
+					team_reward: true
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/advancement grant {p} only aoa:age/otherworldly"
+					icon: {
+						id: "fdbosses:justice_core"
+					}
+					id: "4358010000030004"
+					permission_level: 2
+					silent: true
+					team_reward: true
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/advancement grant {p} only apotheosis:progression/pinnacle"
+					icon: {
+						id: "fdbosses:justice_core"
+					}
+					id: "4358010000030005"
+					permission_level: 2
+					silent: true
+					team_reward: true
+					type: "command"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4358010000020007"
+				item: { count: 1, id: "fdbosses:justice_core" }
+				type: "item"
+			}]
+			x: 13.0d
+			y: -3.0d
+		}
+
+	]
+}

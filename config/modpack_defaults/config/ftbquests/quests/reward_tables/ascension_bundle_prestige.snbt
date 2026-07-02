@@ -1,0 +1,48 @@
+{
+	icon: {
+		id: "minecraft:dragon_egg"
+	}
+	id: "7800000000000014"
+	loot_size: 3
+	order_index: 64
+	rewards: [
+		{
+			count: 2
+			id: "7899000000000001"
+			item: {
+				components: {
+					"ftbquests:missing_item": "apotheosis:ancient_material"
+				}
+				count: 1
+				id: "ftbquests:missing_item"
+			}
+		}
+		{
+			count: 4
+			id: "7899000000000002"
+			item: {
+				count: 1
+				id: "apotheosis:mythic_material"
+			}
+		}
+		{
+			count: 2
+			id: "7899000000000003"
+			item: {
+				count: 1
+				id: "minecraft:nether_star"
+			}
+		}
+		{ id: "7899000000000004", item: { count: 1, id: "minecraft:beacon" } }
+		{
+			count: 8
+			id: "7899000000000005"
+			item: {
+				count: 1
+				id: "draconicevolution:draconium_dust"
+			}
+		}
+		{ id: "7899000000000006", item: { count: 1, id: "minecraft:totem_of_undying" } }
+	]
+	use_title: true
+}

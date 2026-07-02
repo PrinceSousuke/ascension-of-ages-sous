@@ -4,6 +4,8 @@
 //
 //  Intent:
 //    - Overgeared is the canonical early tool and armor path.
+//    - Wooden tools are not part of AoA's start; stone tools must come through
+//      knapped Overgeared heads, not vanilla plank/cobble grids.
 //    - Copper gear must come from Overgeared, not side-mod grid recipes.
 //    - Vanilla iron/gold/diamond tools and iron armor must not be shortcut by
 //      Apotheosis smithing upgrades before players work through heated ingots,
@@ -11,9 +13,61 @@
 //
 //  Keep:
 //    - Overgeared copper tools, copper armor, heated iron, and forged tool heads.
+//    - Overgeared stone tool assembly from knapped heads.
 //    - Mod-specific later hammers such as the MI forge hammer; those are not
 //      vanilla-tier tool replacements and are quested in their own chapters.
 // ============================================================================
+
+const VANILLA_WOODEN_TOOL_RECIPES = [
+  'minecraft:wooden_axe',
+  'minecraft:wooden_hoe',
+  'minecraft:wooden_pickaxe',
+  'minecraft:wooden_shovel',
+  'minecraft:wooden_sword'
+]
+
+const VANILLA_STONE_TOOL_RECIPE_IDS = [
+  'minecraft:stone_axe',
+  'minecraft:stone_hoe',
+  'minecraft:stone_pickaxe',
+  'minecraft:stone_shovel',
+  'minecraft:stone_sword'
+]
+
+const VANILLA_STONE_TOOL_OUTPUTS = [
+  'minecraft:stone_axe',
+  'minecraft:stone_hoe',
+  'minecraft:stone_pickaxe',
+  'minecraft:stone_shovel',
+  'minecraft:stone_sword'
+]
+
+const NON_OVERGEARED_WOOD_AND_STONE_TOOL_RECIPES = [
+  'actually_division:stone_aiot_recipe',
+  'actually_division:wooden_aiot_recipe',
+  'actuallyadditions:stone_aiot',
+  'actuallyadditions:wooden_aiot',
+  'forbidden_arcanus:stone_blacksmith_gavel',
+  'forbidden_arcanus:wooden_blacksmith_gavel',
+  'mekanismtools:stone_paxel',
+  'mekanismtools:wood_paxel',
+  'quark:tweaks/crafting/utility/better_stone_tools/axe',
+  'quark:tweaks/crafting/utility/better_stone_tools/hoe',
+  'quark:tweaks/crafting/utility/better_stone_tools/pickaxe',
+  'quark:tweaks/crafting/utility/better_stone_tools/shovel',
+  'quark:tweaks/crafting/utility/better_stone_tools/sword'
+]
+
+const NON_OVERGEARED_WOOD_AND_STONE_TOOL_OUTPUTS = [
+  'actually_division:stone_aiot',
+  'actually_division:wooden_aiot',
+  'actuallyadditions:stone_aiot',
+  'actuallyadditions:wooden_aiot',
+  'forbidden_arcanus:stone_blacksmith_gavel',
+  'forbidden_arcanus:wooden_blacksmith_gavel',
+  'mekanismtools:stone_paxel',
+  'mekanismtools:wood_paxel'
+]
 
 const NON_OVERGEARED_COPPER_GEAR_RECIPES = [
   'alltheores:copper_ore_hammer',
@@ -30,20 +84,7 @@ const NON_OVERGEARED_COPPER_GEAR_RECIPES = [
   'create_sa:copper_pickaxe_recipe',
   'create_sa:copper_propeler_recipe',
   'create_sa:copper_shovel_recipe',
-  'create_sa:copper_sword_recipe',
-  'iceandfire:armor_copper_boots',
-  'iceandfire:armor_copper_chestplate',
-  'iceandfire:armor_copper_helmet',
-  'iceandfire:armor_copper_leggings',
-  'iceandfire:armor_copper_metal_boots',
-  'iceandfire:armor_copper_metal_chestplate',
-  'iceandfire:armor_copper_metal_helmet',
-  'iceandfire:armor_copper_metal_leggings',
-  'iceandfire:copper_axe',
-  'iceandfire:copper_hoe',
-  'iceandfire:copper_pickaxe',
-  'iceandfire:copper_shovel',
-  'iceandfire:copper_sword'
+  'create_sa:copper_sword_recipe'
 ]
 
 const NON_OVERGEARED_VANILLA_TIER_UPGRADES = [
@@ -69,7 +110,64 @@ const NON_OVERGEARED_VANILLA_TIER_UPGRADES = [
   'titanium:test_serializer/dirt_to_used'
 ]
 
+const ASTRAL_VANILLA_STONE_TOOL_RECIPES = [
+  'astral_dimension:astralstoneaxerecipe',
+  'astral_dimension:astralstonehoerecipe',
+  'astral_dimension:astralstonepickaxerecipe',
+  'astral_dimension:astralstoneshovelrecipe',
+  'astral_dimension:astralstoneswordrecipe'
+]
+
+// astral_dimension ships grid recipes whose result.id is a vanilla item
+// (minecraft:furnace, crafting_table, smoker, glass, stick) using
+// dimension-only ingredients. The dimension itself is gated at Otherworldly,
+// so practical leak risk is low — but the pack's policy is "one authorized
+// route per progression-relevant vanilla output", so we remove these alt
+// paths even when their inputs are gated. Decorative/cosmetic alt paths
+// (dyes from astral plants, signs, bone_meal from fish bones, porkchop)
+// are intentionally left alone — they're not progression-critical and the
+// inputs are dimension-gated.
+const ASTRAL_VANILLA_OUTPUT_EXTRA_RECIPES = [
+  'astral_dimension:astralstonefurnacerecipe',
+  'astral_dimension:luminous_crafting_table_recipe',
+  'astral_dimension:soggy_crafting_table',
+  'astral_dimension:tormented_crafting_table_recipe',
+  'astral_dimension:wisteria_crafting_table',
+  'astral_dimension:luminous_smoker_recipe',
+  'astral_dimension:soggy_smoker_recipe',
+  'astral_dimension:tormented_smoker_recipe',
+  'astral_dimension:wisteria_smoker_recipe',
+  'astral_dimension:lunar_soil_glass_recipe',
+  'astral_dimension:soul_stick_recipe'
+]
+
+const AOA_STONE_TOOL_ASSEMBLY_RECIPES = [
+  ['minecraft:stone_axe', 'overgeared:stone_axe_head', 'aoa:overgeared_stone_axe'],
+  ['minecraft:stone_hoe', 'overgeared:stone_hoe_head', 'aoa:overgeared_stone_hoe'],
+  ['minecraft:stone_pickaxe', 'overgeared:stone_pickaxe_head', 'aoa:overgeared_stone_pickaxe'],
+  ['minecraft:stone_shovel', 'overgeared:stone_shovel_head', 'aoa:overgeared_stone_shovel'],
+  ['minecraft:stone_sword', 'overgeared:stone_sword_blade', 'aoa:overgeared_stone_sword']
+]
+
 ServerEvents.recipes(event => {
+  VANILLA_WOODEN_TOOL_RECIPES.forEach(id => event.remove({ id: id }))
+  VANILLA_STONE_TOOL_RECIPE_IDS.forEach(id => event.remove({ id: id }))
+  VANILLA_STONE_TOOL_OUTPUTS.forEach(output => event.remove({ output: output, type: 'minecraft:crafting_shaped' }))
+  NON_OVERGEARED_WOOD_AND_STONE_TOOL_RECIPES.forEach(id => event.remove({ id: id }))
+  NON_OVERGEARED_WOOD_AND_STONE_TOOL_OUTPUTS.forEach(output => event.remove({ output: output }))
   NON_OVERGEARED_COPPER_GEAR_RECIPES.forEach(id => event.remove({ id: id }))
   NON_OVERGEARED_VANILLA_TIER_UPGRADES.forEach(id => event.remove({ id: id }))
+  ASTRAL_VANILLA_STONE_TOOL_RECIPES.forEach(id => event.remove({ id: id }))
+  ASTRAL_VANILLA_OUTPUT_EXTRA_RECIPES.forEach(id => event.remove({ id: id }))
+
+  // Critical Dark Ages tool path: own stable AoA IDs after removing vanilla/foreign outputs.
+  AOA_STONE_TOOL_ASSEMBLY_RECIPES.forEach(([output, head, id]) => {
+    event.shapeless(
+      Item.of(output),
+      [
+        head,
+        'minecraft:stick'
+      ]
+    ).id(id)
+  })
 })

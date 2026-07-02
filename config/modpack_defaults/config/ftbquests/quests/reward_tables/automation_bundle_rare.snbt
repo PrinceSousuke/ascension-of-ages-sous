@@ -1,0 +1,17 @@
+{
+	icon: {
+		id: "create:item_vault"
+	}
+	id: "7400000000000013"
+	loot_size: 1
+	order_index: 34
+	rewards: [
+		{ id: "7413000000000001", item: { count: 1, id: "createaddition:modular_accumulator" } }
+		{ id: "7413000000000002", item: { count: 1, id: "createaddition:tesla_coil" } }
+		{ id: "7413000000000003", item: { components: { "ftbquests:missing_item": "oritech:machine_core" }, count: 1, id: "ftbquests:missing_item" } }
+		{ id: "7413000000000004", item: { count: 1, id: "create:rotation_speed_controller" } }
+		{ id: "7413000000000005", item: { count: 1, id: "powergrid:battery" } }
+		{ id: "7413000000000006", item: { count: 1, id: "createaddition:portable_energy_interface" } }
+	]
+	use_title: true
+}

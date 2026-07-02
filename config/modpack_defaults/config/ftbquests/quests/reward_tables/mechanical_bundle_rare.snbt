@@ -1,0 +1,17 @@
+{
+	icon: {
+		id: "create:brown_toolbox"
+	}
+	id: "7200000000000013"
+	loot_size: 1
+	order_index: 21
+	rewards: [
+		{ id: "7213000000000001", item: { count: 1, id: "create:item_vault" } }
+		{ id: "7213000000000002", item: { count: 1, id: "createaddition:rolling_mill" } }
+		{ id: "7213000000000003", item: { count: 1, id: "create:brass_hand" } }
+		{ id: "7213000000000004", item: { components: { "ftbquests:missing_item": "create:smart_observer" }, count: 1, id: "ftbquests:missing_item" } }
+		{ id: "7213000000000005", item: { count: 1, id: "sophisticatedstorage:basic_to_iron_tier_upgrade" } }
+		{ id: "7213000000000006", item: { count: 1, id: "create:brown_toolbox" } }
+	]
+	use_title: true
+}

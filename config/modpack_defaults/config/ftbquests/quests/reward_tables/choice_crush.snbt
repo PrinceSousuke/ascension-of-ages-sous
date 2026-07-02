@@ -1,0 +1,47 @@
+{
+	id: "732BC3249916AB5F"
+	loot_size: 1
+	order_index: 7
+	rewards: [
+		{
+			count: 64
+			id: "53D588A84457DAED"
+			item: {
+				count: 1
+				id: "minecraft:cobblestone"
+			}
+		}
+		{
+			count: 16
+			id: "557495429A2F98AD"
+			item: {
+				count: 1
+				id: "minecraft:bone_block"
+			}
+		}
+		{
+			count: 16
+			id: "3772AC534B6F1863"
+			item: {
+				count: 1
+				id: "minecraft:clay"
+			}
+		}
+		{
+			count: 64
+			id: "3D9A3BF2DFAFCA3C"
+			item: {
+				count: 1
+				id: "minecraft:gravel"
+			}
+		}
+		{
+			count: 64
+			id: "3DD655AA63E151DD"
+			item: {
+				count: 1
+				id: "minecraft:smooth_sandstone"
+			}
+		}
+	]
+}

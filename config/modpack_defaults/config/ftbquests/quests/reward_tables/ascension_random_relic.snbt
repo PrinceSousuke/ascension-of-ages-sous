@@ -1,0 +1,91 @@
+{
+	icon: {
+		id: "minecraft:dragon_egg"
+	}
+	id: "7800000000000001"
+	loot_size: 2
+	order_index: 57
+	rewards: [
+		{
+			count: 2
+			id: "7801000000000001"
+			item: {
+				count: 1
+				id: "apotheosis:mythic_material"
+			}
+			weight: 3.0f
+		}
+		{
+			id: "7801000000000002"
+			item: {
+				count: 1
+				id: "minecraft:nether_star"
+			}
+			weight: 3.0f
+		}
+		{
+			count: 2
+			id: "7801000000000003"
+			item: {
+				count: 1
+				id: "apotheosis:epic_material"
+			}
+			weight: 3.0f
+		}
+		{
+			count: 4
+			id: "7801000000000004"
+			item: {
+				count: 1
+				id: "minecraft:echo_shard"
+			}
+			weight: 3.0f
+		}
+		{
+			count: 4
+			id: "7801000000000005"
+			item: {
+				count: 1
+				id: "draconicevolution:draconium_dust"
+			}
+			weight: 2.0f
+		}
+		{
+			id: "7801000000000006"
+			item: {
+				count: 1
+				id: "minecraft:totem_of_undying"
+			}
+			weight: 2.5f
+		}
+		{ id: "7801000000000007", item: { count: 1, id: "minecraft:enchanted_golden_apple" } }
+		{
+			id: "7801000000000008"
+			item: {
+				components: {
+					"ftbquests:missing_item": "apotheosis:ancient_material"
+				}
+				count: 1
+				id: "ftbquests:missing_item"
+			}
+			weight: 0.8f
+		}
+		{
+			id: "7801000000000009"
+			item: {
+				count: 1
+				id: "minecraft:heart_of_the_sea"
+			}
+			weight: 0.6f
+		}
+		{
+			id: "7801000000000010"
+			item: {
+				count: 1
+				id: "minecraft:beacon"
+			}
+			weight: 0.25f
+		}
+	]
+	use_title: true
+}

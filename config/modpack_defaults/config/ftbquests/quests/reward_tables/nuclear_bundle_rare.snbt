@@ -1,0 +1,52 @@
+{
+	icon: {
+		id: "mekanism:radioactive_waste_barrel"
+	}
+	id: "7600000000000013"
+	loot_size: 1
+	order_index: 48
+	rewards: [
+		{
+			count: 4
+			id: "7613000000000001"
+			item: {
+				count: 1
+				id: "mekanismgenerators:turbine_casing"
+			}
+		}
+		{
+			count: 4
+			id: "7613000000000002"
+			item: {
+				count: 1
+				id: "mekanism:reprocessed_fissile_fragment"
+			}
+		}
+		{ id: "7613000000000003", item: { count: 1, id: "nuclearscience:reinforcedhazmatboots" } }
+		{
+			count: 8
+			id: "7613000000000004"
+			item: {
+				count: 1
+				id: "mekanism:hdpe_sheet"
+			}
+		}
+		{
+			count: 2
+			id: "7613000000000005"
+			item: {
+				count: 1
+				id: "mekanism:advanced_control_circuit"
+			}
+		}
+		{
+			count: 2
+			id: "7613000000000006"
+			item: {
+				count: 1
+				id: "mekanismgenerators:turbine_rotor"
+			}
+		}
+	]
+	use_title: true
+}

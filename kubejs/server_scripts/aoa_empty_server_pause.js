@@ -7,7 +7,7 @@
 // real player logs in. Console can always run `/tick unfreeze` as an override.
 //
 // API surface validated against KubeJS 2101.7.2 docs and existing pack scripts
-// (welcome_message.js, progressivestages_team_bootstrap.js):
+// (welcome_message.js and the retired stage bootstrap boundary):
 //   ServerEvents.loaded, ServerEvents.tick                        - confirmed
 //   PlayerEvents.loggedIn, PlayerEvents.loggedOut                  - confirmed
 //   event.server.runCommandSilent('cmd without slash')             - confirmed
@@ -22,7 +22,7 @@
 // ---------------------------------------------------------------------------
 
 const ENABLE_EMPTY_SERVER_PAUSE = true
-const EMPTY_GRACE_TICKS         = 200    // 10 seconds at 20 TPS
+const EMPTY_GRACE_TICKS         = 20     // 1 second at 20 TPS
 const STARTUP_GRACE_TICKS       = 100    // 5 second post-load grace before freeze logic engages
 const LOG_DEBUG                 = false
 
@@ -34,7 +34,8 @@ let aoaEmptyTicks       = 0
 let aoaFrozenByScript   = false
 let aoaHasLoggedLoad    = false
 let aoaStartupTicks     = 0
-let aoaTickErrorLogged  = false   // suppress repeat error spam on tick
+let aoaPlayerCountWarningLogged = false
+let aoaPauseDisabledByError     = false
 
 // ---------------------------------------------------------------------------
 // Logging helpers
@@ -125,10 +126,10 @@ function aoaGetOnlinePlayerCount(server) {
     aoaDebug('server.playerList.playerCount failed: ' + err)
   }
 
-  if (!aoaTickErrorLogged) {
+  if (!aoaPlayerCountWarningLogged) {
     aoaWarn('Could not determine online player count via any known path. ' +
             'Empty-server pause disabled until a working path is found.')
-    aoaTickErrorLogged = true
+    aoaPlayerCountWarningLogged = true
   }
   return -1
 }
@@ -192,7 +193,8 @@ ServerEvents.loaded(event => {
   aoaEmptyTicks      = 0
   aoaFrozenByScript  = false
   aoaStartupTicks    = 0
-  aoaTickErrorLogged = false
+  aoaPlayerCountWarningLogged = false
+  aoaPauseDisabledByError = false
 
   if (!aoaHasLoggedLoad) {
     aoaHasLoggedLoad = true
@@ -219,47 +221,49 @@ PlayerEvents.loggedOut(event => {
   // Don't freeze instantly - the tick handler will do it after the grace period.
 })
 
+function aoaHandleEmptyServerPauseTick(event) {
+  var pauseServer = event.server
+  if (!pauseServer) return
+
+  // Startup grace - never freeze in the first few seconds after load.
+  if (aoaStartupTicks < STARTUP_GRACE_TICKS) {
+    aoaStartupTicks++
+    return
+  }
+
+  var onlinePlayers = aoaGetOnlinePlayerCount(pauseServer)
+
+  // Hard failure path - couldn't read player count. Do nothing this tick;
+  // the warning was already logged once.
+  if (onlinePlayers < 0) return
+
+  if (onlinePlayers > 0) {
+    if (aoaFrozenByScript) {
+      aoaUnfreezeServer(pauseServer, 'players online: ' + onlinePlayers)
+    } else {
+      aoaEmptyTicks = 0
+    }
+    return
+  }
+
+  // onlinePlayers === 0 from here.
+  aoaEmptyTicks++
+
+  // Use >= (not ===) so we still freeze if EMPTY_GRACE_TICKS is briefly
+  // skipped over by tick scheduling. aoaFreezeServer is idempotent via
+  // aoaFrozenByScript so this can't spam the freeze command.
+  if (aoaEmptyTicks >= EMPTY_GRACE_TICKS && !aoaFrozenByScript) {
+    aoaFreezeServer(pauseServer)
+  }
+}
+
 ServerEvents.tick(event => {
-  if (!ENABLE_EMPTY_SERVER_PAUSE) return
+  if (!ENABLE_EMPTY_SERVER_PAUSE || aoaPauseDisabledByError) return
 
   try {
-    const tickServer = event.server
-    if (!tickServer) return
-
-    // Startup grace - never freeze in the first few seconds after load.
-    if (aoaStartupTicks < STARTUP_GRACE_TICKS) {
-      aoaStartupTicks++
-      return
-    }
-
-    const onlinePlayers = aoaGetOnlinePlayerCount(tickServer)
-
-    // Hard failure path - couldn't read player count. Do nothing this tick;
-    // the warning was already logged once.
-    if (onlinePlayers < 0) return
-
-    if (onlinePlayers > 0) {
-      if (aoaFrozenByScript) {
-        aoaUnfreezeServer(tickServer, 'players online: ' + onlinePlayers)
-      } else {
-        aoaEmptyTicks = 0
-      }
-      return
-    }
-
-    // onlinePlayers === 0 from here.
-    aoaEmptyTicks++
-
-    // Use >= (not ===) so we still freeze if EMPTY_GRACE_TICKS is briefly
-    // skipped over by tick scheduling. aoaFreezeServer is idempotent via
-    // aoaFrozenByScript so this can't spam the freeze command.
-    if (aoaEmptyTicks >= EMPTY_GRACE_TICKS && !aoaFrozenByScript) {
-      aoaFreezeServer(tickServer)
-    }
+    aoaHandleEmptyServerPauseTick(event)
   } catch (err) {
-    if (!aoaTickErrorLogged) {
-      aoaWarn('Tick handler error (logged once, will keep running silently): ' + err)
-      aoaTickErrorLogged = true
-    }
+    aoaPauseDisabledByError = true
+    aoaWarn('Tick handler error; empty-server pause disabled until scripts reload: ' + err)
   }
 })

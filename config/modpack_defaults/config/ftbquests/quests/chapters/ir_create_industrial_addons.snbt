@@ -1,0 +1,2312 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ir_create_industrial_addons"
+	group: "3F77A31B7D30C0AA"
+	hide_quest_until_deps_complete: true
+	icon: {
+		id: "createoreexcavation:drilling_machine"
+	}
+	id: "4954080000000000"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["4954011000000001"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "create:precision_mechanism"
+			}
+			id: "4954081000000001"
+			rewards: [
+				{
+					id: "4954083000001000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "4954083000001001"
+					table_id: 8358680908399640577L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954082000001001"
+				item: { count: 1, id: "create:precision_mechanism" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -5.0d
+		}
+		,
+		{
+			dependencies: [
+				"4954081000000001"
+				"7A1F0A0000000006"
+			]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "create:mechanical_crafter"
+			}
+			id: "4954081000000002"
+			optional: true
+			rewards: [
+				{
+					id: "4954083000002000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "4954083000002001"
+					table_id: 8358680908399640577L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954082000002000"
+				item: { count: 1, id: "immersivepetroleum:projector" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -6.5d
+		}
+		,
+		{
+			dependencies: [
+				"4954081000000001"
+				"7A1F080000000008"
+			]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "create:mechanical_saw"
+			}
+			id: "4954081000000003"
+			optional: true
+			rewards: [
+				{
+					id: "4954083000003000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "4954083000003001"
+					table_id: 8358680908399640577L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954082000003000"
+				item: { count: 1, id: "createoreexcavation:sample_drill" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -6.5d
+		}
+		,
+		{
+			dependencies: [
+				"4954081000000001"
+				"0B031080000000D2"
+			]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "create:steam_engine"
+			}
+			id: "4954081000000004"
+			optional: true
+			rewards: [
+				{
+					id: "4954083000004000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "4954083000004001"
+					table_id: 8358680908399640577L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954082000004000"
+				item: { count: 1, id: "createdieselgenerators:pumpjack_bearing" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -6.5d
+		}
+		,
+		{
+			dependencies: ["4954081000000001"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "create:mechanical_drill"
+			}
+			id: "4954081000000005"
+			rewards: [
+				{
+					id: "4954083000005000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "4954083000005001"
+					table_id: 8358680908399640577L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954082000005000"
+				item: { count: 1, id: "create:mechanical_drill" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -8.0d
+		}
+		,
+		{
+			dependencies: ["4954011000000001"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "createoreexcavation:vein_finder"
+			}
+			id: "4954081000000006"
+			rewards: [
+				{
+					id: "4954083000006000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "4954083000006001"
+					table_id: 8358680908399640577L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954082000006000"
+				item: { count: 1, id: "createoreexcavation:vein_finder" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.0d
+		}
+		,
+		{
+			dependencies: ["4954081000000006"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "createoreexcavation:drilling_machine"
+			}
+			id: "4954081000000007"
+			rewards: [
+				{
+					id: "4954083000007000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "4954083000007001"
+					table_id: 8358680908399640577L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954082000007000"
+				item: { count: 1, id: "createoreexcavation:drilling_machine" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 10.0d
+		}
+		,
+		{
+			dependencies: ["4954081000000007"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "createoreexcavation:extractor"
+			}
+			id: "4954081000000009"
+			rewards: [
+				{
+					id: "4954083000009000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "4954083000009001"
+					table_id: 8358680908399640577L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954082000009000"
+				item: { count: 1, id: "createoreexcavation:extractor" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 11.5d
+		}
+		,
+		{
+			dependencies: ["4954081000000006"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "createoreexcavation:vein_atlas"
+			}
+			id: "495408100000000A"
+			rewards: [
+				{
+					id: "495408300000A000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "495408300000A001"
+					table_id: 8358680908399640577L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "495408200000A000"
+				item: { count: 1, id: "createoreexcavation:vein_atlas" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 8.0d
+		}
+		,
+		{
+			dependencies: ["4954081000000006"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "createoreexcavation:sample_drill"
+			}
+			id: "495408100000000B"
+			rewards: [
+				{
+					id: "495408300000B000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "495408300000B001"
+					table_id: 8358680908399640577L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "495408200000B000"
+				item: { count: 1, id: "createoreexcavation:sample_drill" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 6.5d
+		}
+		,
+		{
+			dependencies: [
+				"4954081000000001"
+				"7A1F0B0000000004"
+			]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "create:mechanical_arm"
+			}
+			id: "495408100000000D"
+			optional: true
+			rewards: [
+				{
+					id: "495408300000D000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "495408300000D001"
+					table_id: 8358680908399640577L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "495408200000D000"
+				item: { count: 1, id: "createaddition:redstone_relay" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -8.0d
+		}
+		,
+		{
+			dependencies: [
+				"4954081000000001"
+				"7A1F060000000006"
+			]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "create:portable_storage_interface"
+			}
+			id: "495408100000000E"
+			optional: true
+			rewards: [
+				{
+					id: "495408300000E000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "495408300000E001"
+					table_id: 8358680908399640577L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "495408200000E000"
+				item: { count: 1, id: "createoreexcavation:drilling_machine" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -8.0d
+		}
+		,
+		{
+			dependencies: ["4954081000000001"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "create:smart_chute"
+			}
+			id: "495408100000000F"
+			rewards: [
+				{
+					id: "495408300000F000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "495408300000F001"
+					table_id: 8358680908399640577L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "495408200000F000"
+				item: { count: 1, id: "create:smart_chute" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -9.5d
+		}
+		,
+		{
+			dependencies: ["4954011000000001"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "immersivepetroleum:projector"
+			}
+			id: "4954071000000001"
+			rewards: [
+				{
+					id: "4954073000001000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "4954073000001001"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954072000001000"
+				item: { count: 1, id: "immersivepetroleum:projector" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.5d
+		}
+		,
+		{
+			dependencies: ["4954071000000001"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "immersivepetroleum:derrick"
+			}
+			id: "4954071000000002"
+			rewards: [
+				{
+					id: "4954073000002000"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "4954073000002001"
+					table_id: 8430738502437568515L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				advancement: "immersivepetroleum:main/mb_derrick"
+				criterion: ""
+				id: "4954072000002000"
+				type: "advancement"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		,
+		{
+			dependencies: ["4954071000000002"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "immersivepetroleum:pumpjack"
+			}
+			id: "4954071000000003"
+			rewards: [
+				{
+					id: "4954073000003000"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "4954073000003001"
+					table_id: 8430738502437568515L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				advancement: "immersivepetroleum:main/mb_pumpjack"
+				criterion: ""
+				id: "4954072000003000"
+				type: "advancement"
+			}]
+			x: 5.5d
+			y: 0.0d
+		}
+		,
+		{
+			dependencies: ["4954071000000003"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "immersivepetroleum:crudeoil_bucket"
+			}
+			id: "4954071000000004"
+			rewards: [
+				{
+					id: "4954073000004000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "4954073000004001"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954072000004000"
+				item: { count: 1, id: "immersivepetroleum:crudeoil_bucket" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: 1.0d
+		}
+		,
+		{
+			dependencies: ["4954071000000003"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "immersivepetroleum:oiltank"
+			}
+			id: "4954071000000005"
+			rewards: [
+				{
+					id: "4954073000005000"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "4954073000005001"
+					table_id: 8430738502437568515L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				advancement: "immersivepetroleum:main/mb_oiltank"
+				criterion: ""
+				id: "4954072000005000"
+				type: "advancement"
+			}]
+			x: 5.5d
+			y: -4.0d
+		}
+		,
+		{
+			dependencies: ["4954071000000004"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "immersivepetroleum:distillation_tower"
+			}
+			id: "4954071000000006"
+			rewards: [
+				{
+					id: "4954073000006000"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "4954073000006001"
+					table_id: 8430738502437568515L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				advancement: "immersivepetroleum:main/mb_distillationtower"
+				criterion: ""
+				id: "4954072000006000"
+				type: "advancement"
+			}]
+			x: 11.0d
+			y: 1.0d
+		}
+		,
+		{
+			dependencies: ["4954071000000006"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "immersivepetroleum:diesel_bucket"
+			}
+			id: "4954071000000007"
+			rewards: [
+				{
+					id: "4954073000007000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "4954073000007001"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954072000007000"
+				item: { count: 1, id: "immersivepetroleum:diesel_bucket" }
+				type: "item"
+			}]
+			x: 9.5d
+			y: 2.5d
+		}
+		,
+		{
+			dependencies: ["4954071000000006"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "immersivepetroleum:coker_unit"
+			}
+			id: "4954071000000008"
+			rewards: [
+				{
+					id: "4954073000008000"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "4954073000008001"
+					table_id: 8430738502437568515L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				advancement: "immersivepetroleum:main/mb_cokerunit"
+				criterion: ""
+				id: "4954072000008000"
+				type: "advancement"
+			}]
+			x: 14.0d
+			y: 0.0d
+		}
+		,
+		{
+			dependencies: ["4954071000000008"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "immersivepetroleum:bitumen"
+			}
+			id: "4954071000000009"
+			rewards: [
+				{
+					id: "4954073000009000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "4954073000009001"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954072000009000"
+				item: { count: 1, id: "immersivepetroleum:bitumen" }
+				type: "item"
+			}]
+			x: 13.0d
+			y: -4.0d
+		}
+		,
+		{
+			dependencies: ["4954071000000006"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "immersivepetroleum:hydrotreater"
+			}
+			id: "495407100000000A"
+			rewards: [
+				{
+					id: "495407300000A000"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "495407300000A001"
+					table_id: 8430738502437568515L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				advancement: "immersivepetroleum:main/mb_hydrotreater"
+				criterion: ""
+				id: "495407200000A000"
+				type: "advancement"
+			}]
+			x: 11.0d
+			y: 2.5d
+		}
+		,
+		{
+			dependencies: ["4954011000000001"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "pneumaticcraft:refinery"
+			}
+			id: "495407100000000B"
+			rewards: [
+				{
+					id: "495407300000B000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "495407300000B001"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "495407200000B000"
+				item: { count: 1, id: "pneumaticcraft:refinery" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		,
+		{
+			dependencies: ["495407100000000B"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "pneumaticcraft:plastic"
+			}
+			id: "495407100000000D"
+			rewards: [
+				{
+					id: "495407300000D000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "495407300000D001"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "495407200000D000"
+				item: { count: 1, id: "pneumaticcraft:plastic" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.5d
+		}
+		,
+		{
+			dependencies: ["4954011000000001"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "createdieselgenerators:pumpjack_bearing"
+			}
+			id: "495407100000000E"
+			rewards: [
+				{
+					id: "495407300000E000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "495407300000E001"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "495407200000E000"
+				item: { count: 1, id: "createdieselgenerators:pumpjack_bearing" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.5d
+		}
+		,
+		{
+			dependencies: ["495407100000000E"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "createdieselgenerators:distillation_controller"
+			}
+			id: "495407100000000F"
+			rewards: [
+				{
+					id: "495407300000F000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "495407300000F001"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "495407200000F000"
+					item: { count: 1, id: "createdieselgenerators:distillation_tank" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "495407200000F001"
+					item: { count: 1, id: "createdieselgenerators:distillation_controller" }
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 2.5d
+		}
+		,
+		{
+			dependencies: ["495407100000000F"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "createdieselgenerators:large_diesel_engine"
+			}
+			id: "4954071000000010"
+			rewards: [
+				{
+					id: "4954073000010000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "4954073000010001"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954072000010000"
+				item: { count: 1, id: "createdieselgenerators:large_diesel_engine" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 2.5d
+		}
+		,
+		{
+			dependencies: ["495407100000000E"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "createdieselgenerators:bulk_fermenter"
+			}
+			id: "4954071000000011"
+			rewards: [
+				{
+					id: "4954073000011000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "4954073000011001"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954072000011000"
+				item: { count: 1, id: "createdieselgenerators:bulk_fermenter" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 5.0d
+		}
+		,
+		{
+			dependencies: ["4954071000000011"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "createdieselgenerators:biodiesel_bucket"
+			}
+			id: "4954071000000012"
+			rewards: [
+				{
+					id: "4954073000012000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "4954073000012001"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954072000012000"
+				item: { count: 1, id: "createdieselgenerators:biodiesel_bucket" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 3.5d
+		}
+		,
+		{
+			dependencies: ["4954071000000006"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "immersivepetroleum:lubricant_bucket"
+			}
+			id: "4954071000000014"
+			rewards: [
+				{
+					id: "4954073000014000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "4954073000014001"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954072000014000"
+				item: { count: 1, id: "immersivepetroleum:lubricant_bucket" }
+				type: "item"
+			}]
+			x: 12.5d
+			y: 2.5d
+		}
+		,
+		{
+			dependencies: ["4954071000000006"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "immersivepetroleum:gasoline_bucket"
+			}
+			id: "4954071000000015"
+			rewards: [
+				{
+					id: "4954073000015000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "4954073000015001"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954072000015000"
+				item: { count: 1, id: "immersivepetroleum:gasoline_bucket" }
+				type: "item"
+			}]
+			x: 9.5d
+			y: 4.0d
+		}
+		,
+		{
+			dependencies: ["4954081000000012"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "create_new_age:reinforced_motor"
+			}
+			id: "4954081000000010"
+			rewards: [
+				{
+					id: "4529F42F26447AA3"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "2C06E9B507B978D6"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954082000000010"
+				item: { count: 1, id: "create_new_age:reinforced_motor" }
+				type: "item"
+			}]
+			x: 11.0d
+			y: -1.0d
+		}
+		,
+		{
+			dependencies: ["4954081000000010"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "create_new_age:reinforced_energiser"
+			}
+			id: "4954081000000011"
+			rewards: [
+				{
+					id: "675BF1349B5D1AD1"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "0904D788189FF292"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954082000000011"
+				item: { count: 1, id: "create_new_age:reinforced_energiser" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: -2.5d
+		}
+		,
+		{
+			dependencies: ["4954081000000019"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "create_new_age:netherite_magnet"
+			}
+			id: "4954081000000012"
+			rewards: [
+				{
+					id: "0886653417F408E1"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "07379E691313BA9C"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954082000000012"
+				item: { count: 1, id: "create_new_age:netherite_magnet" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: -1.0d
+		}
+		,
+		{
+			dependencies: ["4954081000000010"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "create_new_age:advanced_motor_extension"
+			}
+			id: "4954081000000013"
+			rewards: [
+				{
+					id: "151B26093302FAEE"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "47CD2AEDA35F8205"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954082000000013"
+				item: { count: 1, id: "create_new_age:advanced_motor_extension" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: -2.5d
+		}
+		,
+		{
+			dependencies: ["4954081000000001"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "create_new_age:generator_coil"
+			}
+			id: "4954081000000014"
+			rewards: [
+				{
+					id: "34B984FE489C91BD"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "071DBE69E0C696B6"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954082000000014"
+				item: { count: 1, id: "create_new_age:generator_coil" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -10.0d
+		}
+		,
+		{
+			dependencies: ["4954081000000014"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "create_new_age:carbon_brushes"
+			}
+			id: "4954081000000015"
+			rewards: [
+				{
+					id: "1E0C788CC9061C8A"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "22BE19BCD48AB3D5"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954082000000015"
+				item: { count: 1, id: "create_new_age:carbon_brushes" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -11.5d
+		}
+		,
+		{
+			dependencies: ["4954081000000001"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "create_new_age:heat_pipe"
+			}
+			id: "4954081000000016"
+			rewards: [
+				{
+					id: "227EF98D7F3A3D34"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "1D76D5BAE63013E4"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954082000000016"
+				item: { count: 1, id: "create_new_age:heat_pipe" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -5.0d
+		}
+		,
+		{
+			dependencies: ["4954081000000016"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "create_new_age:heater"
+			}
+			id: "4954081000000017"
+			rewards: [
+				{
+					id: "7763FAD45B03E148"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "123FE0BC117B4939"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954082000000017"
+				item: { count: 1, id: "create_new_age:heater" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -13.0d
+		}
+		,
+		{
+			dependencies: ["4954081000000001"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "create_new_age:redstone_magnet"
+			}
+			id: "4954081000000018"
+			rewards: [
+				{
+					id: "4084B25FC9F8BFEF"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "0C42CE601F407E84"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954082000000018"
+				item: { count: 1, id: "create_new_age:redstone_magnet" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -7.5d
+		}
+		,
+		{
+			dependencies: ["4954081000000018"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "create_new_age:layered_magnet"
+			}
+			id: "4954081000000019"
+			rewards: [
+				{
+					id: "12DD5E5802E1BFBB"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "7B2EE7ED620B6E70"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954082000000019"
+				item: { count: 1, id: "create_new_age:layered_magnet" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: -2.5d
+		}
+		,
+		{
+			dependencies: ["4954081000000010"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "create_new_age:electrical_connector"
+			}
+			id: "495408100000001A"
+			rewards: [
+				{
+					id: "18E987C58B7848BB"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "77C6D42B5608322F"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "495408200000001A"
+				item: { count: 1, id: "create_new_age:electrical_connector" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: -4.0d
+		}
+		,
+		{
+			dependencies: ["4954081000000001"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "createaddition:redstone_relay"
+			}
+			id: "495408100000001B"
+			rewards: [
+				{
+					id: "5B37CAEDF684D4C1"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "2323BD3D27017C1A"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "495408200000001B"
+				item: { count: 1, id: "createaddition:redstone_relay" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -2.5d
+		}
+		,
+		{
+			dependencies: ["495408100000001B"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "createaddition:large_connector"
+			}
+			id: "495408100000001C"
+			rewards: [
+				{
+					id: "5B50B7BC9A385895"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "7325CC5A257CAE59"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "495408200000001C"
+				item: { count: 1, id: "createaddition:large_connector" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -4.0d
+		}
+		,
+		{
+			dependencies: ["495408100000001B"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "createaddition:small_light_connector"
+			}
+			id: "495408100000001D"
+			rewards: [
+				{
+					id: "44DD04F3CADFE17E"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "0ADFCE2B597A8874"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "495408200000001D"
+				item: { count: 1, id: "createaddition:small_light_connector" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -14.5d
+		}
+		,
+		{
+			dependencies: ["495407100000000E"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "createdieselgenerators:pumpjack_crank"
+			}
+			id: "495408100000001E"
+			rewards: [
+				{
+					id: "7CAA7A17C210CEE0"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "0F62AFB5896CB5A1"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "495408200000001E"
+				item: { count: 1, id: "createdieselgenerators:pumpjack_bearing_b" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 6.5d
+		}
+		,
+		{
+			dependencies: ["495407100000000E"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "createdieselgenerators:pumpjack_head"
+			}
+			id: "495408100000001F"
+			rewards: [
+				{
+					id: "2DAEB49378019813"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "4E397E7D5A080DE1"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "495408200000001F"
+				item: { count: 1, id: "createdieselgenerators:pumpjack_head" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 7.5d
+		}
+		,
+		{
+			dependencies: ["495408100000001F"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "createdieselgenerators:pumpjack_hole"
+			}
+			id: "4954081000000020"
+			rewards: [
+				{
+					id: "062316C1137DAA83"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "593A6B0E0F8C38F4"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954082000000020"
+				item: { count: 1, id: "createdieselgenerators:pumpjack_hole" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 5.0d
+		}
+		,
+		{
+			dependencies: ["4954071000000010"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "createdieselgenerators:engine_piston"
+			}
+			id: "4954081000000021"
+			rewards: [
+				{
+					id: "4A1870E6F510B94D"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "610E5D60EE0E27F7"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954082000000021"
+				item: { count: 1, id: "createdieselgenerators:powered_engine_shaft" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 4.0d
+		}
+
+	]
+}

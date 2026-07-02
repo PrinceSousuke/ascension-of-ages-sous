@@ -2,8 +2,8 @@
 //  Ballistix _noelectro recipe removal
 // ============================================================================
 //
-//  Audit:  docs/audits/science_spine_cluster_design_2026-04-30.md (§7 row 6,
-//          §1.G), docs/audits/_science_temp/G_ballistix.md
+//  Audit:  docs/audits/science_spine_cluster_design_2026-04-30.md ( row 6,
+//          .G), docs/audits/_science_temp/G_ballistix.md
 //  JAR:    mods/ballistix-1.21.1-1.0.1-0.jar (1.21.1-1.0.1-0)
 //  Count:  40 recipes — verified via zipfile scan of
 //          data/ballistix/recipe/*_noelectro.json

@@ -36,9 +36,6 @@ const ATO_FURNACE_DUPLICATE_REMOVALS = [
   'create:blasting/ingot_tin_compat_mekanism',
   'create:blasting/ingot_uranium_compat_immersiveengineering',
   'create:blasting/ingot_uranium_compat_mekanism',
-  'create:blasting/zinc_ingot_from_crushed',
-  'create:blasting/zinc_ingot_from_ore',
-  'create:blasting/zinc_ingot_from_raw_ore',
   'create:smelting/ingot_aluminum_compat_immersiveengineering',
   'create:smelting/ingot_lead_compat_immersiveengineering',
   'create:smelting/ingot_lead_compat_mekanism',
@@ -48,9 +45,6 @@ const ATO_FURNACE_DUPLICATE_REMOVALS = [
   'create:smelting/ingot_tin_compat_mekanism',
   'create:smelting/ingot_uranium_compat_immersiveengineering',
   'create:smelting/ingot_uranium_compat_mekanism',
-  'create:smelting/zinc_ingot_from_crushed',
-  'create:smelting/zinc_ingot_from_ore',
-  'create:smelting/zinc_ingot_from_raw_ore',
   'createnuclear:blasting/lead_ingot_for_lead',
   'createnuclear:blasting/lead_ingot_for_raw_lead',
   'createnuclear:smelting/lead_ingot_for_lead',
@@ -83,12 +77,6 @@ const ATO_FURNACE_DUPLICATE_REMOVALS = [
   'electrodynamics:smelting/tin_ingot_from_dust',
   'electrodynamics:smelting/tin_ingot_from_ore',
   'electrodynamics:smelting/tin_ingot_from_raw_ore',
-  'energizedpower:blasting/tin_ingot_from_blasting_raw_tin',
-  'energizedpower:blasting/tin_ingot_from_blasting_tin_dust',
-  'energizedpower:blasting/tin_ingot_from_blasting_tin_ores',
-  'energizedpower:smelting/tin_ingot_from_smelting_raw_tin',
-  'energizedpower:smelting/tin_ingot_from_smelting_tin_dust',
-  'energizedpower:smelting/tin_ingot_from_smelting_tin_ores',
   'occultism:blasting/silver_ingot_from_dust',
   'occultism:blasting/silver_ingot_from_ore',
   'occultism:blasting/silver_ingot_from_raw',
@@ -100,6 +88,18 @@ const ATO_FURNACE_DUPLICATE_REMOVALS = [
 ]
 
 const ATO_COMMON_OUTPUT_REPLACEMENTS = [
+  ['alltheores:aluminum_block', 'modern_industrialization:aluminum_block'],
+  ['alltheores:aluminum_dust', 'modern_industrialization:aluminum_dust'],
+  ['alltheores:aluminum_gear', 'modern_industrialization:aluminum_gear'],
+  ['alltheores:aluminum_ingot', 'modern_industrialization:aluminum_ingot'],
+  ['alltheores:aluminum_nugget', 'modern_industrialization:aluminum_nugget'],
+  ['alltheores:aluminum_plate', 'modern_industrialization:aluminum_plate'],
+  ['alltheores:aluminum_rod', 'modern_industrialization:aluminum_rod'],
+  ['alltheores:raw_zinc', 'create:raw_zinc'],
+  ['alltheores:raw_zinc_block', 'create:raw_zinc_block'],
+  ['alltheores:zinc_block', 'create:zinc_block'],
+  ['alltheores:zinc_ingot', 'create:zinc_ingot'],
+  ['alltheores:zinc_nugget', 'create:zinc_nugget'],
   ['alloyed:bronze_block', 'alltheores:bronze_block'],
   ['alloyed:bronze_ingot', 'alltheores:bronze_ingot'],
   ['alloyed:bronze_nugget', 'alltheores:bronze_nugget'],
@@ -112,13 +112,10 @@ const ATO_COMMON_OUTPUT_REPLACEMENTS = [
   ['chemicalscience:dust_zinc', 'alltheores:zinc_dust'],
   ['chemicalscience:ingot_nickel', 'alltheores:nickel_ingot'],
   ['chemicalscience:ingot_platinum', 'alltheores:platinum_ingot'],
-  ['chemicalscience:ingot_zinc', 'alltheores:zinc_ingot'],
+  ['chemicalscience:ingot_zinc', 'create:zinc_ingot'],
   ['create:brass_block', 'alltheores:brass_block'],
   ['create:brass_ingot', 'alltheores:brass_ingot'],
   ['create:brass_nugget', 'alltheores:brass_nugget'],
-  ['create:zinc_block', 'alltheores:zinc_block'],
-  ['create:zinc_ingot', 'alltheores:zinc_ingot'],
-  ['create:zinc_nugget', 'alltheores:zinc_nugget'],
   ['createaddition:electrum_block', 'alltheores:electrum_block'],
   ['createaddition:electrum_ingot', 'alltheores:electrum_ingot'],
   ['createaddition:electrum_nugget', 'alltheores:electrum_nugget'],
@@ -129,13 +126,13 @@ const ATO_COMMON_OUTPUT_REPLACEMENTS = [
   ['createnuclear:steel_ingot', 'alltheores:steel_ingot'],
   ['createnuclear:steel_nugget', 'alltheores:steel_nugget'],
   ['createnuclear:uranium_powder', 'alltheores:uranium_dust'],
-  ['electrodynamics:dustaluminum', 'alltheores:aluminum_dust'],
+  ['electrodynamics:dustaluminum', 'modern_industrialization:aluminum_dust'],
   ['electrodynamics:dustbronze', 'alltheores:bronze_dust'],
   ['electrodynamics:dustlead', 'alltheores:lead_dust'],
   ['electrodynamics:dustsilver', 'alltheores:silver_dust'],
   ['electrodynamics:duststeel', 'alltheores:steel_dust'],
   ['electrodynamics:dusttin', 'alltheores:tin_dust'],
-  ['electrodynamics:ingotaluminum', 'alltheores:aluminum_ingot'],
+  ['electrodynamics:ingotaluminum', 'modern_industrialization:aluminum_ingot'],
   ['electrodynamics:ingotbronze', 'alltheores:bronze_ingot'],
   ['electrodynamics:ingotlead', 'alltheores:lead_ingot'],
   ['electrodynamics:ingotsilver', 'alltheores:silver_ingot'],
@@ -144,19 +141,14 @@ const ATO_COMMON_OUTPUT_REPLACEMENTS = [
   ['electrodynamics:nuggetsilver', 'alltheores:silver_nugget'],
   ['electrodynamics:nuggetsteel', 'alltheores:steel_nugget'],
   ['electrodynamics:nuggettin', 'alltheores:tin_nugget'],
-  ['electrodynamics:resourceblockaluminum', 'alltheores:aluminum_block'],
+  ['electrodynamics:resourceblockaluminum', 'modern_industrialization:aluminum_block'],
   ['electrodynamics:resourceblockbronze', 'alltheores:bronze_block'],
   ['electrodynamics:resourceblocklead', 'alltheores:lead_block'],
   ['electrodynamics:resourceblocksilver', 'alltheores:silver_block'],
   ['electrodynamics:resourceblocksteel', 'alltheores:steel_block'],
   ['electrodynamics:resourceblocktin', 'alltheores:tin_block'],
   ['enderio:powdered_tin', 'alltheores:tin_dust'],
-  ['energizedpower:steel_ingot', 'alltheores:steel_ingot'],
-  ['energizedpower:tin_block', 'alltheores:tin_block'],
-  ['energizedpower:tin_dust', 'alltheores:tin_dust'],
-  ['energizedpower:tin_ingot', 'alltheores:tin_ingot'],
-  ['energizedpower:tin_nugget', 'alltheores:tin_nugget'],
-  ['immersiveengineering:dust_aluminum', 'alltheores:aluminum_dust'],
+  ['immersiveengineering:dust_aluminum', 'modern_industrialization:aluminum_dust'],
   ['immersiveengineering:dust_constantan', 'alltheores:constantan_dust'],
   ['immersiveengineering:dust_electrum', 'alltheores:electrum_dust'],
   ['immersiveengineering:dust_lead', 'alltheores:lead_dust'],
@@ -164,7 +156,7 @@ const ATO_COMMON_OUTPUT_REPLACEMENTS = [
   ['immersiveengineering:dust_silver', 'alltheores:silver_dust'],
   ['immersiveengineering:dust_steel', 'alltheores:steel_dust'],
   ['immersiveengineering:dust_uranium', 'alltheores:uranium_dust'],
-  ['immersiveengineering:ingot_aluminum', 'alltheores:aluminum_ingot'],
+  ['immersiveengineering:ingot_aluminum', 'modern_industrialization:aluminum_ingot'],
   ['immersiveengineering:ingot_constantan', 'alltheores:constantan_ingot'],
   ['immersiveengineering:ingot_electrum', 'alltheores:electrum_ingot'],
   ['immersiveengineering:ingot_lead', 'alltheores:lead_ingot'],
@@ -172,7 +164,7 @@ const ATO_COMMON_OUTPUT_REPLACEMENTS = [
   ['immersiveengineering:ingot_silver', 'alltheores:silver_ingot'],
   ['immersiveengineering:ingot_steel', 'alltheores:steel_ingot'],
   ['immersiveengineering:ingot_uranium', 'alltheores:uranium_ingot'],
-  ['immersiveengineering:nugget_aluminum', 'alltheores:aluminum_nugget'],
+  ['immersiveengineering:nugget_aluminum', 'modern_industrialization:aluminum_nugget'],
   ['immersiveengineering:nugget_constantan', 'alltheores:constantan_nugget'],
   ['immersiveengineering:nugget_electrum', 'alltheores:electrum_nugget'],
   ['immersiveengineering:nugget_lead', 'alltheores:lead_nugget'],
@@ -180,7 +172,7 @@ const ATO_COMMON_OUTPUT_REPLACEMENTS = [
   ['immersiveengineering:nugget_silver', 'alltheores:silver_nugget'],
   ['immersiveengineering:nugget_steel', 'alltheores:steel_nugget'],
   ['immersiveengineering:nugget_uranium', 'alltheores:uranium_nugget'],
-  ['immersiveengineering:storage_aluminum', 'alltheores:aluminum_block'],
+  ['immersiveengineering:storage_aluminum', 'modern_industrialization:aluminum_block'],
   ['immersiveengineering:storage_constantan', 'alltheores:constantan_block'],
   ['immersiveengineering:storage_electrum', 'alltheores:electrum_block'],
   ['immersiveengineering:storage_lead', 'alltheores:lead_block'],
@@ -212,10 +204,6 @@ const ATO_COMMON_OUTPUT_REPLACEMENTS = [
   ['mekanism:nugget_steel', 'alltheores:steel_nugget'],
   ['mekanism:nugget_tin', 'alltheores:tin_nugget'],
   ['mekanism:nugget_uranium', 'alltheores:uranium_nugget'],
-  ['modern_industrialization:aluminum_block', 'alltheores:aluminum_block'],
-  ['modern_industrialization:aluminum_dust', 'alltheores:aluminum_dust'],
-  ['modern_industrialization:aluminum_ingot', 'alltheores:aluminum_ingot'],
-  ['modern_industrialization:aluminum_nugget', 'alltheores:aluminum_nugget'],
   ['modern_industrialization:bronze_block', 'alltheores:bronze_block'],
   ['modern_industrialization:bronze_dust', 'alltheores:bronze_dust'],
   ['modern_industrialization:bronze_ingot', 'alltheores:bronze_ingot'],
@@ -293,6 +281,49 @@ const ATO_COMMON_OUTPUT_REPLACEMENTS = [
   ['stellaris:uranium_ingot', 'alltheores:uranium_ingot']
 ]
 
+const ATO_TAG_POLICY_REMOVALS = [
+  // Plastics are owner-scoped branch materials, not a global material pool.
+  ['c:plastic', 'chemicalscience:polymer_propylene'],
+  ['c:plastic', 'chemicalscience:polymer_styrene'],
+  ['c:plastic', 'chemicalscience:polymer_vinylchloride'],
+  ['c:plastic', 'electrodynamics:sheetplastic'],
+  ['c:plastics', 'industrialforegoing:plastic'],
+  ['c:plastics', 'oritech:plastic_sheet'],
+
+  // Silicon currently mixes storage/network and electronics identities.
+  ['c:silicon', 'ae2:silicon'],
+  ['c:silicon', 'enderio:silicon'],
+  ['c:silicon', 'oritech:silicon'],
+  ['c:silicon', 'refinedstorage:silicon'],
+  ['c:dusts/silicon', 'chemicalscience:dust_silicon'],
+  ['c:dusts/silicon', 'modern_industrialization:silicon_dust'],
+
+  // ProjectRed/BetterNether/Mekanism identity gems must not feed ATO gem processing.
+  ['c:gems/ruby', 'betternether:nether_ruby'],
+  ['c:gems/ruby', 'projectred_core:ruby'],
+  ['c:gems/sapphire', 'projectred_core:sapphire'],
+  ['c:gems/peridot', 'projectred_core:peridot'],
+  ['c:gems/fluorite', 'mekanism:fluorite_gem'],
+
+  // Nuclear rods are not generic early rod inputs.
+  ['c:rods/uranium', 'modern_industrialization:uranium_rod'],
+
+  // astral_dimension identity materials must stay distinct. Astranite,
+  // Lucid, and Void are Otherworldly-tier materials with their own role;
+  // they should never satisfy generic c: tier tags or be unified into
+  // generic ingot/gem pools. (Astral gold is a true gold equivalent and
+  // is intentionally not removed from c:ingots/gold.)
+  ['c:ingots/astranite',     'astral_dimension:astranite_ingot'],
+  ['c:storage_blocks/astranite', 'astral_dimension:astranite_block'],
+  ['c:raw_materials/astranite',  'astral_dimension:raw_astranite'],
+  ['c:storage_blocks/raw_astranite', 'astral_dimension:raw_astranite_block'],
+  ['c:ingots/lucid',         'astral_dimension:lucid_ingot'],
+  ['c:storage_blocks/lucid', 'astral_dimension:block_of_lucid'],
+  ['c:gems/void',            'astral_dimension:void_shards'],
+  ['c:gems/void',            'astral_dimension:void_gem'],
+  ['c:gems/void',            'astral_dimension:pure_void']
+]
+
 ServerEvents.recipes(event => {
   ATO_FURNACE_DUPLICATE_REMOVALS.forEach(id => {
     event.remove({ id: id })
@@ -314,4 +345,8 @@ ServerEvents.tags('item', event => {
 
   // Waxed bronze is a decorative/state variant, not a generic bronze block.
   event.remove('c:storage_blocks/bronze', 'alloyed:waxed_bronze_block')
+
+  ATO_TAG_POLICY_REMOVALS.forEach(([tag, item]) => {
+    event.remove(tag, item)
+  })
 })

@@ -1,8 +1,10 @@
-// AoA M1 — Medieval-legal wrench recipe
-// Stock Create wrench uses c:plates/gold. Gold is Renaissance-gated per AoA v4.1 §3.1,
-// so the stock recipe would make Create unusable through Medieval.
-// Swap: gold plates -> brass plates (c:plates/brass). Brass comes online via the
-// PMW/Alloyed foundry in M2, so the wrench becomes craftable once the foundry is running.
+// AoA M1 - Medieval-legal wrench recipe
+// Stock Create wrench uses c:plates/gold. Gold and the Mechanical Press both
+// unlock at Medieval per aoa_astages_06 and aoa_astages_01 respectively, but
+// the vanilla recipe is brass-plated and brass is Renaissance (zinc gates at
+// the_renaissance per aoa_astages_06). Use andesite alloy so the first Create
+// control tool follows the visible M1 shaft/cog path with materials any Medieval
+// player has on hand.
 
 ServerEvents.recipes(event => {
   event.remove({ id: "create:crafting/kinetics/wrench" });
@@ -10,14 +12,14 @@ ServerEvents.recipes(event => {
   event.shaped(
     Item.of("create:wrench"),
     [
-      "BB ",
-      "BP ",
+      "AA ",
+      "AP ",
       "  S"
     ],
     {
-      B: "#c:plates/brass",
+      A: "create:andesite_alloy",
       P: "create:cogwheel",
       S: "#c:rods/wooden"
     }
-  ).id("aoa:m1/wrench_from_brass");
+  ).id("aoa:m1/wrench_from_andesite_alloy");
 });

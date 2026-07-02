@@ -1,0 +1,52 @@
+{
+	icon: {
+		id: "mekanism:radioactive_waste_barrel"
+	}
+	id: "7600000000000011"
+	loot_size: 1
+	order_index: 46
+	rewards: [
+		{
+			count: 4
+			id: "7611000000000001"
+			item: {
+				count: 1
+				id: "mekanism:steel_casing"
+			}
+		}
+		{
+			count: 2
+			id: "7611000000000002"
+			item: {
+				count: 1
+				id: "mekanism:basic_control_circuit"
+			}
+		}
+		{
+			count: 4
+			id: "7611000000000003"
+			item: {
+				count: 1
+				id: "mekanism:hdpe_sheet"
+			}
+		}
+		{ id: "7611000000000004", item: { count: 1, id: "nuclearscience:reinforcedhazmatplate" } }
+		{
+			count: 16
+			id: "7611000000000005"
+			item: {
+				count: 1
+				id: "mekanism:basic_pressurized_tube"
+			}
+		}
+		{
+			count: 4
+			id: "7611000000000006"
+			item: {
+				count: 1
+				id: "mekanism:substrate"
+			}
+		}
+	]
+	use_title: true
+}

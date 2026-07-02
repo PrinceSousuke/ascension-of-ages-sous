@@ -1,0 +1,24 @@
+{
+	icon: {
+		id: "minecraft:oak_chest_boat"
+	}
+	id: "7300000000000012"
+	loot_size: 1
+	order_index: 26
+	rewards: [
+		{ id: "7312000000000001", item: { count: 1, id: "explorerscompass:explorerscompass" } }
+		{ id: "7312000000000002", item: { count: 1, id: "sophisticatedbackpacks:backpack" } }
+		{
+			count: 2
+			id: "7312000000000003"
+			item: {
+				count: 1
+				id: "betternether:cincinnasite_ingot"
+			}
+		}
+		{ id: "7312000000000004", item: { count: 1, id: "undergarden:slingshot" } }
+		{ id: "7312000000000005", item: { count: 1, id: "smallships:oak_cog" } }
+		{ id: "7312000000000006", item: { count: 1, id: "apotheosis:uncommon_material" } }
+	]
+	use_title: true
+}

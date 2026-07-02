@@ -1,0 +1,24 @@
+{
+	icon: {
+		id: "minecraft:barrel"
+	}
+	id: "7100000000000013"
+	loot_size: 1
+	order_index: 15
+	rewards: [
+		{ id: "7113000000000001", item: { count: 1, id: "cold_sweat:icebox" } }
+		{ id: "7113000000000002", item: { count: 1, id: "comforts:hammock_white" } }
+		{ id: "7113000000000003", item: { count: 1, id: "farmersdelight:stove" } }
+		{ id: "7113000000000004", item: { count: 1, id: "aquaculture:worm_farm" } }
+		{
+			count: 16
+			id: "7113000000000005"
+			item: {
+				count: 1
+				id: "farmersdelight:rich_soil"
+			}
+		}
+		{ id: "7113000000000006", item: { components: { "ftbquests:missing_item": "cold_sweat:fur_cap" }, count: 1, id: "ftbquests:missing_item" } }
+	]
+	use_title: true
+}

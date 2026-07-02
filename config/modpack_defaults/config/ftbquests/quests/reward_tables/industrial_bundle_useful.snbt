@@ -1,0 +1,31 @@
+{
+	icon: {
+		id: "immersiveengineering:crate"
+	}
+	id: "7500000000000012"
+	loot_size: 1
+	order_index: 40
+	rewards: [
+		{ id: "7512000000000001", item: { count: 1, id: "pneumaticcraft:air_compressor" } }
+		{ id: "7512000000000002", item: { count: 1, id: "createaddition:electric_motor" } }
+		{
+			count: 2
+			id: "7512000000000003"
+			item: {
+				count: 1
+				id: "modern_industrialization:electronic_circuit"
+			}
+		}
+		{ id: "7512000000000004", item: { count: 1, id: "pneumaticcraft:pressure_gauge" } }
+		{
+			count: 4
+			id: "7512000000000005"
+			item: {
+				count: 1
+				id: "refinedstorage:quartz_enriched_iron"
+			}
+		}
+		{ id: "7512000000000006", item: { count: 1, id: "createaddition:modular_accumulator" } }
+	]
+	use_title: true
+}

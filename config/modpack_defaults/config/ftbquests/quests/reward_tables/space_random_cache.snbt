@@ -1,0 +1,96 @@
+{
+	icon: {
+		id: "stellaris:antenna"
+	}
+	id: "7700000000000001"
+	loot_size: 2
+	order_index: 50
+	rewards: [
+		{
+			count: 4
+			id: "7701000000000001"
+			item: {
+				count: 1
+				id: "stellaris:desh_ingot"
+			}
+			weight: 3.5f
+		}
+		{
+			id: "7701000000000002"
+			item: {
+				count: 1
+				id: "stellaris:t3_tank"
+			}
+			weight: 3.0f
+		}
+		{
+			count: 16
+			id: "7701000000000003"
+			item: {
+				count: 1
+				id: "stellaris:cable_t2"
+			}
+			weight: 3.0f
+		}
+		{
+			count: 2
+			id: "7701000000000004"
+			item: {
+				count: 1
+				id: "ae2:wireless_booster"
+			}
+			weight: 2.0f
+		}
+		{
+			id: "7701000000000005"
+			item: {
+				count: 1
+				id: "appmek:chemical_storage_cell_4k"
+			}
+			weight: 2.0f
+		}
+		{
+			id: "7701000000000006"
+			item: {
+				count: 1
+				id: "mekanism_lasers:energy_storage_cell"
+			}
+			weight: 2.0f
+		}
+		{
+			id: "7701000000000007"
+			item: {
+				count: 1
+				id: "stellaris:upgrade_station"
+			}
+			weight: 1.5f
+		}
+		{
+			count: 4
+			id: "7701000000000008"
+			item: {
+				count: 1
+				id: "minecraft:echo_shard"
+			}
+			weight: 3.0f
+		}
+		{
+			count: 8
+			id: "7701000000000009"
+			item: {
+				count: 1
+				id: "stellaris:raw_steel_ingot"
+			}
+			weight: 2.5f
+		}
+		{
+			id: "7701000000000010"
+			item: {
+				count: 1
+				id: "ae2:quantum_entangled_singularity"
+			}
+			weight: 0.3f
+		}
+	]
+	use_title: true
+}

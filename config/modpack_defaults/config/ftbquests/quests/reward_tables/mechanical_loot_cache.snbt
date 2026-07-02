@@ -1,0 +1,89 @@
+{
+	icon: {
+		id: "create:brown_toolbox"
+	}
+	id: "7200000000000003"
+	loot_size: 2
+	order_index: 18
+	rewards: [
+		{
+			id: "7203000000000001"
+			item: {
+				count: 1
+				id: "create:mechanical_pump"
+			}
+			weight: 3.5f
+		}
+		{
+			id: "7203000000000002"
+			item: {
+				count: 1
+				id: "create:item_vault"
+			}
+			weight: 3.0f
+		}
+		{
+			id: "7203000000000003"
+			item: {
+				count: 1
+				id: "createaddition:rolling_mill"
+			}
+			weight: 2.5f
+		}
+		{
+			count: 2
+			id: "7203000000000004"
+			item: {
+				count: 1
+				id: "createaddition:capacitor"
+			}
+			weight: 3.0f
+		}
+		{
+			id: "7203000000000005"
+			item: {
+				count: 1
+				id: "create:water_wheel"
+			}
+			weight: 2.0f
+		}
+		{
+			count: 4
+			id: "7203000000000006"
+			item: {
+				count: 1
+				id: "create:large_cogwheel"
+			}
+			weight: 3.0f
+		}
+		{
+			id: "7203000000000007"
+			item: {
+				count: 1
+				id: "sophisticatedstorage:iron_chest"
+			}
+			weight: 2.0f
+		}
+		{
+			id: "7203000000000008"
+			item: {
+				components: {
+					"ftbquests:missing_item": "create:smart_observer"
+				}
+				count: 1
+				id: "ftbquests:missing_item"
+			}
+			weight: 1.5f
+		}
+		{ id: "7203000000000009", item: { count: 1, id: "explorerscompass:explorerscompass" } }
+		{
+			id: "7203000000000010"
+			item: {
+				count: 1
+				id: "create:millstone"
+			}
+			weight: 0.5f
+		}
+	]
+	use_title: true
+}

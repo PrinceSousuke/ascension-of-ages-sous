@@ -1,12 +1,11 @@
 // AoA KubeJS: endrem_eye_strip.js
-// Theme: Strip vanilla EndRem eye sources. Eyes are ONLY available as FTBQuest rewards.
-// Exceptions (kept vanilla): Guardian Eye (Elder Guardian kill), Witch Eye (witch_pupil craft).
+// Theme: Strip most vanilla EndRem eye sources; keep only verified controlled routes.
+// Exceptions (kept vanilla): Exotic Eye (ocean craft), Guardian Eye (Elder Guardian kill), Witch Eye (witch_pupil craft).
 // Also stripped via config: Cryptic Eye (enchanting) + Evil Eye (villager trade) —
 //   see config/EndRemastered-NeoForge/endrem.json: IS_CRYPTIC_EYE_OBTAINABLE/IS_EVIL_EYE_OBTAINABLE = false.
 
 ServerEvents.recipes(event => {
-  // Exotic Eye (ocean-item craft) → quest-only
-  event.remove({ id: 'endrem:exotic_eye' })
+  // Exotic Eye (ocean-item craft) remains visible; its native recipe is the verified legal route.
 
   // Undead Eye (undead_soul + ghast_tear + bone + rotten_flesh + phantom_membrane) → quest-only
   event.remove({ id: 'endrem:undead_eye' })
@@ -25,6 +24,7 @@ LootJS.modifiers(event => {
   event.addTableModifier('minecraft:chests/shipwreck_treasure').removeLoot('endrem:black_eye')
   event.addTableModifier('minecraft:chests/abandoned_mineshaft').removeLoot('endrem:lost_eye')
   event.addTableModifier('minecraft:chests/simple_dungeon').removeLoot('endrem:lost_eye')
+  event.addTableModifier('minecraft:chests/simple_dungeon').removeLoot('endrem:old_eye')
   event.addTableModifier('minecraft:chests/pillager_outpost').removeLoot('endrem:corrupted_eye')
   event.addTableModifier('minecraft:chests/bastion_treasure').removeLoot('endrem:cursed_eye')
 

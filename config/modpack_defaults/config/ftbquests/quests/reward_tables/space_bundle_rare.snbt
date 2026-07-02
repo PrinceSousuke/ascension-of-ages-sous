@@ -1,0 +1,17 @@
+{
+	icon: {
+		id: "stellaris:antenna"
+	}
+	id: "7700000000000013"
+	loot_size: 1
+	order_index: 56
+	rewards: [
+		{ id: "7713000000000001", item: { count: 1, id: "stellaris:radioactive_generator" } }
+		{ id: "7713000000000002", item: { count: 1, id: "stellaris:t4_tank" } }
+		{ id: "7713000000000003", item: { count: 1, id: "stellaris:antenna" } }
+		{ id: "7713000000000004", item: { count: 1, id: "minecraft:heart_of_the_sea" } }
+		{ id: "7713000000000005", item: { count: 1, id: "cataclysm:tidal_claws" } }
+		{ id: "7713000000000006", item: { count: 1, id: "ae2:quantum_entangled_singularity" } }
+	]
+	use_title: true
+}

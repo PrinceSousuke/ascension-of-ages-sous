@@ -1,0 +1,31 @@
+{
+	icon: {
+		id: "minecraft:oak_chest_boat"
+	}
+	id: "7300000000000013"
+	loot_size: 1
+	order_index: 27
+	rewards: [
+		{ id: "7313000000000001", item: { count: 1, id: "minecraft:anvil" } }
+		{ id: "7313000000000002", item: { count: 1, id: "smallships:oak_brigg" } }
+		{
+			count: 2
+			id: "7313000000000003"
+			item: {
+				count: 1
+				id: "undergarden:froststeel_ingot"
+			}
+		}
+		{
+			count: 4
+			id: "7313000000000004"
+			item: {
+				count: 1
+				id: "betterend:amber_gem"
+			}
+		}
+		{ id: "7313000000000005", item: { count: 1, id: "minecraft:golden_apple" } }
+		{ id: "7313000000000006", item: { count: 1, id: "apotheosis:rare_material" } }
+	]
+	use_title: true
+}

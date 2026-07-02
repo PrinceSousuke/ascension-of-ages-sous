@@ -4,7 +4,7 @@
 //
 //  Audit:  docs/audits/create_full_chapter_design_2026-04-30.md
 //          ("Critical KubeJS prerequisite" section);
-//          docs/audits/unauthored_content_inventory_2026-04-30.md §1.3
+//          docs/audits/unauthored_content_inventory_2026-04-30.md .3
 //  JAR:    mods/createnuclear-1.3.2-beta.3-neoforge.jar
 //  Count:  1 recipe — data/createnuclear/recipe/mixing/steel.json
 //

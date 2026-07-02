@@ -1,0 +1,87 @@
+{
+	icon: {
+		id: "stellaris:antenna"
+	}
+	id: "7700000000000003"
+	loot_size: 2
+	order_index: 53
+	rewards: [
+		{
+			id: "7703000000000001"
+			item: {
+				count: 1
+				id: "stellaris:radioactive_generator"
+			}
+			weight: 3.0f
+		}
+		{
+			id: "7703000000000002"
+			item: {
+				count: 1
+				id: "stellaris:t4_tank"
+			}
+			weight: 3.0f
+		}
+		{
+			id: "7703000000000003"
+			item: {
+				count: 1
+				id: "stellaris:antenna"
+			}
+			weight: 2.0f
+		}
+		{
+			id: "7703000000000004"
+			item: {
+				count: 1
+				id: "stellaris:diesel_generator"
+			}
+			weight: 2.0f
+		}
+		{
+			count: 4
+			id: "7703000000000005"
+			item: {
+				count: 1
+				id: "ae2:wireless_booster"
+			}
+			weight: 3.0f
+		}
+		{
+			count: 2
+			id: "7703000000000006"
+			item: {
+				count: 1
+				id: "appmek:chemical_storage_cell_4k"
+			}
+			weight: 2.0f
+		}
+		{
+			count: 8
+			id: "7703000000000007"
+			item: {
+				count: 1
+				id: "stellaris:raw_desh_ingot"
+			}
+			weight: 3.0f
+		}
+		{ id: "7703000000000008", item: { count: 1, id: "minecraft:heart_of_the_sea" } }
+		{
+			id: "7703000000000009"
+			item: {
+				count: 1
+				id: "stellaris:t4_bank"
+			}
+			weight: 1.5f
+		}
+		{
+			id: "7703000000000010"
+			item: {
+				count: 1
+				id: "cataclysm:tidal_claws"
+			}
+			weight: 0.35f
+		}
+	]
+	use_title: true
+}

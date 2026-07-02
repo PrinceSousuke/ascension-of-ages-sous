@@ -1,0 +1,45 @@
+{
+	icon: {
+		id: "create:brown_toolbox"
+	}
+	id: "7200000000000011"
+	loot_size: 1
+	order_index: 19
+	rewards: [
+		{
+			count: 16
+			id: "7211000000000001"
+			item: {
+				count: 1
+				id: "create:andesite_alloy"
+			}
+		}
+		{
+			count: 8
+			id: "7211000000000002"
+			item: {
+				count: 1
+				id: "create:cogwheel"
+			}
+		}
+		{
+			count: 8
+			id: "7211000000000003"
+			item: {
+				count: 1
+				id: "create:shaft"
+			}
+		}
+		{
+			count: 2
+			id: "7211000000000004"
+			item: {
+				count: 1
+				id: "create:gearbox"
+			}
+		}
+		{ id: "7211000000000005", item: { count: 1, id: "create:encased_fan" } }
+		{ id: "7211000000000006", item: { count: 1, id: "create:basin" } }
+	]
+	use_title: true
+}

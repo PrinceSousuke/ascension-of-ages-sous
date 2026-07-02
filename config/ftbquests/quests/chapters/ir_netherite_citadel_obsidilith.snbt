@@ -12,18 +12,13 @@
 	quest_links: [ ]
 	quests: [
 		{
-			hide_until_deps_complete: false
+			dependencies: ["4954011000000001"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
 			icon: {
 				id: "cataclysm:witherite_block"
 			}
-			dependencies: ["4954011000000001"]
 			id: "49540C1000000001"
-			title: "Ruined Citadel"
-			subtitle: "Find the netherite vault."
-			description: [
-				"Track down a &bRuined Citadel&r. &6Cataclysm&r's fortress is a dangerous, loot-heavy structure, and it holds the &c&lNetherite Monstrosity&r at its core."
-				"This chapter is the iron era's combat finale, so come geared and come ready."
-			]
 			rewards: [
 				{
 					id: "49540C3000001000"
@@ -33,13 +28,18 @@
 				{
 					id: "49540C3000001001"
 					table_id: 8430738502437568515L
-					title: "A combat cache to open the citadel."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -57,17 +57,12 @@
 		}
 		{
 			dependencies: ["49540C1000000001"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "cataclysm:infernal_forge"
 			}
 			id: "49540C1000000002"
-			title: "Netherite Monstrosity"
-			subtitle: "Wake the citadel's heart."
-			description: [
-				"Fight the &c&lNetherite Monstrosity&r in the citadel. The molten golem charges, slams the ground, and hurls debris, so keep moving, punish the recovery, and do not get cornered."
-				"Bring fire resistance and your best armor. Its horn is the prize."
-			]
 			rewards: [
 				{
 					id: "49540C3000002000"
@@ -77,13 +72,18 @@
 				{
 					id: "49540C3000002001"
 					table_id: 8430738502437568515L
-					title: "A combat cache from the golem fight."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -93,6 +93,15 @@
 					second: 20
 				}
 				entity: "cataclysm:netherite_monstrosity"
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				id: "49540C2000002000"
 				type: "kill"
 				value: 1L
@@ -102,17 +111,12 @@
 		}
 		{
 			dependencies: ["49540C1000000002"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "cataclysm:monstrous_horn"
 			}
 			id: "49540C1000000003"
-			title: "Monstrous Horn"
-			subtitle: "The Monstrosity's drop."
-			description: [
-				"Claim a &bMonstrous Horn&r from the fallen golem. Sounded, it unleashes a devastating blast, a boss-grade weapon earned only by beating the citadel."
-				"A trophy that hits back."
-			]
 			rewards: [
 				{
 					id: "49540C3000003000"
@@ -122,13 +126,18 @@
 				{
 					id: "49540C3000003001"
 					table_id: 8430738502437568513L
-					title: "A cache to go with the horn."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -146,17 +155,12 @@
 		}
 		{
 			dependencies: ["49540C1000000002"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "bosses_of_mass_destruction:obsidilith_rune"
 			}
 			id: "49540C1000000004"
-			title: "Obsidilith Arena"
-			subtitle: "Find the obelisk's seat."
-			description: [
-				"Locate the &c&lObsidilith&r Arena out in the End. The &6Bosses of Mass Destruction&r obelisk waits at its center, dormant until you approach."
-				"Scout the open ground before you wake it; you will need room to move."
-			]
 			rewards: [
 				{
 					id: "49540C3000004000"
@@ -166,13 +170,18 @@
 				{
 					id: "49540C3000004001"
 					table_id: 8430738502437568515L
-					title: "A combat cache near the arena."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -190,17 +199,12 @@
 		}
 		{
 			dependencies: ["49540C1000000004"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "bosses_of_mass_destruction:ancient_anima"
 			}
 			id: "49540C1000000005"
-			title: "Obsidilith"
-			subtitle: "Break the obelisk."
-			description: [
-				"Defeat the &c&lObsidilith&r. The obelisk cycles through four attacks, raising spike lines, pillars, and bursts in telegraphed patterns, so learn the tells and dodge rather than tank."
-				"Mobility and ranged damage win this fight. Its &bObsidian Heart&r drops when it falls."
-			]
 			rewards: [
 				{
 					id: "49540C3000005000"
@@ -210,13 +214,22 @@
 				{
 					id: "49540C3000005001"
 					table_id: 8430738502437568515L
-					title: "A combat cache from the obelisk."
+					type: "loot"
+				}
+				{
+					id: "5516455691ED6C18"
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -226,6 +239,15 @@
 					second: 20
 				}
 				entity: "bosses_of_mass_destruction:obsidilith"
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				id: "49540C2000005000"
 				type: "kill"
 				value: 1L
@@ -235,45 +257,33 @@
 		}
 		{
 			dependencies: ["49540C1000000005"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: {
 				id: "bosses_of_mass_destruction:obsidian_heart"
 			}
 			id: "49540C1000000006"
-			title: "Obsidian Heart"
-			subtitle: "The Obsidilith's core."
-			description: [
-				"Secure the &bObsidian Heart&r. It is the &c&lObsidilith&r's drop and a key requirement for the iron era's capstone, so store it somewhere safe."
-				"One of the proofs the finale will ask you to bring."
-			]
-			rewards: [
-				{
-					id: "49540C3000006000"
-					type: "xp"
-					xp: 25
+			rewards: [{
+				auto: "enabled"
+				command: "/astages add {p} obsidilith_defeated true true"
+				icon: {
+					id: "bosses_of_mass_destruction:obsidian_heart"
 				}
-				{
-					id: "49540C3000006001"
-					table_id: 8430738502437568513L
-					title: "A cache to guard with the heart."
-					type: "loot"
-				}
-				{
-					auto: "enabled"
-					command: "/astages add {p} obsidilith_defeated true true"
-					icon: {
-						id: "bosses_of_mass_destruction:obsidian_heart"
-					}
-					id: "49540C3000006002"
-					permission_level: 2
-					silent: true
-					team_reward: true
-					type: "command"
-				}
-			]
+				id: "49540C3000006002"
+				permission_level: 2
+				silent: true
+				team_reward: true
+				type: "command"
+			}]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -291,17 +301,12 @@
 		}
 		{
 			dependencies: ["49540C1000000003"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "cataclysm:lava_power_cell"
 			}
 			id: "49540C100000000C"
-			title: "Lava Power Cell"
-			subtitle: "Bottled molten power."
-			description: [
-				"Craft a &bLava Power Cell&r. It stores a charge drawn from the citadel's molten core, a &6Cataclysm&r power item for the recipes that demand it."
-				"A dense, dangerous &bbattery&r."
-			]
 			rewards: [
 				{
 					id: "49540C300000C000"
@@ -311,13 +316,18 @@
 				{
 					id: "49540C300000C001"
 					table_id: 8430738502437568513L
-					title: "A cache for the power work."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -335,17 +345,12 @@
 		}
 		{
 			dependencies: ["49540C1000000001"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "ironfurnaces:gold_furnace"
 			}
 			id: "49540E1000000001"
-			title: "Golden Furnace"
-			subtitle: "Optional: a faster smelter."
-			description: [
-				"Craft a &bGolden Furnace&r from &6Iron Furnaces&r. It smelts quicker and more efficiently than iron, a rung on the upgrade ladder that climbs through better metals."
-				"Worth swapping in for any hand smelting you still do."
-			]
 			optional: true
 			rewards: [
 				{
@@ -356,13 +361,18 @@
 				{
 					id: "49540E3000001001"
 					table_id: 8430738502437568513L
-					title: "A cache for the furnace upgrade."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -379,18 +389,16 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["49540E1000000001"]
+			dependencies: [
+				"49540E1000000001"
+				"11C25203906C0FD4"
+			]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: {
 				id: "eclipticseasons:greenhouse_core_container"
 			}
 			id: "49540E1000000006"
-			title: "Greenhouse Core"
-			subtitle: "Optional: grow against the season."
-			description: [
-				"Assemble a &bGreenhouse Core&r and a Spring core. It keeps a sheltered plot in growing weather year-round, an &6Ecliptic Seasons&r answer to a harsh climate."
-				"Steady crops no matter what the &bcalendar&r says."
-			]
 			optional: true
 			rewards: [
 				{
@@ -401,7 +409,6 @@
 				{
 					id: "49540E3000006001"
 					table_id: 8430738502437568513L
-					title: "A cache for the greenhouse."
 					type: "loot"
 				}
 			]
@@ -409,6 +416,12 @@
 			size: 1.0d
 			tasks: [
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -418,10 +431,16 @@
 						second: 20
 					}
 					id: "49540E2000006000"
-					item: { count: 1, id: "eclipticseasons:greenhouse_core_container" }
+					item: { count: 1, id: "eclipticseasons:hygrometer" }
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -441,34 +460,28 @@
 		{
 			dependencies: [
 				"4954021000000016"
-				"4954051000000011"
-				"495406100000001D"
 				"49540A100000000F"
 				"49540B1000000015"
 				"49540C1000000006"
+				"4954051000000011"
+				"495406100000001D"
+				"49540C100000002F"
 			]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: {
 				id: "bosses_of_mass_destruction:obsidian_heart"
 			}
 			id: "4954631000000000"
-			title: "The Iron Era Complete"
-			subtitle: "Six proofs and a heart."
-			description: [
-				"This is the iron era's capstone. Bring the &bObsidian Heart&r together with proof you have mastered every &dindustrial&r domain: steam, power, pressure, automation, magic feedstock, and the boss itself."
-				"Completing it closes the iron era and opens the gilded age beyond it."
-			]
 			rewards: [
 				{
-					id: "4954633000000000"
-					type: "xp"
-					xp: 100
-				}
-				{
-					id: "4954633000000001"
-					table_id: 8430738502437568531L
-					title: "The reward that carries you into the Gilded Age."
-					type: "loot"
+					auto: "enabled"
+					command: "/advancement grant {p} only aoa:journey/obsidilith"
+					id: "7891317B6E103371"
+					permission_level: 2
+					silent: true
+					team_reward: true
+					type: "command"
 				}
 				{
 					auto: "enabled"
@@ -519,6 +532,12 @@
 			shape: "gear"
 			size: 1.5d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -528,7 +547,7 @@
 					second: 20
 				}
 				id: "4954632000000000"
-				item: { count: 1, id: "bosses_of_mass_destruction:obsidian_heart" }
+				item: { count: 1, id: "bosses_of_mass_destruction:obsidilith_rune" }
 				type: "item"
 			}]
 			x: 9.5d
@@ -536,17 +555,12 @@
 		}
 		{
 			dependencies: ["49540C1000000006"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "bosses_of_mass_destruction:earthdive_spear"
 			}
 			id: "49540C100000000D"
-			title: "Earthdive Spear"
-			subtitle: "Optional: Obsidilith's weapon."
-			description: [
-				"Forge an &bEarthdive Spear&r from the &c&lObsidilith&r's drops. Thrown, it dives through the ground and erupts under a target, a ranged weapon with real reach."
-				"A standout drop from the obelisk fight."
-			]
 			optional: true
 			rewards: [
 				{
@@ -557,13 +571,18 @@
 				{
 					id: "6221AC4D6A74A65C"
 					table_id: 8430738502437568513L
-					title: "A combat cache for the spear."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -581,17 +600,12 @@
 		}
 		{
 			dependencies: ["49540C1000000006"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "bosses_of_mass_destruction:levitation_block"
 			}
 			id: "49540C100000000E"
-			title: "Table of Elevation"
-			subtitle: "Optional: a lift you build."
-			description: [
-				"Craft a &bTable of Elevation&r from &c&lObsidilith&r materials. It launches you upward on use, a quick vertical boost for towers and cliffs."
-				"Mobility without a &bjetpack&r's fuel."
-			]
 			optional: true
 			rewards: [
 				{
@@ -602,13 +616,18 @@
 				{
 					id: "2A90D8057E667F2A"
 					table_id: 8430738502437568513L
-					title: "A few parts for the lift."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -625,18 +644,16 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["49540C1000000006"]
+			dependencies: [
+				"49540B1000000015"
+				"49540C1000000006"
+			]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: {
 				id: "bosses_of_mass_destruction:mob_ward"
 			}
 			id: "49540C100000000F"
-			title: "Staff of Suppression"
-			subtitle: "Optional: keep mobs out."
-			description: [
-				"Build a &bStaff of Suppression&r. Placed or held it wards an area against hostile spawns, a peace-keeper for a base or a work site."
-				"Quiet nights, by design."
-			]
 			optional: true
 			rewards: [
 				{
@@ -647,13 +664,18 @@
 				{
 					id: "1D2E8617B0BCE78D"
 					table_id: 8430738502437568513L
-					title: "A cache for the ward."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -671,17 +693,12 @@
 		}
 		{
 			dependencies: ["49540E1000000001"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "ironfurnaces:emerald_furnace"
 			}
 			id: "49540C1000000010"
-			title: "Emerald Furnace"
-			subtitle: "Optional: higher up the ladder."
-			description: [
-				"Build an &bEmerald Furnace&r. It is one of the top &6Iron Furnaces&r tiers, fast and fuel-thrifty, and it accepts augments for extra tricks."
-				"The &bfurnace&r to settle on before augmenting it."
-			]
 			optional: true
 			rewards: [
 				{
@@ -692,13 +709,18 @@
 				{
 					id: "7178C613005C4FFD"
 					table_id: 8430738502437568513L
-					title: "A cache for the better furnace."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -716,17 +738,12 @@
 		}
 		{
 			dependencies: ["49540C1000000010"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "ironfurnaces:augment_factory"
 			}
 			id: "49540C1000000011"
-			title: "Augment: Factory"
-			subtitle: "Optional: supercharge the furnace."
-			description: [
-				"Craft the Factory augment. Slotted into an &bIron Furnace&r it boosts throughput, turning a single furnace into a small smelting line."
-				"Augments are how the better furnaces earn their tier."
-			]
 			optional: true
 			rewards: [
 				{
@@ -737,13 +754,18 @@
 				{
 					id: "0E8E21F3C7649CF8"
 					table_id: 8430738502437568513L
-					title: "A few parts for the augment."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -761,16 +783,12 @@
 		}
 		{
 			dependencies: ["49540C1000000001"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "betterend:crystalite_helmet"
 			}
 			id: "49540C1000000012"
-			title: "Crystalite Helmet"
-			subtitle: "Optional: Better End armor."
-			description: [
-				"Forge a &bCrystalite&r Helmet. &6Better End&r's crystal armor is light and protective, the head of a set worth assembling for the End-side endgame."
-			]
 			optional: true
 			rewards: [
 				{
@@ -781,13 +799,18 @@
 				{
 					id: "3F6E01A4C04A65D0"
 					table_id: 8430738502437568513L
-					title: "An armor cache for the set."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -805,16 +828,12 @@
 		}
 		{
 			dependencies: ["49540C1000000012"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "betterend:crystalite_chestplate"
 			}
 			id: "49540C1000000013"
-			title: "Crystalite Chestplate"
-			subtitle: "Optional: the body piece."
-			description: [
-				"Craft a &bCrystalite&r Chestplate. The heaviest defense of the &6Better End&r crystal set, the piece to make first if you make only one."
-			]
 			optional: true
 			rewards: [
 				{
@@ -825,13 +844,18 @@
 				{
 					id: "63C5AC607A5CCB74"
 					table_id: 8430738502437568513L
-					title: "An armor cache for the chest."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -849,16 +873,12 @@
 		}
 		{
 			dependencies: ["49540C1000000013"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "betterend:crystalite_leggings"
 			}
 			id: "49540C1000000014"
-			title: "Crystalite Leggings"
-			subtitle: "Optional: the leg piece."
-			description: [
-				"Build &bCrystalite&r Leggings. They cover the lower half of the crystal set, second only to the chest in protection."
-			]
 			optional: true
 			rewards: [
 				{
@@ -869,13 +889,18 @@
 				{
 					id: "750C8DC63C5A969F"
 					table_id: 8430738502437568513L
-					title: "An armor cache for the legs."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -893,16 +918,12 @@
 		}
 		{
 			dependencies: ["49540C1000000014"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "betterend:crystalite_boots"
 			}
 			id: "49540C1000000015"
-			title: "Crystalite Boots"
-			subtitle: "Optional: finish the set."
-			description: [
-				"Forge &bCrystalite&r Boots to complete the set. A full &6Better End&r crystal suit carries its own small bonus over mismatched pieces."
-			]
 			optional: true
 			rewards: [
 				{
@@ -913,13 +934,18 @@
 				{
 					id: "69153CF65595C01A"
 					table_id: 8430738502437568513L
-					title: "An armor cache for the boots."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -937,16 +963,12 @@
 		}
 		{
 			dependencies: ["49540C1000000001"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "betterend:aeternium_helmet"
 			}
 			id: "49540C1000000016"
-			title: "Aeternium Helmet"
-			subtitle: "Optional: Better End's best."
-			description: [
-				"Forge an &bAeternium&r Helmet. Aeternium is &6Better End&r's top metal, the head of the strongest armor the dimension offers, a clear step above &bcrystalite&r."
-			]
 			optional: true
 			rewards: [
 				{
@@ -957,13 +979,18 @@
 				{
 					id: "33CA9FEDFE691351"
 					table_id: 8430738502437568513L
-					title: "An armor cache for the top set."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -981,16 +1008,12 @@
 		}
 		{
 			dependencies: ["49540C1000000016"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "betterend:aeternium_chestplate"
 			}
 			id: "49540C1000000017"
-			title: "Aeternium Chestplate"
-			subtitle: "Optional: the body piece."
-			description: [
-				"Craft an &bAeternium&r Chestplate. The chest of &6Better End&r's premier set, heavy protection from the dimension's hardest-won metal."
-			]
 			optional: true
 			rewards: [
 				{
@@ -1001,13 +1024,18 @@
 				{
 					id: "5FB9CD25898C7AB5"
 					table_id: 8430738502437568513L
-					title: "An armor cache for the chest."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1025,16 +1053,12 @@
 		}
 		{
 			dependencies: ["49540C1000000017"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "betterend:aeternium_leggings"
 			}
 			id: "49540C1000000018"
-			title: "Aeternium Leggings"
-			subtitle: "Optional: the leg piece."
-			description: [
-				"Build &bAeternium&r Leggings. They round out the lower half of &6Better End&r's best suit."
-			]
 			optional: true
 			rewards: [
 				{
@@ -1045,13 +1069,18 @@
 				{
 					id: "72A8A785C2391821"
 					table_id: 8430738502437568513L
-					title: "An armor cache for the legs."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1069,16 +1098,12 @@
 		}
 		{
 			dependencies: ["49540C1000000018"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "betterend:aeternium_boots"
 			}
 			id: "49540C1000000019"
-			title: "Aeternium Boots"
-			subtitle: "Optional: finish the set."
-			description: [
-				"Forge &bAeternium&r Boots to complete the suit. The full set is among the toughest armor an End diver can wear."
-			]
 			optional: true
 			rewards: [
 				{
@@ -1089,13 +1114,18 @@
 				{
 					id: "1CFFB81024DB2D15"
 					table_id: 8430738502437568513L
-					title: "An armor cache for the boots."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1113,16 +1143,12 @@
 		}
 		{
 			dependencies: ["49540C1000000001"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "eternal_starlight:starlit_diamond_helmet"
 			}
 			id: "49540C100000001A"
-			title: "Starlit Diamond Helmet"
-			subtitle: "Optional: Eternal Starlight armor."
-			description: [
-				"Forge a &bStarlit Diamond&r Helmet. &6Eternal Starlight&r's charged diamond armor is strong and faintly glowing, the head of a fine set for the moonlit dimension and beyond."
-			]
 			optional: true
 			rewards: [
 				{
@@ -1133,13 +1159,18 @@
 				{
 					id: "738FBB2937CAC9D7"
 					table_id: 8430738502437568513L
-					title: "An armor cache for the set."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1157,16 +1188,12 @@
 		}
 		{
 			dependencies: ["49540C100000001A"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "eternal_starlight:starlit_diamond_chestplate"
 			}
 			id: "49540C100000001B"
-			title: "Starlit Diamond Chestplate"
-			subtitle: "Optional: the body piece."
-			description: [
-				"Craft a &bStarlit Diamond&r Chestplate, the heaviest piece of &6Eternal Starlight&r's diamond set and the one to prioritize."
-			]
 			optional: true
 			rewards: [
 				{
@@ -1177,13 +1204,18 @@
 				{
 					id: "774AC0F536F39AAE"
 					table_id: 8430738502437568513L
-					title: "An armor cache for the chest."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1201,16 +1233,12 @@
 		}
 		{
 			dependencies: ["49540C100000001B"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "eternal_starlight:starlit_diamond_leggings"
 			}
 			id: "49540C100000001C"
-			title: "Starlit Diamond Leggings"
-			subtitle: "Optional: the leg piece."
-			description: [
-				"Build &bStarlit Diamond&r Leggings to cover the lower half of the set."
-			]
 			optional: true
 			rewards: [
 				{
@@ -1221,13 +1249,18 @@
 				{
 					id: "37EA379FE33D36DA"
 					table_id: 8430738502437568513L
-					title: "An armor cache for the legs."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1245,16 +1278,12 @@
 		}
 		{
 			dependencies: ["49540C100000001C"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "eternal_starlight:starlit_diamond_boots"
 			}
 			id: "49540C100000001D"
-			title: "Starlit Diamond Boots"
-			subtitle: "Optional: finish the set."
-			description: [
-				"Forge &bStarlit Diamond&r Boots to complete &6Eternal Starlight&r's diamond suit."
-			]
 			optional: true
 			rewards: [
 				{
@@ -1265,13 +1294,18 @@
 				{
 					id: "77C67BC349A5FBFB"
 					table_id: 8430738502437568513L
-					title: "An armor cache for the boots."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1289,16 +1323,12 @@
 		}
 		{
 			dependencies: ["49540C1000000001"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "eternal_starlight:unrealium_helmet"
 			}
 			id: "49540C100000001E"
-			title: "Unrealium Helmet"
-			subtitle: "Optional: Starlight's top metal."
-			description: [
-				"Forge an &bUnrealium&r Helmet. Unrealium is &6Eternal Starlight&r's strongest metal, the head of the dimension's premier armor set."
-			]
 			optional: true
 			rewards: [
 				{
@@ -1309,13 +1339,18 @@
 				{
 					id: "03653E19DF461CE3"
 					table_id: 8430738502437568513L
-					title: "An armor cache for the top set."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1333,16 +1368,12 @@
 		}
 		{
 			dependencies: ["49540C100000001E"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "eternal_starlight:unrealium_chestplate"
 			}
 			id: "49540C100000001F"
-			title: "Unrealium Chestplate"
-			subtitle: "Optional: the body piece."
-			description: [
-				"Craft an &bUnrealium&r Chestplate, the heaviest defense of &6Eternal Starlight&r's best armor."
-			]
 			optional: true
 			rewards: [
 				{
@@ -1353,13 +1384,18 @@
 				{
 					id: "792B300FE423F30E"
 					table_id: 8430738502437568513L
-					title: "An armor cache for the chest."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1377,16 +1413,12 @@
 		}
 		{
 			dependencies: ["49540C100000001F"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "eternal_starlight:unrealium_leggings"
 			}
 			id: "49540C1000000020"
-			title: "Unrealium Leggings"
-			subtitle: "Optional: the leg piece."
-			description: [
-				"Build &bUnrealium&r Leggings to round out the lower half of the top Starlight set."
-			]
 			optional: true
 			rewards: [
 				{
@@ -1397,13 +1429,18 @@
 				{
 					id: "400E85180C9F8814"
 					table_id: 8430738502437568513L
-					title: "An armor cache for the legs."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1421,16 +1458,12 @@
 		}
 		{
 			dependencies: ["49540C1000000020"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "eternal_starlight:unrealium_boots"
 			}
 			id: "49540C1000000021"
-			title: "Unrealium Boots"
-			subtitle: "Optional: finish the set."
-			description: [
-				"Forge &bUnrealium&r Boots to complete &6Eternal Starlight&r's finest suit."
-			]
 			optional: true
 			rewards: [
 				{
@@ -1441,13 +1474,18 @@
 				{
 					id: "10798E4CDF796FA1"
 					table_id: 8430738502437568513L
-					title: "An armor cache for the boots."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1465,16 +1503,12 @@
 		}
 		{
 			dependencies: ["49540C1000000001"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "eternal_starlight:aethersent_hood"
 			}
 			id: "49540C1000000022"
-			title: "Aethersent Hood"
-			subtitle: "Optional: a lighter set."
-			description: [
-				"Craft an &bAethersent&r Hood. The aethersent set is &6Eternal Starlight&r's lighter, more mobile armor, the hood being its first piece for a nimbler build."
-			]
 			optional: true
 			rewards: [
 				{
@@ -1485,13 +1519,18 @@
 				{
 					id: "78B5E8F59E6EA223"
 					table_id: 8430738502437568513L
-					title: "An armor cache for the light set."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1509,16 +1548,12 @@
 		}
 		{
 			dependencies: ["49540C1000000022"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "eternal_starlight:aethersent_cape"
 			}
 			id: "49540C1000000023"
-			title: "Aethersent Cape"
-			subtitle: "Optional: the body piece."
-			description: [
-				"Build an &bAethersent&r Cape, the chest piece of Starlight's light armor, trading some protection for movement."
-			]
 			optional: true
 			rewards: [
 				{
@@ -1529,13 +1564,18 @@
 				{
 					id: "1AF46F4945F0389E"
 					table_id: 8430738502437568513L
-					title: "An armor cache for the cape."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1553,16 +1593,12 @@
 		}
 		{
 			dependencies: ["49540C1000000023"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "eternal_starlight:aethersent_bottoms"
 			}
 			id: "49540C1000000024"
-			title: "Aethersent Bottoms"
-			subtitle: "Optional: the leg piece."
-			description: [
-				"Craft &bAethersent&r Bottoms to cover the lower half of the light set."
-			]
 			optional: true
 			rewards: [
 				{
@@ -1573,13 +1609,18 @@
 				{
 					id: "1080C043BD9D70B3"
 					table_id: 8430738502437568513L
-					title: "An armor cache for the legs."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1597,16 +1638,12 @@
 		}
 		{
 			dependencies: ["49540C1000000024"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "eternal_starlight:aethersent_boots"
 			}
 			id: "49540C1000000025"
-			title: "Aethersent Boots"
-			subtitle: "Optional: finish the set."
-			description: [
-				"Forge &bAethersent&r Boots to complete the light Starlight suit, for a fighter who values speed over plate."
-			]
 			optional: true
 			rewards: [
 				{
@@ -1617,13 +1654,18 @@
 				{
 					id: "293CFC52AF34DA68"
 					table_id: 8430738502437568513L
-					title: "An armor cache for the boots."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1641,17 +1683,12 @@
 		}
 		{
 			dependencies: ["49540C1000000001"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "undergarden:froststeel_chestplate"
 			}
 			id: "49540C1000000026"
-			title: "Froststeel Armor Set"
-			subtitle: "Optional: Undergarden cold armor."
-			description: [
-				"Forge the full &bFroststeel&r set: helmet, chestplate, leggings, and boots. Cold-forged in the &6Undergarden&r, it is a solid suit with a chilly edge."
-				"A dependable set from the underworld's metal."
-			]
 			optional: true
 			rewards: [
 				{
@@ -1662,7 +1699,6 @@
 				{
 					id: "0DFCFC1B4EBE77F4"
 					table_id: 8430738502437568513L
-					title: "An armor cache for the frost suit."
 					type: "loot"
 				}
 			]
@@ -1670,6 +1706,12 @@
 			size: 1.0d
 			tasks: [
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1683,6 +1725,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1696,6 +1744,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1709,6 +1763,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1727,17 +1787,12 @@
 		}
 		{
 			dependencies: ["49540C1000000001"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "undergarden:utherium_chestplate"
 			}
 			id: "49540C1000000027"
-			title: "Utherium Armor Set"
-			subtitle: "Optional: Undergarden crystal armor."
-			description: [
-				"Assemble the full &bUtherium&r set: helmet, chestplate, leggings, and boots. Cut from the &6Undergarden&r's red crystal, it is the dimension's stronger armor tier."
-				"The reward for working &bUtherium&r past tools into plate."
-			]
 			optional: true
 			rewards: [
 				{
@@ -1748,7 +1803,6 @@
 				{
 					id: "76C02751A97421DB"
 					table_id: 8430738502437568513L
-					title: "An armor cache for the crystal suit."
 					type: "loot"
 				}
 			]
@@ -1756,6 +1810,12 @@
 			size: 1.0d
 			tasks: [
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1769,6 +1829,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1782,6 +1848,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1795,6 +1867,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1813,17 +1891,12 @@
 		}
 		{
 			dependencies: ["49540C1000000001"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "undergarden:ancient_chestplate"
 			}
 			id: "49540C1000000028"
-			title: "Ancient Armor Set"
-			subtitle: "Optional: the forgotten plate."
-			description: [
-				"Forge the Ancient set: helmet, chestplate, and leggings from the &6Undergarden&r's forgotten metal. It is the deepest tier the &bcatacombs&r offer."
-				"Hard-won from the dimension's most dangerous corners."
-			]
 			optional: true
 			rewards: [
 				{
@@ -1834,7 +1907,6 @@
 				{
 					id: "6E0BC3D74A2CED0A"
 					table_id: 8430738502437568513L
-					title: "An armor cache for the ancient plate."
 					type: "loot"
 				}
 			]
@@ -1842,6 +1914,12 @@
 			size: 1.0d
 			tasks: [
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1855,6 +1933,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1868,6 +1952,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1886,17 +1976,12 @@
 		}
 		{
 			dependencies: ["49540C1000000001"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "deeperdarker:resonarium_chestplate"
 			}
 			id: "49540C1000000029"
-			title: "Resonarium Armor Set"
-			subtitle: "Optional: Otherside armor."
-			description: [
-				"Assemble the full &bResonarium&r set: helmet, chestplate, leggings, and boots. Forged from &6Deeper Darker&r's signature metal, it carries the Otherside's quiet strength."
-				"The sculk dimension's answer to endgame plate."
-			]
 			optional: true
 			rewards: [
 				{
@@ -1907,7 +1992,6 @@
 				{
 					id: "191012F24E51B913"
 					table_id: 8430738502437568513L
-					title: "An armor cache for the sculk suit."
 					type: "loot"
 				}
 			]
@@ -1915,6 +1999,12 @@
 			size: 1.0d
 			tasks: [
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1928,6 +2018,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1941,6 +2037,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1954,6 +2056,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1972,17 +2080,12 @@
 		}
 		{
 			dependencies: ["49540C1000000001"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "netherex:netherite_horse_armor"
 			}
 			id: "49540C100000002A"
-			title: "Netherite Horse Armor"
-			subtitle: "Optional: armor your mount."
-			description: [
-				"Craft &bNetherite Horse Armor&r. It is the toughest barding available, keeping a hard-won mount alive through the fights you ride it into."
-				"A small mercy for a loyal horse."
-			]
 			optional: true
 			rewards: [
 				{
@@ -1993,13 +2096,18 @@
 				{
 					id: "5C728389DDE3B72B"
 					table_id: 8430738502437568513L
-					title: "A cache for the stable."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -2017,17 +2125,12 @@
 		}
 		{
 			dependencies: ["49540C1000000001"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
-				id: "bosses_of_mass_destruction:soul_star"
+				id: "bosses_of_mass_destruction:blazing_eye"
 			}
 			id: "49540C100000002B"
-			title: "Nether Gauntlet"
-			subtitle: "Optional: the burning hand."
-			description: [
-				"Hunt the &c&lNether Gauntlet&r, a &6Bosses of Mass Destruction&r fight. The giant hand summons fire and crushes from above, so bring fire resistance and stay out from under it."
-				"Its &bsoul star&r drop is a rare prize."
-			]
 			optional: true
 			rewards: [
 				{
@@ -2038,13 +2141,18 @@
 				{
 					id: "1C4BC8C416D77E94"
 					table_id: 8430738502437568513L
-					title: "A combat cache from the gauntlet."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -2054,6 +2162,15 @@
 					second: 20
 				}
 				entity: "bosses_of_mass_destruction:gauntlet"
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				id: "0CD3757ABE09093B"
 				type: "kill"
 				value: 1L
@@ -2063,17 +2180,12 @@
 		}
 		{
 			dependencies: ["49540C1000000001"]
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
 			icon: {
 				id: "aether:valkyrie_chestplate"
 			}
 			id: "49540C100000002C"
-			title: "Valkyrie Queen"
-			subtitle: "Optional: settle the score."
-			description: [
-				"Return to the &6Aether&r's &bSilver Dungeon&r and best the &c&lValkyrie Queen&r, if you have not already. Her lance and teleports make for a sharp duel even with iron-era gear."
-				"A boss worth revisiting for the Valkyrie equipment."
-			]
 			optional: true
 			rewards: [
 				{
@@ -2084,13 +2196,18 @@
 				{
 					id: "1DF6A6B4EDCDCC66"
 					table_id: 8430738502437568513L
-					title: "A combat cache from the duel."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -2100,12 +2217,191 @@
 					second: 20
 				}
 				entity: "aether:valkyrie_queen"
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				id: "2EA9740CE5D70CE4"
 				type: "kill"
 				value: 1L
 			}]
 			x: -1.5d
 			y: -4.5d
+		}
+		{
+			dependencies: ["49540C1000000006"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "fdbosses:eye_of_chesed"
+			}
+			id: "49540C100000002D"
+			rewards: [
+				{
+					id: "49540C3000002D00"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "49540C3000002D01"
+					table_id: 8430738502437568515L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540C2000002D01"
+				item: { count: 1, id: "fdbosses:eye_of_chesed" }
+				type: "item"
+			}]
+			x: 13.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["49540C100000002D"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "fdbosses:chesed_trophy"
+			}
+			id: "49540C100000002E"
+			rewards: [
+				{
+					id: "49540C3000002E00"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "49540C3000002E01"
+					table_id: 8430738502437568515L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540C2000002E01"
+				structure: "fdbosses:chesed_arena"
+				type: "structure"
+			}]
+			x: 14.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["49540C100000002E"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "fdbosses:lightning_core"
+			}
+			id: "49540C100000002F"
+			rewards: [
+				{
+					auto: "enabled"
+					command: "/astages add {p} chesed_defeated true true"
+					icon: {
+						id: "fdbosses:lightning_core"
+					}
+					id: "49540C3000002F00"
+					permission_level: 2
+					silent: true
+					team_reward: true
+					type: "command"
+				}
+				{
+					id: "49540C3000002F01"
+					type: "xp"
+					xp: 200
+				}
+			]
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					entity: "fdbosses:chesed"
+					entity_vis_idle_mode: "USE_GLOBAL"
+					entity_vis_offset_x: 0.0f
+					entity_vis_offset_y: 0.0f
+					entity_vis_rotation: 0.0f
+					entity_vis_silhouette_mode: "NONE"
+					entity_vis_size: 1.0f
+					entity_vis_spin_mode: "USE_GLOBAL"
+					entity_vis_use_as_quest_icon: false
+					entity_vis_walk_mode: "USE_GLOBAL"
+					id: "49540C2000002F01"
+					type: "kill"
+					value: 1L
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "49540C2000002F02"
+					item: { count: 1, id: "fdbosses:lightning_core" }
+					type: "item"
+				}
+			]
+			x: 13.0d
+			y: -3.0d
 		}
 	]
 }

@@ -1,0 +1,2247 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ir_ir_side_gear_hidden_equipment"
+	group: "3F77A31B7D30C0AA"
+	hide_quest_until_deps_complete: true
+	icon: {
+		id: "immersiveengineering:revolver"
+	}
+	id: "49540D0000000000"
+	order_index: 8
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["4954631000000000"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "aether:valkyrie_cape"
+			}
+			id: "49540D1000000001"
+			rewards: [
+				{
+					id: "49540D3000001000"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "49540D3000001001"
+					table_id: 8430738502437568515L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				entity: "aether:valkyrie_queen"
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "49540D2000001000"
+				type: "kill"
+				value: 1L
+			}]
+			x: 0.0d
+			y: -2.5d
+		}
+		,
+		{
+			dependencies: ["4954631000000000"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "block_factorys_bosses:yeti_spawn_egg"
+			}
+			id: "49540D1000000002"
+			optional: true
+			rewards: [
+				{
+					id: "49540D3000002000"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "49540D3000002001"
+					table_id: 8430738502437568515L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				entity: "block_factorys_bosses:yeti"
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "49540D2000002000"
+				type: "kill"
+				value: 1L
+			}]
+			x: -5.0d
+			y: 6.0d
+		}
+		,
+		{
+			dependencies: ["4954631000000000"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "cataclysm:gauntlet_of_guard"
+			}
+			id: "49540D1000000003"
+			optional: true
+			rewards: [
+				{
+					id: "49540D3000003000"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "49540D3000003001"
+					table_id: 8430738502437568515L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				entity: "cataclysm:ender_guardian"
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "49540D2000003000"
+				type: "kill"
+				value: 1L
+			}]
+			x: -6.5d
+			y: 6.0d
+		}
+		,
+		{
+			dependencies: ["4954631000000000"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "unusualend:spectral_leggings"
+			}
+			id: "49540D1000000004"
+			rewards: [
+				{
+					id: "49540D3000004000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "49540D3000004001"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540D2000004000"
+				item: { count: 1, id: "unusualend:spectral_leggings" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		,
+		{
+			dependencies: ["4954631000000000"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "immersiveengineering:revolver"
+			}
+			id: "49540D1000000005"
+			rewards: [
+				{
+					id: "49540D3000005000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "49540D3000005001"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540D2000005000"
+				item: { count: 1, id: "immersiveengineering:revolver" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.5d
+		}
+		,
+		{
+			dependencies: ["4954631000000000"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "immersiveengineering:railgun"
+			}
+			id: "49540D1000000006"
+			rewards: [
+				{
+					id: "49540D3000006000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "49540D3000006001"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540D2000006000"
+				item: { count: 1, id: "immersiveengineering:railgun" }
+				type: "item"
+			}]
+			x: -8.0d
+			y: 4.0d
+		}
+		,
+		{
+			dependencies: ["4954631000000000"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "pneumaticcraft:pneumatic_chestplate"
+			}
+			id: "49540D1000000007"
+			rewards: [
+				{
+					id: "49540D3000007000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "49540D3000007001"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540D2000007000"
+				item: { count: 1, id: "pneumaticcraft:pneumatic_chestplate" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.0d
+		}
+		,
+		{
+			dependencies: ["4954631000000000"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "oritech:jetpack"
+			}
+			id: "49540D1000000008"
+			rewards: [
+				{
+					id: "49540D3000008000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "49540D3000008001"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540D2000008000"
+				item: { count: 1, id: "oritech:jetpack" }
+				type: "item"
+			}]
+			x: -6.5d
+			y: 4.0d
+		}
+		,
+		{
+			dependencies: ["4954631000000000"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "immersiveengineering:drill"
+			}
+			id: "49540D1000000009"
+			rewards: [
+				{
+					id: "49540D3000009000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "49540D3000009001"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540D2000009000"
+				item: { count: 1, id: "immersiveengineering:drill" }
+				type: "item"
+			}]
+			x: -8.0d
+			y: 6.0d
+		}
+		,
+		{
+			dependencies: ["4954631000000000"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "immersiveengineering:chemthrower"
+			}
+			id: "49540D100000000A"
+			rewards: [
+				{
+					id: "49540D300000A000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "49540D300000A001"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540D200000A000"
+				item: { count: 1, id: "immersiveengineering:chemthrower" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: 4.0d
+		}
+		,
+		{
+			dependencies: ["49540D1000000001"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "aether:valkyrie_lance"
+			}
+			id: "49540D100000000B"
+			rewards: [
+				{
+					id: "49540D300000B000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "49540D300000B001"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540D200000B000"
+				item: { count: 1, id: "aether:valkyrie_lance" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -1.0d
+		}
+		,
+		{
+			dependencies: ["49540D1000000005"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "immersiveengineering:armor_faraday_chestplate"
+			}
+			id: "49540D100000000D"
+			rewards: [
+				{
+					id: "49540D300000D000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "49540D300000D001"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540D200000D000"
+				item: { count: 1, id: "immersiveengineering:armor_faraday_chestplate" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 14.0d
+		}
+		,
+		{
+			dependencies: ["49540D1000000005"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "immersiveengineering:armor_steel_chestplate"
+			}
+			id: "49540D100000000E"
+			rewards: [
+				{
+					id: "49540D300000E000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "49540D300000E001"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540D200000E000"
+				item: { count: 1, id: "immersiveengineering:armor_steel_chestplate" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 14.0d
+		}
+		,
+		{
+			dependencies: ["49540D1000000007"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "pneumaticcraft:jackhammer"
+			}
+			id: "49540D100000000F"
+			rewards: [
+				{
+					id: "49540D300000F000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "49540D300000F001"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540D200000F000"
+				item: { count: 1, id: "pneumaticcraft:jackhammer" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 17.0d
+		}
+		,
+		{
+			dependencies: ["49540D1000000007"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "pneumaticcraft:minigun"
+			}
+			id: "49540D1000000010"
+			rewards: [
+				{
+					id: "49540D3000010000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "49540D3000010001"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540D2000010000"
+				item: { count: 1, id: "pneumaticcraft:minigun" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 15.5d
+		}
+		,
+		{
+			dependencies: ["49540D1000000005"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "immersiveengineering:skyhook"
+			}
+			id: "49540D1000000011"
+			rewards: [
+				{
+					id: "49540D3000011000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "49540D3000011001"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540D2000011000"
+				item: { count: 1, id: "immersiveengineering:skyhook" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 15.5d
+		}
+		,
+		{
+			dependencies: ["49540D1000000004"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "arsenal:unique_claymore_1"
+			}
+			id: "49540D1000000012"
+			optional: true
+			rewards: [
+				{
+					id: "2674E1E31CF08334"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "533F1202840408FA"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540D2000000012"
+				item: { count: 1, id: "arsenal:unique_claymore_1" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 1.5d
+		}
+		,
+		{
+			dependencies: ["49540D1000000004"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "arsenal:unique_dagger_1"
+			}
+			id: "49540D1000000013"
+			optional: true
+			rewards: [
+				{
+					id: "3EC770B57307B00F"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "7F21524CEC48FE00"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540D2000000013"
+				item: { count: 1, id: "arsenal:unique_dagger_1" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.5d
+		}
+		,
+		{
+			dependencies: ["49540D1000000004"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "arsenal:unique_double_axe_1"
+			}
+			id: "49540D1000000014"
+			optional: true
+			rewards: [
+				{
+					id: "2E23F20F8CC10CC0"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "240849985B059802"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540D2000000014"
+				item: { count: 1, id: "arsenal:unique_double_axe_1" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.5d
+		}
+		,
+		{
+			dependencies: ["49540D1000000004"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "arsenal:unique_glaive_1"
+			}
+			id: "49540D1000000015"
+			optional: true
+			rewards: [
+				{
+					id: "0AFE6F28E566BC2B"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "65F22A96A5B4111F"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540D2000000015"
+				item: { count: 1, id: "arsenal:unique_glaive_1" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.5d
+		}
+		,
+		{
+			dependencies: ["49540D1000000004"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "arsenal:unique_hammer_1"
+			}
+			id: "49540D1000000016"
+			optional: true
+			rewards: [
+				{
+					id: "6D04A273B9E10D4C"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "4477D26D83D43C6C"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540D2000000016"
+				item: { count: 1, id: "arsenal:unique_hammer_1" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 2.5d
+		}
+		,
+		{
+			dependencies: ["49540D1000000004"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "arsenal:unique_heavy_crossbow_1"
+			}
+			id: "49540D1000000017"
+			optional: true
+			rewards: [
+				{
+					id: "7B4254DEF6CBAB36"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "10266E8FF2E6C31A"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540D2000000017"
+				item: { count: 1, id: "arsenal:unique_heavy_crossbow_1" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 3.0d
+		}
+		,
+		{
+			dependencies: ["49540D1000000004"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "arsenal:unique_longbow_1"
+			}
+			id: "49540D1000000018"
+			optional: true
+			rewards: [
+				{
+					id: "1862CB5F6C26A7DC"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "7EDCCAB2AF30D739"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540D2000000018"
+				item: { count: 1, id: "arsenal:unique_longbow_1" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 3.0d
+		}
+		,
+		{
+			dependencies: ["49540D1000000004"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "arsenal:unique_mace_1"
+			}
+			id: "49540D1000000019"
+			optional: true
+			rewards: [
+				{
+					id: "5FA312683954B829"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "5537F12F2496FD10"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540D2000000019"
+				item: { count: 1, id: "arsenal:unique_mace_1" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 8.0d
+		}
+		,
+		{
+			dependencies: ["49540D1000000004"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "arsenal:unique_shield_1"
+			}
+			id: "49540D100000001A"
+			optional: true
+			rewards: [
+				{
+					id: "2E8DAC0B6849F153"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "186DA158CBC5ED96"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540D200000001A"
+				item: { count: 1, id: "arsenal:unique_shield_1" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 3.0d
+		}
+		,
+		{
+			dependencies: ["49540D1000000004"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "arsenal:unique_sickle_1"
+			}
+			id: "49540D100000001B"
+			optional: true
+			rewards: [
+				{
+					id: "60F7150E95FEB379"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "6396C017480131CE"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540D200000001B"
+				item: { count: 1, id: "arsenal:unique_sickle_1" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 4.0d
+		}
+		,
+		{
+			dependencies: ["49540D1000000004"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "arsenal:unique_spear_1"
+			}
+			id: "49540D100000001C"
+			optional: true
+			rewards: [
+				{
+					id: "2F9D71B00204A37D"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "4F7BB4ED678519FF"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540D200000001C"
+				item: { count: 1, id: "arsenal:unique_spear_1" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 4.5d
+		}
+		,
+		{
+			dependencies: ["49540D1000000004"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "arsenal:unique_staff_damage_2"
+			}
+			id: "49540D100000001D"
+			optional: true
+			rewards: [
+				{
+					id: "7446D618D4E4F2A2"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "1CD25693E5961E45"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540D200000001D"
+				item: { count: 1, id: "arsenal:unique_staff_damage_2" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 4.5d
+		}
+		,
+		{
+			dependencies: ["49540D1000000004"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "arsenal:unique_staff_heal_1"
+			}
+			id: "49540D100000001E"
+			optional: true
+			rewards: [
+				{
+					id: "2B595F67827EF60D"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "74F49834B01E21F3"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540D200000001E"
+				item: { count: 1, id: "arsenal:unique_staff_heal_1" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 9.5d
+		}
+		,
+		{
+			dependencies: ["49540D1000000004"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "mekanismtools:wood_paxel"
+			}
+			id: "49540D100000001F"
+			optional: true
+			rewards: [
+				{
+					id: "3B0863070A36C071"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "781287EDABB5AC23"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540D200000001F"
+				item: { count: 1, id: "mekanismtools:wood_paxel" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 4.5d
+		}
+		,
+		{
+			dependencies: ["49540D1000000004"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "mekanismtools:stone_paxel"
+			}
+			id: "49540D1000000020"
+			optional: true
+			rewards: [
+				{
+					id: "51212CC989C2217F"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "5DA5832D03EDE95F"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540D2000000020"
+				item: { count: 1, id: "mekanismtools:stone_paxel" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 5.5d
+		}
+		,
+		{
+			dependencies: ["49540D1000000004"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "mekanismtools:lapis_lazuli_helmet"
+			}
+			id: "49540D1000000021"
+			optional: true
+			rewards: [
+				{
+					id: "745A124C099205BE"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "4526F615B22B5C3A"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540D2000000021"
+				item: { count: 1, id: "mekanismtools:lapis_lazuli_helmet" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 6.0d
+		}
+		,
+		{
+			dependencies: ["49540D1000000004"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "mekanismtools:lapis_lazuli_chestplate"
+			}
+			id: "49540D1000000022"
+			optional: true
+			rewards: [
+				{
+					id: "6D4099687BD32C9C"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "4B314D3B594761A1"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540D2000000022"
+				item: { count: 1, id: "mekanismtools:lapis_lazuli_chestplate" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 6.0d
+		}
+		,
+		{
+			dependencies: ["49540D1000000004"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "mekanismtools:lapis_lazuli_leggings"
+			}
+			id: "49540D1000000023"
+			optional: true
+			rewards: [
+				{
+					id: "48CF822C3EE9D0BA"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "15679B109599D70B"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540D2000000023"
+				item: { count: 1, id: "mekanismtools:lapis_lazuli_leggings" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 11.0d
+		}
+		,
+		{
+			dependencies: ["49540D1000000004"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "mekanismtools:lapis_lazuli_boots"
+			}
+			id: "49540D1000000024"
+			optional: true
+			rewards: [
+				{
+					id: "352E0FAC95B61605"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "1C1C97E5D514EE33"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540D2000000024"
+				item: { count: 1, id: "mekanismtools:lapis_lazuli_boots" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 6.0d
+		}
+		,
+		{
+			dependencies: ["49540D1000000004"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "mekanismtools:steel_chestplate"
+			}
+			id: "49540D1000000025"
+			optional: true
+			rewards: [
+				{
+					id: "1DB1ED8268D13D31"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "5A2033FC8D0F75B9"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "2BBC5B7E12C3AD82"
+					item: { count: 1, id: "mekanismtools:steel_helmet" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "04131EB995428854"
+					item: { count: 1, id: "mekanismtools:steel_chestplate" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "7CE2846BE445DA84"
+					item: { count: 1, id: "mekanismtools:steel_leggings" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "7362F769ABC0734D"
+					item: { count: 1, id: "mekanismtools:steel_boots" }
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 7.0d
+		}
+		,
+		{
+			dependencies: ["49540D100000000B"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "aether:valkyrie_chestplate"
+			}
+			id: "49540D1000000026"
+			optional: true
+			rewards: [
+				{
+					id: "76F2C23FB061B3EE"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "79A6DDB2267362E1"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "3323E7B3670501CD"
+					item: { count: 1, id: "aether:valkyrie_helmet" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "5146269CFF0ED378"
+					item: { count: 1, id: "aether:valkyrie_chestplate" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "3AEFC5B240AF5C14"
+					item: { count: 1, id: "aether:valkyrie_leggings" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "5F895009F3772567"
+					item: { count: 1, id: "aether:valkyrie_boots" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "37C19731856885E7"
+					item: { count: 1, id: "aether:valkyrie_gloves" }
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: -2.5d
+		}
+		,
+		{
+			dependencies: ["49540D1000000004"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "unusualend:pearlescent_pickaxe"
+			}
+			id: "49540D1000000027"
+			optional: true
+			rewards: [
+				{
+					id: "0F6719EEBD1CA570"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "1251624B69A0F833"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "7FA07BB3E2E89273"
+				item: { count: 1, id: "unusualend:pearlescent_pickaxe" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 7.5d
+		}
+		,
+		{
+			dependencies: ["49540D1000000004"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "unusualend:pearlescent_sword"
+			}
+			id: "49540D1000000028"
+			optional: true
+			rewards: [
+				{
+					id: "36A09035435C683D"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "21B15D4A1142B7DA"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "40AFF74473AF9234"
+				item: { count: 1, id: "unusualend:pearlescent_sword" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 7.5d
+		}
+		,
+		{
+			dependencies: ["49540D1000000004"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				components: {
+					"!minecraft:custom_data": { }
+				}
+				id: "unusualend:pearlescent_ring"
+			}
+			id: "49540D1000000029"
+			optional: true
+			rewards: [
+				{
+					id: "2F9F6D347DF37075"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "1A1D295645211D6E"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "09254AD6E3F059C8"
+				item: { components: { "!minecraft:custom_data": { } }, count: 1, id: "unusualend:pearlescent_ring" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 12.5d
+		}
+		,
+		{
+			dependencies: ["49540D1000000004"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "unusualend:pearlescent_infuser"
+			}
+			id: "49540D100000002A"
+			optional: true
+			rewards: [
+				{
+					id: "27676EA3F96EBD79"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "38CCE6E1EE00BBD2"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "5B79D652F6F082A0"
+				item: { count: 1, id: "unusualend:pearlescent_infuser" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.0d
+		}
+		,
+		{
+			dependencies: ["49540D100000002A"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "unusualend:pearlescent_block"
+			}
+			id: "49540D100000002B"
+			optional: true
+			rewards: [
+				{
+					id: "589B8EA11F579A0D"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "4C10583E14490D25"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4E9DA9A9DBD5B2EB"
+				item: { count: 1, id: "unusualend:pearlescent_block" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 0.0d
+		}
+		,
+		{
+			dependencies: ["4954631000000000"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "aether:silver_dungeon_key"
+			}
+			id: "0B03103000000040"
+			rewards: [{
+				id: "0B03303000000040"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03203000000040"
+				structure: "aether:silver_dungeon"
+				type: "structure"
+			}]
+			x: 0.0d
+			y: -5.0d
+		}
+		,
+		{
+			dependencies: [
+				"4954631000000000"
+				"0B03103000000040"
+			]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			id: "0B03103000000084"
+			optional: true
+			rewards: [{
+				id: "0B03303000000084"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03203000000084"
+				item: { count: 1, id: "aether:victory_medal" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -6.5d
+		}
+		,
+		{
+			dependencies: [
+				"0B03109000000050"
+				"49540D100000002B"
+			]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			id: "0B03109000000090"
+			optional: true
+			rewards: [{
+				id: "0B03309000000090"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03209000000090"
+				item: { components: { "!minecraft:custom_data": { } }, count: 1, id: "unusualend:prismatic_mirror" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: 0.0d
+		}
+		,
+		{
+			dependencies: ["0B03109000000090"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			id: "0B03109000000091"
+			optional: true
+			rewards: [{
+				id: "0B03309000000091"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03209000000091"
+				item: { components: { "!minecraft:custom_data": { } }, count: 1, id: "unusualend:prismatic_mirror" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: -1.5d
+		}
+
+	]
+}

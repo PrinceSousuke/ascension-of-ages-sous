@@ -1,0 +1,1314 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ren_undergarden_descent"
+	group: "0B038EB15EBBFD95"
+	hide_quest_until_deps_complete: true
+	icon: {
+		id: "undergarden:catalyst"
+	}
+	id: "0B03001000000005"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["0B03107000000050"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "undergarden:catalyst"
+			}
+			id: "0B03105000000001"
+			rewards: [{
+				id: "0B03305000000001"
+				type: "xp"
+				xp: 25
+			}]
+			size: 1.5d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				dimension: "minecraft:overworld"
+				id: "0B03205000000001"
+				type: "dimension"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		,
+		{
+			dependencies: ["0B03105000000001"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			id: "0B03105000000010"
+			rewards: [{
+				id: "0B03305000000010"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03205000000010"
+				item: { count: 1, id: "undergarden:catalyst" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		,
+		{
+			dependencies: ["0B03105000000010"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			id: "0B03105000000011"
+			rewards: [{
+				id: "0B03305000000011"
+				type: "xp"
+				xp: 75
+			}]
+			shape: "diamond"
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				entity: "minecraft:warden"
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "0B03205000000011"
+				type: "kill"
+				value: 1L
+			}]
+			x: 5.5d
+			y: 0.0d
+		}
+		,
+		{
+			dependencies: ["0B03105000000011"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "undergarden:depthrock"
+			}
+			id: "0B03105000000012"
+			rewards: [{
+				id: "0B03305000000012"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				dimension: "undergarden:undergarden"
+				id: "0B03205000000012"
+				type: "dimension"
+			}]
+			x: 8.5d
+			y: 0.0d
+		}
+		,
+		{
+			dependencies: ["0B03105000000012"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			id: "0B03105000000020"
+			rewards: [{
+				id: "0B03305000000020"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03205000000020"
+				item: { count: 1, id: "undergarden:depthrock_pebble" }
+				type: "item"
+			}]
+			x: 11.0d
+			y: -1.0d
+		}
+		,
+		{
+			dependencies: ["0B03105000000020"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			id: "0B03105000000021"
+			rewards: [{
+				id: "0B03305000000021"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03205000000021"
+				item: { count: 1, id: "undergarden:droopvine_item" }
+				type: "item"
+			}]
+			x: 14.0d
+			y: -2.5d
+		}
+		,
+		{
+			dependencies: ["0B03105000000012"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			id: "0B03105000000030"
+			rewards: [{
+				id: "0B03305000000030"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03205000000030"
+				item: { count: 1, id: "undergarden:cloggrum_ingot" }
+				type: "item"
+			}]
+			x: 11.0d
+			y: 1.0d
+		}
+		,
+		{
+			dependencies: ["0B03105000000030"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			id: "0B03105000000031"
+			rewards: [{
+				id: "0B03305000000031"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03205000000031"
+				item: { count: 1, id: "undergarden:utherium_crystal" }
+				type: "item"
+			}]
+			x: 14.0d
+			y: 0.0d
+		}
+		,
+		{
+			dependencies: ["0B03105000000034"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			id: "0B03105000000032"
+			optional: true
+			rewards: [{
+				id: "0B03305000000032"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03205000000032"
+				item: { count: 1, id: "undergarden:froststeel_ingot" }
+				type: "item"
+			}]
+			x: 19.5d
+			y: 2.5d
+		}
+		,
+		{
+			dependencies: ["0B03105000000034"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			id: "0B03105000000033"
+			optional: true
+			rewards: [{
+				id: "0B03305000000033"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03205000000033"
+				item: { count: 1, id: "undergarden:regalium_crystal" }
+				type: "item"
+			}]
+			x: 15.5d
+			y: 0.0d
+		}
+		,
+		{
+			dependencies: ["0B03105000000031"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			id: "0B03105000000040"
+			optional: true
+			rewards: [{
+				id: "0B03305000000040"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03205000000040"
+				structure: "undergarden:catacombs"
+				type: "structure"
+			}]
+			x: 17.0d
+			y: 6.0d
+		}
+		,
+		{
+			dependencies: ["0B03105000000040"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			id: "0B03105000000045"
+			optional: true
+			rewards: [{
+				id: "0B03305000000045"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03205000000045"
+				structure: "undergarden:forgotten_vestige"
+				type: "structure"
+			}]
+			x: 16.0d
+			y: 7.5d
+		}
+		,
+		{
+			dependencies: ["0B03105000000040"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			id: "0B03105000000041"
+			optional: true
+			rewards: [{
+				id: "0B03305000000041"
+				type: "xp"
+				xp: 75
+			}]
+			shape: "diamond"
+			size: 1.3d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				entity: "undergarden:forgotten_guardian"
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "0B03205000000041"
+				type: "kill"
+				value: 1L
+			}]
+			x: 19.5d
+			y: 5.0d
+		}
+		,
+		{
+			dependencies: ["0B03105000000041"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			id: "0B03105000000042"
+			optional: true
+			rewards: [{
+				id: "0B03305000000042"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03205000000042"
+				item: { count: 1, id: "undergarden:forgotten_nugget" }
+				type: "item"
+			}]
+			x: 22.5d
+			y: 1.0d
+		}
+		,
+		{
+			dependencies: ["0B03105000000031"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "undergarden:utherium_crystal"
+			}
+			id: "0B03105000000050"
+			rewards: [
+				{
+					auto: "enabled"
+					command: "/astages add {p} ren_undergarden_descent_complete true true"
+					icon: {
+						id: "undergarden:utherium_crystal"
+					}
+					id: "0B03305000000060"
+					permission_level: 2
+					silent: true
+					team_reward: true
+					type: "command"
+				}
+				{
+					id: "0B03305000000063"
+					type: "xp_levels"
+					xp_levels: 8
+				}
+			]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				dimension: "minecraft:overworld"
+				id: "0B03205000000050"
+				type: "dimension"
+			}]
+			x: 14.0d
+			y: 4.0d
+		}
+		,
+		{
+			dependencies: ["0B03105000000021"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			id: "0B03105000000022"
+			rewards: [{
+				id: "0B03305000000022"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03205000000022"
+				item: { count: 1, id: "undergarden:ditchbulb_paste" }
+				type: "item"
+			}]
+			x: 17.0d
+			y: -4.0d
+		}
+		,
+		{
+			dependencies: ["0B03105000000031"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			id: "0B03105000000034"
+			rewards: [{
+				id: "0B03305000000034"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03205000000034"
+				item: { count: 1, id: "undergarden:utherium_pickaxe" }
+				type: "item"
+			}]
+			x: 17.0d
+			y: 4.0d
+		}
+		,
+		{
+			dependencies: ["0B03105000000042"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			id: "0B03105000000043"
+			optional: true
+			rewards: [{
+				id: "0B03305000000043"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "diamond"
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03205000000043"
+				item: { count: 1, id: "undergarden:forgotten_ingot" }
+				type: "item"
+			}]
+			x: 25.0d
+			y: 0.0d
+		}
+		,
+		{
+			dependencies: ["0B03105000000030"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			id: "0B03105000000035"
+			optional: true
+			rewards: [{
+				id: "0B03305000000035"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03205000000035"
+				item: { count: 1, id: "undergarden:cloggrum_sword" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 2.5d
+		}
+		,
+		{
+			dependencies: ["0B03105000000031"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			id: "0B03105000000036"
+			optional: true
+			rewards: [{
+				id: "0B03305000000036"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "gear"
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03205000000036"
+				item: { count: 1, id: "undergarden:infuser" }
+				type: "item"
+			}]
+			x: 15.5d
+			y: 1.5d
+		}
+		,
+		{
+			dependencies: ["0B03105000000021"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			id: "0B03105000000037"
+			optional: true
+			rewards: [{
+				id: "0B03305000000037"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03205000000037"
+				item: { count: 1, id: "undergarden:gloomgourd_pie" }
+				type: "item"
+			}]
+			x: 17.0d
+			y: -6.0d
+		}
+		,
+		{
+			dependencies: ["0B03105000000021"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			id: "0B03105000000038"
+			optional: true
+			rewards: [{
+				id: "0B03305000000038"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03205000000038"
+				item: { count: 1, id: "undergarden:goo_ball" }
+				type: "item"
+			}]
+			x: 17.0d
+			y: -1.0d
+		}
+		,
+		{
+			dependencies: ["0B03105000000043"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			id: "0B03105000000044"
+			optional: true
+			rewards: [{
+				id: "0B03305000000044"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03205000000044"
+				item: { count: 1, id: "undergarden:forgotten_upgrade_smithing_template" }
+				type: "item"
+			}]
+			x: 24.0d
+			y: -1.5d
+		}
+		,
+		{
+			dependencies: ["0B03105000000030"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			id: "0B03105000000070"
+			optional: true
+			rewards: [{
+				id: "0B03305000000070"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03205000000070"
+				item: { count: 1, id: "undergarden:raw_cloggrum" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 2.5d
+		}
+		,
+		{
+			dependencies: ["0B03105000000030"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			id: "0B03105000000071"
+			optional: true
+			rewards: [{
+				id: "0B03305000000071"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03205000000071"
+				item: { count: 1, id: "undergarden:cloggrum_sword" }
+				type: "item"
+			}]
+			x: 14.0d
+			y: 2.5d
+		}
+		,
+		{
+			dependencies: ["0B03105000000071"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			id: "0B03105000000072"
+			optional: true
+			rewards: [{
+				id: "0B03305000000072"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03205000000072"
+				item: { count: 1, id: "undergarden:cloggrum_pickaxe" }
+				type: "item"
+			}]
+			x: 13.0d
+			y: 7.0d
+		}
+		,
+		{
+			dependencies: [
+				"0B0310400000006E"
+				"0B03105000000032"
+			]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			id: "0B03105000000073"
+			optional: true
+			rewards: [{
+				id: "0B03305000000073"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03205000000073"
+				item: { count: 1, id: "undergarden:raw_froststeel" }
+				type: "item"
+			}]
+			x: 19.5d
+			y: -8.0d
+		}
+		,
+		{
+			dependencies: ["0B03105000000031"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			id: "0B03105000000074"
+			optional: true
+			rewards: [{
+				id: "0B03305000000074"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03205000000074"
+				item: { count: 1, id: "undergarden:utheric_shard" }
+				type: "item"
+			}]
+			x: 14.0d
+			y: 5.5d
+		}
+		,
+		{
+			dependencies: ["0B03105000000021"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			id: "0B03105000000075"
+			optional: true
+			rewards: [{
+				id: "0B03305000000075"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03205000000075"
+				item: { count: 1, id: "undergarden:slingshot" }
+				type: "item"
+			}]
+			x: 17.0d
+			y: 1.0d
+		}
+		,
+		{
+			dependencies: ["0B03105000000075"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			id: "0B03105000000076"
+			optional: true
+			rewards: [{
+				id: "0B03305000000076"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03205000000076"
+				item: { count: 1, id: "undergarden:blisterbomb" }
+				type: "item"
+			}]
+			x: 19.5d
+			y: 0.0d
+		}
+		,
+		{
+			dependencies: ["0B03105000000076"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			id: "0B03105000000077"
+			optional: true
+			rewards: [{
+				id: "0B03305000000077"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03205000000077"
+				item: { count: 1, id: "undergarden:blisterberry" }
+				type: "item"
+			}]
+			x: 18.0d
+			y: -2.5d
+		}
+		,
+		{
+			dependencies: ["0B03105000000022"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			id: "0B03105000000078"
+			optional: true
+			rewards: [{
+				id: "0B03305000000078"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03205000000078"
+				item: { count: 1, id: "undergarden:cooked_gwibling" }
+				type: "item"
+			}]
+			x: 19.5d
+			y: -2.5d
+		}
+		,
+		{
+			dependencies: ["0B03105000000078"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			id: "0B03105000000079"
+			optional: true
+			rewards: [{
+				id: "0B03305000000079"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03205000000079"
+				item: { count: 1, id: "undergarden:gwibling_bucket" }
+				type: "item"
+			}]
+			x: 19.5d
+			y: -6.5d
+		}
+		,
+		{
+			dependencies: ["0B03105000000037"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			id: "0B0310500000007A"
+			optional: true
+			rewards: [{
+				id: "0B0330500000007A"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B0320500000007A"
+				item: { count: 1, id: "undergarden:inky_stew" }
+				type: "item"
+			}]
+			x: 19.5d
+			y: -5.0d
+		}
+		,
+		{
+			dependencies: ["0B0310500000007A"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			id: "0B0310500000007B"
+			optional: true
+			rewards: [{
+				id: "0B0330500000007B"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B0320500000007B"
+				item: { count: 1, id: "undergarden:indigo_stew" }
+				type: "item"
+			}]
+			x: 22.5d
+			y: -1.0d
+		}
+		,
+		{
+			dependencies: ["0B0310500000007B"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			id: "0B0310500000007C"
+			optional: true
+			rewards: [{
+				id: "0B0330500000007C"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B0320500000007C"
+				item: { count: 1, id: "undergarden:bloody_stew" }
+				type: "item"
+			}]
+			x: 22.0d
+			y: -2.5d
+		}
+		,
+		{
+			dependencies: ["0B03105000000038"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			id: "0B0310500000007D"
+			optional: true
+			rewards: [{
+				id: "0B0330500000007D"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B0320500000007D"
+				item: { count: 1, id: "undergarden:brute_tusk" }
+				type: "item"
+			}]
+			x: 16.0d
+			y: -2.5d
+		}
+
+	]
+}

@@ -1,0 +1,31 @@
+{
+	icon: {
+		id: "minecraft:oak_chest_boat"
+	}
+	id: "7300000000000011"
+	loot_size: 1
+	order_index: 25
+	rewards: [
+		{ id: "7311000000000001", item: { count: 1, id: "minecraft:compass" } }
+		{ id: "7311000000000002", item: { count: 1, id: "minecraft:clock" } }
+		{ id: "7311000000000003", item: { count: 1, id: "minecraft:spyglass" } }
+		{
+			count: 2
+			id: "7311000000000004"
+			item: {
+				count: 1
+				id: "apotheosis:common_material"
+			}
+		}
+		{
+			count: 2
+			id: "7311000000000005"
+			item: {
+				count: 1
+				id: "betternether:agave_medicine"
+			}
+		}
+		{ id: "7311000000000006", item: { count: 1, id: "undergarden:utherium_crystal" } }
+	]
+	use_title: true
+}

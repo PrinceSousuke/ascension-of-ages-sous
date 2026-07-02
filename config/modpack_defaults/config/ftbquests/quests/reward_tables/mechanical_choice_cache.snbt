@@ -1,0 +1,76 @@
+{
+	icon: {
+		id: "create:brown_toolbox"
+	}
+	id: "7200000000000002"
+	loot_size: 1
+	order_index: 17
+	rewards: [
+		{
+			id: "7202000000000001"
+			item: {
+				count: 1
+				id: "create:encased_fan"
+			}
+			weight: 3.0f
+		}
+		{
+			id: "7202000000000002"
+			item: {
+				count: 1
+				id: "create:basin"
+			}
+			weight: 3.0f
+		}
+		{
+			id: "7202000000000003"
+			item: {
+				count: 1
+				id: "create:deployer"
+			}
+			weight: 3.0f
+		}
+		{
+			count: 2
+			id: "7202000000000004"
+			item: {
+				count: 1
+				id: "create:analog_lever"
+			}
+			weight: 3.0f
+		}
+		{
+			id: "7202000000000005"
+			item: {
+				count: 1
+				id: "botanypots:stone_bricks_hopper_botany_pot"
+			}
+			weight: 2.0f
+		}
+		{
+			id: "7202000000000006"
+			item: {
+				count: 1
+				id: "create:water_wheel"
+			}
+			weight: 2.0f
+		}
+		{
+			id: "7202000000000007"
+			item: {
+				count: 1
+				id: "create:mechanical_pump"
+			}
+			weight: 1.5f
+		}
+		{
+			id: "7202000000000008"
+			item: {
+				count: 1
+				id: "create:item_vault"
+			}
+			weight: 0.6f
+		}
+	]
+	use_title: true
+}
