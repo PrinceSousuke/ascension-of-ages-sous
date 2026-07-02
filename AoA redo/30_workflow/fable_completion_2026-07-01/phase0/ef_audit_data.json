@@ -1,27 +1,11 @@
 {
  "total_qids": 2070,
  "dup_ids": {},
- "emdash_count": 3,
+ "emdash_count": 0,
  "endash_count": 0,
- "em_quests": {
-  "4D41487500000003": 1,
-  "4D41487500000004": 1,
-  "4D41487500000006": 1
- },
+ "em_quests": {},
  "en_quests": {},
  "missing_desc": [
-  [
-   "49540A1000000039",
-   "ir_automation_safety_and_routing"
-  ],
-  [
-   "49540A100000003A",
-   "ir_automation_safety_and_routing"
-  ],
-  [
-   "4954071000000103",
-   "ir_create_industrial_addons"
-  ],
   [
    "5350010000010000",
    "journey_to_ascension"
