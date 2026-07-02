@@ -1900,5 +1900,209 @@
 			x: 41.0d
 			y: 3.0d
 		}
+		{
+			dependencies: ["0B03108000000001"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "apothic_enchanting:hellshelf"
+			}
+			id: "0B03108000000120"
+			rewards: [{
+				id: "0B033080000001A0"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03208000000120"
+				item: { count: 1, id: "apothic_enchanting:hellshelf" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["0B03108000000120"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			id: "0B03108000000121"
+			rewards: [{
+				id: "0B033080000001A1"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03208000000121"
+				item: { count: 1, id: "apothic_enchanting:infused_hellshelf" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["0B03108000000121"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "apothic_enchanting:endshelf"
+			}
+			id: "0B03108000000122"
+			rewards: [{
+				id: "0B033080000001A2"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03208000000122"
+				item: { components: { "ftbfiltersystem:filter": "root(or(item(apothic_enchanting:seashelf),item(apothic_enchanting:deepshelf),item(apothic_enchanting:endshelf)))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["0B03108000000122"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			id: "0B03108000000123"
+			rewards: [{
+				id: "0B033080000001A3"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03208000000123"
+				item: { count: 1, id: "apothic_enchanting:library" }
+				type: "item"
+			}]
+			x: -7.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["0B03108000000123"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "apothic_enchanting:weapon_tome"
+			}
+			id: "0B03108000000124"
+			optional: true
+			rewards: [{
+				id: "0B033080000001A4"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03208000000124"
+				item: { components: { "ftbfiltersystem:filter": "root(or(item(apothic_enchanting:weapon_tome),item(apothic_enchanting:pickaxe_tome),item(apothic_enchanting:helmet_tome),item(apothic_enchanting:chestplate_tome),item(apothic_enchanting:leggings_tome),item(apothic_enchanting:boots_tome),item(apothic_enchanting:bow_tome),item(apothic_enchanting:fishing_tome),item(apothic_enchanting:extraction_tome),item(apothic_enchanting:scrap_tome),item(apothic_enchanting:improved_scrap_tome),item(apothic_enchanting:other_tome)))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -7.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0B03108000000123"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			id: "0B03108000000125"
+			optional: true
+			rewards: [{
+				id: "0B033080000001A5"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "diamond"
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B03208000000125"
+				item: { count: 1, id: "apothic_enchanting:ender_library" }
+				type: "item"
+			}]
+			x: -9.0d
+			y: -6.0d
+		}
 	]
 }

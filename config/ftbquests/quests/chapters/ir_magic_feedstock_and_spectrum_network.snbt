@@ -235,13 +235,17 @@
 			y: -9.5d
 		}
 		{
-			dependencies: ["49540A100000000F"]
+			dependencies: [
+				"49540A100000000F"
+				"0B03101000000034"
+			]
 			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: {
 				id: "neovitae:hellfire_forge"
 			}
 			id: "49540B1000000004"
+			min_required_dependencies: 1
 			rewards: [
 				{
 					id: "49540B3000004000"
@@ -703,7 +707,10 @@
 			y: 7.5d
 		}
 		{
-			dependencies: ["49540A100000000F"]
+			dependencies: [
+				"49540A100000000F"
+				"0B0310C000000022"
+			]
 			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: {
@@ -1944,6 +1951,270 @@
 			}]
 			x: -2.0d
 			y: -9.5d
+		}
+		{
+			dependencies: ["49540B1000000004"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "neovitae:vas_maleficum"
+			}
+			id: "49540B1000000101"
+			rewards: [
+				{
+					id: "49540B3000101000"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "49540B3000101001"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540B2000101000"
+				item: { count: 1, id: "neovitae:vas_maleficum" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -11.0d
+		}
+		{
+			dependencies: ["49540B1000000101"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "neovitae:spira_infernalis"
+			}
+			id: "49540B1000000102"
+			rewards: [
+				{
+					id: "49540B3000102000"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "49540B3000102001"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540B2000102000"
+				item: { count: 1, id: "neovitae:spira_infernalis" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: -11.0d
+		}
+		{
+			dependencies: ["49540B1000000102"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "neovitae:crystallarium_maleficum"
+			}
+			id: "49540B1000000103"
+			rewards: [
+				{
+					id: "49540B3000103000"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "49540B3000103001"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540B2000103000"
+				item: { count: 1, id: "neovitae:crystallarium_maleficum" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: -11.0d
+		}
+		{
+			dependencies: ["49540B1000000101"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "neovitae:teleposer"
+			}
+			id: "49540B1000000104"
+			rewards: [
+				{
+					id: "49540B3000104000"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "49540B3000104001"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540B2000104000"
+				item: { count: 1, id: "neovitae:teleposer" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -12.5d
+		}
+		{
+			dependencies: ["49540B1000000103"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "neovitae:tabula_robur"
+			}
+			id: "49540B1000000105"
+			rewards: [
+				{
+					id: "49540B3000105000"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "49540B3000105001"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540B2000105000"
+				item: { count: 1, id: "neovitae:tabula_robur" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: -11.0d
+		}
+		{
+			dependencies: ["49540B1000000105"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "neovitae:tabula_animata"
+			}
+			id: "49540B1000000106"
+			rewards: [
+				{
+					id: "49540B3000106000"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "49540B3000106001"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540B2000106000"
+				item: { count: 1, id: "neovitae:tabula_animata" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: -11.0d
 		}
 	]
 }

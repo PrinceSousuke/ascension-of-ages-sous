@@ -1,0 +1,37 @@
+	chapter.0B0310C000000000.title: "[STUB] Spectrum Academy"
+	quest.0B0310C000000001.title: "[STUB] Pigment Palette"
+	quest.0B0310C000000001.quest_subtitle: "[STUB] the front-door color tool"
+	quest.0B0310C000000001.quest_desc: ["[BRIEF] teaches: Spectrum pigment_palette (Renaissance-gated, aoa_astages_01_item_restrictions.js L730); it is the front-door tool that mixes/reads colored pigment and ink for all Spectrum crafting; ENTRY node of ren_spectrum_academy, deps = Renaissance gateway 6D7E8F901A2B1054 (reveal on entering the Renaissance); next nodes = color_picker (0B0310C000000002) and pedestal_all_basic (0B0310C000000010). Opus: 2-4 para instruction-first, teach that Spectrum runs on colored pigment/ink and this is where color starts. No em dashes."]
+	quest.0B0310C000000002.title: "[STUB] Color Picker"
+	quest.0B0310C000000002.quest_subtitle: "[STUB] sample and store hues"
+	quest.0B0310C000000002.quest_desc: ["[BRIEF] teaches: Spectrum color_picker (Renaissance-gated, 01m_magic.js L66); tool to sample/select a hue for pigment work; prior node = pigment_palette (0B0310C000000001); next node = titration_barrel (0B0310C000000003). Opus: 2-4 para instruction-first. No em dashes."]
+	quest.0B0310C000000003.title: "[STUB] Titration Barrel"
+	quest.0B0310C000000003.quest_subtitle: "[STUB] refine pigment into ink"
+	quest.0B0310C000000003.quest_desc: ["[BRIEF] teaches: Spectrum titration_barrel (Renaissance-gated, 01m_magic.js L64); processing block that mixes/refines pigment toward ink; prior node = color_picker (0B0310C000000002); branches to the Pastel Network node lane at provider_node (0B0310C000000020). Opus: 2-4 para instruction-first. No em dashes."]
+	quest.0B0310C000000010.title: "[STUB] Pigment Pedestal"
+	quest.0B0310C000000010.quest_subtitle: "[STUB] the all-basic crafting pedestal"
+	quest.0B0310C000000010.quest_desc: ["[BRIEF] teaches: Spectrum pedestal_all_basic (Renaissance-gated, 01_item_restrictions.js L731); the Pigment Pedestal is Spectrum's core crafting altar (chapter icon); prior node = pigment_palette (0B0310C000000001); next node = the basic pedestal tier (0B0310C000000011). Opus: 2-4 para instruction-first, explain the pedestal is where colored crafting happens. No em dashes."]
+	quest.0B0310C000000011.title: "[STUB] Basic Pedestals"
+	quest.0B0310C000000011.quest_subtitle: "[STUB] the three starter tiers"
+	quest.0B0310C000000011.quest_desc: ["[BRIEF] teaches: any basic Pigment Pedestal tier via ONE smart_filter task accepting pedestal_basic_amethyst OR _citrine OR _topaz (all Renaissance-gated, 01_item_restrictions.js L732-734); prior node = pedestal_all_basic (0B0310C000000010); next node = pedestal_moonstone (0B0310C000000012). Opus: 2-4 para instruction-first, note any one of the three basic pedestals satisfies this. No em dashes."]
+	quest.0B0310C000000012.title: "[STUB] Moonstone Pedestal"
+	quest.0B0310C000000012.quest_subtitle: "[STUB] the mid pedestal tier"
+	quest.0B0310C000000012.quest_desc: ["[BRIEF] teaches: Spectrum pedestal_moonstone (Renaissance-gated, 01_item_restrictions.js L735); the next pedestal tier above basic; prior node = basic pedestals (0B0310C000000011); next node = pedestal_onyx (0B0310C000000013). Opus: 2-4 para instruction-first. No em dashes."]
+	quest.0B0310C000000013.title: "[STUB] Onyx Pedestal"
+	quest.0B0310C000000013.quest_subtitle: "[STUB] the top pedestal tier"
+	quest.0B0310C000000013.quest_desc: ["[BRIEF] teaches: Spectrum pedestal_onyx (Renaissance-gated, 01_item_restrictions.js L736); the peak pedestal tier reachable in the Renaissance; prior node = pedestal_moonstone (0B0310C000000012); feeds the Spirit Instiller convergence (0B0310C000000022). Opus: 2-4 para instruction-first. No em dashes."]
+	quest.0B0310C000000020.title: "[STUB] Pastel Network Nodes"
+	quest.0B0310C000000020.quest_subtitle: "[STUB] item routing for Spectrum"
+	quest.0B0310C000000020.quest_desc: ["[BRIEF] teaches: the Pastel Network via ONE smart_filter task accepting any of the 5 nodes connection_node/gather_node/provider_node/sender_node/storage_node (all Renaissance-gated, 01_item_restrictions.js L485-489); prior node = titration_barrel (0B0310C000000003); next node = fusion_shrine_calcite (0B0310C000000021). Opus: 2-4 para instruction-first, explain the Pastel Network is Spectrum's item-logistics layer and any one node satisfies this. No em dashes."]
+	quest.0B0310C000000021.title: "[STUB] Fusion Shrine"
+	quest.0B0310C000000021.quest_subtitle: "[STUB] the calcite fusion apparatus"
+	quest.0B0310C000000021.quest_desc: ["[BRIEF] teaches: Spectrum fusion_shrine_calcite (Renaissance-gated, 01m_magic.js L73; NOTE the basalt variant is IR-gated so calcite is the Renaissance-legal one); the Fusion Shrine crafts light-infused outputs; prior node = Pastel Network nodes (0B0310C000000020); feeds the Spirit Instiller convergence (0B0310C000000022). Opus: 2-4 para instruction-first. No em dashes."]
+	quest.0B0310C000000022.title: "[STUB] Spirit Instiller"
+	quest.0B0310C000000022.quest_subtitle: "[STUB] build the apparatus"
+	quest.0B0310C000000022.quest_desc: ["[BRIEF] teaches: building the Spectrum Spirit Instiller multiblock via ADVANCEMENT task spectrum:midgame/build_spirit_instiller_structure (the item is Renaissance-gated 01m_magic.js L67 but is tasked as an item in g7_chartered_arcana, so this convergence uses the build advancement to avoid a duplicate item task); CONVERGENCE node, deps = onyx pedestal (0B0310C000000013) AND fusion_shrine_calcite (0B0310C000000021); this is the id a parallel IR-reveal task (T-02b-2) wires onto. Opus: 2-4 para instruction-first, explain the Spirit Instiller is the apparatus that ties the pedestal and shrine lanes together. No em dashes."]
+	quest.0B0310C000000023.title: "[STUB] Particle Spawner"
+	quest.0B0310C000000023.quest_subtitle: "[STUB] optional decorative emitter"
+	quest.0B0310C000000023.quest_desc: ["[BRIEF] teaches: Spectrum particle_spawner (Renaissance-gated, 01m_magic.js L65); OPTIONAL cosmetic/particle emitter; prior node = Spirit Instiller (0B0310C000000022). Opus: 2-4 para instruction-first, mark as optional flavor. No em dashes."]
+	quest.0B0310C000000024.title: "[STUB] Ink Assortment"
+	quest.0B0310C000000024.quest_subtitle: "[STUB] optional ink sampler"
+	quest.0B0310C000000024.quest_desc: ["[BRIEF] teaches: Spectrum ink_assortment (ungated, Renaissance-legal); OPTIONAL bundle of inks demonstrating the color range Spectrum crafting uses; prior node = Spirit Instiller (0B0310C000000022). Opus: 2-4 para instruction-first, mark as optional. No em dashes."]

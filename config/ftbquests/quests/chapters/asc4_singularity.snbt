@@ -12,23 +12,27 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: [
-				"5449010000010001"
-				"4F43010000010060"
-			]
+			dependencies: ["5449010000010001"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: {
 				id: "oritech:unstable_container"
 			}
-			id: "5347010000010002"
+			id: "5347010000010001"
 			rewards: [{
-				id: "5347010000030002"
+				id: "5347013000010001"
 				type: "xp"
-				xp: 200
+				xp: 250
 			}]
-			shape: "diamond"
+			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -37,153 +41,42 @@
 					mode: "TOTAL_LEVEL"
 					second: 20
 				}
-				id: "5347010000020002"
+				id: "5347012000010001"
 				item: { count: 1, id: "oritech:unstable_container" }
 				type: "item"
 			}]
-			x: 1.5d
-			y: -5.25d
+			x: 0.0d
+			y: 0.0d
 		}
 		{
-			dependencies: [
-				"5449010000010001"
-				"4F43010000010060"
-			]
-			hide_until_deps_complete: true
-			icon: {
-				id: "oritech:heisenberg_compensator"
-			}
-			id: "5347010000010004"
-			rewards: [{
-				id: "5347010000030004"
-				type: "xp"
-				xp: 150
-			}]
-			tasks: [{
-				SkillsLevel: {
-					category: ""
-					check: 0b
-					comparison: "GREATER_OR_EQUAL"
-					first: 10
-					mode: "TOTAL_LEVEL"
-					second: 20
-				}
-				id: "5347010000020004"
-				item: { count: 1, id: "oritech:heisenberg_compensator" }
-				type: "item"
-			}]
-			x: 1.5d
-			y: -2.25d
-		}
-		{
-			dependencies: [
-				"5449010000010001"
-				"4F43010000010060"
-			]
-			hide_until_deps_complete: true
-			icon: {
-				id: "oritech:accelerator_controller"
-			}
-			id: "5347010000010006"
-			rewards: [{
-				id: "5347010000030006"
-				type: "xp"
-				xp: 150
-			}]
-			tasks: [{
-				SkillsLevel: {
-					category: ""
-					check: 0b
-					comparison: "GREATER_OR_EQUAL"
-					first: 10
-					mode: "TOTAL_LEVEL"
-					second: 20
-				}
-				block: { count: 1, id: "oritech:accelerator_controller" }
-				id: "5347010000020006"
-				type: "place_block"
-				value: 1L
-			}]
-			x: 1.5d
-			y: -0.75d
-		}
-		{
-			dependencies: ["5347010000010006"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "enderio:reinforced_obsidian_block"
-			}
-			id: "5347010000010007"
-			rewards: [{
-				id: "5347010000030007"
-				type: "xp"
-				xp: 100
-			}]
-			tasks: [{
-				SkillsLevel: {
-					category: ""
-					check: 0b
-					comparison: "GREATER_OR_EQUAL"
-					first: 10
-					mode: "TOTAL_LEVEL"
-					second: 20
-				}
-				block: { count: 1, id: "enderio:reinforced_obsidian_block" }
-				id: "5347010000020007"
-				type: "use_block"
-				value: 1L
-			}]
-			x: 3.0d
-			y: -0.75d
-		}
-		{
-			dependencies: ["5347010000010007"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "endrem:ancient_portal_frame"
-			}
-			id: "5347010000010008"
-			rewards: [{
-				id: "5347010000030008"
-				type: "xp"
-				xp: 150
-			}]
-			tasks: [{
-				SkillsLevel: {
-					category: ""
-					check: 0b
-					comparison: "GREATER_OR_EQUAL"
-					first: 10
-					mode: "TOTAL_LEVEL"
-					second: 20
-				}
-				block: { count: 1, id: "endrem:ancient_portal_frame" }
-				id: "5347010000020008"
-				type: "use_block"
-				value: 1L
-			}]
-			x: 4.5d
-			y: -0.75d
-		}
-		{
-			dependencies: [
-				"5347010000010008"
-				"5347010000010002"
-				"5347010000010004"
-			]
+			dependencies: ["5347010000010001"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: {
 				id: "oritech:black_hole_block"
 			}
-			id: "5347010000010009"
+			id: "5347010000010002"
 			rewards: [{
-				id: "5347010000030009"
-				type: "xp"
-				xp: 1000
+				auto: "enabled"
+				command: "/astages add {p} asc_oritech_apex_complete true true"
+				icon: {
+					id: "oritech:black_hole_block"
+				}
+				id: "5347013001010002"
+				permission_level: 2
+				silent: true
+				team_reward: true
+				type: "command"
 			}]
 			shape: "gear"
-			size: 1.0d
+			size: 1.3d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -193,42 +86,12 @@
 					second: 20
 				}
 				block: { count: 1, id: "oritech:black_hole_block" }
-				id: "5347010000020009"
+				id: "5347012000010002"
 				type: "use_block"
 				value: 1L
 			}]
-			x: 6.0d
-			y: -0.75d
-		}
-		{
-			dependencies: ["5347010000010009"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "oritech:particle_collector_block"
-			}
-			id: "534701000001000A"
-			rewards: [{
-				id: "534701000003000A"
-				type: "xp"
-				xp: 1500
-			}]
-			shape: "gear"
-			size: 1.0d
-			tasks: [{
-				SkillsLevel: {
-					category: ""
-					check: 0b
-					comparison: "GREATER_OR_EQUAL"
-					first: 10
-					mode: "TOTAL_LEVEL"
-					second: 20
-				}
-				duration_seconds: 60.0d
-				id: "534701000002000A"
-				type: "timer"
-			}]
-			x: 6.0d
-			y: 0.75d
+			x: 2.0d
+			y: 0.0d
 		}
 	]
 }

@@ -1839,7 +1839,7 @@
 			y: -2.5d
 		}
 		{
-			dependencies: ["4954051000000034"]
+			dependencies: ["4954051000000038"]
 			entity_vis_size: 1.0f
 			hide_until_deps_visible: true
 			icon: {
@@ -1969,6 +1969,96 @@
 			}]
 			x: 14.0d
 			y: -9.0d
+		}
+		{
+			dependencies: ["4954051000000034"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
+			icon: {
+				id: "electrodynamics:mineralgrinder"
+			}
+			id: "4954051000000037"
+			rewards: [
+				{
+					id: "D18518448EE5D6E5"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "7A234E60DF58601E"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954052000000037"
+				item: { count: 1, id: "electrodynamics:mineralgrinder" }
+				type: "item"
+			}]
+			x: 12.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["4954051000000037"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
+			icon: {
+				id: "electrodynamics:electricfurnace"
+			}
+			id: "4954051000000038"
+			rewards: [
+				{
+					id: "C8EFCB5484007F13"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "E107B61D1913F050"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954052000000038"
+				item: { count: 1, id: "electrodynamics:electricfurnace" }
+				type: "item"
+			}]
+			x: 12.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["495405100000002B"]

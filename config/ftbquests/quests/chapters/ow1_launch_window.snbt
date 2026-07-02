@@ -5,39 +5,304 @@
 	group: "080F7BA9FFB8FC07"
 	hide_quest_until_deps_complete: true
 	icon: {
-		id: "minecraft:firework_rocket"
+		id: "stellaris:rocket"
 	}
 	id: "4C57010000000000"
 	order_index: 0
 	quest_links: [ ]
-	quests: [{
-		dependencies: ["4E44010000010001"]
-		hide_until_deps_complete: true
-		icon: {
-			id: "stellaris:rocket"
-		}
-		id: "4C57010000010001"
-		rewards: [{
-			id: "4C57010000030001"
-			type: "xp"
-			xp: 100
-		}]
-		shape: "hexagon"
-		size: 2.0d
-		tasks: [{
-			SkillsLevel: {
-				category: ""
-				check: 0b
-				comparison: "GREATER_OR_EQUAL"
-				first: 10
-				mode: "TOTAL_LEVEL"
-				second: 20
+	quests: [
+		{
+			dependencies: ["4358010000010003"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "stellaris:rocket_engine"
 			}
-			id: "4C57010000020001"
-			item: { count: 1, id: "stellaris:rocket" }
-			type: "item"
-		}]
-		x: 0.0d
-		y: 0.0d
-	}]
+			id: "4C57010000010001"
+			rewards: [{
+				id: "4C57030000010101"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4C57020000010101"
+					item: { count: 1, id: "stellaris:rocket_nose_cone" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4C57020000010102"
+					item: { count: 1, id: "stellaris:rocket_fin" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4C57020000010103"
+					item: { count: 1, id: "stellaris:rocket_engine" }
+					type: "item"
+				}
+			]
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4C57010000010001"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "stellaris:oxygen_distributor"
+			}
+			id: "4C57010000010002"
+			rewards: [{
+				id: "4C57030000010201"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4C57020000010201"
+					item: { count: 1, id: "stellaris:water_separator" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4C57020000010202"
+					item: { count: 1, id: "stellaris:oxygen_distributor" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4C57020000010203"
+					item: { count: 1, id: "stellaris:big_oxygen_tank" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4C57020000010204"
+					item: { count: 1, id: "stellaris:fuel_refinery" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4C57020000010205"
+					item: { count: 1, id: "stellaris:pumpjack" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4C57010000010002"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "stellaris:rocket_launch_pad"
+			}
+			id: "4C57010000010003"
+			rewards: [{
+				id: "4C57030000010301"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4C57020000010301"
+					item: { count: 1, id: "stellaris:rocket_launch_pad" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4C57020000010302"
+					item: { count: 1, id: "stellaris:rocket_station" }
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4C57010000010003"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "stellaris:rocket"
+			}
+			id: "4C57010000010004"
+			rewards: [{
+				auto: "enabled"
+				command: "/astages add {p} ow_launch_offworld_logistics_complete true true"
+				icon: {
+					id: "stellaris:rocket"
+				}
+				id: "4C57030000010402"
+				permission_level: 2
+				silent: true
+				team_reward: true
+				type: "command"
+			}]
+			shape: "gear"
+			size: 1.4d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C57020000010401"
+				item: { count: 1, id: "stellaris:rocket" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+	]
 }

@@ -1,0 +1,19 @@
+	chapter.4D41487500000000.title: "[STUB] Mahou Tsukai (optional)"
+	quest.4D41487500000001.title: "[STUB] Knowledge Compendium"
+	quest.4D41487500000001.quest_subtitle: "[STUB] read before you cast"
+	quest.4D41487500000001.quest_desc: ["[BRIEF] teaches: mahoutsukai:guidebook (ungated, Renaissance-legal, no AStages lock). Entry node of the OPTIONAL chapter ren_mahou_tsukai; deps = Renaissance gateway 6D7E8F901A2B1054. This is a self-contained optional flavor spell-circle system, never on the spine. The guidebook (Knowledge Compendium) is how the player learns/unlocks mahoutsukai spells. Next node = attuner. Opus: 2-4 para instruction-first; tell the player this whole tab is optional side magic, and that the compendium is where every spell in the system is learned. No em dashes."]
+	quest.4D41487500000002.title: "[STUB] Attuner"
+	quest.4D41487500000002.quest_subtitle: "[STUB] charge attuning gems"
+	quest.4D41487500000002.quest_desc: ["[BRIEF] teaches: mahoutsukai:attuner (ungated). Prior node = guidebook (4D41487500000001). The attuner produces attuned gems (attuned_diamond/attuned_emerald) that store mana for casting. Optional. Next node = mahoujin_projector. Opus: 2-4 para instruction-first, explain what attuning is and why the projector needs charged gems. No em dashes."]
+	quest.4D41487500000003.title: "[STUB] Mahoujin Projector"
+	quest.4D41487500000003.quest_subtitle: "[STUB] project the magic circle"
+	quest.4D41487500000003.quest_desc: ["[BRIEF] teaches: mahoutsukai:mahoujin_projector (ungated) — the core mechanic block that projects the magic circle (mahoujin). Prior node = attuner (4D41487500000002). Optional. Next node = mystic_code. Opus: 2-4 para instruction-first, explain that mahoutsukai runs on projected circles and this projector is the heart of the system. No em dashes."]
+	quest.4D41487500000004.title: "[STUB] Mystic Code"
+	quest.4D41487500000004.quest_subtitle: "[STUB] your casting focus"
+	quest.4D41487500000004.quest_desc: ["[BRIEF] teaches: mahoutsukai:mystic_code (ungated) — the held casting focus that channels spells from the circle. Prior node = mahoujin_projector (4D41487500000003). Optional. Branches to two optional leaves: scroll set (familiars/utility) and mystic_staff (capstone focus). Opus: 2-4 para instruction-first, explain the mystic code as the wand/focus that lets the player cast the circle's spells. No em dashes."]
+	quest.4D41487500000005.title: "[STUB] Spell Scrolls"
+	quest.4D41487500000005.quest_subtitle: "[STUB] familiars and utility"
+	quest.4D41487500000005.quest_desc: ["[BRIEF] teaches: mahoutsukai spell scrolls via a single ftbfiltersystem smart_filter accepting scroll_familiars_garden OR scroll_gandr OR scroll_fay_sight (all ungated). Prior node = mystic_code (4D41487500000004). Optional. Covers the familiar beat (scroll_familiars_garden) plus a couple of utility scrolls; there is no standalone familiar item, the familiar is scroll-driven. Opus: 2-4 para instruction-first, explain that scrolls grant individual spells and that one of these summons a familiar. No em dashes."]
+	quest.4D41487500000006.title: "[STUB] Mystic Staff"
+	quest.4D41487500000006.quest_subtitle: "[STUB] the finished focus"
+	quest.4D41487500000006.quest_desc: ["[BRIEF] teaches: mahoutsukai:mystic_staff (ungated) — the upgraded capstone casting focus. Prior node = mystic_code (4D41487500000004). Optional; diamond shape (tier peak of this optional tab). Opus: 2-4 para instruction-first, explain the staff as the top-tier focus for this optional magic system. No em dashes."]

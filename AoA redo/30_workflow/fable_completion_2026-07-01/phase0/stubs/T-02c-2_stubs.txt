@@ -1,0 +1,43 @@
+	chapter.4954110000000000.title: "[STUB] Mekanism Ore Works"
+	quest.4954111000000001.title: "[STUB] Enrichment Chamber"
+	quest.4954111000000001.quest_subtitle: "[STUB] Stage-1 ore doubling"
+	quest.4954111000000001.quest_desc: ["[BRIEF] teaches: Mekanism entry ore-processing; the Enrichment Chamber is stage-1 doubling (ore -> 2 dust). requires mekanism:enrichment_chamber (IR-locked aoa_astages_01_item_restrictions.js:288); prior node = IR gateway 0B0310A0000000F0 (chapter root). Feeder intermediates ingot_steel/ingot_osmium referenced in prose, not tasked. Opus: 2-4 para instruction-first, explain the doubling tier concept and that later stages multiply the yield."]
+	quest.4954111000000002.title: "[STUB] Crusher"
+	quest.4954111000000002.quest_subtitle: "[STUB] Ingots back to dust"
+	quest.4954111000000002.quest_desc: ["[BRIEF] teaches: the Crusher turns ingots/items back to dust, pairing with enrichment for the 2x return leg. requires mekanism:crusher (IR-locked :289); prior node = enrichment_chamber 4954111000000001. Opus: 2-4 para instruction-first, describe the crush-then-enrich loop."]
+	quest.4954111000000003.title: "[STUB] Energized Smelter"
+	quest.4954111000000003.quest_subtitle: "[STUB] Powered smelting"
+	quest.4954111000000003.quest_desc: ["[BRIEF] teaches: the Energized Smelter is Mekanism's electric furnace; powered smelting for dust output. requires mekanism:energized_smelter (IR-locked :290); prior node = crusher 4954111000000002. Opus: 2-4 para instruction-first, note it feeds the factory-tier smelting lane later."]
+	quest.4954111000000004.title: "[STUB] Osmium Compressor"
+	quest.4954111000000004.quest_subtitle: "[STUB] 3x-tier feeder"
+	quest.4954111000000004.quest_desc: ["[BRIEF] teaches: the Osmium Compressor compresses osmium onto dust for enriched alloys; the 3x-tier gateway feeding purification. requires mekanism:osmium_compressor (IR-locked :291); prior node = crusher 4954111000000002. Opus: 2-4 para instruction-first, explain enriched-alloy feedstock and the step up to gas processing."]
+	quest.4954111000000005.title: "[STUB] Purification Chamber"
+	quest.4954111000000005.quest_subtitle: "[STUB] Stage-3 gas processing"
+	quest.4954111000000005.quest_desc: ["[BRIEF] teaches: the Purification Chamber is stage-3 (ore -> clumps using oxygen gas), needs the oxygen loop from the electrolytic separator. requires mekanism:purification_chamber (IR-locked :293); prior node = osmium_compressor 4954111000000004. Opus: 2-4 para instruction-first, explain gas-fed processing and the oxygen prerequisite."]
+	quest.4954111000000006.title: "[STUB] Electrolytic Separator"
+	quest.4954111000000006.quest_subtitle: "[STUB] Water into hydrogen + oxygen"
+	quest.4954111000000006.quest_desc: ["[BRIEF] teaches: the Electrolytic Separator splits water into hydrogen and oxygen, the gas supply that drives purification and injection. requires mekanism:electrolytic_separator (IR-locked :296); prior node = osmium_compressor 4954111000000004. Opus: 2-4 para instruction-first, explain the gas loop that all higher tiers depend on."]
+	quest.4954111000000007.title: "[STUB] Chemical Injection Chamber"
+	quest.4954111000000007.quest_subtitle: "[STUB] Stage-4 ore doubling"
+	quest.4954111000000007.quest_desc: ["[BRIEF] teaches: the Chemical Injection Chamber is stage-4 (ore -> shards using hydrogen chloride), the 4x tier. requires mekanism:chemical_injection_chamber (IR-locked :294); prior nodes = purification_chamber 4954111000000005 AND electrolytic_separator 4954111000000006. Opus: 2-4 para instruction-first, explain the HCl feed and the yield jump."]
+	quest.4954111000000008.title: "[STUB] Chemical Infuser"
+	quest.4954111000000008.quest_subtitle: "[STUB] Combine gases into HCl"
+	quest.4954111000000008.quest_desc: ["[BRIEF] teaches: the Chemical Infuser combines gases (hydrogen + chlorine into hydrogen chloride) to feed the injection chamber. requires mekanism:chemical_infuser (IR-locked :295); prior node = electrolytic_separator 4954111000000006. Opus: 2-4 para instruction-first, explain gas combination and its role supplying the 4x tier."]
+	quest.4954111000000009.title: "[STUB] Pressurized Reaction Chamber"
+	quest.4954111000000009.quest_subtitle: "[STUB] Item + fluid + gas reactions"
+	quest.4954111000000009.quest_desc: ["[BRIEF] teaches: the Pressurized Reaction Chamber (PRC) runs item+fluid+gas reactions, the versatile machine for substrate and advanced intermediates. requires mekanism:pressurized_reaction_chamber (IR-locked :297); prior node = chemical_injection_chamber 4954111000000007. Opus: 2-4 para instruction-first, describe the three-input reaction concept and example outputs."]
+	quest.495411100000000A.title: "[STUB] Metallurgic Infuser"
+	quest.495411100000000A.quest_subtitle: "[STUB] Infuse dusts into alloys"
+	quest.495411100000000A.quest_desc: ["[BRIEF] teaches: the Metallurgic Infuser infuses dusts (carbon/redstone/diamond) to make alloys and steel dust; a branch off the entry machine. requires mekanism:metallurgic_infuser (IR-locked :287); prior node = enrichment_chamber 4954111000000001. Opus: 2-4 para instruction-first, explain infusion types and steel-dust production."]
+	quest.495411100000000B.title: "[STUB] Thermal Evaporation Plant"
+	quest.495411100000000B.quest_subtitle: "[STUB] Spine capstone multiblock"
+	quest.495411100000000B.quest_desc: ["[BRIEF] teaches: SPINE CAPSTONE (multiblock). The Thermal Evaporation Plant boils brine to lithium and provides the 5x-tier salt refining. Build the tower from mekanism:thermal_evaporation_block + mekanism:thermal_evaporation_valve, controlled by the mekanism:thermal_evaporation_controller (the task item + icon; do NOT task the block/valve separately). requires mekanism:thermal_evaporation_controller (IR-locked :327); prior node = pressurized_reaction_chamber 4954111000000009. Opus: 2-4 para instruction-first, give explicit build instructions for the multiblock tower and its brine->lithium output."]
+	quest.4954111000000010.title: "[STUB] Basic Smelting Factory"
+	quest.4954111000000010.quest_subtitle: "[STUB] Parallel smelting tier"
+	quest.4954111000000010.quest_desc: ["[BRIEF] teaches: a Factory is parallel machines in one block; the Basic Smelting Factory bumps smelting throughput. requires mekanism:basic_smelting_factory (IR-locked :315); prior node = energized_smelter 4954111000000003. Opus: 2-4 para instruction-first, explain the factory concept (installers/slots) and when to upgrade from single machines."]
+	quest.4954111000000011.title: "[STUB] Basic Enriching Factory"
+	quest.4954111000000011.quest_subtitle: "[STUB] Parallel ore-doubling"
+	quest.4954111000000011.quest_desc: ["[BRIEF] teaches: the Basic Enriching Factory runs parallel ore-doubling for scaled throughput. requires mekanism:basic_enriching_factory (IR-locked :316); prior node = basic_smelting_factory 4954111000000010. Opus: 2-4 para instruction-first, tie back to the enrichment chamber tier."]
+	quest.4954111000000012.title: "[STUB] Basic Crushing Factory"
+	quest.4954111000000012.quest_subtitle: "[STUB] Parallel crushing"
+	quest.4954111000000012.quest_desc: ["[BRIEF] teaches: the Basic Crushing Factory runs parallel crushing for the return leg at scale. requires mekanism:basic_crushing_factory (IR-locked :317); prior node = basic_enriching_factory 4954111000000011. Opus: 2-4 para instruction-first, close the factory-lane loop."]

@@ -5,28 +5,198 @@
 	group: "080F7BA9FFB8FC07"
 	hide_quest_until_deps_complete: true
 	icon: {
-		id: "stellaris:rocket"
+		id: "stellaris:antenna"
 	}
-	id: "4450010000000000"
-	order_index: 2
+	id: "4C59010000000000"
+	order_index: 3
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["4C57010000010001"]
-			hide_until_deps_complete: false
+			dependencies: [
+				"4C57010000010004"
+				"4C58010000010005"
+			]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
 			icon: {
-				id: "stellaris:rocket_nose_cone"
+				id: "stellaris:radioactive_generator"
 			}
-			id: "4450010000010001"
+			id: "4C59010000010001"
 			rewards: [{
-				id: "4450010000030001"
+				id: "4C59030000010101"
 				type: "xp"
-				xp: 200
+				xp: 50
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4C59020000010103"
+				item: { count: 1, id: "stellaris:radioactive_generator" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4C59010000010001"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "stellaris:t4_tank"
+			}
+			id: "4C59010000010002"
+			rewards: [{
+				id: "4C59030000010201"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4C59020000010201"
+					item: { count: 1, id: "stellaris:water_pump" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4C59020000010203"
+					item: { count: 1, id: "stellaris:t4_tank" }
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4C59010000010002"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "stellaris:cable_t3"
+			}
+			id: "4C59010000010003"
+			rewards: [{
+				id: "4C59030000010301"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4C59020000010302"
+					item: { count: 1, id: "stellaris:cable_t3" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4C59020000010304"
+					item: { count: 1, id: "stellaris:pipe_t3" }
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4C59010000010003"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "stellaris:antenna"
+			}
+			id: "4C59010000010004"
+			rewards: [{
+				auto: "enabled"
+				command: "/astages add {p} ow_dyson_project_complete true true"
+				icon: {
+					id: "stellaris:antenna"
+				}
+				id: "4C59030000010402"
+				permission_level: 2
+				silent: true
+				team_reward: true
+				type: "command"
 			}]
 			shape: "gear"
-			size: 2.0d
+			size: 1.2d
 			tasks: [
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -35,11 +205,17 @@
 						mode: "TOTAL_LEVEL"
 						second: 20
 					}
-					id: "4450010000020001"
-					item: { count: 1, id: "stellaris:rocket_nose_cone" }
+					id: "4C59020000010402"
+					item: { count: 1, id: "stellaris:t4_bank" }
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -48,11 +224,17 @@
 						mode: "TOTAL_LEVEL"
 						second: 20
 					}
-					id: "4450010000020002"
-					item: { count: 1, id: "stellaris:rocket_fin" }
+					id: "4C59020000010403"
+					item: { count: 1, id: "stellaris:antenna" }
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -61,350 +243,32 @@
 						mode: "TOTAL_LEVEL"
 						second: 20
 					}
-					id: "4450010000020003"
-					item: { count: 1, id: "stellaris:rocket_engine" }
+					id: "4C59020000010404"
+					item: { count: 1, id: "stellaris:upgrade_station" }
 					type: "item"
 				}
 			]
-			x: 0.0d
-			y: 4.4d
+			x: 5.0d
+			y: 0.0d
 		}
 		{
-			dependencies: ["4450010000010001"]
+			dependencies: ["4C59010000010001"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: {
-				id: "stellaris:big_oxygen_tank"
+				id: "stellaris:coal_generator"
 			}
-			id: "4450010000010002"
-			rewards: [{
-				id: "4450010000030002"
-				type: "xp"
-				xp: 75
-			}]
-			tasks: [
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "4450010000020010"
-					item: { count: 1, id: "stellaris:water_separator" }
-					type: "item"
-				}
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "4450010000020011"
-					item: { count: 1, id: "stellaris:oxygen_distributor" }
-					type: "item"
-				}
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "4450010000020012"
-					item: { count: 1, id: "stellaris:big_oxygen_tank" }
-					type: "item"
-				}
-			]
-			x: 1.5d
-			y: 1.3d
-		}
-		{
-			dependencies: ["4450010000010001"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "stellaris:fuel_refinery"
-			}
-			id: "4450010000010003"
-			rewards: [{
-				id: "4450010000030003"
-				type: "xp"
-				xp: 75
-			}]
-			tasks: [
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "4450010000020013"
-					item: { count: 1, id: "stellaris:fuel_refinery" }
-					type: "item"
-				}
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "4450010000020014"
-					item: { count: 1, id: "stellaris:pumpjack" }
-					type: "item"
-				}
-			]
-			x: 1.5d
-			y: 7.5d
-		}
-		{
-			dependencies: [
-				"4450010000010002"
-				"4450010000010003"
-			]
-			hide_until_deps_complete: true
-			icon: {
-				id: "stellaris:rocket_launch_pad"
-			}
-			id: "4450010000010004"
-			rewards: [{
-				id: "4450010000030004"
-				type: "xp"
-				xp: 100
-			}]
-			tasks: [
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "4450010000020015"
-					item: { count: 1, id: "stellaris:rocket_launch_pad" }
-					type: "item"
-				}
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "4450010000020016"
-					item: { count: 1, id: "stellaris:rocket_station" }
-					type: "item"
-				}
-			]
-			x: 3.0d
-			y: 1.3d
-		}
-		{
-			dependencies: ["4450010000010004"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "stellaris:rocket"
-			}
-			id: "4450010000010005"
-			rewards: [{
-				id: "4450010000030005"
-				type: "xp"
-				xp: 200
-			}]
-			shape: "hexagon"
-			size: 1.5d
-			tasks: [{
-				SkillsLevel: {
-					category: ""
-					check: 0b
-					comparison: "GREATER_OR_EQUAL"
-					first: 10
-					mode: "TOTAL_LEVEL"
-					second: 20
-				}
-				id: "4450010000020017"
-				item: { count: 1, id: "stellaris:rocket" }
-				type: "item"
-			}]
-			x: 4.5d
-			y: 1.3d
-		}
-		{
-			dependencies: ["4450010000010005"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "stellaris:raw_desh_ingot"
-			}
-			id: "4450010000010010"
-			rewards: [{
-				id: "4450010000030010"
-				type: "xp"
-				xp: 100
-			}]
-			size: 1.5d
-			tasks: [
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "4450010000020100"
-					item: { count: 1, id: "stellaris:raw_desh_ingot" }
-					type: "item"
-				}
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "4450010000020101"
-					item: { count: 1, id: "stellaris:raw_steel_ingot" }
-					type: "item"
-				}
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "4450010000020102"
-					item: { count: 1, id: "stellaris:ice_shard" }
-					type: "item"
-				}
-			]
-			x: 6.0d
-			y: -3.89d
-		}
-		{
-			dependencies: ["4450010000010010"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "electrodynamics:quarry"
-			}
-			id: "4450010000010011"
-			optional: true
-			rewards: [{
-				id: "4450010000030011"
-				type: "xp"
-				xp: 75
-			}]
-			tasks: [{
-				SkillsLevel: {
-					category: ""
-					check: 0b
-					comparison: "GREATER_OR_EQUAL"
-					first: 10
-					mode: "TOTAL_LEVEL"
-					second: 20
-				}
-				block: { count: 1, id: "electrodynamics:quarry" }
-				id: "4450010000020110"
-				type: "place_block"
-				value: 1L
-			}]
-			x: 7.5d
-			y: -7.5d
-		}
-		{
-			dependencies: ["4450010000010010"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "stellaris:desh_ingot"
-			}
-			id: "4450010000010012"
-			rewards: [{
-				id: "4450010000030012"
-				type: "xp"
-				xp: 100
-			}]
-			tasks: [{
-				SkillsLevel: {
-					category: ""
-					check: 0b
-					comparison: "GREATER_OR_EQUAL"
-					first: 10
-					mode: "TOTAL_LEVEL"
-					second: 20
-				}
-				id: "4450010000020120"
-				item: { count: 1, id: "stellaris:desh_ingot" }
-				type: "item"
-			}]
-			x: 7.5d
-			y: -5.25d
-		}
-		{
-			dependencies: ["4450010000010010"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "stellaris:flag"
-			}
-			id: "4450010000010014"
-			rewards: [{
-				id: "4450010000030014"
-				type: "xp"
-				xp: 125
-			}]
-			shape: "hexagon"
+			id: "4C59010000010005"
+			shape: "rsquare"
 			size: 1.0d
-			tasks: [{
-				SkillsLevel: {
-					category: ""
-					check: 0b
-					comparison: "GREATER_OR_EQUAL"
-					first: 10
-					mode: "TOTAL_LEVEL"
-					second: 20
-				}
-				block: { count: 1, id: "stellaris:flag" }
-				id: "4450010000020140"
-				type: "place_block"
-				value: 1L
-			}]
-			x: 7.5d
-			y: -0.28d
-		}
-		{
-			dependencies: ["4450010000010014"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "stellaris:raw_tharsite"
-			}
-			id: "4450010000010020"
-			rewards: [{
-				id: "4450010000030020"
-				type: "xp"
-				xp: 100
-			}]
-			size: 1.5d
 			tasks: [
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -413,11 +277,17 @@
 						mode: "TOTAL_LEVEL"
 						second: 20
 					}
-					id: "4450010000020200"
-					item: { count: 1, id: "stellaris:raw_tharsite" }
+					id: "4C59020000010101"
+					item: { count: 1, id: "stellaris:coal_generator" }
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -426,11 +296,17 @@
 						mode: "TOTAL_LEVEL"
 						second: 20
 					}
-					id: "4450010000020201"
-					item: { count: 1, id: "stellaris:plutonium_piece" }
+					id: "4C59020000010102"
+					item: { count: 1, id: "stellaris:diesel_generator" }
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -439,11 +315,17 @@
 						mode: "TOTAL_LEVEL"
 						second: 20
 					}
-					id: "4450010000020202"
-					item: { count: 1, id: "stellaris:ice_shard" }
+					id: "4C59020000010202"
+					item: { count: 1, id: "stellaris:t3_tank" }
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -452,622 +334,51 @@
 						mode: "TOTAL_LEVEL"
 						second: 20
 					}
-					id: "4450010000020203"
-					item: { count: 1, id: "stellaris:mars_ostrum_ore" }
+					id: "4C59020000010301"
+					item: { count: 1, id: "stellaris:cable_t2" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4C59020000010303"
+					item: { count: 1, id: "stellaris:pipe_t2" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4C59020000010401"
+					item: { count: 1, id: "stellaris:t3_bank" }
 					type: "item"
 				}
 			]
-			x: 9.0d
-			y: -0.28d
-		}
-		{
-			dependencies: ["4450010000010020"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "stellaris:vacuumator"
-			}
-			id: "4450010000010021"
-			optional: true
-			rewards: [{
-				id: "4450010000030021"
-				type: "xp"
-				xp: 75
-			}]
-			tasks: [{
-				SkillsLevel: {
-					category: ""
-					check: 0b
-					comparison: "GREATER_OR_EQUAL"
-					first: 10
-					mode: "TOTAL_LEVEL"
-					second: 20
-				}
-				block: { count: 1, id: "stellaris:vacuumator" }
-				id: "4450010000020210"
-				type: "place_block"
-				value: 1L
-			}]
-			x: 10.5d
-			y: -3.5d
-		}
-		{
-			dependencies: ["4450010000010020"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "stellaris:tharsite_ingot"
-			}
-			id: "4450010000010022"
-			rewards: [{
-				id: "4450010000030022"
-				type: "xp"
-				xp: 100
-			}]
-			tasks: [{
-				SkillsLevel: {
-					category: ""
-					check: 0b
-					comparison: "GREATER_OR_EQUAL"
-					first: 10
-					mode: "TOTAL_LEVEL"
-					second: 20
-				}
-				id: "4450010000020220"
-				item: { count: 1, id: "stellaris:tharsite_ingot" }
-				type: "item"
-			}]
-			x: 10.5d
-			y: -2.5d
-		}
-		{
-			dependencies: ["4450010000010020"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "stellaris:flag"
-			}
-			id: "4450010000010025"
-			rewards: [{
-				id: "4450010000030025"
-				type: "xp"
-				xp: 125
-			}]
-			shape: "hexagon"
-			size: 1.0d
-			tasks: [{
-				SkillsLevel: {
-					category: ""
-					check: 0b
-					comparison: "GREATER_OR_EQUAL"
-					first: 10
-					mode: "TOTAL_LEVEL"
-					second: 20
-				}
-				block: { count: 1, id: "stellaris:flag" }
-				id: "4450010000020250"
-				type: "place_block"
-				value: 1L
-			}]
-			x: 10.5d
-			y: 2.94d
-		}
-		{
-			dependencies: ["4450010000010025"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "chemicalscience:bulletproofvest"
-			}
-			id: "4450010000010030"
-			rewards: [{
-				id: "4450010000030030"
-				type: "xp"
-				xp: 100
-			}]
-			tasks: [{
-				SkillsLevel: {
-					category: ""
-					check: 0b
-					comparison: "GREATER_OR_EQUAL"
-					first: 10
-					mode: "TOTAL_LEVEL"
-					second: 20
-				}
-				id: "4450010000020300"
-				item: { count: 1, id: "chemicalscience:bulletproofvest" }
-				type: "item"
-			}]
-			x: 12.0d
-			y: 2.94d
-		}
-		{
-			dependencies: ["4450010000010030"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "stellaris:raw_corronium"
-			}
-			id: "4450010000010031"
-			rewards: [{
-				id: "4450010000030031"
-				type: "xp"
-				xp: 100
-			}]
-			size: 1.5d
-			tasks: [
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "4450010000020310"
-					item: { count: 1, id: "stellaris:raw_corronium" }
-					type: "item"
-				}
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "4450010000020311"
-					item: { count: 1, id: "stellaris:neptunium_piece" }
-					type: "item"
-				}
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "4450010000020312"
-					item: { count: 1, id: "stellaris:corronium_ingot" }
-					type: "item"
-				}
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "4450010000020313"
-					item: { count: 1, id: "stellaris:neptunium_ingot" }
-					type: "item"
-				}
-			]
-			x: 13.5d
-			y: 0.38d
-		}
-		{
-			dependencies: ["4450010000010030"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "stellaris:water_separator"
-			}
-			id: "4450010000010032"
-			optional: true
-			rewards: [{
-				id: "4450010000030032"
-				type: "xp"
-				xp: 75
-			}]
-			tasks: [{
-				SkillsLevel: {
-					category: ""
-					check: 0b
-					comparison: "GREATER_OR_EQUAL"
-					first: 10
-					mode: "TOTAL_LEVEL"
-					second: 20
-				}
-				block: { count: 1, id: "stellaris:water_separator" }
-				id: "4450010000020320"
-				type: "place_block"
-				value: 1L
-			}]
-			x: 13.5d
-			y: 5.5d
-		}
-		{
-			dependencies: ["4450010000010031"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "stellaris:flag"
-			}
-			id: "4450010000010036"
-			rewards: [{
-				id: "4450010000030036"
-				type: "xp"
-				xp: 125
-			}]
-			shape: "hexagon"
-			size: 1.0d
-			tasks: [{
-				SkillsLevel: {
-					category: ""
-					check: 0b
-					comparison: "GREATER_OR_EQUAL"
-					first: 10
-					mode: "TOTAL_LEVEL"
-					second: 20
-				}
-				block: { count: 1, id: "stellaris:flag" }
-				id: "4450010000020360"
-				type: "place_block"
-				value: 1L
-			}]
-			x: 15.0d
-			y: 2.25d
-		}
-		{
-			dependencies: ["4450010000010036"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "stellaris:raw_solerium"
-			}
-			id: "4450010000010040"
-			rewards: [{
-				id: "4450010000030040"
-				type: "xp"
-				xp: 100
-			}]
-			size: 1.5d
-			tasks: [
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "4450010000020400"
-					item: { count: 1, id: "stellaris:raw_solerium" }
-					type: "item"
-				}
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "4450010000020401"
-					item: { count: 1, id: "stellaris:raw_uranium" }
-					type: "item"
-				}
-			]
-			x: 16.5d
-			y: 2.25d
-		}
-		{
-			dependencies: ["4450010000010040"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "stellaris:solar_panel"
-			}
-			id: "4450010000010041"
-			optional: true
-			rewards: [{
-				id: "4450010000030041"
-				type: "xp"
-				xp: 75
-			}]
-			tasks: [{
-				SkillsLevel: {
-					category: ""
-					check: 0b
-					comparison: "GREATER_OR_EQUAL"
-					first: 10
-					mode: "TOTAL_LEVEL"
-					second: 20
-				}
-				block: { count: 1, id: "stellaris:solar_panel" }
-				id: "4450010000020410"
-				type: "place_block"
-				value: 1L
-			}]
-			x: 18.0d
-			y: 0.5d
-		}
-		{
-			dependencies: ["4450010000010040"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "stellaris:solerium"
-			}
-			id: "4450010000010042"
-			rewards: [{
-				id: "4450010000030042"
-				type: "xp"
-				xp: 100
-			}]
-			size: 1.5d
-			tasks: [{
-				SkillsLevel: {
-					category: ""
-					check: 0b
-					comparison: "GREATER_OR_EQUAL"
-					first: 10
-					mode: "TOTAL_LEVEL"
-					second: 20
-				}
-				id: "4450010000020420"
-				item: { count: 1, id: "stellaris:solerium" }
-				type: "item"
-			}]
-			x: 18.0d
-			y: 2.0d
-		}
-		{
-			dependencies: ["4450010000010040"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "stellaris:flag"
-			}
-			id: "4450010000010045"
-			rewards: [{
-				id: "4450010000030045"
-				type: "xp"
-				xp: 125
-			}]
-			shape: "hexagon"
-			size: 1.0d
-			tasks: [{
-				SkillsLevel: {
-					category: ""
-					check: 0b
-					comparison: "GREATER_OR_EQUAL"
-					first: 10
-					mode: "TOTAL_LEVEL"
-					second: 20
-				}
-				block: { count: 1, id: "stellaris:flag" }
-				id: "4450010000020450"
-				type: "place_block"
-				value: 1L
-			}]
-			x: 18.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["4450010000010045"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "dysoncubeproject:em_railejector_controller"
-			}
-			id: "4450010000010050"
-			rewards: [{
-				id: "4450010000030050"
-				type: "xp"
-				xp: 200
-			}]
-			tasks: [{
-				SkillsLevel: {
-					category: ""
-					check: 0b
-					comparison: "GREATER_OR_EQUAL"
-					first: 10
-					mode: "TOTAL_LEVEL"
-					second: 20
-				}
-				block: { count: 1, id: "dysoncubeproject:em_railejector_controller" }
-				id: "4450010000020500"
-				type: "place_block"
-				value: 1L
-			}]
-			x: 19.5d
-			y: 4.0d
-		}
-		{
-			dependencies: [
-				"4450010000010012"
-				"4450010000010022"
-				"4450010000010031"
-				"4450010000010042"
-			]
-			hide_until_deps_complete: true
-			icon: {
-				id: "dysoncubeproject:beam_package"
-			}
-			id: "4450010000010051"
-			rewards: [{
-				id: "4450010000030051"
-				type: "xp"
-				xp: 300
-			}]
-			tasks: [{
-				SkillsLevel: {
-					category: ""
-					check: 0b
-					comparison: "GREATER_OR_EQUAL"
-					first: 10
-					mode: "TOTAL_LEVEL"
-					second: 20
-				}
-				id: "4450010000020510"
-				item: { count: 1, id: "dysoncubeproject:beam_package" }
-				type: "item"
-			}]
-			x: 19.5d
-			y: -6.0d
-		}
-		{
-			dependencies: ["4450010000010050"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "dysoncubeproject:beam"
-			}
-			id: "4450010000010052"
-			rewards: [{
-				id: "4450010000030052"
-				type: "xp"
-				xp: 150
-			}]
-			tasks: [{
-				SkillsLevel: {
-					category: ""
-					check: 0b
-					comparison: "GREATER_OR_EQUAL"
-					first: 10
-					mode: "TOTAL_LEVEL"
-					second: 20
-				}
-				id: "4450010000020520"
-				item: { count: 1, id: "dysoncubeproject:beam" }
-				type: "item"
-			}]
-			x: 21.0d
-			y: 3.5d
-		}
-		{
-			dependencies: ["4450010000010050"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "dysoncubeproject:solar_sail"
-			}
-			id: "4450010000010053"
-			rewards: [{
-				id: "4450010000030053"
-				type: "xp"
-				xp: 150
-			}]
-			tasks: [{
-				SkillsLevel: {
-					category: ""
-					check: 0b
-					comparison: "GREATER_OR_EQUAL"
-					first: 10
-					mode: "TOTAL_LEVEL"
-					second: 20
-				}
-				id: "4450010000020530"
-				item: { count: 1, id: "dysoncubeproject:solar_sail" }
-				type: "item"
-			}]
-			x: 21.0d
-			y: 4.5d
-		}
-		{
-			dependencies: ["4450010000010051"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "stellaris:tablet"
-			}
-			id: "4450010000010054"
-			optional: true
-			rewards: [{
-				id: "4450010000030054"
-				type: "xp"
-				xp: 100
-			}]
-			tasks: [{
-				SkillsLevel: {
-					category: ""
-					check: 0b
-					comparison: "GREATER_OR_EQUAL"
-					first: 10
-					mode: "TOTAL_LEVEL"
-					second: 20
-				}
-				id: "4450010000020540"
-				item: { count: 1, id: "stellaris:tablet" }
-				type: "item"
-			}]
-			x: 21.0d
-			y: -5.5d
-		}
-		{
-			dependencies: [
-				"4450010000010052"
-				"4450010000010053"
-			]
-			hide_until_deps_complete: true
-			icon: {
-				id: "dysoncubeproject:ray_receiver_controller"
-			}
-			id: "4450010000010055"
-			rewards: [{
-				id: "4450010000030055"
-				type: "xp"
-				xp: 250
-			}]
-			tasks: [{
-				SkillsLevel: {
-					category: ""
-					check: 0b
-					comparison: "GREATER_OR_EQUAL"
-					first: 10
-					mode: "TOTAL_LEVEL"
-					second: 20
-				}
-				block: { count: 1, id: "dysoncubeproject:ray_receiver_controller" }
-				id: "4450010000020550"
-				type: "place_block"
-				value: 1L
-			}]
-			x: 22.5d
-			y: 3.5d
-		}
-		{
-			dependencies: [
-				"4450010000010051"
-				"4450010000010055"
-			]
-			hide_until_deps_complete: true
-			icon: {
-				id: "dysoncubeproject:beam_package"
-			}
-			id: "4450010000010056"
-			rewards: [{
-				id: "4450010000030056"
-				type: "xp"
-				xp: 1000
-			}]
-			shape: "pentagon"
-			size: 2.0d
-			tasks: [
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "4450010000020560"
-					item: { count: 1, id: "dysoncubeproject:beam_package" }
-					type: "item"
-				}
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "4450010000020561"
-					item: { count: 1, id: "dysoncubeproject:solar_sail_package" }
-					type: "item"
-				}
-			]
-			x: 24.0d
-			y: -6.5d
+			x: -4.0d
+			y: 3.0d
 		}
 	]
 }

@@ -7791,4 +7791,345 @@
 	quest.4252010000EE0001.title: "Scylla"
 	quest.4252010000EE0001.quest_subtitle: "Defeat the ocean-storm apex."
 	quest.4252010000EE0001.quest_desc: ["&c&lScylla&r is a required Ascension boss, an ocean-storm apex from Cataclysm that spawns naturally out on stormy seas. It commands the water and the weather, so fight it from stable footing and expect the arena to move under you.", "Kill it and keep the &bEssence of the Storm&r it drops, guaranteed on a real player kill. Turn it in here.", "Scylla follows the Kraken and is a dependency of the final convergence at the Draconic Guardian. Scylla, the Kraken, and the Infernal Dragon are all required before the finale opens, so none of the three can be skipped."]
+	chapter.0B0310C000000000.title: "[STUB] Spectrum Academy"
+	quest.0B0310C000000001.title: "[STUB] Pigment Palette"
+	quest.0B0310C000000001.quest_subtitle: "[STUB] the front-door color tool"
+	quest.0B0310C000000001.quest_desc: ["[BRIEF] teaches: Spectrum pigment_palette (Renaissance-gated, aoa_astages_01_item_restrictions.js L730); it is the front-door tool that mixes/reads colored pigment and ink for all Spectrum crafting; ENTRY node of ren_spectrum_academy, deps = Renaissance gateway 6D7E8F901A2B1054 (reveal on entering the Renaissance); next nodes = color_picker (0B0310C000000002) and pedestal_all_basic (0B0310C000000010). Opus: 2-4 para instruction-first, teach that Spectrum runs on colored pigment/ink and this is where color starts. No em dashes."]
+	quest.0B0310C000000002.title: "[STUB] Color Picker"
+	quest.0B0310C000000002.quest_subtitle: "[STUB] sample and store hues"
+	quest.0B0310C000000002.quest_desc: ["[BRIEF] teaches: Spectrum color_picker (Renaissance-gated, 01m_magic.js L66); tool to sample/select a hue for pigment work; prior node = pigment_palette (0B0310C000000001); next node = titration_barrel (0B0310C000000003). Opus: 2-4 para instruction-first. No em dashes."]
+	quest.0B0310C000000003.title: "[STUB] Titration Barrel"
+	quest.0B0310C000000003.quest_subtitle: "[STUB] refine pigment into ink"
+	quest.0B0310C000000003.quest_desc: ["[BRIEF] teaches: Spectrum titration_barrel (Renaissance-gated, 01m_magic.js L64); processing block that mixes/refines pigment toward ink; prior node = color_picker (0B0310C000000002); branches to the Pastel Network node lane at provider_node (0B0310C000000020). Opus: 2-4 para instruction-first. No em dashes."]
+	quest.0B0310C000000010.title: "[STUB] Pigment Pedestal"
+	quest.0B0310C000000010.quest_subtitle: "[STUB] the all-basic crafting pedestal"
+	quest.0B0310C000000010.quest_desc: ["[BRIEF] teaches: Spectrum pedestal_all_basic (Renaissance-gated, 01_item_restrictions.js L731); the Pigment Pedestal is Spectrum's core crafting altar (chapter icon); prior node = pigment_palette (0B0310C000000001); next node = the basic pedestal tier (0B0310C000000011). Opus: 2-4 para instruction-first, explain the pedestal is where colored crafting happens. No em dashes."]
+	quest.0B0310C000000011.title: "[STUB] Basic Pedestals"
+	quest.0B0310C000000011.quest_subtitle: "[STUB] the three starter tiers"
+	quest.0B0310C000000011.quest_desc: ["[BRIEF] teaches: any basic Pigment Pedestal tier via ONE smart_filter task accepting pedestal_basic_amethyst OR _citrine OR _topaz (all Renaissance-gated, 01_item_restrictions.js L732-734); prior node = pedestal_all_basic (0B0310C000000010); next node = pedestal_moonstone (0B0310C000000012). Opus: 2-4 para instruction-first, note any one of the three basic pedestals satisfies this. No em dashes."]
+	quest.0B0310C000000012.title: "[STUB] Moonstone Pedestal"
+	quest.0B0310C000000012.quest_subtitle: "[STUB] the mid pedestal tier"
+	quest.0B0310C000000012.quest_desc: ["[BRIEF] teaches: Spectrum pedestal_moonstone (Renaissance-gated, 01_item_restrictions.js L735); the next pedestal tier above basic; prior node = basic pedestals (0B0310C000000011); next node = pedestal_onyx (0B0310C000000013). Opus: 2-4 para instruction-first. No em dashes."]
+	quest.0B0310C000000013.title: "[STUB] Onyx Pedestal"
+	quest.0B0310C000000013.quest_subtitle: "[STUB] the top pedestal tier"
+	quest.0B0310C000000013.quest_desc: ["[BRIEF] teaches: Spectrum pedestal_onyx (Renaissance-gated, 01_item_restrictions.js L736); the peak pedestal tier reachable in the Renaissance; prior node = pedestal_moonstone (0B0310C000000012); feeds the Spirit Instiller convergence (0B0310C000000022). Opus: 2-4 para instruction-first. No em dashes."]
+	quest.0B0310C000000020.title: "[STUB] Pastel Network Nodes"
+	quest.0B0310C000000020.quest_subtitle: "[STUB] item routing for Spectrum"
+	quest.0B0310C000000020.quest_desc: ["[BRIEF] teaches: the Pastel Network via ONE smart_filter task accepting any of the 5 nodes connection_node/gather_node/provider_node/sender_node/storage_node (all Renaissance-gated, 01_item_restrictions.js L485-489); prior node = titration_barrel (0B0310C000000003); next node = fusion_shrine_calcite (0B0310C000000021). Opus: 2-4 para instruction-first, explain the Pastel Network is Spectrum's item-logistics layer and any one node satisfies this. No em dashes."]
+	quest.0B0310C000000021.title: "[STUB] Fusion Shrine"
+	quest.0B0310C000000021.quest_subtitle: "[STUB] the calcite fusion apparatus"
+	quest.0B0310C000000021.quest_desc: ["[BRIEF] teaches: Spectrum fusion_shrine_calcite (Renaissance-gated, 01m_magic.js L73; NOTE the basalt variant is IR-gated so calcite is the Renaissance-legal one); the Fusion Shrine crafts light-infused outputs; prior node = Pastel Network nodes (0B0310C000000020); feeds the Spirit Instiller convergence (0B0310C000000022). Opus: 2-4 para instruction-first. No em dashes."]
+	quest.0B0310C000000022.title: "[STUB] Spirit Instiller"
+	quest.0B0310C000000022.quest_subtitle: "[STUB] build the apparatus"
+	quest.0B0310C000000022.quest_desc: ["[BRIEF] teaches: building the Spectrum Spirit Instiller multiblock via ADVANCEMENT task spectrum:midgame/build_spirit_instiller_structure (the item is Renaissance-gated 01m_magic.js L67 but is tasked as an item in g7_chartered_arcana, so this convergence uses the build advancement to avoid a duplicate item task); CONVERGENCE node, deps = onyx pedestal (0B0310C000000013) AND fusion_shrine_calcite (0B0310C000000021); this is the id a parallel IR-reveal task (T-02b-2) wires onto. Opus: 2-4 para instruction-first, explain the Spirit Instiller is the apparatus that ties the pedestal and shrine lanes together. No em dashes."]
+	quest.0B0310C000000023.title: "[STUB] Particle Spawner"
+	quest.0B0310C000000023.quest_subtitle: "[STUB] optional decorative emitter"
+	quest.0B0310C000000023.quest_desc: ["[BRIEF] teaches: Spectrum particle_spawner (Renaissance-gated, 01m_magic.js L65); OPTIONAL cosmetic/particle emitter; prior node = Spirit Instiller (0B0310C000000022). Opus: 2-4 para instruction-first, mark as optional flavor. No em dashes."]
+	quest.0B0310C000000024.title: "[STUB] Ink Assortment"
+	quest.0B0310C000000024.quest_subtitle: "[STUB] optional ink sampler"
+	quest.0B0310C000000024.quest_desc: ["[BRIEF] teaches: Spectrum ink_assortment (ungated, Renaissance-legal); OPTIONAL bundle of inks demonstrating the color range Spectrum crafting uses; prior node = Spirit Instiller (0B0310C000000022). Opus: 2-4 para instruction-first, mark as optional. No em dashes."]
+	quest.2902E58DB70F9450.title: "[STUB] Directing the Flow"
+	quest.2902E58DB70F9450.quest_subtitle: "[STUB] Pipe valve on the IE fluid tank"
+	quest.2902E58DB70F9450.quest_desc: ["[BRIEF] teaches: immersiveengineering:pipe_valve (ungated, Medieval-legal IE bootstrap-lane exception; NOT fluid_pump which is IR-gated per aoa_astages_01_item_restrictions.js L347 and would be a cross-age softlock); it is a fluid-pipe control component that regulates flow into and out of the IE Fluid Tank multiblock; wires the previously dead-end mb_tank leaf (2902E58DB70F9441) onward so the tank reads as usable plumbing, not a throwaway; prior node = mb_tank advancement; next node = the mb_crusher forward pointer. Opus: 2-4 para instruction-first, teach that the tank stores fluids and the valve is how you control filling/draining it with the fluid_pipe network already built. No em dashes."]
+	quest.2902E58DB70F9451.title: "[STUB] Toward the Machine Fleet"
+	quest.2902E58DB70F9451.quest_subtitle: "[STUB] Build your first IE multiblock crusher"
+	quest.2902E58DB70F9451.quest_desc: ["[BRIEF] teaches: immersiveengineering:multiblocks/mb_crusher (ADVANCEMENT task, not an item task, so no era-inversion; icon = immersiveengineering:crusher which is IR-gated as a block but legal as an icon); forward pointer from the Medieval IE bootstrap toward the Industrial Revolution multiblock fleet; the Crusher is the first machine of that fleet and will not complete until the player reaches IR and hammer-forms the multiblock; prior node = pipe_valve (2902E58DB70F9450). The 02c IR IE chapter entry should later depend on this node (2902E58DB70F9451) for foundation-to-fleet continuity (handoff recorded in LEDGER). Opus: 2-4 para instruction-first, frame this as the bridge that shows where IE goes next once the player advances an age. No em dashes."]
+	quest.0B0310100000000B.title: "[STUB] Reaper's Scythe"
+	quest.0B0310100000000B.quest_subtitle: "[STUB] Craft the crude scythe to harvest spirits"
+	quest.0B0310100000000B.quest_desc: ["[BRIEF] teaches: Malum crude_scythe (malum:crude_scythe, ungated / Renaissance-legal, verified no AStages lock). This is the harvest tool that actually fills the spirit jar you already built. The prior Malum lane (spirit_altar -> raw/refined soulstone -> arcane_charcoal -> runic_workbench -> spirit_jar, node 0B0310100000000A) teaches building the apparatus but never the reaping loop. Deps = spirit_jar 0B0310100000000A. Next node = the spirit harvest (0B0310100000000C). Opus: 2-4 para instruction-first: explain that in Malum you reap SPIRITS from dying mobs by striking a mob whose death drop is a soul, using a scythe; the crude scythe is the entry harvesting tool; killing tagged mobs near/with the scythe releases aspected spirits that you catch and feed into the spirit jar. Teach the mechanic, not lore. No em dashes."]
+	quest.0B0310100000000C.title: "[STUB] Harvest of Souls"
+	quest.0B0310100000000C.quest_subtitle: "[STUB] Reap your first aspected spirits"
+	quest.0B0310100000000C.quest_desc: ["[BRIEF] teaches: Malum spirit collection. Task is a ftbfiltersystem:smart_filter accepting any of the 9 aspected/umbral spirits (malum:sacred_spirit, wicked_spirit, arcane_spirit, eldritch_spirit, aerial_spirit, aqueous_spirit, earthen_spirit, infernal_spirit, umbral_spirit; = contents of #malum:spirits = #malum:aspected_spirits + umbral_spirit, jar-verified). All ungated / Renaissance-legal. Deps = crude_scythe node 0B0310100000000B. Next = soul_stained_steel_scythe capstone (0B0310100000000D). Note: the IR chapter ir_magic_feedstock_and_spectrum_network re-uses 6 of these spirits as feedstock further along; this Renaissance node is the FIRST harvest, teaching where spirits come from. Opus: 2-4 para instruction-first: mobs killed near a soulstone-tuned scythe drop the spirit matching their type; each aspect (sacred, wicked, arcane, etc.) reads from a different creature; collect any one aspect to complete, then store them in the spirit jar for later ritual work. No em dashes."]
+	quest.0B0310100000000D.title: "[STUB] Soul-Stained Reaper"
+	quest.0B0310100000000D.quest_subtitle: "[STUB] Infuse the scythe into its soul-stained form"
+	quest.0B0310100000000D.quest_desc: ["[BRIEF] teaches: Malum soul_stained_steel_scythe (malum:soul_stained_steel_scythe, ungated / Renaissance-legal; crafted via malum:spirit_infusion on the spirit_altar from crude_scythe + soul_stained_steel_ingot + refined_soulstone + hex_ash + earthen/wicked/arcane spirits -- fully inside the Renaissance Malum toolkit, no EnderIO/Gilded machine needed; jar-verified). optional:true, shape diamond (lane capstone). Deps = harvest node 0B0310100000000C. Opus: 2-4 para instruction-first: explain spirit infusion at the altar upgrades the crude scythe by binding soul-stained steel and stored spirits into it, giving a faster, higher-yield reaper; walk the player through feeding the altar the ingredients and the spirit counts. No em dashes."]
+	quest.0B03108000000120.title: "[STUB] Eterna Bookshelves"
+	quest.0B03108000000120.quest_subtitle: "[STUB] the first Apotheosis enchanting shelf"
+	quest.0B03108000000120.quest_desc: ["[BRIEF] teaches: apothic_enchanting:hellshelf, the first custom eterna/quanta bookshelf that boosts an Apotheosis enchanting table beyond the vanilla 15-shelf cap; ungated (no AStages lock, Renaissance-legal). This is the ENTRY node of the apothic_enchanting controlled line inside ren_observation_experimentation; deps = chapter root 0B03108000000001; next node = infused_hellshelf. Opus: 2-4 para instruction-first. Explain that Apotheosis rebuilds the enchanting table around eterna/quanta/arcana stats, and hellshelf is the first upgraded shelf that raises enchanting power. No em dashes."]
+	quest.0B03108000000121.title: "[STUB] Infused Hellshelf"
+	quest.0B03108000000121.quest_subtitle: "[STUB] the eterna upgrade tier"
+	quest.0B03108000000121.quest_desc: ["[BRIEF] teaches: apothic_enchanting:infused_hellshelf, the upgraded infusion tier of the hellshelf that pushes eterna higher; ungated. Prior node = hellshelf (0B03108000000120); next = biome shelf families node. Opus: 2-4 para instruction-first. Teach that infusing the hellshelf raises the enchanting power ceiling and that shelf placement geometry around the table matters. No em dashes."]
+	quest.0B03108000000122.title: "[STUB] Biome Shelf Families"
+	quest.0B03108000000122.quest_subtitle: "[STUB] sea, deep, and end shelves"
+	quest.0B03108000000122.quest_desc: ["[BRIEF] teaches: the three biome-themed Apotheosis shelf families in ONE smart_filter node (apothic_enchanting:seashelf OR deepshelf OR endshelf); each shelf family tunes different enchanting stats (quanta/arcana/eterna balance). Ungated. Prior = infused_hellshelf (0B03108000000121); next = library. Opus: 2-4 para instruction-first. Explain that different shelf families weight the enchanting stats differently and the player mixes them to shape which enchantments roll. Note the player only needs ONE of the three to complete. No em dashes."]
+	quest.0B03108000000123.title: "[STUB] The Enchantment Library"
+	quest.0B03108000000123.quest_subtitle: "[STUB] bulk enchantment storage"
+	quest.0B03108000000123.quest_desc: ["[BRIEF] teaches: apothic_enchanting:library, the Enchantment Library block that stores enchantments as levels and lets the player deposit/withdraw them onto books; ungated. Prior = biome shelf node (0B03108000000122); next (both optional) = extraction tomes and ender_library. Opus: 2-4 para instruction-first. Teach that the Library banks enchantments so the player stops hoarding enchanted books, and that it feeds the tome and Library-of-Alexandria workflow. No em dashes."]
+	quest.0B03108000000124.title: "[STUB] Enchantment Tomes"
+	quest.0B03108000000124.quest_subtitle: "[STUB] extract and re-apply enchantments"
+	quest.0B03108000000124.quest_desc: ["[BRIEF] teaches: the Apotheosis enchantment tomes in ONE smart_filter node (apothic_enchanting weapon_tome/pickaxe_tome/helmet_tome/chestplate_tome/leggings_tome/boots_tome/bow_tome/fishing_tome/extraction_tome/scrap_tome/improved_scrap_tome/other_tome); tomes pull enchantments off gear or hold them for re-application. OPTIONAL node, ungated. Prior = library (0B03108000000123). Opus: 2-4 para instruction-first. Explain that tomes let the player salvage and move enchantments instead of grinding fresh rolls, and that this pairs with the Library. Note only ONE tome completes the node. No em dashes."]
+	quest.0B03108000000125.title: "[STUB] Library of Alexandria"
+	quest.0B03108000000125.quest_subtitle: "[STUB] the capstone enchantment archive"
+	quest.0B03108000000125.quest_desc: ["[BRIEF] teaches: apothic_enchanting:ender_library, the Library of Alexandria, the high-capacity ender-tier enchantment archive that stores far more enchantment levels than the basic Library; OPTIONAL capstone of this line, ungated (Renaissance-legal). Prior = library (0B03108000000123). Opus: 2-4 para instruction-first. Frame this as the endgame enchantment vault for a mature Apotheosis setup and note it is the peak of this small controlled line. No em dashes."]
+	chapter.4D41487500000000.title: "[STUB] Mahou Tsukai (optional)"
+	quest.4D41487500000001.title: "[STUB] Knowledge Compendium"
+	quest.4D41487500000001.quest_subtitle: "[STUB] read before you cast"
+	quest.4D41487500000001.quest_desc: ["[BRIEF] teaches: mahoutsukai:guidebook (ungated, Renaissance-legal, no AStages lock). Entry node of the OPTIONAL chapter ren_mahou_tsukai; deps = Renaissance gateway 6D7E8F901A2B1054. This is a self-contained optional flavor spell-circle system, never on the spine. The guidebook (Knowledge Compendium) is how the player learns/unlocks mahoutsukai spells. Next node = attuner. Opus: 2-4 para instruction-first; tell the player this whole tab is optional side magic, and that the compendium is where every spell in the system is learned. No em dashes."]
+	quest.4D41487500000002.title: "[STUB] Attuner"
+	quest.4D41487500000002.quest_subtitle: "[STUB] charge attuning gems"
+	quest.4D41487500000002.quest_desc: ["[BRIEF] teaches: mahoutsukai:attuner (ungated). Prior node = guidebook (4D41487500000001). The attuner produces attuned gems (attuned_diamond/attuned_emerald) that store mana for casting. Optional. Next node = mahoujin_projector. Opus: 2-4 para instruction-first, explain what attuning is and why the projector needs charged gems. No em dashes."]
+	quest.4D41487500000003.title: "[STUB] Mahoujin Projector"
+	quest.4D41487500000003.quest_subtitle: "[STUB] project the magic circle"
+	quest.4D41487500000003.quest_desc: ["[BRIEF] teaches: mahoutsukai:mahoujin_projector (ungated) — the core mechanic block that projects the magic circle (mahoujin). Prior node = attuner (4D41487500000002). Optional. Next node = mystic_code. Opus: 2-4 para instruction-first, explain that mahoutsukai runs on projected circles and this projector is the heart of the system. No em dashes."]
+	quest.4D41487500000004.title: "[STUB] Mystic Code"
+	quest.4D41487500000004.quest_subtitle: "[STUB] your casting focus"
+	quest.4D41487500000004.quest_desc: ["[BRIEF] teaches: mahoutsukai:mystic_code (ungated) — the held casting focus that channels spells from the circle. Prior node = mahoujin_projector (4D41487500000003). Optional. Branches to two optional leaves: scroll set (familiars/utility) and mystic_staff (capstone focus). Opus: 2-4 para instruction-first, explain the mystic code as the wand/focus that lets the player cast the circle's spells. No em dashes."]
+	quest.4D41487500000005.title: "[STUB] Spell Scrolls"
+	quest.4D41487500000005.quest_subtitle: "[STUB] familiars and utility"
+	quest.4D41487500000005.quest_desc: ["[BRIEF] teaches: mahoutsukai spell scrolls via a single ftbfiltersystem smart_filter accepting scroll_familiars_garden OR scroll_gandr OR scroll_fay_sight (all ungated). Prior node = mystic_code (4D41487500000004). Optional. Covers the familiar beat (scroll_familiars_garden) plus a couple of utility scrolls; there is no standalone familiar item, the familiar is scroll-driven. Opus: 2-4 para instruction-first, explain that scrolls grant individual spells and that one of these summons a familiar. No em dashes."]
+	quest.4D41487500000006.title: "[STUB] Mystic Staff"
+	quest.4D41487500000006.quest_subtitle: "[STUB] the finished focus"
+	quest.4D41487500000006.quest_desc: ["[BRIEF] teaches: mahoutsukai:mystic_staff (ungated) — the upgraded capstone casting focus. Prior node = mystic_code (4D41487500000004). Optional; diamond shape (tier peak of this optional tab). Opus: 2-4 para instruction-first, explain the staff as the top-tier focus for this optional magic system. No em dashes."]
+	chapter.4954100000000000.title: "[STUB] Digital Storage Foundations"
+	quest.4954101000000001.title: "[STUB] The ME Controller"
+	quest.4954101000000001.quest_subtitle: "[STUB] AE2 network core"
+	quest.4954101000000001.quest_desc: ["[BRIEF] teaches: ae2:controller is the ME network core; power in, channels out; every ME device talks to it. requires ae2:controller (IR-locked aoa_astages_01i_ae2.js:34). prior node: chapter root A (deps IR gateway 0B0310A0000000F0). Opus: 2-4 para instruction-first."]
+	quest.4954101000000002.title: "[STUB] Energy Acceptor"
+	quest.4954101000000002.quest_subtitle: "[STUB] power into the grid"
+	quest.4954101000000002.quest_desc: ["[BRIEF] teaches: convert FE/other power into AE energy the network can store. requires ae2:energy_acceptor (IR-locked ae2.js:42). prior node: controller. Opus: 2-4 para instruction-first."]
+	quest.4954101000000003.title: "[STUB] Energy Cell"
+	quest.4954101000000003.quest_subtitle: "[STUB] buffer AE energy"
+	quest.4954101000000003.quest_desc: ["[BRIEF] teaches: buffer AE energy so the grid rides through demand spikes. requires ae2:energy_cell (IR-locked ae2.js:40). prior node: energy_acceptor. Opus: 2-4 para instruction-first."]
+	quest.4954101000000004.title: "[STUB] ME Drive"
+	quest.4954101000000004.quest_subtitle: "[STUB] the disk bay"
+	quest.4954101000000004.quest_desc: ["[BRIEF] teaches: the drive houses storage cells so items live in the grid. requires ae2:drive (IR-locked ae2.js:35). prior node: energy_acceptor. Opus: 2-4 para instruction-first."]
+	quest.4954101000000005.title: "[STUB] 1k Storage Cell"
+	quest.4954101000000005.quest_subtitle: "[STUB] first ME cell"
+	quest.4954101000000005.quest_desc: ["[BRIEF] teaches: first storage cell; 1k holds bulk items; format it in a cell workbench. requires ae2:item_storage_cell_1k (no lock; AE2 family legal at IR). prior node: drive. Opus: 2-4 para instruction-first."]
+	quest.4954101000000006.title: "[STUB] Cell Workbench"
+	quest.4954101000000006.quest_subtitle: "[STUB] partition your cells"
+	quest.4954101000000006.quest_desc: ["[BRIEF] teaches: pre-partition cells so a cell only accepts the items you assign. requires ae2:cell_workbench (IR-locked ae2.js:39). prior node: 1k storage cell. Opus: 2-4 para instruction-first."]
+	quest.4954101000000007.title: "[STUB] ME Chest"
+	quest.4954101000000007.quest_subtitle: "[STUB] single-cell access"
+	quest.4954101000000007.quest_desc: ["[BRIEF] teaches: single-cell access without a full drive; the cheapest way to read a cell. requires ae2:chest (IR-locked ae2.js:36). prior node: drive. Opus: 2-4 para instruction-first."]
+	quest.4954101000000008.title: "[STUB] IO Port"
+	quest.4954101000000008.quest_subtitle: "[STUB] bulk import/export"
+	quest.4954101000000008.quest_desc: ["[BRIEF] teaches: bulk import/export between cells and inventories in one action. requires ae2:io_port (IR-locked ae2.js:37). prior node: cell_workbench. Opus: 2-4 para instruction-first."]
+	quest.4954101000000009.title: "[STUB] ME Terminal"
+	quest.4954101000000009.quest_subtitle: "[STUB] window into the grid"
+	quest.4954101000000009.quest_desc: ["[BRIEF] teaches: the terminal is the window into the grid; view and pull stored items. requires ae2:terminal (no lock; AE2 family legal at IR). prior node: io_port. Opus: 2-4 para instruction-first."]
+	quest.495410100000000A.title: "[STUB] Crafting Terminal"
+	quest.495410100000000A.quest_subtitle: "[STUB] craft from stock"
+	quest.495410100000000A.quest_desc: ["[BRIEF] teaches: a terminal with a crafting grid so you craft straight from network stock. requires ae2:crafting_terminal (no lock; AE2 family legal at IR). prior node: terminal. Opus: 2-4 para instruction-first."]
+	quest.495410100000000B.title: "[STUB] Crafting Unit"
+	quest.495410100000000B.quest_subtitle: "[STUB] blank CPU block"
+	quest.495410100000000B.quest_desc: ["[BRIEF] teaches: the blank block of a crafting CPU; combine with storage + accelerators. requires ae2:crafting_unit (IR-locked ae2.js:44). prior node: crafting_terminal. NOTE the crafting CPU is IR-legal but the pattern_provider that FEEDS it is Gilded (taught in g4); this node builds the CPU shell, autocraft comes later. Opus: 2-4 para instruction-first."]
+	quest.495410100000000C.title: "[STUB] 1k Crafting Storage"
+	quest.495410100000000C.quest_subtitle: "[STUB] CPU job memory"
+	quest.495410100000000C.quest_desc: ["[BRIEF] teaches: crafting CPU memory; how many parallel autocraft jobs the CPU can hold. requires ae2:1k_crafting_storage (IR-locked ae2.js:47). prior node: crafting_unit. Opus: 2-4 para instruction-first."]
+	quest.495410100000000D.title: "[STUB] Crafting Co-Processor"
+	quest.495410100000000D.quest_subtitle: "[STUB] speed the CPU"
+	quest.495410100000000D.quest_desc: ["[BRIEF] teaches: accelerators speed a crafting CPU; more accelerators = faster autocraft. requires ae2:crafting_accelerator (IR-locked ae2.js:45). prior node: crafting_unit. Opus: 2-4 para instruction-first."]
+	quest.495410100000000E.title: "[STUB] Pattern Encoding Terminal"
+	quest.495410100000000E.quest_subtitle: "[STUB] AE2 foundation capstone"
+	quest.495410100000000E.quest_desc: ["[BRIEF] teaches: AE2 LANE CAPSTONE (IR-legal). Encode crafting patterns; the recipe list an autocraft CPU will follow. This is the IR ceiling for AE2: you build the network and encode patterns here, then the Gilded g4 chapter adds the molecular_assembler + pattern_provider that actually RUN the autocraft. requires ae2:pattern_encoding_terminal (no lock; AE2 family legal at IR). prior nodes: 1k_crafting_storage + crafting_accelerator. Opus: 2-4 para instruction-first; make the IR->Gilded handoff explicit (network now, autocraft executor in the Infinite Grid)."]
+	quest.4954101000000020.title: "[STUB] RS Controller"
+	quest.4954101000000020.quest_subtitle: "[STUB] Refined Storage core"
+	quest.4954101000000020.quest_desc: ["[BRIEF] teaches: the RS controller supplies energy and identity to every connected device. requires refinedstorage:controller (IR-locked aoa_astages_01j_storage.js:31). prior node: chapter root B (deps IR gateway 0B0310A0000000F0). Opus: 2-4 para instruction-first."]
+	quest.4954101000000021.title: "[STUB] RS Cable"
+	quest.4954101000000021.quest_subtitle: "[STUB] wire the network"
+	quest.4954101000000021.quest_desc: ["[BRIEF] teaches: wire the network; devices only work when cabled to the controller. requires refinedstorage:cable (no lock; RS family legal at IR). prior node: controller. Opus: 2-4 para instruction-first."]
+	quest.4954101000000022.title: "[STUB] Disk Drive"
+	quest.4954101000000022.quest_subtitle: "[STUB] holds storage disks"
+	quest.4954101000000022.quest_desc: ["[BRIEF] teaches: the disk drive holds storage disks; the grid's item capacity lives here. requires refinedstorage:disk_drive (IR-locked storage.js:34). prior node: cable. Opus: 2-4 para instruction-first."]
+	quest.4954101000000023.title: "[STUB] 1k Storage Disk"
+	quest.4954101000000023.quest_subtitle: "[STUB] first RS disk"
+	quest.4954101000000023.quest_desc: ["[BRIEF] teaches: first RS disk; bulk item storage, no pre-format needed (contrast AE2 cells). requires refinedstorage:1k_storage_disk (no lock; RS family legal at IR). prior node: disk_drive. Opus: 2-4 para instruction-first."]
+	quest.4954101000000024.title: "[STUB] The Grid"
+	quest.4954101000000024.quest_subtitle: "[STUB] RS access window"
+	quest.4954101000000024.quest_desc: ["[BRIEF] teaches: the grid is the RS access window; search, sort, extract stored items. requires refinedstorage:grid (IR-locked storage.js:32). prior node: disk_drive. Opus: 2-4 para instruction-first."]
+	quest.4954101000000025.title: "[STUB] Crafting Grid"
+	quest.4954101000000025.quest_subtitle: "[STUB] craft + remember"
+	quest.4954101000000025.quest_desc: ["[BRIEF] teaches: a grid that crafts from network stock and remembers recipes. requires refinedstorage:crafting_grid (IR-locked storage.js:33). prior node: grid. NOTE this is hand-crafting from stock, NOT autocrafting (RS autocrafter is Gilded, taught in g4). Opus: 2-4 para instruction-first."]
+	quest.4954101000000026.title: "[STUB] Detector"
+	quest.4954101000000026.quest_subtitle: "[STUB] redstone on thresholds"
+	quest.4954101000000026.quest_desc: ["[BRIEF] teaches: emit redstone on stock thresholds; the trigger for auto-restock logic. requires refinedstorage:detector (IR-locked storage.js:35). prior node: grid. Opus: 2-4 para instruction-first."]
+	quest.4954101000000027.title: "[STUB] Storage Monitor"
+	quest.4954101000000027.quest_subtitle: "[STUB] stock at a glance"
+	quest.4954101000000027.quest_desc: ["[BRIEF] teaches: wall display of one item's count; instant stock-at-a-glance. requires refinedstorage:storage_monitor (IR-locked storage.js:37). prior node: grid. Opus: 2-4 para instruction-first."]
+	quest.4954101000000028.title: "[STUB] Security Manager"
+	quest.4954101000000028.quest_subtitle: "[STUB] lock the network"
+	quest.4954101000000028.quest_desc: ["[BRIEF] teaches: lock the network per player; who may insert, extract, autocraft. requires refinedstorage:security_manager (IR-locked storage.js:36). prior node: grid. Opus: 2-4 para instruction-first."]
+	quest.4954101000000029.title: "[STUB] Portable Grid"
+	quest.4954101000000029.quest_subtitle: "[STUB] handheld access"
+	quest.4954101000000029.quest_desc: ["[BRIEF] teaches: handheld access to a disk in the field, off-network. requires refinedstorage:portable_grid (IR-locked storage.js:38). prior node: crafting_grid. Opus: 2-4 para instruction-first."]
+	quest.495410100000002A.title: "[STUB] Disk Interface"
+	quest.495410100000002A.quest_subtitle: "[STUB] RS foundation capstone"
+	quest.495410100000002A.quest_desc: ["[BRIEF] teaches: RS LANE CAPSTONE (IR-legal). Bulk disk-to-network transfer; the network I/O ceiling for the IR tier. This node roots the elite cabletiers I/O tail below it. RS autocrafting (refinedstorage:autocrafter) is Gilded and taught in g4, NOT here. requires refinedstorage:disk_interface (IR-locked aoa_astages_01_item_restrictions.js:1090). prior node: grid. Opus: 2-4 para instruction-first; make the IR->Gilded handoff explicit (network + I/O now, autocrafter in the Infinite Grid)."]
+	quest.4954101000000030.title: "[STUB] Elite Importer"
+	quest.4954101000000030.quest_subtitle: "[STUB] high-throughput import"
+	quest.4954101000000030.quest_desc: ["[BRIEF] teaches: cabletiers elite import; higher-throughput RS import than the base importer; one cable, many stacks/tick. requires cabletiers:elite_importer (IR-locked 01_item_restrictions.js:507). prior node: disk_interface (RS capstone). Opus: 2-4 para instruction-first."]
+	quest.4954101000000031.title: "[STUB] Elite Exporter"
+	quest.4954101000000031.quest_subtitle: "[STUB] push stacks fast"
+	quest.4954101000000031.quest_desc: ["[BRIEF] teaches: elite export cable; push stacks into machines at speed. requires cabletiers:elite_exporter (IR-locked storage.js:57). prior node: elite_importer. Opus: 2-4 para instruction-first."]
+	quest.4954101000000032.title: "[STUB] Elite Constructor"
+	quest.4954101000000032.quest_subtitle: "[STUB] place blocks fast"
+	quest.4954101000000032.quest_desc: ["[BRIEF] teaches: elite constructor; place blocks from the network fast. requires cabletiers:elite_constructor (IR-locked storage.js:58). prior node: elite_importer. Opus: 2-4 para instruction-first."]
+	quest.4954101000000033.title: "[STUB] Elite Destructor"
+	quest.4954101000000033.quest_subtitle: "[STUB] break + ingest fast"
+	quest.4954101000000033.quest_desc: ["[BRIEF] teaches: elite destructor; break and ingest blocks into the network fast. requires cabletiers:elite_destructor (IR-locked storage.js:59). prior node: elite_importer. Opus: 2-4 para instruction-first."]
+	quest.4954101000000034.title: "[STUB] Elite Disk Interface"
+	quest.4954101000000034.quest_subtitle: "[STUB] bulk disk transfer"
+	quest.4954101000000034.quest_desc: ["[BRIEF] teaches: elite disk interface; bulk disk-to-network transfer at elite throughput. requires cabletiers:elite_disk_interface (IR-locked storage.js:61). prior node: elite_importer. Opus: 2-4 para instruction-first."]
+	chapter.4954110000000000.title: "[STUB] Mekanism Ore Works"
+	quest.4954111000000001.title: "[STUB] Enrichment Chamber"
+	quest.4954111000000001.quest_subtitle: "[STUB] Stage-1 ore doubling"
+	quest.4954111000000001.quest_desc: ["[BRIEF] teaches: Mekanism entry ore-processing; the Enrichment Chamber is stage-1 doubling (ore -> 2 dust). requires mekanism:enrichment_chamber (IR-locked aoa_astages_01_item_restrictions.js:288); prior node = IR gateway 0B0310A0000000F0 (chapter root). Feeder intermediates ingot_steel/ingot_osmium referenced in prose, not tasked. Opus: 2-4 para instruction-first, explain the doubling tier concept and that later stages multiply the yield."]
+	quest.4954111000000002.title: "[STUB] Crusher"
+	quest.4954111000000002.quest_subtitle: "[STUB] Ingots back to dust"
+	quest.4954111000000002.quest_desc: ["[BRIEF] teaches: the Crusher turns ingots/items back to dust, pairing with enrichment for the 2x return leg. requires mekanism:crusher (IR-locked :289); prior node = enrichment_chamber 4954111000000001. Opus: 2-4 para instruction-first, describe the crush-then-enrich loop."]
+	quest.4954111000000003.title: "[STUB] Energized Smelter"
+	quest.4954111000000003.quest_subtitle: "[STUB] Powered smelting"
+	quest.4954111000000003.quest_desc: ["[BRIEF] teaches: the Energized Smelter is Mekanism's electric furnace; powered smelting for dust output. requires mekanism:energized_smelter (IR-locked :290); prior node = crusher 4954111000000002. Opus: 2-4 para instruction-first, note it feeds the factory-tier smelting lane later."]
+	quest.4954111000000004.title: "[STUB] Osmium Compressor"
+	quest.4954111000000004.quest_subtitle: "[STUB] 3x-tier feeder"
+	quest.4954111000000004.quest_desc: ["[BRIEF] teaches: the Osmium Compressor compresses osmium onto dust for enriched alloys; the 3x-tier gateway feeding purification. requires mekanism:osmium_compressor (IR-locked :291); prior node = crusher 4954111000000002. Opus: 2-4 para instruction-first, explain enriched-alloy feedstock and the step up to gas processing."]
+	quest.4954111000000005.title: "[STUB] Purification Chamber"
+	quest.4954111000000005.quest_subtitle: "[STUB] Stage-3 gas processing"
+	quest.4954111000000005.quest_desc: ["[BRIEF] teaches: the Purification Chamber is stage-3 (ore -> clumps using oxygen gas), needs the oxygen loop from the electrolytic separator. requires mekanism:purification_chamber (IR-locked :293); prior node = osmium_compressor 4954111000000004. Opus: 2-4 para instruction-first, explain gas-fed processing and the oxygen prerequisite."]
+	quest.4954111000000006.title: "[STUB] Electrolytic Separator"
+	quest.4954111000000006.quest_subtitle: "[STUB] Water into hydrogen + oxygen"
+	quest.4954111000000006.quest_desc: ["[BRIEF] teaches: the Electrolytic Separator splits water into hydrogen and oxygen, the gas supply that drives purification and injection. requires mekanism:electrolytic_separator (IR-locked :296); prior node = osmium_compressor 4954111000000004. Opus: 2-4 para instruction-first, explain the gas loop that all higher tiers depend on."]
+	quest.4954111000000007.title: "[STUB] Chemical Injection Chamber"
+	quest.4954111000000007.quest_subtitle: "[STUB] Stage-4 ore doubling"
+	quest.4954111000000007.quest_desc: ["[BRIEF] teaches: the Chemical Injection Chamber is stage-4 (ore -> shards using hydrogen chloride), the 4x tier. requires mekanism:chemical_injection_chamber (IR-locked :294); prior nodes = purification_chamber 4954111000000005 AND electrolytic_separator 4954111000000006. Opus: 2-4 para instruction-first, explain the HCl feed and the yield jump."]
+	quest.4954111000000008.title: "[STUB] Chemical Infuser"
+	quest.4954111000000008.quest_subtitle: "[STUB] Combine gases into HCl"
+	quest.4954111000000008.quest_desc: ["[BRIEF] teaches: the Chemical Infuser combines gases (hydrogen + chlorine into hydrogen chloride) to feed the injection chamber. requires mekanism:chemical_infuser (IR-locked :295); prior node = electrolytic_separator 4954111000000006. Opus: 2-4 para instruction-first, explain gas combination and its role supplying the 4x tier."]
+	quest.4954111000000009.title: "[STUB] Pressurized Reaction Chamber"
+	quest.4954111000000009.quest_subtitle: "[STUB] Item + fluid + gas reactions"
+	quest.4954111000000009.quest_desc: ["[BRIEF] teaches: the Pressurized Reaction Chamber (PRC) runs item+fluid+gas reactions, the versatile machine for substrate and advanced intermediates. requires mekanism:pressurized_reaction_chamber (IR-locked :297); prior node = chemical_injection_chamber 4954111000000007. Opus: 2-4 para instruction-first, describe the three-input reaction concept and example outputs."]
+	quest.495411100000000A.title: "[STUB] Metallurgic Infuser"
+	quest.495411100000000A.quest_subtitle: "[STUB] Infuse dusts into alloys"
+	quest.495411100000000A.quest_desc: ["[BRIEF] teaches: the Metallurgic Infuser infuses dusts (carbon/redstone/diamond) to make alloys and steel dust; a branch off the entry machine. requires mekanism:metallurgic_infuser (IR-locked :287); prior node = enrichment_chamber 4954111000000001. Opus: 2-4 para instruction-first, explain infusion types and steel-dust production."]
+	quest.495411100000000B.title: "[STUB] Thermal Evaporation Plant"
+	quest.495411100000000B.quest_subtitle: "[STUB] Spine capstone multiblock"
+	quest.495411100000000B.quest_desc: ["[BRIEF] teaches: SPINE CAPSTONE (multiblock). The Thermal Evaporation Plant boils brine to lithium and provides the 5x-tier salt refining. Build the tower from mekanism:thermal_evaporation_block + mekanism:thermal_evaporation_valve, controlled by the mekanism:thermal_evaporation_controller (the task item + icon; do NOT task the block/valve separately). requires mekanism:thermal_evaporation_controller (IR-locked :327); prior node = pressurized_reaction_chamber 4954111000000009. Opus: 2-4 para instruction-first, give explicit build instructions for the multiblock tower and its brine->lithium output."]
+	quest.4954111000000010.title: "[STUB] Basic Smelting Factory"
+	quest.4954111000000010.quest_subtitle: "[STUB] Parallel smelting tier"
+	quest.4954111000000010.quest_desc: ["[BRIEF] teaches: a Factory is parallel machines in one block; the Basic Smelting Factory bumps smelting throughput. requires mekanism:basic_smelting_factory (IR-locked :315); prior node = energized_smelter 4954111000000003. Opus: 2-4 para instruction-first, explain the factory concept (installers/slots) and when to upgrade from single machines."]
+	quest.4954111000000011.title: "[STUB] Basic Enriching Factory"
+	quest.4954111000000011.quest_subtitle: "[STUB] Parallel ore-doubling"
+	quest.4954111000000011.quest_desc: ["[BRIEF] teaches: the Basic Enriching Factory runs parallel ore-doubling for scaled throughput. requires mekanism:basic_enriching_factory (IR-locked :316); prior node = basic_smelting_factory 4954111000000010. Opus: 2-4 para instruction-first, tie back to the enrichment chamber tier."]
+	quest.4954111000000012.title: "[STUB] Basic Crushing Factory"
+	quest.4954111000000012.quest_subtitle: "[STUB] Parallel crushing"
+	quest.4954111000000012.quest_desc: ["[BRIEF] teaches: the Basic Crushing Factory runs parallel crushing for the return leg at scale. requires mekanism:basic_crushing_factory (IR-locked :317); prior node = basic_enriching_factory 4954111000000011. Opus: 2-4 para instruction-first, close the factory-lane loop."]
+	quest.4954011000000102.title: "[STUB] Improved Blast Furnace"
+	quest.4954011000000102.quest_subtitle: "[STUB] The real steel workhorse"
+	quest.4954011000000102.quest_desc: ["[BRIEF] teaches: forming the Improved Blast Furnace multiblock (faster steel, adds slag by-product); completion tracked by advancement immersiveengineering:multiblocks/mb_improvedblastfurnace (gated industrial_revolution, aoa_astages_01d_immersive.js). prior node = the existing Crude Blast Furnace node 4954011000000004 (mb_blastfurnace). Icon uses immersiveengineering:advanced_blast_furnace (the formed-block item). edge case: F.4 adjudication - this node roots on the existing IR blast-furnace node, NOT on the Medieval coke node; the Crude Blast Furnace prose already references coke as input. Opus: write 2-4 para instruction-first, explain multiblock build + slag."]
+	quest.4954011000000104.title: "[STUB] Alloy Smelter"
+	quest.4954011000000104.quest_subtitle: "[STUB] Combine metals into alloys"
+	quest.4954011000000104.quest_desc: ["[BRIEF] teaches: crafting and using the Alloy Smelter (single block, no multiblock formation) to combine two metals into alloys such as steel-adjacent mixes; item task immersiveengineering:alloy_smelter (gated industrial_revolution, aoa_astages_01d_immersive.js:34). prior node = Improved Blast Furnace 4954011000000102. Opus: 2-4 para instruction-first, contrast the single-block alloy smelter against the multiblock blast furnace, note it needs external heat/power feed."]
+	quest.4954011000000106.title: "[STUB] Squeezer"
+	quest.4954011000000106.quest_subtitle: "[STUB] Press seeds and plants to oil"
+	quest.4954011000000106.quest_desc: ["[BRIEF] teaches: forming the Squeezer multiblock to press seeds and plant matter into plant oil (feedstock for biodiesel and later chemistry); completion tracked by advancement immersiveengineering:multiblocks/mb_squeezer (gated industrial_revolution, aoa_astages_01d_immersive.js). prior node = the existing Crusher node 4954011000000007 (mb_crusher). Icon immersiveengineering:squeezer. Opus: 2-4 para instruction-first, explain multiblock build + plant oil output feeding the fluid economy."]
+	quest.4954011000000107.title: "[STUB] Bottling Machine"
+	quest.4954011000000107.quest_subtitle: "[STUB] Fill containers from a fluid feed"
+	quest.4954011000000107.quest_desc: ["[BRIEF] teaches: crafting the Bottling Machine (single block) to fill buckets and other containers from a piped fluid supply; item task immersiveengineering:bottling_machine (gated industrial_revolution, aoa_astages_01d_immersive.js:35). prior node = Squeezer 4954011000000106 (its plant oil is a natural fluid to bottle). Opus: 2-4 para instruction-first, explain fluid-pipe feed and how bottling closes the plant-oil-to-container loop."]
+	quest.4954011000000108.title: "[STUB] Sawmill"
+	quest.4954011000000108.quest_subtitle: "[STUB] Logs to planks and sawdust at scale"
+	quest.4954011000000108.quest_desc: ["[BRIEF] teaches: crafting the Sawmill (single block) to process logs into planks plus sawdust by-product at scale; item task immersiveengineering:sawmill (gated industrial_revolution, aoa_astages_01_item_restrictions.js:764). prior node = the existing Mixer node 495401100000000B (mb_mixer). Opus: 2-4 para instruction-first, explain automated feed via conveyors and the sawdust output."]
+	quest.4954011000000109.title: "[STUB] Auto Workbench"
+	quest.4954011000000109.quest_subtitle: "[STUB] Blueprint-driven crafting from feed"
+	quest.4954011000000109.quest_desc: ["[BRIEF] teaches: crafting the Auto Workbench (single block) that runs a set crafting recipe from an item feed using an inserted blueprint; item task immersiveengineering:auto_workbench (gated industrial_revolution, aoa_astages_01_item_restrictions.js:765). prior node = Sawmill 4954011000000108 (planks are a common auto-craft feedstock). Opus: 2-4 para instruction-first, explain blueprint insertion + conveyor feed for hands-off crafting."]
+	chapter.4954120000000000.title: "[STUB] Oritech Foundry"
+	quest.4954121000000001.title: "[STUB] Primitive Machine Core"
+	quest.4954121000000001.quest_subtitle: "[STUB] the shared processing-tier marker"
+	quest.4954121000000001.quest_desc: ["[BRIEF] teaches: Oritech machine_core_1 as the shared processing-tier marker; requires oritech:machine_core_1 (IR-locked); prior node = IR age gateway (Renaissance capstone); edge case: Oritech machines do NOT craft from the core -- each machine uses explicit intermediates, so present the core as a progression marker, NOT a build ingredient. This is the chapter root. Opus: 2-4 para instruction-first."]
+	quest.4954121000000002.title: "[STUB] Basic Generator"
+	quest.4954121000000002.quest_subtitle: "[STUB] burns fuel for RF"
+	quest.4954121000000002.quest_desc: ["[BRIEF] teaches: Oritech basic_generator_block, the power source every Oritech machine needs; NOTE this node is a check_quest pointing at the existing Basic Generator quest 4954051000000007 in ir_power_motion_and_grid (the item is already tasked there; do not re-task); prior node = machine_core_1; icon oritech:basic_generator_block. Opus: 2-4 para instruction-first, explain that the generator burns fuel for RF and feeds the machine line."]
+	quest.4954121000000003.title: "[STUB] Pulverizer"
+	quest.4954121000000003.quest_subtitle: "[STUB] ore to dust doubling"
+	quest.4954121000000003.quest_desc: ["[BRIEF] teaches: Oritech pulverizer_block, the entry ore processor that doubles ore into dust; requires oritech:pulverizer_block (IR-locked); prior node = machine_core_1. Opus: 2-4 para instruction-first."]
+	quest.4954121000000004.title: "[STUB] Powered Furnace"
+	quest.4954121000000004.quest_subtitle: "[STUB] electric smelting"
+	quest.4954121000000004.quest_desc: ["[BRIEF] teaches: Oritech powered_furnace_block, electric smelting for the pulverized dust output; requires oritech:powered_furnace_block (IR-locked); prior node = pulverizer. Opus: 2-4 para instruction-first."]
+	quest.4954121000000005.title: "[STUB] Basic Machine Core"
+	quest.4954121000000005.quest_subtitle: "[STUB] the second processing tier"
+	quest.4954121000000005.quest_desc: ["[BRIEF] teaches: Oritech machine_core_2, the second processing tier that unlocks the foundry and refinery; requires oritech:machine_core_2 (IR-locked); prior node = powered_furnace; edge case: still a marker, machines craft from explicit intermediates not from the core. Opus: 2-4 para instruction-first."]
+	quest.4954121000000006.title: "[STUB] Foundry"
+	quest.4954121000000006.quest_subtitle: "[STUB] multi-input alloying"
+	quest.4954121000000006.quest_desc: ["[BRIEF] teaches: Oritech foundry_block, multi-input alloying for bronze, steel, and machine plating; NOTE this node is a check_quest pointing at the existing Foundry quest 49540B1000000005 in ir_magic_feedstock_and_spectrum_network (item already tasked there; do not re-task); prior node = machine_core_2; icon oritech:foundry_block; reference machine_plating_block as a foundry output in prose, do not imply core-as-ingredient. Opus: 2-4 para instruction-first."]
+	quest.4954121000000007.title: "[STUB] Refinery"
+	quest.4954121000000007.quest_subtitle: "[STUB] fluid refining"
+	quest.4954121000000007.quest_desc: ["[BRIEF] teaches: Oritech refinery_block, fluid refining fed with the refinery module; requires oritech:refinery_block (IR-locked); prior node = machine_core_2. Opus: 2-4 para instruction-first."]
+	quest.4954121000000008.title: "[STUB] Machine Frame"
+	quest.4954121000000008.quest_subtitle: "[STUB] the shared chassis"
+	quest.4954121000000008.quest_desc: ["[BRIEF] teaches: Oritech machine_frame_block, the shared chassis the higher-tier machines assemble on; requires oritech:machine_frame_block (IR-locked); prior nodes = foundry AND refinery (converges both). Opus: 2-4 para instruction-first."]
+	quest.4954121000000009.title: "[STUB] Improved Machine Core"
+	quest.4954121000000009.quest_subtitle: "[STUB] the IR ceiling"
+	quest.4954121000000009.quest_desc: ["[BRIEF] teaches: Oritech machine_core_3, the chapter capstone and the IR machine ceiling; requires oritech:machine_core_3 (IR-locked); prior node = machine_frame; edge case: Gilded machine_core_4 builds on this, do NOT reference core_4 or assembler here (Gilded-tier). This capstone is the re-wire seam the Atomic Oritech convergence will depend on. Opus: 2-4 para instruction-first."]
+	quest.495412100000000A.title: "[STUB] Small Storage (Battery)"
+	quest.495412100000000A.quest_subtitle: "[STUB] optional RF buffer"
+	quest.495412100000000A.quest_desc: ["[BRIEF] teaches: Oritech small_storage_block, an optional RF battery buffer off the generator; requires oritech:small_storage_block (IR-locked); prior node = basic_generator; OPTIONAL node. Opus: 2-4 para instruction-first, keep brief."]
+	quest.495412100000000B.title: "[STUB] Steam Engine"
+	quest.495412100000000B.quest_subtitle: "[STUB] optional alt power"
+	quest.495412100000000B.quest_desc: ["[BRIEF] teaches: Oritech steam_engine_block, an optional alternate power source; requires oritech:steam_engine_block (IR-locked); prior node = basic_generator; OPTIONAL node. Opus: 2-4 para instruction-first, keep brief."]
+	quest.4954121000000020.title: "[STUB] Machine Frame (Extended Crafting)"
+	quest.4954121000000020.quest_subtitle: "[STUB] the crafting-table shell"
+	quest.4954121000000020.quest_desc: ["[BRIEF] teaches: extendedcrafting:frame, the shell for the Basic Crafting Table, built from Black Iron (material_black_iron -- reference in prose, do NOT task the bare ingot); requires extendedcrafting:frame (IR-locked); prior node = machine_core_2 (lane entry). This begins the standalone Extended Crafting lane. Opus: 2-4 para instruction-first."]
+	quest.4954121000000021.title: "[STUB] Basic Crafting Table"
+	quest.4954121000000021.quest_subtitle: "[STUB] a 5x5 oversized-recipe grid"
+	quest.4954121000000021.quest_desc: ["[BRIEF] teaches: extendedcrafting:basic_table, a 5x5 crafting grid many later mods need for oversized recipes; requires extendedcrafting:basic_table (IR-locked); prior node = frame. Opus: 2-4 para instruction-first, note this table is a prerequisite many later ages rely on."]
+	quest.4954121000000022.title: "[STUB] Handheld Crafting Table"
+	quest.4954121000000022.quest_subtitle: "[STUB] portable 3x3 access"
+	quest.4954121000000022.quest_desc: ["[BRIEF] teaches: extendedcrafting:handheld_table, a portable 3x3 crafting companion to the big table; requires extendedcrafting:handheld_table (IR-locked); prior node = basic_table. Opus: 2-4 para instruction-first, quality-of-life framing."]
+	quest.4954071000000101.title: "[STUB] Seismic Survey"
+	quest.4954071000000101.quest_subtitle: "[STUB] Scan for oil before you drill"
+	quest.4954071000000101.quest_desc: ["[BRIEF] teaches: using the Immersive Petroleum Seismic Survey Tool to locate oil reservoirs. Task: item immersivepetroleum:seismic_survey (icon = seismic_survey, IR-locked aoa_astages_01d_immersive.js:61). Prior node = the Engineer's Projector (4954071000000001), sequenced right after it so the survey-then-drill loop is explicit. Opus: explain the player right-clicks a chunk with the survey tool to read whether a hidden oil reservoir sits below and how much, so they scout before committing a Pumpjack, and that this pairs with the Projector's site preview. 2-4 short paragraphs, instruction-first, no em dashes."]
+	quest.4954071000000102.title: "[STUB] Flarestack"
+	quest.4954071000000102.quest_subtitle: "[STUB] Vent excess gas from the rig"
+	quest.4954071000000102.quest_desc: ["[BRIEF] teaches: building the Immersive Petroleum Flarestack to burn off excess gas/pressure from an oil extraction site. Task: item immersivepetroleum:flarestack (icon = flarestack, IR-locked aoa_astages_01d_immersive.js:63). Prior node = the Pumpjack multiblock (4954071000000003) so the vent attaches to a working well. Opus: explain the Flarestack safely burns off surplus gas the Pumpjack draws up alongside oil, keeping the rig from backing up, and that it is a support structure for a running extraction site rather than a production goal. 2-4 short paragraphs, instruction-first, no em dashes."]
+	quest.49540B1000000101.title: "[STUB] Vas Maleficum"
+	quest.49540B1000000101.quest_subtitle: "[STUB] The infernal will-vessel"
+	quest.49540B1000000101.quest_desc: ["[BRIEF] teaches: Neo Vitae neovitae:vas_maleficum (IR-gated, aoa_astages_01m_magic.js:129); the demon-will collection vessel that stores tartaric/demonic essence for the infernal (Hellfire Forge) tier; entry node of the NV IR segment, deps = 49540B1000000004 (IR Hellfire Forge use_block); next nodes = spira_infernalis and teleposer. Opus: 2-4 para instruction-first, explain that the infernal tier runs on collected demon will and this vessel is where that will is stored. No em dashes."]
+	quest.49540B1000000102.title: "[STUB] Spira Infernalis"
+	quest.49540B1000000102.quest_subtitle: "[STUB] Route the demon will"
+	quest.49540B1000000102.quest_desc: ["[BRIEF] teaches: Neo Vitae neovitae:spira_infernalis (IR-gated, aoa_astages_01m_magic.js:130); routes/pumps demon will between vessels, the infernal network's plumbing; deps = 49540B1000000101 (vas_maleficum); next node = crystallarium_maleficum. Opus: 2-4 para instruction-first, teach how will moves from the Vas Maleficum through the Spira to the crafting apparatus. No em dashes."]
+	quest.49540B1000000103.title: "[STUB] Crystallarium Maleficum"
+	quest.49540B1000000103.quest_subtitle: "[STUB] Grow will-infused crystals"
+	quest.49540B1000000103.quest_desc: ["[BRIEF] teaches: Neo Vitae neovitae:crystallarium_maleficum (IR-gated, aoa_astages_01m_magic.js:131); grows will-infused crystals as the demon-will crafting feedstock; deps = 49540B1000000102 (spira_infernalis); next node = tabula_robur. Opus: 2-4 para instruction-first, explain the crystallarium consumes routed will to grow the crystals the tablet upgrades need. No em dashes."]
+	quest.49540B1000000104.title: "[STUB] Teleposer"
+	quest.49540B1000000104.quest_subtitle: "[STUB] Bend space with blood"
+	quest.49540B1000000104.quest_desc: ["[BRIEF] teaches: Neo Vitae neovitae:teleposer (IR-gated, aoa_astages_01m_magic.js:136); a redstone-triggered block/entity teleport pad programmed with a Teleposition Focus (neovitae:focus, referenced not tasked - small component); side stub off vas_maleficum, deps = 49540B1000000101. Opus: 2-4 para instruction-first, teach linking two Teleposers with a Focus and activating with strong redstone; note each swap costs Essentia Vitae. No em dashes."]
+	quest.49540B1000000105.title: "[STUB] Tabula Robur"
+	quest.49540B1000000105.quest_subtitle: "[STUB] Strength living-armor tablet"
+	quest.49540B1000000105.quest_desc: ["[BRIEF] teaches: Neo Vitae neovitae:tabula_robur (IR-gated, aoa_astages_01m_magic.js:137); the strength living-armor upgrade tablet applied at the Hellfire Forge; deps = 49540B1000000103 (crystallarium_maleficum); next node = tabula_animata. Opus: 2-4 para instruction-first, explain living-armor tablets are forged from will-crystal feedstock and applied at the Hellfire Forge to upgrade the sentient armor set. No em dashes."]
+	quest.49540B1000000106.title: "[STUB] Tabula Animata"
+	quest.49540B1000000106.quest_subtitle: "[STUB] Animation living-armor tablet"
+	quest.49540B1000000106.quest_desc: ["[BRIEF] teaches: Neo Vitae neovitae:tabula_animata (IR-gated, aoa_astages_01m_magic.js:138); the animation/attack living-armor upgrade tablet; deps = 49540B1000000105 (tabula_robur); segment tail. Opus: 2-4 para instruction-first, explain this second tablet adds the animation/attack behavior to the living armor, completing the IR infernal upgrade path. No em dashes."]
+	quest.4954051000000037.title: "[STUB] Mineral Grinder"
+	quest.4954051000000037.quest_subtitle: "[STUB] Electrodynamics base ore grinding"
+	quest.4954051000000037.quest_desc: ["[BRIEF] teaches: electrodynamics base ore-processing entry (Mineral Grinder grinds ore into extra dust for a doubling gain, powered by FE); requires electrodynamics:mineralgrinder (gated industrial_revolution, aoa_astages_01k_nuclear_power.js:112); prior node = electrodynamics:coalgenerator 4954051000000034 (its power source, referenced in prose, already tasked in this chapter); this base tier now precedes the existing Triple Mineral Grinder tier. Opus: 2-4 para instruction-first, no em dashes."]
+	quest.4954051000000038.title: "[STUB] Electric Furnace"
+	quest.4954051000000038.quest_subtitle: "[STUB] Electrodynamics base powered smelting"
+	quest.4954051000000038.quest_desc: ["[BRIEF] teaches: electrodynamics base powered smelting (Electric Furnace smelts the ground output using FE instead of fuel); requires electrodynamics:electricfurnace (gated industrial_revolution, aoa_astages_01k_nuclear_power.js:106); prior node = electrodynamics:mineralgrinder 4954051000000037; this base furnace now feeds forward into the existing electrodynamics Triple tier cluster (electricfurnacetriple 495405100000002B depends on it). Opus: 2-4 para instruction-first, no em dashes."]
+	quest.49540C1000000030.title: "[STUB] Warden Smithing Template"
+	quest.49540C1000000030.quest_subtitle: "[STUB] deep-dark netherite upgrade"
+	quest.49540C1000000030.quest_desc: ["[BRIEF] teaches: deeperdarker:warden_upgrade_smithing_template applies the warden upgrade to netherite-tier gear via the smithing table for the citadel's deep-dark set; requires deeperdarker:warden_upgrade_smithing_template (deeperdarker family legal at/before IR); prior node = 49540C1000000029 (resonarium_helmet). Moved from ren_deeper_darker_otherside (ledger row 8). Opus: 2-4 para instruction-first, explain smithing-template use on netherite gear."]
+	quest.49540C1000000031.title: "[STUB] Resonarium Smithing Template"
+	quest.49540C1000000031.quest_subtitle: "[STUB] resonarium armor upgrade path"
+	quest.49540C1000000031.quest_desc: ["[BRIEF] teaches: deeperdarker:resonarium_upgrade_smithing_template is the resonarium armor upgrade template applied at the smithing table; requires deeperdarker:resonarium_upgrade_smithing_template (deeperdarker family legal at/before IR); prior node = 49540C1000000029 (resonarium_helmet). Moved from ren_deeper_darker_otherside (ledger row 8). Opus: 2-4 para instruction-first."]
+	quest.49540C1000000032.title: "[STUB] Sonorous Staff"
+	quest.49540C1000000032.quest_subtitle: "[STUB] sculk-charged utility weapon"
+	quest.49540C1000000032.quest_desc: ["[BRIEF] teaches: deeperdarker:sonorous_staff is the sculk-charged utility staff, the deep-dark capstone toy; requires deeperdarker:sonorous_staff (deeperdarker family legal at/before IR); prior node = 49540C1000000029 (resonarium_helmet). Moved from ren_deeper_darker_otherside (this is the DUPLICATE node 0B03106000000091; the first sonorous_staff 0B03106000000045 stays in Ren). Opus: 2-4 para instruction-first."]
+	quest.43410110000001A0.title: "[STUB] The Veneficus Orb"
+	quest.43410110000001A0.quest_subtitle: "[STUB] Raise the orb to magician"
+	quest.43410110000001A0.quest_desc: ["[BRIEF] teaches: upgrading the Discipulus (apprentice) blood orb to the Veneficus (magician) orb on a Tier-2 Ara Vitae. Task: item neovitae:blood_orb_magician (gated gilded_age, aoa_astages_01m_magic.js:141). Recipe fact (data/neovitae/recipe/ara_vitae/magician_blood_orb.json): Ara Vitae minTier 2, input a block of gold (#c:storage_blocks/gold), costs 25000 Essentia Vitae. Prior node = the Renaissance apprentice-orb quest 0B03101000000034 (this is a cross-age continuation, intentional; hidden until the player owns the apprentice orb). Opus: explain the player must first raise their blood altar to Tier 2 with pillars and runes, then transmute a gold block on the altar to climb from apprentice to magician; the higher orb holds more Life Essence and unlocks the next tier of blood magic. 2-4 short paragraphs, instruction-first, no em dashes."]
+	quest.43410110000001A1.title: "[STUB] The Magus Orb"
+	quest.43410110000001A1.quest_subtitle: "[STUB] Raise the orb to master"
+	quest.43410110000001A1.quest_desc: ["[BRIEF] teaches: upgrading the magician orb to the Magus (master) orb on a Tier-3 Ara Vitae. Task: item neovitae:blood_orb_master (gated gilded_age, aoa_astages_01m_magic.js:142). Recipe fact (data/neovitae/recipe/ara_vitae/master_blood_orb.json): Ara Vitae minTier 3, input neovitae:weak_blood_shard (the same shard reagent introduced in the Renaissance line, gated the_renaissance), costs 40000 Essentia Vitae. Depends on node 43410110000001A0. Opus: explain the altar must reach Tier 3, and that the weak blood shard the player already knows from the Renaissance is now spent to climb; the master orb is the mid Gilded rung. 2-4 short paragraphs, instruction-first, no em dashes."]
+	quest.43410110000001A2.title: "[STUB] The Dominus Orb"
+	quest.43410110000001A2.quest_subtitle: "[STUB] Raise the orb to archmage"
+	quest.43410110000001A2.quest_desc: ["[BRIEF] teaches: upgrading the master orb to the Dominus (archmage) orb on a Tier-4 Ara Vitae. Task: item neovitae:blood_orb_archmage (gated gilded_age, aoa_astages_01m_magic.js:143). Recipe fact (data/neovitae/recipe/ara_vitae/archmage_blood_orb.json): Ara Vitae minTier 4, input a neovitae:hellforged_block (the Hellfire-Forge metal block, gated industrial_revolution), costs 80000 Essentia Vitae. Depends on node 43410110000001A1. Opus: explain the altar must reach Tier 4, and that the hellforged block from the IR blood-forge line is consumed to reach the archmage orb; this is the Gilded ceiling of the orb line and sets up the Atomic-tier transcendent orb that comes later. 2-4 short paragraphs, instruction-first, no em dashes."]
+	quest.43410110000001A3.title: "[STUB] Augmented Capacity"
+	quest.43410110000001A3.quest_subtitle: "[STUB] Why bigger altars matter"
+	quest.43410110000001A3.quest_desc: ["[BRIEF] teaches (OPTIONAL depth): building the Reinforced Augmented Capacity Rune to raise altar Life Essence capacity. Task: item neovitae:rune_2_capacity_augmented (block; ungated, family legal at/before gilded_age). Recipe fact (data/neovitae/recipe/rune_2_capacity_augmented.json): shaped craft from neovitae:hellforged_parts, minecraft:netherite_scrap, neovitae:rune_capacity_augmented, and a stone-crafting-materials tag. Depends on node 43410110000001A1 (the master orb). Opus: explain that each orb tier requires a larger, higher-tier altar, and that capacity runes buff how much Life Essence the altar holds so bigger transmutations finish; this optional node teaches why altar building and rune placement gate the orb ladder. Optional, not required progression. 2-4 short paragraphs, instruction-first, no em dashes."]
+	quest.4D4E0120002400A1.title: "[STUB] Supercharged Particle System"
+	quest.4D4E0120002400A1.quest_subtitle: "[STUB] Build the SPS multiblock"
+	quest.4D4E0120002400A1.quest_desc: ["[BRIEF] teaches: assembling the Mekanism Supercharged Particle System (SPS) multiblock. Tasks (bundled in ONE node): item mekanism:sps_casing, item mekanism:sps_port, item mekanism:supercharged_coil (all verified in jar, all ungated). Depends on the at3 nuclear/particle endgame cluster node 4348011000000116 (nuclearscience:atomicassembler, which itself deps the fission reactor anchor 4348010000010000, so the SPS transitively requires reactor power) and the at2 polonium producer quest 5054011000000104 (mekanism:solar_neutron_activator) for feedstock. Opus: explain the player builds an SPS shell from casings, adds ports for polonium input/antimatter output and a supercharged coil, and that the SPS is an energy-hungry endgame machine fed by the reactor chain. 2-4 short paragraphs, instruction-first."]
+	quest.4D4E0120002400A2.title: "[STUB] Antimatter"
+	quest.4D4E0120002400A2.quest_subtitle: "[STUB] Produce the impossible material"
+	quest.4D4E0120002400A2.quest_desc: ["[BRIEF] teaches: running the SPS to produce mekanism:pellet_antimatter. Task: item mekanism:pellet_antimatter (icon = pellet_antimatter, ungated). Depends on node 4D4E0120002400A1. Opus: explain the SPS consumes polonium pellets plus a large sustained energy draw to condense antimatter pellets, that antimatter is the top-tier Mekanism nucleosynthesis reagent, and that its main consumer (the Antiprotonic Nucleosynthesizer) waits in a later age so this is the Atomic-tier production milestone. 2-4 short paragraphs, instruction-first, no em dashes."]
 }

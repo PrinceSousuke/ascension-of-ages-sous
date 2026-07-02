@@ -5,56 +5,28 @@
 	group: "7D28E4AEBC440F10"
 	hide_quest_until_deps_complete: true
 	icon: {
-		id: "industrialforegoingsouls:soul_laser_base"
+		id: "mekanismgenerators:fission_reactor_casing"
 	}
 	id: "4348010000000000"
 	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["6D1396F9ABD5BB76"]
-			hide_until_deps_complete: false
-			icon: {
-				id: "deeperdarker:brittle_gloomsherd"
-			}
-			id: "4348010000010100"
-			rewards: [{
-				id: "4348010000030100"
-				type: "xp"
-				xp: 200
-			}]
-			shape: "gear"
-			size: 2.0d
-			tasks: [{
-				SkillsLevel: {
-					category: ""
-					check: 0b
-					comparison: "GREATER_OR_EQUAL"
-					first: 10
-					mode: "TOTAL_LEVEL"
-					second: 20
-				}
-				id: "4348010000020100"
-				item: { count: 1, id: "deeperdarker:brittle_gloomsherd" }
-				type: "item"
-			}]
-			x: 0.0d
-			y: -3.12d
-		}
-		{
-			dependencies: ["4348010000010100"]
+			dependencies: ["5054010000010003"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: {
-				id: "deeperdarker:listener_gloomsherd"
+				id: "mekanismgenerators:fission_reactor_casing"
 			}
-			id: "4348010000010101"
-			rewards: [{
-				id: "4348010000030101"
-				type: "xp"
-				xp: 150
-			}]
+			id: "4348010000010000"
 			tasks: [
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -63,11 +35,17 @@
 						mode: "TOTAL_LEVEL"
 						second: 20
 					}
-					id: "4348010000020101"
-					item: { count: 1, id: "deeperdarker:listener_gloomsherd" }
+					id: "4348010000020000"
+					item: { count: 1, id: "mekanismgenerators:fission_reactor_casing" }
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -76,29 +54,1495 @@
 						mode: "TOTAL_LEVEL"
 						second: 20
 					}
-					id: "4348010000020201"
-					item: { count: 1, id: "deeperdarker:temple_gloomsherd" }
+					id: "4348010000020001"
+					item: { count: 1, id: "mekanismgenerators:fission_fuel_assembly" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4348010000020002"
+					item: { count: 1, id: "mekanismgenerators:control_rod_assembly" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4348010000020003"
+					item: { count: 1, id: "mekanismgenerators:fission_reactor_port" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4348010000020004"
+					item: { count: 1, id: "mekanismgenerators:fission_reactor_logic_adapter" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4348010000020005"
+					item: { count: 1, id: "mekanismgenerators:reactor_glass" }
 					type: "item"
 				}
 			]
-			x: 2.0d
-			y: -3.12d
+			x: 0.0d
+			y: 0.0d
 		}
 		{
-			dependencies: ["4348010000010101"]
+			dependencies: ["4348010000010000"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: {
-				id: "industrialforegoingsouls:soul_laser_base"
+				id: "mekanismgenerators:turbine_casing"
 			}
-			id: "4348010000010102"
+			id: "4348010000010001"
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4348010000020006"
+					item: { count: 1, id: "mekanismgenerators:turbine_casing" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4348010000020007"
+					item: { count: 1, id: "mekanismgenerators:turbine_valve" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4348010000020008"
+					item: { count: 1, id: "mekanismgenerators:turbine_rotor" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4348010000020009"
+					item: { count: 1, id: "mekanismgenerators:turbine_blade" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "434801000002000A"
+					item: { count: 1, id: "mekanismgenerators:rotational_complex" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "434801000002000B"
+					item: { count: 1, id: "mekanismgenerators:electromagnetic_coil" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "434801000002000C"
+					item: { count: 1, id: "mekanismgenerators:saturating_condenser" }
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4348010000010001"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "mekanism:boiler_casing"
+			}
+			id: "4348011000000100"
 			rewards: [{
-				id: "4348010000030102"
+				id: "4348013000030001"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4348012000030001"
+					item: { count: 1, id: "mekanism:boiler_casing" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4348012000030002"
+					item: { count: 1, id: "mekanism:boiler_valve" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4348012000030003"
+					item: { count: 1, id: "mekanismgenerators:turbine_vent" }
+					type: "item"
+				}
+			]
+			x: 5.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4348011000000100"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "mekmm:large_gas_burning_generator"
+			}
+			id: "4348011000000101"
+			optional: true
+			rewards: [
+				{
+					id: "4348013000040001"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "28AB3F2AC34F579A"
+					type: "random"
+				}
+			]
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4348012000040001"
+					item: { count: 1, id: "mekmm:large_gas_burning_generator" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4348012000040002"
+					item: { count: 1, id: "mekmm:large_heat_generator" }
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4348010000010000"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "nuclearscience:chemicalextractor"
+			}
+			id: "4348011000000102"
+			rewards: [{
+				id: "4348013000050001"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4348012000050001"
+				item: { count: 1, id: "nuclearscience:chemicalextractor" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["4348011000000102"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "nuclearscience:nuclearboiler"
+			}
+			id: "4348010000010003"
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4348012000060001"
+				item: { count: 1, id: "nuclearscience:nuclearboiler" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4348010000010003"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "nuclearscience:fuelheuo2"
+			}
+			id: "4348011000000103"
+			rewards: [{
+				id: "4348013000070001"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4348012000070001"
+				item: { components: { "ftbfiltersystem:filter": "root(or(item_tag(c:pellets/uranium235),item_tag(c:pellets/uranium238),item_tag(c:pellets/plutonium)))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4348011000000103"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "nuclearscience:fuelleuo2"
+			}
+			id: "4348011000000104"
+			rewards: [{
+				id: "4348013000080001"
+				type: "xp"
+				xp: 150
+			}]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4348012000080001"
+				item: { components: { "ftbfiltersystem:filter": "root(or(item_tag(c:fuel_rods/heuo2),item_tag(c:fuel_rods/leuo2),item_tag(c:fuel_rods/plutonium)))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 11.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4348011000000104"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "nuclearscience:fuelspent"
+			}
+			id: "4348011000000105"
+			optional: true
+			rewards: [
+				{
+					id: "4348013000090001"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "4EC3C50F9196AA8F"
+					type: "random"
+				}
+			]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4348012000090001"
+				item: { components: { "ftbfiltersystem:filter": "root(or(item_tag(c:fuel_rods/spent),item_tag(c:dusts/fissile),item_tag(c:salts/fissile)))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4348011000000104"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "nuclearscience:fissionreactorcore"
+			}
+			id: "4348010000010002"
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "43480120000A0001"
+					item: { count: 1, id: "nuclearscience:fissionreactorcore" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "43480120000A0002"
+					item: { count: 1, id: "nuclearscience:fissioncontrolrod" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "43480120000A0003"
+					item: { count: 1, id: "nuclearscience:fissioninterface" }
+					type: "item"
+				}
+			]
+			x: 14.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4348010000010002"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "nuclearscience:msreactorcore"
+			}
+			id: "4348011000000106"
+			rewards: [{
+				id: "43480130000B0001"
+				type: "xp"
+				xp: 250
+			}]
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "43480120000B0001"
+					item: { count: 1, id: "nuclearscience:msreactorcore" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "43480120000B0002"
+					item: { count: 1, id: "nuclearscience:mscontrolrod" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "43480120000B0003"
+					item: { count: 1, id: "nuclearscience:msinterface" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "43480120000B0004"
+					item: { count: 1, id: "nuclearscience:freezeplug" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "43480120000B0005"
+					item: { count: 1, id: "nuclearscience:moltensaltsupplier" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "43480120000B0006"
+					item: { count: 1, id: "nuclearscience:msrfuelpreprocessor" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "43480120000B0007"
+					item: { count: 1, id: "nuclearscience:heatexchanger" }
+					type: "item"
+				}
+			]
+			x: 17.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4348011000000106"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "nuclearscience:electromagnet"
+			}
+			id: "4348011000000107"
+			rewards: [{
+				id: "43480130000C0001"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "43480120000C0001"
+					item: { count: 1, id: "nuclearscience:electromagnet" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "43480120000C0002"
+					item: { count: 1, id: "nuclearscience:electromagneticbooster" }
+					type: "item"
+				}
+			]
+			x: 19.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4348011000000107"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "nuclearscience:electromagneticswitch"
+			}
+			id: "4348011000000108"
+			optional: true
+			rewards: [
+				{
+					id: "43480130000D0001"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "529179AEEC64AA19"
+					type: "random"
+				}
+			]
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "43480120000D0001"
+					item: { count: 1, id: "nuclearscience:electromagneticswitch" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "43480120000D0002"
+					item: { count: 1, id: "nuclearscience:electromagneticdiode" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "43480120000D0003"
+					item: { count: 1, id: "nuclearscience:electromagneticgateway" }
+					type: "item"
+				}
+			]
+			x: 19.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4348011000000107"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "nuclearscience:celldeuterium"
+			}
+			id: "4348011000000109"
+			rewards: [
+				{
+					count: 4
+					id: "43480130000E0001"
+					item: {
+						count: 1
+						id: "nuclearscience:cellempty"
+					}
+					type: "item"
+				}
+				{
+					id: "43480130000E0002"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "43480120000E0001"
+					item: { count: 1, id: "nuclearscience:celldeuterium" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "43480120000E0002"
+					item: { count: 1, id: "nuclearscience:celltritium" }
+					type: "item"
+				}
+			]
+			x: 22.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4348011000000109"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "nuclearscience:fusionreactorcore"
+			}
+			id: "434801100000010A"
+			rewards: [{
+				id: "43480130000F0001"
+				type: "xp"
+				xp: 500
+			}]
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "43480120000F0001"
+					item: { count: 1, id: "nuclearscience:fusionreactorcore" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "43480120000F0002"
+					item: { count: 1, id: "nuclearscience:fusioninterface" }
+					type: "item"
+				}
+			]
+			x: 25.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4348010000010003"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "nuclearscience:steamfunnel"
+			}
+			id: "434801100000010B"
+			rewards: [{
+				id: "4348013000100001"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4348012000100001"
+				item: { count: 1, id: "nuclearscience:steamfunnel" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["434801100000010B"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "nuclearscience:turbine"
+			}
+			id: "434801100000010C"
+			rewards: [{
+				id: "4348013000110001"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4348012000110001"
+				item: { count: 1, id: "nuclearscience:turbine" }
+				type: "item"
+			}]
+			x: 11.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4348010000010002"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "nuclearscience:falloutscrubber"
+			}
+			id: "434801100000010D"
+			optional: true
+			rewards: [
+				{
+					id: "4348013000120001"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "26FFBC77A71F1CB9"
+					type: "random"
+				}
+			]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4348012000120001"
+				item: { count: 1, id: "nuclearscience:falloutscrubber" }
+				type: "item"
+			}]
+			x: 17.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["434801100000010D"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "nuclearscience:siren"
+			}
+			id: "434801100000010E"
+			optional: true
+			rewards: [
+				{
+					id: "4348013000130001"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "61C7E9CBC5781E95"
+					type: "random"
+				}
+			]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4348012000130001"
+				item: { count: 1, id: "nuclearscience:siren" }
+				type: "item"
+			}]
+			x: 16.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4348010000010002"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "nuclearscience:logisticscontroller"
+			}
+			id: "434801100000010F"
+			optional: true
+			rewards: [
+				{
+					id: "4348013000140001"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "78B4AEF5BC1C2243"
+					type: "random"
+				}
+			]
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4348012000140001"
+					item: { count: 1, id: "nuclearscience:logisticscontroller" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4348012000140002"
+					item: { count: 1, id: "nuclearscience:supplymodule" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4348012000140003"
+					item: { count: 1, id: "nuclearscience:monitormodule" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4348012000140004"
+					item: { count: 1, id: "nuclearscience:thermometermodule" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4348012000140005"
+					item: { count: 1, id: "nuclearscience:controlrodmodule" }
+					type: "item"
+				}
+			]
+			x: 13.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["434801100000010C"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "nuclearscience:quantumcapacitor"
+			}
+			id: "4348011000000110"
+			optional: true
+			rewards: [
+				{
+					id: "4348013000150001"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "19B34E30868692AD"
+					type: "random"
+				}
+			]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4348012000150001"
+				item: { count: 1, id: "nuclearscience:quantumcapacitor" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["4348011000000104"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "nuclearscience:radioisotopegenerator"
+			}
+			id: "4348011000000111"
+			optional: true
+			rewards: [
+				{
+					id: "4348013000160001"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "1B67946B983C1B4C"
+					type: "random"
+				}
+			]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4348012000160001"
+				item: { count: 1, id: "nuclearscience:radioisotopegenerator" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4348010000010002"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "nuclearscience:teleporter"
+			}
+			id: "4348011000000112"
+			optional: true
+			rewards: [
+				{
+					id: "4348013000170001"
+					type: "xp"
+					xp: 200
+				}
+				{
+					id: "2D6810F95D6A3558"
+					type: "random"
+				}
+			]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4348012000170001"
+				item: { count: 1, id: "nuclearscience:teleporter" }
+				type: "item"
+			}]
+			x: 17.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["4348011000000112"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "nuclearscience:chunkloader"
+			}
+			id: "4348011000000113"
+			optional: true
+			rewards: [
+				{
+					id: "4348013000180001"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "5329B2ED2C261301"
+					type: "random"
+				}
+			]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4348012000180001"
+				item: { count: 1, id: "nuclearscience:chunkloader" }
+				type: "item"
+			}]
+			x: 16.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["434801100000010A"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "nuclearscience:particleinjector"
+			}
+			id: "4348011000000114"
+			rewards: [{
+				id: "4348013000190001"
 				type: "xp"
 				xp: 200
 			}]
-			shape: "hexagon"
-			size: 1.5d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -107,26 +1551,40 @@
 					mode: "TOTAL_LEVEL"
 					second: 20
 				}
-				id: "4348010000020102"
-				item: { count: 1, id: "industrialforegoingsouls:soul_laser_base" }
+				id: "4348012000190001"
+				item: { count: 1, id: "nuclearscience:particleinjector" }
 				type: "item"
 			}]
-			x: 4.0d
-			y: -3.12d
+			x: 28.0d
+			y: 0.0d
 		}
 		{
-			dependencies: ["4348010000010102"]
+			dependencies: ["4348011000000114"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: {
-				id: "industrialforegoingsouls:soul_network_pipe"
+				id: "nuclearscience:cloudchamber"
 			}
-			id: "4348010000010103"
-			rewards: [{
-				id: "4348010000030103"
-				type: "xp"
-				xp: 100
-			}]
+			id: "4348011000000115"
+			optional: true
+			rewards: [
+				{
+					id: "43480130001A0001"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "4EF17BDDB09E5968"
+					type: "random"
+				}
+			]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -135,26 +1593,33 @@
 					mode: "TOTAL_LEVEL"
 					second: 20
 				}
-				id: "4348010000020103"
-				item: { count: 1, id: "industrialforegoingsouls:soul_network_pipe" }
+				id: "43480120001A0001"
+				item: { count: 1, id: "nuclearscience:cloudchamber" }
 				type: "item"
 			}]
-			x: 4.0d
-			y: 3.12d
+			x: 27.0d
+			y: -1.5d
 		}
 		{
-			dependencies: ["4348010000010103"]
+			dependencies: ["4348011000000114"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: {
-				id: "industrialforegoingsouls:soul_surge"
+				id: "nuclearscience:atomicassembler"
 			}
-			id: "4348010000010104"
+			id: "4348011000000116"
 			rewards: [{
-				id: "4348010000030104"
+				id: "43480130001B0001"
 				type: "xp"
-				xp: 100
+				xp: 250
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -163,28 +1628,183 @@
 					mode: "TOTAL_LEVEL"
 					second: 20
 				}
-				id: "4348010000020104"
-				item: { count: 1, id: "industrialforegoingsouls:soul_surge" }
+				id: "43480120001B0001"
+				item: { count: 1, id: "nuclearscience:atomicassembler" }
+				type: "item"
+			}]
+			x: 29.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4348010000010000"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "modern_industrialization:nuclear_casing"
+			}
+			id: "4348011000000117"
+			optional: true
+			rewards: [
+				{
+					id: "43480130001C0001"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "174A21C29D6E138E"
+					type: "random"
+				}
+			]
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "43480120001C0001"
+					item: { count: 1, id: "modern_industrialization:nuclear_casing" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "43480120001C0002"
+					item: { count: 1, id: "modern_industrialization:nuclear_alloy_machine_casing_pipe" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "43480120001C0003"
+					item: { count: 1, id: "modern_industrialization:nuclear_item_hatch" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "43480120001C0004"
+					item: { count: 1, id: "modern_industrialization:nuclear_fluid_hatch" }
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4348011000000117"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "modern_industrialization:nuclear_reactor"
+			}
+			id: "4348011000000118"
+			optional: true
+			rewards: [
+				{
+					id: "43480130001D0001"
+					type: "xp"
+					xp: 300
+				}
+				{
+					id: "6D491F3F58B54AE8"
+					type: "random"
+				}
+			]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "43480120001D0001"
+				item: { count: 1, id: "modern_industrialization:nuclear_reactor" }
 				type: "item"
 			}]
 			x: 2.0d
-			y: 3.12d
+			y: 1.5d
 		}
 		{
-			dependencies: ["4348010000010104"]
+			dependencies: ["4348011000000117"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: {
-				id: "industrialforegoingsouls:soul_laser_base"
+				id: "modern_industrialization:implosion_compressor"
 			}
-			id: "4348010000010105"
-			rewards: [{
-				id: "4348010000030105"
-				type: "xp"
-				xp: 300
-			}]
-			shape: "pentagon"
-			size: 1.5d
+			id: "4348011000000119"
+			optional: true
+			rewards: [
+				{
+					id: "43480130001E0001"
+					type: "xp"
+					xp: 200
+				}
+				{
+					id: "63D4A7EF0654A7F9"
+					type: "random"
+				}
+			]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -193,12 +1813,644 @@
 					mode: "TOTAL_LEVEL"
 					second: 20
 				}
-				id: "4348010000020105"
-				item: { count: 1, id: "industrialforegoingsouls:soul_surge" }
+				id: "43480120001E0001"
+				item: { count: 1, id: "modern_industrialization:implosion_compressor" }
 				type: "item"
 			}]
-			x: 0.0d
-			y: 3.12d
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4348010000010003"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "refinedstorage_mekanism_integration:64b_chemical_storage_part"
+			}
+			id: "434801100000011A"
+			rewards: [
+				{
+					id: "43480130001F0001"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "6042E866F2CE1CF4"
+					type: "random"
+				}
+			]
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "43480120001F0001"
+					item: { count: 1, id: "refinedstorage_mekanism_integration:64b_chemical_storage_part" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "43480120001F0002"
+					item: { count: 1, id: "refinedstorage_mekanism_integration:8192b_chemical_storage_part" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "43480120001F0003"
+					item: { count: 1, id: "refinedstorage_mekanism_integration:8192b_chemical_storage_block" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "43480120001F0004"
+					item: { count: 1, id: "refinedstorage_mekanism_integration:8192b_chemical_storage_disk" }
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["4348010000010003"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "appmek:chemical_cell_housing"
+			}
+			id: "434801100000011B"
+			optional: true
+			rewards: [
+				{
+					id: "4348013000200001"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "4F7DF851540851C1"
+					type: "random"
+				}
+			]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4348012000200001"
+				item: { count: 1, id: "appmek:chemical_cell_housing" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["434801100000011B"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "appmek:chemical_storage_cell_64k"
+			}
+			id: "434801100000011C"
+			optional: true
+			rewards: [
+				{
+					id: "4348013000210001"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "15218A86D93D0A67"
+					type: "random"
+				}
+			]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4348012000210001"
+				item: { components: { "ftbfiltersystem:filter": "root(or(item(appmek:chemical_storage_cell_1k),item(appmek:chemical_storage_cell_4k),item(appmek:chemical_storage_cell_16k),item(appmek:chemical_storage_cell_64k),item(appmek:chemical_storage_cell_256k)))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["434801100000011B"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "megacells:radioactive_cell_component"
+			}
+			id: "434801100000011D"
+			optional: true
+			rewards: [
+				{
+					id: "4348013000220001"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "280D0941F6D64C8D"
+					type: "random"
+				}
+			]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4348012000220001"
+				item: { count: 1, id: "megacells:radioactive_cell_component" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"4348010000010001"
+				"4348010000010003"
+			]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "mekanismgenerators:fission_reactor_casing"
+			}
+			id: "4348010000010004"
+			rewards: [{
+				auto: "enabled"
+				command: "/astages add {p} at_nuclear_engineering_complete true true"
+				icon: {
+					id: "mekanismgenerators:fission_reactor_casing"
+				}
+				id: "4348010000030000"
+				permission_level: 2
+				silent: true
+				team_reward: true
+				type: "command"
+			}]
+			shape: "diamond"
+			size: 1.2d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "434801000002001D"
+				item: { components: { "ftbfiltersystem:filter": "root(item(mekanismgenerators:fission_fuel_assembly))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["434801100000011A"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "expandedae:exp_io_port"
+			}
+			id: "4D4E01100000010D"
+			rewards: [{
+				id: "4D4E013000160001"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4D4E012000160001"
+				item: { count: 1, id: "expandedae:exp_io_port" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["434801100000011A"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "refinedstorage_mekanism_integration:64b_chemical_storage_block"
+			}
+			id: "4D4E011000000116"
+			rewards: [{
+				id: "4D4E013000210001"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4D4E012000210001"
+					item: { count: 1, id: "refinedstorage_mekanism_integration:64b_chemical_storage_block" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4D4E012000210002"
+					item: { count: 1, id: "refinedstorage_mekanism_integration:64b_chemical_storage_disk" }
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4D4E011000000116"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "refinedstorage_mekanism_integration:256b_chemical_storage_part"
+			}
+			id: "4D4E011000000117"
+			optional: true
+			rewards: [
+				{
+					id: "4D4E013000220001"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "55798D9C70CD3A3B"
+					type: "random"
+				}
+			]
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4D4E012000220001"
+					item: { count: 1, id: "refinedstorage_mekanism_integration:256b_chemical_storage_part" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4D4E012000220002"
+					item: { count: 1, id: "refinedstorage_mekanism_integration:256b_chemical_storage_block" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4D4E012000220003"
+					item: { count: 1, id: "refinedstorage_mekanism_integration:256b_chemical_storage_disk" }
+					type: "item"
+				}
+			]
+			x: 6.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4D4E011000000117"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "refinedstorage_mekanism_integration:1024b_chemical_storage_part"
+			}
+			id: "4D4E011000000118"
+			optional: true
+			rewards: [
+				{
+					id: "4D4E013000230001"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "06ED21BE2DBCD62E"
+					type: "random"
+				}
+			]
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4D4E012000230001"
+					item: { count: 1, id: "refinedstorage_mekanism_integration:1024b_chemical_storage_part" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4D4E012000230002"
+					item: { count: 1, id: "refinedstorage_mekanism_integration:1024b_chemical_storage_disk" }
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4348011000000116", "5054011000000104"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "mekanism:sps_casing"
+			}
+			id: "4D4E0120002400A1"
+			rewards: [
+				{
+					id: "4D4E0120002400A6"
+					type: "xp"
+					xp: 150
+				}
+				{
+					count: 4
+					id: "4D4E0120002400A7"
+					item: {
+						count: 1
+						id: "mekanism:pellet_polonium"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4D4E0120002400A3"
+					item: { count: 1, id: "mekanism:sps_casing" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4D4E0120002400A4"
+					item: { count: 1, id: "mekanism:sps_port" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4D4E0120002400A5"
+					item: { count: 1, id: "mekanism:supercharged_coil" }
+					type: "item"
+				}
+			]
+			x: 30.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4D4E0120002400A1"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "mekanism:pellet_antimatter"
+			}
+			id: "4D4E0120002400A2"
+			rewards: [{
+				id: "4D4E0120002400A9"
+				type: "xp"
+				xp: 200
+			}]
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4D4E0120002400A8"
+					item: { count: 1, id: "mekanism:pellet_antimatter" }
+					type: "item"
+				}
+			]
+			x: 31.5d
+			y: -4.0d
 		}
 	]
 }

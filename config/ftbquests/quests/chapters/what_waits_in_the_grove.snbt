@@ -14,20 +14,21 @@
 	quests: [
 		{
 			dependencies: ["097AED7C91033D5E"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "6D7E8F901A2B100C"
-			title: "Ferrous Wroughtnaut"
-			subtitle: "An iron golem with a grudge."
-			description: [
-				"Find and kill the &c&lFerrous Wroughtnaut&r, a &6Mowzie's Mobs&r boss that broods in underground arenas. It swings slow and hits like a truck, so dodge the wind-up and punish the recovery."
-				"Its remains carry the parts for some genuinely strong gear."
-			]
 			rewards: [{
 				id: "6D7E8F901A2B300C"
 				type: "xp"
 				xp: 25
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -37,6 +38,15 @@
 					second: 20
 				}
 				entity: "mowziesmobs:ferrous_wroughtnaut"
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				id: "6D7E8F901A2B200F"
 				type: "kill"
 				value: 1L
@@ -46,19 +56,21 @@
 		}
 		{
 			dependencies: ["6D7E8F901A2B100C"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "6D7E8F901A2B100D"
-			title: "Wrought Helmet"
-			subtitle: "Heavy iron headgear."
-			description: [
-				"Claim the &bWrought Helmet&r from the Wroughtnaut's drops. It is heavy, iron-tier protection that suits a front-line fighter who plans to take hits."
-			]
 			rewards: [{
 				id: "6D7E8F901A2B300D"
 				type: "xp"
 				xp: 25
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -76,20 +88,21 @@
 		}
 		{
 			dependencies: ["097AED7C91033D5E"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "6D7E8F901A2B1010"
-			title: "Tongbi, the Sculptor"
-			subtitle: "An earth-mage that fights from range."
-			description: [
-				"Track down the &c&lSculptor&r, a &6Mowzie's Mobs&r boss who hurls stone from a distance. Break line of sight to dodge the volleys, then close the gap between casts."
-				"Its drops feed the &bgeomancer&r gear."
-			]
 			rewards: [{
 				id: "6D7E8F901A2B3010"
 				type: "xp"
 				xp: 25
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -99,6 +112,15 @@
 					second: 20
 				}
 				entity: "mowziesmobs:sculptor"
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				id: "6D7E8F901A2B2013"
 				type: "kill"
 				value: 1L
@@ -108,19 +130,21 @@
 		}
 		{
 			dependencies: ["6D7E8F901A2B1010"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "6D7E8F901A2B1011"
-			title: "Geomancer Staff"
-			subtitle: "Throw the earth back at them."
-			description: [
-				"Take the &bGeomancer Staff&r from the &c&lSculptor&r. It flings chunks of stone as a ranged attack, a strong opener before a melee fight closes in."
-			]
 			rewards: [{
 				id: "6D7E8F901A2B3011"
 				type: "xp"
 				xp: 25
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -138,20 +162,21 @@
 		}
 		{
 			dependencies: ["097AED7C91033D5E"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "6D7E8F901A2B1013"
-			title: "Naga"
-			subtitle: "A serpent that strikes from the air."
-			description: [
-				"Hunt the &c&lNaga&r, a flying serpent boss that strafes overhead and dives to bite. Wait for the dive and strike as it passes, then back off before the next pass."
-				"Its fang is the prize worth keeping."
-			]
 			rewards: [{
 				id: "6D7E8F901A2B3013"
 				type: "xp"
 				xp: 25
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -161,6 +186,15 @@
 					second: 20
 				}
 				entity: "mowziesmobs:naga"
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				id: "6D7E8F901A2B2016"
 				type: "kill"
 				value: 1L
@@ -170,19 +204,21 @@
 		}
 		{
 			dependencies: ["6D7E8F901A2B1013"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "6D7E8F901A2B1014"
-			title: "Naga Fang"
-			subtitle: "The serpent's crafting drop."
-			description: [
-				"Collect a &bNaga Fang&r from a slain serpent. It is the crafting material behind the Naga's gear."
-			]
 			rewards: [{
 				id: "6D7E8F901A2B3014"
 				type: "xp"
 				xp: 25
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -200,19 +236,21 @@
 		}
 		{
 			dependencies: ["097AED7C91033D5E"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "6D7E8F901A2B1016"
-			title: "Spear"
-			subtitle: "Reach the enemy first."
-			description: [
-				"Craft the Spear. It strikes from a step further than most weapons, which keeps the grove's faster hunters at arm's length while you fight."
-			]
 			rewards: [{
 				id: "6D7E8F901A2B3016"
 				type: "xp"
 				xp: 25
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -231,19 +269,21 @@
 		}
 		{
 			dependencies: ["097AED7C91033D5E"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "6D7E8F901A2B1018"
-			title: "Bluff Rod"
-			subtitle: "A Mowzie's Mobs curio."
-			description: [
-				"Craft the &bBluff Rod&r. It is more of a trick than a mainstay, worth carrying for the moment its effect gets you out of a corner."
-			]
 			rewards: [{
 				id: "6D7E8F901A2B3018"
 				type: "xp"
 				xp: 25
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -261,14 +301,9 @@
 		}
 		{
 			dependencies: ["097AED7C91033D5E"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "6D7E8F901A2B1019"
-			title: "Elokosa Howler"
-			subtitle: "The night runs faster here."
-			description: [
-				"Hunt the Elokosa Howler, the night form of the Elokosa and a quick, wolf-like predator. Fight it with room to dodge rather than against a wall."
-				"Its paw is the drop you want."
-			]
 			rewards: [
 				{
 					id: "6D7E8F901A2B3019"
@@ -281,11 +316,16 @@
 						count: 1
 						id: "mowziesmobs:elokosa_paw_crescent"
 					}
-					title: "A Paw of the Crescent Moon to start."
 					type: "item"
 				}
 			]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -295,6 +335,15 @@
 					second: 20
 				}
 				entity: "mowziesmobs:elokosa_howler"
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				id: "6D7E8F901A2B201C"
 				type: "kill"
 				value: 1L
@@ -304,19 +353,21 @@
 		}
 		{
 			dependencies: ["6D7E8F901A2B1019"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "6D7E8F901A2B101A"
-			title: "Paw of the Full Moon"
-			subtitle: "Sap the strength of a crowd."
-			description: [
-				"Claim the &bPaw of the Full Moon&r. Swung, it weakens the mobs around you, softening a pack before you wade into it."
-			]
 			rewards: [{
 				id: "6D7E8F901A2B301A"
 				type: "xp"
 				xp: 25
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -333,59 +384,45 @@
 			y: 14.0d
 		}
 		{
-			dependencies: ["097AED7C91033D5E"]
+			dependencies: [
+				"097AED7C91033D5E"
+				"42BFA7916F2CD4FC"
+			]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "6D7E8F901A2B101B"
-			title: "Umvuthana Masks"
-			subtitle: "Fury or faith, pick your fight."
-			description: [
-				"Collect the &bMask of Fury&r and the &bMask of Faith&r from the Umvuthana. One leans into aggression and the other into healing, so wear the mask that fits the fight ahead."
-			]
 			rewards: [{
 				id: "6D7E8F901A2B301B"
 				type: "xp"
 				xp: 25
 			}]
-			tasks: [
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "6D7E8F901A2B201F"
-					item: { count: 1, id: "mowziesmobs:umvuthana_mask_fury" }
-					type: "item"
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
 				}
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "6D7E8F901A2B2020"
-					item: { count: 1, id: "mowziesmobs:umvuthana_mask_faith" }
-					type: "item"
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
 				}
-			]
+				id: "6D7E8F901A2B201F"
+				item: { components: { "ftbfiltersystem:filter": "root(or(item(mowziesmobs:umvuthana_mask_fury),item(mowziesmobs:umvuthana_mask_faith)))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
 			x: 3.0d
 			y: 16.0d
 		}
 		{
 			dependencies: ["097AED7C91033D5E"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "6D7E8F901A2B101D"
-			title: "Paw of the Crescent Moon"
-			subtitle: "Make them easier to kill."
-			description: [
-				"Get a &bPaw of the Crescent Moon&r. It marks the mobs it strikes with fragility, so your follow-up blows land that much harder."
-			]
 			rewards: [{
 				id: "6D7E8F901A2B301D"
 				type: "xp"
@@ -394,6 +431,12 @@
 			shape: "square"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -411,13 +454,9 @@
 		}
 		{
 			dependencies: ["097AED7C91033D5E"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "6D7E8F901A2B101F"
-			title: "Dark Metal"
-			subtitle: "The metal of the chaos host."
-			description: [
-				"Smelt &bDark Metal&r from the scrap the &6Born in Chaos&r undead drop, then block some up for storage. It is the base metal for that mod's darker tools and armor."
-			]
 			rewards: [{
 				id: "6D7E8F901A2B301F"
 				type: "xp"
@@ -425,6 +464,12 @@
 			}]
 			tasks: [
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -438,6 +483,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -456,19 +507,21 @@
 		}
 		{
 			dependencies: ["6D7E8F901A2B101F"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "6D7E8F901A2B1020"
-			title: "Orb of the Summoner"
-			subtitle: "A rare crafting drop."
-			description: [
-				"Recover the &bOrb of the Summoner&r. It is an uncommon drop that feeds the higher-tier &6Born in Chaos&r crafts, so hold onto it until you need it."
-			]
 			rewards: [{
 				id: "6D7E8F901A2B3020"
 				type: "xp"
 				xp: 25
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -486,19 +539,21 @@
 		}
 		{
 			dependencies: ["6D7E8F901A2B101D"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "6D7E8F901A2B1021"
-			title: "Death Totem"
-			subtitle: "A second chance in a bad fight."
-			description: [
-				"Craft a &bDeath Totem&r and keep it on you. Held, it offers a measure of protection when a fight turns against you."
-			]
 			rewards: [{
 				id: "6D7E8F901A2B3021"
 				type: "xp"
 				xp: 25
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -516,13 +571,9 @@
 		}
 		{
 			dependencies: ["6D7E8F901A2B101D"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "6D7E8F901A2B1022"
-			title: "Monster Parts"
-			subtitle: "Skin and claw for crafting."
-			description: [
-				"Gather &bMonster Skin&r and a &bNightmare Claw&r from the chaos mobs. Both are crafting materials for the mod's dark armor and weapons."
-			]
 			optional: true
 			rewards: [{
 				id: "6D7E8F901A2B3022"
@@ -531,6 +582,12 @@
 			}]
 			tasks: [
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -544,6 +601,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -562,13 +625,9 @@
 		}
 		{
 			dependencies: ["6D7E8F901A2B101F"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "6D7E8F901A2B1023"
-			title: "Seed of Chaos"
-			subtitle: "Stir up more to hunt."
-			description: [
-				"Collect a &bSeed of Chaos&r and a &bShattered Skull&r. The seed brings on chaos spawns when you want them, and the skull feeds rituals and crafts."
-			]
 			rewards: [{
 				id: "6D7E8F901A2B3023"
 				type: "xp"
@@ -576,6 +635,12 @@
 			}]
 			tasks: [
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -589,6 +654,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -607,19 +678,21 @@
 		}
 		{
 			dependencies: ["6D7E8F901A2B101F"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "6D7E8F901A2B1024"
-			title: "Staff of Magic Arrows"
-			subtitle: "Ranged answer to fliers."
-			description: [
-				"Make the &bStaff of Magic Arrows&r. It fires magical bolts at range, a steady answer to fliers and skirmishers that close too fast for a bow."
-			]
 			rewards: [{
 				id: "6D7E8F901A2B3024"
 				type: "xp"
 				xp: 25
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -637,19 +710,21 @@
 		}
 		{
 			dependencies: ["6D7E8F901A2B101D"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "6D7E8F901A2B1025"
-			title: "Spiritual Dust"
-			subtitle: "Reagent from the spirits."
-			description: [
-				"Grind &bSpiritual Dust&r from the spirit mobs. It is a crafting reagent several &6Born in Chaos&r recipes lean on, so gather a small stock."
-			]
 			rewards: [{
 				id: "6D7E8F901A2B3025"
 				type: "xp"
 				xp: 25
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -667,19 +742,21 @@
 		}
 		{
 			dependencies: ["6D7E8F901A2B101F"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "6D7E8F901A2B1026"
-			title: "Nightmare Stalker"
-			subtitle: "Hunt it for the claw."
-			description: [
-				"Hunt down a Nightmare Stalker. Its claw is the drop you are after, so this pairs with the crafting steps that need one."
-			]
 			rewards: [{
 				id: "6D7E8F901A2B3026"
 				type: "xp"
 				xp: 25
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -689,6 +766,15 @@
 					second: 20
 				}
 				entity: "born_in_chaos_v1:nightmare_stalker"
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				id: "6D7E8F901A2B202E"
 				type: "kill"
 				value: 1L
@@ -698,19 +784,21 @@
 		}
 		{
 			dependencies: ["6D7E8F901A2B2103"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "6D7E8F901A2B1027"
-			title: "Elixir of Wither Resistance"
-			subtitle: "Shrug off the wither."
-			description: [
-				"Brew the &bElixir of Wither Resistance&r. Drink it before facing anything that withers and the effect simply does not stick."
-			]
 			rewards: [{
 				id: "6D7E8F901A2B3027"
 				type: "xp"
 				xp: 25
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -728,19 +816,21 @@
 		}
 		{
 			dependencies: ["6D7E8F901A2B102C"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "6D7E8F901A2B1028"
-			title: "The Gentleman Frog"
-			subtitle: "A bit of grim decor."
-			description: [
-				"Place the Gentleman Frog tombstone. It is a memorial more than a tool, a small dark flourish for the base."
-			]
 			rewards: [{
 				id: "6D7E8F901A2B3028"
 				type: "xp"
 				xp: 25
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -758,19 +848,21 @@
 		}
 		{
 			dependencies: ["6D7E8F901A2B101F"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "6D7E8F901A2B1029"
-			title: "Transmuting Elixir"
-			subtitle: "Turn one thing into another."
-			description: [
-				"Brew a &bTransmuting Elixir&r. It converts one material into another, a handy shortcut when a recipe wants something you are short on."
-			]
 			rewards: [{
 				id: "6D7E8F901A2B3029"
 				type: "xp"
 				xp: 25
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -788,19 +880,21 @@
 		}
 		{
 			dependencies: ["6D7E8F901A2B102C"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "6D7E8F901A2B102A"
-			title: "Elixir of Vampirism"
-			subtitle: "Heal off your own hits."
-			description: [
-				"Brew the &bElixir of Vampirism&r. While it lasts your strikes return health to you, which keeps a drawn-out fight survivable."
-			]
 			rewards: [{
 				id: "6D7E8F901A2B302A"
 				type: "xp"
 				xp: 25
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -821,13 +915,9 @@
 				"6D7E8F901A2B1024"
 				"6D7E8F901A2B1029"
 			]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "6D7E8F901A2B102C"
-			title: "Paw of the Gibbous Moon"
-			subtitle: "Slow the swarm down."
-			description: [
-				"Get a &bPaw of the Gibbous Moon&r. It slows the mobs it hits, which is exactly what you want when peeling away from a crowd."
-			]
 			rewards: [{
 				id: "6D7E8F901A2B302C"
 				type: "xp"
@@ -836,6 +926,12 @@
 			shape: "diamond"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -853,19 +949,21 @@
 		}
 		{
 			dependencies: ["6D7E8F901A2B100C"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "6D7E8F901A2B2101"
-			title: "Axe of a Thousand Metals"
-			subtitle: "The Wroughtnaut's own weapon."
-			description: [
-				"Claim the &bAxe of a Thousand Metals&r from the &c&lFerrous Wroughtnaut&r. It hits the way the boss did, slow and devastating, and rewards patient timing."
-			]
 			rewards: [{
 				id: "6D7E8F901A2B3101"
 				type: "xp"
 				xp: 25
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -884,13 +982,9 @@
 		}
 		{
 			dependencies: ["6D7E8F901A2B1010"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "6D7E8F901A2B2102"
-			title: "Geomancer Regalia"
-			subtitle: "The Sculptor's full set."
-			description: [
-				"Assemble the &bGeomancer&r beads, robe, belt, and sandals from the &c&lSculptor&r's drops. Worn together the set leans into earth magic."
-			]
 			rewards: [{
 				id: "6D7E8F901A2B3102"
 				type: "xp"
@@ -898,6 +992,12 @@
 			}]
 			tasks: [
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -912,6 +1012,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -926,6 +1032,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -940,6 +1052,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -959,19 +1077,21 @@
 		}
 		{
 			dependencies: ["6D7E8F901A2B101A"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "6D7E8F901A2B2103"
-			title: "Luminous Jelly"
-			subtitle: "Light and a brewing ingredient."
-			description: [
-				"Collect &bLuminous Jelly&r. It glows to light your way and feeds a few recipes, including the wither-resistance brew."
-			]
 			rewards: [{
 				id: "6D7E8F901A2B3103"
 				type: "xp"
 				xp: 25
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -994,14 +1114,9 @@
 				"6D7E8F901A2B102C"
 				"5468102A19D28104"
 			]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "6D7E8F901A2B1050"
-			title: "The Great Hunt: Wroughtnaut"
-			subtitle: "First of the four great beasts."
-			description: [
-				"Fell the &c&lFerrous Wroughtnaut&r again, this time as one of the four great beasts of the grove. Killing all four is what proves you have mastered its bosses."
-				"By now you should have the gear and the timing to take it down cleanly."
-			]
 			min_required_dependencies: 2
 			rewards: [{
 				id: "6D7E8F901A2B3050"
@@ -1009,6 +1124,12 @@
 				xp: 75
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1018,6 +1139,15 @@
 					second: 20
 				}
 				entity: "mowziesmobs:ferrous_wroughtnaut"
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				id: "6D7E8F901A2B2050"
 				type: "kill"
 				value: 1L
@@ -1032,13 +1162,9 @@
 				"6D7E8F901A2B102C"
 				"5468102A19D28104"
 			]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "6D7E8F901A2B1051"
-			title: "The Great Hunt: Foliaath"
-			subtitle: "A carnivorous plant that lunges."
-			description: [
-				"Kill a &c&lFoliaath&r, the rooted, snapping plant that lunges at anything in reach. Stay at its range edge or strike from the side, and do not stand in its mouth."
-			]
 			min_required_dependencies: 2
 			rewards: [{
 				id: "6D7E8F901A2B3051"
@@ -1046,6 +1172,12 @@
 				xp: 75
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1055,6 +1187,15 @@
 					second: 20
 				}
 				entity: "mowziesmobs:foliaath"
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				id: "6D7E8F901A2B2051"
 				type: "kill"
 				value: 1L
@@ -1069,14 +1210,9 @@
 				"6D7E8F901A2B102C"
 				"5468102A19D28104"
 			]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "6D7E8F901A2B1052"
-			title: "The Great Hunt: Frostmaw"
-			subtitle: "Keep moving or freeze."
-			description: [
-				"Bring down the &c&lFrostmaw&r, a giant frost beast that freezes the ground and you with it. Keep moving to shake the chill and strike between its slams."
-				"Warm gear and steady footing matter as much as your weapon here."
-			]
 			min_required_dependencies: 2
 			rewards: [{
 				id: "6D7E8F901A2B3052"
@@ -1084,6 +1220,12 @@
 				xp: 75
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1093,6 +1235,15 @@
 					second: 20
 				}
 				entity: "mowziesmobs:frostmaw"
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				id: "6D7E8F901A2B2052"
 				type: "kill"
 				value: 1L
@@ -1107,13 +1258,9 @@
 				"6D7E8F901A2B102C"
 				"5468102A19D28104"
 			]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "6D7E8F901A2B1053"
-			title: "The Great Hunt: Grottol"
-			subtitle: "Catch it before it burrows."
-			description: [
-				"Track down a Grottol, the shy cave creature that drops ore and bolts the moment it is threatened. Corner it before it burrows away and the kill is yours."
-			]
 			min_required_dependencies: 2
 			rewards: [{
 				id: "6D7E8F901A2B3053"
@@ -1121,6 +1268,12 @@
 				xp: 75
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1130,6 +1283,15 @@
 					second: 20
 				}
 				entity: "mowziesmobs:grottol"
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				id: "6D7E8F901A2B2053"
 				type: "kill"
 				value: 1L
@@ -1144,23 +1306,22 @@
 				"6D7E8F901A2B1052"
 				"6D7E8F901A2B1053"
 			]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: {
 				id: "mowziesmobs:wrought_helmet"
 			}
 			id: "6D7E8F901A2B1054"
-			title: "Master of the Grove"
-			subtitle: "The four great beasts are down."
-			description: [
-				"With the Wroughtnaut, &c&lFoliaath&r, &c&lFrostmaw&r, and Grottol all felled, the grove's hardest hunts are behind you. Hold here a moment and the colony recognizes the work."
-				"The instincts you sharpen on these beasts carry straight into the bosses the later ages throw at you."
-			]
 			min_required_dependencies: 3
 			rewards: [
 				{
-					id: "6D7E8F901A2B3054"
-					type: "xp"
-					xp: 150
+					auto: "enabled"
+					command: "/advancement grant {p} only aoa:journey/grove_trials"
+					id: "1994939B85EC9825"
+					permission_level: 2
+					silent: true
+					team_reward: true
+					type: "command"
 				}
 				{
 					auto: "enabled"
@@ -1190,6 +1351,12 @@
 			shape: "hexagon"
 			size: 1.5d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1207,14 +1374,9 @@
 		}
 		{
 			dependencies: ["6D7E8F901A2B102C"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "280E76D5A93E6B6C"
-			title: "Gnome King"
-			subtitle: "Clear the escort, then the crown."
-			description: [
-				"Hunt the &c&lGnome King&r in its burrow. It fights surrounded by a mob of gnomes, so thin the escort before you focus the king itself."
-				"Its loot bag holds the drops worth the trip."
-			]
 			rewards: [
 				{
 					id: "43797429AF2D7F2A"
@@ -1227,13 +1389,18 @@
 						count: 1
 						id: "alchemists_garden:gnome_king_loot_bag"
 					}
-					title: "The Gnome King's loot bag."
 					type: "item"
 				}
 			]
 			shape: "rsquare"
 			size: 1.3d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1243,6 +1410,15 @@
 					second: 20
 				}
 				entity: "alchemists_garden:gnome_king"
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				id: "49AA9EA141297DFE"
 				type: "kill"
 				value: 1L
@@ -1252,19 +1428,21 @@
 		}
 		{
 			dependencies: ["280E76D5A93E6B6C"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "09B42DE5A859BA0D"
-			title: "King's Shovel"
-			subtitle: "The crown's own tool."
-			description: [
-				"Claim the &bPowered King's Shovel&r from the &c&lGnome King&r. It digs faster than an ordinary shovel and carries the king's edge into your toolkit."
-			]
 			rewards: [{
 				id: "20DD6C6407C9D448"
 				type: "xp"
 				xp: 40
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1283,14 +1461,9 @@
 		}
 		{
 			dependencies: ["6D7E8F901A2B102C"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "29DE51ABF8B5D7FA"
-			title: "Spider Queen"
-			subtitle: "Thin the brood, then the queen."
-			description: [
-				"Hunt the &c&lSpider Queen&r, who fights from behind a wall of spiderlings. Clear the brood first, then commit to her once your footing is clear."
-				"Her loot bag is the reward."
-			]
 			rewards: [
 				{
 					id: "4A685DD7DB1918A0"
@@ -1303,13 +1476,18 @@
 						count: 1
 						id: "alchemists_garden:spider_queen_loot_bag"
 					}
-					title: "The Spider Queen's loot bag."
 					type: "item"
 				}
 			]
 			shape: "rsquare"
 			size: 1.3d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1319,6 +1497,15 @@
 					second: 20
 				}
 				entity: "alchemists_garden:spider_queen"
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				id: "3E723DAD9A380086"
 				type: "kill"
 				value: 1L
@@ -1328,13 +1515,9 @@
 		}
 		{
 			dependencies: ["29DE51ABF8B5D7FA"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "0ABD97C61DE42DCF"
-			title: "Queen's Fang"
-			subtitle: "A fast, venomous blade."
-			description: [
-				"Take the &bQueen's Fang&r dagger from the &c&lSpider Queen&r. It is a quick blade with a venomous bite, good for hit-and-run against tougher foes."
-			]
 			rewards: [
 				{
 					id: "0EB79BC83380D297"
@@ -1344,13 +1527,18 @@
 				{
 					id: "1A1001D8E5100973"
 					table_id: 8849093687305634787L
-					title: "A small cache alongside the fang."
 					type: "loot"
 				}
 			]
 			shape: "rsquare"
 			size: 1.3d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1369,19 +1557,21 @@
 		}
 		{
 			dependencies: ["6D7E8F901A2B101F"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "6D7E8F901A2B3001"
-			title: "Bonescaller"
-			subtitle: "Kill the caster, stop the bones."
-			description: [
-				"Hunt a Bonescaller. This undead caster raises skeletons, so cut it down before its summons pile up around you."
-			]
 			rewards: [{
 				id: "6D7E8F901A2B5001"
 				type: "xp"
 				xp: 25
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1391,6 +1581,15 @@
 					second: 20
 				}
 				entity: "born_in_chaos_v1:bonescaller"
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				id: "6D7E8F901A2B4001"
 				type: "kill"
 				value: 1L
@@ -1400,13 +1599,9 @@
 		}
 		{
 			dependencies: ["6D7E8F901A2B3001"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "6D7E8F901A2B3002"
-			title: "Supreme Bonescaller"
-			subtitle: "The elite that fields an army."
-			description: [
-				"Take down the &c&lSupreme Bonescaller&r, a stronger caster that throws far more bone than its lesser kin. Burn it down fast or you will drown in skeletons."
-			]
 			rewards: [{
 				id: "6D7E8F901A2B5002"
 				type: "xp"
@@ -1415,6 +1610,12 @@
 			shape: "rsquare"
 			size: 1.3d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1424,6 +1625,15 @@
 					second: 20
 				}
 				entity: "born_in_chaos_v1:supreme_bonescaller"
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				id: "6D7E8F901A2B4002"
 				type: "kill"
 				value: 1L
@@ -1433,19 +1643,21 @@
 		}
 		{
 			dependencies: ["6D7E8F901A2B3002"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "6D7E8F901A2B3003"
-			title: "Dread Hound"
-			subtitle: "Fast and it flanks."
-			description: [
-				"Hunt a Dread Hound, a quick undead attacker that circles to your blind side. Keep your back covered and it goes down without much trouble."
-			]
 			rewards: [{
 				id: "6D7E8F901A2B5003"
 				type: "xp"
 				xp: 25
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1455,6 +1667,15 @@
 					second: 20
 				}
 				entity: "born_in_chaos_v1:dread_hound"
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				id: "6D7E8F901A2B4003"
 				type: "kill"
 				value: 5L
@@ -1464,13 +1685,9 @@
 		}
 		{
 			dependencies: ["6D7E8F901A2B3003"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "6D7E8F901A2B3004"
-			title: "Dire Hound Leader"
-			subtitle: "Break the pack's alpha."
-			description: [
-				"Kill the Dire Hound Leader, the alpha that drives the pack. Drop it and the rest of the hounds lose their bite."
-			]
 			rewards: [{
 				id: "6D7E8F901A2B5004"
 				type: "xp"
@@ -1479,6 +1696,12 @@
 			shape: "rsquare"
 			size: 1.3d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1488,6 +1711,15 @@
 					second: 20
 				}
 				entity: "born_in_chaos_v1:dire_hound_leader"
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				id: "6D7E8F901A2B4004"
 				type: "kill"
 				value: 1L
@@ -1497,13 +1729,9 @@
 		}
 		{
 			dependencies: ["31F70E7481C6CE82"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "6D7E8F901A2B3005"
-			title: "Sir Pumpkinhead"
-			subtitle: "A knight with a gourd for a head."
-			description: [
-				"Face &c&lSir Pumpkinhead&r, an armored boss of the chaos host that fights in heavy swings. Time your dodges to its rhythm and answer between blows."
-			]
 			rewards: [{
 				id: "6D7E8F901A2B5005"
 				type: "xp"
@@ -1512,6 +1740,12 @@
 			shape: "rsquare"
 			size: 1.3d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1521,6 +1755,15 @@
 					second: 20
 				}
 				entity: "born_in_chaos_v1:sir_pumpkinhead"
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				id: "6D7E8F901A2B4005"
 				type: "kill"
 				value: 1L
@@ -1530,13 +1773,9 @@
 		}
 		{
 			dependencies: ["6D7E8F901A2B102C"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "6D7E8F901A2B3006"
-			title: "Chaos Knights"
-			subtitle: "Patient, armored, and slow."
-			description: [
-				"Cut down a Door Knight and a Fallen Chaos Knight. Both are armored and deliberate, so wear them down rather than trade blow for blow."
-			]
 			rewards: [{
 				id: "6D7E8F901A2B5006"
 				type: "xp"
@@ -1544,6 +1783,12 @@
 			}]
 			tasks: [
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1553,11 +1798,26 @@
 						second: 20
 					}
 					entity: "born_in_chaos_v1:door_knight"
+					entity_vis_idle_mode: "USE_GLOBAL"
+					entity_vis_offset_x: 0.0f
+					entity_vis_offset_y: 0.0f
+					entity_vis_rotation: 0.0f
+					entity_vis_silhouette_mode: "NONE"
+					entity_vis_size: 1.0f
+					entity_vis_spin_mode: "USE_GLOBAL"
+					entity_vis_use_as_quest_icon: false
+					entity_vis_walk_mode: "USE_GLOBAL"
 					id: "6D7E8F901A2B4006"
 					type: "kill"
 					value: 3L
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1567,6 +1827,15 @@
 						second: 20
 					}
 					entity: "born_in_chaos_v1:fallen_chaos_knight"
+					entity_vis_idle_mode: "USE_GLOBAL"
+					entity_vis_offset_x: 0.0f
+					entity_vis_offset_y: 0.0f
+					entity_vis_rotation: 0.0f
+					entity_vis_silhouette_mode: "NONE"
+					entity_vis_size: 1.0f
+					entity_vis_spin_mode: "USE_GLOBAL"
+					entity_vis_use_as_quest_icon: false
+					entity_vis_walk_mode: "USE_GLOBAL"
 					id: "6D7E8F901A2B4007"
 					type: "kill"
 					value: 3L
@@ -1577,19 +1846,21 @@
 		}
 		{
 			dependencies: ["29DE51ABF8B5D7FA"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "6D7E8F901A2B3007"
-			title: "Lifestealer"
-			subtitle: "Do not let it cling."
-			description: [
-				"Hunt a Lifestealer. It drains your health on contact, so keep it at weapon range and never let it latch on."
-			]
 			rewards: [{
 				id: "6D7E8F901A2B5007"
 				type: "xp"
 				xp: 25
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1599,6 +1870,15 @@
 					second: 20
 				}
 				entity: "born_in_chaos_v1:lifestealer"
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				id: "6D7E8F901A2B4008"
 				type: "kill"
 				value: 1L
@@ -1608,13 +1888,9 @@
 		}
 		{
 			dependencies: ["280E76D5A93E6B6C"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "6D7E8F901A2B3008"
-			title: "Bruiser and Imp"
-			subtitle: "Split them up."
-			description: [
-				"Clear out a Zombie Bruiser and a Bone Imp. The bruiser hits hard up close while the imp harasses from the edges, so separate them and deal with each in turn."
-			]
 			rewards: [{
 				id: "6D7E8F901A2B5008"
 				type: "xp"
@@ -1622,6 +1898,12 @@
 			}]
 			tasks: [
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1631,11 +1913,26 @@
 						second: 20
 					}
 					entity: "born_in_chaos_v1:zombie_bruiser"
+					entity_vis_idle_mode: "USE_GLOBAL"
+					entity_vis_offset_x: 0.0f
+					entity_vis_offset_y: 0.0f
+					entity_vis_rotation: 0.0f
+					entity_vis_silhouette_mode: "NONE"
+					entity_vis_size: 1.0f
+					entity_vis_spin_mode: "USE_GLOBAL"
+					entity_vis_use_as_quest_icon: false
+					entity_vis_walk_mode: "USE_GLOBAL"
 					id: "6D7E8F901A2B4009"
 					type: "kill"
 					value: 3L
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1645,6 +1942,15 @@
 						second: 20
 					}
 					entity: "born_in_chaos_v1:bone_imp"
+					entity_vis_idle_mode: "USE_GLOBAL"
+					entity_vis_offset_x: 0.0f
+					entity_vis_offset_y: 0.0f
+					entity_vis_rotation: 0.0f
+					entity_vis_silhouette_mode: "NONE"
+					entity_vis_size: 1.0f
+					entity_vis_spin_mode: "USE_GLOBAL"
+					entity_vis_use_as_quest_icon: false
+					entity_vis_walk_mode: "USE_GLOBAL"
 					id: "6D7E8F901A2B400A"
 					type: "kill"
 					value: 3L
@@ -1655,13 +1961,9 @@
 		}
 		{
 			dependencies: ["29DE51ABF8B5D7FA"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "6D7E8F901A2B3009"
-			title: "Pests of the Host"
-			subtitle: "The small fry."
-			description: [
-				"Swat a Corpse Fly and a Mr. Pumpkin, the least of the chaos host. Easy kills that round out the bestiary."
-			]
 			optional: true
 			rewards: [{
 				id: "6D7E8F901A2B5009"
@@ -1670,6 +1972,12 @@
 			}]
 			tasks: [
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1679,11 +1987,26 @@
 						second: 20
 					}
 					entity: "born_in_chaos_v1:corpse_fly"
+					entity_vis_idle_mode: "USE_GLOBAL"
+					entity_vis_offset_x: 0.0f
+					entity_vis_offset_y: 0.0f
+					entity_vis_rotation: 0.0f
+					entity_vis_silhouette_mode: "NONE"
+					entity_vis_size: 1.0f
+					entity_vis_spin_mode: "USE_GLOBAL"
+					entity_vis_use_as_quest_icon: false
+					entity_vis_walk_mode: "USE_GLOBAL"
 					id: "6D7E8F901A2B400B"
 					type: "kill"
 					value: 3L
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1693,9 +2016,36 @@
 						second: 20
 					}
 					entity: "born_in_chaos_v1:mr_pumpkin"
+					entity_vis_idle_mode: "USE_GLOBAL"
+					entity_vis_offset_x: 0.0f
+					entity_vis_offset_y: 0.0f
+					entity_vis_rotation: 0.0f
+					entity_vis_silhouette_mode: "NONE"
+					entity_vis_size: 1.0f
+					entity_vis_spin_mode: "USE_GLOBAL"
+					entity_vis_use_as_quest_icon: false
+					entity_vis_walk_mode: "USE_GLOBAL"
 					id: "6D7E8F901A2B400C"
 					type: "kill"
 					value: 2L
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "2B8B15600CCA2F17"
+					type: "custom"
 				}
 			]
 			x: 20.0d
@@ -1703,13 +2053,9 @@
 		}
 		{
 			dependencies: ["7B26069EC5CF71D4"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "6D7E8F901A2B300A"
-			title: "Crystalian and Skull"
-			subtitle: "Drop the skull first."
-			description: [
-				"Hunt a Crystalian and a Spectral Skull from &6Monster Plus&r. The crystal zombie is tough up close while the floating skull spits projectiles, so silence the skull before you commit."
-			]
 			rewards: [{
 				id: "6D7E8F901A2B500A"
 				type: "xp"
@@ -1717,6 +2063,12 @@
 			}]
 			tasks: [
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1726,11 +2078,26 @@
 						second: 20
 					}
 					entity: "monsterplus:crystal_zombie"
+					entity_vis_idle_mode: "USE_GLOBAL"
+					entity_vis_offset_x: 0.0f
+					entity_vis_offset_y: 0.0f
+					entity_vis_rotation: 0.0f
+					entity_vis_silhouette_mode: "NONE"
+					entity_vis_size: 1.0f
+					entity_vis_spin_mode: "USE_GLOBAL"
+					entity_vis_use_as_quest_icon: false
+					entity_vis_walk_mode: "USE_GLOBAL"
 					id: "6D7E8F901A2B400D"
 					type: "kill"
 					value: 3L
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1740,6 +2107,15 @@
 						second: 20
 					}
 					entity: "monsterplus:spectral_skull"
+					entity_vis_idle_mode: "USE_GLOBAL"
+					entity_vis_offset_x: 0.0f
+					entity_vis_offset_y: 0.0f
+					entity_vis_rotation: 0.0f
+					entity_vis_silhouette_mode: "NONE"
+					entity_vis_size: 1.0f
+					entity_vis_spin_mode: "USE_GLOBAL"
+					entity_vis_use_as_quest_icon: false
+					entity_vis_walk_mode: "USE_GLOBAL"
 					id: "6D7E8F901A2B400E"
 					type: "kill"
 					value: 2L
@@ -1750,13 +2126,9 @@
 		}
 		{
 			dependencies: ["2902E58DB70F9442"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "7B26069EC5CF71D4"
-			title: "Desert Casters"
-			subtitle: "Break the minion to reach the mage."
-			description: [
-				"Hunt the Desert Sorceress and her Acolyte. The sorceress casts from range while the acolyte shields and supports her, so cut through the minion first."
-			]
 			rewards: [{
 				id: "6D7E8F901A2B500B"
 				type: "xp"
@@ -1764,6 +2136,12 @@
 			}]
 			tasks: [
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1773,11 +2151,26 @@
 						second: 20
 					}
 					entity: "monsterplus:desert_sorceress"
+					entity_vis_idle_mode: "USE_GLOBAL"
+					entity_vis_offset_x: 0.0f
+					entity_vis_offset_y: 0.0f
+					entity_vis_rotation: 0.0f
+					entity_vis_silhouette_mode: "NONE"
+					entity_vis_size: 1.0f
+					entity_vis_spin_mode: "USE_GLOBAL"
+					entity_vis_use_as_quest_icon: false
+					entity_vis_walk_mode: "USE_GLOBAL"
 					id: "6D7E8F901A2B400F"
 					type: "kill"
 					value: 2L
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1787,6 +2180,15 @@
 						second: 20
 					}
 					entity: "monsterplus:desert_acolyte"
+					entity_vis_idle_mode: "USE_GLOBAL"
+					entity_vis_offset_x: 0.0f
+					entity_vis_offset_y: 0.0f
+					entity_vis_rotation: 0.0f
+					entity_vis_silhouette_mode: "NONE"
+					entity_vis_size: 1.0f
+					entity_vis_spin_mode: "USE_GLOBAL"
+					entity_vis_use_as_quest_icon: false
+					entity_vis_walk_mode: "USE_GLOBAL"
 					id: "6D7E8F901A2B4010"
 					type: "kill"
 					value: 2L
@@ -1797,13 +2199,9 @@
 		}
 		{
 			dependencies: ["6D7E8F901A2B300A"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "442C27F2E00B325C"
-			title: "Hermit Abysswalker"
-			subtitle: "Bring light into the deep."
-			description: [
-				"Hunt the Hermit Abysswalker far underground. It hits hard in the dark, so carry light and wear real armor before you go looking for it."
-			]
 			rewards: [{
 				id: "6D7E8F901A2B500C"
 				type: "xp"
@@ -1812,6 +2210,12 @@
 			shape: "rsquare"
 			size: 1.3d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1821,6 +2225,15 @@
 					second: 20
 				}
 				entity: "monsterplus:abyssologer"
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				id: "6D7E8F901A2B4011"
 				type: "kill"
 				value: 1L
@@ -1833,14 +2246,10 @@
 				"442C27F2E00B325C"
 				"7B26069EC5CF71D4"
 			]
+			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "1F215CC13B2A1F81"
-			title: "Ancient Scroll"
-			subtitle: "A spell in a single read."
-			description: [
-				"Recover an &bAncient Scroll&r. Read it to loose the spell stored inside, a one-off bit of &6Monster Plus&r magic for a tight spot."
-			]
 			min_required_dependencies: 1
 			rewards: [{
 				id: "6D7E8F901A2B500D"
@@ -1848,6 +2257,12 @@
 				xp: 25
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1868,13 +2283,9 @@
 				"442C27F2E00B325C"
 				"7B26069EC5CF71D4"
 			]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "6D7E8F901A2B300E"
-			title: "Crystal and Essence"
-			subtitle: "Drops for the better gear."
-			description: [
-				"Collect an &bAncient Crystal Fragment&r and some &bDark Essence&r. Both are crafting materials behind the higher-tier &6Monster Plus&r equipment."
-			]
 			min_required_dependencies: 1
 			rewards: [{
 				id: "6D7E8F901A2B500E"
@@ -1883,6 +2294,12 @@
 			}]
 			tasks: [
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1896,6 +2313,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1917,14 +2340,10 @@
 				"442C27F2E00B325C"
 				"7B26069EC5CF71D4"
 			]
+			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "6D7E8F901A2B300F"
-			title: "Dark Armor"
-			subtitle: "Forged from the hunt."
-			description: [
-				"Forge the &bDark Chestplate&r and Helmet. Built from the mobs you have been clearing, it is a solid mid-game set worth the materials."
-			]
 			min_required_dependencies: 1
 			rewards: [{
 				id: "6D7E8F901A2B500F"
@@ -1933,6 +2352,12 @@
 			}]
 			tasks: [
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1946,6 +2371,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1964,14 +2395,9 @@
 		}
 		{
 			dependencies: ["097AED7C91033D5E"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "5468102A19D28104"
-			title: "Corrupted Ancient Hero"
-			subtitle: "A warrior turned, and skilled."
-			description: [
-				"Seek out the &c&lCorrupted Ancient Hero&r, an elite fighter that fights with real technique rather than brute force. Bring your best gear and a plan for its combos."
-				"Its broken sword is the drop you came for."
-			]
 			rewards: [{
 				id: "6D7E8F901A2B5010"
 				type: "xp"
@@ -1980,6 +2406,12 @@
 			shape: "rsquare"
 			size: 1.3d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1989,6 +2421,15 @@
 					second: 20
 				}
 				entity: "monsterplus:ancient_hero"
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				id: "6D7E8F901A2B4017"
 				type: "kill"
 				value: 1L
@@ -1998,19 +2439,21 @@
 		}
 		{
 			dependencies: ["5468102A19D28104"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "31F70E7481C6CE82"
-			title: "Ancient Broken Sword"
-			subtitle: "Reforge what was shattered."
-			description: [
-				"Take the &bAncient Broken Sword&r from the fallen hero. Broken as it is, it is the component you reforge its blade from."
-			]
 			rewards: [{
 				id: "6D7E8F901A2B5011"
 				type: "xp"
 				xp: 50
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -2027,14 +2470,13 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["6D7E8F901A2B300F"]
+			dependencies: [
+				"6D7E8F901A2B300F"
+				"6D7E8F901A2B300E"
+			]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "55E3541DEC3D3BE4"
-			title: "Dark Essence"
-			subtitle: "The rare one they all want."
-			description: [
-				"Gather more &bDark Essence&r. It is the scarce reagent the strongest &6Monster Plus&r recipes demand, so stock a few before you start crafting."
-			]
 			rewards: [{
 				id: "6D7E8F901A2B501F"
 				type: "xp"
@@ -2043,6 +2485,12 @@
 			shape: "square"
 			size: 1.0d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -2052,7 +2500,7 @@
 					second: 20
 				}
 				id: "6D7E8F901A2B4028"
-				item: { count: 1, id: "monsterplus:dark_essence" }
+				item: { count: 1, id: "monsterplus:dark_helmet" }
 				type: "item"
 			}]
 			x: 14.0d
@@ -2060,13 +2508,9 @@
 		}
 		{
 			dependencies: ["6D7E8F901A2B102C"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "0713486EDCE7D787"
-			title: "Moon-Paw Set"
-			subtitle: "All three phases in hand."
-			description: [
-				"Secure another &bPaw of the Gibbous Moon&r to round out the moon paws. Between the crescent, full, and gibbous paws you have fragility, weakness, and slow on tap for crowd control."
-			]
 			rewards: [{
 				id: "6D7E8F901A2B5022"
 				type: "xp"
@@ -2075,6 +2519,12 @@
 			shape: "square"
 			size: 1.3d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -2084,7 +2534,7 @@
 					second: 20
 				}
 				id: "6D7E8F901A2B402B"
-				item: { count: 1, id: "mowziesmobs:elokosa_paw_gibbous" }
+				item: { components: { "ftbfiltersystem:filter": "root(and(item(mowziesmobs:elokosa_paw_crescent),item(mowziesmobs:elokosa_paw_full),item(mowziesmobs:elokosa_paw_gibbous)))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: 22.0d
@@ -2092,16 +2542,12 @@
 		}
 		{
 			dependencies: ["097AED7C91033D5E"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: {
 				id: "mowziesmobs:umvuthana_mask_fury"
 			}
 			id: "42BFA7916F2CD4FC"
-			title: "Mask of Fury"
-			subtitle: "The aggressive Umvuthana mask."
-			description: [
-				"Claim the &bMask of Fury&r on its own. It is the combat mask of the pair, leaning hard into offense when you want to end a fight fast."
-			]
 			rewards: [{
 				id: "6AB2C7FAF9506408"
 				type: "xp"
@@ -2110,6 +2556,12 @@
 			shape: "diamond"
 			size: 1.5d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -2127,16 +2579,12 @@
 		}
 		{
 			dependencies: ["097AED7C91033D5E"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: {
 				id: "born_in_chaos_v1:pieceofdarkmetal"
 			}
 			id: "4F1787685B57BB4A"
-			title: "Piece of Dark Metal"
-			subtitle: "Raw scrap for the forge."
-			description: [
-				"Collect a &bPiece of Dark Metal&r, the raw scrap the chaos undead leave behind. Smelt it down into the dark metal ingots the rest of the gear is built from."
-			]
 			rewards: [{
 				id: "21C82D45A4B964C7"
 				type: "xp"
@@ -2145,6 +2593,12 @@
 			shape: "diamond"
 			size: 1.5d
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -2159,6 +2613,72 @@
 			}]
 			x: 8.25d
 			y: 8.25d
+		}
+		{
+			dependencies: ["6D7E8F901A2B100C"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			id: "E101BB0D29F60954"
+			optional: true
+			rewards: [{
+				id: "5F5890C35D1E02E3"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "F0FD179E55464452"
+				item: { count: 1, id: "crittersandcompanions:grappling_hook" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 19.0d
+		}
+		{
+			dependencies: ["E101BB0D29F60954"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			id: "92614B6AD7E19E44"
+			optional: true
+			rewards: [{
+				id: "3423A685F12AEC6E"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "93933618EB679742"
+				item: { count: 1, id: "crittersandcompanions:silk_lead" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 19.0d
 		}
 	]
 }

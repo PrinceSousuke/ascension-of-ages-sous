@@ -1,0 +1,11 @@
+# T-02c-5 lang stubs — IP seismic_survey + flarestack in ir_create_industrial_addons
+# Format: quest.<id>.title / .quest_subtitle / .quest_desc (array form, pack standard)
+# Opus fills real prose. Instruction-first, teach the mechanic, no em dashes, no AI-isms.
+
+quest.4954071000000101.title: "[STUB] Seismic Survey"
+quest.4954071000000101.quest_subtitle: "[STUB] Scan for oil before you drill"
+quest.4954071000000101.quest_desc: ["[BRIEF] teaches: using the Immersive Petroleum Seismic Survey Tool to locate oil reservoirs. Task: item immersivepetroleum:seismic_survey (icon = seismic_survey, IR-locked aoa_astages_01d_immersive.js:61). Prior node = the Engineer's Projector (4954071000000001), sequenced right after it so the survey-then-drill loop is explicit. Opus: explain the player right-clicks a chunk with the survey tool to read whether a hidden oil reservoir sits below and how much, so they scout before committing a Pumpjack, and that this pairs with the Projector's site preview. 2-4 short paragraphs, instruction-first, no em dashes."]
+
+quest.4954071000000102.title: "[STUB] Flarestack"
+quest.4954071000000102.quest_subtitle: "[STUB] Vent excess gas from the rig"
+quest.4954071000000102.quest_desc: ["[BRIEF] teaches: building the Immersive Petroleum Flarestack to burn off excess gas/pressure from an oil extraction site. Task: item immersivepetroleum:flarestack (icon = flarestack, IR-locked aoa_astages_01d_immersive.js:63). Prior node = the Pumpjack multiblock (4954071000000003) so the vent attaches to a working well. Opus: explain the Flarestack safely burns off surplus gas the Pumpjack draws up alongside oil, keeping the rig from backing up, and that it is a support structure for a running extraction site rather than a production goal. 2-4 short paragraphs, instruction-first, no em dashes."]

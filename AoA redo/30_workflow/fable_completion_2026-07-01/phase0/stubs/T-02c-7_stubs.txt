@@ -1,0 +1,6 @@
+	quest.4954051000000037.title: "[STUB] Mineral Grinder"
+	quest.4954051000000037.quest_subtitle: "[STUB] Electrodynamics base ore grinding"
+	quest.4954051000000037.quest_desc: ["[BRIEF] teaches: electrodynamics base ore-processing entry (Mineral Grinder grinds ore into extra dust for a doubling gain, powered by FE); requires electrodynamics:mineralgrinder (gated industrial_revolution, aoa_astages_01k_nuclear_power.js:112); prior node = electrodynamics:coalgenerator 4954051000000034 (its power source, referenced in prose, already tasked in this chapter); this base tier now precedes the existing Triple Mineral Grinder tier. Opus: 2-4 para instruction-first, no em dashes."]
+	quest.4954051000000038.title: "[STUB] Electric Furnace"
+	quest.4954051000000038.quest_subtitle: "[STUB] Electrodynamics base powered smelting"
+	quest.4954051000000038.quest_desc: ["[BRIEF] teaches: electrodynamics base powered smelting (Electric Furnace smelts the ground output using FE instead of fuel); requires electrodynamics:electricfurnace (gated industrial_revolution, aoa_astages_01k_nuclear_power.js:106); prior node = electrodynamics:mineralgrinder 4954051000000037; this base furnace now feeds forward into the existing electrodynamics Triple tier cluster (electricfurnacetriple 495405100000002B depends on it). Opus: 2-4 para instruction-first, no em dashes."]

@@ -1,0 +1,91 @@
+	chapter.4954100000000000.title: "[STUB] Digital Storage Foundations"
+	quest.4954101000000001.title: "[STUB] The ME Controller"
+	quest.4954101000000001.quest_subtitle: "[STUB] AE2 network core"
+	quest.4954101000000001.quest_desc: ["[BRIEF] teaches: ae2:controller is the ME network core; power in, channels out; every ME device talks to it. requires ae2:controller (IR-locked aoa_astages_01i_ae2.js:34). prior node: chapter root A (deps IR gateway 0B0310A0000000F0). Opus: 2-4 para instruction-first."]
+	quest.4954101000000002.title: "[STUB] Energy Acceptor"
+	quest.4954101000000002.quest_subtitle: "[STUB] power into the grid"
+	quest.4954101000000002.quest_desc: ["[BRIEF] teaches: convert FE/other power into AE energy the network can store. requires ae2:energy_acceptor (IR-locked ae2.js:42). prior node: controller. Opus: 2-4 para instruction-first."]
+	quest.4954101000000003.title: "[STUB] Energy Cell"
+	quest.4954101000000003.quest_subtitle: "[STUB] buffer AE energy"
+	quest.4954101000000003.quest_desc: ["[BRIEF] teaches: buffer AE energy so the grid rides through demand spikes. requires ae2:energy_cell (IR-locked ae2.js:40). prior node: energy_acceptor. Opus: 2-4 para instruction-first."]
+	quest.4954101000000004.title: "[STUB] ME Drive"
+	quest.4954101000000004.quest_subtitle: "[STUB] the disk bay"
+	quest.4954101000000004.quest_desc: ["[BRIEF] teaches: the drive houses storage cells so items live in the grid. requires ae2:drive (IR-locked ae2.js:35). prior node: energy_acceptor. Opus: 2-4 para instruction-first."]
+	quest.4954101000000005.title: "[STUB] 1k Storage Cell"
+	quest.4954101000000005.quest_subtitle: "[STUB] first ME cell"
+	quest.4954101000000005.quest_desc: ["[BRIEF] teaches: first storage cell; 1k holds bulk items; format it in a cell workbench. requires ae2:item_storage_cell_1k (no lock; AE2 family legal at IR). prior node: drive. Opus: 2-4 para instruction-first."]
+	quest.4954101000000006.title: "[STUB] Cell Workbench"
+	quest.4954101000000006.quest_subtitle: "[STUB] partition your cells"
+	quest.4954101000000006.quest_desc: ["[BRIEF] teaches: pre-partition cells so a cell only accepts the items you assign. requires ae2:cell_workbench (IR-locked ae2.js:39). prior node: 1k storage cell. Opus: 2-4 para instruction-first."]
+	quest.4954101000000007.title: "[STUB] ME Chest"
+	quest.4954101000000007.quest_subtitle: "[STUB] single-cell access"
+	quest.4954101000000007.quest_desc: ["[BRIEF] teaches: single-cell access without a full drive; the cheapest way to read a cell. requires ae2:chest (IR-locked ae2.js:36). prior node: drive. Opus: 2-4 para instruction-first."]
+	quest.4954101000000008.title: "[STUB] IO Port"
+	quest.4954101000000008.quest_subtitle: "[STUB] bulk import/export"
+	quest.4954101000000008.quest_desc: ["[BRIEF] teaches: bulk import/export between cells and inventories in one action. requires ae2:io_port (IR-locked ae2.js:37). prior node: cell_workbench. Opus: 2-4 para instruction-first."]
+	quest.4954101000000009.title: "[STUB] ME Terminal"
+	quest.4954101000000009.quest_subtitle: "[STUB] window into the grid"
+	quest.4954101000000009.quest_desc: ["[BRIEF] teaches: the terminal is the window into the grid; view and pull stored items. requires ae2:terminal (no lock; AE2 family legal at IR). prior node: io_port. Opus: 2-4 para instruction-first."]
+	quest.495410100000000A.title: "[STUB] Crafting Terminal"
+	quest.495410100000000A.quest_subtitle: "[STUB] craft from stock"
+	quest.495410100000000A.quest_desc: ["[BRIEF] teaches: a terminal with a crafting grid so you craft straight from network stock. requires ae2:crafting_terminal (no lock; AE2 family legal at IR). prior node: terminal. Opus: 2-4 para instruction-first."]
+	quest.495410100000000B.title: "[STUB] Crafting Unit"
+	quest.495410100000000B.quest_subtitle: "[STUB] blank CPU block"
+	quest.495410100000000B.quest_desc: ["[BRIEF] teaches: the blank block of a crafting CPU; combine with storage + accelerators. requires ae2:crafting_unit (IR-locked ae2.js:44). prior node: crafting_terminal. NOTE the crafting CPU is IR-legal but the pattern_provider that FEEDS it is Gilded (taught in g4); this node builds the CPU shell, autocraft comes later. Opus: 2-4 para instruction-first."]
+	quest.495410100000000C.title: "[STUB] 1k Crafting Storage"
+	quest.495410100000000C.quest_subtitle: "[STUB] CPU job memory"
+	quest.495410100000000C.quest_desc: ["[BRIEF] teaches: crafting CPU memory; how many parallel autocraft jobs the CPU can hold. requires ae2:1k_crafting_storage (IR-locked ae2.js:47). prior node: crafting_unit. Opus: 2-4 para instruction-first."]
+	quest.495410100000000D.title: "[STUB] Crafting Co-Processor"
+	quest.495410100000000D.quest_subtitle: "[STUB] speed the CPU"
+	quest.495410100000000D.quest_desc: ["[BRIEF] teaches: accelerators speed a crafting CPU; more accelerators = faster autocraft. requires ae2:crafting_accelerator (IR-locked ae2.js:45). prior node: crafting_unit. Opus: 2-4 para instruction-first."]
+	quest.495410100000000E.title: "[STUB] Pattern Encoding Terminal"
+	quest.495410100000000E.quest_subtitle: "[STUB] AE2 foundation capstone"
+	quest.495410100000000E.quest_desc: ["[BRIEF] teaches: AE2 LANE CAPSTONE (IR-legal). Encode crafting patterns; the recipe list an autocraft CPU will follow. This is the IR ceiling for AE2: you build the network and encode patterns here, then the Gilded g4 chapter adds the molecular_assembler + pattern_provider that actually RUN the autocraft. requires ae2:pattern_encoding_terminal (no lock; AE2 family legal at IR). prior nodes: 1k_crafting_storage + crafting_accelerator. Opus: 2-4 para instruction-first; make the IR->Gilded handoff explicit (network now, autocraft executor in the Infinite Grid)."]
+	quest.4954101000000020.title: "[STUB] RS Controller"
+	quest.4954101000000020.quest_subtitle: "[STUB] Refined Storage core"
+	quest.4954101000000020.quest_desc: ["[BRIEF] teaches: the RS controller supplies energy and identity to every connected device. requires refinedstorage:controller (IR-locked aoa_astages_01j_storage.js:31). prior node: chapter root B (deps IR gateway 0B0310A0000000F0). Opus: 2-4 para instruction-first."]
+	quest.4954101000000021.title: "[STUB] RS Cable"
+	quest.4954101000000021.quest_subtitle: "[STUB] wire the network"
+	quest.4954101000000021.quest_desc: ["[BRIEF] teaches: wire the network; devices only work when cabled to the controller. requires refinedstorage:cable (no lock; RS family legal at IR). prior node: controller. Opus: 2-4 para instruction-first."]
+	quest.4954101000000022.title: "[STUB] Disk Drive"
+	quest.4954101000000022.quest_subtitle: "[STUB] holds storage disks"
+	quest.4954101000000022.quest_desc: ["[BRIEF] teaches: the disk drive holds storage disks; the grid's item capacity lives here. requires refinedstorage:disk_drive (IR-locked storage.js:34). prior node: cable. Opus: 2-4 para instruction-first."]
+	quest.4954101000000023.title: "[STUB] 1k Storage Disk"
+	quest.4954101000000023.quest_subtitle: "[STUB] first RS disk"
+	quest.4954101000000023.quest_desc: ["[BRIEF] teaches: first RS disk; bulk item storage, no pre-format needed (contrast AE2 cells). requires refinedstorage:1k_storage_disk (no lock; RS family legal at IR). prior node: disk_drive. Opus: 2-4 para instruction-first."]
+	quest.4954101000000024.title: "[STUB] The Grid"
+	quest.4954101000000024.quest_subtitle: "[STUB] RS access window"
+	quest.4954101000000024.quest_desc: ["[BRIEF] teaches: the grid is the RS access window; search, sort, extract stored items. requires refinedstorage:grid (IR-locked storage.js:32). prior node: disk_drive. Opus: 2-4 para instruction-first."]
+	quest.4954101000000025.title: "[STUB] Crafting Grid"
+	quest.4954101000000025.quest_subtitle: "[STUB] craft + remember"
+	quest.4954101000000025.quest_desc: ["[BRIEF] teaches: a grid that crafts from network stock and remembers recipes. requires refinedstorage:crafting_grid (IR-locked storage.js:33). prior node: grid. NOTE this is hand-crafting from stock, NOT autocrafting (RS autocrafter is Gilded, taught in g4). Opus: 2-4 para instruction-first."]
+	quest.4954101000000026.title: "[STUB] Detector"
+	quest.4954101000000026.quest_subtitle: "[STUB] redstone on thresholds"
+	quest.4954101000000026.quest_desc: ["[BRIEF] teaches: emit redstone on stock thresholds; the trigger for auto-restock logic. requires refinedstorage:detector (IR-locked storage.js:35). prior node: grid. Opus: 2-4 para instruction-first."]
+	quest.4954101000000027.title: "[STUB] Storage Monitor"
+	quest.4954101000000027.quest_subtitle: "[STUB] stock at a glance"
+	quest.4954101000000027.quest_desc: ["[BRIEF] teaches: wall display of one item's count; instant stock-at-a-glance. requires refinedstorage:storage_monitor (IR-locked storage.js:37). prior node: grid. Opus: 2-4 para instruction-first."]
+	quest.4954101000000028.title: "[STUB] Security Manager"
+	quest.4954101000000028.quest_subtitle: "[STUB] lock the network"
+	quest.4954101000000028.quest_desc: ["[BRIEF] teaches: lock the network per player; who may insert, extract, autocraft. requires refinedstorage:security_manager (IR-locked storage.js:36). prior node: grid. Opus: 2-4 para instruction-first."]
+	quest.4954101000000029.title: "[STUB] Portable Grid"
+	quest.4954101000000029.quest_subtitle: "[STUB] handheld access"
+	quest.4954101000000029.quest_desc: ["[BRIEF] teaches: handheld access to a disk in the field, off-network. requires refinedstorage:portable_grid (IR-locked storage.js:38). prior node: crafting_grid. Opus: 2-4 para instruction-first."]
+	quest.495410100000002A.title: "[STUB] Disk Interface"
+	quest.495410100000002A.quest_subtitle: "[STUB] RS foundation capstone"
+	quest.495410100000002A.quest_desc: ["[BRIEF] teaches: RS LANE CAPSTONE (IR-legal). Bulk disk-to-network transfer; the network I/O ceiling for the IR tier. This node roots the elite cabletiers I/O tail below it. RS autocrafting (refinedstorage:autocrafter) is Gilded and taught in g4, NOT here. requires refinedstorage:disk_interface (IR-locked aoa_astages_01_item_restrictions.js:1090). prior node: grid. Opus: 2-4 para instruction-first; make the IR->Gilded handoff explicit (network + I/O now, autocrafter in the Infinite Grid)."]
+	quest.4954101000000030.title: "[STUB] Elite Importer"
+	quest.4954101000000030.quest_subtitle: "[STUB] high-throughput import"
+	quest.4954101000000030.quest_desc: ["[BRIEF] teaches: cabletiers elite import; higher-throughput RS import than the base importer; one cable, many stacks/tick. requires cabletiers:elite_importer (IR-locked 01_item_restrictions.js:507). prior node: disk_interface (RS capstone). Opus: 2-4 para instruction-first."]
+	quest.4954101000000031.title: "[STUB] Elite Exporter"
+	quest.4954101000000031.quest_subtitle: "[STUB] push stacks fast"
+	quest.4954101000000031.quest_desc: ["[BRIEF] teaches: elite export cable; push stacks into machines at speed. requires cabletiers:elite_exporter (IR-locked storage.js:57). prior node: elite_importer. Opus: 2-4 para instruction-first."]
+	quest.4954101000000032.title: "[STUB] Elite Constructor"
+	quest.4954101000000032.quest_subtitle: "[STUB] place blocks fast"
+	quest.4954101000000032.quest_desc: ["[BRIEF] teaches: elite constructor; place blocks from the network fast. requires cabletiers:elite_constructor (IR-locked storage.js:58). prior node: elite_importer. Opus: 2-4 para instruction-first."]
+	quest.4954101000000033.title: "[STUB] Elite Destructor"
+	quest.4954101000000033.quest_subtitle: "[STUB] break + ingest fast"
+	quest.4954101000000033.quest_desc: ["[BRIEF] teaches: elite destructor; break and ingest blocks into the network fast. requires cabletiers:elite_destructor (IR-locked storage.js:59). prior node: elite_importer. Opus: 2-4 para instruction-first."]
+	quest.4954101000000034.title: "[STUB] Elite Disk Interface"
+	quest.4954101000000034.quest_subtitle: "[STUB] bulk disk transfer"
+	quest.4954101000000034.quest_desc: ["[BRIEF] teaches: elite disk interface; bulk disk-to-network transfer at elite throughput. requires cabletiers:elite_disk_interface (IR-locked storage.js:61). prior node: elite_importer. Opus: 2-4 para instruction-first."]

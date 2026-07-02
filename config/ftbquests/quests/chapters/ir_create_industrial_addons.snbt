@@ -738,6 +738,94 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["4954071000000001"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "immersivepetroleum:seismic_survey"
+			}
+			id: "4954071000000101"
+			rewards: [
+				{
+					id: "4954073000101000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "4954073000101001"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954072000101000"
+				item: { count: 1, id: "immersivepetroleum:seismic_survey" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4954071000000003"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			icon: {
+				id: "immersivepetroleum:flarestack"
+			}
+			id: "4954071000000102"
+			rewards: [
+				{
+					id: "4954073000102000"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "4954073000102001"
+					table_id: 8430738502437568513L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4954072000102000"
+				item: { count: 1, id: "immersivepetroleum:flarestack" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: -2.0d
+		}
+		{
 			dependencies: ["4954071000000003"]
 			entity_vis_size: 1.0f
 			hide_until_deps_visible: true

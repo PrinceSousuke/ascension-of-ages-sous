@@ -1,0 +1,9 @@
+	quest.49540C1000000030.title: "[STUB] Warden Smithing Template"
+	quest.49540C1000000030.quest_subtitle: "[STUB] deep-dark netherite upgrade"
+	quest.49540C1000000030.quest_desc: ["[BRIEF] teaches: deeperdarker:warden_upgrade_smithing_template applies the warden upgrade to netherite-tier gear via the smithing table for the citadel's deep-dark set; requires deeperdarker:warden_upgrade_smithing_template (deeperdarker family legal at/before IR); prior node = 49540C1000000029 (resonarium_helmet). Moved from ren_deeper_darker_otherside (ledger row 8). Opus: 2-4 para instruction-first, explain smithing-template use on netherite gear."]
+	quest.49540C1000000031.title: "[STUB] Resonarium Smithing Template"
+	quest.49540C1000000031.quest_subtitle: "[STUB] resonarium armor upgrade path"
+	quest.49540C1000000031.quest_desc: ["[BRIEF] teaches: deeperdarker:resonarium_upgrade_smithing_template is the resonarium armor upgrade template applied at the smithing table; requires deeperdarker:resonarium_upgrade_smithing_template (deeperdarker family legal at/before IR); prior node = 49540C1000000029 (resonarium_helmet). Moved from ren_deeper_darker_otherside (ledger row 8). Opus: 2-4 para instruction-first."]
+	quest.49540C1000000032.title: "[STUB] Sonorous Staff"
+	quest.49540C1000000032.quest_subtitle: "[STUB] sculk-charged utility weapon"
+	quest.49540C1000000032.quest_desc: ["[BRIEF] teaches: deeperdarker:sonorous_staff is the sculk-charged utility staff, the deep-dark capstone toy; requires deeperdarker:sonorous_staff (deeperdarker family legal at/before IR); prior node = 49540C1000000029 (resonarium_helmet). Moved from ren_deeper_darker_otherside (this is the DUPLICATE node 0B03106000000091; the first sonorous_staff 0B03106000000045 stays in Ren). Opus: 2-4 para instruction-first."]

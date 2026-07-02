@@ -1,0 +1,18 @@
+	quest.49540B1000000101.title: "[STUB] Vas Maleficum"
+	quest.49540B1000000101.quest_subtitle: "[STUB] The infernal will-vessel"
+	quest.49540B1000000101.quest_desc: ["[BRIEF] teaches: Neo Vitae neovitae:vas_maleficum (IR-gated, aoa_astages_01m_magic.js:129); the demon-will collection vessel that stores tartaric/demonic essence for the infernal (Hellfire Forge) tier; entry node of the NV IR segment, deps = 49540B1000000004 (IR Hellfire Forge use_block); next nodes = spira_infernalis and teleposer. Opus: 2-4 para instruction-first, explain that the infernal tier runs on collected demon will and this vessel is where that will is stored. No em dashes."]
+	quest.49540B1000000102.title: "[STUB] Spira Infernalis"
+	quest.49540B1000000102.quest_subtitle: "[STUB] Route the demon will"
+	quest.49540B1000000102.quest_desc: ["[BRIEF] teaches: Neo Vitae neovitae:spira_infernalis (IR-gated, aoa_astages_01m_magic.js:130); routes/pumps demon will between vessels, the infernal network's plumbing; deps = 49540B1000000101 (vas_maleficum); next node = crystallarium_maleficum. Opus: 2-4 para instruction-first, teach how will moves from the Vas Maleficum through the Spira to the crafting apparatus. No em dashes."]
+	quest.49540B1000000103.title: "[STUB] Crystallarium Maleficum"
+	quest.49540B1000000103.quest_subtitle: "[STUB] Grow will-infused crystals"
+	quest.49540B1000000103.quest_desc: ["[BRIEF] teaches: Neo Vitae neovitae:crystallarium_maleficum (IR-gated, aoa_astages_01m_magic.js:131); grows will-infused crystals as the demon-will crafting feedstock; deps = 49540B1000000102 (spira_infernalis); next node = tabula_robur. Opus: 2-4 para instruction-first, explain the crystallarium consumes routed will to grow the crystals the tablet upgrades need. No em dashes."]
+	quest.49540B1000000104.title: "[STUB] Teleposer"
+	quest.49540B1000000104.quest_subtitle: "[STUB] Bend space with blood"
+	quest.49540B1000000104.quest_desc: ["[BRIEF] teaches: Neo Vitae neovitae:teleposer (IR-gated, aoa_astages_01m_magic.js:136); a redstone-triggered block/entity teleport pad programmed with a Teleposition Focus (neovitae:focus, referenced not tasked - small component); side stub off vas_maleficum, deps = 49540B1000000101. Opus: 2-4 para instruction-first, teach linking two Teleposers with a Focus and activating with strong redstone; note each swap costs Essentia Vitae. No em dashes."]
+	quest.49540B1000000105.title: "[STUB] Tabula Robur"
+	quest.49540B1000000105.quest_subtitle: "[STUB] Strength living-armor tablet"
+	quest.49540B1000000105.quest_desc: ["[BRIEF] teaches: Neo Vitae neovitae:tabula_robur (IR-gated, aoa_astages_01m_magic.js:137); the strength living-armor upgrade tablet applied at the Hellfire Forge; deps = 49540B1000000103 (crystallarium_maleficum); next node = tabula_animata. Opus: 2-4 para instruction-first, explain living-armor tablets are forged from will-crystal feedstock and applied at the Hellfire Forge to upgrade the sentient armor set. No em dashes."]
+	quest.49540B1000000106.title: "[STUB] Tabula Animata"
+	quest.49540B1000000106.quest_subtitle: "[STUB] Animation living-armor tablet"
+	quest.49540B1000000106.quest_desc: ["[BRIEF] teaches: Neo Vitae neovitae:tabula_animata (IR-gated, aoa_astages_01m_magic.js:138); the animation/attack living-armor upgrade tablet; deps = 49540B1000000105 (tabula_robur); segment tail. Opus: 2-4 para instruction-first, explain this second tablet adds the animation/attack behavior to the living armor, completing the IR infernal upgrade path. No em dashes."]

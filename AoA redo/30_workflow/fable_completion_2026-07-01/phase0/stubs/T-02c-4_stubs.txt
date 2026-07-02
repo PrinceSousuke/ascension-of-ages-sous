@@ -1,0 +1,43 @@
+	chapter.4954120000000000.title: "[STUB] Oritech Foundry"
+	quest.4954121000000001.title: "[STUB] Primitive Machine Core"
+	quest.4954121000000001.quest_subtitle: "[STUB] the shared processing-tier marker"
+	quest.4954121000000001.quest_desc: ["[BRIEF] teaches: Oritech machine_core_1 as the shared processing-tier marker; requires oritech:machine_core_1 (IR-locked); prior node = IR age gateway (Renaissance capstone); edge case: Oritech machines do NOT craft from the core -- each machine uses explicit intermediates, so present the core as a progression marker, NOT a build ingredient. This is the chapter root. Opus: 2-4 para instruction-first."]
+	quest.4954121000000002.title: "[STUB] Basic Generator"
+	quest.4954121000000002.quest_subtitle: "[STUB] burns fuel for RF"
+	quest.4954121000000002.quest_desc: ["[BRIEF] teaches: Oritech basic_generator_block, the power source every Oritech machine needs; NOTE this node is a check_quest pointing at the existing Basic Generator quest 4954051000000007 in ir_power_motion_and_grid (the item is already tasked there; do not re-task); prior node = machine_core_1; icon oritech:basic_generator_block. Opus: 2-4 para instruction-first, explain that the generator burns fuel for RF and feeds the machine line."]
+	quest.4954121000000003.title: "[STUB] Pulverizer"
+	quest.4954121000000003.quest_subtitle: "[STUB] ore to dust doubling"
+	quest.4954121000000003.quest_desc: ["[BRIEF] teaches: Oritech pulverizer_block, the entry ore processor that doubles ore into dust; requires oritech:pulverizer_block (IR-locked); prior node = machine_core_1. Opus: 2-4 para instruction-first."]
+	quest.4954121000000004.title: "[STUB] Powered Furnace"
+	quest.4954121000000004.quest_subtitle: "[STUB] electric smelting"
+	quest.4954121000000004.quest_desc: ["[BRIEF] teaches: Oritech powered_furnace_block, electric smelting for the pulverized dust output; requires oritech:powered_furnace_block (IR-locked); prior node = pulverizer. Opus: 2-4 para instruction-first."]
+	quest.4954121000000005.title: "[STUB] Basic Machine Core"
+	quest.4954121000000005.quest_subtitle: "[STUB] the second processing tier"
+	quest.4954121000000005.quest_desc: ["[BRIEF] teaches: Oritech machine_core_2, the second processing tier that unlocks the foundry and refinery; requires oritech:machine_core_2 (IR-locked); prior node = powered_furnace; edge case: still a marker, machines craft from explicit intermediates not from the core. Opus: 2-4 para instruction-first."]
+	quest.4954121000000006.title: "[STUB] Foundry"
+	quest.4954121000000006.quest_subtitle: "[STUB] multi-input alloying"
+	quest.4954121000000006.quest_desc: ["[BRIEF] teaches: Oritech foundry_block, multi-input alloying for bronze, steel, and machine plating; NOTE this node is a check_quest pointing at the existing Foundry quest 49540B1000000005 in ir_magic_feedstock_and_spectrum_network (item already tasked there; do not re-task); prior node = machine_core_2; icon oritech:foundry_block; reference machine_plating_block as a foundry output in prose, do not imply core-as-ingredient. Opus: 2-4 para instruction-first."]
+	quest.4954121000000007.title: "[STUB] Refinery"
+	quest.4954121000000007.quest_subtitle: "[STUB] fluid refining"
+	quest.4954121000000007.quest_desc: ["[BRIEF] teaches: Oritech refinery_block, fluid refining fed with the refinery module; requires oritech:refinery_block (IR-locked); prior node = machine_core_2. Opus: 2-4 para instruction-first."]
+	quest.4954121000000008.title: "[STUB] Machine Frame"
+	quest.4954121000000008.quest_subtitle: "[STUB] the shared chassis"
+	quest.4954121000000008.quest_desc: ["[BRIEF] teaches: Oritech machine_frame_block, the shared chassis the higher-tier machines assemble on; requires oritech:machine_frame_block (IR-locked); prior nodes = foundry AND refinery (converges both). Opus: 2-4 para instruction-first."]
+	quest.4954121000000009.title: "[STUB] Improved Machine Core"
+	quest.4954121000000009.quest_subtitle: "[STUB] the IR ceiling"
+	quest.4954121000000009.quest_desc: ["[BRIEF] teaches: Oritech machine_core_3, the chapter capstone and the IR machine ceiling; requires oritech:machine_core_3 (IR-locked); prior node = machine_frame; edge case: Gilded machine_core_4 builds on this, do NOT reference core_4 or assembler here (Gilded-tier). This capstone is the re-wire seam the Atomic Oritech convergence will depend on. Opus: 2-4 para instruction-first."]
+	quest.495412100000000A.title: "[STUB] Small Storage (Battery)"
+	quest.495412100000000A.quest_subtitle: "[STUB] optional RF buffer"
+	quest.495412100000000A.quest_desc: ["[BRIEF] teaches: Oritech small_storage_block, an optional RF battery buffer off the generator; requires oritech:small_storage_block (IR-locked); prior node = basic_generator; OPTIONAL node. Opus: 2-4 para instruction-first, keep brief."]
+	quest.495412100000000B.title: "[STUB] Steam Engine"
+	quest.495412100000000B.quest_subtitle: "[STUB] optional alt power"
+	quest.495412100000000B.quest_desc: ["[BRIEF] teaches: Oritech steam_engine_block, an optional alternate power source; requires oritech:steam_engine_block (IR-locked); prior node = basic_generator; OPTIONAL node. Opus: 2-4 para instruction-first, keep brief."]
+	quest.4954121000000020.title: "[STUB] Machine Frame (Extended Crafting)"
+	quest.4954121000000020.quest_subtitle: "[STUB] the crafting-table shell"
+	quest.4954121000000020.quest_desc: ["[BRIEF] teaches: extendedcrafting:frame, the shell for the Basic Crafting Table, built from Black Iron (material_black_iron -- reference in prose, do NOT task the bare ingot); requires extendedcrafting:frame (IR-locked); prior node = machine_core_2 (lane entry). This begins the standalone Extended Crafting lane. Opus: 2-4 para instruction-first."]
+	quest.4954121000000021.title: "[STUB] Basic Crafting Table"
+	quest.4954121000000021.quest_subtitle: "[STUB] a 5x5 oversized-recipe grid"
+	quest.4954121000000021.quest_desc: ["[BRIEF] teaches: extendedcrafting:basic_table, a 5x5 crafting grid many later mods need for oversized recipes; requires extendedcrafting:basic_table (IR-locked); prior node = frame. Opus: 2-4 para instruction-first, note this table is a prerequisite many later ages rely on."]
+	quest.4954121000000022.title: "[STUB] Handheld Crafting Table"
+	quest.4954121000000022.quest_subtitle: "[STUB] portable 3x3 access"
+	quest.4954121000000022.quest_desc: ["[BRIEF] teaches: extendedcrafting:handheld_table, a portable 3x3 crafting companion to the big table; requires extendedcrafting:handheld_table (IR-locked); prior node = basic_table. Opus: 2-4 para instruction-first, quality-of-life framing."]

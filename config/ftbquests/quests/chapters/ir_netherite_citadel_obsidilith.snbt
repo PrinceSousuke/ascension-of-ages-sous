@@ -2079,6 +2079,105 @@
 			y: -3.0d
 		}
 		{
+			dependencies: ["49540C1000000029"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			id: "49540C1000000030"
+			optional: true
+			rewards: [{
+				id: "49540C3000000030"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540C2000000030"
+				item: { count: 1, id: "deeperdarker:warden_upgrade_smithing_template" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["49540C1000000029"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			id: "49540C1000000031"
+			optional: true
+			rewards: [{
+				id: "49540C3000000031"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540C2000000031"
+				item: { count: 1, id: "deeperdarker:resonarium_upgrade_smithing_template" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["49540C1000000029"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			id: "49540C1000000032"
+			optional: true
+			rewards: [{
+				id: "49540C3000000032"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "49540C2000000032"
+				item: { count: 1, id: "deeperdarker:sonorous_staff" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -6.0d
+		}
+		{
 			dependencies: ["49540C1000000001"]
 			entity_vis_size: 1.0f
 			hide_until_deps_visible: true

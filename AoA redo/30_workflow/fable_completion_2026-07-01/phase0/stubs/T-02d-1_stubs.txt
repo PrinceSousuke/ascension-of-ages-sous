@@ -1,0 +1,21 @@
+# T-02d-1 lang stubs — Neo Vitae blood-orb ladder in g7_chartered_arcana
+# Format: quest.<id>.title / .quest_subtitle / .quest_desc (array form, pack standard)
+# Opus fills real prose. Instruction-first, teach the mechanic, no em dashes, no AI-isms.
+# Ladder: Ren apprentice orb (0B03101000000034) -> Gilded magician -> master -> archmage.
+# Transcendent orb is Atomic and is NOT tasked here (era check). Optional capacity-rune beat off master.
+
+quest.43410110000001A0.title: "[STUB] The Veneficus Orb"
+quest.43410110000001A0.quest_subtitle: "[STUB] Raise the orb to magician"
+quest.43410110000001A0.quest_desc: ["[BRIEF] teaches: upgrading the Discipulus (apprentice) blood orb to the Veneficus (magician) orb on a Tier-2 Ara Vitae. Task: item neovitae:blood_orb_magician (gated gilded_age, aoa_astages_01m_magic.js:141). Recipe fact (data/neovitae/recipe/ara_vitae/magician_blood_orb.json): Ara Vitae minTier 2, input a block of gold (#c:storage_blocks/gold), costs 25000 Essentia Vitae. Prior node = the Renaissance apprentice-orb quest 0B03101000000034 (this is a cross-age continuation, intentional; hidden until the player owns the apprentice orb). Opus: explain the player must first raise their blood altar to Tier 2 with pillars and runes, then transmute a gold block on the altar to climb from apprentice to magician; the higher orb holds more Life Essence and unlocks the next tier of blood magic. 2-4 short paragraphs, instruction-first, no em dashes."]
+
+quest.43410110000001A1.title: "[STUB] The Magus Orb"
+quest.43410110000001A1.quest_subtitle: "[STUB] Raise the orb to master"
+quest.43410110000001A1.quest_desc: ["[BRIEF] teaches: upgrading the magician orb to the Magus (master) orb on a Tier-3 Ara Vitae. Task: item neovitae:blood_orb_master (gated gilded_age, aoa_astages_01m_magic.js:142). Recipe fact (data/neovitae/recipe/ara_vitae/master_blood_orb.json): Ara Vitae minTier 3, input neovitae:weak_blood_shard (the same shard reagent introduced in the Renaissance line, gated the_renaissance), costs 40000 Essentia Vitae. Depends on node 43410110000001A0. Opus: explain the altar must reach Tier 3, and that the weak blood shard the player already knows from the Renaissance is now spent to climb; the master orb is the mid Gilded rung. 2-4 short paragraphs, instruction-first, no em dashes."]
+
+quest.43410110000001A2.title: "[STUB] The Dominus Orb"
+quest.43410110000001A2.quest_subtitle: "[STUB] Raise the orb to archmage"
+quest.43410110000001A2.quest_desc: ["[BRIEF] teaches: upgrading the master orb to the Dominus (archmage) orb on a Tier-4 Ara Vitae. Task: item neovitae:blood_orb_archmage (gated gilded_age, aoa_astages_01m_magic.js:143). Recipe fact (data/neovitae/recipe/ara_vitae/archmage_blood_orb.json): Ara Vitae minTier 4, input a neovitae:hellforged_block (the Hellfire-Forge metal block, gated industrial_revolution), costs 80000 Essentia Vitae. Depends on node 43410110000001A1. Opus: explain the altar must reach Tier 4, and that the hellforged block from the IR blood-forge line is consumed to reach the archmage orb; this is the Gilded ceiling of the orb line and sets up the Atomic-tier transcendent orb that comes later. 2-4 short paragraphs, instruction-first, no em dashes."]
+
+quest.43410110000001A3.title: "[STUB] Augmented Capacity"
+quest.43410110000001A3.quest_subtitle: "[STUB] Why bigger altars matter"
+quest.43410110000001A3.quest_desc: ["[BRIEF] teaches (OPTIONAL depth): building the Reinforced Augmented Capacity Rune to raise altar Life Essence capacity. Task: item neovitae:rune_2_capacity_augmented (block; ungated, family legal at/before gilded_age). Recipe fact (data/neovitae/recipe/rune_2_capacity_augmented.json): shaped craft from neovitae:hellforged_parts, minecraft:netherite_scrap, neovitae:rune_capacity_augmented, and a stone-crafting-materials tag. Depends on node 43410110000001A1 (the master orb). Opus: explain that each orb tier requires a larger, higher-tier altar, and that capacity runes buff how much Life Essence the altar holds so bigger transmutations finish; this optional node teaches why altar building and rune placement gate the orb ladder. Optional, not required progression. 2-4 short paragraphs, instruction-first, no em dashes."]

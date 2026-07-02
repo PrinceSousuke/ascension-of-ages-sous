@@ -923,6 +923,104 @@
 			y: 10.5d
 		}
 		{
+			dependencies: ["0B0310100000000A"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			id: "0B0310100000000B"
+			rewards: [{
+				id: "0B0330100000000B"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B0320100000000B"
+				item: { count: 1, id: "malum:crude_scythe" }
+				type: "item"
+			}]
+			x: -9.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["0B0310100000000B"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			id: "0B0310100000000C"
+			rewards: [{
+				id: "0B0330100000000C"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B0320100000000C"
+				item: { components: { "ftbfiltersystem:filter": "root(or(item(malum:sacred_spirit),item(malum:wicked_spirit),item(malum:arcane_spirit),item(malum:eldritch_spirit),item(malum:aerial_spirit),item(malum:aqueous_spirit),item(malum:earthen_spirit),item(malum:infernal_spirit),item(malum:umbral_spirit)))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -9.0d
+			y: 13.5d
+		}
+		{
+			dependencies: ["0B0310100000000C"]
+			entity_vis_size: 1.0f
+			hide_until_deps_visible: true
+			id: "0B0310100000000D"
+			optional: true
+			rewards: [{
+				id: "0B0330100000000D"
+				type: "xp"
+				xp: 30
+			}]
+			shape: "diamond"
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "0B0320100000000D"
+				item: { count: 1, id: "malum:soul_stained_steel_scythe" }
+				type: "item"
+			}]
+			x: -9.0d
+			y: 15.0d
+		}
+		{
 			dependencies: ["0B03101000000014"]
 			entity_vis_size: 1.0f
 			hide_until_deps_visible: true

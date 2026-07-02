@@ -5,39 +5,313 @@
 	group: "6A196D2B21EDE4C0"
 	hide_quest_until_deps_complete: true
 	icon: {
-		id: "minecraft:crafting_table"
+		id: "extendedcrafting:ultimate_table"
 	}
 	id: "5449010000000000"
 	order_index: 0
 	quest_links: [ ]
-	quests: [{
-		dependencies: ["4C57010000010001"]
-		hide_until_deps_complete: true
-		icon: {
-			id: "extendedcrafting:the_ultimate_block"
-		}
-		id: "5449010000010001"
-		rewards: [{
-			id: "5449010000030001"
-			type: "xp"
-			xp: 100
-		}]
-		shape: "hexagon"
-		size: 2.0d
-		tasks: [{
-			SkillsLevel: {
-				category: ""
-				check: 0b
-				comparison: "GREATER_OR_EQUAL"
-				first: 10
-				mode: "TOTAL_LEVEL"
-				second: 20
+	quests: [
+		{
+			dependencies: ["4256010000010006"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "extendedcrafting:crafting_core"
 			}
-			id: "5449010000020001"
-			item: { count: 1, id: "extendedcrafting:ultimate_singularity" }
-			type: "item"
-		}]
-		x: 0.0d
-		y: 0.0d
-	}]
+			id: "5449010000010001"
+			rewards: [{
+				id: "5449013000010001"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				block: { count: 1, id: "extendedcrafting:crafting_core" }
+				id: "5449012000010001"
+				type: "place_block"
+				value: 1L
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5449010000010001"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "extendedcrafting:elite_table"
+			}
+			id: "5449010000010002"
+			rewards: [{
+				id: "5449013000010002"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "5449012000010002"
+				item: { count: 1, id: "extendedcrafting:elite_table" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5449010000010002"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "extendedcrafting:ultimate_table"
+			}
+			id: "5449010000010003"
+			rewards: [{
+				id: "5449013000010003"
+				type: "xp"
+				xp: 150
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "5449012000010003"
+				item: { count: 1, id: "extendedcrafting:ultimate_table" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5449010000010003"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "extendedcrafting:compressor"
+			}
+			id: "5449010000010004"
+			rewards: [{
+				id: "5449013000010004"
+				type: "xp"
+				xp: 150
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				block: { count: 1, id: "extendedcrafting:compressor" }
+				id: "5449012000010004"
+				type: "place_block"
+				value: 1L
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5449010000010004"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "extendedcrafting:ultimate_component"
+			}
+			id: "5449010000010005"
+			rewards: [{
+				id: "5449013000010005"
+				type: "xp"
+				xp: 200
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "5449012000010005"
+				item: { count: 1, id: "extendedcrafting:ultimate_component" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5449010000010005"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "extendedcrafting:ultimate_catalyst"
+			}
+			id: "5449010000010006"
+			rewards: [{
+				auto: "enabled"
+				command: "/astages add {p} asc_final_crafting_surface_complete true true"
+				icon: {
+					id: "extendedcrafting:ultimate_catalyst"
+				}
+				id: "5449013001010006"
+				permission_level: 2
+				silent: true
+				team_reward: true
+				type: "command"
+			}]
+			shape: "gear"
+			size: 1.3d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "5449012000010006"
+				item: { count: 1, id: "extendedcrafting:ultimate_catalyst" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4256010000010006"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "extendedcrafting:advanced_table"
+			}
+			id: "4757011000000002"
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4757011020020001"
+				item: { count: 1, id: "extendedcrafting:advanced_table" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4757011000000002"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "extendedcrafting:advanced_auto_table"
+			}
+			id: "4757011000000100"
+			optional: true
+			rewards: [
+				{
+					id: "4757013000050001"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "352FCB4F46C6BF5E"
+					type: "random"
+				}
+			]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4757012000050001"
+				item: { count: 1, id: "extendedcrafting:advanced_auto_table" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+	]
 }

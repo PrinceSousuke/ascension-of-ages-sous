@@ -12,52 +12,76 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: [
-				"4F420100000100BA"
-				"4F420100000100C0"
-				"4650010000010103"
-			]
-			hide_until_deps_complete: false
+			dependencies: ["4757011020010001"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
 			icon: {
 				id: "industrialforegoing:machine_frame_simple"
 			}
-			id: "5246010000010001"
-			rewards: [{
-				id: "5246010000030001"
-				type: "xp"
-				xp: 200
-			}]
-			shape: "gear"
-			size: 2.0d
-			tasks: [{
-				SkillsLevel: {
-					category: ""
-					check: 0b
-					comparison: "GREATER_OR_EQUAL"
-					first: 10
-					mode: "TOTAL_LEVEL"
-					second: 20
+			id: "5246011000000001"
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "5246012000010001"
+					item: { count: 1, id: "industrialforegoing:machine_frame_pity" }
+					type: "item"
 				}
-				id: "5246010000020001"
-				item: { count: 1, id: "industrialforegoing:machine_frame_simple" }
-				type: "item"
-			}]
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "5246012000010002"
+					item: { count: 1, id: "industrialforegoing:machine_frame_simple" }
+					type: "item"
+				}
+			]
 			x: 0.0d
-			y: 4.81d
+			y: 0.0d
 		}
 		{
-			dependencies: ["5246010000010001"]
+			dependencies: ["5246011000000003"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: {
 				id: "industrialforegoing:fluid_extractor"
 			}
-			id: "5246010000010002"
+			id: "5246011000000100"
 			rewards: [{
-				id: "5246010000030002"
+				id: "5246013000020001"
 				type: "xp"
-				xp: 75
+				xp: 50
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -66,26 +90,33 @@
 					mode: "TOTAL_LEVEL"
 					second: 20
 				}
-				id: "5246010000020002"
+				id: "5246012000020001"
 				item: { count: 1, id: "industrialforegoing:fluid_extractor" }
 				type: "item"
 			}]
-			x: 1.5d
-			y: -1.38d
+			x: 5.5d
+			y: -1.0d
 		}
 		{
-			dependencies: ["5246010000010002"]
+			dependencies: ["5246011000000100"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: {
 				id: "industrialforegoing:latex_processing_unit"
 			}
-			id: "5246010000010003"
+			id: "5246011000000101"
 			rewards: [{
-				id: "5246010000030003"
+				id: "5246013000030001"
 				type: "xp"
-				xp: 75
+				xp: 50
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -94,28 +125,447 @@
 					mode: "TOTAL_LEVEL"
 					second: 20
 				}
-				id: "5246010000020003"
+				id: "5246012000030001"
 				item: { count: 1, id: "industrialforegoing:latex_processing_unit" }
 				type: "item"
 			}]
-			x: 3.0d
-			y: -5.75d
+			x: 5.0d
+			y: -2.5d
 		}
 		{
-			dependencies: ["5246010000010002"]
+			dependencies: ["5246011000000100"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "industrialforegoing:dissolution_chamber"
+			}
+			id: "5246011000000102"
+			rewards: [{
+				id: "5246013000040001"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "5246012000040001"
+				item: { count: 1, id: "industrialforegoing:dissolution_chamber" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["5246011000000102"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "industrialforegoing:machine_frame_advanced"
+			}
+			id: "5246011000000103"
+			rewards: [{
+				id: "5246013000050001"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "5246012000050001"
+				item: { count: 1, id: "industrialforegoing:machine_frame_advanced" }
+				type: "item"
+			}]
+			x: 11.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["5246011000000103"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "industrialforegoing:machine_frame_supreme"
+			}
+			id: "5246011000000104"
+			optional: true
+			rewards: [
+				{
+					id: "5246013000060001"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "46B0FB9BCF12913D"
+					type: "random"
+				}
+			]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "5246012000060001"
+				item: { count: 1, id: "industrialforegoing:machine_frame_supreme" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["5246011000000102"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "industrialforegoing:resourceful_furnace"
+			}
+			id: "5246011000000105"
+			optional: true
+			rewards: [
+				{
+					id: "5246013000070001"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "661A3796A6C195B3"
+					type: "random"
+				}
+			]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "5246012000070001"
+				item: { count: 1, id: "industrialforegoing:resourceful_furnace" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5246011000000001"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "industrialforegoing:plant_gatherer"
+			}
+			id: "5246011000000002"
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "5246012000080001"
+				item: { count: 1, id: "industrialforegoing:plant_gatherer" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["5246011000000002"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "industrialforegoing:plant_sower"
+			}
+			id: "5246011000000106"
+			rewards: [{
+				id: "5246013000090001"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "5246012000090001"
+				item: { count: 1, id: "industrialforegoing:plant_sower" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["5246011000000106"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "industrialforegoing:plant_fertilizer"
+			}
+			id: "5246011000000107"
+			rewards: [{
+				id: "52460130000A0001"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "52460120000A0001"
+				item: { count: 1, id: "industrialforegoing:plant_fertilizer" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["5246011000000002"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "industrialforegoing:block_breaker"
+			}
+			id: "5246011000000108"
+			rewards: [{
+				id: "52460130000B0001"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "52460120000B0001"
+				item: { count: 1, id: "industrialforegoing:block_breaker" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: -14.0d
+		}
+		{
+			dependencies: ["5246011000000108"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "industrialforegoing:block_placer"
+			}
+			id: "5246011000000109"
+			rewards: [{
+				id: "52460130000C0001"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "52460120000C0001"
+				item: { count: 1, id: "industrialforegoing:block_placer" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: -15.5d
+		}
+		{
+			dependencies: ["5246011000000106"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "industrialforegoing:hydroponic_bed"
+			}
+			id: "524601100000010A"
+			rewards: [{
+				id: "52460130000D0001"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "52460120000D0001"
+					item: { count: 1, id: "industrialforegoing:hydroponic_bed" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "52460120000D0002"
+					item: { count: 1, id: "industrialforegoing:simulated_hydroponic_bed" }
+					type: "item"
+				}
+			]
+			x: 8.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["524601100000010A"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				components: {
+					"industrialforegoing:hydroponic_simulation_processor": { }
+				}
+				id: "industrialforegoing:hydroponic_simulation_processor"
+			}
+			id: "524601100000010B"
+			rewards: [{
+				id: "52460130000E0001"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "52460120000E0001"
+				item: { components: { "industrialforegoing:hydroponic_simulation_processor": { } }, count: 1, id: "industrialforegoing:hydroponic_simulation_processor" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["5246011000000001"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: {
 				id: "industrialforegoing:fluid_collector"
 			}
-			id: "5246010000010004"
-			rewards: [{
-				id: "5246010000030004"
-				type: "xp"
-				xp: 100
-			}]
-			size: 1.5d
+			id: "5246011000000003"
 			tasks: [
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -124,11 +574,17 @@
 						mode: "TOTAL_LEVEL"
 						second: 20
 					}
-					id: "5246010000020104"
+					id: "52460120000F0001"
 					item: { count: 1, id: "industrialforegoing:fluid_collector" }
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -137,28 +593,34 @@
 						mode: "TOTAL_LEVEL"
 						second: 20
 					}
-					id: "5246010000020204"
+					id: "52460120000F0002"
 					item: { count: 1, id: "industrialforegoing:fluid_placer" }
 					type: "item"
 				}
 			]
-			x: 3.0d
-			y: 3.0d
+			x: 1.0d
+			y: -1.5d
 		}
 		{
-			dependencies: ["5246010000010004"]
+			dependencies: ["5246011000000003"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: {
 				id: "industrialforegoing:water_condensator"
 			}
-			id: "5246010000010005"
-			optional: true
+			id: "524601100000010C"
 			rewards: [{
-				id: "5246010000030005"
+				id: "5246013000100001"
 				type: "xp"
-				xp: 75
+				xp: 50
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -167,27 +629,138 @@
 					mode: "TOTAL_LEVEL"
 					second: 20
 				}
-				id: "5246010000020005"
+				id: "5246012000100001"
 				item: { count: 1, id: "industrialforegoing:water_condensator" }
 				type: "item"
 			}]
-			x: 4.5d
-			y: 0.5d
+			x: 5.5d
+			y: -4.0d
 		}
 		{
-			dependencies: ["5246010000010004"]
+			dependencies: ["524601100000010C"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "industrialforegoing:fluid_sieving_machine"
+			}
+			id: "524601100000010D"
+			rewards: [{
+				id: "5246013000110001"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "5246012000110001"
+				item: { count: 1, id: "industrialforegoing:fluid_sieving_machine" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["5246011000000003"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "industrialforegoing:sludge_refiner"
+			}
+			id: "524601100000010E"
+			rewards: [{
+				id: "5246013000120001"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "5246012000120001"
+				item: { count: 1, id: "industrialforegoing:sludge_refiner" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["524601100000010E"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "industrialforegoing:washing_factory"
+			}
+			id: "524601100000010F"
+			rewards: [{
+				id: "5246013000130001"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "5246012000130001"
+				item: { count: 1, id: "industrialforegoing:washing_factory" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["524601100000010F"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: {
 				id: "industrialforegoing:fluid_laser_base"
 			}
-			id: "5246010000010006"
-			optional: true
+			id: "5246011000000110"
 			rewards: [{
-				id: "5246010000030006"
+				id: "5246013000140001"
 				type: "xp"
-				xp: 75
+				xp: 100
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -196,27 +769,1389 @@
 					mode: "TOTAL_LEVEL"
 					second: 20
 				}
-				id: "5246010000020006"
+				id: "5246012000140001"
 				item: { count: 1, id: "industrialforegoing:fluid_laser_base" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: -10.5d
+		}
+		{
+			dependencies: [
+				"5246011000000002"
+				"5246011000000003"
+			]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "industrialforegoing:bioreactor"
+			}
+			id: "5246011000000004"
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "5246012000150001"
+					item: { count: 1, id: "industrialforegoing:bioreactor" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "5246012000150002"
+					item: { count: 1, id: "industrialforegoing:biofuel_generator" }
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["524601100000010F"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "industrialforegoing:fermentation_station"
+			}
+			id: "5246011000000111"
+			rewards: [{
+				id: "5246013000160001"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "5246012000160001"
+				item: { count: 1, id: "industrialforegoing:fermentation_station" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["5246011000000004"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "industrialforegoing:sewer"
+			}
+			id: "5246011000000112"
+			rewards: [{
+				id: "5246013000170001"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "5246012000170001"
+					item: { count: 1, id: "industrialforegoing:sewer" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "5246012000170002"
+					item: { count: 1, id: "industrialforegoing:sewage_composter" }
+					type: "item"
+				}
+			]
+			x: 8.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["5246011000000112"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "industrialforegoing:spores_recreator"
+			}
+			id: "5246011000000113"
+			optional: true
+			rewards: [
+				{
+					id: "5246013000180001"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "53A5424667BB9915"
+					type: "random"
+				}
+			]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "5246012000180001"
+				item: { count: 1, id: "industrialforegoing:spores_recreator" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["5246011000000120"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "industrialforegoing:pitiful_generator"
+			}
+			id: "5246011000000114"
+			optional: true
+			rewards: [
+				{
+					id: "5246013000190001"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "3EA101543EE1C9BC"
+					type: "random"
+				}
+			]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "5246012000190001"
+				item: { count: 1, id: "industrialforegoing:pitiful_generator" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["5246011000000004"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "industrialforegoing:mycelial_furnace"
+			}
+			id: "5246011000000115"
+			rewards: [{
+				id: "52460130001A0001"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "52460120001A0001"
+					item: { count: 1, id: "industrialforegoing:mycelial_furnace" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "52460120001A0002"
+					item: { count: 1, id: "industrialforegoing:mycelial_culinary" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "52460120001A0003"
+					item: { count: 1, id: "industrialforegoing:mycelial_frosty" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "52460120001A0004"
+					item: { count: 1, id: "industrialforegoing:mycelial_slimey" }
+					type: "item"
+				}
+			]
+			x: 8.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["5246011000000115"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "industrialforegoing:mycelial_ender"
+			}
+			id: "5246011000000116"
+			optional: true
+			rewards: [
+				{
+					id: "52460130001B0001"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "60FE7680693A4E10"
+					type: "random"
+				}
+			]
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "52460120001B0001"
+					item: { count: 1, id: "industrialforegoing:mycelial_ender" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "52460120001B0002"
+					item: { count: 1, id: "industrialforegoing:mycelial_death" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "52460120001B0003"
+					item: { count: 1, id: "industrialforegoing:mycelial_disenchantment" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "52460120001B0004"
+					item: { count: 1, id: "industrialforegoing:mycelial_potion" }
+					type: "item"
+				}
+			]
+			x: 11.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["5246011000000116"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "industrialforegoing:mycelial_explosive"
+			}
+			id: "5246011000000117"
+			optional: true
+			rewards: [
+				{
+					id: "52460130001C0001"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "3E34B865B279AC86"
+					type: "random"
+				}
+			]
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "52460120001C0001"
+					item: { count: 1, id: "industrialforegoing:mycelial_explosive" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "52460120001C0002"
+					item: { count: 1, id: "industrialforegoing:mycelial_magma" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "52460120001C0003"
+					item: { count: 1, id: "industrialforegoing:mycelial_rocket" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "52460120001C0004"
+					item: { count: 1, id: "industrialforegoing:mycelial_pink" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "52460120001C0005"
+					item: { count: 1, id: "industrialforegoing:mycelial_crimed" }
+					type: "item"
+				}
+			]
+			x: 10.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["5246011000000001"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "industrialforegoing:mob_imprisonment_tool"
+			}
+			id: "5246011000000005"
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "52460120001D0001"
+				item: { count: 1, id: "industrialforegoing:mob_imprisonment_tool" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5246011000000005"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "industrialforegoing:mob_crusher"
+			}
+			id: "5246011000000118"
+			rewards: [{
+				id: "52460130001E0001"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "52460120001E0001"
+				item: { count: 1, id: "industrialforegoing:mob_crusher" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["5246011000000118"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "industrialforegoing:mob_duplicator"
+			}
+			id: "5246011000000119"
+			rewards: [{
+				id: "52460130001F0001"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "52460120001F0001"
+				item: { count: 1, id: "industrialforegoing:mob_duplicator" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["5246011000000005"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "industrialforegoing:animal_rancher"
+			}
+			id: "524601100000011A"
+			rewards: [{
+				id: "5246013000200001"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "5246012000200001"
+				item: { count: 1, id: "industrialforegoing:animal_rancher" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["524601100000011A"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "industrialforegoing:animal_feeder"
+			}
+			id: "524601100000011B"
+			optional: true
+			rewards: [
+				{
+					id: "5246013000210001"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "055C13F96347BE1C"
+					type: "random"
+				}
+			]
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "5246012000210001"
+					item: { count: 1, id: "industrialforegoing:animal_feeder" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "5246012000210002"
+					item: { count: 1, id: "industrialforegoing:animal_baby_separator" }
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["5246011000000005"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "industrialforegoing:mob_detector"
+			}
+			id: "524601100000011C"
+			optional: true
+			rewards: [
+				{
+					id: "5246013000220001"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "7EC5B3EAD2A24C0F"
+					type: "random"
+				}
+			]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "5246012000220001"
+				item: { count: 1, id: "industrialforegoing:mob_detector" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["524601100000011A"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "industrialforegoing:marine_fisher"
+			}
+			id: "524601100000011D"
+			optional: true
+			rewards: [
+				{
+					id: "5246013000230001"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "36D103949BC19E2F"
+					type: "random"
+				}
+			]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "5246012000230001"
+				item: { count: 1, id: "industrialforegoing:marine_fisher" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["5246011000000119"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "industrialforegoing:wither_builder"
+			}
+			id: "524601100000011E"
+			optional: true
+			rewards: [
+				{
+					id: "5246013000240001"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "7891457C2DECDE1A"
+					type: "random"
+				}
+			]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "5246012000240001"
+				item: { count: 1, id: "industrialforegoing:wither_builder" }
+				type: "item"
+			}]
+			x: 11.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["524601100000011E"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "industrialforegoing:stasis_chamber"
+			}
+			id: "524601100000011F"
+			optional: true
+			rewards: [
+				{
+					id: "5246013000250001"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "2C074ADB3C4F769F"
+					type: "random"
+				}
+			]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "5246012000250001"
+				item: { count: 1, id: "industrialforegoing:stasis_chamber" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["5246011000000005"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "industrialforegoing:conveyor"
+			}
+			id: "5246011000000120"
+			optional: true
+			rewards: [
+				{
+					id: "5246013000260001"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "661A5C5B24462B4D"
+					type: "random"
+				}
+			]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "5246012000260001"
+				item: { count: 1, id: "industrialforegoing:conveyor" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 11.0d
+		}
+		{
+			dependencies: [
+				"5246011000000003"
+				"5246011000000005"
+			]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				components: {
+					"ftbquests:missing_item": "industrialforegoing:black_hole_controller"
+				}
+				id: "ftbquests:missing_item"
+			}
+			id: "5246011000000006"
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "5246012000270001"
+				item: { components: { "ftbquests:missing_item": "industrialforegoing:black_hole_controller" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5246011000000006"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				components: {
+					"ftbquests:missing_item": "industrialforegoing:pity_black_hole_unit"
+				}
+				id: "ftbquests:missing_item"
+			}
+			id: "5246011000000121"
+			rewards: [{
+				id: "5246013000280001"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "5246012000280001"
+					item: { components: { "ftbquests:missing_item": "industrialforegoing:pity_black_hole_unit" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "5246012000280002"
+					item: { components: { "ftbquests:missing_item": "industrialforegoing:pity_black_hole_tank" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+			]
+			x: 8.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["5246011000000121"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				components: {
+					"ftbquests:missing_item": "industrialforegoing:common_black_hole_unit"
+				}
+				id: "ftbquests:missing_item"
+			}
+			id: "5246011000000122"
+			optional: true
+			rewards: [
+				{
+					id: "5246013000290001"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "2EBB5BF3BAF710AC"
+					type: "random"
+				}
+			]
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "5246012000290001"
+					item: { components: { "ftbquests:missing_item": "industrialforegoing:common_black_hole_unit" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "5246012000290002"
+					item: { components: { "ftbquests:missing_item": "industrialforegoing:common_black_hole_tank" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+			]
+			x: 11.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5246011000000122"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				components: {
+					"ftbquests:missing_item": "industrialforegoing:simple_black_hole_unit"
+				}
+				id: "ftbquests:missing_item"
+			}
+			id: "5246011000000123"
+			optional: true
+			rewards: [
+				{
+					id: "52460130002A0001"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "21FC15E60B8C7E8B"
+					type: "random"
+				}
+			]
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "52460120002A0001"
+					item: { components: { "ftbquests:missing_item": "industrialforegoing:simple_black_hole_unit" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "52460120002A0002"
+					item: { components: { "ftbquests:missing_item": "industrialforegoing:simple_black_hole_tank" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+			]
+			x: 10.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5246011000000001"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "chemicalscience:fractionating_column"
+			}
+			id: "5246011000000008"
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "52460120002B0001"
+				item: { count: 1, id: "chemicalscience:fractionating_column" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5246011000000008"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "chemicalscience:steam_cracker"
+			}
+			id: "5246011000000124"
+			rewards: [{
+				id: "52460130002C0001"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "52460120002C0001"
+				item: { count: 1, id: "chemicalscience:steam_cracker" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["5246011000000008"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "chemicalscience:catalytic_reformer"
+			}
+			id: "5246011000000125"
+			rewards: [{
+				id: "52460130002D0001"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "52460120002D0001"
+				item: { count: 1, id: "chemicalscience:catalytic_reformer" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5246011000000124"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "chemicalscience:hds_unit"
+			}
+			id: "5246011000000126"
+			rewards: [{
+				id: "52460130002E0001"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "52460120002E0001"
+				item: { count: 1, id: "chemicalscience:hds_unit" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["5246011000000008"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "chemicalscience:redox_furnace_controller"
+			}
+			id: "5246011000000127"
+			rewards: [{
+				id: "52460130002F0001"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "52460120002F0001"
+				item: { count: 1, id: "chemicalscience:redox_furnace_controller" }
 				type: "item"
 			}]
 			x: 4.5d
 			y: 1.5d
 		}
 		{
-			dependencies: ["5246010000010004"]
+			dependencies: ["5246011000000008"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: {
-				id: "industrialforegoing:sludge_refiner"
+				id: "chemicalscience:chromotographycardhelium"
 			}
-			id: "5246010000010007"
+			id: "5246011000000128"
 			optional: true
-			rewards: [{
-				id: "5246010000030007"
-				type: "xp"
-				xp: 75
-			}]
+			rewards: [
+				{
+					id: "5246013000300001"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "0476671E226ABD85"
+					type: "random"
+				}
+			]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -225,56 +2160,28 @@
 					mode: "TOTAL_LEVEL"
 					second: 20
 				}
-				id: "5246010000020007"
-				item: { count: 1, id: "industrialforegoing:sludge_refiner" }
+				id: "5246012000300001"
+				item: { components: { "ftbfiltersystem:filter": "root(or(item(chemicalscience:chromotographycardhelium),item(chemicalscience:chromotographycardneon),item(chemicalscience:chromotographycardkrypton),item(chemicalscience:chromotographycardxenon),item(chemicalscience:chromotographycardradon),item(chemicalscience:chromotographycardcarbonmonoxide),item(electrodynamics:chromotographycardcarbondioxide)))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 4.5d
-			y: 2.5d
-		}
-		{
-			dependencies: ["5246010000010004"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "industrialforegoing:fermentation_station"
-			}
-			id: "5246010000010008"
-			optional: true
-			rewards: [{
-				id: "5246010000030008"
-				type: "xp"
-				xp: 75
-			}]
-			tasks: [{
-				SkillsLevel: {
-					category: ""
-					check: 0b
-					comparison: "GREATER_OR_EQUAL"
-					first: 10
-					mode: "TOTAL_LEVEL"
-					second: 20
-				}
-				id: "5246010000020008"
-				item: { count: 1, id: "industrialforegoing:fermentation_station" }
-				type: "item"
-			}]
-			x: 4.5d
+			x: 3.0d
 			y: 3.5d
 		}
 		{
-			dependencies: ["5246010000010004"]
+			dependencies: ["5246011000000001"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: {
-				id: "industrialforegoing:spores_recreator"
+				id: "hostilenetworks:deep_learner"
 			}
-			id: "524601000001000A"
-			optional: true
-			rewards: [{
-				id: "524601000003000A"
-				type: "xp"
-				xp: 75
-			}]
+			id: "5246011000000009"
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -283,373 +2190,33 @@
 					mode: "TOTAL_LEVEL"
 					second: 20
 				}
-				id: "524601000002000A"
-				item: { count: 1, id: "industrialforegoing:spores_recreator" }
+				id: "5246012000310001"
+				item: { count: 1, id: "hostilenetworks:deep_learner" }
 				type: "item"
 			}]
-			x: 4.5d
-			y: 4.5d
+			x: 3.0d
+			y: 5.0d
 		}
 		{
-			dependencies: ["5246010000010004"]
+			dependencies: ["5246011000000009"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: {
-				id: "industrialforegoing:item_transporter_type"
+				id: "hostilenetworks:sim_chamber"
 			}
-			id: "524601000001000B"
-			optional: true
+			id: "5246011000000129"
 			rewards: [{
-				id: "524601000003000B"
-				type: "xp"
-				xp: 75
-			}]
-			tasks: [
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "524601000002000B"
-					item: { count: 1, id: "industrialforegoing:item_transporter_type" }
-					type: "item"
-				}
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "524601000002010B"
-					item: { count: 1, id: "industrialforegoing:fluid_transporter_type" }
-					type: "item"
-				}
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "524601000002020B"
-					item: { count: 1, id: "industrialforegoing:world_transporter_type" }
-					type: "item"
-				}
-			]
-			x: 4.5d
-			y: 5.5d
-		}
-		{
-			dependencies: ["5246010000010003"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "industrialforegoing:machine_frame_advanced"
-			}
-			id: "524601000001000C"
-			rewards: [{
-				id: "524601000003000C"
-				type: "xp"
-				xp: 200
-			}]
-			shape: "hexagon"
-			size: 1.5d
-			tasks: [{
-				SkillsLevel: {
-					category: ""
-					check: 0b
-					comparison: "GREATER_OR_EQUAL"
-					first: 10
-					mode: "TOTAL_LEVEL"
-					second: 20
-				}
-				id: "524601000002000C"
-				item: { count: 1, id: "industrialforegoing:machine_frame_advanced" }
-				type: "item"
-			}]
-			x: 4.5d
-			y: -5.75d
-		}
-		{
-			dependencies: ["524601000001000C"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "industrialforegoing:plant_sower"
-			}
-			id: "524601000001000D"
-			rewards: [{
-				id: "524601000003000D"
+				id: "5246013000320001"
 				type: "xp"
 				xp: 100
 			}]
-			tasks: [
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "524601000002000D"
-					item: { count: 1, id: "industrialforegoing:plant_sower" }
-					type: "item"
-				}
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "524601000002010D"
-					item: { count: 1, id: "industrialforegoing:plant_gatherer" }
-					type: "item"
-				}
-			]
-			x: 6.0d
-			y: -11.0d
-		}
-		{
-			dependencies: ["524601000001000D"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "industrialforegoing:plant_fertilizer"
-			}
-			id: "524601000001000E"
-			rewards: [{
-				id: "524601000003000E"
-				type: "xp"
-				xp: 75
-			}]
-			tasks: [
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "524601000002000E"
-					item: { count: 1, id: "industrialforegoing:plant_fertilizer" }
-					type: "item"
-				}
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "524601000002010E"
-					item: { count: 1, id: "industrialforegoing:fertilizer" }
-					type: "item"
-				}
-			]
-			x: 7.5d
-			y: -11.0d
-		}
-		{
-			dependencies: ["524601000001000E"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "industrialforegoing:hydroponic_bed"
-			}
-			id: "524601000001000F"
-			rewards: [{
-				id: "524601000003000F"
-				type: "xp"
-				xp: 100
-			}]
-			tasks: [
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "524601000002000F"
-					item: { count: 1, id: "industrialforegoing:hydroponic_bed" }
-					type: "item"
-				}
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "524601000002010F"
-					item: { count: 1, id: "industrialforegoing:mechanical_dirt" }
-					type: "item"
-				}
-			]
-			x: 9.0d
-			y: -11.0d
-		}
-		{
-			dependencies: ["524601000001000F"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "industrialforegoing:simulated_hydroponic_bed"
-			}
-			id: "5246010000010010"
-			optional: true
-			rewards: [{
-				id: "5246010000030010"
-				type: "xp"
-				xp: 100
-			}]
-			tasks: [
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "5246010000020010"
-					item: { count: 1, id: "industrialforegoing:simulated_hydroponic_bed" }
-					type: "item"
-				}
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "5246010000020110"
-					item: { components: { "industrialforegoing:hydroponic_simulation_processor": { } }, count: 1, id: "industrialforegoing:hydroponic_simulation_processor" }
-					type: "item"
-				}
-			]
-			x: 10.5d
-			y: -11.5d
-		}
-		{
-			dependencies: ["524601000001000F"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "industrialforegoing:bioreactor"
-			}
-			id: "5246010000010011"
-			rewards: [{
-				id: "5246010000030011"
-				type: "xp"
-				xp: 100
-			}]
-			tasks: [
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "5246010000020011"
-					item: { count: 1, id: "industrialforegoing:bioreactor" }
-					type: "item"
-				}
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "5246010000020111"
-					item: { count: 1, id: "industrialforegoing:biofuel_generator" }
-					type: "item"
-				}
-			]
-			x: 10.5d
-			y: -10.5d
-		}
-		{
-			dependencies: ["524601000001000C"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "industrialforegoing:animal_feeder"
-			}
-			id: "5246010000010012"
-			rewards: [{
-				id: "5246010000030012"
-				type: "xp"
-				xp: 100
-			}]
-			tasks: [
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "5246010000020012"
-					item: { count: 1, id: "industrialforegoing:animal_feeder" }
-					type: "item"
-				}
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "5246010000020112"
-					item: { count: 1, id: "industrialforegoing:animal_rancher" }
-					type: "item"
-				}
-			]
-			x: 6.0d
-			y: -9.0d
-		}
-		{
-			dependencies: ["5246010000010012"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "industrialforegoing:animal_baby_separator"
-			}
-			id: "5246010000010013"
-			optional: true
-			rewards: [{
-				id: "5246010000030013"
-				type: "xp"
-				xp: 75
-			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -658,377 +2225,72 @@
 					mode: "TOTAL_LEVEL"
 					second: 20
 				}
-				id: "5246010000020013"
-				item: { count: 1, id: "industrialforegoing:animal_baby_separator" }
+				id: "5246012000320001"
+				item: { count: 1, id: "hostilenetworks:sim_chamber" }
 				type: "item"
 			}]
-			x: 7.5d
-			y: -9.5d
-		}
-		{
-			dependencies: ["524601000001000C"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "industrialforegoing:marine_fisher"
-			}
-			id: "5246010000010014"
-			optional: true
-			rewards: [{
-				id: "5246010000030014"
-				type: "xp"
-				xp: 75
-			}]
-			tasks: [{
-				SkillsLevel: {
-					category: ""
-					check: 0b
-					comparison: "GREATER_OR_EQUAL"
-					first: 10
-					mode: "TOTAL_LEVEL"
-					second: 20
-				}
-				id: "5246010000020014"
-				item: { count: 1, id: "industrialforegoing:marine_fisher" }
-				type: "item"
-			}]
-			x: 6.0d
-			y: -7.5d
-		}
-		{
-			dependencies: ["5246010000010012"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "industrialforegoing:sewer"
-			}
-			id: "5246010000010015"
-			optional: true
-			rewards: [{
-				id: "5246010000030015"
-				type: "xp"
-				xp: 75
-			}]
-			tasks: [
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "5246010000020015"
-					item: { count: 1, id: "industrialforegoing:sewer" }
-					type: "item"
-				}
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "5246010000020115"
-					item: { count: 1, id: "industrialforegoing:sewage_composter" }
-					type: "item"
-				}
-			]
-			x: 7.5d
-			y: -8.5d
-		}
-		{
-			dependencies: ["524601000001000C"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "industrialforegoing:fluid_sieving_machine"
-			}
-			id: "5246010000010016"
-			optional: true
-			rewards: [{
-				id: "5246010000030016"
-				type: "xp"
-				xp: 75
-			}]
-			tasks: [{
-				SkillsLevel: {
-					category: ""
-					check: 0b
-					comparison: "GREATER_OR_EQUAL"
-					first: 10
-					mode: "TOTAL_LEVEL"
-					second: 20
-				}
-				id: "5246010000020016"
-				item: { count: 1, id: "industrialforegoing:fluid_sieving_machine" }
-				type: "item"
-			}]
-			x: 6.0d
-			y: -6.5d
-		}
-		{
-			dependencies: ["524601000001000C"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "industrialforegoing:mob_slaughter_factory"
-			}
-			id: "5246010000010018"
-			rewards: [{
-				id: "5246010000030018"
-				type: "xp"
-				xp: 150
-			}]
-			shape: "hexagon"
-			size: 1.5d
-			tasks: [{
-				SkillsLevel: {
-					category: ""
-					check: 0b
-					comparison: "GREATER_OR_EQUAL"
-					first: 10
-					mode: "TOTAL_LEVEL"
-					second: 20
-				}
-				id: "5246010000020018"
-				item: { count: 1, id: "industrialforegoing:mob_slaughter_factory" }
-				type: "item"
-			}]
-			x: 6.0d
-			y: -4.5d
-		}
-		{
-			dependencies: ["5246010000010018"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "industrialforegoing:mob_imprisonment_tool"
-			}
-			id: "5246010000010019"
-			rewards: [{
-				id: "5246010000030019"
-				type: "xp"
-				xp: 75
-			}]
-			tasks: [{
-				SkillsLevel: {
-					category: ""
-					check: 0b
-					comparison: "GREATER_OR_EQUAL"
-					first: 10
-					mode: "TOTAL_LEVEL"
-					second: 20
-				}
-				id: "5246010000020019"
-				item: { count: 1, id: "industrialforegoing:mob_imprisonment_tool" }
-				type: "item"
-			}]
-			x: 7.5d
-			y: -5.5d
-		}
-		{
-			dependencies: ["5246010000010018"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "industrialforegoing:meat_feeder"
-			}
-			id: "524601000001001A"
-			optional: true
-			rewards: [{
-				id: "524601000003001A"
-				type: "xp"
-				xp: 75
-			}]
-			tasks: [
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "524601000002001A"
-					item: { count: 1, id: "industrialforegoing:meat_feeder" }
-					type: "item"
-				}
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "524601000002011A"
-					item: { count: 1, id: "industrialforegoing:meat_bucket" }
-					type: "item"
-				}
-			]
-			x: 7.5d
-			y: -4.5d
-		}
-		{
-			dependencies: ["5246010000010018"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "industrialforegoing:pink_slime"
-			}
-			id: "524601000001001B"
-			rewards: [{
-				id: "524601000003001B"
-				type: "xp"
-				xp: 75
-			}]
-			tasks: [
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "524601000002001B"
-					item: { count: 1, id: "industrialforegoing:pink_slime" }
-					type: "item"
-				}
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "524601000002011B"
-					item: { count: 1, id: "industrialforegoing:pink_slime_bucket" }
-					type: "item"
-				}
-			]
-			x: 7.5d
-			y: -3.5d
-		}
-		{
-			dependencies: ["524601000001001B"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "industrialforegoing:pink_slime_ingot"
-			}
-			id: "524601000001001C"
-			rewards: [{
-				id: "524601000003001C"
-				type: "xp"
-				xp: 150
-			}]
-			shape: "hexagon"
-			size: 1.5d
-			tasks: [
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "524601000002001C"
-					item: { count: 1, id: "industrialforegoing:pink_slime_ingot" }
-					type: "item"
-				}
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "524601000002011C"
-					item: { count: 1, id: "industrialforegoing:pink_slime_block" }
-					type: "item"
-				}
-			]
-			x: 9.0d
-			y: -3.5d
-		}
-		{
-			dependencies: ["5246010000010019"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "industrialforegoing:stasis_chamber"
-			}
-			id: "524601000001001D"
-			optional: true
-			rewards: [{
-				id: "524601000003001D"
-				type: "xp"
-				xp: 75
-			}]
-			tasks: [{
-				SkillsLevel: {
-					category: ""
-					check: 0b
-					comparison: "GREATER_OR_EQUAL"
-					first: 10
-					mode: "TOTAL_LEVEL"
-					second: 20
-				}
-				id: "524601000002001D"
-				item: { count: 1, id: "industrialforegoing:stasis_chamber" }
-				type: "item"
-			}]
-			x: 9.0d
-			y: -5.5d
-		}
-		{
-			dependencies: ["5246010000010001"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "industrialforegoing:resourceful_furnace"
-			}
-			id: "5246010000010024"
-			rewards: [{
-				id: "5246010000030024"
-				type: "xp"
-				xp: 75
-			}]
-			tasks: [{
-				SkillsLevel: {
-					category: ""
-					check: 0b
-					comparison: "GREATER_OR_EQUAL"
-					first: 10
-					mode: "TOTAL_LEVEL"
-					second: 20
-				}
-				id: "5246010000020024"
-				item: { count: 1, id: "industrialforegoing:resourceful_furnace" }
-				type: "item"
-			}]
-			x: 1.5d
+			x: 2.0d
 			y: 6.5d
 		}
 		{
-			dependencies: ["524601000001000C"]
+			dependencies: ["5246011000000009"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: {
-				id: "industrialforegoing:ore_laser_base"
+				id: "hostilenetworks:loot_fabricator"
 			}
-			id: "5246010000010025"
+			id: "5246011000000011"
 			optional: true
-			rewards: [{
-				id: "5246010000030025"
-				type: "xp"
-				xp: 100
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "5246012000330001"
+				item: { count: 1, id: "hostilenetworks:loot_fabricator" }
+				type: "item"
 			}]
+			x: 5.5d
+			y: 14.0d
+		}
+		{
+			dependencies: ["5246011000000011"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "hostilenetworks:blank_data_model"
+			}
+			id: "524601100000012A"
+			optional: true
+			rewards: [
+				{
+					id: "5246013000340001"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "4FA9166B0BBEDBF5"
+					type: "random"
+				}
+			]
 			tasks: [
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1037,11 +2299,17 @@
 						mode: "TOTAL_LEVEL"
 						second: 20
 					}
-					id: "5246010000020025"
-					item: { count: 1, id: "industrialforegoing:ore_laser_base" }
+					id: "5246012000340001"
+					item: { count: 1, id: "hostilenetworks:blank_data_model" }
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -1050,28 +2318,29 @@
 						mode: "TOTAL_LEVEL"
 						second: 20
 					}
-					id: "5246010000020125"
-					item: { count: 1, id: "industrialforegoing:laser_drill" }
+					id: "5246012000340002"
+					item: { count: 1, id: "hostilenetworks:prediction_matrix" }
 					type: "item"
 				}
 			]
-			x: 6.0d
-			y: -2.5d
+			x: 5.0d
+			y: 15.5d
 		}
 		{
-			dependencies: ["524601000001000C"]
+			dependencies: ["5246011000000007"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: {
-				id: "industrialforegoing:material_stonework_factory"
+				id: "industrialforegoing:enchantment_factory"
 			}
-			id: "5246010000010026"
-			optional: true
-			rewards: [{
-				id: "5246010000030026"
-				type: "xp"
-				xp: 75
-			}]
+			id: "5246011000000010"
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1080,112 +2349,110 @@
 					mode: "TOTAL_LEVEL"
 					second: 20
 				}
-				id: "5246010000020026"
-				item: { count: 1, id: "industrialforegoing:material_stonework_factory" }
+				id: "5246012000350001"
+				item: { count: 1, id: "industrialforegoing:enchantment_factory" }
 				type: "item"
 			}]
-			x: 6.0d
-			y: -1.5d
+			x: 11.0d
+			y: 0.0d
 		}
 		{
-			dependencies: ["524601000001001C"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "industrialforegoing:washing_factory"
-			}
-			id: "5246010000010027"
-			optional: true
-			rewards: [{
-				id: "5246010000030027"
-				type: "xp"
-				xp: 100
-			}]
-			tasks: [{
-				SkillsLevel: {
-					category: ""
-					check: 0b
-					comparison: "GREATER_OR_EQUAL"
-					first: 10
-					mode: "TOTAL_LEVEL"
-					second: 20
-				}
-				id: "5246010000020027"
-				item: { count: 1, id: "industrialforegoing:washing_factory" }
-				type: "item"
-			}]
-			x: 10.5d
-			y: -3.5d
-		}
-		{
-			dependencies: ["5246010000010001"]
+			dependencies: ["5246011000000010"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: {
 				id: "industrialforegoing:enchantment_extractor"
 			}
-			id: "5246010000010028"
+			id: "524601100000012B"
 			rewards: [{
-				id: "5246010000030028"
+				id: "5246013000360001"
 				type: "xp"
-				xp: 150
+				xp: 100
 			}]
-			tasks: [
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "5246010000020028"
-					item: { count: 1, id: "industrialforegoing:enchantment_extractor" }
-					type: "item"
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
 				}
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "5246010000020128"
-					item: { count: 1, id: "industrialforegoing:enchantment_factory" }
-					type: "item"
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
 				}
-				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "5246010000020228"
-					item: { count: 1, id: "industrialforegoing:enchantment_applicator" }
-					type: "item"
-				}
-			]
-			x: 1.5d
-			y: 7.5d
+				id: "5246012000360001"
+				item: { count: 1, id: "industrialforegoing:enchantment_extractor" }
+				type: "item"
+			}]
+			x: 14.0d
+			y: 0.0d
 		}
 		{
-			dependencies: ["5246010000010028"]
+			dependencies: ["5246011000000010"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "industrialforegoing:enchantment_applicator"
+			}
+			id: "524601100000012C"
+			rewards: [{
+				id: "5246013000370001"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "5246012000370001"
+				item: { count: 1, id: "industrialforegoing:enchantment_applicator" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["524601100000012B"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: {
 				id: "industrialforegoing:enchantment_sorter"
 			}
-			id: "5246010000010029"
+			id: "524601100000012D"
 			optional: true
-			rewards: [{
-				id: "5246010000030029"
-				type: "xp"
-				xp: 50
-			}]
+			rewards: [
+				{
+					id: "5246013000380001"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "453BD93619A524E2"
+					type: "random"
+				}
+			]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1194,27 +2461,40 @@
 					mode: "TOTAL_LEVEL"
 					second: 20
 				}
-				id: "5246010000020029"
+				id: "5246012000380001"
 				item: { count: 1, id: "industrialforegoing:enchantment_sorter" }
 				type: "item"
 			}]
-			x: 3.0d
-			y: 7.5d
+			x: 13.0d
+			y: -1.5d
 		}
 		{
-			dependencies: ["5246010000010001"]
+			dependencies: ["5246011000000010"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: {
 				id: "industrialforegoing:potion_brewer"
 			}
-			id: "524601000001002A"
+			id: "524601100000012E"
 			optional: true
-			rewards: [{
-				id: "524601000003002A"
-				type: "xp"
-				xp: 75
-			}]
+			rewards: [
+				{
+					id: "5246013000390001"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "44F0AEFDE9209E55"
+					type: "random"
+				}
+			]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1223,27 +2503,40 @@
 					mode: "TOTAL_LEVEL"
 					second: 20
 				}
-				id: "524601000002002A"
+				id: "5246012000390001"
 				item: { count: 1, id: "industrialforegoing:potion_brewer" }
 				type: "item"
 			}]
-			x: 1.5d
-			y: 8.5d
+			x: 10.5d
+			y: 1.5d
 		}
 		{
-			dependencies: ["5246010000010001"]
+			dependencies: ["5246011000000010"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: {
 				id: "industrialforegoing:dye_mixer"
 			}
-			id: "524601000001002B"
+			id: "524601100000012F"
 			optional: true
-			rewards: [{
-				id: "524601000003002B"
-				type: "xp"
-				xp: 75
-			}]
+			rewards: [
+				{
+					id: "52460130003A0001"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "329E920AAB650F77"
+					type: "random"
+				}
+			]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1252,127 +2545,40 @@
 					mode: "TOTAL_LEVEL"
 					second: 20
 				}
-				id: "524601000002002B"
+				id: "52460120003A0001"
 				item: { count: 1, id: "industrialforegoing:dye_mixer" }
 				type: "item"
 			}]
-			x: 1.5d
-			y: 9.5d
+			x: 12.0d
+			y: 1.5d
 		}
 		{
-			dependencies: ["524601000001000C"]
+			dependencies: ["5246011000000010"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: {
-				id: "industrialforegoing:mob_detector"
+				id: "industrialforegoing:infinity_charger"
 			}
-			id: "524601000001002D"
+			id: "5246011000000130"
 			optional: true
-			rewards: [{
-				id: "524601000003002D"
-				type: "xp"
-				xp: 50
-			}]
-			tasks: [{
-				SkillsLevel: {
-					category: ""
-					check: 0b
-					comparison: "GREATER_OR_EQUAL"
-					first: 10
-					mode: "TOTAL_LEVEL"
-					second: 20
-				}
-				id: "524601000002002D"
-				item: { count: 1, id: "industrialforegoing:mob_detector" }
-				type: "item"
-			}]
-			x: 6.0d
-			y: -0.5d
-		}
-		{
-			dependencies: ["5246010000010001"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "industrialforegoing:conveyor"
-			}
-			id: "524601000001002E"
-			rewards: [{
-				id: "524601000003002E"
-				type: "xp"
-				xp: 50
-			}]
-			tasks: [{
-				SkillsLevel: {
-					category: ""
-					check: 0b
-					comparison: "GREATER_OR_EQUAL"
-					first: 10
-					mode: "TOTAL_LEVEL"
-					second: 20
-				}
-				id: "524601000002002E"
-				item: { count: 1, id: "industrialforegoing:conveyor" }
-				type: "item"
-			}]
-			x: 1.5d
-			y: 11.0d
-		}
-		{
-			dependencies: ["524601000001002E"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "industrialforegoing:block_breaker"
-			}
-			id: "524601000001002F"
-			rewards: [{
-				id: "524601000003002F"
-				type: "xp"
-				xp: 75
-			}]
-			tasks: [
+			rewards: [
 				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "524601000002002F"
-					item: { count: 1, id: "industrialforegoing:block_breaker" }
-					type: "item"
+					id: "52460130003B0001"
+					type: "xp"
+					xp: 100
 				}
 				{
-					SkillsLevel: {
-						category: ""
-						check: 0b
-						comparison: "GREATER_OR_EQUAL"
-						first: 10
-						mode: "TOTAL_LEVEL"
-						second: 20
-					}
-					id: "524601000002012F"
-					item: { count: 1, id: "industrialforegoing:block_placer" }
-					type: "item"
+					id: "65FF90DB50875383"
+					type: "random"
 				}
 			]
-			x: 3.0d
-			y: 10.5d
-		}
-		{
-			dependencies: ["524601000001002E"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "industrialforegoing:machine_settings_copier"
-			}
-			id: "5246010000010031"
-			optional: true
-			rewards: [{
-				id: "5246010000030031"
-				type: "xp"
-				xp: 50
-			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -1381,45 +2587,179 @@
 					mode: "TOTAL_LEVEL"
 					second: 20
 				}
-				id: "5246010000020031"
-				item: { count: 1, id: "industrialforegoing:machine_settings_copier" }
+				id: "52460120003B0001"
+				item: { count: 1, id: "industrialforegoing:infinity_charger" }
 				type: "item"
 			}]
-			x: 3.0d
-			y: 11.5d
+			x: 9.0d
+			y: 3.0d
 		}
 		{
 			dependencies: [
-				"5246010000010011"
-				"524601000001001C"
+				"5246011000000006"
+				"5246011000000008"
 			]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: {
-				id: "industrialforegoing:machine_frame_advanced"
+				id: "industrialforegoing:laser_drill"
 			}
-			id: "5246010000010032"
+			id: "5246011000000007"
 			rewards: [{
-				id: "5246010000030032"
-				type: "xp"
-				xp: 400
-			}]
-			shape: "pentagon"
-			size: 2.0d
-			tasks: [{
-				SkillsLevel: {
-					category: ""
-					check: 0b
-					comparison: "GREATER_OR_EQUAL"
-					first: 10
-					mode: "TOTAL_LEVEL"
-					second: 20
+				auto: "enabled"
+				command: "/astages add {p} g_biotech_hazard_readiness_complete true true"
+				icon: {
+					id: "industrialforegoing:laser_drill"
 				}
-				id: "5246010000020032"
-				item: { count: 1, id: "industrialforegoing:machine_frame_supreme" }
-				type: "item"
+				id: "5246011030007000"
+				permission_level: 2
+				silent: true
+				team_reward: true
+				type: "command"
 			}]
-			x: 13.5d
-			y: -10.5d
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "5246011020070001"
+					item: { count: 1, id: "industrialforegoing:laser_drill" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "5246011020070002"
+					item: { count: 1, id: "industrialforegoing:ore_laser_base" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "5246011020070003"
+					item: { count: 1, id: "industrialforegoingsouls:soul_laser_base" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "5246011020070006"
+					item: { count: 1, id: "industrialforegoing:material_stonework_factory" }
+					type: "item"
+				}
+			]
+			x: 8.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5246011000000007"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "industrialforegoingsouls:soul_network_pipe"
+			}
+			id: "5246011000000131"
+			optional: true
+			rewards: [
+				{
+					id: "52460130003D0001"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "7E035614713FDB64"
+					type: "random"
+				}
+			]
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "52460120003D0001"
+					item: { count: 1, id: "industrialforegoingsouls:soul_network_pipe" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "52460120003D0002"
+					item: { count: 1, id: "industrialforegoingsouls:soul_surge" }
+					type: "item"
+				}
+			]
+			x: 7.0d
+			y: 2.5d
 		}
 	]
 }
