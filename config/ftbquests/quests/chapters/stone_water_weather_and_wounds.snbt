@@ -1,5 +1,5 @@
 {
-	autofocus_id: "3400000000001113"
+	autofocus_id: "60D53613768CA1F3"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "stone_water_weather_and_wounds"
@@ -14,41 +14,16 @@
 	quests: [
 		{
 			dependencies: ["60D53613768CA1F3"]
-			hide_until_deps_complete: true
-			id: "3400000000001113"
-			title: "Cookfire"
-			subtitle: "Free cooking, four meals at a time."
-			description: [
-				"Set a &bCampfire&r aside as a dedicated cooker. It holds four items at once and runs on nothing, so raw meat and fish turn into food while you handle other work."
-				"Keep it under cover. Rain puts a &bcampfire&r out."
-			]
-			tasks: [{
-				SkillsLevel: {
-					category: ""
-					check: 0b
-					comparison: "GREATER_OR_EQUAL"
-					first: 10
-					mode: "TOTAL_LEVEL"
-					second: 20
-				}
-				id: "3400000000001114"
-				item: { count: 1, id: "minecraft:campfire" }
-				type: "item"
-			}]
-			x: -6.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["3400000000001113"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "3400000000001116"
-			title: "Furnace"
-			subtitle: "Smelting, faster cooking, and steady light."
-			description: [
-				"Craft a &bFurnace&r from cobblestone. It smelts ore and sand, cooks food faster than a &bcampfire&r when you feed it fuel, and doubles as a warm light source indoors."
-				"Almost everything ahead routes through a &bfurnace&r at some point, so build it early and keep coal nearby."
-			]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -66,24 +41,27 @@
 		}
 		{
 			dependencies: ["3400000000001116"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
+			icon: {
+				id: "minecraft:red_bed"
+			}
 			id: "3400000000001119"
-			title: "Bed"
-			subtitle: "Set your spawn before you wander."
-			description: [
-				"Craft a Bed and sleep in it once to lock your spawn point. Wool comes from sheep or string, so a few shears save you a long detour."
-				"Sleeping also skips the night, which is the cheapest way to avoid the mobs a fresh base cannot fight off yet."
-			]
 			rewards: [{
 				id: "4B6495058B9463F4"
 				item: {
 					count: 1
 					id: "comforts:sleeping_bag_white"
 				}
-				title: "A sleeping bag for nights spent away from home."
 				type: "item"
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -93,7 +71,7 @@
 					second: 20
 				}
 				id: "340000000000111A"
-				item: { count: 1, id: "minecraft:white_bed" }
+				item: { components: { "ftbfiltersystem:filter": "root(item_tag(minecraft:beds))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: -2.0d
@@ -101,15 +79,16 @@
 		}
 		{
 			dependencies: ["3400000000001119"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "340000000000111C"
-			title: "Storage"
-			subtitle: "Get your kit out of your pockets."
-			description: [
-				"Build a pair of chests. Free inventory space means you carry tools and food instead of dirt, and a sorted base saves real time once production picks up."
-				"Put them by the &bfurnace&r and crafting table so the things you use most are one step away."
-			]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -128,15 +107,16 @@
 		}
 		{
 			dependencies: ["3400000000001119"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "340000000000111F"
-			title: "Torches"
-			subtitle: "Light is your cheapest defense."
-			description: [
-				"Stock a batch of torches and light up your base and the ground around it. Mobs spawn in the dark, so a well-lit perimeter stops most fights before they start."
-				"Carry spares underground. A dark tunnel behind you is a free ambush."
-			]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -155,16 +135,17 @@
 		}
 		{
 			dependencies: ["2940A79987A07E07"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "340000000000141D"
-			title: "Leather Armor"
-			subtitle: "Light cover that also holds heat."
-			description: [
-				"Stitch a full set of &bleather armor&r. Beyond the small protection, leather is the base layer &6Cold Sweat&r lets you insulate later, so each piece earns its place twice."
-				"Wear it from the start. Even a few points of armor change how survivable an early mob hit is."
-			]
 			tasks: [
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -178,6 +159,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -191,6 +178,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -204,6 +197,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -222,15 +221,16 @@
 		}
 		{
 			dependencies: ["3400000000001116"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "1998AA8EB20A3D62"
-			title: "Boiler"
-			subtitle: "A heat source you can stand next to."
-			description: [
-				"Craft the &6Cold Sweat&r &bBoiler&r and fuel it. It radiates warmth in a small radius, which keeps your body temperature in the safe band while you work through a cold spell."
-				"One in the workshop and one by the bed covers most of the night."
-			]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -248,15 +248,16 @@
 		}
 		{
 			dependencies: ["3400000000001116"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "190D88699AB87245"
-			title: "Waterskin"
-			subtitle: "Carry your own climate control."
-			description: [
-				"Craft a &bWaterskin&r and fill it. &6Cold Sweat&r lets you warm or chill the water at a fire or an &bicebox&r, then drink to swing your temperature back toward comfortable while you travel."
-				"It is the portable answer to the weather, so keep one filled before any long trip."
-			]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -274,15 +275,16 @@
 		}
 		{
 			dependencies: ["3400000000001116"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "430B4618A0BFF120"
-			title: "Icebox"
-			subtitle: "The cooling counterpart to the boiler."
-			description: [
-				"Build an &bIcebox&r and ice it up. It radiates cold in a small radius, which keeps you from overheating in a desert biome or next to a wall of lava."
-				"Heat is as dangerous as cold once you start mining deep, so it is worth building before you need it."
-			]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -299,19 +301,17 @@
 			y: -2.0d
 		}
 		{
-			dependencies: [
-				"190D88699AB87245"
-				"097AED7C91033D5E"
-			]
+			dependencies: ["190D88699AB87245"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "2940A79987A07E07"
-			title: "Leather"
-			subtitle: "Hides for the armor you are about to insulate."
-			description: [
-				"Gather leather from cattle or by tanning hides. You need a steady five before the armor set, and more once you start lining it against the cold."
-				"A small cow pen near base keeps leather coming without hunting for it."
-			]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -330,15 +330,16 @@
 		}
 		{
 			dependencies: ["190D88699AB87245"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "6D08A993695D141E"
-			title: "Chameleon Molt"
-			subtitle: "Insulation that works both ways."
-			description: [
-				"Collect &bChameleon Molt&r from chameleons. &6Cold Sweat&r treats it as adaptive insulation, so armor lined with it resists both heat and cold instead of just one."
-				"Save it for the &bChameleon Scale&r set rather than spending it on a single piece."
-			]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -357,15 +358,16 @@
 		}
 		{
 			dependencies: ["190D88699AB87245"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "329ACE742921BBBB"
-			title: "Goat Fur"
-			subtitle: "Warm lining for cold country."
-			description: [
-				"Shear or collect &bGoat Fur&r. It is the straightforward cold insulation, and a stack of it lines a full parka against winter and high altitude."
-				"Pair a goat pen with the cow pen and your insulation supply takes care of itself."
-			]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -384,15 +386,16 @@
 		}
 		{
 			dependencies: ["3400000000001116"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "6DDBA2A0973F5F0C"
-			title: "Terracotta Bowl"
-			subtitle: "Something to drink from."
-			description: [
-				"Fire a &bTerracotta Bowl&r and use it to scoop water. &6Thirst&r drains its own bar alongside hunger, and a bowl is the simplest way to drink before you have anything better."
-				"Untreated water carries a risk, so this is a stopgap until you can purify it."
-			]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -410,22 +413,22 @@
 		}
 		{
 			dependencies: ["3400000000001116"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "7813F9EAC9075122"
-			title: "Purified Water"
-			subtitle: "Drink clean or pay the thirst penalty."
-			description: [
-				"Boil or filter water until it reads as purified, then keep a stock on hand. &6Thirst&r tracks how clean your water is, and dirty water both hydrates less and can make you sick."
-				"A few purified drinks in storage means a &6thirst&r emergency never turns into a death."
-			]
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "6A9B1F4D2C8E7101"
 				table_id: 8142508126285856769L
-				title: "A clean drink and a little extra for the road."
 				type: "random"
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -444,15 +447,16 @@
 		}
 		{
 			dependencies: ["329ACE742921BBBB"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "28FB6A2936D5FEE2"
-			title: "Goat Fur Parka"
-			subtitle: "Dedicated cold-weather armor."
-			description: [
-				"Craft the &bGoat Fur Parka&r from your collected fur. It comes pre-insulated against cold, so it holds your warmth in snow and on mountaintops without any extra lining."
-				"Wear it on expeditions north. It is far less fuss than chasing a &bboiler&r around the map."
-			]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -469,19 +473,17 @@
 			y: -4.5d
 		}
 		{
-			dependencies: [
-				"097AED7C91033D5E"
-				"1BB227EC6C14ACEC"
-			]
+			dependencies: ["1BB227EC6C14ACEC"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "70D99BC8FE5F6FC7"
-			title: "Hammock"
-			subtitle: "Rest without resetting your spawn."
-			description: [
-				"Hang a &6Comforts&r &bHammock&r between two posts and rest in it to pass the night. Unlike a bed it leaves your spawn point alone, which is ideal for a camp far from home."
-				"It needs rope and nails to mount, so make those first."
-			]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -494,20 +496,21 @@
 				item: { count: 1, id: "comforts:hammock_white" }
 				type: "item"
 			}]
-			x: -2.0d
-			y: 3.5d
+			x: -0.5d
+			y: 2.5d
 		}
 		{
-			dependencies: ["097AED7C91033D5E"]
+			dependencies: ["3400000000001119"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "1BB227EC6C14ACEC"
-			title: "Rope and Nail"
-			subtitle: "The mount that holds a hammock up."
-			description: [
-				"Craft &bRope and Nail&r. On its own it does nothing, but it is what pins a &bhammock&r to a wall or a pair of posts so you can sleep away from base."
-				"Make a couple so a field camp can sleep two."
-			]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -525,15 +528,16 @@
 		}
 		{
 			dependencies: ["340000000000111C"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "082F612406308078"
-			title: "Pocket Crafting Table"
-			subtitle: "A full grid you carry with you."
-			description: [
-				"Craft the portable crafting table. It opens a 3x3 grid from your hotbar, so a mining trip or a build run does not stall every time you need to make something."
-				"This is the first of the portable stations that keep you out of the workshop and in the field."
-			]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -551,16 +555,17 @@
 		}
 		{
 			dependencies: ["082F612406308078"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "62CA9D0E97DAD5A0"
-			title: "Pocket Workstations"
-			subtitle: "Loom, anvil, and the rest in your bag."
-			description: [
-				"Craft the portable loom, grindstone, cartography table, stonecutter, smithing table, and anvil. Each one opens its station from the hotbar, so banners, repairs, maps, and cut stone all happen on the move."
-				"Carry the ones a trip actually needs rather than the whole set, and your inventory stays usable."
-			]
 			tasks: [
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -574,6 +579,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -587,6 +598,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -600,6 +617,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -613,6 +636,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -626,6 +655,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -643,21 +678,21 @@
 			y: 2.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "60D53613768CA1F3"
-			title: "A Fire to Live By"
-			subtitle: "Warmth, light, and cooked food in one block."
-			description: [
-				"Build a &bCampfire&r and light it. It cooks raw food slowly without any fuel and throws off enough warmth to take the edge off a cold night."
-				"The chapter opens here. &6Cold Sweat&r will punish an unprepared night, so get a fire going before you do anything else."
-			]
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "13E28CB1BE5302E4"
 				table_id: 8142508126285856771L
-				title: "A small survival cache to settle the camp."
 				type: "loot"
 			}]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -670,19 +705,14 @@
 				item: { count: 1, id: "minecraft:campfire" }
 				type: "item"
 			}]
-			x: -8.5d
+			x: -7.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["6D08A993695D141E"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "29D759EFE44E2422"
-			title: "Chameleon Scale Armor"
-			subtitle: "One set for hot and cold both."
-			description: [
-				"Assemble the &bChameleon Scale&r leggings and helmet from molt. Because the lining adapts, this set keeps you comfortable in a desert and a snowfield without swapping gear at the border."
-				"It is the survival armor you settle on once you stop fighting the weather one biome at a time."
-			]
 			rewards: [{
 				id: "5A236F7DAF444AA0"
 				item: {
@@ -694,11 +724,16 @@
 					count: 1
 					id: "cold_sweat:chameleon_boots"
 				}
-				title: "The matching Chameleon boots to finish the set."
 				type: "item"
 			}]
 			tasks: [
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -712,6 +747,12 @@
 					type: "item"
 				}
 				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
 					SkillsLevel: {
 						category: ""
 						check: 0b
@@ -731,15 +772,16 @@
 		{
 			dependencies: ["340000000000141D"]
 			disable_recipe_mod: false
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "3CA98E14B6A82FF5"
-			title: "Hoglin Hide"
-			subtitle: "Lining that keeps the heat out."
-			description: [
-				"Bring back &bHoglin Hide&r from the warp of the Nether or from hoglins you can reach early. &6Cold Sweat&r treats it as heat insulation, the counterpart to &bgoat fur&r for hot places."
-				"Stock it before any deep dig or lava-heavy build, where overheating becomes the real threat."
-			]
 			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
 				SkillsLevel: {
 					category: ""
 					check: 0b
@@ -755,6 +797,43 @@
 			}]
 			x: -4.0d
 			y: -6.0d
+		}
+		{
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				id: "minecraft:campfire"
+			}
+			id: "3400000000009000"
+			invisible: true
+			optional: true
+			rewards: [
+				{
+					auto: "enabled"
+					command: "/astages add {p} dark_ages true true"
+					id: "3400000000009001"
+					permission_level: 2
+					silent: true
+					team_reward: true
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/advancement grant {p} only aoa:age/dark_ages"
+					id: "3400000000009002"
+					permission_level: 2
+					silent: true
+					team_reward: true
+					type: "command"
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [ ]
+			x: 12.0d
+			y: 12.0d
 		}
 	]
 }

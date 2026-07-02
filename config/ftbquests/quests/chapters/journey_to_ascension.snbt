@@ -20,26 +20,6 @@
 				id: "minecraft:campfire"
 			}
 			id: "5350010000010000"
-			rewards: [
-				{
-					auto: "enabled"
-					command: "/astages add {p} dark_ages true true"
-					id: "5350010000004000"
-					permission_level: 2
-					silent: true
-					team_reward: true
-					type: "command"
-				}
-				{
-					auto: "enabled"
-					command: "/advancement grant {p} only aoa:age/dark_ages"
-					id: "5350010000004001"
-					permission_level: 2
-					silent: true
-					team_reward: true
-					type: "command"
-				}
-			]
 			shape: "circle"
 			size: 1.0d
 			tasks: [ ]
@@ -47,7 +27,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["097AED7C91033D5E", "5350010000010000"]
+			dependencies: ["5350010000010000"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -56,34 +36,20 @@
 			id: "malum:iron_impetus"
 			}
 			id: "5350010000020000"
-			rewards: [
-				{
-					auto: "enabled"
-					command: "/astages add {p} medieval_times true true"
-					id: "5350010000004002"
-					permission_level: 2
-					silent: true
-					team_reward: true
-					type: "command"
-				}
-				{
-					auto: "enabled"
-					command: "/advancement grant {p} only aoa:age/medieval_times"
-					id: "5350010000004003"
-					permission_level: 2
-					silent: true
-					team_reward: true
-					type: "command"
-				}
-			]
 			shape: "hexagon"
 			size: 1.5d
-			tasks: [ ]
+			tasks: [{
+				id: "5350010000005000"
+				mode: "ALL"
+				required: 1L
+				targets: ["097AED7C91033D5E"]
+				type: "check_quest"
+			}]
 			x: 0.0d
 			y: 2.0d
 		}
 		{
-			dependencies: ["6D7E8F901A2B1054", "5350010000020000"]
+			dependencies: ["5350010000020000"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -92,34 +58,20 @@
 			id: "mowziesmobs:wrought_helmet"
 			}
 			id: "5350010000020001"
-			rewards: [
-				{
-					auto: "enabled"
-					command: "/astages add {p} the_renaissance true true"
-					id: "5350010000004004"
-					permission_level: 2
-					silent: true
-					team_reward: true
-					type: "command"
-				}
-				{
-					auto: "enabled"
-					command: "/advancement grant {p} only aoa:age/the_renaissance"
-					id: "5350010000004005"
-					permission_level: 2
-					silent: true
-					team_reward: true
-					type: "command"
-				}
-			]
 			shape: "hexagon"
 			size: 1.5d
-			tasks: [ ]
+			tasks: [{
+				id: "5350010000005001"
+				mode: "ALL"
+				required: 1L
+				targets: ["6D7E8F901A2B1054"]
+				type: "check_quest"
+			}]
 			x: 0.0d
 			y: 5.0d
 		}
 		{
-			dependencies: ["0B03101000000039", "5350010000020001"]
+			dependencies: ["5350010000020001"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -128,52 +80,42 @@
 			id: "minecraft:experience_bottle"
 			}
 			id: "5350010000020002"
-			rewards: [
-				{
-					auto: "enabled"
-					command: "/astages add {p} ren_magic_foundations_complete true true"
-					id: "5350010000004006"
-					permission_level: 2
-					silent: true
-					team_reward: true
-					type: "command"
-				}
-			]
 			shape: "circle"
 			size: 1.0d
-			tasks: [ ]
+			tasks: [{
+				id: "5350010000005002"
+				mode: "ALL"
+				required: 1L
+				targets: ["0B03101000000039"]
+				type: "check_quest"
+			}]
 			x: -7.0d
 			y: 8.0d
 		}
 		{
-			dependencies: ["0B03102000000062", "5350010000020001"]
+			dependencies: ["5350010000020001"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
 			hide_until_deps_visible: false
 			icon: {
-			id: "forbidden_arcanus:mundabitur_dust"
+			id: "neovitae:blood_pearl"
 			}
 			id: "5350010000020003"
-			rewards: [
-				{
-					auto: "enabled"
-					command: "/astages add {p} ren_nether_threshold_complete true true"
-					id: "5350010000004007"
-					permission_level: 2
-					silent: true
-					team_reward: true
-					type: "command"
-				}
-			]
 			shape: "circle"
 			size: 1.0d
-			tasks: [ ]
+			tasks: [{
+				id: "5350010000005003"
+				mode: "ALL"
+				required: 1L
+				targets: ["0B03102000000062"]
+				type: "check_quest"
+			}]
 			x: -5.0d
 			y: 8.0d
 		}
 		{
-			dependencies: ["0B03103000000031", "5350010000020001"]
+			dependencies: ["5350010000020001"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -182,25 +124,20 @@
 			id: "aether:bronze_dungeon_key"
 			}
 			id: "5350010000020004"
-			rewards: [
-				{
-					auto: "enabled"
-					command: "/astages add {p} ren_aether_literacy_complete true true"
-					id: "5350010000004008"
-					permission_level: 2
-					silent: true
-					team_reward: true
-					type: "command"
-				}
-			]
 			shape: "circle"
 			size: 1.0d
-			tasks: [ ]
+			tasks: [{
+				id: "5350010000005004"
+				mode: "ALL"
+				required: 1L
+				targets: ["0B03103000000031"]
+				type: "check_quest"
+			}]
 			x: -3.0d
 			y: 8.0d
 		}
 		{
-			dependencies: ["0B03104000000050", "5350010000020001"]
+			dependencies: ["5350010000020001"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -209,25 +146,20 @@
 			id: "eternal_starlight:orb_of_prophecy"
 			}
 			id: "5350010000020005"
-			rewards: [
-				{
-					auto: "enabled"
-					command: "/astages add {p} ren_starlight_observation_complete true true"
-					id: "5350010000004009"
-					permission_level: 2
-					silent: true
-					team_reward: true
-					type: "command"
-				}
-			]
 			shape: "circle"
 			size: 1.0d
-			tasks: [ ]
+			tasks: [{
+				id: "5350010000005005"
+				mode: "ALL"
+				required: 1L
+				targets: ["0B03104000000050"]
+				type: "check_quest"
+			}]
 			x: -1.0d
 			y: 8.0d
 		}
 		{
-			dependencies: ["0B03105000000050", "5350010000020001"]
+			dependencies: ["5350010000020001"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -236,25 +168,20 @@
 			id: "undergarden:utherium_crystal"
 			}
 			id: "5350010000020006"
-			rewards: [
-				{
-					auto: "enabled"
-					command: "/astages add {p} ren_undergarden_descent_complete true true"
-					id: "535001000000400A"
-					permission_level: 2
-					silent: true
-					team_reward: true
-					type: "command"
-				}
-			]
 			shape: "circle"
 			size: 1.0d
-			tasks: [ ]
+			tasks: [{
+				id: "5350010000005006"
+				mode: "ALL"
+				required: 1L
+				targets: ["0B03105000000050"]
+				type: "check_quest"
+			}]
 			x: 1.0d
 			y: 8.0d
 		}
 		{
-			dependencies: ["0B03106000000050", "5350010000020001"]
+			dependencies: ["5350010000020001"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -263,25 +190,20 @@
 			id: "deeperdarker:soul_dust"
 			}
 			id: "5350010000020007"
-			rewards: [
-				{
-					auto: "enabled"
-					command: "/astages add {p} ren_deeper_darker_otherside_complete true true"
-					id: "535001000000400B"
-					permission_level: 2
-					silent: true
-					team_reward: true
-					type: "command"
-				}
-			]
 			shape: "circle"
 			size: 1.0d
-			tasks: [ ]
+			tasks: [{
+				id: "5350010000005007"
+				mode: "ALL"
+				required: 1L
+				targets: ["0B03106000000050"]
+				type: "check_quest"
+			}]
 			x: 3.0d
 			y: 8.0d
 		}
 		{
-			dependencies: ["0B03107000000050", "5350010000020001"]
+			dependencies: ["5350010000020001"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -290,25 +212,20 @@
 			id: "minecraft:lectern"
 			}
 			id: "5350010000020008"
-			rewards: [
-				{
-					auto: "enabled"
-					command: "/astages add {p} ren_archive_recordkeeping_complete true true"
-					id: "535001000000400C"
-					permission_level: 2
-					silent: true
-					team_reward: true
-					type: "command"
-				}
-			]
 			shape: "circle"
 			size: 1.0d
-			tasks: [ ]
+			tasks: [{
+				id: "5350010000005008"
+				mode: "ALL"
+				required: 1L
+				targets: ["0B03107000000050"]
+				type: "check_quest"
+			}]
 			x: 5.0d
 			y: 8.0d
 		}
 		{
-			dependencies: ["0B031080000000F2", "5350010000020001"]
+			dependencies: ["5350010000020001"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -317,25 +234,20 @@
 			id: "theurgy:divination_rod_t2"
 			}
 			id: "5350010000020009"
-			rewards: [
-				{
-					auto: "enabled"
-					command: "/astages add {p} ren_observation_experimentation_complete true true"
-					id: "535001000000400D"
-					permission_level: 2
-					silent: true
-					team_reward: true
-					type: "command"
-				}
-			]
 			shape: "circle"
 			size: 1.0d
-			tasks: [ ]
+			tasks: [{
+				id: "5350010000005009"
+				mode: "ALL"
+				required: 1L
+				targets: ["0B031080000000F2"]
+				type: "check_quest"
+			}]
 			x: 7.0d
 			y: 8.0d
 		}
 		{
-			dependencies: ["0B03109000000060", "5350010000020001"]
+			dependencies: ["5350010000020001"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -344,25 +256,20 @@
 			id: "unusualend:prismalite_gem"
 			}
 			id: "535001000002000A"
-			rewards: [
-				{
-					auto: "enabled"
-					command: "/astages add {p} ren_end_threshold_complete true true"
-					id: "535001000000400E"
-					permission_level: 2
-					silent: true
-					team_reward: true
-					type: "command"
-				}
-			]
 			shape: "circle"
 			size: 1.0d
-			tasks: [ ]
+			tasks: [{
+				id: "535001000000500A"
+				mode: "ALL"
+				required: 1L
+				targets: ["0B03109000000060"]
+				type: "check_quest"
+			}]
 			x: -1.0d
 			y: 10.0d
 		}
 		{
-			dependencies: ["0B0310A000000014", "5350010000020001"]
+			dependencies: ["5350010000020001"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -371,34 +278,20 @@
 			id: "cataclysm:cursium_ingot"
 			}
 			id: "535001000002000B"
-			rewards: [
-				{
-					auto: "enabled"
-					command: "/astages add {p} ren_maledictus_defeated true true"
-					id: "535001000000400F"
-					permission_level: 2
-					silent: true
-					team_reward: true
-					type: "command"
-				}
-				{
-					auto: "enabled"
-					command: "/astages add {p} ren_maledictus_vigil_complete true true"
-					id: "5350010000004010"
-					permission_level: 2
-					silent: true
-					team_reward: true
-					type: "command"
-				}
-			]
 			shape: "circle"
 			size: 1.0d
-			tasks: [ ]
+			tasks: [{
+				id: "535001000000500B"
+				mode: "ALL"
+				required: 1L
+				targets: ["0B0310A000000014"]
+				type: "check_quest"
+			}]
 			x: 1.0d
 			y: 10.0d
 		}
 		{
-			dependencies: ["0B0310A0000000F0", "5350010000020001"]
+			dependencies: ["5350010000020002", "5350010000020003", "5350010000020004", "5350010000020005", "5350010000020006", "5350010000020007", "5350010000020008", "5350010000020009", "535001000002000A", "535001000002000B"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -407,43 +300,20 @@
 			id: "modern_industrialization:steel_dust"
 			}
 			id: "535001000002000C"
-			rewards: [
-				{
-					auto: "enabled"
-					command: "/astages add {p} industrial_revolution true true"
-					id: "5350010000004011"
-					permission_level: 2
-					silent: true
-					team_reward: true
-					type: "command"
-				}
-				{
-					auto: "enabled"
-					command: "/astages add {p} ren_seal_obtained true true"
-					id: "5350010000004012"
-					permission_level: 2
-					silent: true
-					team_reward: true
-					type: "command"
-				}
-				{
-					auto: "enabled"
-					command: "/advancement grant {p} only aoa:age/industrial_revolution"
-					id: "5350010000004013"
-					permission_level: 2
-					silent: true
-					team_reward: true
-					type: "command"
-				}
-			]
 			shape: "hexagon"
 			size: 1.5d
-			tasks: [ ]
+			tasks: [{
+				id: "535001000000500C"
+				mode: "ALL"
+				required: 1L
+				targets: ["0B0310A0000000F0"]
+				type: "check_quest"
+			}]
 			x: 0.0d
 			y: 12.0d
 		}
 		{
-			dependencies: ["4954021000000016", "535001000002000C"]
+			dependencies: ["535001000002000C"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -452,25 +322,20 @@
 			id: "extended_industrialization:large_steam_macerator"
 			}
 			id: "535001000002000D"
-			rewards: [
-				{
-					auto: "enabled"
-					command: "/astages add {p} ir_factory_discipline_complete true true"
-					id: "5350010000004014"
-					permission_level: 2
-					silent: true
-					team_reward: true
-					type: "command"
-				}
-			]
 			shape: "circle"
 			size: 1.0d
-			tasks: [ ]
+			tasks: [{
+				id: "535001000000500D"
+				mode: "ALL"
+				required: 1L
+				targets: ["4954021000000016"]
+				type: "check_quest"
+			}]
 			x: -5.0d
 			y: 15.0d
 		}
 		{
-			dependencies: ["4954051000000011", "535001000002000C"]
+			dependencies: ["535001000002000C"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -479,25 +344,20 @@
 			id: "createaddition:electric_motor"
 			}
 			id: "535001000002000E"
-			rewards: [
-				{
-					auto: "enabled"
-					command: "/astages add {p} ir_power_motion_complete true true"
-					id: "5350010000004015"
-					permission_level: 2
-					silent: true
-					team_reward: true
-					type: "command"
-				}
-			]
 			shape: "circle"
 			size: 1.0d
-			tasks: [ ]
+			tasks: [{
+				id: "535001000000500E"
+				mode: "ALL"
+				required: 1L
+				targets: ["4954051000000011"]
+				type: "check_quest"
+			}]
 			x: -3.0d
 			y: 15.0d
 		}
 		{
-			dependencies: ["495406100000001D", "535001000002000C"]
+			dependencies: ["535001000002000C"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -506,25 +366,20 @@
 			id: "pneumaticcraft:thermopneumatic_processing_plant"
 			}
 			id: "535001000002000F"
-			rewards: [
-				{
-					auto: "enabled"
-					command: "/astages add {p} ir_pressure_chemistry_entry_complete true true"
-					id: "5350010000004016"
-					permission_level: 2
-					silent: true
-					team_reward: true
-					type: "command"
-				}
-			]
 			shape: "circle"
 			size: 1.0d
-			tasks: [ ]
+			tasks: [{
+				id: "535001000000500F"
+				mode: "ALL"
+				required: 1L
+				targets: ["495406100000001D"]
+				type: "check_quest"
+			}]
 			x: -1.0d
 			y: 15.0d
 		}
 		{
-			dependencies: ["49540A100000000F", "535001000002000C"]
+			dependencies: ["535001000002000C"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -533,25 +388,20 @@
 			id: "integrateddynamics:materializer"
 			}
 			id: "5350010000020010"
-			rewards: [
-				{
-					auto: "enabled"
-					command: "/astages add {p} ir_digital_logistics_complete true true"
-					id: "5350010000004017"
-					permission_level: 2
-					silent: true
-					team_reward: true
-					type: "command"
-				}
-			]
 			shape: "circle"
 			size: 1.0d
-			tasks: [ ]
+			tasks: [{
+				id: "5350010000005010"
+				mode: "ALL"
+				required: 1L
+				targets: ["49540A100000000F"]
+				type: "check_quest"
+			}]
 			x: 1.0d
 			y: 15.0d
 		}
 		{
-			dependencies: ["49540B1000000015", "535001000002000C"]
+			dependencies: ["535001000002000C"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -560,25 +410,20 @@
 			id: "pneumaticcraft:spawner_agitator"
 			}
 			id: "5350010000020011"
-			rewards: [
-				{
-					auto: "enabled"
-					command: "/astages add {p} ir_magic_feedstock_complete true true"
-					id: "5350010000004018"
-					permission_level: 2
-					silent: true
-					team_reward: true
-					type: "command"
-				}
-			]
 			shape: "circle"
 			size: 1.0d
-			tasks: [ ]
+			tasks: [{
+				id: "5350010000005011"
+				mode: "ALL"
+				required: 1L
+				targets: ["49540B1000000015"]
+				type: "check_quest"
+			}]
 			x: 3.0d
 			y: 15.0d
 		}
 		{
-			dependencies: ["49540C1000000006", "535001000002000C"]
+			dependencies: ["535001000002000C"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -587,25 +432,20 @@
 			id: "bosses_of_mass_destruction:obsidian_heart"
 			}
 			id: "5350010000020012"
-			rewards: [
-				{
-					auto: "enabled"
-					command: "/astages add {p} obsidilith_defeated true true"
-					id: "5350010000004019"
-					permission_level: 2
-					silent: true
-					team_reward: true
-					type: "command"
-				}
-			]
 			shape: "circle"
 			size: 1.0d
-			tasks: [ ]
+			tasks: [{
+				id: "5350010000005012"
+				mode: "ALL"
+				required: 1L
+				targets: ["49540C1000000006"]
+				type: "check_quest"
+			}]
 			x: 5.0d
 			y: 15.0d
 		}
 		{
-			dependencies: ["4954631000000000", "535001000002000C"]
+			dependencies: ["535001000002000D", "535001000002000E", "535001000002000F", "5350010000020010", "5350010000020011", "5350010000020012"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -614,43 +454,20 @@
 			id: "bosses_of_mass_destruction:obsidian_heart"
 			}
 			id: "5350010000020013"
-			rewards: [
-				{
-					auto: "enabled"
-					command: "/astages add {p} ir_capstone_complete true true"
-					id: "535001000000401A"
-					permission_level: 2
-					silent: true
-					team_reward: true
-					type: "command"
-				}
-				{
-					auto: "enabled"
-					command: "/astages add {p} gilded_age true true"
-					id: "535001000000401B"
-					permission_level: 2
-					silent: true
-					team_reward: true
-					type: "command"
-				}
-				{
-					auto: "enabled"
-					command: "/advancement grant {p} only aoa:age/gilded_age"
-					id: "535001000000401C"
-					permission_level: 2
-					silent: true
-					team_reward: true
-					type: "command"
-				}
-			]
 			shape: "hexagon"
 			size: 1.5d
-			tasks: [ ]
+			tasks: [{
+				id: "5350010000005013"
+				mode: "ALL"
+				required: 1L
+				targets: ["4954631000000000"]
+				type: "check_quest"
+			}]
 			x: 0.0d
 			y: 17.0d
 		}
 		{
-			dependencies: ["5246011000000007", "5350010000020013"]
+			dependencies: ["5350010000020013"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -659,25 +476,20 @@
 			id: "industrialforegoing:laser_drill"
 			}
 			id: "5350010000020014"
-			rewards: [
-				{
-					auto: "enabled"
-					command: "/astages add {p} g_biotech_hazard_readiness_complete true true"
-					id: "535001000000401D"
-					permission_level: 2
-					silent: true
-					team_reward: true
-					type: "command"
-				}
-			]
 			shape: "circle"
 			size: 1.0d
-			tasks: [ ]
+			tasks: [{
+				id: "5350010000005014"
+				mode: "ALL"
+				required: 1L
+				targets: ["5246011000000007"]
+				type: "check_quest"
+			}]
 			x: -6.0d
 			y: 20.0d
 		}
 		{
-			dependencies: ["4D4E011000000006", "5350010000020013"]
+			dependencies: ["5350010000020013"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -686,25 +498,20 @@
 			id: "refinedstorage:autocrafter"
 			}
 			id: "5350010000020015"
-			rewards: [
-				{
-					auto: "enabled"
-					command: "/astages add {p} g_scaled_logistics_computation_complete true true"
-					id: "535001000000401E"
-					permission_level: 2
-					silent: true
-					team_reward: true
-					type: "command"
-				}
-			]
 			shape: "circle"
 			size: 1.0d
-			tasks: [ ]
+			tasks: [{
+				id: "5350010000005015"
+				mode: "ALL"
+				required: 1L
+				targets: ["4D4E011000000006"]
+				type: "check_quest"
+			}]
 			x: -4.0d
 			y: 20.0d
 		}
 		{
-			dependencies: ["4D4F011000000005", "5350010000020013"]
+			dependencies: ["5350010000020013"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -713,25 +520,20 @@
 			id: "actuallyadditions:empowerer"
 			}
 			id: "5350010000020016"
-			rewards: [
-				{
-					auto: "enabled"
-					command: "/astages add {p} g_advanced_applied_industry_complete true true"
-					id: "535001000000401F"
-					permission_level: 2
-					silent: true
-					team_reward: true
-					type: "command"
-				}
-			]
 			shape: "circle"
 			size: 1.0d
-			tasks: [ ]
+			tasks: [{
+				id: "5350010000005016"
+				mode: "ALL"
+				required: 1L
+				targets: ["4D4F011000000005"]
+				type: "check_quest"
+			}]
 			x: -2.0d
 			y: 20.0d
 		}
 		{
-			dependencies: ["4D50011000000003", "5350010000020013"]
+			dependencies: ["5350010000020013"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -740,25 +542,20 @@
 			id: "nautec:aquatic_catalyst"
 			}
 			id: "5350010000020017"
-			rewards: [
-				{
-					auto: "enabled"
-					command: "/astages add {p} g_nautec_oceanic_industry_complete true true"
-					id: "5350010000004020"
-					permission_level: 2
-					silent: true
-					team_reward: true
-					type: "command"
-				}
-			]
 			shape: "circle"
 			size: 1.0d
-			tasks: [ ]
+			tasks: [{
+				id: "5350010000005017"
+				mode: "ALL"
+				required: 1L
+				targets: ["4D50011000000003"]
+				type: "check_quest"
+			}]
 			x: 0.0d
 			y: 20.0d
 		}
 		{
-			dependencies: ["4F47011000000002", "5350010000020013"]
+			dependencies: ["5350010000020013"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -767,25 +564,20 @@
 			id: "oritech:processing_unit"
 			}
 			id: "5350010000020018"
-			rewards: [
-				{
-					auto: "enabled"
-					command: "/astages add {p} g_atomic_license_complete true true"
-					id: "5350010000004021"
-					permission_level: 2
-					silent: true
-					team_reward: true
-					type: "command"
-				}
-			]
 			shape: "circle"
 			size: 1.0d
-			tasks: [ ]
+			tasks: [{
+				id: "5350010000005018"
+				mode: "ALL"
+				required: 1L
+				targets: ["4F47011000000002"]
+				type: "check_quest"
+			}]
 			x: 2.0d
 			y: 20.0d
 		}
 		{
-			dependencies: ["4341011000000004", "5350010000020013"]
+			dependencies: ["5350010000020013"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -794,25 +586,20 @@
 			id: "spectrum:spirit_instiller"
 			}
 			id: "5350010000020019"
-			rewards: [
-				{
-					auto: "enabled"
-					command: "/astages add {p} g_magic_authorization_complete true true"
-					id: "5350010000004022"
-					permission_level: 2
-					silent: true
-					team_reward: true
-					type: "command"
-				}
-			]
 			shape: "circle"
 			size: 1.0d
-			tasks: [ ]
+			tasks: [{
+				id: "5350010000005019"
+				mode: "ALL"
+				required: 1L
+				targets: ["4341011000000004"]
+				type: "check_quest"
+			}]
 			x: 4.0d
 			y: 20.0d
 		}
 		{
-			dependencies: ["5057011000000003", "5350010000020013"]
+			dependencies: ["5350010000020013"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -821,34 +608,20 @@
 			id: "astral_dimension:void_boots_helmet"
 			}
 			id: "535001000002001A"
-			rewards: [
-				{
-					auto: "enabled"
-					command: "/astages add {p} void_titan_defeated true true"
-					id: "5350010000004023"
-					permission_level: 2
-					silent: true
-					team_reward: true
-					type: "command"
-				}
-				{
-					auto: "enabled"
-					command: "/astages add {p} g_temporal_authorization_complete true true"
-					id: "5350010000004024"
-					permission_level: 2
-					silent: true
-					team_reward: true
-					type: "command"
-				}
-			]
 			shape: "circle"
 			size: 1.0d
-			tasks: [ ]
+			tasks: [{
+				id: "535001000000501A"
+				mode: "ALL"
+				required: 1L
+				targets: ["5057011000000003"]
+				type: "check_quest"
+			}]
 			x: 6.0d
 			y: 20.0d
 		}
 		{
-			dependencies: ["5057011000000004", "5350010000020013"]
+			dependencies: ["5350010000020014", "5350010000020015", "5350010000020016", "5350010000020017", "5350010000020018", "5350010000020019", "535001000002001A"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -857,34 +630,20 @@
 			id: "mekanism:atomic_disassembler"
 			}
 			id: "535001000002001B"
-			rewards: [
-				{
-					auto: "enabled"
-					command: "/astages add {p} atomic true true"
-					id: "5350010000004025"
-					permission_level: 2
-					silent: true
-					team_reward: true
-					type: "command"
-				}
-				{
-					auto: "enabled"
-					command: "/advancement grant {p} only aoa:age/atomic"
-					id: "5350010000004026"
-					permission_level: 2
-					silent: true
-					team_reward: true
-					type: "command"
-				}
-			]
 			shape: "hexagon"
 			size: 1.5d
-			tasks: [ ]
+			tasks: [{
+				id: "535001000000501B"
+				mode: "ALL"
+				required: 1L
+				targets: ["5057011000000004"]
+				type: "check_quest"
+			}]
 			x: 0.0d
 			y: 22.0d
 		}
 		{
-			dependencies: ["4E44010000010004", "535001000002001B"]
+			dependencies: ["535001000002001B"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -893,34 +652,20 @@
 			id: "createnuclear:reactor_core"
 			}
 			id: "535001000002001C"
-			rewards: [
-				{
-					auto: "enabled"
-					command: "/astages add {p} at_radiological_materials_complete true true"
-					id: "5350010000004027"
-					permission_level: 2
-					silent: true
-					team_reward: true
-					type: "command"
-				}
-				{
-					auto: "enabled"
-					command: "/astages add {p} at_create_nuclear_mainline_complete true true"
-					id: "5350010000004028"
-					permission_level: 2
-					silent: true
-					team_reward: true
-					type: "command"
-				}
-			]
 			shape: "circle"
 			size: 1.0d
-			tasks: [ ]
+			tasks: [{
+				id: "535001000000501C"
+				mode: "ALL"
+				required: 1L
+				targets: ["4E44010000010004"]
+				type: "check_quest"
+			}]
 			x: -7.0d
 			y: 25.0d
 		}
 		{
-			dependencies: ["4348010000010004", "535001000002001B"]
+			dependencies: ["535001000002001B"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -929,25 +674,20 @@
 			id: "mekanismgenerators:fission_reactor_casing"
 			}
 			id: "535001000002001D"
-			rewards: [
-				{
-					auto: "enabled"
-					command: "/astages add {p} at_nuclear_engineering_complete true true"
-					id: "5350010000004029"
-					permission_level: 2
-					silent: true
-					team_reward: true
-					type: "command"
-				}
-			]
 			shape: "circle"
 			size: 1.0d
-			tasks: [ ]
+			tasks: [{
+				id: "535001000000501D"
+				mode: "ALL"
+				required: 1L
+				targets: ["4348010000010004"]
+				type: "check_quest"
+			}]
 			x: -5.0d
 			y: 25.0d
 		}
 		{
-			dependencies: ["4D53010000010003", "535001000002001B"]
+			dependencies: ["535001000002001B"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -956,34 +696,20 @@
 			id: "nuclearscience:logisticscontroller"
 			}
 			id: "535001000002001E"
-			rewards: [
-				{
-					auto: "enabled"
-					command: "/astages add {p} at_reactor_control_complete true true"
-					id: "535001000000402A"
-					permission_level: 2
-					silent: true
-					team_reward: true
-					type: "command"
-				}
-				{
-					auto: "enabled"
-					command: "/astages add {p} at_neural_industry_complete true true"
-					id: "535001000000402B"
-					permission_level: 2
-					silent: true
-					team_reward: true
-					type: "command"
-				}
-			]
 			shape: "circle"
 			size: 1.0d
-			tasks: [ ]
+			tasks: [{
+				id: "535001000000501E"
+				mode: "ALL"
+				required: 1L
+				targets: ["4D53010000010003"]
+				type: "check_quest"
+			}]
 			x: -3.0d
 			y: 25.0d
 		}
 		{
-			dependencies: ["5457010000010003", "535001000002001B"]
+			dependencies: ["535001000002001B"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -992,34 +718,20 @@
 			id: "ballistix:radar"
 			}
 			id: "535001000002001F"
-			rewards: [
-				{
-					auto: "enabled"
-					command: "/astages add {p} at_mff_containment_complete true true"
-					id: "535001000000402C"
-					permission_level: 2
-					silent: true
-					team_reward: true
-					type: "command"
-				}
-				{
-					auto: "enabled"
-					command: "/astages add {p} at_ballistix_policy_complete true true"
-					id: "535001000000402D"
-					permission_level: 2
-					silent: true
-					team_reward: true
-					type: "command"
-				}
-			]
 			shape: "circle"
 			size: 1.0d
-			tasks: [ ]
+			tasks: [{
+				id: "535001000000501F"
+				mode: "ALL"
+				required: 1L
+				targets: ["5457010000010003"]
+				type: "check_quest"
+			}]
 			x: -1.0d
 			y: 25.0d
 		}
 		{
-			dependencies: ["4646010000010000", "535001000002001B"]
+			dependencies: ["535001000002001B"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -1028,25 +740,20 @@
 			id: "macabre:valamon_heart"
 			}
 			id: "5350010000020020"
-			rewards: [
-				{
-					auto: "enabled"
-					command: "/astages add {p} macabre_valamon_defeated true true"
-					id: "535001000000402E"
-					permission_level: 2
-					silent: true
-					team_reward: true
-					type: "command"
-				}
-			]
 			shape: "circle"
 			size: 1.0d
-			tasks: [ ]
+			tasks: [{
+				id: "5350010000005020"
+				mode: "ALL"
+				required: 1L
+				targets: ["4646010000010000"]
+				type: "check_quest"
+			}]
 			x: 1.0d
 			y: 25.0d
 		}
 		{
-			dependencies: ["4646010000010001", "535001000002001B"]
+			dependencies: ["535001000002001B"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -1055,25 +762,20 @@
 			id: "macabre:gomoria_heart"
 			}
 			id: "5350010000020021"
-			rewards: [
-				{
-					auto: "enabled"
-					command: "/astages add {p} macabre_gomoria_defeated true true"
-					id: "535001000000402F"
-					permission_level: 2
-					silent: true
-					team_reward: true
-					type: "command"
-				}
-			]
 			shape: "circle"
 			size: 1.0d
-			tasks: [ ]
+			tasks: [{
+				id: "5350010000005021"
+				mode: "ALL"
+				required: 1L
+				targets: ["4646010000010001"]
+				type: "check_quest"
+			}]
 			x: 3.0d
 			y: 25.0d
 		}
 		{
-			dependencies: ["4646010000010002", "535001000002001B"]
+			dependencies: ["535001000002001B"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -1082,25 +784,20 @@
 			id: "macabre:gargamaw_heart"
 			}
 			id: "5350010000020022"
-			rewards: [
-				{
-					auto: "enabled"
-					command: "/astages add {p} macabre_gargamaw_defeated true true"
-					id: "5350010000004030"
-					permission_level: 2
-					silent: true
-					team_reward: true
-					type: "command"
-				}
-			]
 			shape: "circle"
 			size: 1.0d
-			tasks: [ ]
+			tasks: [{
+				id: "5350010000005022"
+				mode: "ALL"
+				required: 1L
+				targets: ["4646010000010002"]
+				type: "check_quest"
+			}]
 			x: 5.0d
 			y: 25.0d
 		}
 		{
-			dependencies: ["4646010000010003", "535001000002001B"]
+			dependencies: ["535001000002001B"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -1109,25 +806,20 @@
 			id: "macabre:baal_heart"
 			}
 			id: "5350010000020023"
-			rewards: [
-				{
-					auto: "enabled"
-					command: "/astages add {p} macabre_baal_defeated true true"
-					id: "5350010000004031"
-					permission_level: 2
-					silent: true
-					team_reward: true
-					type: "command"
-				}
-			]
 			shape: "circle"
 			size: 1.0d
-			tasks: [ ]
+			tasks: [{
+				id: "5350010000005023"
+				mode: "ALL"
+				required: 1L
+				targets: ["4646010000010003"]
+				type: "check_quest"
+			}]
 			x: 7.0d
 			y: 25.0d
 		}
 		{
-			dependencies: ["4358010000010001", "535001000002001B"]
+			dependencies: ["535001000002001B"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -1136,25 +828,20 @@
 			id: "alexscaves:tremorzilla_egg"
 			}
 			id: "5350010000020024"
-			rewards: [
-				{
-					auto: "enabled"
-					command: "/astages add {p} tremorzilla_defeated true true"
-					id: "5350010000004032"
-					permission_level: 2
-					silent: true
-					team_reward: true
-					type: "command"
-				}
-			]
 			shape: "circle"
 			size: 1.0d
-			tasks: [ ]
+			tasks: [{
+				id: "5350010000005024"
+				mode: "ALL"
+				required: 1L
+				targets: ["4358010000010001"]
+				type: "check_quest"
+			}]
 			x: -1.0d
 			y: 27.0d
 		}
 		{
-			dependencies: ["4358010000010002", "535001000002001B"]
+			dependencies: ["535001000002001B"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -1163,25 +850,20 @@
 			id: "fdbosses:justice_core"
 			}
 			id: "5350010000020025"
-			rewards: [
-				{
-					auto: "enabled"
-					command: "/astages add {p} geburah_defeated true true"
-					id: "5350010000004033"
-					permission_level: 2
-					silent: true
-					team_reward: true
-					type: "command"
-				}
-			]
 			shape: "circle"
 			size: 1.0d
-			tasks: [ ]
+			tasks: [{
+				id: "5350010000005025"
+				mode: "ALL"
+				required: 1L
+				targets: ["4358010000010002"]
+				type: "check_quest"
+			}]
 			x: 1.0d
 			y: 27.0d
 		}
 		{
-			dependencies: ["4358010000010003", "535001000002001B"]
+			dependencies: ["535001000002001C", "535001000002001D", "535001000002001E", "535001000002001F", "5350010000020020", "5350010000020021", "5350010000020022", "5350010000020023", "5350010000020024", "5350010000020025"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -1190,43 +872,20 @@
 			id: "fdbosses:justice_core"
 			}
 			id: "5350010000020026"
-			rewards: [
-				{
-					auto: "enabled"
-					command: "/astages add {p} at_capstone_complete true true"
-					id: "5350010000004034"
-					permission_level: 2
-					silent: true
-					team_reward: true
-					type: "command"
-				}
-				{
-					auto: "enabled"
-					command: "/astages add {p} otherworldly true true"
-					id: "5350010000004035"
-					permission_level: 2
-					silent: true
-					team_reward: true
-					type: "command"
-				}
-				{
-					auto: "enabled"
-					command: "/advancement grant {p} only aoa:age/otherworldly"
-					id: "5350010000004036"
-					permission_level: 2
-					silent: true
-					team_reward: true
-					type: "command"
-				}
-			]
 			shape: "hexagon"
 			size: 1.5d
-			tasks: [ ]
+			tasks: [{
+				id: "5350010000005026"
+				mode: "ALL"
+				required: 1L
+				targets: ["4358010000010003"]
+				type: "check_quest"
+			}]
 			x: 0.0d
 			y: 29.0d
 		}
 		{
-			dependencies: ["4C57010000010004", "5350010000020026"]
+			dependencies: ["5350010000020026"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -1235,25 +894,20 @@
 			id: "stellaris:rocket"
 			}
 			id: "5350010000020027"
-			rewards: [
-				{
-					auto: "enabled"
-					command: "/astages add {p} ow_launch_offworld_logistics_complete true true"
-					id: "5350010000004037"
-					permission_level: 2
-					silent: true
-					team_reward: true
-					type: "command"
-				}
-			]
 			shape: "circle"
 			size: 1.0d
-			tasks: [ ]
+			tasks: [{
+				id: "5350010000005027"
+				mode: "ALL"
+				required: 1L
+				targets: ["4C57010000010004"]
+				type: "check_quest"
+			}]
 			x: -6.0d
 			y: 32.0d
 		}
 		{
-			dependencies: ["4C58010000010005", "5350010000020026"]
+			dependencies: ["5350010000020026"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -1262,25 +916,20 @@
 			id: "stellaris:desh_ingot"
 			}
 			id: "5350010000020028"
-			rewards: [
-				{
-					auto: "enabled"
-					command: "/astages add {p} ow_strange_dimension_operations_complete true true"
-					id: "5350010000004038"
-					permission_level: 2
-					silent: true
-					team_reward: true
-					type: "command"
-				}
-			]
 			shape: "circle"
 			size: 1.0d
-			tasks: [ ]
+			tasks: [{
+				id: "5350010000005028"
+				mode: "ALL"
+				required: 1L
+				targets: ["4C58010000010005"]
+				type: "check_quest"
+			}]
 			x: -4.0d
 			y: 32.0d
 		}
 		{
-			dependencies: ["4454010000010005", "5350010000020026"]
+			dependencies: ["5350010000020026"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -1289,25 +938,20 @@
 			id: "draconicevolution:energy_transfuser"
 			}
 			id: "5350010000020029"
-			rewards: [
-				{
-					auto: "enabled"
-					command: "/astages add {p} ow_draconic_technology_complete true true"
-					id: "5350010000004039"
-					permission_level: 2
-					silent: true
-					team_reward: true
-					type: "command"
-				}
-			]
 			shape: "circle"
 			size: 1.0d
-			tasks: [ ]
+			tasks: [{
+				id: "5350010000005029"
+				mode: "ALL"
+				required: 1L
+				targets: ["4454010000010005"]
+				type: "check_quest"
+			}]
 			x: -2.0d
 			y: 32.0d
 		}
 		{
-			dependencies: ["4C59010000010004", "5350010000020026"]
+			dependencies: ["5350010000020026"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -1316,25 +960,20 @@
 			id: "stellaris:antenna"
 			}
 			id: "535001000002002A"
-			rewards: [
-				{
-					auto: "enabled"
-					command: "/astages add {p} ow_dyson_project_complete true true"
-					id: "535001000000403A"
-					permission_level: 2
-					silent: true
-					team_reward: true
-					type: "command"
-				}
-			]
 			shape: "circle"
 			size: 1.0d
-			tasks: [ ]
+			tasks: [{
+				id: "535001000000502A"
+				mode: "ALL"
+				required: 1L
+				targets: ["4C59010000010004"]
+				type: "check_quest"
+			}]
 			x: 0.0d
 			y: 32.0d
 		}
 		{
-			dependencies: ["4443010000010006", "5350010000020026"]
+			dependencies: ["5350010000020026"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -1343,25 +982,20 @@
 			id: "advanced_ae:quantum_multi_threader"
 			}
 			id: "535001000002002B"
-			rewards: [
-				{
-					auto: "enabled"
-					command: "/astages add {p} ow_interdimensional_infrastructure_complete true true"
-					id: "535001000000403B"
-					permission_level: 2
-					silent: true
-					team_reward: true
-					type: "command"
-				}
-			]
 			shape: "circle"
 			size: 1.0d
-			tasks: [ ]
+			tasks: [{
+				id: "535001000000502B"
+				mode: "ALL"
+				required: 1L
+				targets: ["4443010000010006"]
+				type: "check_quest"
+			}]
 			x: 2.0d
 			y: 32.0d
 		}
 		{
-			dependencies: ["4256010000010004", "5350010000020026"]
+			dependencies: ["5350010000020026"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -1370,25 +1004,20 @@
 			id: "cataclysm:tidal_claws"
 			}
 			id: "535001000002002C"
-			rewards: [
-				{
-					auto: "enabled"
-					command: "/astages add {p} leviathan_defeated true true"
-					id: "535001000000403C"
-					permission_level: 2
-					silent: true
-					team_reward: true
-					type: "command"
-				}
-			]
 			shape: "circle"
 			size: 1.0d
-			tasks: [ ]
+			tasks: [{
+				id: "535001000000502C"
+				mode: "ALL"
+				required: 1L
+				targets: ["4256010000010004"]
+				type: "check_quest"
+			}]
 			x: 4.0d
 			y: 32.0d
 		}
 		{
-			dependencies: ["4256010000010005", "5350010000020026"]
+			dependencies: ["5350010000020026"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -1397,25 +1026,20 @@
 			id: "mekanismgenerators:hohlraum"
 			}
 			id: "535001000002002D"
-			rewards: [
-				{
-					auto: "enabled"
-					command: "/astages add {p} ow_beyond_the_veil_theme_complete true true"
-					id: "535001000000403D"
-					permission_level: 2
-					silent: true
-					team_reward: true
-					type: "command"
-				}
-			]
 			shape: "circle"
 			size: 1.0d
-			tasks: [ ]
+			tasks: [{
+				id: "535001000000502D"
+				mode: "ALL"
+				required: 1L
+				targets: ["4256010000010005"]
+				type: "check_quest"
+			}]
 			x: 6.0d
 			y: 32.0d
 		}
 		{
-			dependencies: ["4256010000010006", "5350010000020026"]
+			dependencies: ["5350010000020027", "5350010000020028", "5350010000020029", "535001000002002A", "535001000002002B", "535001000002002C", "535001000002002D"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -1424,43 +1048,20 @@
 			id: "cataclysm:tidal_claws"
 			}
 			id: "535001000002002E"
-			rewards: [
-				{
-					auto: "enabled"
-					command: "/astages add {p} ow_capstone_complete true true"
-					id: "535001000000403E"
-					permission_level: 2
-					silent: true
-					team_reward: true
-					type: "command"
-				}
-				{
-					auto: "enabled"
-					command: "/astages add {p} ascension true true"
-					id: "535001000000403F"
-					permission_level: 2
-					silent: true
-					team_reward: true
-					type: "command"
-				}
-				{
-					auto: "enabled"
-					command: "/advancement grant {p} only aoa:age/ascension"
-					id: "5350010000004040"
-					permission_level: 2
-					silent: true
-					team_reward: true
-					type: "command"
-				}
-			]
 			shape: "hexagon"
 			size: 1.5d
-			tasks: [ ]
+			tasks: [{
+				id: "535001000000502E"
+				mode: "ALL"
+				required: 1L
+				targets: ["4256010000010006"]
+				type: "check_quest"
+			}]
 			x: 0.0d
 			y: 34.0d
 		}
 		{
-			dependencies: ["5449010000010006", "535001000002002E"]
+			dependencies: ["535001000002002E"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -1469,25 +1070,20 @@
 			id: "extendedcrafting:ultimate_catalyst"
 			}
 			id: "535001000002002F"
-			rewards: [
-				{
-					auto: "enabled"
-					command: "/astages add {p} asc_final_crafting_surface_complete true true"
-					id: "5350010000004041"
-					permission_level: 2
-					silent: true
-					team_reward: true
-					type: "command"
-				}
-			]
 			shape: "circle"
 			size: 1.0d
-			tasks: [ ]
-			x: -5.0d
+			tasks: [{
+				id: "535001000000502F"
+				mode: "ALL"
+				required: 1L
+				targets: ["5449010000010006"]
+				type: "check_quest"
+			}]
+			x: -6.0d
 			y: 37.0d
 		}
 		{
-			dependencies: ["5044010000010006", "535001000002002E"]
+			dependencies: ["535001000002002E"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -1496,25 +1092,42 @@
 			id: "avaritia:eternal_singularity"
 			}
 			id: "5350010000020030"
-			rewards: [
-				{
-					auto: "enabled"
-					command: "/astages add {p} asc_avaritia_singularity_pressure_complete true true"
-					id: "5350010000004042"
-					permission_level: 2
-					silent: true
-					team_reward: true
-					type: "command"
-				}
-			]
 			shape: "circle"
 			size: 1.0d
-			tasks: [ ]
-			x: -3.0d
+			tasks: [{
+				id: "5350010000005030"
+				mode: "ALL"
+				required: 1L
+				targets: ["5044010000010006"]
+				type: "check_quest"
+			}]
+			x: -4.0d
 			y: 37.0d
 		}
 		{
-			dependencies: ["5347010000010002", "535001000002002E"]
+			dependencies: ["535001000002002E"]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+			id: "draconicevolution:draconic_energy_core"
+			}
+			id: "5350010000020031"
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				id: "5350010000005031"
+				mode: "ALL"
+				required: 1L
+				targets: ["494D010000010006"]
+				type: "check_quest"
+			}]
+			x: -2.0d
+			y: 37.0d
+		}
+		{
+			dependencies: ["535001000002002E"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -1522,26 +1135,21 @@
 			icon: {
 			id: "oritech:black_hole_block"
 			}
-			id: "5350010000020031"
-			rewards: [
-				{
-					auto: "enabled"
-					command: "/astages add {p} asc_oritech_apex_complete true true"
-					id: "5350010000004043"
-					permission_level: 2
-					silent: true
-					team_reward: true
-					type: "command"
-				}
-			]
+			id: "5350010000020032"
 			shape: "circle"
 			size: 1.0d
-			tasks: [ ]
-			x: -1.0d
+			tasks: [{
+				id: "5350010000005032"
+				mode: "ALL"
+				required: 1L
+				targets: ["5347010000010002"]
+				type: "check_quest"
+			}]
+			x: 0.0d
 			y: 37.0d
 		}
 		{
-			dependencies: ["4448010000010005", "535001000002002E"]
+			dependencies: ["535001000002002E"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -1549,26 +1157,21 @@
 			icon: {
 			id: "draconicadditions:item_chaos_injector"
 			}
-			id: "5350010000020032"
-			rewards: [
-				{
-					auto: "enabled"
-					command: "/astages add {p} asc_draconic_apex_complete true true"
-					id: "5350010000004044"
-					permission_level: 2
-					silent: true
-					team_reward: true
-					type: "command"
-				}
-			]
+			id: "5350010000020033"
 			shape: "circle"
 			size: 1.0d
-			tasks: [ ]
-			x: 1.0d
+			tasks: [{
+				id: "5350010000005033"
+				mode: "ALL"
+				required: 1L
+				targets: ["4448010000010005"]
+				type: "check_quest"
+			}]
+			x: 2.0d
 			y: 37.0d
 		}
 		{
-			dependencies: ["425201000001000B", "535001000002002E"]
+			dependencies: ["535001000002002E"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -1576,35 +1179,21 @@
 			icon: {
 			id: "draconicevolution:chaos_shard"
 			}
-			id: "5350010000020033"
-			rewards: [
-				{
-					auto: "enabled"
-					command: "/astages add {p} asc_final_boss_convergence_complete true true"
-					id: "5350010000004045"
-					permission_level: 2
-					silent: true
-					team_reward: true
-					type: "command"
-				}
-				{
-					auto: "enabled"
-					command: "/astages add {p} draconic_guardian_defeated true true"
-					id: "5350010000004046"
-					permission_level: 2
-					silent: true
-					team_reward: true
-					type: "command"
-				}
-			]
+			id: "5350010000020034"
 			shape: "circle"
 			size: 1.0d
-			tasks: [ ]
-			x: 3.0d
+			tasks: [{
+				id: "5350010000005034"
+				mode: "ALL"
+				required: 1L
+				targets: ["425201000001000B"]
+				type: "check_quest"
+			}]
+			x: 4.0d
 			y: 37.0d
 		}
 		{
-			dependencies: ["4153010000010001", "535001000002002E"]
+			dependencies: ["535001000002002E"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -1612,26 +1201,21 @@
 			icon: {
 			id: "extendedcrafting:the_ultimate_block"
 			}
-			id: "5350010000020034"
-			rewards: [
-				{
-					auto: "enabled"
-					command: "/astages add {p} asc_archive_of_ages_complete true true"
-					id: "5350010000004047"
-					permission_level: 2
-					silent: true
-					team_reward: true
-					type: "command"
-				}
-			]
+			id: "5350010000020035"
 			shape: "circle"
 			size: 1.0d
-			tasks: [ ]
-			x: 5.0d
+			tasks: [{
+				id: "5350010000005035"
+				mode: "ALL"
+				required: 1L
+				targets: ["4153010000010001"]
+				type: "check_quest"
+			}]
+			x: 6.0d
 			y: 37.0d
 		}
 		{
-			dependencies: ["4153010000010002", "535001000002002E"]
+			dependencies: ["535001000002002F", "5350010000020030", "5350010000020031", "5350010000020032", "5350010000020033", "5350010000020034", "5350010000020035"]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			hide_until_deps_complete: false
@@ -1639,30 +1223,16 @@
 			icon: {
 			id: "avaritia:infinity_ingot"
 			}
-			id: "5350010000020035"
-			rewards: [
-				{
-					auto: "enabled"
-					command: "/astages add {p} asc_capstone_complete true true"
-					id: "5350010000004048"
-					permission_level: 2
-					silent: true
-					team_reward: true
-					type: "command"
-				}
-				{
-					auto: "enabled"
-					command: "/astages add {p} aoa_complete true true"
-					id: "5350010000004049"
-					permission_level: 2
-					silent: true
-					team_reward: true
-					type: "command"
-				}
-			]
+			id: "5350010000020036"
 			shape: "hexagon"
 			size: 1.5d
-			tasks: [ ]
+			tasks: [{
+				id: "5350010000005036"
+				mode: "ALL"
+				required: 1L
+				targets: ["4153010000010002"]
+				type: "check_quest"
+			}]
 			x: 0.0d
 			y: 39.0d
 		}

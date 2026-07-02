@@ -7500,6 +7500,103 @@
 	quest.7D36D95D74E1588E.title: "Alchemist's Glove"
 	task.0D88DDD523FBC1E4.title: "Unknown type: loot"
 	task.2B8B15600CCA2F17.title: "Unknown type: random"
+
+	quest.4256011000EE0001.title: "The Sentient Blade"
+	quest.4256011000EE0001.quest_subtitle: "Optional depth. Neo Vitae Sentient gear line."
+	quest.4256011000EE0001.quest_desc: ["Forge a Sentient Sword. Blood fuels it; mastery shapes it. The living weapon is the first step of Neo Vitae's combat progression. Each strike deepens the bond between wielder and blade, unlocking damage scaling that no conventional sword can match. You will need refined hellforged materials and a working blood altar."]
+	quest.4256011000EE0002.title: "Armor of Living Metal"
+	quest.4256011000EE0002.quest_subtitle: "Optional depth. Neo Vitae Sentient gear line."
+	quest.4256011000EE0002.quest_desc: ["Complete the Sentient armor set. Helmet, chestplate, leggings, and boots. Each piece is infused with blood-soul resonance that scales your protection with your altar's accumulated LP. Submit any one piece to complete this quest. The full set unlocks the armor's passive regeneration field, which consumes LP in exchange for rapid health recovery under fire."]
+	quest.4256011000EE0003.title: "Sentient Toolkit"
+	quest.4256011000EE0003.quest_subtitle: "Optional depth. Neo Vitae Sentient gear line."
+	quest.4256011000EE0003.quest_desc: ["Obtain the Sentient Pickaxe or the Sentient Axe. These are living tools that share the same resonance signature as the Sentient weapon set. Either suffices for this quest. Both scale their harvesting speed with your available LP, making a fully charged altar dramatically faster at harvesting. At high saturation the pickaxe will vein-mine entire ore clusters in a single swing."]
+	quest.4256011000EE0004.title: "First Spiritus"
+	quest.4256011000EE0004.quest_subtitle: "Optional depth. Neo Vitae Spiritus soul economy."
+	quest.4256011000EE0004.quest_desc: ["Collect a Petty Spiritus Gem, the smallest denomination of crystallised soul-matter. The Spiritus economy is a parallel progression track to the blood altar: where blood magic demands sacrifice from living creatures, the Spiritus economy runs on residual soul-energy that living things shed passively. Begin cultivating it here. The gem is harvested from Spiritus veins that occasionally spawn in the Otherworldly dimension."]
+	quest.4256011000EE0005.title: "Ascending Aspects"
+	quest.4256011000EE0005.quest_subtitle: "Optional depth. Neo Vitae Spiritus soul economy."
+	quest.4256011000EE0005.quest_desc: ["Refine Spiritus Gems from Lesser through Grand tier. Each tier is produced by combining lower-tier gems in the Soul Refiner or through direct Spiritus vein harvesting at the appropriate depth. Lesser, Common, Greater, and Grand. Submit any one. Grand Spiritus Gems are the primary input for high-tier soul rituals and the Spiritus economy's equivalent of the transcendent blood orb."]
+	quest.4256011000EE0006.title: "The Five Souls"
+	quest.4256011000EE0006.quest_subtitle: "Optional depth. Neo Vitae Spiritus soul economy."
+	quest.4256011000EE0006.quest_desc: ["Obtain any of the five Spiritus soul types: Raw, Invictus, Nihilum, Ruina, or Vindicta. Each soul type corresponds to a different aspect of will. Raw is neutral, Invictus is strength, Nihilum is void, Ruina is destruction, Vindicta is vengeance. The complete soul palette unlocks every high-tier ritual synthesis in the Neo Vitae system. Each type drops from different mob categories in the Otherworldly biomes."]
+	quest.4256011000EE0007.title: "Blood Beyond the Veil"
+	quest.4256011000EE0007.quest_subtitle: "Optional depth. Neo Vitae convergence capstone."
+	quest.4256011000EE0007.quest_desc: ["Bear the Transcendent Blood Orb into the Otherworldly age. The magic of Neo Vitae has accompanied you to the frontier of the known world. It is a living covenant between the oldest blood rites and the most advanced physics you have mastered. The orb does not unlock new recipes here; it is proof that you carried the covenant this far. Some journeys end not with a gate but with a witness."]
+	quest.936044D132622461.title: "Lantern Maker"
+	quest.936044D132622461.quest_subtitle: "Optional flavor. Arcane Lanterns."
+	quest.936044D132622461.quest_desc: ["Craft a &bLantern Maker&r. This block turns a plain lantern into an enchanted Arcane Lantern that projects a passive area effect.", "To use it, load the Lantern Maker with the catalysts a given lantern recipe calls for, then set a lantern block on top to fuse everything together. It is the workbench for every lantern in this line, so build it first."]
+	quest.3D0C727EB7D7D9FC.title: "Life Lantern"
+	quest.3D0C727EB7D7D9FC.quest_subtitle: "Optional flavor. Faster crops, no farmland required."
+	quest.3D0C727EB7D7D9FC.quest_desc: ["Make a &bLife Lantern&r on the Lantern Maker. Once placed, it speeds the growth of crops in the area around it.", "Hang one over a plot and your planting matures faster with no extra work and no special farmland. Fuse it by stacking a lantern on the loaded Lantern Maker with the right catalysts. It is a quiet, hands-off boost for any farm you keep near your base."]
+	quest.FAB07684061A284D.title: "Cinder Furnace"
+	quest.FAB07684061A284D.quest_subtitle: "Optional flavor. Creatures and Beasts."
+	quest.FAB07684061A284D.quest_desc: ["Obtain a &bCinder Furnace&r. This is a wearable furnace shell that a Cindershell can carry for you.", "Tame or approach a Cindershell, then right click it with the Cinder Furnace to equip the shell onto the creature. It gives you a walking smelting companion instead of a fixed furnace. The Cindershell also supplies the shard you need for its matching weapon."]
+	quest.1E5A8AEE45E9DDCA.title: "Cinder Sword"
+	quest.1E5A8AEE45E9DDCA.quest_subtitle: "Optional flavor. Forged from a Cindershell's own armor."
+	quest.1E5A8AEE45E9DDCA.quest_desc: ["Forge a &bCinder Sword&r from Cindershell materials. The blade is cut from the same fiery shell the creature carries.", "Gather the shell shards a Cindershell drops and craft them into the sword. It is a solid early nether weapon and a small reward for working with the creature rather than only fighting the biome."]
+	quest.051AB096CA0848B4.title: "Alloy From the Reef"
+	quest.051AB096CA0848B4.quest_subtitle: "Optional flavor. Create Aquatic Ambitions."
+	quest.051AB096CA0848B4.quest_desc: ["Craft &bPrismarine Alloy&r from Create Aquatic Ambitions. This alloy is the base material for the mod's ocean machines, and it takes prismarine you already gather from the reef.", "Feed prismarine shards and a base metal through your Create processing line to produce the alloy. Keep a stock of it. The rod, the Conduit Cage, and every part beyond this point are built from it."]
+	quest.A818144300D946A8.title: "Conduit Cage"
+	quest.A818144300D946A8.quest_subtitle: "Optional flavor. A compact conduit for Create's fan and fluid lines."
+	quest.A818144300D946A8.quest_desc: ["Build a &bConduit Cage&r. It is a compact stand-in for a full vanilla conduit ring, and it doubles as a Create fan and fluid processing block.", "Place it in your build where you want conduit power without laying out the large prismarine frame. On its own it is inert. The next quest awakens it."]
+	quest.7C0AC10000000001.title: "Forge the Rod"
+	quest.7C0AC10000000001.quest_subtitle: "Optional depth. A prismarine alloy rod for deeper work."
+	quest.7C0AC10000000001.quest_desc: ["Press a &bPrismarine Alloy Rod&r. The rod is the shaft for the heavier reef gear and a common ingredient in the deeper Create Aquatic Ambitions recipes.", "Roll or press the alloy into rod form the same way you make any Create rod stock. Craft a few. Nothing downstream in this branch works without them."]
+	quest.7C0AC10000000002.title: "Awaken and Channel"
+	quest.7C0AC10000000002.quest_subtitle: "Optional depth. Pump fluid into the Conduit Cage, then channel the reef."
+	quest.7C0AC10000000002.quest_desc: ["Awaken the &bConduit Cage&r, then use it to channel the reef. Pump a fluid into the cage through its bottom face and it comes alive.", "Water gives it the Conduit Power effect for nearby entities, and other fluids give other effects. Air blown through an awakened cage also creates a channeling stream that processes items, the same way encased fans do. Submit a &bSpiky Shell&r, which the awakened cage helps you produce, to close out this branch."]
+	quest.E101BB0D29F60954.title: "Silk Line Mobility"
+	quest.E101BB0D29F60954.quest_subtitle: "Optional flavor. Critters and Companions."
+	quest.E101BB0D29F60954.quest_desc: ["Craft a &bGrappling Hook&r from Critters and Companions. Fire it at a block and it pulls you toward the anchor point.", "Use it to close gaps, scale cliffs, and cross the grove without building scaffolds. It is a mobility tool, not a weapon, so keep it on your hotbar for traversal. This branch is optional flavor, but the hook is genuinely useful terrain gear."]
+	quest.92614B6AD7E19E44.title: "Silk Lead"
+	quest.92614B6AD7E19E44.quest_subtitle: "Optional flavor. A sturdier leash, woven instead of knotted."
+	quest.92614B6AD7E19E44.quest_desc: ["Weave a &bSilk Lead&r. It works like a vanilla lead but is sturdier, letting you guide and tether animals more reliably.", "Attach it to a mob and walk it home the same way you use an ordinary lead. Craft it from silk instead of knotted string. If you are moving the grove's tamable creatures back to your base, this is the tool for the job."]
+	quest.7A55C10000000001.title: "The Living Harvest"
+	quest.7A55C10000000001.quest_subtitle: "Optional depth. Build the biological harvest arm off the deep-sea drain."
+	quest.7A55C10000000001.quest_desc: ["You run the drain, so now work the reef itself. Craft a &bPrismarine Rod&r and a &bFishing Net&r from Hybrid Aquatic.", "The rod is the base for the specialized hooks that come next. The net lets you scoop small fish and drops straight out of the water instead of hooking them one at a time.", "This whole branch is optional. Nothing here gates your progression. It is here so the deep pays you back in food, materials, and gear."]
+	quest.7A55C10000000002.title: "Specialized Hooks"
+	quest.7A55C10000000002.quest_subtitle: "Optional depth. One hook for day, one for night, one for treasure."
+	quest.7A55C10000000002.quest_desc: ["Fit the Prismarine Rod with the right hook for the job. Craft the &bBarbed Hook&r, the &bGlowing Hook&r, and the &bMagnetic Hook&r.", "The Barbed Hook raises your catch rate in daylight. The Glowing Hook lights the line and fishes better at night. The Magnetic Hook pulls up more treasure and junk instead of fish.", "Swap the hook on your rod to match the time of day and what you are after."]
+	quest.7A55C10000000003.title: "Set the Crab Pot"
+	quest.7A55C10000000003.quest_subtitle: "Optional depth. Passive seafood while you work."
+	quest.7A55C10000000003.quest_desc: ["Craft a &bCrab Pot&r and place it on the sea floor. It catches crabs and small shellfish on its own over time.", "Check it and empty it like a trap. It is a slow, hands-off supply of seafood that keeps producing while you run the rest of your operation."]
+	quest.7A55C10000000004.title: "Pearls of the Deep"
+	quest.7A55C10000000004.quest_subtitle: "Optional depth. Pearls, black pearls, and storage blocks."
+	quest.7A55C10000000004.quest_desc: ["Pearls drop from oysters and clams out in the reef. Collect a &bPearl&r and the rarer &bBlack Pearl&r.", "Nine of each compress into a &bPearl Block&r and a &bBlack Pearl Block&r for compact storage and decoration. Craft both blocks to prove the loop.", "Pearls feed several Hybrid Aquatic recipes, so a stock of them is worth keeping."]
+	quest.7A55C10000000005.title: "Reef Tooling"
+	quest.7A55C10000000005.quest_subtitle: "Optional depth. Coral gear for close reef work."
+	quest.7A55C10000000005.quest_desc: ["Turn reef materials into tools. Craft the &bCoral Blade&r and a &bCoral Pickaxe&r.", "The Coral Blade is a light underwater weapon for the stinging and biting things that share the reef with you. The Coral Pickaxe handles the softer stone and coral down here.", "This is light gear, not a deep-op kit. It keeps your hands full while you gather rather than replacing your main tools."]
+	quest.7A55C10000000008.title: "A Life Down Here"
+	quest.7A55C10000000008.quest_subtitle: "Optional flavor. The reef as a place, not just a resource."
+	quest.7A55C10000000008.quest_desc: ["Bring up two signs of a living sea floor. Collect a &bGiant Clam&r and a &bHydrothermal Vent Shaft&r.", "The clam is a large filter feeder that anchors the reef. The vent shaft is a piece of the hot mineral chimney that feeds life where no sunlight reaches. Set both in your base as proof the deep is its own world."]
+	quest.7A55C10000000006.title: "Cook the Catch"
+	quest.7A55C10000000006.quest_subtitle: "Optional depth. Cooked seafood, no hunting required."
+	quest.7A55C10000000006.quest_desc: ["Cook what you pull from the water. Prepare &bCooked Fish Steak&r, &bCooked Lobster&r, &bCooked Crab&r, and &bCooked Shrimp&r.", "Each cooks in a furnace or smoker from the raw catch your rod, net, and crab pot bring in. Together they turn the reef into a steady food supply for long dives."]
+	quest.7A55C10000000007.title: "Dishes of the Deep"
+	quest.7A55C10000000007.quest_subtitle: "Optional depth. Ocean's Delight cooking."
+	quest.7A55C10000000007.quest_desc: ["Take the catch further with Ocean's Delight dishes. Prepare &bStuffed Cod&r, &bStuffed Squid&r, &bSeagrass Salad&r, &bKelp Encrusted Cod&r, &bHoney Fried Kelp&r, and &bSquid Rings&r.", "These use a cooking pot or crafting from fish, squid, kelp, and seagrass you gather in the shallows and reef. They restore more hunger and saturation than plain cooked fish, so they carry you through longer operations under the water."]
+	quest.7A55C10000000009.title: "Neptunium Ingot"
+	quest.7A55C10000000009.quest_subtitle: "Optional depth. The mastery metal of the deep."
+	quest.7A55C10000000009.quest_desc: ["Neptunium is Aquaculture's deep-sea metal. You get its raw form as a rare catch while fishing, then refine it into a &bNeptunium Ingot&r.", "This is the keystone for the best dive kit in the pack. Everything past this node is built from it, so bank several ingots before you move on.", "This branch stays hidden until you complete the harvest rig above, then reveals itself as the payoff for working the deep."]
+	quest.7A55C1000000000A.title: "Neptunium Dive Suit"
+	quest.7A55C1000000000A.quest_subtitle: "Optional depth. Breathe, see, and move underwater."
+	quest.7A55C1000000000A.quest_desc: ["Forge the full armor set: &bNeptunium Helmet&r, &bChestplate&r, &bLeggings&r, and &bBoots&r.", "Each piece grants a deep-op ability while worn. The chestplate lets you breathe underwater. The helmet gives you clear underwater vision. The leggings remove the weight of the water so you move freely. The boots raise your swim speed.", "Worn together this is the mastery dive kit, a full tier above the early diving suit. It turns the deep from a place you visit into a place you can work."]
+	quest.7A55C1000000000B.title: "Neptunium Field Kit"
+	quest.7A55C1000000000B.quest_subtitle: "Optional depth. Tools that ignore the water."
+	quest.7A55C1000000000B.quest_desc: ["Craft the &bNeptunium Fishing Rod&r and the &bNeptunium Fillet Knife&r.", "The rod makes fish bite more often, so your catch rate climbs even without swapping hooks. The fillet knife cleans fish into more fillets than a lesser blade.", "Neptunium tools also work at full speed underwater, with none of the mining or attack penalty normal tools take down there."]
+	quest.7A55C1000000000C.title: "Neptunium Toolset"
+	quest.7A55C1000000000C.quest_subtitle: "Optional depth. Round out the deep-op tools."
+	quest.7A55C1000000000C.quest_desc: ["Finish the set with a &bNeptunium Pickaxe&r and a &bNeptunium Sword&r.", "Like the rest of the Neptunium line, both ignore the underwater penalty and swing at full speed beneath the surface. This is the last of the mastery gear, so it is here only if you want the complete kit."]
+	quest.7A55C1000000000D.title: "Conduit Channeling"
+	quest.7A55C1000000000D.quest_subtitle: "Optional depth. A new Create fan process powered by a conduit."
+	quest.7A55C1000000000D.quest_desc: ["Create Aquatic Ambitions adds a fan process called Channeling. Instead of fire, water, or lava, the catalyst is conduit power passing through water. Prove the material line by obtaining a &bSuspicious Rock&r and &bCalcium Rich Powder&r.", "Both come from milling Create Limestone. The powder is the common output and the rock is a rare byproduct. Point an Encased Fan so its air blows through the water charged by an active conduit, then convey items into that stream. The Suspicious Rock channeled this way yields nautilus shells and spiky shells.", "Watch the water depth. Extra layers of water above the conduit dilute its power and downgrade the stream to plain Washing instead of Channeling, so keep the charged water shallow over the fan path.", "The payoff is renewable prismarine, coral, and weathered copper, plus a way to farm the pieces of a whole conduit. Note that the useful results such as Heart of the Sea, nautilus shells, and prismarine are vanilla items, so this quest tasks the addon's own intermediates instead."]
+	quest.7A55C1000000000E.title: "Conduit Cage Station"
+	quest.7A55C1000000000E.quest_subtitle: "Optional depth. Awaken the Cage for area effects."
+	quest.7A55C1000000000E.quest_desc: ["The Conduit Cage is the compact machine that replaces the large vanilla conduit frame. Craft a &bPrismarine Alloy Block&r to prove your alloy stock is deep enough to run a full Cage station.", "Awaken a Cage by pumping a fluid into its bottom face with a Create pump or fluid pipe. Awakened with water it emits the vanilla Conduit Power effect to nearby entities. Other fluids give other effects, driven by the addon's fluid effect tags, and a mode slot filters who is affected: everyone, players, friendly mobs, or monsters.", "This turns the Cage into an area buff or hazard station on top of its channeling job. It is utility flavor, so build it only if you want an automated effect emitter down at the deep op."]
+	quest.7A55C1000000000F.title: "Diving Suit"
+	quest.7A55C1000000000F.quest_subtitle: "Optional depth. Cheap gear for delving flooded ruins."
+	quest.7A55C1000000000F.quest_desc: ["Some ruins and burrows flood, and holding your breath only gets you so far. Craft the full Hybrid Aquatic diving set: &bDiving Helmet&r, &bDiving Suit&r, &bDiving Leggings&r, and &bDiving Boots&r.", "The set is cheap early gear, built from copper, leather, and glass you already have. Worn together it lets you stay under long enough to search a flooded room instead of surfacing every few seconds.", "This is the on-ramp, not the deep-op kit. It gets you into the water. Better dive gear waits much later once you are working the sea for real."]
 	quest.5350010000010000.quest_subtitle: "Granted at world entry."
 	quest.5350010000010000.title: "&8Dark Ages&r"
 	quest.5350010000020000.quest_subtitle: "Age gate. Clears when its capstone quest is complete."
@@ -7612,101 +7709,4 @@
 	quest.5350010000020035.title: "&dArchive of Ages&r"
 	quest.5350010000020036.quest_subtitle: "Age gate. Clears when its capstone quest is complete."
 	quest.5350010000020036.title: "&dAscension Complete ◆&r"
-
-	quest.4256011000EE0001.title: "The Sentient Blade"
-	quest.4256011000EE0001.quest_subtitle: "Optional depth. Neo Vitae Sentient gear line."
-	quest.4256011000EE0001.quest_desc: ["Forge a Sentient Sword. Blood fuels it; mastery shapes it. The living weapon is the first step of Neo Vitae's combat progression. Each strike deepens the bond between wielder and blade, unlocking damage scaling that no conventional sword can match. You will need refined hellforged materials and a working blood altar."]
-	quest.4256011000EE0002.title: "Armor of Living Metal"
-	quest.4256011000EE0002.quest_subtitle: "Optional depth. Neo Vitae Sentient gear line."
-	quest.4256011000EE0002.quest_desc: ["Complete the Sentient armor set. Helmet, chestplate, leggings, and boots. Each piece is infused with blood-soul resonance that scales your protection with your altar's accumulated LP. Submit any one piece to complete this quest. The full set unlocks the armor's passive regeneration field, which consumes LP in exchange for rapid health recovery under fire."]
-	quest.4256011000EE0003.title: "Sentient Toolkit"
-	quest.4256011000EE0003.quest_subtitle: "Optional depth. Neo Vitae Sentient gear line."
-	quest.4256011000EE0003.quest_desc: ["Obtain the Sentient Pickaxe or the Sentient Axe. These are living tools that share the same resonance signature as the Sentient weapon set. Either suffices for this quest. Both scale their harvesting speed with your available LP, making a fully charged altar dramatically faster at harvesting. At high saturation the pickaxe will vein-mine entire ore clusters in a single swing."]
-	quest.4256011000EE0004.title: "First Spiritus"
-	quest.4256011000EE0004.quest_subtitle: "Optional depth. Neo Vitae Spiritus soul economy."
-	quest.4256011000EE0004.quest_desc: ["Collect a Petty Spiritus Gem, the smallest denomination of crystallised soul-matter. The Spiritus economy is a parallel progression track to the blood altar: where blood magic demands sacrifice from living creatures, the Spiritus economy runs on residual soul-energy that living things shed passively. Begin cultivating it here. The gem is harvested from Spiritus veins that occasionally spawn in the Otherworldly dimension."]
-	quest.4256011000EE0005.title: "Ascending Aspects"
-	quest.4256011000EE0005.quest_subtitle: "Optional depth. Neo Vitae Spiritus soul economy."
-	quest.4256011000EE0005.quest_desc: ["Refine Spiritus Gems from Lesser through Grand tier. Each tier is produced by combining lower-tier gems in the Soul Refiner or through direct Spiritus vein harvesting at the appropriate depth. Lesser, Common, Greater, and Grand. Submit any one. Grand Spiritus Gems are the primary input for high-tier soul rituals and the Spiritus economy's equivalent of the transcendent blood orb."]
-	quest.4256011000EE0006.title: "The Five Souls"
-	quest.4256011000EE0006.quest_subtitle: "Optional depth. Neo Vitae Spiritus soul economy."
-	quest.4256011000EE0006.quest_desc: ["Obtain any of the five Spiritus soul types: Raw, Invictus, Nihilum, Ruina, or Vindicta. Each soul type corresponds to a different aspect of will. Raw is neutral, Invictus is strength, Nihilum is void, Ruina is destruction, Vindicta is vengeance. The complete soul palette unlocks every high-tier ritual synthesis in the Neo Vitae system. Each type drops from different mob categories in the Otherworldly biomes."]
-	quest.4256011000EE0007.title: "Blood Beyond the Veil"
-	quest.4256011000EE0007.quest_subtitle: "Optional depth. Neo Vitae convergence capstone."
-	quest.4256011000EE0007.quest_desc: ["Bear the Transcendent Blood Orb into the Otherworldly age. The magic of Neo Vitae has accompanied you to the frontier of the known world. It is a living covenant between the oldest blood rites and the most advanced physics you have mastered. The orb does not unlock new recipes here; it is proof that you carried the covenant this far. Some journeys end not with a gate but with a witness."]
-	quest.936044D132622461.title: "Lantern Maker"
-	quest.936044D132622461.quest_subtitle: "Optional flavor. Arcane Lanterns."
-	quest.936044D132622461.quest_desc: ["Craft a &bLantern Maker&r. This block turns a plain lantern into an enchanted Arcane Lantern that projects a passive area effect.", "To use it, load the Lantern Maker with the catalysts a given lantern recipe calls for, then set a lantern block on top to fuse everything together. It is the workbench for every lantern in this line, so build it first."]
-	quest.3D0C727EB7D7D9FC.title: "Life Lantern"
-	quest.3D0C727EB7D7D9FC.quest_subtitle: "Optional flavor. Faster crops, no farmland required."
-	quest.3D0C727EB7D7D9FC.quest_desc: ["Make a &bLife Lantern&r on the Lantern Maker. Once placed, it speeds the growth of crops in the area around it.", "Hang one over a plot and your planting matures faster with no extra work and no special farmland. Fuse it by stacking a lantern on the loaded Lantern Maker with the right catalysts. It is a quiet, hands-off boost for any farm you keep near your base."]
-	quest.FAB07684061A284D.title: "Cinder Furnace"
-	quest.FAB07684061A284D.quest_subtitle: "Optional flavor. Creatures and Beasts."
-	quest.FAB07684061A284D.quest_desc: ["Obtain a &bCinder Furnace&r. This is a wearable furnace shell that a Cindershell can carry for you.", "Tame or approach a Cindershell, then right click it with the Cinder Furnace to equip the shell onto the creature. It gives you a walking smelting companion instead of a fixed furnace. The Cindershell also supplies the shard you need for its matching weapon."]
-	quest.1E5A8AEE45E9DDCA.title: "Cinder Sword"
-	quest.1E5A8AEE45E9DDCA.quest_subtitle: "Optional flavor. Forged from a Cindershell's own armor."
-	quest.1E5A8AEE45E9DDCA.quest_desc: ["Forge a &bCinder Sword&r from Cindershell materials. The blade is cut from the same fiery shell the creature carries.", "Gather the shell shards a Cindershell drops and craft them into the sword. It is a solid early nether weapon and a small reward for working with the creature rather than only fighting the biome."]
-	quest.051AB096CA0848B4.title: "Alloy From the Reef"
-	quest.051AB096CA0848B4.quest_subtitle: "Optional flavor. Create Aquatic Ambitions."
-	quest.051AB096CA0848B4.quest_desc: ["Craft &bPrismarine Alloy&r from Create Aquatic Ambitions. This alloy is the base material for the mod's ocean machines, and it takes prismarine you already gather from the reef.", "Feed prismarine shards and a base metal through your Create processing line to produce the alloy. Keep a stock of it. The rod, the Conduit Cage, and every part beyond this point are built from it."]
-	quest.A818144300D946A8.title: "Conduit Cage"
-	quest.A818144300D946A8.quest_subtitle: "Optional flavor. A compact conduit for Create's fan and fluid lines."
-	quest.A818144300D946A8.quest_desc: ["Build a &bConduit Cage&r. It is a compact stand-in for a full vanilla conduit ring, and it doubles as a Create fan and fluid processing block.", "Place it in your build where you want conduit power without laying out the large prismarine frame. On its own it is inert. The next quest awakens it."]
-	quest.7C0AC10000000001.title: "Forge the Rod"
-	quest.7C0AC10000000001.quest_subtitle: "Optional depth. A prismarine alloy rod for deeper work."
-	quest.7C0AC10000000001.quest_desc: ["Press a &bPrismarine Alloy Rod&r. The rod is the shaft for the heavier reef gear and a common ingredient in the deeper Create Aquatic Ambitions recipes.", "Roll or press the alloy into rod form the same way you make any Create rod stock. Craft a few. Nothing downstream in this branch works without them."]
-	quest.7C0AC10000000002.title: "Awaken and Channel"
-	quest.7C0AC10000000002.quest_subtitle: "Optional depth. Pump fluid into the Conduit Cage, then channel the reef."
-	quest.7C0AC10000000002.quest_desc: ["Awaken the &bConduit Cage&r, then use it to channel the reef. Pump a fluid into the cage through its bottom face and it comes alive.", "Water gives it the Conduit Power effect for nearby entities, and other fluids give other effects. Air blown through an awakened cage also creates a channeling stream that processes items, the same way encased fans do. Submit a &bSpiky Shell&r, which the awakened cage helps you produce, to close out this branch."]
-	quest.E101BB0D29F60954.title: "Silk Line Mobility"
-	quest.E101BB0D29F60954.quest_subtitle: "Optional flavor. Critters and Companions."
-	quest.E101BB0D29F60954.quest_desc: ["Craft a &bGrappling Hook&r from Critters and Companions. Fire it at a block and it pulls you toward the anchor point.", "Use it to close gaps, scale cliffs, and cross the grove without building scaffolds. It is a mobility tool, not a weapon, so keep it on your hotbar for traversal. This branch is optional flavor, but the hook is genuinely useful terrain gear."]
-	quest.92614B6AD7E19E44.title: "Silk Lead"
-	quest.92614B6AD7E19E44.quest_subtitle: "Optional flavor. A sturdier leash, woven instead of knotted."
-	quest.92614B6AD7E19E44.quest_desc: ["Weave a &bSilk Lead&r. It works like a vanilla lead but is sturdier, letting you guide and tether animals more reliably.", "Attach it to a mob and walk it home the same way you use an ordinary lead. Craft it from silk instead of knotted string. If you are moving the grove's tamable creatures back to your base, this is the tool for the job."]
-	quest.7A55C10000000001.title: "The Living Harvest"
-	quest.7A55C10000000001.quest_subtitle: "Optional depth. Build the biological harvest arm off the deep-sea drain."
-	quest.7A55C10000000001.quest_desc: ["You run the drain, so now work the reef itself. Craft a &bPrismarine Rod&r and a &bFishing Net&r from Hybrid Aquatic.", "The rod is the base for the specialized hooks that come next. The net lets you scoop small fish and drops straight out of the water instead of hooking them one at a time.", "This whole branch is optional. Nothing here gates your progression. It is here so the deep pays you back in food, materials, and gear."]
-	quest.7A55C10000000002.title: "Specialized Hooks"
-	quest.7A55C10000000002.quest_subtitle: "Optional depth. One hook for day, one for night, one for treasure."
-	quest.7A55C10000000002.quest_desc: ["Fit the Prismarine Rod with the right hook for the job. Craft the &bBarbed Hook&r, the &bGlowing Hook&r, and the &bMagnetic Hook&r.", "The Barbed Hook raises your catch rate in daylight. The Glowing Hook lights the line and fishes better at night. The Magnetic Hook pulls up more treasure and junk instead of fish.", "Swap the hook on your rod to match the time of day and what you are after."]
-	quest.7A55C10000000003.title: "Set the Crab Pot"
-	quest.7A55C10000000003.quest_subtitle: "Optional depth. Passive seafood while you work."
-	quest.7A55C10000000003.quest_desc: ["Craft a &bCrab Pot&r and place it on the sea floor. It catches crabs and small shellfish on its own over time.", "Check it and empty it like a trap. It is a slow, hands-off supply of seafood that keeps producing while you run the rest of your operation."]
-	quest.7A55C10000000004.title: "Pearls of the Deep"
-	quest.7A55C10000000004.quest_subtitle: "Optional depth. Pearls, black pearls, and storage blocks."
-	quest.7A55C10000000004.quest_desc: ["Pearls drop from oysters and clams out in the reef. Collect a &bPearl&r and the rarer &bBlack Pearl&r.", "Nine of each compress into a &bPearl Block&r and a &bBlack Pearl Block&r for compact storage and decoration. Craft both blocks to prove the loop.", "Pearls feed several Hybrid Aquatic recipes, so a stock of them is worth keeping."]
-	quest.7A55C10000000005.title: "Reef Tooling"
-	quest.7A55C10000000005.quest_subtitle: "Optional depth. Coral gear for close reef work."
-	quest.7A55C10000000005.quest_desc: ["Turn reef materials into tools. Craft the &bCoral Blade&r and a &bCoral Pickaxe&r.", "The Coral Blade is a light underwater weapon for the stinging and biting things that share the reef with you. The Coral Pickaxe handles the softer stone and coral down here.", "This is light gear, not a deep-op kit. It keeps your hands full while you gather rather than replacing your main tools."]
-	quest.7A55C10000000008.title: "A Life Down Here"
-	quest.7A55C10000000008.quest_subtitle: "Optional flavor. The reef as a place, not just a resource."
-	quest.7A55C10000000008.quest_desc: ["Bring up two signs of a living sea floor. Collect a &bGiant Clam&r and a &bHydrothermal Vent Shaft&r.", "The clam is a large filter feeder that anchors the reef. The vent shaft is a piece of the hot mineral chimney that feeds life where no sunlight reaches. Set both in your base as proof the deep is its own world."]
-	quest.7A55C10000000006.title: "Cook the Catch"
-	quest.7A55C10000000006.quest_subtitle: "Optional depth. Cooked seafood, no hunting required."
-	quest.7A55C10000000006.quest_desc: ["Cook what you pull from the water. Prepare &bCooked Fish Steak&r, &bCooked Lobster&r, &bCooked Crab&r, and &bCooked Shrimp&r.", "Each cooks in a furnace or smoker from the raw catch your rod, net, and crab pot bring in. Together they turn the reef into a steady food supply for long dives."]
-	quest.7A55C10000000007.title: "Dishes of the Deep"
-	quest.7A55C10000000007.quest_subtitle: "Optional depth. Ocean's Delight cooking."
-	quest.7A55C10000000007.quest_desc: ["Take the catch further with Ocean's Delight dishes. Prepare &bStuffed Cod&r, &bStuffed Squid&r, &bSeagrass Salad&r, &bKelp Encrusted Cod&r, &bHoney Fried Kelp&r, and &bSquid Rings&r.", "These use a cooking pot or crafting from fish, squid, kelp, and seagrass you gather in the shallows and reef. They restore more hunger and saturation than plain cooked fish, so they carry you through longer operations under the water."]
-	quest.7A55C10000000009.title: "Neptunium Ingot"
-	quest.7A55C10000000009.quest_subtitle: "Optional depth. The mastery metal of the deep."
-	quest.7A55C10000000009.quest_desc: ["Neptunium is Aquaculture's deep-sea metal. You get its raw form as a rare catch while fishing, then refine it into a &bNeptunium Ingot&r.", "This is the keystone for the best dive kit in the pack. Everything past this node is built from it, so bank several ingots before you move on.", "This branch stays hidden until you complete the harvest rig above, then reveals itself as the payoff for working the deep."]
-	quest.7A55C1000000000A.title: "Neptunium Dive Suit"
-	quest.7A55C1000000000A.quest_subtitle: "Optional depth. Breathe, see, and move underwater."
-	quest.7A55C1000000000A.quest_desc: ["Forge the full armor set: &bNeptunium Helmet&r, &bChestplate&r, &bLeggings&r, and &bBoots&r.", "Each piece grants a deep-op ability while worn. The chestplate lets you breathe underwater. The helmet gives you clear underwater vision. The leggings remove the weight of the water so you move freely. The boots raise your swim speed.", "Worn together this is the mastery dive kit, a full tier above the early diving suit. It turns the deep from a place you visit into a place you can work."]
-	quest.7A55C1000000000B.title: "Neptunium Field Kit"
-	quest.7A55C1000000000B.quest_subtitle: "Optional depth. Tools that ignore the water."
-	quest.7A55C1000000000B.quest_desc: ["Craft the &bNeptunium Fishing Rod&r and the &bNeptunium Fillet Knife&r.", "The rod makes fish bite more often, so your catch rate climbs even without swapping hooks. The fillet knife cleans fish into more fillets than a lesser blade.", "Neptunium tools also work at full speed underwater, with none of the mining or attack penalty normal tools take down there."]
-	quest.7A55C1000000000C.title: "Neptunium Toolset"
-	quest.7A55C1000000000C.quest_subtitle: "Optional depth. Round out the deep-op tools."
-	quest.7A55C1000000000C.quest_desc: ["Finish the set with a &bNeptunium Pickaxe&r and a &bNeptunium Sword&r.", "Like the rest of the Neptunium line, both ignore the underwater penalty and swing at full speed beneath the surface. This is the last of the mastery gear, so it is here only if you want the complete kit."]
-	quest.7A55C1000000000D.title: "Conduit Channeling"
-	quest.7A55C1000000000D.quest_subtitle: "Optional depth. A new Create fan process powered by a conduit."
-	quest.7A55C1000000000D.quest_desc: ["Create Aquatic Ambitions adds a fan process called Channeling. Instead of fire, water, or lava, the catalyst is conduit power passing through water. Prove the material line by obtaining a &bSuspicious Rock&r and &bCalcium Rich Powder&r.", "Both come from milling Create Limestone. The powder is the common output and the rock is a rare byproduct. Point an Encased Fan so its air blows through the water charged by an active conduit, then convey items into that stream. The Suspicious Rock channeled this way yields nautilus shells and spiky shells.", "Watch the water depth. Extra layers of water above the conduit dilute its power and downgrade the stream to plain Washing instead of Channeling, so keep the charged water shallow over the fan path.", "The payoff is renewable prismarine, coral, and weathered copper, plus a way to farm the pieces of a whole conduit. Note that the useful results such as Heart of the Sea, nautilus shells, and prismarine are vanilla items, so this quest tasks the addon's own intermediates instead."]
-	quest.7A55C1000000000E.title: "Conduit Cage Station"
-	quest.7A55C1000000000E.quest_subtitle: "Optional depth. Awaken the Cage for area effects."
-	quest.7A55C1000000000E.quest_desc: ["The Conduit Cage is the compact machine that replaces the large vanilla conduit frame. Craft a &bPrismarine Alloy Block&r to prove your alloy stock is deep enough to run a full Cage station.", "Awaken a Cage by pumping a fluid into its bottom face with a Create pump or fluid pipe. Awakened with water it emits the vanilla Conduit Power effect to nearby entities. Other fluids give other effects, driven by the addon's fluid effect tags, and a mode slot filters who is affected: everyone, players, friendly mobs, or monsters.", "This turns the Cage into an area buff or hazard station on top of its channeling job. It is utility flavor, so build it only if you want an automated effect emitter down at the deep op."]
-	quest.7A55C1000000000F.title: "Diving Suit"
-	quest.7A55C1000000000F.quest_subtitle: "Optional depth. Cheap gear for delving flooded ruins."
-	quest.7A55C1000000000F.quest_desc: ["Some ruins and burrows flood, and holding your breath only gets you so far. Craft the full Hybrid Aquatic diving set: &bDiving Helmet&r, &bDiving Suit&r, &bDiving Leggings&r, and &bDiving Boots&r.", "The set is cheap early gear, built from copper, leather, and glass you already have. Worn together it lets you stay under long enough to search a flooded room instead of surfacing every few seconds.", "This is the on-ramp, not the deep-op kit. It gets you into the water. Better dive gear waits much later once you are working the sea for real."]
 }
