@@ -36,6 +36,15 @@ not just authoring (see 08). **[EXCLUDED]** = user ruling: do not quest. Priorit
 - **flight** (create aeronautics / createpropulsion) — **stays unquested.** Intentionally free/ungated (many players installed the pack for it). Do not gate, do not chapter.
 - **createnuclear / oreexcavation / powergrid** — **leave alone** (already placed; no rework).
 - **ftboceanmobs** — **being dropped** from the pack; do not author coverage for it.
+- **[EXCLUDED batch 2026-07-02]** remove from ALL age scopes (do not quest, do not count as
+  not-done): `botanypots`, `archers`, `paladins`, `rogues`, `wizards`, `armory_rpgs`,
+  `skill_tree`, `puffish_skills`, `spell_engine`, `spell_power`, `runes`, `relics`,
+  `supplementaries`, `bellsandwhistles`, `waystones`, `alltheores`, `zoniex`,
+  `create_dragons_plus`, `immersive_aircraft`, `createpropulsion`, `alexscaves`, `the_afterdark`.
+- **GATING IS CLOSED.** Ignore gating on every ungated mod — nothing needs a gate. Drop any
+  "ungated → needs gate" item from this backlog and from `08`.
+- **Authority:** the standing exclusion + gating rulings live in `AOA_QUEST_SCOPE_REGISTRY.md`
+  (repo root, wired into `AOA_AGENT_CANON.md` §9). That file wins over any table below.
 
 ---
 

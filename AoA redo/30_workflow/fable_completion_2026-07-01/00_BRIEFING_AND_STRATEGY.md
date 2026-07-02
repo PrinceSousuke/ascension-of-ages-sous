@@ -25,8 +25,15 @@ is the right division.
 | PARTIAL | 56 | some quests, major features/foundations missing |
 | ZERO | 160 | questable, no quests at all |
 | **Not fully done** | **216 (71%)** | the completion program's scope |
-| Ungated | 139 | no AStages entry (some intentional decor, most not) |
+| Ungated | 139 | no AStages entry — **not a to-do:** gating is closed (registry Policy 1) |
 | Non-questable | 252 | libraries / APIs / perf / compat / pure decor — correctly skipped |
+
+**Standing scope (2026-07-02):** `AOA_QUEST_SCOPE_REGISTRY.md` (repo root, wired into canon §9)
+is the authoritative list of mods that are OUT of scope + the "no coverage-driven gating" policy.
+23 mods are excluded from questing there (RPG/skill/spell cluster, decor/QoL, flight, etc.). Any
+census flagging those as "not done," or proposing gates for ungated mods, is reconciled against
+that file — not re-raised. The real 216-not-done figure shrinks once the registry exclusions are
+subtracted; re-run the census denominator against the registry before quoting a number.
 
 The five ages I earlier called "done" are done *as written chapters*, not *as mods*: IR/Gilded/
 Atomic carry the endgame; the foundations underneath them are the largest gap in the pack.
@@ -69,8 +76,8 @@ structural authoring across 216 mods.
    Gilded/IR ages.
 5. `06_CROSS_WEAVES` alongside all authoring; `07_PROSE_PASS_OPUS` fills language.
 6. `08_CLEANUP_AND_FINAL_VALIDATION` — Codex cleanup (incl. the `aoacore` duplicate-jar),
-   the **canon decision queue** (12 items needing your call, incl. the 139-ungated sweep), and
-   CC's final merge gate.
+   the **canon decision queue** (gating now closed; only content decisions remain — Neo Vitae
+   A1, Depths of Malum quest-or-skip, etc.), and CC's final merge gate.
 
 ## What I did NOT do
 No quest files were edited. This is research + strategy + the prompt pack, so you can delegate

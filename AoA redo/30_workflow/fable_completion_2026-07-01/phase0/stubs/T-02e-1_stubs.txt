@@ -1,0 +1,12 @@
+# T-02e-1 lang stubs — Mekanism SPS antimatter lane in at3_chain_reaction
+# Format: quest.<id>.title / .quest_subtitle / .quest_desc (array form, pack standard)
+# Opus fills real prose. Instruction-first, teach the mechanic, no em dashes, no AI-isms.
+# IDs are the suggested free suffixes; author must confirm they are unused before use.
+
+quest.4D4E012000240001.title: "[STUB] Supercharged Particle System"
+quest.4D4E012000240001.quest_subtitle: "[STUB] Build the SPS multiblock"
+quest.4D4E012000240001.quest_desc: ["[BRIEF] teaches: assembling the Mekanism Supercharged Particle System (SPS) multiblock. Tasks (bundle in ONE node): item mekanism:sps_casing, item mekanism:sps_port, item mekanism:supercharged_coil (all verified in jar, all ungated). Depends on at3 fission reactor anchor 4348010000000000 (the SPS needs the reactor's power) and optionally the at2 polonium producer 5054012000060001 (solar_neutron_activator) for feedstock context. Opus: explain the player builds an SPS shell from casings, adds ports for polonium input/antimatter output and a supercharged coil, and that the SPS is an energy-hungry endgame machine fed by the fission chain. 2-4 short paragraphs, instruction-first."]
+
+quest.4D4E012000240002.title: "[STUB] Antimatter"
+quest.4D4E012000240002.quest_subtitle: "[STUB] Produce the impossible material"
+quest.4D4E012000240002.quest_desc: ["[BRIEF] teaches: running the SPS to produce mekanism:pellet_antimatter. Task: item mekanism:pellet_antimatter (icon = pellet_antimatter, ungated). Depends on node 4D4E012000240001. Opus: explain the SPS consumes polonium pellets plus a large sustained energy draw to condense antimatter pellets, that antimatter is the top-tier Mekanism nucleosynthesis reagent, and that its main consumer (the Antiprotonic Nucleosynthesizer) waits in a later age so this is the Atomic-tier production milestone. 2-4 short paragraphs, instruction-first, no em dashes."]

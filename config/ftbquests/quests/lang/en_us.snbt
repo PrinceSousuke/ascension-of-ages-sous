@@ -799,10 +799,7 @@
 	]
 	quest.0B03104000000072.quest_subtitle: "Defeat the frost boss."
 	quest.0B03104000000072.title: "Permafrost"
-	quest.0B03104000000073.quest_desc: [
-		"Take on the &c&lStarlight Golem&r, an optional construct boss. It is slow but heavy-hitting, so circle it and chip away rather than trading blows head-on."
-		"It is part of the golem &bsteel&r gear line, not a required chapter gate."
-	]
+	quest.0B03104000000073.quest_desc: ["Take on the &c&lStarlight Golem&r, a required construct boss of Eternal Starlight. It is slow but heavy-hitting, so circle it and chip away rather than trading blows head-on.", "This fight is now required for the Starlight chapter, not an optional trophy. Its defeat is what the Starlight proof depends on, so you must beat the Golem to complete the observation work and move the Renaissance age forward."]
 	quest.0B03104000000073.quest_subtitle: "Defeat the golem boss."
 	quest.0B03104000000073.title: "Starlight Golem"
 	quest.0B03105000000001.quest_desc: [
@@ -2405,11 +2402,11 @@
 	quest.4252010000010008.quest_desc: ["Defeat &c&lAncient Hero&r at its encounter site for this optional boss-route check."]
 	quest.4252010000010008.quest_subtitle: "Boss fight gate."
 	quest.4252010000010008.title: "Ancient Hero"
-	quest.4252010000010009.quest_desc: ["Defeat &c&lInfernal Dragon&r at its encounter site for this optional boss-route check."]
-	quest.4252010000010009.quest_subtitle: "Boss fight gate."
+	quest.4252010000010009.quest_desc: ["Defeat the &c&lInfernal Dragon&r at its encounter site. This is a required fight before the finale, not an optional side route.", "Its kill is a dependency of the final convergence at the Draconic Guardian, so the Ascension endgame will not open until this dragon is down. Bring your best gear and clear it."]
+	quest.4252010000010009.quest_subtitle: "Required pre-finale boss."
 	quest.4252010000010009.title: "Infernal Dragon"
-	quest.425201000001000A.quest_desc: ["Defeat &c&lKraken&r at its encounter site for this optional boss-route check."]
-	quest.425201000001000A.quest_subtitle: "Boss fight gate."
+	quest.425201000001000A.quest_desc: ["Defeat the &c&lKraken&r at its encounter site. This is a required pre-finale fight, not an optional boss-route check.", "Along with Scylla and the Infernal Dragon, the Kraken must fall before the final convergence at the Draconic Guardian unlocks. Do not save it for later."]
+	quest.425201000001000A.quest_subtitle: "Required pre-finale boss."
 	quest.425201000001000A.title: "Kraken"
 	quest.425201000001000B.quest_desc: ["Defeat &c&lChaos Guardian&r at the Chaos Island fight; this kill check awards the stage flags."]
 	quest.425201000001000B.quest_subtitle: "Boss fight gate."
@@ -2573,8 +2570,8 @@
 	quest.4358010000010000.quest_desc: ["Craft the &bender splice&r, a &bperturbed eye&r, and &bradiating ender&r from &6Spectrum&r. The deep arcana converges on the same peak as your reactors, and these three pieces are the entry ticket."]
 	quest.4358010000010000.quest_subtitle: "Spectrum reaches deeper."
 	quest.4358010000010000.title: "Radiating Ender"
-	quest.4358010000010001.quest_desc: ["Wake and survive &c&lTremorzilla&r, &6Alex's Caves&r' walking catastrophe, and keep the &begg&r. No paperwork. Just teeth."]
-	quest.4358010000010001.quest_subtitle: "Optional: the cave's own deterrent."
+	quest.4358010000010001.quest_desc: ["Wake and survive &c&lTremorzilla&r, Alex's Caves' walking catastrophe, and keep the &begg&r. This is a required Atomic fight, not an optional deterrent.", "Its kill feeds the Atomic age capstone, so the age does not close until Tremorzilla is down. No paperwork. Just teeth."]
+	quest.4358010000010001.quest_subtitle: "Required Atomic boss."
 	quest.4358010000010001.title: "Tremorzilla"
 	quest.4358010000010002.quest_desc: ["Defeat &c&lGeburah&r and take the &bjustice core&r it guards. The core is the proof the chaos gate demands; lane capstones and the silenced prophets must be done before it opens."]
 	quest.4358010000010002.quest_subtitle: "The gatekeeper of the chaos gate."
@@ -7597,60 +7594,48 @@
 	quest.7A55C1000000000F.title: "Diving Suit"
 	quest.7A55C1000000000F.quest_subtitle: "Optional depth. Cheap gear for delving flooded ruins."
 	quest.7A55C1000000000F.quest_desc: ["Some ruins and burrows flood, and holding your breath only gets you so far. Craft the full Hybrid Aquatic diving set: &bDiving Helmet&r, &bDiving Suit&r, &bDiving Leggings&r, and &bDiving Boots&r.", "The set is cheap early gear, built from copper, leather, and glass you already have. Worn together it lets you stay under long enough to search a flooded room instead of surfacing every few seconds.", "This is the on-ramp, not the deep-op kit. It gets you into the water. Better dive gear waits much later once you are working the sea for real."]
-	quest.49540C100000002D.title: "[STUB] Eye Of Chesed title"
-	quest.49540C100000002D.quest_subtitle: "[STUB] craft the locator eye subtitle"
-	quest.49540C100000002D.quest_desc: [
-		"[BRIEF] teaches: forging fdbosses:eye_of_chesed (recipe = 4x minecraft:sculk + 1x minecraft:ender_eye in a plus shape) and that it works like an Eye of Ender to LOCATE the naturally-generated fdbosses:chesed_arena in the Overworld. AStages: eye_of_chesed is IR-gated (industrial_revolution). This is the IR co-required Qliphoth exam entry (Chesed = the sephirah of Mercy). Prior node = obsidilith proof 49540C1000000006. Next = enter the arena. Opus: 2-4 para, instruction-first, no em dashes."
-	]
-	quest.49540C100000002E.title: "[STUB] The Mercy Monolith title"
-	quest.49540C100000002E.quest_subtitle: "[STUB] find and enter Chesed's arena subtitle"
-	quest.49540C100000002E.quest_desc: [
-		"[BRIEF] teaches: throwing the Eye of Chesed to track down and physically enter the fdbosses:chesed_arena structure (Overworld, random-spread). Structure task on fdbosses:chesed_arena. Warn the player Chesed cannot be damaged directly: during its Lightning Ray it summons crystals; kill a crystal with an AXE to gain Energized, then stand at a ray reflector so Chesed's beam hits the reflector for 1 damage; deactivate monoliths by killing them or the finisher attack is unsurvivable. Prior = eye node 49540C100000002D. Next = the kill/proof. Opus: 2-4 para."
-	]
-	quest.49540C100000002F.title: "[STUB] Chesed, No Mercy title"
-	quest.49540C100000002F.quest_subtitle: "[STUB] defeat Chesed, claim the Lightning Core subtitle"
-	quest.49540C100000002F.quest_desc: [
-		"[BRIEF] teaches: defeating fdbosses:chesed and collecting its guaranteed drop fdbosses:lightning_core (kill task + item task). Completing this is the IR co-required exam: it grants the chesed_defeated stage and is fanned into the IR capstone aggregator 4954631000000000 alongside obsidilith, so the IR to Gilded grant now needs BOTH. Note the Lightning Core can be applied to any weapon in a crafting table to add a chance-to-shock on hit. Prior = arena node 49540C100000002E. Opus: 2-4 para, instruction-first, no em dashes."
-	]
-	quest.505701100000000A.title: "[STUB] Eye Of Malkuth title"
-	quest.505701100000000A.quest_subtitle: "[STUB] craft the locator eye subtitle"
-	quest.505701100000000A.quest_desc: [
-		"[BRIEF] teaches: forging fdbosses:eye_of_malkuth (recipe = minecraft:ice + minecraft:magma_block + minecraft:ender_eye in the shaped pattern) and that it locates the naturally-generated fdbosses:malkuth_arena in the Overworld like an Eye of Ender. AStages: eye_of_malkuth is Gilded-gated (gilded_age). This is the Gilded co-required Qliphoth exam entry (Malkuth = the sephirah of Kingdom, a fallen benevolent king). Prior node = astral entry 5057011000000001. Next = enter the arena. Opus: 2-4 para, no em dashes."
-	]
-	quest.505701100000000B.title: "[STUB] The Fallen King's Arena title"
-	quest.505701100000000B.quest_subtitle: "[STUB] find and enter Malkuth's arena subtitle"
-	quest.505701100000000B.quest_desc: [
-		"[BRIEF] teaches: using the Eye of Malkuth to find and enter fdbosses:malkuth_arena (structure task on fdbosses:malkuth_arena). Warn: fight at NIGHT (dev note). Malkuth cannot be attacked directly and has impenetrable armor; you are made weak to either Fire or Ice (shown on the crosshair) and must fire the arena CANNONS of the type you are currently weak to during his Cannonade to damage him. Leaving the arena mid-fight turns Knight into Coward (death penalty). Prior = eye node 505701100000000A. Next = the kill/proof. Opus: 2-4 para."
-	]
-	quest.505701100000000C.title: "[STUB] Malkuth, the Tsar's Wrath title"
-	quest.505701100000000C.quest_subtitle: "[STUB] defeat Malkuth, claim the Fire and Ice Core subtitle"
-	quest.505701100000000C.quest_desc: [
-		"[BRIEF] teaches: defeating fdbosses:malkuth and collecting its guaranteed drop fdbosses:fire_and_ice_core (kill task + item task). Completing this is the Gilded co-required exam: it grants the malkuth_defeated stage and is fanned into the Gilded capstone aggregator 5057011000000004 alongside the Void Titan, so the Gilded to Atomic grant now needs BOTH. Note the Fire and Ice Core attaches to any damage-dealing item to summon a fireball (use) or iceball (crouch+use). Prior = arena node 505701100000000B. Opus: 2-4 para, instruction-first, no em dashes."
-	]
-	quest.0B03102000000100.title: "[STUB] Ignis"
-	quest.0B03102000000100.quest_subtitle: "[STUB] defeat the Nether forge boss"
-	quest.0B03102000000100.quest_desc: ["[BRIEF] teaches: Cataclysm Ignis, a Renaissance-tier Nether boss (spawns in Nether Fortresses). Kill task fdbosses n/a; entity cataclysm:ignis. Guaranteed proof drop cataclysm:ignitium_ingot (single-roll loot table; guaranteed on real-player kill via boss_progression_proof.js). This node combines a kill task + an ignitium_ingot item task. Rooted on the blaze-burner node; part of the Nether required-boss line that fans into the Nether chapter grant. Opus: 2-4 para instruction-first, no em dashes."]
-	quest.0B03102000000101.title: "[STUB] The Harbinger"
-	quest.0B03102000000101.quest_subtitle: "[STUB] defeat the wither-touched Nether boss"
-	quest.0B03102000000101.quest_desc: ["[BRIEF] teaches: Cataclysm The Harbinger, Renaissance Nether boss (spawns in ancient factory structures). entity cataclysm:the_harbinger. Guaranteed proof cataclysm:witherite_block. kill + item task. Deps on Ignis node. Opus: instruction-first."]
-	quest.0B03102000000102.title: "[STUB] Locate the Gauntlet Arena"
-	quest.0B03102000000102.quest_subtitle: "[STUB] find a Nether Gauntlet arena"
-	quest.0B03102000000102.quest_desc: ["[BRIEF] teaches: locating the bosses_of_mass_destruction:gauntlet_arena structure (naturally generated). structure task. Deps on Harbinger. Prep node for the Gauntlet fight. Opus: short, tell player to explore the Nether for the arena."]
-	quest.0B03102000000103.title: "[STUB] Nether Gauntlet"
-	quest.0B03102000000103.quest_subtitle: "[STUB] defeat the Nether Gauntlet"
-	quest.0B03102000000103.quest_desc: ["[BRIEF] teaches: BOMD Nether Gauntlet boss. entity bosses_of_mass_destruction:gauntlet. Proof bosses_of_mass_destruction:blazing_eye (native drop is a death-chest; rerouted onto real-player kill via boss_progression_proof.js addTableModifier). kill + item task. Terminal of Nether boss line; feeds the Nether chapter grant 0B03102000000062. Opus: instruction-first."]
-	quest.0B03103000000100.title: "[STUB] Silver Dungeon"
-	quest.0B03103000000100.quest_subtitle: "[STUB] find the Aether Silver Dungeon"
-	quest.0B03103000000100.quest_desc: ["[BRIEF] teaches: locating aether:silver_dungeon structure (floating Aether island vault). structure task. Deps on the slider (Bronze Dungeon) node. Prep for Valkyrie Queen. Opus: short."]
-	quest.0B03103000000101.title: "[STUB] Valkyrie Queen"
-	quest.0B03103000000101.quest_subtitle: "[STUB] defeat the Valkyrie Queen"
-	quest.0B03103000000101.quest_desc: ["[BRIEF] teaches: Aether Valkyrie Queen, required Renaissance Aether boss (Silver Dungeon). entity aether:valkyrie_queen. Proof aether:silver_dungeon_key (guaranteed drop). kill + item task. This node CARRIES the ren_aether_literacy_complete stage grant (moved here from the slider node so the boss is required before the chapter proof). It is the Aether chapter climax; the Renaissance age grant now depends on this node. Opus: instruction-first, note the Silver Key is dropped by the Queen."]
-	quest.0B03104000000100.title: "[STUB] Starlight Proven"
-	quest.0B03104000000100.quest_subtitle: "[STUB] record the Starlight boss victory"
-	quest.0B03104000000100.quest_desc: ["[BRIEF] teaches: proof terminal for the Eternal Starlight boss line. item task eternal_starlight:orb_of_prophecy. Deps on the now-REQUIRED Starlight Golem kill (0B03104000000073). CARRIES the ren_starlight_observation_complete grant (moved here so the Golem is required before the chapter proof). Renaissance age grant depends on this node. NOTE for Opus: the Starlight Golem node 0B03104000000073 text still says 'optional construct boss / not a required chapter gate' - that is now FALSE (promoted required); re-prose the golem node too. Opus: instruction-first."]
-	quest.0B03105000000100.title: "[STUB] Forgotten Guardian Proven"
-	quest.0B03105000000100.quest_subtitle: "[STUB] claim the Forgotten Nugget"
-	quest.0B03105000000100.quest_desc: ["[BRIEF] teaches: proof terminal for the Undergarden Forgotten Guardian. item task undergarden:forgotten_nugget (guaranteed drop, killed_by_player). Deps on the now-REQUIRED Forgotten Guardian kill (0B03105000000041, in the Catacombs). CARRIES the ren_undergarden_descent_complete grant (moved from the return-to-overworld node so the Guardian is required before the chapter proof). Renaissance age grant depends on this node. Opus: instruction-first, tell player the nugget drops from the Guardian."]
+	quest.49540C100000002D.title: "Eye of Chesed"
+	quest.49540C100000002D.quest_subtitle: "Craft the locator eye."
+	quest.49540C100000002D.quest_desc: ["The Qliphoth trials answer the sephirah bosses you have already fought. Chesed is Mercy, and reaching it starts with a tracking eye. Craft the &bEye of Chesed&r by placing four &bSculk&r in a plus shape around one &bEye of Ender&r in the crafting grid.", "The eye is unlocked at the Industrial Revolution tier, so build it once your factory footing is solid. It behaves like an Eye of Ender, but instead of a stronghold it hunts the Chesed Arena that generates naturally out in the Overworld.", "Make one eye to start. Throw it in the next step to read the direction and close the distance to the arena."]
+	quest.49540C100000002E.title: "The Mercy Monolith"
+	quest.49540C100000002E.quest_subtitle: "Find and enter Chesed's arena."
+	quest.49540C100000002E.quest_desc: ["Throw the &bEye of Chesed&r and follow the direction it points, the same way you would track a stronghold. Keep throwing and walking until you stand inside the &bChesed Arena&r. Entering the structure completes this step.", "Chesed cannot be hurt with a normal swing. During its Lightning Ray it summons crystals. Break a crystal with an &baxe&r to gain the Energized effect, then stand at one of the arena's ray reflectors so Chesed's beam strikes the reflector. Each redirected beam deals one point of damage, and that is the only way through its guard.", "Watch the monoliths around the arena. Kill them as they appear, because if any are still active when Chesed reaches its finisher the attack cannot be survived. Clear them, ride the reflector loop, and keep your Energized window open."]
+	quest.49540C100000002F.title: "Chesed, No Mercy"
+	quest.49540C100000002F.quest_subtitle: "Defeat Chesed, claim the Lightning Core."
+	quest.49540C100000002F.quest_desc: ["Finish the Chesed fight and pick up the &bLightning Core&r it drops. Turn the core in here to record the kill.", "This is the Industrial Revolution exam. Completing it grants the Chesed proof and feeds the age capstone alongside Obsidilith, so the step from Industrial Revolution into the Gilded Age now needs both bosses down, not just one.", "Keep the Lightning Core for more than a trophy. Combine it with any weapon in a crafting table and that weapon gains a chance to shock what it hits."]
+	quest.505701100000000A.title: "Eye of Malkuth"
+	quest.505701100000000A.quest_subtitle: "Craft the locator eye."
+	quest.505701100000000A.quest_desc: ["Malkuth is Kingdom, a fallen king who once ruled with kindness. Reaching him needs its own tracking eye. Craft the &bEye of Malkuth&r from &bIce&r, a &bMagma Block&r, and one &bEye of Ender&r in the shown pattern.", "The recipe unlocks at the Gilded Age tier, so this trial sits above the Chesed exam, not beside it. Like an Eye of Ender, the finished eye points toward the Malkuth Arena that generates in the Overworld.", "Build one eye and carry it into the next step. You will throw it to find the arena."]
+	quest.505701100000000B.title: "The Fallen King's Arena"
+	quest.505701100000000B.quest_subtitle: "Find and enter Malkuth's arena."
+	quest.505701100000000B.quest_desc: ["Throw the &bEye of Malkuth&r and chase the direction it gives until you reach the &bMalkuth Arena&r. Walking inside the structure completes this step. Come at night, since that is when the fight is meant to be fought.", "Malkuth wears armor nothing can pierce, so direct attacks do nothing. Instead the fight makes you weak to either Fire or Ice, and your current weakness shows next to your crosshair. During his Cannonade you must fire the arena cannons that match the element you are weak to. Those shots are what actually hurt him.", "Do not leave the arena while the fight is live. Stepping out turns the Knight into a Coward, and that carries a death penalty. Stay in, read your weakness, and work the correct cannons."]
+	quest.505701100000000C.title: "Malkuth, the Tsar's Wrath"
+	quest.505701100000000C.quest_subtitle: "Defeat Malkuth, claim the Fire and Ice Core."
+	quest.505701100000000C.quest_desc: ["Bring Malkuth down and collect the &bFire and Ice Core&r from the kill. Hand it in here to log the victory.", "This is the Gilded Age exam. It grants the Malkuth proof and joins the Gilded capstone alongside the Void Titan, so the move from the Gilded Age into the Atomic age now requires both of them.", "The Fire and Ice Core is a usable tool as well. Attach it to any item that deals damage: use it to throw a fireball, or crouch and use it to throw an iceball."]
+	quest.0B03102000000100.title: "Ignis"
+	quest.0B03102000000100.quest_subtitle: "Defeat the Nether forge boss."
+	quest.0B03102000000100.quest_desc: ["&c&lIgnis&r is a Nether boss that spawns inside Nether Fortresses. He is the first real test of the Renaissance-tier gear you carried down here, so bring fire resistance and a strong melee weapon before you pick a fight in the corridors.", "Kill Ignis and keep the &bIgnitium Ingot&r he leaves behind. The drop is guaranteed on a real player kill, so one clean fight is enough. Turn the ingot in here.", "Ignis anchors the Nether boss line for this chapter. His ingot is also the entry to the Ignitium gear tier, so the kill pays off twice."]
+	quest.0B03102000000101.title: "The Harbinger"
+	quest.0B03102000000101.quest_subtitle: "Defeat the wither-touched Nether boss."
+	quest.0B03102000000101.quest_desc: ["&c&lThe Harbinger&r haunts the ruined factory structures scattered through the Nether. It is a wither-touched horror that hits harder than Ignis, so clear the fight only after you have his gear behind you.", "Defeat the Harbinger and recover the &bWitherite Block&r it drops. The drop is guaranteed on a player kill. Bring it back here to record the fight.", "This step depends on the Ignis kill and pushes the Nether line one boss deeper toward its terminal Gauntlet fight."]
+	quest.0B03102000000102.title: "Locate the Gauntlet Arena"
+	quest.0B03102000000102.quest_subtitle: "Find a Nether Gauntlet arena."
+	quest.0B03102000000102.quest_desc: ["The final Nether boss waits inside a &bGauntlet Arena&r, a structure that generates naturally in the Nether. This step is simple: find one.", "Explore the Nether wastes and soul sand valleys until you locate the arena. Standing inside it completes the objective and opens the fight in the next step.", "Scout it before you commit. Knowing the layout and your exits makes the Gauntlet itself far more survivable."]
+	quest.0B03102000000103.title: "Nether Gauntlet"
+	quest.0B03102000000103.quest_subtitle: "Defeat the Nether Gauntlet."
+	quest.0B03102000000103.quest_desc: ["The &c&lGauntlet&r is the terminal Nether boss, a massive fist that guards its arena. This is the hardest fight of the Nether line, so arrive with your best Renaissance gear and healing.", "Kill the Gauntlet and claim the &bBlazing Eye&r. Its normal drop is a sealed chest, but here the proof is routed straight onto your kill, so the eye comes to you directly. Turn it in.", "Finishing this closes the Nether required-boss line and feeds the Nether chapter completion. With the Gauntlet down, the Nether has nothing left to prove against you."]
+	quest.0B03103000000100.title: "Silver Dungeon"
+	quest.0B03103000000100.quest_subtitle: "Find the Aether Silver Dungeon."
+	quest.0B03103000000100.quest_desc: ["The &bSilver Dungeon&r is a vault built into one of the Aether's floating islands. Reaching it is the objective here.", "Fly or bridge across the Aether and search the larger islands for the dungeon's entrance. Standing inside completes this step and sets up the boss fight that follows.", "The Silver Dungeon holds the Valkyrie Queen, so treat this as your staging point. Rest, stock arrows and food, then go in ready."]
+	quest.0B03103000000101.title: "Valkyrie Queen"
+	quest.0B03103000000101.quest_subtitle: "Defeat the Valkyrie Queen."
+	quest.0B03103000000101.quest_desc: ["The &c&lValkyrie Queen&r rules the Silver Dungeon and is the required Aether boss for this chapter. She fights with speed and reach, so keep moving and punish the openings between her lunges.", "Defeat her and take the &bSilver Dungeon Key&r she drops. The key is a guaranteed reward for the win. Hand it in here.", "This kill is the Aether chapter climax and carries its completion proof, so the Renaissance age progress now waits on the Queen falling. The dungeon does not open its full rewards until she is beaten."]
+	quest.0B03104000000100.title: "Starlight Proven"
+	quest.0B03104000000100.quest_subtitle: "Record the Starlight boss victory."
+	quest.0B03104000000100.quest_desc: ["This step records that you have cleared the Eternal Starlight boss line. Turn in an &bOrb of Prophecy&r to mark the dimension's guardian work as done.", "It depends on the &c&lStarlight Golem&r kill, which is now a required fight rather than an optional trophy. You cannot log this proof until the Golem is down.", "Completing it carries the Starlight chapter proof, so the Renaissance age progress runs through this node. Finish the Golem, bring the orb, and the observation work is closed."]
+	quest.0B03105000000100.title: "Forgotten Guardian Proven"
+	quest.0B03105000000100.quest_subtitle: "Claim the Forgotten Nugget."
+	quest.0B03105000000100.quest_desc: ["This step confirms you have beaten the Undergarden's deepest sentinel. Turn in a &bForgotten Nugget&r to record the fight.", "The nugget drops from the &c&lForgotten Guardian&r down in the Catacombs, and that fight is now required, not optional. Kill the Guardian first, then bring its nugget here.", "Logging this carries the Undergarden chapter proof, so the Renaissance descent completes through this node. Nothing shallower in the dimension will stand in for the Guardian."]
 	quest.5350010000010000.quest_subtitle: "Granted at world entry."
 	quest.5350010000010000.title: "&8Dark Ages&r"
 	quest.5350010000020000.quest_subtitle: "Age gate. Clears when its capstone quest is complete."
@@ -7767,43 +7752,43 @@
 	quest.5350010000020037.title: "&dArchive of Ages&r"
 	quest.5350010000020038.quest_subtitle: "Age gate. Clears when its capstone quest is complete."
 	quest.5350010000020038.title: "&dAscension Complete ◆&r"
-	quest.4C580000EE000000.title: "[STUB] Sun Altar Chamber"
-	quest.4C580000EE000000.quest_subtitle: "[STUB] locate the Aether Gold Dungeon"
-	quest.4C580000EE000000.quest_desc: ["[BRIEF] teaches: reaching the Aether Gold Dungeon / Sun Spirit chamber. Task = dimension aether:the_aether (light locate/prep node, item-free for the thin OW spine). Prereq for the Sun Spirit kill node. First of the OW2 strange-dimension boss line; deps the ow2 grant node 4C58010000010005. Opus: 2-4 para instruction-first, no em dashes; explain that the Gold Dungeon holds the Sun Spirit and how the key ladder (bronze->silver->gold) culminates here."]
-	quest.4C580000EE010000.title: "[STUB] The Sun Spirit"
-	quest.4C580000EE010000.quest_subtitle: "[STUB] defeat the Aether Gold Dungeon boss"
-	quest.4C580000EE010000.quest_desc: ["[BRIEF] teaches: Cataclysm/Aether Sun Spirit boss (entity aether:sun_spirit), the Aether Gold Dungeon apex. Kill task + item task aether:gold_dungeon_key (guaranteed single-roll drop, guaranteed on real-player kill via boss_progression_proof.js). Sun Spirit must be frozen with ice crystals before it takes damage. REQUIRED Otherworldly boss (moved from Renaissance per BL3). Deps the locate node 4C580000EE000000. Opus: 2-4 para instruction-first, no em dashes."]
-	quest.4C580000EE020000.title: "[STUB] Eye of the Storm"
-	quest.4C580000EE020000.quest_subtitle: "[STUB] defeat the Deep Aether Brass Dungeon boss"
-	quest.4C580000EE020000.quest_desc: ["[BRIEF] teaches: Deep Aether Eye of the Storm (entity deep_aether:eots_controller; kill the controller, NOT eots_segment body parts), the Brass Dungeon apex above Gold. Kill task + item task deep_aether:brass_dungeon_key (guaranteed single-roll drop, guaranteed via boss_progression_proof.js). REQUIRED Otherworldly boss (BL3 move). Terminal of the OW2 boss line; this node is a dependency of the ow2 grant 4C58010000010005 so the whole line is required for the OW age grant. Opus: 2-4 para instruction-first, no em dashes."]
-	quest.44540000EE000000.title: "[STUB] Return to the End"
-	quest.44540000EE000000.quest_subtitle: "[STUB] re-enter the End for its apex guardian"
-	quest.44540000EE000000.quest_desc: ["[BRIEF] teaches: returning to minecraft:the_end (dimension task) to hunt the post-Dragon apex. Light prep node for the thin OW spine. First of the OW3 boss line; deps the ow3 grant node 4454010000010005. Opus: 2-4 para instruction-first, no em dashes; note the Ender Guardian spawns naturally in the End after the Dragon."]
-	quest.44540000EE010000.title: "[STUB] The Ender Guardian"
-	quest.44540000EE010000.quest_subtitle: "[STUB] defeat the End apex construct"
-	quest.44540000EE010000.quest_desc: ["[BRIEF] teaches: Cataclysm Ender Guardian (entity cataclysm:ender_guardian), the End apex boss. Kill task + item task cataclysm:gauntlet_of_guard (guaranteed single-roll drop, guaranteed via boss_progression_proof.js). REQUIRED Otherworldly boss (moved from Renaissance per BL3 - its gear tier fits OW). Deps the return-to-End node 44540000EE000000. Opus: 2-4 para instruction-first, no em dashes."]
-	quest.44540000EE020000.title: "[STUB] Helvar, the Underworld Knight"
-	quest.44540000EE020000.quest_subtitle: "[STUB] defeat the Bosses'Rise arena knight"
-	quest.44540000EE020000.quest_desc: ["[BRIEF] teaches: Block Factory Bosses Underworld Knight (entity block_factorys_bosses:underworld_knight, 'Helvar'). Kill task + item task block_factorys_bosses:knight_sword (guaranteed single-roll drop, guaranteed via boss_progression_proof.js). REQUIRED Otherworldly boss. Terminal of the OW3 boss line; this node is a dependency of the ow3 grant 4454010000010005. Opus: 2-4 para instruction-first, no em dashes."]
-	quest.44430000EE000000.title: "[STUB] Permafrost"
-	quest.44430000EE000000.quest_subtitle: "[STUB] defeat the frozen Golem Forge boss"
-	quest.44430000EE000000.quest_desc: ["[BRIEF] teaches: Eternal Starlight Permafrost (entity eternal_starlight:permafrost), a Golem Forge region boss. KILL-ONLY proof: empty loot table, so the MQT kill task IS the proof (no item task, no LootJS guarantee). REQUIRED Otherworldly boss. First of the OW5 boss line; deps the ow5 grant node 4443010000010006. Opus: 2-4 para instruction-first, no em dashes; teach the Starlight cold/forge mechanic."]
-	quest.44430000EE010000.title: "[STUB] Lunar Monstrosity"
-	quest.44430000EE010000.quest_subtitle: "[STUB] ignite and defeat the Starlight apex"
-	quest.44430000EE010000.quest_desc: ["[BRIEF] teaches: Eternal Starlight Lunar Monstrosity (entity eternal_starlight:lunar_monstrosity), the Starlight apex. Must be IGNITED (saltpeter matchbox mechanic) before it takes damage. KILL-ONLY proof: empty loot table, MQT kill task IS the proof. REQUIRED Otherworldly boss. Terminal of the OW5 boss line; this node is a dependency of the ow5 grant 4443010000010006. Opus: 2-4 para instruction-first, no em dashes."]
-	quest.42560000EE000000.title: "[STUB] Sirok, the Sandworm"
-	quest.42560000EE000000.quest_subtitle: "[STUB] defeat the desert arena worm"
-	quest.42560000EE000000.quest_desc: ["[BRIEF] teaches: Block Factory Bosses Sandworm (entity block_factorys_bosses:sandworm, 'Sirok'). Kill task + item task block_factorys_bosses:sandworm_gauntlet (guaranteed single-roll drop, guaranteed via boss_progression_proof.js). REQUIRED Otherworldly boss. First of the OW6 apex boss line; deps the Leviathan node 4256010000010004. Opus: 2-4 para instruction-first, no em dashes."]
-	quest.42560000EE010000.title: "[STUB] The Void Worm"
-	quest.42560000EE010000.quest_subtitle: "[STUB] defeat the End-void apex"
-	quest.42560000EE010000.quest_desc: ["[BRIEF] teaches: Alex's Mobs Void Worm (entity alexsmobs:void_worm), an End-void apex boss. Kill task + item task alexsmobs:void_worm_eye (guaranteed single-roll drop, guaranteed via boss_progression_proof.js). REQUIRED Otherworldly boss (9th of the OW set). Terminal of the OW6 apex line; this node is a dependency of the OW capstone 4256010000010006 that grants ascension. Opus: 2-4 para instruction-first, no em dashes."]
-	quest.4358010000EE0F02.title: "[STUB] title"
-	quest.4358010000EE0F02.quest_subtitle: "[STUB] subtitle"
-	quest.4358010000EE0F02.quest_desc: ["[BRIEF] teaches: Alex's Caves Luxtructosaurus apex kill; REQUIRED Atomic boss (boss-ladder BL4). Kill entity alexscaves:luxtructosaurus and turn in proof item alexscaves:tectonic_shard (guaranteed bulk drop). Summoned via Amber Monolith in the Primordial Caves. Chapter=at7 Atomic; prior node = geburah exam 4358010000010002; feeds watcher 4358010000EE0F01. This lane (geburah -> luxtructosaurus -> watcher -> tremorzilla) fans into the Atomic capstone grant 4358010000010003. Opus: 2-4 para instruction-first, no em dashes."]
-	quest.4358010000EE0F01.title: "[STUB] title"
-	quest.4358010000EE0F01.quest_subtitle: "[STUB] subtitle"
-	quest.4358010000EE0F01.quest_desc: ["[BRIEF] teaches: Alex's Caves Watcher apex kill; REQUIRED Atomic boss (boss-ladder BL4). Kill entity alexscaves:watcher and turn in proof item alexscaves:occult_gem (drop guaranteed on player kill via boss_progression_proof.js). Occult horror boss from the Abyssal Chasm. Chapter=at7 Atomic; prior node = luxtructosaurus 4358010000EE0F02; feeds tremorzilla 4358010000010001 which feeds the Atomic capstone grant 4358010000010003. Opus: 2-4 para instruction-first, no em dashes."]
-	quest.4252010000EE0001.title: "[STUB] title"
-	quest.4252010000EE0001.quest_subtitle: "[STUB] subtitle"
-	quest.4252010000EE0001.quest_desc: ["[BRIEF] teaches: Cataclysm Scylla ocean-storm apex kill; REQUIRED Ascension boss (boss-ladder BL4). Kill entity cataclysm:scylla and turn in proof item cataclysm:essence_of_the_storm (guaranteed single-roll drop on player kill). Natural ocean/storm spawn. Chapter=asc6 bosses_rise; prior node = kraken 425201000001000A; this node is a dependency of the final convergence 425201000001000B (Draconic Guardian), so scylla + kraken + infernal_dragon are all required before the finale. Opus: 2-4 para instruction-first, no em dashes."]
+	quest.4C580000EE000000.title: "Sun Altar Chamber"
+	quest.4C580000EE000000.quest_subtitle: "Locate the Aether Gold Dungeon."
+	quest.4C580000EE000000.quest_desc: ["The Aether hides its bosses behind a ladder of dungeons: Bronze, then Silver, then Gold. The &bGold Dungeon&r is the top of that ladder and it holds the Sun Spirit. Reach it here.", "Travel back into the Aether and search its islands for the Gold Dungeon's sealed entrance. Entering the dimension for this hunt completes the step. This is a light scouting node, so no items are required yet.", "Treat the Gold Dungeon as the Sun Spirit's chamber. Once you are inside and staged, the fight in the next step is what actually matters."]
+	quest.4C580000EE010000.title: "The Sun Spirit"
+	quest.4C580000EE010000.quest_subtitle: "Defeat the Aether Gold Dungeon boss."
+	quest.4C580000EE010000.quest_desc: ["The &c&lSun Spirit&r is the apex of the Aether Gold Dungeon and a required Otherworldly boss. It burns too hot to strike while it blazes.", "You must freeze it first. Use the fight's ice crystals to chill the Sun Spirit before your hits land, then break through in the window while it is cold. Repeat until it falls.", "Kill it and keep the &bGold Dungeon Key&r it drops. The key is guaranteed on a real player kill. Turn it in here, then continue up the Aether ladder to the Brass Dungeon above."]
+	quest.4C580000EE020000.title: "Eye of the Storm"
+	quest.4C580000EE020000.quest_subtitle: "Defeat the Deep Aether Brass Dungeon boss."
+	quest.4C580000EE020000.quest_desc: ["Above the Gold Dungeon sits the Deep Aether's &bBrass Dungeon&r, guarded by the &c&lEye of the Storm&r. This is a required Otherworldly boss and the terminal of this dungeon line.", "Attack the storm's controller, not its body. The boss floats behind rotating segments, but only the eye at the center takes damage. Ignore the segments and drive everything into the controller.", "Down it and claim the &bBrass Dungeon Key&r, guaranteed on your kill. This node feeds the Otherworldly chapter grant for the strange dimensions, so the whole Aether ladder counts toward the age only once the Eye is beaten."]
+	quest.44540000EE000000.title: "Return to the End"
+	quest.44540000EE000000.quest_subtitle: "Re-enter the End for its apex guardian."
+	quest.44540000EE000000.quest_desc: ["The Ender Dragon was never the End's last word. A greater guardian stirs there once the Dragon is gone. This step sends you back through the End portal to hunt it.", "Entering the End completes the objective. This is a light staging node for the thin Otherworldly boss line, so no items are needed yet.", "Once you are back in the End, look for the apex construct that spawns after the Dragon. The next step is the fight itself, so land somewhere safe and prepare before you go looking."]
+	quest.44540000EE010000.title: "The Ender Guardian"
+	quest.44540000EE010000.quest_subtitle: "Defeat the End apex construct."
+	quest.44540000EE010000.quest_desc: ["The &c&lEnder Guardian&r is the End's true apex, a heavy construct that patrols the outer islands. It is a required Otherworldly boss, moved here because its gear belongs to this tier rather than the earlier ages.", "It hits hard and shrugs off weak weapons, so bring your strongest kit and room to maneuver. Kill it and keep the &bGauntlet of Guard&r it drops, a guaranteed single reward on the fight.", "Turn the gauntlet in here. This kill anchors the End boss line and pushes it toward its Underworld Knight terminal."]
+	quest.44540000EE020000.title: "Helvar, the Underworld Knight"
+	quest.44540000EE020000.quest_subtitle: "Defeat the arena knight."
+	quest.44540000EE020000.quest_desc: ["&c&lHelvar&r, the Underworld Knight, is a summoned arena boss from Block Factory Bosses and a required Otherworldly fight. He is the terminal of this boss line.", "Face him in his arena and keep pressure on through his heavy swings. Defeat him and take the &bKnight Sword&r he drops, guaranteed on the kill.", "Hand the sword in here. This node is a dependency of the Otherworldly chapter grant for the End line, so the age progress runs through Helvar falling."]
+	quest.44430000EE000000.title: "Permafrost"
+	quest.44430000EE000000.quest_subtitle: "Defeat the frozen Golem Forge boss."
+	quest.44430000EE000000.quest_desc: ["&c&lPermafrost&r is a region boss of Eternal Starlight's Golem Forge, and it is a required Otherworldly fight. The Forge is a cold, hostile stretch where the land itself builds golems, so bring warmth and a fast weapon.", "This boss has no loot table, which means there is no proof item to collect. The kill itself is the proof: defeating Permafrost completes this step directly.", "Learn the Forge while you are here. The cold saps you and the golem-making terrain keeps throwing bodies at you, so control your ground before you engage the boss."]
+	quest.44430000EE010000.title: "Lunar Monstrosity"
+	quest.44430000EE010000.quest_subtitle: "Ignite and defeat the Starlight apex."
+	quest.44430000EE010000.quest_desc: ["The &c&lLunar Monstrosity&r is the apex of Eternal Starlight and a required Otherworldly boss. It cannot be hurt while it is dormant.", "You must ignite it first. Light it using the saltpeter matchbox before it will take any damage, then keep the pressure up once it wakes. Like Permafrost, it has no loot table, so the kill is its own proof and there is nothing to collect.", "This is the terminal of the Starlight boss line and a dependency of the Otherworldly chapter grant. Ignite it, break it, and the Forge dimension is settled."]
+	quest.42560000EE000000.title: "Sirok, the Sandworm"
+	quest.42560000EE000000.quest_subtitle: "Defeat the desert arena worm."
+	quest.42560000EE000000.quest_desc: ["&c&lSirok&r, the Sandworm, is a Block Factory Bosses arena fight and a required Otherworldly boss. It burrows and surfaces, so read the sand and stay off the spot it is about to erupt from.", "Beat it and keep the &bSandworm Gauntlet&r it drops, guaranteed on the kill. Turn it in here.", "Sirok opens the final Otherworldly apex line, the last set of fights before the age hands off to Ascension. Treat these as your exit exam from the Otherworldly age."]
+	quest.42560000EE010000.title: "The Void Worm"
+	quest.42560000EE010000.quest_subtitle: "Defeat the End-void apex."
+	quest.42560000EE010000.quest_desc: ["The &c&lVoid Worm&r from Alex's Mobs is an End-void apex and the last required Otherworldly boss. It is a long, serpentine horror that phases through the void, so pick an arena with footing and keep it in front of you.", "Kill it and recover the &bVoid Worm Eye&r, guaranteed on your kill. Bring it here.", "This is the terminal of the Otherworldly apex line and a dependency of the age capstone that grants Ascension. With the Void Worm dead, the Otherworldly age is complete and the final age opens."]
+	quest.4358010000EE0F02.title: "Luxtructosaurus"
+	quest.4358010000EE0F02.quest_subtitle: "Defeat the Primordial Caves apex."
+	quest.4358010000EE0F02.quest_desc: ["&c&lLuxtructosaurus&r is a required Atomic boss, summoned from an Amber Monolith deep in the Primordial Caves of Alex's Caves. It is a walking mountain of an apex predator, so fight it with room to run and reactor-tier gear on your back.", "Bring it down and collect the &bTectonic Shard&r it drops in bulk. Turn the shard in here to log the kill.", "This fight follows the Geburah exam and feeds forward into the Watcher. That lane runs Geburah into Luxtructosaurus into the Watcher into Tremorzilla, and the whole chain fans into the Atomic age capstone."]
+	quest.4358010000EE0F01.title: "The Watcher"
+	quest.4358010000EE0F01.quest_subtitle: "Defeat the Abyssal Chasm horror."
+	quest.4358010000EE0F01.quest_desc: ["The &c&lWatcher&r is a required Atomic boss, an occult horror that lurks in the Abyssal Chasm of Alex's Caves. It punishes carelessness, so mind what it does when you look at it and keep your approach deliberate.", "Defeat it and take the &bOccult Gem&r, guaranteed on a real player kill. Hand it in here.", "The Watcher follows the Luxtructosaurus kill and feeds into Tremorzilla, which in turn drives the Atomic age capstone. It is the second-to-last link in the Atomic boss ladder."]
+	quest.4252010000EE0001.title: "Scylla"
+	quest.4252010000EE0001.quest_subtitle: "Defeat the ocean-storm apex."
+	quest.4252010000EE0001.quest_desc: ["&c&lScylla&r is a required Ascension boss, an ocean-storm apex from Cataclysm that spawns naturally out on stormy seas. It commands the water and the weather, so fight it from stable footing and expect the arena to move under you.", "Kill it and keep the &bEssence of the Storm&r it drops, guaranteed on a real player kill. Turn it in here.", "Scylla follows the Kraken and is a dependency of the final convergence at the Draconic Guardian. Scylla, the Kraken, and the Infernal Dragon are all required before the finale opens, so none of the three can be skipped."]
 }

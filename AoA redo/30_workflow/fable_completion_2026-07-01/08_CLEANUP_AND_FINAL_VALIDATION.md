@@ -51,25 +51,29 @@ Nothing merges to the live pack until CC signs this off.
 ## Part C — CANON DECISION QUEUE (Andrew decides; do NOT author blind)
 These surfaced during the census/audit. Each needs a human call before or during authoring.
 CC collects answers, then routes to the right per-age prompt.
-1. **Ungated content sweep (big one):** 139 content mods have no AStages gate. Some are
-   intentional (Quark decor, per canon "don't lock decor mods"). Most tech/magic ones are not.
-   Produce the list, split "intentional-open" vs "needs a gate," and gate the latter at their
-   tier. This is an age-discipline hole, not just a coverage gap.
-2. **apotheosis** — real gem/affix apparatus, **no gate at all**. Capstone-only by design
-   (current state), or add a gate + a teaching questline? Gear can leak arbitrarily early today.
-3. **apothic_enchanting** — ungated + 0 quests; canon wants "late-Renaissance controlled." Set
-   the gate, then `02b` authors the line.
-4. **mekanismadditions** — 0 gate + 0 quests. Confirm jar contents → chapter slot or explicit skip.
-5. **Depths of Malum** dimension — no gate, no quest. In scope or explicit skip?
-6. **Mekanism SPS** (`sps_casing`/`sps_port`) — ungated; is antimatter production in scope?
-7. **enderio `powered_spawner`** — real block, ungated + unquested. Gate + quest or skip?
-8. **extradisks** `chemical_p2p_tunnel` / portable cell line — ungated; scope decision.
-9. **Malum** 5 elemental Spirit types — need a gate, or leave as flavor?
-10. **Extended Crafting `advanced_table`** — its AoA recipe needs only Gilded ingredients but the
-    block stays Ascension-locked. Not a softlock; reconcile gate vs recipe.
+
+**RESOLVED 2026-07-02 — GATING IS CLOSED.** Per `AOA_QUEST_SCOPE_REGISTRY.md` (canon §9): no
+coverage-driven gating. The 139-ungated-mod sweep is VOID — do not gate ungated mods. Every
+"needs a gate" question below is settled (answer: no gate). Only genuine questing/content
+decisions remain. Also honor the registry's EXCLUDED list before authoring anything.
+
+1. ~~Ungated content sweep~~ — **VOID** (no gating; registry Policy 1).
+2. ~~apotheosis gate~~ — no gate. Open question is only: capstone-only (current) or a teaching
+   questline? (content decision, low priority).
+3. ~~apothic_enchanting gate~~ — no gate. Author a small optional line only if desired.
+4. **mekanismadditions** — 0 quests. Confirm jar contents → optional chapter slot or skip. (no gate)
+5. **Depths of Malum** dimension — quest it or explicit skip? (no gate either way)
+6. ~~Mekanism SPS gate~~ — no gate. Antimatter questing optional, low priority.
+7. ~~enderio `powered_spawner` gate~~ — no gate. Optional quest only.
+8. ~~extradisks p2p / portable cell gate~~ — no gate.
+9. ~~Malum 5 elemental Spirit gate~~ — no gate. Author a ladder or leave as flavor (content call).
+10. **Extended Crafting `advanced_table`** — AoA recipe needs only Gilded ingredients (recipe vs
+    intended tier mismatch). Reconcile the RECIPE (not a gate) if it matters for progression.
 11. **Neo Vitae anchor A1** — `ren_magic_foundations` still deps F&A `0B03101000000039` into
-    capstone `0B0310100000CAFE`. Repoint to Ara Vitae T1, or leave?
-12. **Hephaestus Forge** non-monotonic tier gating (T4/T5 lock back to Renaissance) — bug or intent?
+    capstone `0B0310100000CAFE`. Repoint to Ara Vitae T1, or leave? (content/wiring, not gating)
+12. **Hephaestus Forge** non-monotonic tier ordering (T4/T5 vs T1-3) — bug or intent? (existing
+    gate ordering, not a new gate)
+13. **`aoacore-0.4.5` + `0.4.6`** duplicate jar loaded — remove the stale 0.4.5 (Part A.6).
 
 ## Definition of done (the whole pack)
 - IR/Gilded/Atomic: verified clean, Create gaps closed, g6 descs filled.
