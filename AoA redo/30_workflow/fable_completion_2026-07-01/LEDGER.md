@@ -71,6 +71,44 @@ table (262/264 verified; 2 flagged rows are documented smart_filter parse blind 
 - **Ascension buildout:** Re:Avaritia neutronium chain, Extended Crafting elite/crystaltine,
   Oritech apex expansion (asc4 thinnest lane at 6 items).
 
+## Addendum 2026-07-02 — user canon calls + research pass (reports J/K/L in phase0/)
+
+**User rulings on the ledger:**
+- Rows 6/14/17/25 + the vanilla/decor/kill legality rules are GO-FORWARD ONLY — existing
+  cluster-2 content stays. Rules bind new authoring.
+- Row 19 WITHDRAWN: density is welcome ("every machine" questing is fine); the only
+  defect class is the exact same item quested twice (row 20 stands).
+- Coverage verdicts: zoniex / relics / artifacts = NOT quested. Steam 'n' Rails = a couple
+  quests max. Psi = never required. Avaritia / Stellaris / MI / Extended Crafting = quest
+  thoroughly (OW/Ascension buildout).
+- Row 7 (grove): rework approved in principle — brainstorm delivered (L report), no changes yet.
+
+**Neo Vitae resolution (J report, jar-verified; CC spot-checked sentient recipe chain):**
+- Rows 1-2 (8 SOFTLOCK rows): QUESTS are wrong, locks right. Hellforged is Demon-Realm-only
+  (IR-gated dungeon, correctly); spiritus gems need the IR Hellfire Forge. MOVE all 8 nodes
+  from ren_nether_threshold/ren_magic_foundations to an IR magic chapter
+  (ir_magic_feedstock_and_spectrum_network is the natural host).
+- Row 3 (4 SOFTLOCK rows): LOCK is wrong. Sentient armor = Alchemy Array craft
+  (reagent_binding [alchemytable: glowstone/redstone/gunpowder/gold nugget, upgradeLevel 3]
+  + iron armor piece) — IR-capable. Down-tier the 4 locks gilded_age→industrial_revolution
+  (01m_magic.js:153-156). Gilded keeps greater/grand gems, high orbs, T5 altar, rituals.
+- Boss-buildup result: Renaissance stays clean for Maledictus; Hellfire Forge + Demon Realm
+  + gems + sentient armor form the IR arc toward Obsidilith; Grand-gem/orb ceiling stays
+  Gilded for Void Titan.
+
+**Grove rework (L report):** recommended Concept B "Arm Yourself Against the Dark" — three
+equip-lanes (Mowzies beast-gear / Born-in-Chaos dark-metal armory / Monster Plus relics)
+feeding the unchanged 4-boss Great Hunt gate; ~22-26 nodes, zero ordinary kills, all
+load-bearing ids preserved (capstone 6D7E8F901A2B1054 is the pack's sole the_renaissance
+grant). Open canon call: are born_in_chaos supreme_bonescaller / sir_pumpkinhead /
+dire_hound_leader bosses (keep kills) or ordinary (retarget to drops)?
+
+**Reference packs (K report):** 15 tagged takeaways; headline adopts — protect the reveal
+(audit that early chapters never preview later-age items in text/icon), extend age-tier
+discipline to REWARD TABLES (ATM10's loudest failure), every obtuse weave ships teaching
+prose (E2:E), avoid dimension-as-pure-time-gate + mid-age process grind (SevTech's named
+resentments; AoA's Ren dimension gates + Gilded/Atomic band are the risk zones).
+
 ## Plain-English summary
 
 The pack is structurally coherent: the full 8-age capstone spine, the dependency graph, and
