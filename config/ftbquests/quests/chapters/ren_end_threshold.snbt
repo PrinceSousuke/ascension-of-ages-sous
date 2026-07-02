@@ -473,8 +473,8 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: -5.0d
-			y: 1.5d
+			x: 0.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["0B03109000000040"]
@@ -1317,7 +1317,7 @@
 			y: -5.0d
 		}
 		{
-			dependencies: ["0B03109000000022"]
+			dependencies: ["0B03109000000023"]
 			entity_vis_size: 1.0f
 			hide_until_deps_visible: true
 			id: "0B03109000000080"

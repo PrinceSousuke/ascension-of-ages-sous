@@ -441,6 +441,7 @@
 				"4443010000010006"
 				"4256010000010004"
 				"4256010000010005"
+				"42560000EE010000"
 			]
 			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
@@ -778,6 +779,142 @@
 			}]
 			x: -2.5d
 			y: -9.0d
+		}
+		{
+			dependencies: ["4256010000010004"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "block_factorys_bosses:sandworm_gauntlet"
+			}
+			id: "42560000EE000000"
+			rewards: [{
+				id: "42560000EE300000"
+				type: "xp"
+				xp: 350
+			}]
+			shape: "diamond"
+			size: 1.0d
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					entity: "block_factorys_bosses:sandworm"
+					entity_vis_idle_mode: "USE_GLOBAL"
+					entity_vis_offset_x: 0.0f
+					entity_vis_offset_y: 0.0f
+					entity_vis_rotation: 0.0f
+					entity_vis_silhouette_mode: "NONE"
+					entity_vis_size: 1.0f
+					entity_vis_spin_mode: "USE_GLOBAL"
+					entity_vis_use_as_quest_icon: false
+					entity_vis_walk_mode: "USE_GLOBAL"
+					id: "42560000EE100000"
+					type: "kill"
+					value: 1L
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "42560000EE200000"
+					item: { count: 1, id: "block_factorys_bosses:sandworm_gauntlet" }
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["42560000EE000000"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "alexsmobs:void_worm_eye"
+			}
+			id: "42560000EE010000"
+			rewards: [{
+				id: "42560000EE310000"
+				type: "xp"
+				xp: 400
+			}]
+			shape: "diamond"
+			size: 1.0d
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					entity: "alexsmobs:void_worm"
+					entity_vis_idle_mode: "USE_GLOBAL"
+					entity_vis_offset_x: 0.0f
+					entity_vis_offset_y: 0.0f
+					entity_vis_rotation: 0.0f
+					entity_vis_silhouette_mode: "NONE"
+					entity_vis_size: 1.0f
+					entity_vis_spin_mode: "USE_GLOBAL"
+					entity_vis_use_as_quest_icon: false
+					entity_vis_walk_mode: "USE_GLOBAL"
+					id: "42560000EE110000"
+					type: "kill"
+					value: 1L
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "42560000EE210000"
+					item: { count: 1, id: "alexsmobs:void_worm_eye" }
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 3.0d
 		}
 	]
 }

@@ -264,6 +264,75 @@ const AOA_BOSS_PROOF = {
       'undergarden:forgotten_nugget',
       'undergarden:forgotten_guardian_spawn_egg'
     ]
+  },
+
+  // ============================================================================
+  // REQUIRED - OTHERWORLDLY DIMENSION/APEX BOSSES (boss-ladder BL3, 2026-07-02)
+  // ============================================================================
+  // Nine Otherworldly required bosses feed their own OW chapter's grant node,
+  // which already fans into the OW capstone / ascension grant 4256010000010006.
+  // Six carry a guaranteed single-roll item drop, guaranteed on real-player kills
+  // and stripped on non-player kills so the OW fan-in cannot be bypassed. The two
+  // Eternal Starlight bosses (permafrost, lunar_monstrosity) have empty loot tables
+  // and stay MQT kill-task proofs (their Route 5 entries already exist above); the
+  // Leviathan (OW capstone) is guaranteed above. No LootJS is needed for kill-only.
+
+  // ow3 dragon technology: Ender Guardian (gauntlet_of_guard). End apex, dragon-adjacent.
+  'cataclysm:ender_guardian': {
+    proof: 'cataclysm:gauntlet_of_guard',
+    guaranteeProofDrop: true,
+    strip: [
+      'cataclysm:gauntlet_of_guard',
+      'cataclysm:music_disc_ender_guardian',
+      'cataclysm:ender_guardian_spawn_egg'
+    ]
+  },
+  // ow3 dragon technology: Underworld Knight (knight_sword). High arena boss.
+  'block_factorys_bosses:underworld_knight': {
+    proof: 'block_factorys_bosses:knight_sword',
+    guaranteeProofDrop: true,
+    strip: [
+      'block_factorys_bosses:knight_sword',
+      'block_factorys_bosses:underworld_knight_spawn_egg'
+    ]
+  },
+  // ow2 strange dimension operations: Sun Spirit (gold_dungeon_key). Aether Gold apex.
+  'aether:sun_spirit': {
+    proof: 'aether:gold_dungeon_key',
+    guaranteeProofDrop: true,
+    strip: [
+      'aether:gold_dungeon_key',
+      'aether:sun_altar',
+      'aether:sun_spirit_spawn_egg'
+    ]
+  },
+  // ow2 strange dimension operations: Eye of the Storm (brass_dungeon_key). Deep Aether apex.
+  'deep_aether:eots_controller': {
+    proof: 'deep_aether:brass_dungeon_key',
+    guaranteeProofDrop: true,
+    strip: [
+      'deep_aether:brass_dungeon_key',
+      'deep_aether:eots_controller_spawn_egg'
+    ]
+  },
+  // ow6 beyond the veil: Sirok the Sandworm (sandworm_gauntlet). Desert arena apex.
+  'block_factorys_bosses:sandworm': {
+    proof: 'block_factorys_bosses:sandworm_gauntlet',
+    guaranteeProofDrop: true,
+    strip: [
+      'block_factorys_bosses:sandworm_gauntlet',
+      'block_factorys_bosses:sandworm_spawn_egg'
+    ]
+  },
+  // ow6 beyond the veil: Void Worm (void_worm_eye). End-void apex.
+  'alexsmobs:void_worm': {
+    proof: 'alexsmobs:void_worm_eye',
+    guaranteeProofDrop: true,
+    strip: [
+      'alexsmobs:void_worm_eye',
+      'alexsmobs:void_worm_mandible',
+      'alexsmobs:void_worm_spawn_egg'
+    ]
   }
 
   // ============================================================================

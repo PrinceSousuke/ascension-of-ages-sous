@@ -7767,4 +7767,34 @@
 	quest.5350010000020037.title: "&dArchive of Ages&r"
 	quest.5350010000020038.quest_subtitle: "Age gate. Clears when its capstone quest is complete."
 	quest.5350010000020038.title: "&dAscension Complete ◆&r"
+	quest.4C580000EE000000.title: "[STUB] Sun Altar Chamber"
+	quest.4C580000EE000000.quest_subtitle: "[STUB] locate the Aether Gold Dungeon"
+	quest.4C580000EE000000.quest_desc: ["[BRIEF] teaches: reaching the Aether Gold Dungeon / Sun Spirit chamber. Task = dimension aether:the_aether (light locate/prep node, item-free for the thin OW spine). Prereq for the Sun Spirit kill node. First of the OW2 strange-dimension boss line; deps the ow2 grant node 4C58010000010005. Opus: 2-4 para instruction-first, no em dashes; explain that the Gold Dungeon holds the Sun Spirit and how the key ladder (bronze->silver->gold) culminates here."]
+	quest.4C580000EE010000.title: "[STUB] The Sun Spirit"
+	quest.4C580000EE010000.quest_subtitle: "[STUB] defeat the Aether Gold Dungeon boss"
+	quest.4C580000EE010000.quest_desc: ["[BRIEF] teaches: Cataclysm/Aether Sun Spirit boss (entity aether:sun_spirit), the Aether Gold Dungeon apex. Kill task + item task aether:gold_dungeon_key (guaranteed single-roll drop, guaranteed on real-player kill via boss_progression_proof.js). Sun Spirit must be frozen with ice crystals before it takes damage. REQUIRED Otherworldly boss (moved from Renaissance per BL3). Deps the locate node 4C580000EE000000. Opus: 2-4 para instruction-first, no em dashes."]
+	quest.4C580000EE020000.title: "[STUB] Eye of the Storm"
+	quest.4C580000EE020000.quest_subtitle: "[STUB] defeat the Deep Aether Brass Dungeon boss"
+	quest.4C580000EE020000.quest_desc: ["[BRIEF] teaches: Deep Aether Eye of the Storm (entity deep_aether:eots_controller; kill the controller, NOT eots_segment body parts), the Brass Dungeon apex above Gold. Kill task + item task deep_aether:brass_dungeon_key (guaranteed single-roll drop, guaranteed via boss_progression_proof.js). REQUIRED Otherworldly boss (BL3 move). Terminal of the OW2 boss line; this node is a dependency of the ow2 grant 4C58010000010005 so the whole line is required for the OW age grant. Opus: 2-4 para instruction-first, no em dashes."]
+	quest.44540000EE000000.title: "[STUB] Return to the End"
+	quest.44540000EE000000.quest_subtitle: "[STUB] re-enter the End for its apex guardian"
+	quest.44540000EE000000.quest_desc: ["[BRIEF] teaches: returning to minecraft:the_end (dimension task) to hunt the post-Dragon apex. Light prep node for the thin OW spine. First of the OW3 boss line; deps the ow3 grant node 4454010000010005. Opus: 2-4 para instruction-first, no em dashes; note the Ender Guardian spawns naturally in the End after the Dragon."]
+	quest.44540000EE010000.title: "[STUB] The Ender Guardian"
+	quest.44540000EE010000.quest_subtitle: "[STUB] defeat the End apex construct"
+	quest.44540000EE010000.quest_desc: ["[BRIEF] teaches: Cataclysm Ender Guardian (entity cataclysm:ender_guardian), the End apex boss. Kill task + item task cataclysm:gauntlet_of_guard (guaranteed single-roll drop, guaranteed via boss_progression_proof.js). REQUIRED Otherworldly boss (moved from Renaissance per BL3 - its gear tier fits OW). Deps the return-to-End node 44540000EE000000. Opus: 2-4 para instruction-first, no em dashes."]
+	quest.44540000EE020000.title: "[STUB] Helvar, the Underworld Knight"
+	quest.44540000EE020000.quest_subtitle: "[STUB] defeat the Bosses'Rise arena knight"
+	quest.44540000EE020000.quest_desc: ["[BRIEF] teaches: Block Factory Bosses Underworld Knight (entity block_factorys_bosses:underworld_knight, 'Helvar'). Kill task + item task block_factorys_bosses:knight_sword (guaranteed single-roll drop, guaranteed via boss_progression_proof.js). REQUIRED Otherworldly boss. Terminal of the OW3 boss line; this node is a dependency of the ow3 grant 4454010000010005. Opus: 2-4 para instruction-first, no em dashes."]
+	quest.44430000EE000000.title: "[STUB] Permafrost"
+	quest.44430000EE000000.quest_subtitle: "[STUB] defeat the frozen Golem Forge boss"
+	quest.44430000EE000000.quest_desc: ["[BRIEF] teaches: Eternal Starlight Permafrost (entity eternal_starlight:permafrost), a Golem Forge region boss. KILL-ONLY proof: empty loot table, so the MQT kill task IS the proof (no item task, no LootJS guarantee). REQUIRED Otherworldly boss. First of the OW5 boss line; deps the ow5 grant node 4443010000010006. Opus: 2-4 para instruction-first, no em dashes; teach the Starlight cold/forge mechanic."]
+	quest.44430000EE010000.title: "[STUB] Lunar Monstrosity"
+	quest.44430000EE010000.quest_subtitle: "[STUB] ignite and defeat the Starlight apex"
+	quest.44430000EE010000.quest_desc: ["[BRIEF] teaches: Eternal Starlight Lunar Monstrosity (entity eternal_starlight:lunar_monstrosity), the Starlight apex. Must be IGNITED (saltpeter matchbox mechanic) before it takes damage. KILL-ONLY proof: empty loot table, MQT kill task IS the proof. REQUIRED Otherworldly boss. Terminal of the OW5 boss line; this node is a dependency of the ow5 grant 4443010000010006. Opus: 2-4 para instruction-first, no em dashes."]
+	quest.42560000EE000000.title: "[STUB] Sirok, the Sandworm"
+	quest.42560000EE000000.quest_subtitle: "[STUB] defeat the desert arena worm"
+	quest.42560000EE000000.quest_desc: ["[BRIEF] teaches: Block Factory Bosses Sandworm (entity block_factorys_bosses:sandworm, 'Sirok'). Kill task + item task block_factorys_bosses:sandworm_gauntlet (guaranteed single-roll drop, guaranteed via boss_progression_proof.js). REQUIRED Otherworldly boss. First of the OW6 apex boss line; deps the Leviathan node 4256010000010004. Opus: 2-4 para instruction-first, no em dashes."]
+	quest.42560000EE010000.title: "[STUB] The Void Worm"
+	quest.42560000EE010000.quest_subtitle: "[STUB] defeat the End-void apex"
+	quest.42560000EE010000.quest_desc: ["[BRIEF] teaches: Alex's Mobs Void Worm (entity alexsmobs:void_worm), an End-void apex boss. Kill task + item task alexsmobs:void_worm_eye (guaranteed single-roll drop, guaranteed via boss_progression_proof.js). REQUIRED Otherworldly boss (9th of the OW set). Terminal of the OW6 apex line; this node is a dependency of the OW capstone 4256010000010006 that grants ascension. Opus: 2-4 para instruction-first, no em dashes."]
 }
