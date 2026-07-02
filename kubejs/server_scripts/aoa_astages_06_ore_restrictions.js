@@ -253,19 +253,23 @@
     ]
     intentionallyOpenVanillaStarterOres.forEach(function (ore) { seenOres['vanilla_policy_open|' + ore] = true })
 
-    addAuditV4OreRows('ascension', 'minecraft:deepslate', [
+    // Draconic Evolution base+wyvern tier moved ascension->otherworldly (see
+    // aoa_astages_01n_ascension.js); these ore rows were missed in that move,
+    // which hardlocked ow3_dragon_technology (the chapter needs draconium at OW
+    // while the ore stayed disguised until ascension). Retiered 2026-07-02.
+    addAuditV4OreRows('otherworldly', 'minecraft:deepslate', [
       'draconicevolution:deepslate_draconium_ore',
     ])
 
-    addAuditV4OreRows('ascension', 'minecraft:end_stone', [
+    addAuditV4OreRows('otherworldly', 'minecraft:end_stone', [
       'draconicevolution:end_draconium_ore',
     ])
 
-    addAuditV4OreRows('ascension', 'minecraft:netherrack', [
+    addAuditV4OreRows('otherworldly', 'minecraft:netherrack', [
       'draconicevolution:nether_draconium_ore',
     ])
 
-    addAuditV4OreRows('ascension', 'minecraft:stone', [
+    addAuditV4OreRows('otherworldly', 'minecraft:stone', [
       'draconicevolution:overworld_draconium_ore',
     ])
 

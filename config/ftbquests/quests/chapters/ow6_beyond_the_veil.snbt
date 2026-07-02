@@ -8,7 +8,7 @@
 		id: "mekanismgenerators:fusion_reactor_controller"
 	}
 	id: "4256010000000000"
-	order_index: 5
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
@@ -442,6 +442,10 @@
 				"4256010000010004"
 				"4256010000010005"
 				"42560000EE010000"
+				"4256010000020003"
+				"4256010000020005"
+				"4256010000020006"
+				"4256011000EE0007"
 			]
 			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
@@ -519,7 +523,6 @@
 				id: "neovitae:sentient_sword"
 			}
 			id: "4256011000EE0001"
-			optional: true
 			rewards: [{
 				id: "4256013000EE0001"
 				type: "xp"
@@ -557,7 +560,6 @@
 				id: "neovitae:sentient_helmet"
 			}
 			id: "4256011000EE0002"
-			optional: true
 			rewards: [{
 				id: "4256013000EE0002"
 				type: "xp"
@@ -595,7 +597,6 @@
 				id: "neovitae:sentient_pickaxe"
 			}
 			id: "4256011000EE0003"
-			optional: true
 			rewards: [{
 				id: "4256013000EE0003"
 				type: "xp"
@@ -633,7 +634,6 @@
 				id: "neovitae:spiritus_gem_petty"
 			}
 			id: "4256011000EE0004"
-			optional: true
 			rewards: [{
 				id: "4256013000EE0004"
 				type: "xp"
@@ -671,7 +671,6 @@
 				id: "neovitae:spiritus_gem_greater"
 			}
 			id: "4256011000EE0005"
-			optional: true
 			rewards: [{
 				id: "4256013000EE0005"
 				type: "xp"
@@ -709,7 +708,6 @@
 				id: "neovitae:base_spiritus_soul_raw"
 			}
 			id: "4256011000EE0006"
-			optional: true
 			rewards: [{
 				id: "4256013000EE0006"
 				type: "xp"
@@ -750,7 +748,6 @@
 				id: "neovitae:blood_orb_transcendent"
 			}
 			id: "4256011000EE0007"
-			optional: true
 			rewards: [{
 				id: "4256013000EE0007"
 				type: "xp"
@@ -774,10 +771,12 @@
 					second: 20
 				}
 				id: "4256012000EE0007"
-				item: { count: 1, id: "neovitae:blood_orb_transcendent" }
-				type: "item"
+				mode: "ALL"
+				required: 1L
+				targets: ["4358011000EE0003"]
+				type: "check_quest"
 			}]
-			x: -2.5d
+			x: 8.0d
 			y: -9.0d
 		}
 		{
@@ -915,6 +914,1513 @@
 			]
 			x: 8.0d
 			y: 3.0d
+		}
+		{
+			dependencies: ["4256010000010001"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "occultism:book_of_binding_marid"
+			}
+			id: "4256010000020001"
+			rewards: [{
+				id: "4256030000020101"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+				id: "4256020000020101"
+				item: { count: 1, id: "occultism:book_of_binding_marid" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["4256010000020001"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "occultism:iesnium_anvil"
+			}
+			id: "4256010000020002"
+			rewards: [{
+				id: "4256030000020102"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+				id: "4256020000020102"
+				item: { count: 1, id: "occultism:iesnium_anvil" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["4256010000020002"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "occultism:miner_marid_master"
+			}
+			id: "4256010000020003"
+			rewards: [{
+				id: "4256030000020103"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+				id: "4256020000020103"
+				item: { count: 1, id: "occultism:miner_marid_master" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["4256010000010001"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "mahoutsukai:caliburn"
+			}
+			id: "4256010000020004"
+			rewards: [{
+				id: "4256030000020104"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+				id: "4256020000020104"
+				item: { count: 1, id: "mahoutsukai:caliburn" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["4256010000020004"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "mahoutsukai:morgan"
+			}
+			id: "4256010000020005"
+			rewards: [{
+				id: "4256030000020105"
+				type: "xp"
+				xp: 150
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+				id: "4256020000020105"
+				item: { count: 1, id: "mahoutsukai:morgan" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["4256010000010001"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "unusualend:pearlescent_upgrade_smithing_template"
+			}
+			id: "4256010000020006"
+			rewards: [{
+				id: "4256030000020106"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [
+				{
+						PlayerSpells: {
+							check: 0b
+							mode: "ALL"
+							required: 0L
+							spells: [ ]
+						}
+						SkillsLevel: {
+							category: ""
+							check: 0b
+							comparison: "GREATER_OR_EQUAL"
+							first: 10
+							mode: "TOTAL_LEVEL"
+							second: 20
+						}
+					id: "4256020000020106"
+					item: { count: 1, id: "unusualend:pearlescent_upgrade_smithing_template" }
+					type: "item"
+				}
+				{
+						PlayerSpells: {
+							check: 0b
+							mode: "ALL"
+							required: 0L
+							spells: [ ]
+						}
+						SkillsLevel: {
+							category: ""
+							check: 0b
+							comparison: "GREATER_OR_EQUAL"
+							first: 10
+							mode: "TOTAL_LEVEL"
+							second: 20
+						}
+					id: "4256020000020107"
+					item: { count: 1, id: "unusualend:ancient_armor_trim_smithing_template" }
+					type: "item"
+				}
+			]
+			x: 5.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["4C57010000010001"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "draconicevolution:draconium_ingot"
+			}
+			id: "4454010000010001"
+			rewards: [{
+				id: "4454030000010101"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4454020000010101"
+					item: { count: 1, id: "draconicevolution:draconium_dust" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4454020000010102"
+					item: { count: 1, id: "draconicevolution:draconium_ingot" }
+					type: "item"
+				}
+			]
+			x: -21d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4454010000010001"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "draconicevolution:wyvern_core"
+			}
+			id: "4454010000010002"
+			rewards: [{
+				id: "4454030000010201"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4454020000010201"
+					item: { count: 1, id: "draconicevolution:draconium_core" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4454020000010202"
+					item: { count: 1, id: "draconicevolution:wyvern_core" }
+					type: "item"
+				}
+			]
+			x: -18d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4454010000010002"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "draconicevolution:crafting_core"
+			}
+			id: "4454010000010003"
+			rewards: [{
+				id: "4454030000010301"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4454020000010301"
+					item: { count: 1, id: "draconicevolution:crafting_core" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4454020000010302"
+					item: { count: 1, id: "draconicevolution:basic_crafting_injector" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4454020000010303"
+					item: { count: 1, id: "draconicevolution:wyvern_crafting_injector" }
+					type: "item"
+				}
+			]
+			x: -15d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4454010000010003"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "draconicevolution:energy_core"
+			}
+			id: "4454010000010004"
+			rewards: [{
+				id: "4454030000010401"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4454020000010401"
+					item: { count: 1, id: "draconicevolution:energy_core" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4454020000010402"
+					item: { count: 1, id: "draconicevolution:energy_core_stabilizer" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4454020000010403"
+					item: { count: 1, id: "draconicevolution:energy_pylon" }
+					type: "item"
+				}
+			]
+			x: -12d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4454010000010004", "44540000EE020000", "4454010000020002", "4454010000020007", "4454010000020011", "4454010000020015"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "draconicevolution:energy_transfuser"
+			}
+			id: "4454010000010005"
+			rewards: [{
+				auto: "enabled"
+				command: "/astages add {p} ow_draconic_technology_complete true true"
+				icon: {
+					id: "draconicevolution:wyvern_core"
+				}
+				id: "4454030000010502"
+				permission_level: 2
+				silent: true
+				team_reward: true
+				type: "command"
+			}]
+			shape: "gear"
+			size: 1.3d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4454020000010501"
+				item: { count: 1, id: "draconicevolution:energy_transfuser" }
+				type: "item"
+			}]
+			x: -9d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4454010000010002"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "cataclysm:gauntlet_of_guard"
+			}
+			id: "44540000EE000000"
+			rewards: [{
+				id: "44540000EE300000"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					dimension: "minecraft:the_end"
+					id: "44540000EE100000"
+					type: "dimension"
+				}
+			]
+			x: -16.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["44540000EE000000"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "cataclysm:gauntlet_of_guard"
+			}
+			id: "44540000EE010000"
+			rewards: [{
+				id: "44540000EE310000"
+				type: "xp"
+				xp: 350
+			}]
+			shape: "diamond"
+			size: 1.0d
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					entity: "cataclysm:ender_guardian"
+					entity_vis_idle_mode: "USE_GLOBAL"
+					entity_vis_offset_x: 0.0f
+					entity_vis_offset_y: 0.0f
+					entity_vis_rotation: 0.0f
+					entity_vis_silhouette_mode: "NONE"
+					entity_vis_size: 1.0f
+					entity_vis_spin_mode: "USE_GLOBAL"
+					entity_vis_use_as_quest_icon: false
+					entity_vis_walk_mode: "USE_GLOBAL"
+					id: "44540000EE110000"
+					type: "kill"
+					value: 1L
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "44540000EE210000"
+					item: { count: 1, id: "cataclysm:gauntlet_of_guard" }
+					type: "item"
+				}
+			]
+			x: -14d
+			y: 4.5d
+		}
+		{
+			dependencies: ["44540000EE010000"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "block_factorys_bosses:knight_sword"
+			}
+			id: "44540000EE020000"
+			rewards: [{
+				id: "44540000EE320000"
+				type: "xp"
+				xp: 300
+			}]
+			shape: "diamond"
+			size: 1.0d
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					entity: "block_factorys_bosses:underworld_knight"
+					entity_vis_idle_mode: "USE_GLOBAL"
+					entity_vis_offset_x: 0.0f
+					entity_vis_offset_y: 0.0f
+					entity_vis_rotation: 0.0f
+					entity_vis_silhouette_mode: "NONE"
+					entity_vis_size: 1.0f
+					entity_vis_spin_mode: "USE_GLOBAL"
+					entity_vis_use_as_quest_icon: false
+					entity_vis_walk_mode: "USE_GLOBAL"
+					id: "44540000EE120000"
+					type: "kill"
+					value: 1L
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "44540000EE220000"
+					item: { count: 1, id: "block_factorys_bosses:knight_sword" }
+					type: "item"
+				}
+			]
+			x: -8.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["4454010000010004"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "draconicevolution:basic_relay_crystal"
+			}
+			id: "4454010000020001"
+			rewards: [{
+				id: "4454030000020101"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4454020000020101"
+					item: { count: 1, id: "draconicevolution:basic_relay_crystal" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4454020000020102"
+					item: { count: 1, id: "draconicevolution:basic_io_crystal" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4454020000020103"
+					item: { count: 1, id: "draconicevolution:basic_wireless_crystal" }
+					type: "item"
+				}
+			]
+			x: -12d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4454010000020001"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "draconicevolution:wyvern_relay_crystal"
+			}
+			id: "4454010000020002"
+			rewards: [{
+				id: "4454030000020102"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4454020000020104"
+					item: { count: 1, id: "draconicevolution:wyvern_relay_crystal" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4454020000020105"
+					item: { count: 1, id: "draconicevolution:wyvern_io_crystal" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4454020000020106"
+					item: { count: 1, id: "draconicevolution:wyvern_wireless_crystal" }
+					type: "item"
+				}
+			]
+			x: -10.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4454010000010003"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "draconicevolution:particle_generator"
+			}
+			id: "4454010000020003"
+			rewards: [{
+				id: "4454030000020103"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4454020000020107"
+				item: { count: 1, id: "draconicevolution:particle_generator" }
+				type: "item"
+			}]
+			x: -15d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4454010000020003"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "draconicevolution:generator"
+			}
+			id: "4454010000020004"
+			rewards: [{
+				id: "4454030000020104"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4454020000020108"
+					item: { count: 1, id: "draconicevolution:generator" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4454020000020109"
+					item: { count: 1, id: "draconicevolution:potentiometer" }
+					type: "item"
+				}
+			]
+			x: -13.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4454010000020004"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "draconicevolution:grinder"
+			}
+			id: "4454010000020005"
+			rewards: [{
+				id: "4454030000020105"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4454020000020110"
+				item: { count: 1, id: "draconicevolution:grinder" }
+				type: "item"
+			}]
+			x: -12d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4454010000020005"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "draconicevolution:disenchanter"
+			}
+			id: "4454010000020006"
+			rewards: [{
+				id: "4454030000020106"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4454020000020111"
+				item: { count: 1, id: "draconicevolution:disenchanter" }
+				type: "item"
+			}]
+			x: -10.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4454010000020006"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "draconicevolution:draconium_chest"
+			}
+			id: "4454010000020007"
+			rewards: [{
+				id: "4454030000020107"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4454020000020112"
+				item: { count: 1, id: "draconicevolution:draconium_chest" }
+				type: "item"
+			}]
+			x: -9d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4454010000010002"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "draconicevolution:dislocator"
+			}
+			id: "4454010000020008"
+			rewards: [{
+				id: "4454030000020108"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4454020000020113"
+				item: { count: 1, id: "draconicevolution:dislocator" }
+				type: "item"
+			}]
+			x: -18d
+			y: -3.0d
+		}
+		{
+			dependencies: ["4454010000020008"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "draconicevolution:magnet"
+			}
+			id: "4454010000020009"
+			rewards: [{
+				id: "4454030000020109"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4454020000020114"
+				item: { count: 1, id: "draconicevolution:magnet" }
+				type: "item"
+			}]
+			x: -15d
+			y: -3.0d
+		}
+		{
+			dependencies: ["4454010000020009"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "draconicevolution:dislocator_pedestal"
+			}
+			id: "4454010000020010"
+			rewards: [{
+				id: "4454030000020110"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4454020000020115"
+					item: { count: 1, id: "draconicevolution:dislocator_pedestal" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4454020000020116"
+					item: { count: 1, id: "draconicevolution:dislocator_receptacle" }
+					type: "item"
+				}
+			]
+			x: -12d
+			y: -3.0d
+		}
+		{
+			dependencies: ["4454010000020010"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "draconicevolution:dislocation_inhibitor"
+			}
+			id: "4454010000020011"
+			rewards: [{
+				id: "4454030000020111"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4454020000020117"
+				item: { count: 1, id: "draconicevolution:dislocation_inhibitor" }
+				type: "item"
+			}]
+			x: -7.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["4454010000010003"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "draconicevolution:wyvern_pickaxe"
+			}
+			id: "4454010000020012"
+			rewards: [{
+				id: "4454030000020112"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4454020000020118"
+					item: { count: 1, id: "draconicevolution:wyvern_pickaxe" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4454020000020119"
+					item: { count: 1, id: "draconicevolution:wyvern_shovel" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4454020000020120"
+					item: { count: 1, id: "draconicevolution:wyvern_axe" }
+					type: "item"
+				}
+			]
+			x: -15d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4454010000020012"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "draconicevolution:wyvern_sword"
+			}
+			id: "4454010000020013"
+			rewards: [{
+				id: "4454030000020113"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4454020000020121"
+					item: { count: 1, id: "draconicevolution:wyvern_sword" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4454020000020122"
+					item: { count: 1, id: "draconicevolution:wyvern_bow" }
+					type: "item"
+				}
+			]
+			x: -13.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4454010000020013"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "draconicevolution:wyvern_chestpiece"
+			}
+			id: "4454010000020014"
+			rewards: [{
+				id: "4454030000020114"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4454020000020123"
+				item: { count: 1, id: "draconicevolution:wyvern_chestpiece" }
+				type: "item"
+			}]
+			x: -12d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4454010000020014"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "draconicevolution:wyvern_capacitor"
+			}
+			id: "4454010000020015"
+			rewards: [{
+				id: "4454030000020115"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4454020000020124"
+				item: { count: 1, id: "draconicevolution:wyvern_capacitor" }
+				type: "item"
+			}]
+			x: -10.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["44540000EE000000"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "draconicevolution:celestial_manipulator"
+			}
+			id: "4454010000020016"
+			rewards: [{
+				id: "4454030000020116"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+				id: "4454020000020125"
+				item: { count: 1, id: "draconicevolution:celestial_manipulator" }
+				type: "item"
+			}]
+			x: -16.5d
+			y: 6.0d
 		}
 	]
 }

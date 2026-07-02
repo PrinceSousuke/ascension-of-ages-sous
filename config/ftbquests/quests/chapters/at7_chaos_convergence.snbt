@@ -593,7 +593,7 @@
 				item: { components: { "ftbfiltersystem:filter": "root(or(item(alexscaves:ortholance),item(alexscaves:sea_staff),item(alexscaves:desolate_dagger)))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 13.0d
+			x: 14.5d
 			y: -4.0d
 		}
 		{
@@ -961,6 +961,7 @@
 				"4646010000010003"
 				"4358010000010002"
 				"4358010000010001"
+				"4358011000EE0003"
 			]
 			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
@@ -1050,7 +1051,6 @@
 				id: "neovitae:crystal_cluster"
 			}
 			id: "4358011000EE0001"
-			optional: true
 			rewards: [
 				{
 					id: "4358013000EE0001"
@@ -1088,7 +1088,6 @@
 				id: "neovitae:crystal_cluster_brick"
 			}
 			id: "4358011000EE0002"
-			optional: true
 			rewards: [
 				{
 					id: "4358013000EE0002"
@@ -1126,7 +1125,6 @@
 				id: "neovitae:blood_orb_transcendent"
 			}
 			id: "4358011000EE0003"
-			optional: true
 			rewards: [
 				{
 					id: "4358013000EE0003"
