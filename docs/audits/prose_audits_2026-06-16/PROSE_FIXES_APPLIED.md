@@ -1,10 +1,14 @@
 # Fixes applied - 2026-06-16
 
-Current pass edits: 39 strings total, with 27 in `config/ftbquests/quests/lang/en_us.snbt` and 12 in `kubejs/assets/aoa/lang/en_us.json`.
+Current pass edits: 40 strings total, with 28 in `config/ftbquests/quests/lang/en_us.snbt` and 12 in `kubejs/assets/aoa/lang/en_us.json`.
+
+Mechanical prose follow-up: `MECHANICAL_PROSE_VALIDATION_2026-06-17.md` records 25 additional targeted field edits (22 in `config/ftbquests/quests/lang/en_us.snbt`, 3 in `kubejs/assets/aoa/lang/en_us.json`) made after the OW6 fix to remove mechanically misleading player-facing text.
 
 Folded but not re-applied: `entering_the_iron_era.md` already records 4 WARN and 1 INFO, and `entering_the_iron_era.judgment.md` confirms those live strings are fixed, including the repeatability/desync line for `097AED7C91033D5E`.
 
 Backup for the current SNBT batch: `C:\Users\andre\.codex\backups\aoa\20260616_231503\en_us.snbt.20260616_231503.bak`.
+Backup for the OW6 follow-up SNBT edit: `C:\Users\andre\.codex\backups\aoa\20260617_230032\en_us.snbt.pre_ow6_fix.bak`.
+Backup for the mechanical prose follow-up SNBT edit: `C:\Users\andre\.codex\backups\aoa\20260617_230916\en_us.snbt.pre_mechanical_prose_batch.bak`.
 
 | # | Age | Quest/entry | File | Before | After | Severity |
 |---|-----|-------------|------|--------|-------|----------|
@@ -47,9 +51,36 @@ Backup for the current SNBT batch: `C:\Users\andre\.codex\backups\aoa\20260616_2
 | 37 | ascension | `425201000001000A` Kraken subtitle | `en_us.snbt` | Boss fight and drop gate | Boss fight gate | WARN |
 | 38 | ascension | `425201000001000B` Chaos Guardian desc | `en_us.snbt` | keep Chaos Shard for the stage flag | kill check awards the stage flags | WARN |
 | 39 | ascension | `425201000001000B` Chaos Guardian subtitle | `en_us.snbt` | Boss fight and drop gate | Boss fight gate | WARN |
+| 40 | otherworldly | `4256010000010006` Tidal Claws capstone desc/subtitle | `en_us.snbt` | Leviathan boss-drop wording | Otherworldly convergence capstone that turns in Tidal Claws and grants Ascension | WARN |
+
+## Mechanical prose follow-up fixes - 2026-06-17
+| # | Age | Quest/entry | File | Before | After | Severity |
+|---|-----|-------------|------|--------|-------|----------|
+| 41 | medieval_times | `6D7E8F901A2B1050` Great Hunt: Wroughtnaut desc | `en_us.snbt` | All-four grove mastery implication | Any three of four complete Grove mastery; Wroughtnaut is one valid proof | WARN |
+| 42 | medieval_times | `6D7E8F901A2B1054` Master of the Grove desc/subtitle | `en_us.snbt` | All four implied; Renaissance grant/recovery hidden | At least three of four open the repeatable Renaissance grant; rerun after desync | BLOCKER |
+| 43 | the_renaissance | `0B03107000000001` Archive and Recordkeeping desc | `en_us.snbt` | None of it gates progress | Complete Record is one Renaissance subproof for the age close | BLOCKER |
+| 44 | the_renaissance | `0B0310A0000000F0` Cursium Ingot desc/subtitle | `en_us.snbt` | Optional/trophy-like Cursium wording | Cursium is the end-of-age proof that opens Industrial Revolution | BLOCKER |
+| 45 | the_renaissance | `0B03105000000036` Infuser subtitle | `en_us.snbt` | Undergarden upgrade not marked optional | Optional: upgrade Undergarden gear | INFO |
+| 46 | the_renaissance | `renaissance_compendium.mechanics.four_magics.description` | `en_us.json` | Four-magic action summary | Required starter chains across four magic mods | WARN |
+| 47 | the_renaissance | `renaissance_compendium.mechanics.four_magics.page1.text` | `en_us.json` | One action from each magic mod | Required starter chains across Malum, Theurgy, Occultism, and F&A; subproof closes on Arcane Bone Meal | WARN |
+| 48 | ascension | `4252010000010002`-`0006` boss-drop subtitles | `en_us.snbt` | Boss drop gate without optional marker | Optional: boss drop gate | INFO |
+| 49 | atomic | `4F43010000010003` Magnetic Field desc/subtitle | `en_us.snbt` | Oritech proof seemed to hand the global chaos gate | Electronics/Oritech lane proof for the hangar itself | WARN |
+| 50 | atomic | `atomic_dossier.capstone.chaos_convergence.description` | `en_us.json` | Ambiguous six-lane summary | Dawn, chain, soul, war, prophets, justice | WARN |
+| 51 | atomic | `4E4401100000010B` Reinforced Hazmat desc | `en_us.snbt` | Full reinforced set implication | Any one reinforced hazmat armor piece completes the quest; full set advised before reactor-floor work | WARN |
+| 52 | atomic | `4E4401100000010C` Alex's Caves Hazmat desc | `en_us.snbt` | Full Alex's Caves set implication | Any one Alex's Caves hazmat armor piece completes the quest; full set advised before cave radiation work | WARN |
+| 53 | atomic | `4F43011000000110` Processing II-V desc | `en_us.snbt` | Low-band ladder implication | Any one processing addon from ranks two through five | WARN |
+| 54 | atomic | `4F43011000000112` Speed II-V desc | `en_us.snbt` | Low-band ladder implication | Any one speed addon from ranks two through five | WARN |
+| 55 | atomic | `4F43011000000114` Efficiency II-V desc | `en_us.snbt` | Low-band ladder implication | Any one efficiency addon from ranks two through five | WARN |
+| 56 | atomic | `4F43011000000116` Efficient Speed II-VI desc | `en_us.snbt` | Low-band ladder implication | Any one efficient speed addon from ranks two through six | WARN |
+| 57 | atomic | `4F43011000000118` Capacitor II-V desc | `en_us.snbt` | Low-band ladder implication | Any one capacitor addon from ranks two through five | WARN |
+| 58 | atomic | `4F4301100000011A` Acceptor II-V desc | `en_us.snbt` | Low-band ladder implication | Any one acceptor addon from ranks two through five | WARN |
 
 ## Verification
 - `snbt_guard.py --compare C:\Users\andre\.codex\backups\aoa\20260616_231503\en_us.snbt.20260616_231503.bak config\ftbquests\quests\lang\en_us.snbt` passed.
+- `snbt_guard.py --compare C:\Users\andre\.codex\backups\aoa\20260617_230032\en_us.snbt.pre_ow6_fix.bak config\ftbquests\quests\lang\en_us.snbt` passed.
+- `snbt_guard.py --compare C:\Users\andre\.codex\backups\aoa\20260617_230916\en_us.snbt.pre_mechanical_prose_batch.bak config\ftbquests\quests\lang\en_us.snbt` passed.
 - `python -m json.tool kubejs\assets\aoa\lang\en_us.json` passed.
+- `python tools\gen_chapter_truth_packets.py` regenerated `docs\audits\truth_packets_2026-06-17`.
+- `python tools\quest_validate.py` and an independent DFS dependency check passed with 0 cycles.
 - Regression grep across the edited source files found none of the targeted stale phrases.
 - In-game FTBQuests round-trip is pending; the pack was not launched for this prose-only pass.

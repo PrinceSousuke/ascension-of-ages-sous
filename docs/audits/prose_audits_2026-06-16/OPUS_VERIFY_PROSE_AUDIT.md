@@ -1,14 +1,19 @@
 # Opus verification — GPT 5.5 prose audit (2026-06-16)
 
 Verifier: Claude Opus 4.8 (independent pass). Verification date: 2026-06-17.
-Scope: file-level mechanical verification of the 39 applied lang fixes + the 5 priority blocks (A–E). No in-game/runtime claims.
+Scope: file-level mechanical verification of the original 39 applied lang fixes + the 5 priority blocks (A–E). The later OW6 follow-up fix is recorded separately below. No in-game/runtime claims.
+
+## Follow-up status
+The OW6 missed WARN from this historical Opus pass has since been fixed in live `config/ftbquests/quests/lang/en_us.snbt`: quest `4256010000010006` now describes the Otherworldly convergence capstone, the `cataclysm:tidal_claws` turn-in, and the Ascension grant. Fresh SNBT guard verification used `C:\Users\andre\.codex\backups\aoa\20260617_230032\en_us.snbt.pre_ow6_fix.bak`.
+
+A later all-age mechanical prose validation also ran on 2026-06-17. It is recorded in `MECHANICAL_PROSE_VALIDATION_2026-06-17.md` and applied 25 additional targeted field edits for Grove three-of-four logic, Renaissance Archive/Cursium/Four Magics truth, Ascension optional boss-drop subtitles, and Atomic OR-task/rank/hazmat wording. That follow-up is outside the original Opus verification scope documented below.
 
 ## Overall verdict
 **SHIP**
 
 Completion label: **VERIFIED**
 
-All 39 applied fixes were independently confirmed against live SNBT/JSON and the named backup. The 27 SNBT edits diff exactly 1:1 against the backup `en_us.snbt.20260616_231503.bak` (27 changed lines, no others), each matching the PROSE_FIXES_APPLIED "after" text and the live task shape. The 12 JSON Modonomicon edits all show the corrected "after" text in the live `en_us.json`, which is valid JSON. The two Renaissance Modonomicon BLOCKERs (realm proofs / Nether route) are CONFIRMED against the live chapter SNBT: the Nether grant (`ren_nether_threshold_complete`) gates on a filled `create:blaze_burner` task — Mundabitur Dust is only an earlier reagent/icon — and the End grant gates on a return-to-overworld dimension task, exactly as the corrected prose now states. The regression grep for all pre-fix stale phrases is clean (the only non-zero hits are semantically-correct or intentionally-left-alone strings). GPT introduced no new false claims in the edited set. One WARN-level prose mislabel was found OUTSIDE the 39-fix scope (otherworldly capstone copy-paste); it is non-blocking, does not touch any applied fix, and is logged under Missed for a follow-up pass per the hard rules (a WARN does not authorize scope expansion). Because nothing GPT applied is wrong and both BLOCKERs are right, the applied batch is safe to ship.
+All 39 originally applied fixes were independently confirmed against live SNBT/JSON and the named backup. The 27 SNBT edits diff exactly 1:1 against the backup `en_us.snbt.20260616_231503.bak` (27 changed lines, no others), each matching the PROSE_FIXES_APPLIED "after" text and the live task shape. The 12 JSON Modonomicon edits all show the corrected "after" text in the live `en_us.json`, which is valid JSON. The two Renaissance Modonomicon BLOCKERs (realm proofs / Nether route) are CONFIRMED against the live chapter SNBT: the Nether grant (`ren_nether_threshold_complete`) gates on a filled `create:blaze_burner` task — Mundabitur Dust is only an earlier reagent/icon — and the End grant gates on a return-to-overworld dimension task, exactly as the corrected prose now states. The regression grep for all pre-fix stale phrases is clean (the only non-zero hits are semantically-correct or intentionally-left-alone strings). GPT introduced no new false claims in the edited set. One WARN-level prose mislabel was found OUTSIDE the original 39-fix scope (otherworldly capstone copy-paste); it was non-blocking and is now resolved by the OW6 follow-up noted above. Because nothing GPT applied is wrong and both BLOCKERs are right, the applied batch is safe to ship.
 
 ## GPT self-check audit
 | Check | Opus agrees? | Notes |
@@ -47,7 +52,7 @@ All consistent with `entering_the_iron_era.judgment.md` (CLEAN).
 
 ### E. Zero-finding ages — skepticism pass
 - `industrial_revolution` (401): NO CONFIDENT FINDINGS. High-risk chapters skimmed — IR capstone (`4954631000000000`, "Six proofs and a heart") matches its 6 lane-dependencies; magic-feedstock capstone matches its 5 lanes + turn-in; create-industrial-addons is a pure support chapter (no stage grants / OR filters / kill tasks, nothing to misstate); netherite/obsidilith boss-kill prose matches `type:"kill"` tasks. Zero-finding claim holds.
-- `otherworldly` (32): ONE MISSED WARN (see Missed table). Zero-finding claim is *not* fully accurate, but the miss is cosmetic/non-blocking and unrelated to the 39 applied fixes.
+- `otherworldly` (32): ONE MISSED WARN was found in the original pass (see Missed table). The zero-finding claim was not fully accurate, and the WARN has now been corrected by the OW6 follow-up noted above.
 
 ## All 39 fixes
 | # | Opus | Notes | Corrected text if TWEAK/REJECT |
@@ -97,23 +102,23 @@ Totals: **39 CONFIRM / 0 TWEAK / 0 REJECT.**
 ## Missed issues
 | Location | Severity | Evidence | Suggested fix |
 |----------|----------|----------|----------------|
-| otherworldly — `ow6_beyond_the_veil.snbt`, quest `4256010000010006` ("Tidal Claws"), prose at `en_us.snbt` L2445–2446 | WARN | Prose is a verbatim copy of the sibling Leviathan boss quest (`4256010000010004`, L2439): `"Find The Leviathan at its arena, prepare for the fight, and keep Tidal Claws for the stage flag."` / subtitle `"Boss drop gate."` But this quest is the **otherworldly→ascension convergence capstone**: `shape:"gear"`, `size:1.6`, **7 dependencies across all six OW chapters** (L430–437), and rewards grant `ow_capstone_complete`, `/astages add {p} ascension`, and `aoa:age/ascension` (L448/460/472). The `cataclysm:tidal_claws` turn-in is real, so WARN not BLOCKER, but the description hides the convergence + the `ascension` grant. | Rewrite desc to reflect the convergence, e.g. `["Converge every Otherworldly lane and seal the run by turning in &bTidal Claws&r. This capstone grants the &dAscension&r stage."]`; subtitle e.g. `"Otherworldly capstone — grants Ascension."` (NOT applied — outside the 39-fix scope; WARN does not authorize scope expansion this pass.) |
+| otherworldly — `ow6_beyond_the_veil.snbt`, quest `4256010000010006` ("Tidal Claws"), prose at `en_us.snbt` L2445–2446 | WARN | Prose was a verbatim copy of the sibling Leviathan boss quest (`4256010000010004`, L2439): `"Find The Leviathan at its arena, prepare for the fight, and keep Tidal Claws for the stage flag."` / subtitle `"Boss drop gate."` But this quest is the **otherworldly→ascension convergence capstone**: `shape:"gear"`, `size:1.6`, **7 dependencies across all six OW chapters** (L430–437), and rewards grant `ow_capstone_complete`, `/astages add {p} ascension`, and `aoa:age/ascension` (L448/460/472). The `cataclysm:tidal_claws` turn-in is real, so WARN not BLOCKER, but the old description hid the convergence + the `ascension` grant. | Applied after this pass; see Follow-up status. |
 
-GPT's "0 findings for otherworldly" is therefore slightly overstated by one WARN. It does not affect any applied fix and is non-blocking.
+GPT's original "0 findings for otherworldly" was therefore slightly overstated by one WARN. The WARN is now corrected in live lang.
 
 ## Coverage accounting
 | Question | Result |
 |----------|--------|
 | Quests reviewed | 1,806 — index.json ages[] sum: 48+265+406+401+348+264+32+42 = 1,806. CONFIRMED. |
-| Fixes applied | 39 (27 SNBT + 12 JSON). CONFIRMED — 27 SNBT diff lines + 12 JSON keys edited. |
+| Fixes applied | 40 total after OW6 follow-up (28 SNBT + 12 JSON). Original Opus scope confirmed 39; the OW6 follow-up is recorded above. |
 | BLOCKERs fixed | 2 (Renaissance realm_proofs + nether_route). Both CONFIRMED live. |
 | WARNs fixed | 30 (current pass) + folded Iron Era (4 WARN) verified separately. |
 | INFO fixed | 1 (renaissance "eleven"→"ten" chapters). CONFIRMED. |
-| Unfixed BLOCKER/WARN without Deferred | Applied-scope: 0. Newly discovered: 1 WARN (OW6 capstone copy-paste), logged in Missed for a follow-up pass — not a regression of GPT's work. |
+| Unfixed BLOCKER/WARN without Deferred | 0 after OW6 follow-up. |
 
 ## Pending (not Opus scope)
 - In-game FTBQuests round-trip: **NOT VERIFIED** (pack not launched; file-level verification only).
-- OW6 capstone WARN: not corrected this pass (out of the 39-fix scope; WARN, not BLOCKER).
+- OW6 capstone WARN: corrected after this pass in the live lang file; see Follow-up status above.
 
 ## Commit recommendation
 Files safe to commit:
@@ -124,6 +129,6 @@ Files safe to commit:
 - kubejs/assets/aoa/lang/en_us.json
 
 Suggested message:
-Fix quest and modonomicon prose to match mechanical truth (39 strings, 8 ages)
+Fix quest and modonomicon prose to match mechanical truth (40 strings, 8 ages)
 
-Follow-up (separate, optional): correct the OW6 `4256010000010006` capstone description (WARN) so it no longer reuses the Leviathan boss-drop text.
+Follow-up applied: the OW6 `4256010000010006` capstone description no longer reuses the Leviathan boss-drop text.
