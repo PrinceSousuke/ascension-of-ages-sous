@@ -29,8 +29,6 @@
     }
   ],
   "transitional_item": {
-    "item": {
-      "id": "create_sa:incomplete_web"
-    }
+    "id": "create_sa:incomplete_web"
   }
 }

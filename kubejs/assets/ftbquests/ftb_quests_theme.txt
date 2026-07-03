@@ -1,0 +1,3 @@
+# AoA FTB Quests theme tags
+quest_tag.journey_age: #4a90d9
+quest_tag.journey_gate: #c0392b

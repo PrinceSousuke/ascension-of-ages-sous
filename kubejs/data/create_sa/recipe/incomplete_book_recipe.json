@@ -30,8 +30,6 @@
     }
   ],
   "transitional_item": {
-    "item": {
-      "id": "create_sa:incomplete_book"
-    }
+    "id": "create_sa:incomplete_book"
   }
 }

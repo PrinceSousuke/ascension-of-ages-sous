@@ -85,8 +85,6 @@
     }
   ],
   "transitional_item": {
-    "item": {
-      "id": "create_sa:incomplete_steam_engine"
-    }
+    "id": "create_sa:incomplete_steam_engine"
   }
 }

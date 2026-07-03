@@ -65,8 +65,6 @@
     }
   ],
   "transitional_item": {
-    "item": {
-      "id": "create_sa:incomplete_hydraulic_engine"
-    }
+    "id": "create_sa:incomplete_hydraulic_engine"
   }
 }

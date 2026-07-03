@@ -15,13 +15,13 @@
         "qualityPenaltyPerHit": 0.25,
         "startingQuality": 1.35
       },
-      "structureFamilies": ["moogs", "structory", "towns_and_towers", "yungs", "small_ruins"]
+      "structureFamilies": ["moogs", "yungs", "small_ruins"]
     },
     "tier2": {
       "name": "Important Locked Chests",
       "unlockStage": "age0_treasure_t2",
       "intendedAges": ["age0", "age1", "age2"],
-      "structureFamilies": ["guarded_ruins", "first_dungeons", "when_dungeons_arise", "better_structures"]
+      "structureFamilies": ["guarded_ruins", "first_dungeons", "better_structures"]
     },
     "tier3": {
       "name": "Elite Vault Chests",

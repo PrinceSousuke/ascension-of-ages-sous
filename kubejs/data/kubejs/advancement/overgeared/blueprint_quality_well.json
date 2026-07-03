@@ -1,4 +1,4 @@
-﻿{
+{
   "criteria": {
     "well_quality_blueprint": {
       "trigger": "overgeared:blueprint_quality",
