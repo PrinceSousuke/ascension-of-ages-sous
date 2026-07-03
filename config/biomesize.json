@@ -1,10 +1,6 @@
 {
   "worldSettings": {
     "desc:": "Biome size settings per noise setting, set by default to no changes. Gets automatically filled on world creation. Restart after changing values.Note that the biome size changes work indirectly by modifying temperature and vegetation zone sizes and you cannot change the size of a specific biome",
-    "aoa3:abyss": {
-      "desc": "Set the multiplicative modifier for biome size. 1.0 = Default size, 2.0 = bigger, 0.5 = smaller.",
-      "size_multiplier": 1.0
-    },
     "minecraft:amplified": {
       "desc": "Set the multiplicative modifier for biome size. 1.0 = Default size, 2.0 = bigger, 0.5 = smaller.",
       "size_multiplier": 1.0
@@ -13,31 +9,7 @@
       "desc": "Set the multiplicative modifier for biome size. 1.0 = Default size, 2.0 = bigger, 0.5 = smaller.",
       "size_multiplier": 1.0
     },
-    "aoa3:barathos": {
-      "desc": "Set the multiplicative modifier for biome size. 1.0 = Default size, 2.0 = bigger, 0.5 = smaller.",
-      "size_multiplier": 1.0
-    },
     "minecraft:caves": {
-      "desc": "Set the multiplicative modifier for biome size. 1.0 = Default size, 2.0 = bigger, 0.5 = smaller.",
-      "size_multiplier": 1.0
-    },
-    "aoa3:crystevia": {
-      "desc": "Set the multiplicative modifier for biome size. 1.0 = Default size, 2.0 = bigger, 0.5 = smaller.",
-      "size_multiplier": 1.0
-    },
-    "pastel:deeper_down_noise": {
-      "desc": "Set the multiplicative modifier for biome size. 1.0 = Default size, 2.0 = bigger, 0.5 = smaller.",
-      "size_multiplier": 1.0
-    },
-    "aoa3:deeplands": {
-      "desc": "Set the multiplicative modifier for biome size. 1.0 = Default size, 2.0 = bigger, 0.5 = smaller.",
-      "size_multiplier": 1.0
-    },
-    "iceandfire:dread_land": {
-      "desc": "Set the multiplicative modifier for biome size. 1.0 = Default size, 2.0 = bigger, 0.5 = smaller.",
-      "size_multiplier": 1.0
-    },
-    "aoa3:dustopia": {
       "desc": "Set the multiplicative modifier for biome size. 1.0 = Default size, 2.0 = bigger, 0.5 = smaller.",
       "size_multiplier": 1.0
     },
@@ -46,14 +18,6 @@
       "size_multiplier": 1.0
     },
     "minecraft:large_biomes": {
-      "desc": "Set the multiplicative modifier for biome size. 1.0 = Default size, 2.0 = bigger, 0.5 = smaller.",
-      "size_multiplier": 1.0
-    },
-    "aoa3:lborean": {
-      "desc": "Set the multiplicative modifier for biome size. 1.0 = Default size, 2.0 = bigger, 0.5 = smaller.",
-      "size_multiplier": 1.0
-    },
-    "aoa3:lelyetia": {
       "desc": "Set the multiplicative modifier for biome size. 1.0 = Default size, 2.0 = bigger, 0.5 = smaller.",
       "size_multiplier": 1.0
     },
@@ -73,10 +37,6 @@
       "desc": "Set the multiplicative modifier for biome size. 1.0 = Default size, 2.0 = bigger, 0.5 = smaller.",
       "size_multiplier": 1.0
     },
-    "aoa3:precasia": {
-      "desc": "Set the multiplicative modifier for biome size. 1.0 = Default size, 2.0 = bigger, 0.5 = smaller.",
-      "size_multiplier": 1.0
-    },
     "aether:skylands": {
       "desc": "Set the multiplicative modifier for biome size. 1.0 = Default size, 2.0 = bigger, 0.5 = smaller.",
       "size_multiplier": 1.0
@@ -85,67 +45,11 @@
       "desc": "Set the multiplicative modifier for biome size. 1.0 = Default size, 2.0 = bigger, 0.5 = smaller.",
       "size_multiplier": 1.0
     },
-    "jitl:boil_generation": {
-      "desc": "Set the multiplicative modifier for biome size. 1.0 = Default size, 2.0 = bigger, 0.5 = smaller.",
-      "size_multiplier": 1.0
-    },
-    "jitl:cloudia_generation": {
-      "desc": "Set the multiplicative modifier for biome size. 1.0 = Default size, 2.0 = bigger, 0.5 = smaller.",
-      "size_multiplier": 1.0
-    },
-    "jitl:corba_generation": {
-      "desc": "Set the multiplicative modifier for biome size. 1.0 = Default size, 2.0 = bigger, 0.5 = smaller.",
-      "size_multiplier": 1.0
-    },
-    "jitl:corba_generation_old": {
-      "desc": "Set the multiplicative modifier for biome size. 1.0 = Default size, 2.0 = bigger, 0.5 = smaller.",
-      "size_multiplier": 1.0
-    },
-    "jitl:depths_generation": {
-      "desc": "Set the multiplicative modifier for biome size. 1.0 = Default size, 2.0 = bigger, 0.5 = smaller.",
-      "size_multiplier": 1.0
-    },
-    "jitl:euca_generation": {
-      "desc": "Set the multiplicative modifier for biome size. 1.0 = Default size, 2.0 = bigger, 0.5 = smaller.",
-      "size_multiplier": 1.0
-    },
-    "jitl:frozen_generation": {
-      "desc": "Set the multiplicative modifier for biome size. 1.0 = Default size, 2.0 = bigger, 0.5 = smaller.",
-      "size_multiplier": 1.0
-    },
-    "jitl:senterian_generation": {
-      "desc": "Set the multiplicative modifier for biome size. 1.0 = Default size, 2.0 = bigger, 0.5 = smaller.",
-      "size_multiplier": 1.0
-    },
-    "jitl:terranian_generation": {
-      "desc": "Set the multiplicative modifier for biome size. 1.0 = Default size, 2.0 = bigger, 0.5 = smaller.",
-      "size_multiplier": 1.0
-    },
-    "northstar:basegame": {
-      "desc": "Set the multiplicative modifier for biome size. 1.0 = Default size, 2.0 = bigger, 0.5 = smaller.",
-      "size_multiplier": 1.0
-    },
-    "divinerpg:iceika": {
-      "desc": "Set the multiplicative modifier for biome size. 1.0 = Default size, 2.0 = bigger, 0.5 = smaller.",
-      "size_multiplier": 1.0
-    },
-    "divinerpg:mortum": {
-      "desc": "Set the multiplicative modifier for biome size. 1.0 = Default size, 2.0 = bigger, 0.5 = smaller.",
-      "size_multiplier": 1.0
-    },
-    "divinerpg:vethea": {
-      "desc": "Set the multiplicative modifier for biome size. 1.0 = Default size, 2.0 = bigger, 0.5 = smaller.",
-      "size_multiplier": 1.0
-    },
     "undergarden:undergarden": {
       "desc": "Set the multiplicative modifier for biome size. 1.0 = Default size, 2.0 = bigger, 0.5 = smaller.",
       "size_multiplier": 1.0
     },
-    "infinity_cave:overworld": {
-      "desc": "Set the multiplicative modifier for biome size. 1.0 = Default size, 2.0 = bigger, 0.5 = smaller.",
-      "size_multiplier": 1.0
-    },
-    "chronodawn:chronodawn": {
+    "spectrum:deeper_down_noise": {
       "desc": "Set the multiplicative modifier for biome size. 1.0 = Default size, 2.0 = bigger, 0.5 = smaller.",
       "size_multiplier": 1.0
     },
@@ -165,63 +69,11 @@
       "desc": "Set the horizontal size offset, this dimension only has limited size changing support. You can only step sizes in whole numbers, not percentages. 0 = Default size, 1 = bigger, -1 = smaller. Range[-1,2]",
       "horizontal_size": 0
     },
-    "twilightforest:skylight_noise_gen": {
-      "desc": "Set the horizontal size offset, this dimension only has limited size changing support. You can only step sizes in whole numbers, not percentages. 0 = Default size, 1 = bigger, -1 = smaller. Range[-1,2]",
-      "horizontal_size": 0
-    },
     "stellaris:space": {
       "desc": "Set the horizontal size offset, this dimension only has limited size changing support. You can only step sizes in whole numbers, not percentages. 0 = Default size, 1 = bigger, -1 = smaller. Range[-1,2]",
       "horizontal_size": 0
     },
     "eternal_starlight:starlight": {
-      "desc": "Set the horizontal size offset, this dimension only has limited size changing support. You can only step sizes in whole numbers, not percentages. 0 = Default size, 1 = bigger, -1 = smaller. Range[-1,2]",
-      "horizontal_size": 0
-    },
-    "twilightforest:twilight_noise_gen": {
-      "desc": "Set the horizontal size offset, this dimension only has limited size changing support. You can only step sizes in whole numbers, not percentages. 0 = Default size, 1 = bigger, -1 = smaller. Range[-1,2]",
-      "horizontal_size": 0
-    },
-    "northstar:mars": {
-      "desc": "Set the horizontal size offset, this dimension only has limited size changing support. You can only step sizes in whole numbers, not percentages. 0 = Default size, 1 = bigger, -1 = smaller. Range[-1,2]",
-      "horizontal_size": 0
-    },
-    "northstar:mercury": {
-      "desc": "Set the horizontal size offset, this dimension only has limited size changing support. You can only step sizes in whole numbers, not percentages. 0 = Default size, 1 = bigger, -1 = smaller. Range[-1,2]",
-      "horizontal_size": 0
-    },
-    "northstar:moon": {
-      "desc": "Set the horizontal size offset, this dimension only has limited size changing support. You can only step sizes in whole numbers, not percentages. 0 = Default size, 1 = bigger, -1 = smaller. Range[-1,2]",
-      "horizontal_size": 0
-    },
-    "northstar:venus": {
-      "desc": "Set the horizontal size offset, this dimension only has limited size changing support. You can only step sizes in whole numbers, not percentages. 0 = Default size, 1 = bigger, -1 = smaller. Range[-1,2]",
-      "horizontal_size": 0
-    },
-    "northstar:void": {
-      "desc": "Set the horizontal size offset, this dimension only has limited size changing support. You can only step sizes in whole numbers, not percentages. 0 = Default size, 1 = bigger, -1 = smaller. Range[-1,2]",
-      "horizontal_size": 0
-    },
-    "divinerpg:apalachia": {
-      "desc": "Set the horizontal size offset, this dimension only has limited size changing support. You can only step sizes in whole numbers, not percentages. 0 = Default size, 1 = bigger, -1 = smaller. Range[-1,2]",
-      "horizontal_size": 0
-    },
-    "divinerpg:arcana": {
-      "desc": "Set the horizontal size offset, this dimension only has limited size changing support. You can only step sizes in whole numbers, not percentages. 0 = Default size, 1 = bigger, -1 = smaller. Range[-1,2]",
-      "horizontal_size": 0
-    },
-    "divinerpg:eden": {
-      "desc": "Set the horizontal size offset, this dimension only has limited size changing support. You can only step sizes in whole numbers, not percentages. 0 = Default size, 1 = bigger, -1 = smaller. Range[-1,2]",
-      "horizontal_size": 0
-    },
-    "divinerpg:skythern": {
-      "desc": "Set the horizontal size offset, this dimension only has limited size changing support. You can only step sizes in whole numbers, not percentages. 0 = Default size, 1 = bigger, -1 = smaller. Range[-1,2]",
-      "horizontal_size": 0
-    },
-    "divinerpg:wildwood": {
-      "desc": "Set the horizontal size offset, this dimension only has limited size changing support. You can only step sizes in whole numbers, not percentages. 0 = Default size, 1 = bigger, -1 = smaller. Range[-1,2]",
-      "horizontal_size": 0
-    },
-    "dimdoors:limbo": {
       "desc": "Set the horizontal size offset, this dimension only has limited size changing support. You can only step sizes in whole numbers, not percentages. 0 = Default size, 1 = bigger, -1 = smaller. Range[-1,2]",
       "horizontal_size": 0
     }

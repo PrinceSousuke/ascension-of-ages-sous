@@ -1,4 +1,4 @@
 {
-  "disableAdvancedCoverRendering": false,
+  "disableAdvancedCoverRendering": true,
   "enableShaderCompatibleRendering": true
 }

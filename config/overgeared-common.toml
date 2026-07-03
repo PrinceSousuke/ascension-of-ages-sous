@@ -11,6 +11,10 @@
 	enableAnvilToSmithing = true
 	#Requires blueprint to obtain higher quality items
 	enableBlueprintForging = true
+	#Enable Tier A Smithing Anvil to appears
+	enableTierA = false
+	#Enable Tier B Smithing Anvil to appears
+	enableTierB = false
 
 ["Stone Smithing Anvil"]
 	#Number of uses before the Stone Smithing Anvil breaks. Set to 0 to disable.
@@ -380,8 +384,6 @@
 
 ["Item Break Chance"]
 	#Enable quality-based break chance system
-	# Disabled: mod's hurtAndBreak mixin NPEs when entity is null (e.g. Botany Pots ticking the soil tool),
-	# crashing the server on tool exhaustion. See crash-2026-05-10_16.41.37-server.txt.
 	enableQualityBreakSystem = false
 	#Break chance at 0 durability for POOR quality
 	# Default: 1.0

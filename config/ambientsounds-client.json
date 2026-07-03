@@ -1,28 +1,28 @@
 {
   "general": {
     "engines": 0,
-    "volume": 1,
+    "volume": 0.45,
     "useSoundMasterSource": false,
-    "scanStepAmount": 100,
+    "scanStepAmount": 400,
     "playSoundWithOffset": true
   },
   "dimensions": {
     "abyssalcraft": 1,
     "betweenlands": 1,
-    "cave": 1,
-    "end": 1,
+    "cave": 0.5,
+    "end": 0,
     "galacticraft": 1,
     "galacticraft.planets": 1,
     "midnight": 1,
-    "nether": 1,
-    "surface": 1,
+    "nether": 0,
+    "surface": 0.6,
     "twilightforest": 1,
-    "void": 1
+    "void": 0
   },
   "regions": {
     "abyssalcraft_dark": {
-      "overall": 1,
-      "suspense.suspense": 1
+      "overall": 0,
+      "suspense.suspense": 0
     },
     "end_unknown": {
       "overall": 1,
@@ -33,12 +33,12 @@
       "wind.light-wind": 1
     },
     "nether_suspense": {
-      "overall": 1,
-      "nether": 1
+      "overall": 0,
+      "nether": 0
     },
     "twilightforest_unknown": {
-      "overall": 1,
-      "suspense.suspense": 1
+      "overall": 0,
+      "suspense.suspense": 0
     },
     "void_dark": {
       "overall": 1,
@@ -51,19 +51,19 @@
       "seagull-long": 1
     },
     "cave_ambience": {
-      "overall": 1,
-      "cave": 1,
-      "cave-water": 1,
-      "cave-deep": 1,
-      "cave-large": 1
+      "overall": 0.5,
+      "cave": 0.5,
+      "cave-water": 0.5,
+      "cave-deep": 0.5,
+      "cave-large": 0.5
     },
     "cave_deep-dark": {
-      "overall": 1,
-      "deep-dark": 1,
-      "water-droplets": 1
+      "overall": 0.5,
+      "deep-dark": 0.5,
+      "water-droplets": 0.5
     },
     "cave": {
-      "overall": 1
+      "overall": 0.5
     },
     "cave_lush": {
       "overall": 1,
@@ -217,12 +217,19 @@
         "cricket_night": 1
       }
     },
-    "cave": 1,
-    "suspense": 1,
-    "weather": 1,
-    "wind": 1
+    "cave": 0.5,
+    "suspense": 0.25,
+    "weather": 0.5,
+    "wind": 0.5
   },
   "fade-volume": 0.005,
   "fade-pitch": 0.005,
-  "silent-dimensions": []
+  "silent-dimensions": [
+    "minecraft:the_nether",
+    "minecraft:the_end",
+    "aether:the_aether",
+    "undergarden:undergarden",
+    "deeperdarker:otherside",
+    "eternal_starlight:starlight"
+  ]
 }

@@ -6,3 +6,9 @@
 #Journey Map
 [journeymap]
 	Enable = true
+
+#Particle Rain
+[particlerain]
+	Enable = true
+	#Change the amount of particles when raining.
+	ChangeAmount = true

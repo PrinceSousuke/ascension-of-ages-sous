@@ -10,84 +10,100 @@ Created by Cristel Lib
 {
 	"ancient_cities": {
 		"salt": 20083232,
-		"separation": 13,
-		"spacing": 38
+		"separation": 8,
+		"spacing": 24
 	},
 	"buried_treasures": {
-		"frequency": 0.0064,
+		"frequency": 0.01,
 		"salt": 0,
 		"separation": 0,
-		"spacing": 3
+		"spacing": 1
 	},
 	"desert_pyramids": {
 		"salt": 14357617,
-		"separation": 13,
-		"spacing": 50
+		"separation": 8,
+		"spacing": 32
 	},
 	"end_cities": {
 		"salt": 10387313,
-		"separation": 18,
-		"spacing": 32
+		"separation": 11,
+		"spacing": 20
 	},
 	"igloos": {
 		"salt": 14357618,
-		"separation": 13,
-		"spacing": 50
+		"separation": 8,
+		"spacing": 32
 	},
 	"jungle_temples": {
 		"salt": 14357619,
-		"separation": 13,
-		"spacing": 50
+		"separation": 8,
+		"spacing": 32
+	},
+	"mineshafts": {
+		"frequency": 0.004,
+		"salt": 0,
+		"separation": 0,
+		"spacing": 1
 	},
 	"nether_complexes": {
 		"salt": 30084232,
-		"separation": 7,
-		"spacing": 43
+		"separation": 4,
+		"spacing": 27
 	},
 	"nether_fossils": {
 		"salt": 14357921,
-		"separation": 3,
-		"spacing": 4
+		"separation": 1,
+		"spacing": 2
 	},
 	"ocean_monuments": {
 		"salt": 10387313,
-		"separation": 9,
-		"spacing": 50
+		"separation": 5,
+		"spacing": 32
 	},
 	"ocean_ruins": {
 		"salt": 14357621,
-		"separation": 13,
-		"spacing": 32
+		"separation": 8,
+		"spacing": 20
 	},
 	"pillager_outposts": {
-		"frequency": 0.004,
+		"frequency": 0.2,
 		"salt": 165745296,
-		"separation": 20,
-		"spacing": 80
+		"separation": 8,
+		"spacing": 32
 	},
 	"ruined_portals": {
 		"salt": 34222645,
-		"separation": 24,
-		"spacing": 63
+		"separation": 15,
+		"spacing": 40
 	},
 	"shipwrecks": {
 		"salt": 165745295,
-		"separation": 7,
-		"spacing": 38
+		"separation": 4,
+		"spacing": 24
 	},
 	"swamp_huts": {
 		"salt": 14357620,
-		"separation": 13,
-		"spacing": 50
+		"separation": 8,
+		"spacing": 32
+	},
+	"trail_ruins": {
+		"salt": 83469867,
+		"separation": 8,
+		"spacing": 34
+	},
+	"trial_chambers": {
+		"salt": 94251327,
+		"separation": 12,
+		"spacing": 34
 	},
 	"villages": {
 		"salt": 10387312,
-		"separation": 20,
-		"spacing": 80
+		"separation": 8,
+		"spacing": 34
 	},
 	"woodland_mansions": {
 		"salt": 10387319,
-		"separation": 32,
-		"spacing": 125
+		"separation": 20,
+		"spacing": 80
 	}
 }

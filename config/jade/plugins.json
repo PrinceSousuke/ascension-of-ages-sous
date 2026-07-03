@@ -40,15 +40,15 @@
     "entity_armor": true,
     "harvest_tool.creative": false,
     "horse_stats": true,
-    "item_tooltip": true,
-    "entity_health": true,
+    "item_tooltip": false,
+    "entity_health": false,
     "enchantment_power": true,
     "zombie_villager": true,
     "villager_profession": true,
     "mob_breeding": true,
     "entity_health.icons_per_line": 10,
     "total_enchantment_power": true,
-    "potion_effects": true,
+    "potion_effects": false,
     "painting": true,
     "chiseled_bookshelf": true
   },
@@ -60,8 +60,8 @@
   "apothic_spawners": {
     "spawner": true
   },
-  "mekanismcovers": {
-    "cover_component": true
+  "hostilenetworks": {
+    "io_port_mode": true
   },
   "ftbquests": {
     "barrier": true
@@ -130,6 +130,9 @@
   "betternether": {
     "plant_growth": true
   },
+  "enderio": {
+    "soul_bound": true
+  },
   "mekanism": {
     "chemical": true,
     "remove_builtin": true,
@@ -142,12 +145,6 @@
   },
   "waystones": {
     "waystone": true
-  },
-  "gravestone": {
-    "grave": true
-  },
-  "dynamic_difficulty": {
-    "level": true
   },
   "astages": {
     "block_component_provider": true
@@ -166,6 +163,10 @@
     "block": true,
     "entity": true,
     "entity_variant": true
+  },
+  "tombstone": {
+    "decorative_graves": true,
+    "player_graves": true
   },
   "oritech": {
     "machine_core_controller": true
@@ -191,12 +192,6 @@
   "occultism": {
     "foliot": true,
     "sacrificial": true
-  },
-  "iceandfire": {
-    "dragon_egg_entity": true,
-    "multipart": true,
-    "dragon": true,
-    "dragon_egg_block": true
   },
   "apothic_enchanting": {
     "ench": true

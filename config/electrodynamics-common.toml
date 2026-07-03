@@ -119,7 +119,7 @@
 	# Default: 1048576
 	# Range: > 1
 	gastransformer_output_pressure_cap = 1048576
-	# Default: 1000000
+	# Default: 1000
 	# Range: > 1
 	gastransformer_output_temp_cap = 1000000
 	# Default: 5000

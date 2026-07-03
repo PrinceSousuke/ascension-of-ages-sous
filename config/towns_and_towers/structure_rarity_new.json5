@@ -21,23 +21,24 @@ GitHub Repository: [NEED TO MAKE ONE]
 		// DEFAULT 16
 		"separation": 30,
 		// DEFAULT 32
-		"spacing": 72
+		"spacing": 96
 	},
 	// Here you can find all pillager outposts.
 	"towers": {
-		"frequency": 0.08,
+		"frequency": 0.05,
 		"salt": 213742069,
 		// DEFAULT 24
 		"separation": 24,
 		// DEFAULT 48
-		"spacing": 96
+		"spacing": 128
 	},
 	// Here you can find all villages.
+	// AoA: restored toward T&T defaults — global Structurify 3.5x bypassed via structurify.json override.
 	"towns": {
 		"salt": 213742069,
 		// DEFAULT 24
 		"separation": 24,
 		// DEFAULT 48
-		"spacing": 96
+		"spacing": 48
 	}
 }

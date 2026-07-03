@@ -1,85 +1,36 @@
 [
   {
-    "dimension": "minecraft:overworld",
-    "spawntype": "natural",
-    "mod": "alexscaves",
-    "hostile": true,
-    "seesky": false,
-    "maxheight": 48,
-    "mincount": {
-      "amount": 12,
-      "perplayer": true
-    },
-    "result": "deny"
-  },
-  {
-    "dimension": "minecraft:overworld",
-    "spawntype": "natural",
-    "mod": "born_in_chaos_v1",
-    "hostile": true,
-    "seesky": false,
-    "maxheight": 64,
-    "mincount": {
-      "amount": 12,
-      "perplayer": true
-    },
-    "result": "deny"
-  },
-  {
-    "dimension": "minecraft:overworld",
-    "spawntype": "natural",
-    "mod": "iceandfire",
-    "hostile": true,
-    "seesky": false,
-    "maxheight": 64,
-    "mincount": {
-      "amount": 8,
-      "perplayer": true
-    },
-    "result": "deny"
-  },
-  {
-    "dimension": "minecraft:overworld",
-    "spawntype": "natural",
-    "mod": "monsterplus",
-    "hostile": true,
-    "seesky": false,
-    "maxheight": 64,
-    "mincount": {
-      "amount": 12,
-      "perplayer": true
-    },
-    "result": "deny"
-  },
-  {
-    "dimension": "minecraft:overworld",
-    "spawntype": "natural",
-    "mod": "cataclysm",
-    "hostile": true,
-    "seesky": false,
-    "maxheight": 64,
-    "mincount": {
-      "amount": 8,
-      "perplayer": true
-    },
-    "result": "deny"
-  },
-  {
-    "dimension": "minecraft:overworld",
-    "spawntype": "natural",
+    "when": "onjoin",
+    "spawner": true,
     "mob": [
-      "minecraft:zombie",
-      "minecraft:skeleton",
-      "minecraft:creeper",
-      "minecraft:spider",
-      "minecraft:cave_spider",
-      "minecraft:enderman",
-      "minecraft:witch"
+      "cataclysm:maledictus",
+      "cataclysm:the_leviathan",
+      "bosses_of_mass_destruction:obsidilith",
+      "fdbosses:geburah",
+      "eternal_starlight:the_gatekeeper",
+      "eternal_starlight:starlight_golem",
+      "eternal_starlight:permafrost",
+      "eternal_starlight:lunar_monstrosity",
+      "macabre:valamon",
+      "macabre:gomoria",
+      "macabre:gargamaw",
+      "macabre:baal",
+      "astral_dimension:void_titan",
+      "astral_dimension:angel_boss",
+      "astral_dimension:tower_of_malice",
+      "astral_dimension:helioos",
+      "astral_dimension:undoing",
+      "astral_dimension:amethyst_knight"
     ],
-    "seesky": false,
-    "maxheight": 64,
+    "result": "deny"
+  },
+  {
+    "dimension": "minecraft:overworld",
+    "spawntype": "natural",
+    "mob": "minecraft:phantom",
     "mincount": {
-      "amount": 24,
+      "amount": 2,
+      "mob": "minecraft:phantom",
       "perplayer": true
     },
     "result": "deny"
@@ -87,26 +38,8 @@
   {
     "dimension": "minecraft:overworld",
     "spawntype": "natural",
-    "mob": "minecraft:slime",
-    "seesky": false,
-    "maxheight": 40,
-    "mincount": {
-      "amount": 8,
-      "perplayer": true
-    },
-    "result": "deny"
-  },
-  {
-    "dimension": "minecraft:overworld",
-    "spawntype": "natural",
-    "mob": "minecraft:bat",
-    "seesky": false,
-    "maxheight": 64,
-    "mincount": {
-      "amount": 20,
-      "perplayer": true
-    },
-    "result": "deny"
+    "mob": "monsterplus:ancient_hero",
+    "result": "allow"
   },
   {
     "dimension": "minecraft:overworld",
@@ -115,8 +48,9 @@
     "seesky": false,
     "maxheight": 20,
     "mincount": {
-      "amount": 20,
-      "perplayer": true
+      "amount": 42,
+      "hostile": true,
+      "perchunk": true
     },
     "result": "deny"
   },
@@ -127,8 +61,45 @@
     "seesky": false,
     "maxheight": 64,
     "mincount": {
-      "amount": 32,
-      "perplayer": true
+      "amount": 48,
+      "hostile": true,
+      "perchunk": true
+    },
+    "result": "deny"
+  },
+  {
+    "dimension": "minecraft:overworld",
+    "spawntype": "natural",
+    "hostile": true,
+    "seesky": true,
+    "mincount": {
+      "amount": 42,
+      "hostile": true,
+      "perchunk": true
+    },
+    "result": "deny"
+  },
+  {
+    "dimension": "minecraft:overworld",
+    "spawntype": "natural",
+    "mob": "minecraft:slime",
+    "maxheight": 40,
+    "mincount": {
+      "amount": 8,
+      "mob": "minecraft:slime",
+      "perchunk": true
+    },
+    "result": "deny"
+  },
+  {
+    "dimension": "minecraft:overworld",
+    "spawntype": "natural",
+    "mob": "minecraft:bat",
+    "maxheight": 64,
+    "mincount": {
+      "amount": 16,
+      "mob": "minecraft:bat",
+      "perchunk": true
     },
     "result": "deny"
   }

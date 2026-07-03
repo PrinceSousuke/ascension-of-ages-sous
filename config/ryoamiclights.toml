@@ -80,21 +80,6 @@
 				flower_fields_enderman = true
 				savanna_enderman = true
 
-			[light_sources.settings.entities.jitl]
-				cavurn = true
-				boomboom = true
-				big_hongo = true
-				rockite_golem = true
-				caveling = true
-				small_hongo = true
-				robot = true
-				blacksmith = true
-				neutral_sentry_stalker = true
-				brown_hongo = true
-				stonewalker = true
-				ferret = true
-				medium_hongo = true
-
 			[light_sources.settings.entities.alexsmobs]
 				kangaroo = true
 				seal = true
@@ -136,20 +121,6 @@
 				murk = true
 				gelid = true
 				thicket = true
-
-			[light_sources.settings.entities.aoa3]
-				corrupted_traveller = true
-				undead_herald = true
-				void_walker = true
-				ghost = true
-				charger = true
-				lottoman = true
-				pixon = true
-				yeti = true
-				cyclops = true
-				goblin = true
-				chomper = true
-				sasquatch = true
 
 			[light_sources.settings.entities.biomeswevegone]
 				man_o_war = true
@@ -256,12 +227,6 @@
 			[light_sources.settings.entities.artifacts]
 				mimic = true
 
-			[light_sources.settings.entities.irons_spellbooks]
-				priest = true
-				pyromancer = true
-				necromancer = true
-				archevoker = true
-
 			[light_sources.settings.entities.creeperoverhaul]
 				cave_creeper = true
 				beach_creeper = true
@@ -273,13 +238,6 @@
 			[light_sources.settings.entities.lootr]
 				lootr_minecart = true
 				item_frame = true
-
-			[light_sources.settings.entities.iceandfire]
-				pixie = true
-				dragon_multipart = true
-				lightning_dragon = true
-				fire_dragon = true
-				hippocampus = true
 
 			[light_sources.settings.entities.eternal_tales]
 				sunflower_spider = true
@@ -331,11 +289,3 @@
 				pink_salmon = true
 				smallmouth_bass = true
 				minnow = true
-
-			[light_sources.settings.entities.ars_nouveau]
-				wilden_hunter = true
-				drygmy = true
-				starbuncle = true
-				gift_starby = true
-				alakarkinos = true
-				whirlisprig = true

@@ -19,7 +19,7 @@
 	/**
 	 * Where EMI should pull stacks from to populate the index.
 	 */
-	index-source: creative-plus-registered;
+	index-source: creative;
 
 	/**
 	 * Which sidebar should be searched using the search bar.
@@ -66,7 +66,7 @@
 	/**
 	 * Whether to add mod name to item tooltips, in case another mod provides behavior
 	 */
-	append-item-mod-id: false;
+	append-item-mod-id: true;
 
 	/**
 	 * Prevents recipes being quick crafted from shifting around under the cursor.

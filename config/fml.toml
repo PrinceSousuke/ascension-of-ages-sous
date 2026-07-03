@@ -40,3 +40,5 @@ earlyWindowSquir = false
 	sable = ["-sablecompanion"]
 	powergrid = ["-sable"]
 	catools = ["-simulated", "-sable"]
+	mekanism_lasers = ["+mekanism"]
+	taxov = ["+lootr"]

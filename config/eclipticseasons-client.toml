@@ -23,6 +23,8 @@
 	ItemInformation = true
 	#Whether to enable a simplified HUD overlay that displays the current season and solar term on the screen.
 	SimpleSeasonHud = true
+	#Display the standard Gregorian year instead of the solar calendar year.
+	ShowGregorianYear = false
 
 [Renderer]
 	#Periodically force-reloads chunk rendering to fix visual glitches (may impact FPS).
@@ -60,15 +62,22 @@
 	#[Sodium/Embeddium] Culling extra fake snow layer for necessary.
 	ExtraSnowLayerCulling = true
 	#Apply seasonal color shifts to grass and leaf textures.
-	SeasonalGrassColorChange = true
+	SeasonalGrassColorChange = false
 	#Extend seasonal color shifts to birch, spruce, and mangrove leaves.
-	SeasonalColorChangeExtend = true
+	SeasonalColorChangeExtend = false
 	#Visual detail: Adds a brownish, withered foliage effect under trees during Autumn.
-	FoliageUnderTree = true
+	FoliageUnderTree = false
 	#Calculate seasonal color shifts based on exact solar term progress for smoother transitions.
-	SmootherSeasonalGrassColorChange = true
+	SmootherSeasonalGrassColorChange = false
 	#Visual detail: Occasionally adds small, decorative flowers to grass blocks in Spring.
-	FlowerOnGrass = true
+	FlowerOnGrass = false
+	#Custom seasonal colors for single-tint blocks only.
+	#Format: "block_id@color1,color2,...,colorN,placeholder_color,base_color"
+	#The number of colors (N) must be a factor of 24 (e.g., 4, 12, or 24).
+	#- 4 colors: Seasonal (6 terms each)
+	#- 12 colors: Monthly (2 terms each)
+	#The 'placeholder_color' maps to index 24; 'base_color' is the final reference hex.
+	SeasonalColorOverrides = []
 
 [Sound]
 	#Enable ambient environmental sounds (birds, wind, etc.) based on the season.
@@ -110,18 +119,6 @@
 	#Breaking snow-covered leaves will release a burst of snow particles.
 	SnowLeafParticles = true
 
-[Weather]
-	#The radius (in blocks) used to sample and blend weather patterns for smooth transitions.
-	# Default: 6
-	# Range: 1 ~ 80
-	WeatherBufferDistance = 6
-	#How quickly local weather conditions change. Higher values mean faster shifts.
-	# Default: 0.008
-	# Range: 8.0E-4 ~ 0.08
-	WeatherTransitionSpeed = 0.008
-	#Prioritize weather sampling in the direction the player is currently facing.
-	WeatherFrontBias = true
-
 	[Compat.Iris]
 		#Harmonizes shading parameters for all snow-covered surfaces when using shaders.
 		UnifiedSnowyBlockShading = true
@@ -129,3 +126,7 @@
 		UnifiedSnowyBlockSides = true
 		#Shader Fix: Prevents thin ice from being incorrectly flagged as 'Water' during post-processing.
 		UnifiedFrozenWater = false
+
+[Weather]
+	#When enabled, Ecliptic Seasons may adjust rain and snow particle textures when needed.
+	TweakPrecipitationParticleTexture = true

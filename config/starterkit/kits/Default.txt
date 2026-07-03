@@ -3,7 +3,7 @@
 'legs' : '',
 'feet' : '{count:1,id:"minecraft:leather_boots"}',
 'offhand' : '{count:1,id:"minecraft:shield"}',
-0 : '{count:1,id:"minecraft:wooden_sword"}',
+0 : '',
 1 : '{count:9,id:"minecraft:bread"}',
 2 : '',
 3 : '',

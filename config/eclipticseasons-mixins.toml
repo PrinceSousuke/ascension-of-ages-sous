@@ -12,6 +12,7 @@
 		MixinIBlockExtension = true
 		MixinLayeredCauldronBlock = true
 		MixinLightningRodBlock = true
+		MixinFallingBlock = true
 
 	[common.chunk]
 		MixinAccessorLevelChunkSection = true
@@ -58,6 +59,9 @@
 
 	[common.worldgen]
 		MixinSurfaceSystem = true
+
+	[common.item]
+		MixinMapItem = true
 
 [data]
 	MixinsDataProvider = true

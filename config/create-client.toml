@@ -14,7 +14,7 @@
 	#Higher density means more spawned particles.
 	# Default: 0.5
 	# Range: 0.0 ~ 1.0
-	fanParticleDensity = 0.5
+	fanParticleDensity = 0.25
 	#.
 	#[in Blocks]
 	#Maximum Distance to the player at which items in Blocks' filter slots will be displayed
@@ -139,8 +139,9 @@
 		trainMapColorTheme = "RED"
 
 	#.
-	#Mod Integration and JEI
-	[client.jeiIntegration]
+	#Mod Integration and Recipe Viewer
+	[client.recipeViewerIntegration]
 		#.
-		#Whether to auto-update the JEI search when searching in the stock keeper UI
-		syncJeiSearch = true
+		#How Recipe Viewer search should interact with Stock Keepers
+		#Allowed Values: SYNC_BOTH, SYNC_FROM_JEI, SYNC_FROM_STOCK_KEEPER, NONE
+		syncRecipeViewerSearch = "SYNC_BOTH"

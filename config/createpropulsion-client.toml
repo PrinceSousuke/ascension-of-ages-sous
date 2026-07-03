@@ -9,7 +9,3 @@
 [Debug]
 	#Render thruster debug overlays (plume ray, obstruction hits, damage zones).
 	Thruster = false
-	#Render burner debug overlays.
-	Burner = false
-	#Enable magnet debug overlays.
-	Magnet = false

@@ -16,7 +16,7 @@
     "depth_cutoff_start": 0.1,
     "noodle_additive": -0.075,
     "noodle_enabled": true,
-    "ore_fix": false,
+    "ore_fix": true,
     "spaghetti_enabled": true
   },
   "continents": {
@@ -26,7 +26,7 @@
     "jungle_pillars": true,
     "ocean_offset": -0.8,
     "ridge_scale": 0.25,
-    "river_ice": false,
+    "river_ice": true,
     "river_lanterns": true,
     "rolling_hills": true,
     "underground_rivers": true

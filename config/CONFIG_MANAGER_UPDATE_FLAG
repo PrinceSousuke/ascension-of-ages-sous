@@ -1,2 +1,0 @@
-# ConfigManager update flag — when present, ConfigManager (TheBossMagnus) overwrites config/ with config/modpack_defaults/ on next startup, then deletes this file.
-# Shipped with pack v0.5.6.2 to force-propagate the Overgeared botany-pot crash fix (enableQualityBreakSystem = false).
