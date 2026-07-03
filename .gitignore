@@ -127,3 +127,9 @@ Thumbs.db
 desktop.ini
 .idea/
 .vscode/
+
+.superpowers/
+
+# Launcher / editor session noise
+.qmenu_opened.marker
+/configureddefaults/options.txt

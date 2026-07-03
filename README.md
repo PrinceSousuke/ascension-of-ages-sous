@@ -9,7 +9,7 @@ This repository tracks the authored source for the pack. It intentionally does n
 - Pack configuration and defaults
 - FTB Quests files and language files
 - KubeJS scripts, custom recipes, and custom items
-- ProgressiveStages / AStages / gating configuration
+- AStages / KubeJS gating configuration
 - Datapacks and authored pack data
 - Documentation, release notes, and workflow notes
 - Lightweight helper scripts for maintenance
@@ -32,7 +32,7 @@ Use `CHANGELOG.md` for player-facing changes and commit messages for detailed wo
 The working source for this repository was initialized from:
 
 ```text
-C:\Users\andre\curseforge\minecraft\Instances\Ascension of Ages (rework)
+C:\Users\andre\curseforge\minecraft\Instances\Ascension of Ages (codex and cc)
 ```
 
 The GitHub project name intentionally stays clean as `ascension-of-ages`.

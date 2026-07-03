@@ -50,3 +50,14 @@ jobs:
               exit 1
             fi
           done < <(git ls-files)
+
+      - name: AoA recipe output policy audit (source-tree + drift only)
+        shell: bash
+        run: |
+          set -euo pipefail
+          # CI runs against the source tree only — mods/ is not tracked, so
+          # the scanner sees no jars and cannot do the full foreign-recipe
+          # observation pass. Its CI value is the drift check (§3 — Python
+          # table vs JS table) and the phantom-disable leftover check (§2).
+          # Full audit with §1/§4 must run locally where mods/ exists.
+          python3 tools/aoa_recipe_output_audit.py --ci
