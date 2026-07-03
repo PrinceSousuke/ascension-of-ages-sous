@@ -25,7 +25,7 @@ This repository tracks the authored source for the pack. It intentionally does n
 
 ## Update Flow
 
-Use `CHANGELOG.md` for player-facing changes and commit messages for detailed work history. For release and publishing steps, see `docs/GITHUB_WORKFLOW.md`.
+Use `CHANGELOG.md` for player-facing changes and commit messages for detailed work history. For community contributions and PR workflow, see `CONTRIBUTING.md`.
 
 ## Current Instance Source
 
