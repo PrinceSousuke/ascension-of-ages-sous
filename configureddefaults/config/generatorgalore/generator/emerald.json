@@ -5,5 +5,5 @@
   "previousTier": "diamond",
   "bufferCapacity": 500000,
   "fuelType": "SOLID",
-  "has64x": false
+  "has64x": true
 }

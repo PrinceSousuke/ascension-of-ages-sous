@@ -380,8 +380,6 @@
 
 ["Item Break Chance"]
 	#Enable quality-based break chance system
-	# Disabled: mod's hurtAndBreak mixin NPEs when entity is null (e.g. Botany Pots ticking the soil tool),
-	# crashing the server on tool exhaustion. See crash-2026-05-10_16.41.37-server.txt.
 	enableQualityBreakSystem = false
 	#Break chance at 0 durability for POOR quality
 	# Default: 1.0

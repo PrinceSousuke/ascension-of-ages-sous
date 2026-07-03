@@ -20,7 +20,7 @@
 
 [Biomes]
 	#The weighting of Deep Aether regions in the Aether
-	"Deep Aether Biome Weight" = 15
+	"Deep Aether Biome Weight" = 8
 	#Disables Roseroot Forest biomes from generating. Might make some content unobtainable
 	"Disable Roseroot Forest Biomes" = false
 	#Disables Yagroot Swamp biomes from generating. Might make some content unobtainable

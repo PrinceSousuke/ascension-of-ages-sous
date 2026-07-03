@@ -15,7 +15,7 @@
     "displayMode": "LITE",
     "enableTextToSpeech": false,
     "ttsMode": "PRESS",
-    "previewOverlay": true,
+    "previewOverlay": false,
     "displayTooltip": true,
     "displayBlocks": true,
     "displayEntities": true
@@ -23,7 +23,7 @@
   "overlay": {
     "alpha": 0.7,
     "iconMode": "TOP",
-    "animation": true,
+    "animation": false,
     "disappearingDelay": 0.0,
     "overlaySquare": false,
     "flipMainHand": false,

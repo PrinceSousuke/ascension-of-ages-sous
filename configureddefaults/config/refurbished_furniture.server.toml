@@ -26,7 +26,11 @@
 	#     ...
 	# ]
 	# ^ Note: This is just an example. Write your list below.
-	bannedItems = []
+	bannedItems = [
+		"ae2:*",
+		"refinedstorage:*",
+		"mekanism:*"
+	]
 	# A list of dimensions you are allowed to place mailboxes. An empty list means that
 	# mailboxes can be placed in any dimension.
 	# An example of how the list is defined:
@@ -36,7 +40,9 @@
 	#     ...
 	# ]
 	# ^ Note: This is just an example. Write your list below.
-	allowedDimensions = []
+	allowedDimensions = [
+		"minecraft:overworld"
+	]
 
 # Electricity related properties
 [electricity]

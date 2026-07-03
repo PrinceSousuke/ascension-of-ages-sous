@@ -1,22 +1,22 @@
 # This file stores configuration options for the Euphoria Patcher mod
-# Made for version 1.8.6
+# Made for version 1.9.3
 # Thank you for using Euphoria Patches - SpacEagle17
 
 [display]
 	# Option for the sodium message popup logging.
 	# Default = true
-	doPopUpLogging = true
+	doPopUpLogging = false
 
 	# Option that enables or disables the in-game shader messages, for example an update message made by the shader itself. Only works on Iris or Oculus
 	# Default = true
-	doDisplayShaderInGameMessage = true
+	doDisplayShaderInGameMessage = false
 
 [updates]
 	# Option which determines what updates the update checker considers.
 	# Update checker mode: 'important' (critical or big updates only), 'all' (all updates), 'none' (disabled).
 	# Uses the Modrinth API to fetch update information.
 	# Default = important
-	doUpdateChecking = "important"
+	doUpdateChecking = "none"
 
 [maintenance]
 	# Option that automatically renames outdated Euphoria Patches folders and config files to a new name.

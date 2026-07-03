@@ -1,4 +1,4 @@
-#Disables certain types. Note that all these configs, like in any other mod, only hide stuff from tabs and disable their recipes
+﻿#Disables certain types. Note that all these configs, like in any other mod, only hide stuff from tabs and disable their recipes
 [types]
 
 		[types.wood_type.deeperdarker]
@@ -12,15 +12,12 @@
 			cactus = true
 			cactus_extra = true
 
-		[types.wood_type.ars_nouveau]
-			archwood = true
-
 		[types.wood_type.quark]
 			azalea = true
 			ancient = true
 			blossom = true
 
-		[types.wood_type.pastel]
+		[types.wood_type.spectrum]
 			black = true
 			blue = true
 			brown = true
@@ -46,38 +43,12 @@
 		[types.wood_type.aether]
 			skyroot = true
 
-		[types.wood_type.twilightforest]
-			twilight_oak = true
-			canopy = true
-			mangrove = true
-			dark = true
-			time = true
-			transformation = true
-			mining = true
-			sorting = true
-
 		[types.wood_type.cataclysm]
 			chorus = true
 
 		[types.wood_type.gardens_of_the_dead]
 			whistlecane = true
 			soulblight = true
-
-		[types.wood_type.luminous_nether]
-			mushroom = true
-			withered = true
-
-		[types.wood_type.aoa3]
-			achony = true
-			baobab = true
-			churry = true
-			creep = true
-			lucalus = true
-			lunide = true
-			runic = true
-			shadow = true
-			shyre = true
-			stranglewood = true
 
 		[types.wood_type.create_mf]
 			cultural = true
@@ -121,9 +92,6 @@
 			torreya = true
 			jinglestem = true
 			cradlewood = true
-
-		[types.wood_type.iceandfire]
-			dreadwood = true
 
 		[types.wood_type.biomeswevegone]
 			aspen = true
@@ -224,7 +192,7 @@
 			yellow_blossom = true
 			red_blossom = true
 
-		[types.leaves_type.pastel]
+		[types.leaves_type.spectrum]
 			weeping_gala = true
 			nephrite_blossom = true
 			spirit_sallow = true
@@ -251,12 +219,6 @@
 		[types.leaves_type.integrateddynamics]
 			menril = true
 
-		[types.leaves_type.ars_nouveau]
-			blue_archwood = true
-			red_archwood = true
-			purple_archwood = true
-			green_archwood = true
-
 		[types.leaves_type.aether]
 			skyroot = true
 			golden_oak = true
@@ -264,19 +226,6 @@
 			crystal_fruit = true
 			holiday = true
 			decorated_holiday = true
-
-		[types.leaves_type.twilightforest]
-			thorn = true
-			beanstalk = true
-			twilight_oak = true
-			canopy = true
-			mangrove = true
-			dark = true
-			rainbow_oak = true
-			time = true
-			transformation = true
-			mining = true
-			sorting = true
 
 		[types.leaves_type.chipped]
 			apple_acacia = true
@@ -411,46 +360,11 @@
 			yellow_spruce = true
 			firecracker = true
 
-		[types.leaves_type.aoa3]
-			achony = true
-			blood = true
-			blue_celevus = true
-			green_celevus = true
-			purple_celevus = true
-			red_celevus = true
-			white_celevus = true
-			yellow_celevus = true
-			churry = true
-			creep = true
-			dawn = true
-			haunted = true
-			haunted_eyes = true
-			blue_haven = true
-			pink_haven = true
-			purple_haven = true
-			red_haven = true
-			turquoise_haven = true
-			yellow_haven = true
-			irodust = true
-			irogold = true
-			lelyetian = true
-			lunicia = true
-			lunosso = true
-			runic = true
-			shadowblood = true
-			shadow = true
-			bright_shyre = true
-			shyre = true
-			vein = true
-
 		[types.leaves_type.create_mf]
 			cultural = true
 
 		[types.leaves_type.phantasm]
 			pream = true
-
-		[types.leaves_type.luminous_nether]
-			ash = true
 
 		[types.leaves_type.betterend]
 			dragon_tree = true
@@ -472,9 +386,6 @@
 			scarlet = true
 			torreya = true
 			cradlewood = true
-
-		[types.leaves_type.iceandfire]
-			dreadwood = true
 
 		[types.leaves_type.deep_aether]
 			roseroot = true
@@ -864,12 +775,6 @@
 			blinds = true
 			window = true
 			shutter = true
-
-		[entries.wood_type.twilightforest]
-			hollow_log_climbable = true
-			banister = true
-			hollow_log_horizontal = true
-			hollow_log_vertical = true
 
 		[entries.wood_type.mcwfences]
 			picket_fence = true

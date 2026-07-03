@@ -15,11 +15,11 @@
     "drg_flares:drg_flares",
     "quark:soul_bead"
   ],
-  "tracingDistance": 64,
+  "tracingDistance": 48,
   "debugMode": false,
   "sleepDelay": 10,
-  "hitboxLimit": 50,
-  "captureRate": 6,
+  "hitboxLimit": 32,
+  "captureRate": 10,
   "tickCulling": true,
   "tickCullingWhitelist": [
     "minecraft:block_display",
@@ -65,5 +65,5 @@
   "skipEntityCulling": false,
   "skipBlockEntityCulling": false,
   "blockEntityFrustumCulling": true,
-  "forceDisplayCulling": false
+  "forceDisplayCulling": true
 }

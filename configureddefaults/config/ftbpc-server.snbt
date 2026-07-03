@@ -11,6 +11,12 @@
 		# Default: true
 		skip_block_cache_rebuild: true
 	}
+	raiders: {
+		# If true, Pillagers spawning with an Immersive Engineering railgun will have it replaced with a vanilla crossbow.
+		# Prevents the hard crash caused when a pillager fires a railgun. Only active when Immersive Engineering is loaded.
+		# Default: true
+		block_railguns_when_ie_present: true
+	}
 	spawners: {
 		# When enabled, broken spawner blocks will be remembered and will respawn at a given interval.
 		# Default: false

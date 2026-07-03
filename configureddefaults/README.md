@@ -9,4 +9,6 @@ Examples:
 - `.minecraft/configureddefaults/options.txt` will be copied to `.minecraft/options.txt` if not already present
 - `.minecraft/configureddefaults/config/jei/jei.toml` will be copied to `.minecraft/config/jei/jei.toml` if not already present
 
+Pack seed mirrors use the same rule: place defaults under `configureddefaults/config/` (not the instance root). Config Manager seeds use `config/modpack_defaults/config/` for the same layout.
+
 Note that this `README.md` file is excluded from being copied to `.minecraft`.

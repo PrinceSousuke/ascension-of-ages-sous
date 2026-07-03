@@ -17,28 +17,28 @@
 
 	[client.visual_options]
 		# Whether item names in tooltips should have a line under them separating them from the rest of the tooltip.
-		name_separator = true
+		name_separator = false
 		# If enabled, the name separator will be shown for all tooltips.  If disabled, it will only be shown for item tooltips.
-		show_separator_for_empty = true
+		show_separator_for_empty = false
 		# If enabled, tooltip border colors will match item rarity colors (except for custom borders).
-		borders_match_rarity = true
+		borders_match_rarity = false
 		# If enabled, tooltips will display a drop shadow.
-		tooltip_shadow = true
+		tooltip_shadow = false
 		# If enabled, items showing a custom border will have a special shine effect when hovered over.
-		shine_effect = true
+		shine_effect = false
 		# If enabled, tooltip titles will be drawn centered.
-		centered_title = true
+		centered_title = false
 		# If enabled, tooltips with custom borders will always be at least wide enough to display all border decorations.
 		enforce_minimum_width = false
 		# If enabled, some unnecessary text and spacing will be removed from equipment tooltips.
 		compact_tooltips = true
 		# Which items should have a 3D model rendered in the tooltip.  If set to "equipment", the model will only be rendered for armor, tools, and items with durability.
 		#Allowed Values: NONE, EQUIPMENT, ALL
-		render_item_model = "EQUIPMENT"
+		render_item_model = "NONE"
 		# The speed at which 3D models in tooltips will rotate.  Lower values rotate faster, set to 0 to disable rotation.
 		# Default: 12.0
 		# Range: 0.0 ~ 50.0
-		model_rotation_speed = 12.0
+		model_rotation_speed = 0.0
 		# If enabled, fixes a vanilla bug where displayed tooltip damage values are incorrect for weapons with the Sharpness enchantment.
 		fix_mc271840 = true
 		# (EXPERIMENTAL) The maximum width of tooltips.  Set to 0 for no limit.

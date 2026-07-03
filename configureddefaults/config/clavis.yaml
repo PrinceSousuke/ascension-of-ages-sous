@@ -3,7 +3,7 @@ defaultBaseItemValue: 0.33
 # Difficulty threshold for spawning locks. Locks with difficulty below this value will not spawn.
 difficultyThreshold: 0.0
 # Disables rendering of locks for players.
-disableLockRendering: false
+disableLockRendering: true
 # Multiplies every difficulty by this value before clamping, simple as that.
 globalDifficultyMultiplier: 1.15
 # Linearly maps calculated item values within this range to a 0% – 100% difficulty scale.

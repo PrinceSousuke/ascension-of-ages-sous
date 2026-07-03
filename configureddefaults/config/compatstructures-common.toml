@@ -41,8 +41,6 @@
 	enable_alexscaves = true
 	#Enable generation for: alexsmobs
 	enable_alexsmobs = true
-	#Enable generation for: ars_nouveau
-	enable_ars_nouveau = true
 	#Enable generation for: artifacts
 	enable_artifacts = true
 	#Enable generation for: biomesoplenty
@@ -55,12 +53,8 @@
 	enable_create = true
 	#Enable generation for: epicfight
 	enable_epicfight = true
-	#Enable generation for: iceandfire
-	enable_iceandfire = true
 	#Enable generation for: immersiveengineering
 	enable_immersiveengineering = true
-	#Enable generation for: irons_spellbooks
-	enable_irons_spellbooks = true
 	#Enable generation for: mowziesmobs
 	enable_mowziesmobs = true
 	#Enable generation for: naturalist
@@ -69,5 +63,3 @@
 	enable_quark = true
 	#Enable generation for: tconstruct
 	enable_tconstruct = true
-	#Enable generation for: twilightforest
-	enable_twilightforest = true

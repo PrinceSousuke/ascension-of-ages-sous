@@ -1,6 +1,6 @@
 ["Mekanism Turrets Config"]
 	#Entities which will never be targeted by turrets
-	blacklistedEntities = ["minecraft:ender_dragon", "minecraft:iron_golem"]
+	blacklistedEntities = ["minecraft:ender_dragon", "minecraft:iron_golem", "cataclysm:maledictus", "bosses_of_mass_destruction:obsidilith", "fdbosses:geburah", "cataclysm:the_leviathan"]
 	#Cooldown of the Basic Laser Turret
 	# Default: 50
 	# Range: > 0

@@ -3,7 +3,7 @@
 	#Amount of initial citizens. [Default: 4, min: 1, max: 10]
 	# Default: 4
 	# Range: 1 ~ 10
-	initialcitizenamount = 4
+	initialcitizenamount = 2
 	#Should players be able to place an infinite amount of supply camps/ships? [Default: false]
 	allowinfinitesupplychests = false
 	#Should players be allowed to abandon their colony to create a new one easily? Note: This is buggy! [Default: false]
@@ -13,11 +13,11 @@
 	#Max citizens in one colony. [Default: 250, min: 25, max: 500]
 	# Default: 250
 	# Range: 25 ~ 500
-	maxcitizenpercolony = 250
+	maxcitizenpercolony = 100
 	#Should development features be enabled (might be buggy)? [Default: false]
 	enableindevelopmentfeatures = false
 	#Should citizen name tags be rendered? [Default: true]
-	alwaysrendernametag = true
+	alwaysrendernametag = false
 	#Should workers work during the rain? [Default: false]
 	workersalwaysworkinrain = false
 	#Chance for the Miner to get an ore when mining cobblestone or stone (by default, can be expanded with datapacks to other materials). This is a percentage. (To change which ores the Miner can find, see "List of Lucky Ores".) [Default: 1, min: 0, max: 100]
@@ -37,19 +37,19 @@
 	# Range: 1 ~ 100
 	diseasemodifier = 5
 	#If part of the colony is loaded by an owner/officer, should the colony be kept loaded? (Set how many chunks are loaded with the "Colony Chunk Loading Strictness" option.) [Default: true]
-	forceloadcolony = true
+	forceloadcolony = false
 	#Set how long chunks stay loaded after player leaves, does not persist through restarts. Default: 10min [Default: 10, min: 1, max: 1440]
 	# Default: 10
 	# Range: 1 ~ 1440
-	loadtime = 10
+	loadtime = 1
 	#This controls how many chunks are loaded with the "Chunk Load Colony" option. The higher this value, the fewer chunks will be loaded. (The innermost chunks will be loaded first.) 1 = load all claimed chunks. [Default: 3, min: 1, max: 15]
 	# Default: 3
 	# Range: 1 ~ 15
-	colonyloadstrictness = 3
+	colonyloadstrictness = 10
 	#Max log count in one tree for the Forester to check during their tree search. [Default: 400, min: 1, max: 1000]
 	# Default: 400
 	# Range: 1 ~ 1000
-	maxtreesize = 400
+	maxtreesize = 200
 	#Disables supply camp placing restrictions, intended for skyworlds and similar [Default: false]
 	nosupplyplacementrestrictions = false
 	#Raiders will spawn in the sky if this is enabled [Default: false]

@@ -1,7 +1,7 @@
 #Add seasonal changes or texture effects to some blocks.
 [es_x_bwg_extra]
 	#Enable compat package es_x_bwg_extra
-	Enable = true
+	Enable = false
 	#This package will be loaded first.
 	PriorityLoading = false
 
@@ -16,14 +16,14 @@
 #Snow-covered models for vertical slabs.
 [es_x_quark]
 	#Enable compat package es_x_quark
-	Enable = true
+	Enable = false
 	#This package will be loaded first.
 	PriorityLoading = false
 
 #Adds color and climate fix for Terralith.
 [es_x_terralith]
 	#Enable compat package es_x_terralith
-	Enable = true
+	Enable = false
 	#This package will be loaded first.
 	PriorityLoading = false
 
@@ -31,6 +31,6 @@
 #Snow-covered models for grass, bamboo, and leaves, with autumnal color adjustments for themed biomes.
 [es_x_ru]
 	#Enable compat package es_x_ru
-	Enable = true
+	Enable = false
 	#This package will be loaded first.
 	PriorityLoading = false

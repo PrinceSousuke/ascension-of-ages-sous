@@ -12,6 +12,6 @@
     "RENDER_DISTANCE": "[Impact: Variable] Disables mixins that control max particle render distance (ParticleManagerRenderDistanceMixin, ParticleAccessor)"
   },
   "disableOptimizations": [
-    "NONE"
+    "RENDER_DISTANCE"
   ]
 }

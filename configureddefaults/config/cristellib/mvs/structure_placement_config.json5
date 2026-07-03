@@ -149,7 +149,7 @@ AoA override: MVS structure frequency reduced from implicit 1.0 to 0.5.
 	},
 	"dead_tree_dark_oak": {
 		"frequency": 0.5,
-		"salt": 22201927364,
+		"salt": 727090884,
 		"separation": 24,
 		"spacing": 28
 	},

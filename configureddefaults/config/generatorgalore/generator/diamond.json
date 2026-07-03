@@ -5,5 +5,5 @@
   "previousTier": "gold",
   "bufferCapacity": 100000,
   "fuelType": "SOLID",
-  "has64x": false
+  "has64x": true
 }

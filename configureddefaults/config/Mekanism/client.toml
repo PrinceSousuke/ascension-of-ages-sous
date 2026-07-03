@@ -25,7 +25,7 @@
 	#Range at which Block Entity Renderers added by Mekanism can render at, for example the contents of multiblocks. Vanilla defaults the rendering range for BERs to 64 for most blocks (for example chests), but uses a range of 256 for blocks like beacons and end gateways. Lowering this will likely increase your performance, at the cost of multiblock contents and wind generators 'popping' in
 	# Default: 256
 	# Range: 1 ~ 1024
-	berRange = 256
+	berRange = 192
 
 	#Settings for configuring Mekanism's Particles
 	[rendering.particle]

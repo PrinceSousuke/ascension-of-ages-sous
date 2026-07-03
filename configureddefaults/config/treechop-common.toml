@@ -41,7 +41,7 @@
 	#Who to credit for breaking tree blocks (logs and leaves), which can change item drops, trigger enchantment effects, etc.
 	#Use with caution: may cause unexpected interactions with other mods
 	#Allowed Values: NONE, PLAYER_NOT_TOOL, PLAYER_AND_TOOL
-	fellCredit = "NONE"
+	fellCredit = "PLAYER_AND_TOOL"
 	#Non-decayable leaves are ignored when detecting leaves
 	ignorePersistentLeaves = true
 	#Maximum distance from log blocks to destroy leaves blocks when felling
@@ -137,7 +137,7 @@
 			blacklistOrWhitelist = "BLACKLIST"
 			#List of item registry names (mod:item), tags (#mod:tag), and namespaces (@mod) for items that should not chop when used to break a log
 			#- Items in this list that have special support for TreeChop will not be blacklisted; see https://github.com/hammertater/treechop/blob/main/docs/compatibility.md#blacklist
-			items = ["botania:terra_axe", "@lumberjack", "mekanism:atomic_disassembler", "practicaltools:diamond_greataxe", "practicaltools:golden_greataxe", "practicaltools:iron_greataxe", "practicaltools:netherite_greataxe", "twilightforest:giant_pickaxe"]
+			items = ["botania:terra_axe", "@lumberjack", "mekanism:atomic_disassembler", "practicaltools:diamond_greataxe", "practicaltools:golden_greataxe", "practicaltools:iron_greataxe", "practicaltools:netherite_greataxe"]
 
 		#The chop settings used by non-player entities, such as robots and machine blocks
 		[compatibility.general.fakePlayerChopSettings]

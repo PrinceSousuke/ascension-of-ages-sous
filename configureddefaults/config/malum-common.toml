@@ -30,12 +30,6 @@
 		#Whether entities without spirit jsons will use the default spirit data for their category.
 		defaultSpiritValues = true
 
-	[compat.irons_spellbooks]
-		#Should Iron's Spellbooks' magic damage count as Soul Damage?
-		ironsSpellbooksPlayerSpiritDrops = true
-		#Should Iron's Spellbooks' magic damage when dealt by non-players count as Soul Damage
-		ironsSpellbooksNonPlayerSpiritDrops = true
-
 [progression]
 	#If set to true, malum will hide some of it's content related to a certain feature. This is the intended way to play the mod.
 	hide_recipes = true
@@ -47,3 +41,9 @@
 [magic_damage]
 	#If set to true, damage types tagged under malum:bypasses_half_armor will pierce only half of the player's armor stat, as opposed to piercing it entirely. In addition, armor will not take durability damage.
 	magicDamageReducedArmorPiercing = true
+
+	[compat.irons_spellbooks]
+		#Should Iron's Spellbooks' magic damage count as Soul Damage?
+		ironsSpellbooksPlayerSpiritDrops = true
+		#Should Iron's Spellbooks' magic damage when dealt by non-players count as Soul Damage
+		ironsSpellbooksNonPlayerSpiritDrops = true

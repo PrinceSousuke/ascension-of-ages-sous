@@ -15,8 +15,8 @@ Conservatively adjusted by Codex to match stable-instance spacing ceilings.
 	},
 	"rare_village": {
 		"salt": 1798451114,
-		"separation": 18,
-		"spacing": 56
+		"separation": 16,
+		"spacing": 40
 	},
 	"regular": {
 		"salt": 2358902,

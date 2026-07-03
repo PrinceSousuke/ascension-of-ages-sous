@@ -3,7 +3,7 @@
 'legs' : '',
 'feet' : '{count:1,id:"minecraft:iron_boots"}',
 'offhand' : '{count:4,id:"minecraft:oak_sapling"}',
-0 : '{count:1,id:"minecraft:iron_axe",components:{"minecraft:enchantments":{levels:{"minecraft:efficiency":1}}}}',
+0 : '',
 1 : '',
 2 : '',
 3 : '',
