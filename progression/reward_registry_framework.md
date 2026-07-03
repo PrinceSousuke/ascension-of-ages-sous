@@ -1,4 +1,16 @@
-# AoA Reward Registry Framework
+﻿# AoA Reward Registry Framework
+
+## Current 2026-05-13 Alignment
+
+This document is active planning/reference material, but it is subordinate to the current Required Chapter Matrix, revised Mod Career Ledger, revised quest-density budget, live `mods/*.jar`, and the AStages/KubeJS restriction surface. Preserve useful architecture from this file, but rewrite stale specifics against:
+
+- `audit_artifacts/AOA_REQUIRED_CHAPTER_MATRIX_2026-05-13.md`
+- `audit_artifacts/AOA_MOD_CAREER_LEDGER_REVISED_2026-05-13.tsv`
+- `audit_artifacts/AOA_REVISED_QUEST_DENSITY_BUDGET_2026-05-13.md`
+- `kubejs/server_scripts/aoa_astages_00_register_stages.js`
+- `kubejs/server_scripts/aoa_astages_*.js`
+
+
 
 ## Purpose
 
@@ -59,13 +71,13 @@ It is **not** a global reward placement pass.
 
 | age | reward tone | good reward families | avoid |
 | --- | --- | --- | --- |
-| Stone Age | survival relief and route safety | food/water/medicine packs, primitive route kits, basic treasure caches | iron+, diamond+, advanced machine parts |
-| Mechanical Age | workshop maturity and first machine comfort | Create support, storage relief, food-processing support, dungeon prep kits | industrial pressure systems, digital network cores |
-| Expedition Age | outward preparation and dangerous travel support | explorer kits, realm prep, bounded magic/combat support, travel/route caches | full realm ladders, late factory identity packs |
-| Automation Age | machine-campus startup and buffer stability | startup machine packs, routing buffers, first grid stabilization bundles | full industrial specialization jackpots |
-| Industrial Age | process specialization and factory throughput | metal/process choices, petroleum/pressure/control packs, synthetic support | nuclear reactors, strategic-force gear |
-| Nuclear Age | hazardous facility resilience | containment kits, hardened-grid caches, reactor support, strategic-force support | space-launch owner-specific rewards |
-| Space Age | launch and remote operations | launch prep kits, orbital survival caches, off-world logistics packs | ascension-only prestige artifacts |
+| Dark Age | survival relief and route safety | food/water/medicine packs, primitive route kits, basic treasure caches | iron+, diamond+, advanced machine parts |
+| Medieval | workshop maturity and settlement comfort | Create-lite/workshop support, storage relief, food-processing support, readiness kits | industrial pressure systems, digital network cores |
+| Renaissance | literacy, magic/realm contact, recordkeeping | explorer kits, realm prep, bounded magic/combat support, archive supplies | full realm ladders, late factory identity packs |
+| Industrial Revolution | first systems-weaving factory startup | startup machine packs, routing buffers, first grid stabilization bundles | full Gilded/Atomic specialization jackpots |
+| Gilded Age | scaling and authorization | scaled factory buffers, authorization proofs, ocean/chrono/advanced computation support | containment or cosmic prizes |
+| Atomic | hazardous facility resilience | containment kits, hardened-grid caches, reactor support, strategic-force support | launch owner-specific rewards |
+| Otherworldly | launch and remote operations | launch prep kits, orbital survival caches, off-world logistics packs | ascension-only prestige artifacts |
 | Ascension | prestige convergence and reliquary rewards | catalyst bundles, convergence choices, capstone reliquary caches | low-tier filler packs as main rewards |
 
 ## Registry Id Convention
@@ -157,10 +169,9 @@ The registry is grounded in live installed ecosystems, including:
 - food/survival: `FarmersDelight`, `Aquaculture`, `Ocean's Delight`
 - workshop/mechanical: `Create`, `Create Integrated Farming`, `Slice and Dice`, `Create Additions`, `Immersive Engineering`
 - storage/logistics: `Sophisticated Storage`, `Sophisticated Backpacks`, `Iron Chests`, `AE2`, `Refined Storage`
-- expedition support: `Ars Nouveau`, `Apotheosis`, `Artifacts`, `Relics`, `NauTec`, `Small Ships`
+- Renaissance support: installed magic/ritual systems, `Apotheosis`, `Artifacts`, `Relics`, realm prep, and bounded travel support. `NauTec` belongs in Gilded unless the matrix changes.
 - industrial clusters: `Oritech`, `Modern Industrialization`, `Industrial Foregoing`, `Hostile Neural Networks`, `PneumaticCraft`, `Integrated Dynamics`, `TFMG`
 - nuclear clusters: `Mekanism`, `Ballistix`, `Nuclear Science`, `Electrodynamics`, `Dynamic Electricity`, `Applied Mekanistics`
-- space/ascension anchors: `Stellaris` (space-owner-agnostic layer retained), `ProjectE`, `Dyson Cube Project`, `Re-Avaritia`
 
 ## Progression Safety Rules
 
@@ -195,4 +206,3 @@ When assigning live rewards in future passes:
 3. validate tier safety against age identity
 4. apply to quests in targeted chapter only (no global sweep)
 5. record placements in change log with ids used
-

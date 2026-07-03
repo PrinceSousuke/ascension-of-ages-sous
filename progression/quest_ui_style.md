@@ -1,4 +1,16 @@
-# Quest UI Style Guide
+﻿# Quest UI Style Guide
+
+## Current 2026-05-13 Alignment
+
+This document is active planning/reference material, but it is subordinate to the current Required Chapter Matrix, revised Mod Career Ledger, revised quest-density budget, live `mods/*.jar`, and the AStages/KubeJS restriction surface. Preserve useful architecture from this file, but rewrite stale specifics against:
+
+- `audit_artifacts/AOA_REQUIRED_CHAPTER_MATRIX_2026-05-13.md`
+- `audit_artifacts/AOA_MOD_CAREER_LEDGER_REVISED_2026-05-13.tsv`
+- `audit_artifacts/AOA_REVISED_QUEST_DENSITY_BUDGET_2026-05-13.md`
+- `kubejs/server_scripts/aoa_astages_00_register_stages.js`
+- `kubejs/server_scripts/aoa_astages_*.js`
+
+
 
 ## Purpose
 
@@ -18,13 +30,13 @@ The goal is to keep a very dense questbook readable.
 
 Use these display names:
 
-- `Stone Age`
-- `Mechanical Age`
-- `Expedition Age`
-- `Automation Age`
-- `Industrial Age`
-- `Nuclear Age`
-- `Space Age`
+- `Dark Age`
+- `Medieval`
+- `Renaissance`
+- `Industrial Revolution`
+- `Gilded Age`
+- `Atomic`
+- `Otherworldly`
 - `Ascension`
 - `Annexes`
 
@@ -180,7 +192,6 @@ Examples:
 
 - campfire or leather water bottle for early survival
 - cogwheel or millstone for Create chapters
-- spellbook or source gem for Ars Nouveau
 - turbine, cable, or machine block for industrial chapters
 
 ## Visibility Rules

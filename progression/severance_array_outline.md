@@ -1,4 +1,16 @@
-# Severance Array Outline
+﻿# Severance Array Outline
+
+## Current 2026-05-13 Alignment
+
+This document is active planning/reference material, but it is subordinate to the current Required Chapter Matrix, revised Mod Career Ledger, revised quest-density budget, live `mods/*.jar`, and the AStages/KubeJS restriction surface. Preserve useful architecture from this file, but rewrite stale specifics against:
+
+- `audit_artifacts/AOA_REQUIRED_CHAPTER_MATRIX_2026-05-13.md`
+- `audit_artifacts/AOA_MOD_CAREER_LEDGER_REVISED_2026-05-13.tsv`
+- `audit_artifacts/AOA_REVISED_QUEST_DENSITY_BUDGET_2026-05-13.md`
+- `kubejs/server_scripts/aoa_astages_00_register_stages.js`
+- `kubejs/server_scripts/aoa_astages_*.js`
+
+
 
 ## Purpose
 
@@ -6,7 +18,7 @@ This is the basic planning outline for a future Ascension-age prestige structure
 
 It is not a live SNBT implementation yet.
 
-The structure exists to give Ascension a final off-world mega-project that feels:
+The structure exists to give Ascension a final Ascension convergence project that feels:
 
 - deliberate
 - prestigious
@@ -18,7 +30,7 @@ The structure exists to give Ascension a final off-world mega-project that feels
 
 - Canonical name: `Severance Array`
 - Age owner: `Ascension`
-- Build site: off-world, preferably a settled remote planet rather than the origin world
+- Build site: Otherworldly/Ascension build site selected after launch and interdimensional infrastructure are proven
 - Tone: large, esoteric, industrial-cosmic, and final without devolving into raw-material absurdity
 - Strategic role: a Ballistix-linked severance weapon/platform aimed at the player's origin world
 - Activation tone: final and irreversible-feeling
@@ -37,8 +49,8 @@ Proves:
 - stable life-support presence
 
 Feeds from:
-- `space_launch_infrastructure_and_stellaris`
-- `space_orbital_life_support_and_logistics`
+- `ow_interdimensional_infrastructure or ow_capstone`
+- `ow_interdimensional_infrastructure`
 
 ### 2. Foundation Ring
 
@@ -50,8 +62,8 @@ Proves:
 - late power-routing discipline
 
 Feeds from:
-- `space_ender_io_networks`
-- `space_advanced_storage_and_digital_networks`
+- `ow_interdimensional_infrastructure`
+- `ow_high_oritech_cosmic_systems or asc_final_crafting_surface`
 
 ### 3. Mastery Segment A: Hazard Core
 
@@ -64,10 +76,10 @@ Proves:
 - strategic-force safety
 
 Feeds from:
-- `nuclear_reactors_isotopes_and_hazardous_power`
-- `nuclear_strategic_power_and_hardened_grids`
-- `nuclear_defense_systems_and_strategic_force`
-- `nuclear_chemical_storage_and_digital_bridges`
+- `at_radiological_materials or at_capstone`
+- `at_modular_force_fields_containment or at_capstone`
+- `at_modular_force_fields_containment`
+- `at_radiological_materials`
 
 ### 4. Mastery Segment B: Cosmic Relay Spine
 
@@ -80,8 +92,8 @@ Proves:
 - long-distance energy/logistics integration
 
 Feeds from:
-- `space_advanced_storage_and_digital_networks`
-- `space_antimatter_and_cosmic_refinement`
+- `ow_high_oritech_cosmic_systems or asc_final_crafting_surface`
+- `ow_high_oritech_cosmic_systems`
 
 ### 5. Mastery Segment C: Prestige Fabrication
 
@@ -94,14 +106,14 @@ Proves:
 - final assembly discipline
 
 Feeds from:
-- `ascension_prestige_crafting`
-- `ascension_projecte_exchange_ethics`
-- `ascension_avaritia_capstones`
+- `asc_final_crafting_surface`
+- `asc_archive_of_ages`
+- `asc_archive_of_ages`
 
 ### 6. Origin Lock
 
 Purpose:
-- bind the Array to the player’s original world / old base coordinates
+- bind the Array to the playerâ€™s original world / old base coordinates
 
 Proves:
 - intentional severance target selection
@@ -122,7 +134,7 @@ Proves:
 - final command authority
 
 Feeds from:
-- `nuclear_defense_systems_and_strategic_force`
+- `at_modular_force_fields_containment`
 - future `space_launch_threshold`
 
 ### 8. Irreversible Activation
@@ -169,4 +181,4 @@ Candidate functions:
 
 - outline only
 - no live quest SNBT yet
-- ready to use as the source-of-truth scaffold for a later Ascension implementation pass
+- ready to use as a reference scaffold for a later Ascension implementation pass after matrix/ledger verification
