@@ -2198,7 +2198,7 @@
 	quest.3400000000001116.quest_subtitle: "Smelting, faster cooking, and steady light."
 	quest.3400000000001116.title: "Furnace"
 	quest.3400000000001119.quest_desc: [
-		"Craft a Bed and sleep in it once to lock your spawn point. Wool comes from sheep or string, so a few shears save you a long detour."
+		"Craft a Bed and sleep in it once to lock your spawn point. Any bed works here, so the color does not matter and modded beds like the skyroot or fancy variants count the same. Wool comes from sheep or string, so a few shears save you a long detour."
 		"Sleeping also skips the night, which is the cheapest way to avoid the mobs a fresh base cannot fight off yet."
 	]
 	quest.3400000000001119.quest_subtitle: "Set your spawn before you wander."
@@ -7347,6 +7347,7 @@
 	quest.7D36D95D74E1588E.title: "Alchemist's Glove"
 	task.0D88DDD523FBC1E4.title: "Unknown type: loot"
 	task.2B8B15600CCA2F17.title: "Unknown type: random"
+	task.340000000000111A.title: "Any Bed"
 	quest.5350010000010000.quest_subtitle: "Granted at world entry."
 	quest.5350010000010000.title: "&8Dark Ages&r"
 	quest.5350010000020000.quest_subtitle: "Age gate. Clears when its capstone quest is complete."
