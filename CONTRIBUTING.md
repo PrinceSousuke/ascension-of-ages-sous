@@ -53,6 +53,10 @@ chain, one config fix) merge faster than kitchen-sink changes.
 Questions or design ideas: open a **GitHub Issue** or use **Discussions** on the
 repo before writing a large PR.
 
+Pull requests use the template in `.github/pull_request_template.md` (age-tier
+checklist, testing notes). `main` requires at least one approving review before
+merge.
+
 ## Local clone (optional)
 
 ```powershell
