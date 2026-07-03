@@ -2905,5 +2905,176 @@
 			x: 11.5d
 			y: 15.5d
 		}
+		{
+			dependencies: ["4C59010000020004"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "modern_industrialization:gravichestplate"
+			}
+			id: "4C59010000030001"
+			optional: true
+			rewards: [{
+				id: "4C59013000030001"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4C59012000030001"
+					item: { count: 1, id: "modern_industrialization:gravichestplate" }
+					type: "item"
+				}
+			]
+			x: -4.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["4C5901000002000A"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "modern_industrialization:singularity"
+			}
+			id: "4C59010000030002"
+			optional: true
+			rewards: [{
+				id: "4C59013000030002"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4C59012000030002"
+					item: { count: 1, id: "modern_industrialization:singularity" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4C59012000030003"
+					item: { count: 1, id: "modern_industrialization:uu_matter_bucket" }
+					type: "item"
+				}
+			]
+			x: 5.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["4C59010000030001"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "extended_industrialization:nano_gravichestplate"
+			}
+			id: "4C59010000030003"
+			optional: true
+			rewards: [{
+				id: "4C59013000030003"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4C59012000030004"
+					item: { count: 1, id: "extended_industrialization:nano_gravichestplate" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4C59012000030005"
+					item: { count: 1, id: "extended_industrialization:nano_quantum_chestplate" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4C59012000030006"
+					item: { count: 1, id: "extended_industrialization:nyano_quantum_helmet" }
+					type: "item"
+				}
+			]
+			x: -4.0d
+			y: -7.5d
+		}
 	]
 }

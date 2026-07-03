@@ -308,7 +308,7 @@
 			id: "10A50E9E2FE16AA1"
 			item: {
 				count: 1
-				id: "minecraft:sheep_spawn_egg"
+				id: "minecraft:wheat"
 			}
 			weight: 0.5f
 		}
@@ -408,7 +408,7 @@
 			id: "10D4BF02234FF29A"
 			item: {
 				count: 1
-				id: "minecraft:cow_spawn_egg"
+				id: "minecraft:leather"
 			}
 			weight: 0.5f
 		}
@@ -417,7 +417,7 @@
 			id: "2849C956A5684F6A"
 			item: {
 				count: 1
-				id: "minecraft:pig_spawn_egg"
+				id: "minecraft:carrot"
 			}
 			weight: 0.5f
 		}

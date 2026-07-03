@@ -3835,5 +3835,252 @@
 			x: 8.0d
 			y: 9.0d
 		}
+		{
+			dependencies: ["4D53011000000110"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "modern_industrialization:titanium_drill"
+			}
+			id: "4D5301100000013C"
+			optional: true
+			rewards: [{
+				id: "4D53013000410001"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4D53012000410001"
+					item: { count: 1, id: "modern_industrialization:titanium_drill" }
+					type: "item"
+				}
+			]
+			x: 0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4D5301100000010F"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "modern_industrialization:quantum_circuit"
+			}
+			id: "4D5301100000013D"
+			optional: true
+			rewards: [{
+				id: "4D53013000420001"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4D53012000420001"
+					item: { count: 1, id: "modern_industrialization:quantum_circuit" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4D53012000420002"
+					item: { count: 1, id: "modern_industrialization:robot_arm" }
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["4D5301100000013C"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "extended_industrialization:nano_chestplate"
+			}
+			id: "4D5301100000013E"
+			optional: true
+			rewards: [{
+				id: "4D53013000430001"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4D53012000430001"
+					item: { count: 1, id: "extended_industrialization:nano_helmet" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4D53012000430002"
+					item: { count: 1, id: "extended_industrialization:nano_chestplate" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4D53012000430003"
+					item: { count: 1, id: "extended_industrialization:nano_leggings" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4D53012000430004"
+					item: { count: 1, id: "extended_industrialization:nano_boots" }
+					type: "item"
+				}
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4D53012000430005"
+					item: { count: 1, id: "extended_industrialization:nano_saber" }
+					type: "item"
+				}
+			]
+			x: 0.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["4D53011000000115"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "industrialization_overdrive:terminal"
+			}
+			id: "4D5301100000013F"
+			optional: true
+			rewards: [{
+				id: "4D53013000440001"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [
+				{
+					PlayerSpells: {
+						check: 0b
+						mode: "ALL"
+						required: 0L
+						spells: [ ]
+					}
+					SkillsLevel: {
+						category: ""
+						check: 0b
+						comparison: "GREATER_OR_EQUAL"
+						first: 10
+						mode: "TOTAL_LEVEL"
+						second: 20
+					}
+					id: "4D53012000440001"
+					item: { count: 1, id: "industrialization_overdrive:terminal" }
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: 4.0d
+		}
 	]
 }

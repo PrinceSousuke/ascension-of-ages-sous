@@ -4,12 +4,42 @@
 	}
 	id: "7800000000000013"
 	loot_size: 1
-	order_index: 57
+	order_index: 63
 	rewards: [
-		{ id: "7813000000000001", item: { count: 1, id: "mekanism:quantum_entangloporter" } }
-		{ id: "7813000000000002", item: { count: 1, id: "minecraft:echo_shard" } }
-		{ id: "7813000000000003", item: { count: 1, id: "mekanism:ultimate_chemical_tank" } }
-		{ id: "7813000000000004", item: { count: 1, id: "minecraft:enchanted_golden_apple" } }
+		{
+			count: 2
+			id: "7813000000000001"
+			item: {
+				count: 1
+				id: "apotheosis:mythic_material"
+			}
+		}
+		{ id: "7813000000000002", item: { components: { "ftbquests:missing_item": "apotheosis:ancient_material" }, count: 1, id: "ftbquests:missing_item" } }
+		{ id: "7813000000000003", item: { count: 1, id: "minecraft:beacon" } }
+		{
+			count: 4
+			id: "7813000000000004"
+			item: {
+				count: 1
+				id: "draconicevolution:draconium_dust"
+			}
+		}
+		{
+			count: 2
+			id: "7813000000000005"
+			item: {
+				count: 1
+				id: "minecraft:nether_star"
+			}
+		}
+		{
+			count: 8
+			id: "7813000000000006"
+			item: {
+				count: 1
+				id: "minecraft:dragon_breath"
+			}
+		}
 	]
 	use_title: true
 }

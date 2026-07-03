@@ -1,0 +1,97 @@
+{
+	icon: {
+		id: "cataclysm:cursium_ingot"
+	}
+	id: "7300000000000020"
+	loot_size: 3
+	order_index: 29
+	rewards: [
+		{
+			count: 4
+			id: "7332000000000001"
+			item: {
+				count: 1
+				id: "cataclysm:black_steel_ingot"
+			}
+			weight: 4.0f
+		}
+		{
+			id: "7332000000000002"
+			item: {
+				count: 1
+				id: "cataclysm:music_disc_maledictus"
+			}
+			weight: 1.5f
+		}
+		{
+			count: 8
+			id: "7332000000000003"
+			item: {
+				count: 1
+				id: "minecraft:golden_carrot"
+			}
+			weight: 3.0f
+		}
+		{
+			count: 3
+			id: "7332000000000004"
+			item: {
+				count: 1
+				id: "apotheosis:uncommon_material"
+			}
+			weight: 3.0f
+		}
+		{
+			count: 2
+			id: "7332000000000005"
+			item: {
+				count: 1
+				id: "betternether:herbal_medicine"
+			}
+			weight: 3.0f
+		}
+		{
+			count: 4
+			id: "7332000000000006"
+			item: {
+				count: 1
+				id: "undergarden:blisterbomb"
+			}
+			weight: 2.5f
+		}
+		{
+			id: "7332000000000007"
+			item: {
+				count: 1
+				id: "minecraft:totem_of_undying"
+			}
+			weight: 0.15f
+		}
+		{
+			id: "7332000000000008"
+			item: {
+				count: 1
+				id: "apotheosis:rare_material"
+			}
+			weight: 0.5f
+		}
+		{
+			count: 2
+			id: "7332000000000009"
+			item: {
+				count: 1
+				id: "cataclysm:cursium_ingot"
+			}
+			weight: 2.0f
+		}
+		{
+			id: "7332000000000010"
+			item: {
+				count: 1
+				id: "minecraft:nether_star"
+			}
+			weight: 0.2f
+		}
+	]
+	use_title: true
+}

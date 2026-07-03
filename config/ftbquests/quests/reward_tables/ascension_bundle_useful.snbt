@@ -4,12 +4,21 @@
 	}
 	id: "7800000000000012"
 	loot_size: 1
-	order_index: 56
+	order_index: 62
 	rewards: [
-		{ id: "7812000000000001", item: { count: 1, id: "mekanism:portable_teleporter" } }
-		{ id: "7812000000000002", item: { count: 1, id: "minecraft:echo_shard" } }
-		{ id: "7812000000000003", item: { count: 1, id: "evolvedmekanism:dense_energy_cube" } }
-		{ id: "7812000000000004", item: { count: 1, id: "appmek:chemical_storage_cell_4k" } }
+		{
+			count: 2
+			id: "7812000000000001"
+			item: {
+				count: 1
+				id: "apotheosis:epic_material"
+			}
+		}
+		{ id: "7812000000000002", item: { count: 1, id: "minecraft:nether_star" } }
+		{ id: "7812000000000003", item: { count: 1, id: "minecraft:totem_of_undying" } }
+		{ id: "7812000000000004", item: { count: 1, id: "apotheosis:mythic_material" } }
+		{ id: "7812000000000005", item: { count: 1, id: "minecraft:enchanted_golden_apple" } }
+		{ id: "7812000000000006", item: { count: 1, id: "minecraft:heart_of_the_sea" } }
 	]
 	use_title: true
 }

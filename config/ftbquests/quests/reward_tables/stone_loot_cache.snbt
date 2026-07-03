@@ -3,38 +3,57 @@
 		id: "minecraft:barrel"
 	}
 	id: "7100000000000003"
-	loot_size: 1
+	loot_size: 2
 	order_index: 12
 	rewards: [
 		{
-			count: 32
 			id: "7103000000000001"
 			item: {
 				count: 1
-				id: "minecraft:torch"
+				id: "farmersdelight:skillet"
 			}
-			weight: 4.0f
+			weight: 3.5f
 		}
 		{
-			count: 16
 			id: "7103000000000002"
 			item: {
 				count: 1
-				id: "minecraft:bread"
+				id: "aquaculture:worm_farm"
 			}
-			weight: 4.0f
+			weight: 3.0f
 		}
 		{
 			id: "7103000000000003"
 			item: {
 				count: 1
-				id: "cold_sweat:boiler"
+				id: "cold_sweat:icebox"
+			}
+			weight: 3.0f
+		}
+		{
+			id: "7103000000000004"
+			item: {
+				count: 1
+				id: "comforts:hammock_white"
+			}
+			weight: 2.5f
+		}
+		{
+			id: "7103000000000005"
+			item: {
+				count: 1
+				id: "farmersdelight:cutting_board"
+			}
+			weight: 3.0f
+		}
+		{
+			id: "7103000000000006"
+			item: {
+				count: 1
+				id: "aquaculture:stone_fillet_knife"
 			}
 			weight: 2.0f
 		}
-		{ id: "7103000000000004", item: { count: 1, id: "cold_sweat:icebox" } }
-		{ id: "7103000000000005", item: { count: 1, id: "comforts:hammock_white" } }
-		{ id: "7103000000000006", item: { count: 1, id: "aquaculture:stone_fillet_knife" } }
 		{
 			count: 4
 			id: "7103000000000007"
@@ -42,34 +61,33 @@
 				count: 1
 				id: "regions_unexplored:blackwood_sapling"
 			}
-			weight: 0.8f
+			weight: 2.0f
 		}
 		{
-			count: 8
+			count: 4
 			id: "7103000000000008"
 			item: {
 				count: 1
 				id: "cold_sweat:goat_fur"
 			}
-			weight: 0.7f
+			weight: 1.5f
 		}
 		{
 			count: 8
 			id: "7103000000000009"
 			item: {
 				count: 1
-				id: "cold_sweat:hoglin_hide"
+				id: "farmersdelight:canvas"
 			}
-			weight: 0.7f
+			weight: 1.2f
 		}
 		{
-			count: 2
 			id: "7103000000000010"
 			item: {
 				count: 1
 				id: "minecraft:golden_apple"
 			}
-			weight: 0.25f
+			weight: 0.4f
 		}
 	]
 	use_title: true

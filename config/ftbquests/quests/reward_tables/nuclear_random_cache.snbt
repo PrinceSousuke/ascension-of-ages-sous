@@ -3,15 +3,15 @@
 		id: "mekanism:radioactive_waste_barrel"
 	}
 	id: "7600000000000001"
-	loot_size: 1
-	order_index: 40
+	loot_size: 2
+	order_index: 43
 	rewards: [
 		{
-			count: 8
+			count: 4
 			id: "7601000000000001"
 			item: {
 				count: 1
-				id: "mekanism:steel_casing"
+				id: "mekanism:hdpe_sheet"
 			}
 			weight: 4.0f
 		}
@@ -20,59 +20,83 @@
 			id: "7601000000000002"
 			item: {
 				count: 1
-				id: "mekanism:basic_control_circuit"
+				id: "mekanism:substrate"
 			}
-			weight: 4.0f
+			weight: 3.5f
 		}
 		{
 			count: 2
 			id: "7601000000000003"
 			item: {
 				count: 1
-				id: "mekanism:basic_chemical_tank"
+				id: "nuclearscience:reinforcedhazmatplate"
 			}
-			weight: 3.0f
+			weight: 3.5f
 		}
 		{
-			count: 32
+			count: 4
 			id: "7601000000000004"
 			item: {
+				components: {
+					"ftbquests:missing_item": "electrodynamics:wirecoilsteel"
+				}
 				count: 1
-				id: "mekanism:basic_pressurized_tube"
+				id: "ftbquests:missing_item"
 			}
 			weight: 3.0f
 		}
 		{
+			count: 8
 			id: "7601000000000005"
 			item: {
+				components: {
+					"ftbquests:missing_item": "dynamicelectricity:insulatorceramic"
+				}
 				count: 1
-				id: "mekanism:hazmat_gown"
+				id: "ftbquests:missing_item"
 			}
-			weight: 1.5f
+			weight: 3.0f
 		}
 		{
+			count: 16
 			id: "7601000000000006"
 			item: {
 				count: 1
-				id: "minecraft:bell"
+				id: "mekanism:basic_logistical_transporter"
 			}
-			weight: 1.5f
+			weight: 2.5f
 		}
 		{
 			id: "7601000000000007"
 			item: {
 				count: 1
-				id: "mekanism:hazmat_mask"
+				id: "mekanism:advanced_control_circuit"
 			}
-			weight: 1.2f
+			weight: 2.5f
 		}
 		{
 			id: "7601000000000008"
 			item: {
 				count: 1
-				id: "mekanism:hazmat_boots"
+				id: "nuclearscience:reinforcedhazmathelmet"
 			}
-			weight: 1.1f
+			weight: 1.2f
+		}
+		{
+			count: 4
+			id: "7601000000000009"
+			item: {
+				count: 1
+				id: "mekanism:reprocessed_fissile_fragment"
+			}
+		}
+		{
+			id: "7601000000000010"
+			item: {
+				count: 1
+				id: "mekanism:radioactive_waste_barrel"
+			}
+			weight: 0.5f
 		}
 	]
 	use_title: true

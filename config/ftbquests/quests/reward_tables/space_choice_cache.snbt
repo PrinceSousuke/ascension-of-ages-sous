@@ -1,30 +1,79 @@
 {
 	icon: {
-		id: "minecraft:ender_chest"
+		id: "stellaris:antenna"
 	}
 	id: "7700000000000002"
 	loot_size: 1
-	order_index: 47
+	order_index: 52
 	rewards: [
-		{ id: "7702000000000001", item: { count: 1, id: "appmek:chemical_storage_cell_1k" } }
-		{ id: "7702000000000002", item: { count: 1, id: "appmek:portable_chemical_cell_1k" } }
 		{
-			count: 2
+			count: 4
+			id: "7702000000000001"
+			item: {
+				count: 1
+				id: "stellaris:desh_ingot"
+			}
+			weight: 3.0f
+		}
+		{
+			count: 16
+			id: "7702000000000002"
+			item: {
+				count: 1
+				id: "stellaris:cable_t2"
+			}
+			weight: 3.0f
+		}
+		{
 			id: "7702000000000003"
 			item: {
 				count: 1
-				id: "appmek:chemical_p2p_tunnel"
+				id: "stellaris:t3_tank"
 			}
+			weight: 3.0f
 		}
-		{ id: "7702000000000004", item: { count: 1, id: "refinedstorage_mekanism_integration:256b_chemical_storage_disk" } }
-		{ id: "7702000000000005", item: { count: 1, id: "mekanism:portable_teleporter" } }
 		{
-			count: 16
+			id: "7702000000000004"
+			item: {
+				count: 1
+				id: "stellaris:upgrade_station"
+			}
+			weight: 3.0f
+		}
+		{
+			count: 2
+			id: "7702000000000005"
+			item: {
+				count: 1
+				id: "ae2:wireless_booster"
+			}
+			weight: 2.0f
+		}
+		{
+			count: 4
 			id: "7702000000000006"
 			item: {
 				count: 1
-				id: "mekanism:ultimate_logistical_transporter"
+				id: "minecraft:echo_shard"
 			}
+			weight: 2.0f
+		}
+		{
+			id: "7702000000000007"
+			item: {
+				count: 1
+				id: "appmek:chemical_storage_cell_4k"
+			}
+			weight: 1.5f
+		}
+		{
+			count: 8
+			id: "7702000000000008"
+			item: {
+				count: 1
+				id: "stellaris:raw_desh_ingot"
+			}
+			weight: 0.6f
 		}
 	]
 	use_title: true

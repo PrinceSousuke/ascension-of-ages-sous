@@ -6,19 +6,73 @@
 	loot_size: 1
 	order_index: 23
 	rewards: [
-		{ id: "7302000000000001", item: { count: 1, id: "waystones:waystone" } }
-		{ id: "7302000000000002", item: { count: 1, id: "sophisticatedbackpacks:gold_backpack" } }
-		{ id: "7302000000000003", item: { count: 1, id: "minecraft:oak_chest_boat" } }
-		{ id: "7302000000000004", item: { count: 1, id: "explorerscompass:explorerscompass" } }
 		{
-			count: 2
+			id: "7302000000000001"
+			item: {
+				count: 1
+				id: "minecraft:compass"
+			}
+			weight: 3.0f
+		}
+		{
+			id: "7302000000000002"
+			item: {
+				count: 1
+				id: "minecraft:spyglass"
+			}
+			weight: 3.0f
+		}
+		{
+			id: "7302000000000003"
+			item: {
+				count: 1
+				id: "explorerscompass:explorerscompass"
+			}
+			weight: 3.0f
+		}
+		{
+			count: 4
+			id: "7302000000000004"
+			item: {
+				count: 1
+				id: "apotheosis:common_material"
+			}
+			weight: 3.0f
+		}
+		{
+			count: 4
 			id: "7302000000000005"
 			item: {
 				count: 1
-				id: "alkhars:flame_in_a_bottle"
+				id: "betternether:cincinnasite"
 			}
+			weight: 2.0f
 		}
-		{ id: "7302000000000006", item: { count: 1, id: "ae2:item_storage_cell_1k" } }
+		{
+			count: 2
+			id: "7302000000000006"
+			item: {
+				count: 1
+				id: "undergarden:utherium_crystal"
+			}
+			weight: 2.0f
+		}
+		{
+			id: "7302000000000007"
+			item: {
+				count: 1
+				id: "smallships:oak_cog"
+			}
+			weight: 1.5f
+		}
+		{
+			id: "7302000000000008"
+			item: {
+				count: 1
+				id: "minecraft:trial_key"
+			}
+			weight: 0.6f
+		}
 	]
 	use_title: true
 }

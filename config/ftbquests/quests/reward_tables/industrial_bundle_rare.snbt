@@ -4,10 +4,17 @@
 	}
 	id: "7500000000000013"
 	loot_size: 1
-	order_index: 39
+	order_index: 41
 	rewards: [
-		{ id: "7513000000000001", item: { count: 1, id: "pneumaticcraft:air_compressor" } }
-		{ id: "7513000000000002", item: { count: 1, id: "createoreexcavation:vein_atlas" } }
+		{
+			count: 4
+			id: "7513000000000001"
+			item: {
+				count: 1
+				id: "pneumaticcraft:pressure_chamber_wall"
+			}
+		}
+		{ id: "7513000000000002", item: { count: 1, id: "integrateddynamics:logic_programmer" } }
 		{
 			count: 2
 			id: "7513000000000003"
@@ -16,25 +23,9 @@
 				id: "create:fluid_tank"
 			}
 		}
-		{
-			count: 16
-			id: "7513000000000004"
-			item: {
-				count: 1
-				id: "oritech:framed_item_pipe"
-			}
-		}
-		{
-			count: 4
-			id: "7513000000000005"
-			item: {
-				count: 1
-				id: "create:mechanical_crafter"
-			}
-		}
-		{ id: "7513000000000006", item: { count: 1, id: "modern_industrialization:steam_blast_furnace" } }
-		{ id: "7513000000000007", item: { count: 1, id: "pneumaticcraft:thermopneumatic_processing_plant" } }
-		{ id: "7513000000000008", item: { count: 1, id: "createdieselgenerators:distillation_controller" } }
+		{ id: "7513000000000004", item: { count: 1, id: "createaddition:alternator" } }
+		{ id: "7513000000000005", item: { count: 1, id: "pneumaticcraft:electrostatic_compressor" } }
+		{ id: "7513000000000006", item: { count: 1, id: "createoreexcavation:vein_finder" } }
 	]
 	use_title: true
 }

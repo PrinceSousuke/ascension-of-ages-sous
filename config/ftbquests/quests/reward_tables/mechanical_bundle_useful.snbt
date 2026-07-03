@@ -7,9 +7,18 @@
 	order_index: 20
 	rewards: [
 		{ id: "7212000000000001", item: { count: 1, id: "botanypots:stone_bricks_hopper_botany_pot" } }
-		{ id: "7212000000000002", item: { count: 1, id: "generatorgalore:iron_generator" } }
+		{ id: "7212000000000002", item: { count: 1, id: "create:hand_crank" } }
 		{ id: "7212000000000003", item: { count: 1, id: "create:mechanical_pump" } }
-		{ id: "7212000000000004", item: { count: 1, id: "create:item_vault" } }
+		{ id: "7212000000000004", item: { count: 1, id: "create:deployer" } }
+		{
+			count: 2
+			id: "7212000000000005"
+			item: {
+				count: 1
+				id: "create:analog_lever"
+			}
+		}
+		{ id: "7212000000000006", item: { count: 1, id: "sophisticatedstorage:limited_barrel_1" } }
 	]
 	use_title: true
 }

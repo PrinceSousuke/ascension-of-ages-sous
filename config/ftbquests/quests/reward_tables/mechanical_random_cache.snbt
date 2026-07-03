@@ -3,47 +3,76 @@
 		id: "create:brown_toolbox"
 	}
 	id: "7200000000000001"
-	loot_size: 1
+	loot_size: 2
 	order_index: 16
 	rewards: [
 		{
-			count: 16
 			id: "7201000000000001"
 			item: {
 				count: 1
-				id: "create:andesite_alloy"
-			}
-			weight: 5.0f
-		}
-		{
-			count: 16
-			id: "7201000000000002"
-			item: {
-				count: 1
-				id: "create:cogwheel"
-			}
-			weight: 5.0f
-		}
-		{
-			count: 16
-			id: "7201000000000003"
-			item: {
-				count: 1
-				id: "create:shaft"
-			}
-			weight: 5.0f
-		}
-		{
-			count: 8
-			id: "7201000000000004"
-			item: {
-				count: 1
-				id: "immersiveengineering:wirecoil_copper"
+				id: "create:encased_fan"
 			}
 			weight: 4.0f
 		}
 		{
+			id: "7201000000000002"
+			item: {
+				count: 1
+				id: "create:basin"
+			}
+			weight: 3.5f
+		}
+		{
+			id: "7201000000000003"
+			item: {
+				count: 1
+				id: "create:deployer"
+			}
+			weight: 2.5f
+		}
+		{
+			count: 2
+			id: "7201000000000004"
+			item: {
+				count: 1
+				id: "create:analog_lever"
+			}
+			weight: 3.5f
+		}
+		{
 			id: "7201000000000005"
+			item: {
+				count: 1
+				id: "immersiveengineering:wirecutter"
+			}
+			weight: 3.0f
+		}
+		{
+			id: "7201000000000006"
+			item: {
+				count: 1
+				id: "sophisticatedstorage:limited_barrel_1"
+			}
+			weight: 2.5f
+		}
+		{
+			id: "7201000000000007"
+			item: {
+				count: 1
+				id: "farmersdelight:skillet"
+			}
+			weight: 3.0f
+		}
+		{
+			id: "7201000000000008"
+			item: {
+				count: 1
+				id: "create:adjustable_chain_gearshift"
+			}
+			weight: 1.2f
+		}
+		{
+			id: "7201000000000009"
 			item: {
 				count: 1
 				id: "botanypots:stone_bricks_hopper_botany_pot"
@@ -51,30 +80,13 @@
 			weight: 2.0f
 		}
 		{
-			id: "7201000000000006"
+			id: "7201000000000010"
 			item: {
 				count: 1
-				id: "generatorgalore:iron_generator"
+				id: "create:brown_toolbox"
 			}
-			weight: 2.0f
+			weight: 0.5f
 		}
-		{
-			id: "7201000000000007"
-			item: {
-				count: 1
-				id: "create:mechanical_pump"
-			}
-			weight: 2.0f
-		}
-		{
-			id: "7201000000000008"
-			item: {
-				count: 1
-				id: "create:item_vault"
-			}
-			weight: 1.5f
-		}
-		{ id: "7201000000000009", item: { count: 1, id: "create:brown_toolbox" } }
 	]
 	use_title: true
 }

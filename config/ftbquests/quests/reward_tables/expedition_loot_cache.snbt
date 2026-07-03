@@ -3,7 +3,7 @@
 		id: "minecraft:oak_chest_boat"
 	}
 	id: "7300000000000003"
-	loot_size: 1
+	loot_size: 2
 	order_index: 24
 	rewards: [
 		{
@@ -11,65 +11,80 @@
 			id: "7303000000000001"
 			item: {
 				count: 1
-				id: "minecraft:trial_key"
+				id: "apotheosis:uncommon_material"
+			}
+			weight: 3.5f
+		}
+		{
+			count: 2
+			id: "7303000000000002"
+			item: {
+				count: 1
+				id: "undergarden:froststeel_ingot"
 			}
 			weight: 3.0f
 		}
-		{ id: "7303000000000002", item: { count: 1, id: "refinedstorage:portable_grid" } }
 		{
+			count: 8
 			id: "7303000000000003"
 			item: {
 				count: 1
-				id: "ae2:crafting_terminal"
+				id: "betterend:crystal_shards"
 			}
-			weight: 0.75f
+			weight: 3.0f
 		}
-		{ id: "7303000000000004", item: { count: 1, id: "nautec:prism_monocle" } }
 		{
+			count: 4
+			id: "7303000000000004"
+			item: {
+				count: 1
+				id: "undergarden:blisterbomb"
+			}
+			weight: 3.0f
+		}
+		{
+			count: 2
 			id: "7303000000000005"
 			item: {
 				count: 1
-				id: "smallships:oak_brigg"
+				id: "minecraft:trial_key"
 			}
-			weight: 0.75f
+			weight: 2.5f
 		}
 		{
 			id: "7303000000000006"
 			item: {
 				count: 1
-				id: "aether:zanite_ring"
+				id: "smallships:oak_brigg"
 			}
-			weight: 0.5f
+			weight: 1.5f
 		}
 		{
 			id: "7303000000000007"
 			item: {
 				count: 1
-				id: "apotheosis:gem_cutting_table"
+				id: "minecraft:spyglass"
 			}
-			weight: 0.5f
+			weight: 2.0f
 		}
 		{
+			count: 4
 			id: "7303000000000008"
 			item: {
-				components: {
-					"ftbquests:missing_item": "divinerpg:realmite_shield"
-				}
 				count: 1
-				id: "ftbquests:missing_item"
+				id: "undergarden:gloomgourd_pie"
 			}
-			weight: 0.75f
+			weight: 2.5f
 		}
+		{ id: "7303000000000009", item: { count: 1, id: "minecraft:golden_apple" } }
 		{
-			count: 8
-			id: "7303000000000009"
+			id: "7303000000000010"
 			item: {
 				count: 1
-				id: "undergarden:cloggrum_ingot"
+				id: "apotheosis:rare_material"
 			}
-			weight: 1.5f
+			weight: 0.4f
 		}
-		{ id: "7303000000000010", item: { count: 1, id: "waystones:waystone" } }
 	]
 	use_title: true
 }

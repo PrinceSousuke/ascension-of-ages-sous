@@ -1,0 +1,95 @@
+{
+	icon: {
+		id: "astral_dimension:void_trophy"
+	}
+	id: "7500000000000020"
+	loot_size: 3
+	order_index: 42
+	rewards: [
+		{
+			count: 4
+			id: "7532000000000001"
+			item: {
+				components: {
+					"ftbquests:missing_item": "astral_dimension:astral_shard"
+				}
+				count: 1
+				id: "ftbquests:missing_item"
+			}
+			weight: 3.0f
+		}
+		{
+			count: 16
+			id: "7532000000000002"
+			item: {
+				count: 1
+				id: "create:experience_nugget"
+			}
+			weight: 4.0f
+		}
+		{ id: "7532000000000003", item: { count: 1, id: "astral_dimension:void_trophy" } }
+		{
+			count: 2
+			id: "7532000000000004"
+			item: {
+				count: 1
+				id: "minecraft:enchanted_golden_apple"
+			}
+			weight: 0.25f
+		}
+		{
+			count: 2
+			id: "7532000000000005"
+			item: {
+				count: 1
+				id: "astral_dimension:void_gem"
+			}
+			weight: 2.0f
+		}
+		{
+			count: 2
+			id: "7532000000000006"
+			item: {
+				count: 1
+				id: "astral_dimension:lucid_ingot"
+			}
+			weight: 3.0f
+		}
+		{
+			count: 2
+			id: "7532000000000007"
+			item: {
+				count: 1
+				id: "ae2:logic_processor"
+			}
+			weight: 2.0f
+		}
+		{
+			count: 2
+			id: "7532000000000008"
+			item: {
+				count: 1
+				id: "apotheosis:epic_material"
+			}
+			weight: 1.5f
+		}
+		{
+			count: 4
+			id: "7532000000000009"
+			item: {
+				count: 1
+				id: "astral_dimension:void_charge"
+			}
+			weight: 3.0f
+		}
+		{
+			id: "7532000000000010"
+			item: {
+				count: 1
+				id: "minecraft:nether_star"
+			}
+			weight: 0.3f
+		}
+	]
+	use_title: true
+}

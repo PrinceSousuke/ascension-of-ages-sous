@@ -4,38 +4,54 @@
 	}
 	id: "7500000000000011"
 	loot_size: 1
-	order_index: 37
+	order_index: 39
 	rewards: [
 		{
-			count: 16
+			count: 8
 			id: "7511000000000001"
 			item: {
 				count: 1
-				id: "modern_industrialization:steel_ingot"
-			}
-		}
-		{
-			count: 16
-			id: "7511000000000002"
-			item: {
-				count: 1
-				id: "modern_industrialization:bronze_ingot"
+				id: "pneumaticcraft:pressure_tube"
 			}
 		}
 		{
 			count: 8
-			id: "7511000000000003"
+			id: "7511000000000002"
 			item: {
 				count: 1
-				id: "pneumaticcraft:plastic"
+				id: "modern_industrialization:steel_plate"
 			}
 		}
 		{
-			count: 32
+			count: 16
+			id: "7511000000000003"
+			item: {
+				count: 1
+				id: "create:fluid_pipe"
+			}
+		}
+		{
+			count: 4
 			id: "7511000000000004"
 			item: {
 				count: 1
-				id: "create_new_age:copper_wire"
+				id: "immersiveengineering:component_iron"
+			}
+		}
+		{
+			count: 8
+			id: "7511000000000005"
+			item: {
+				count: 1
+				id: "oritech:framed_item_pipe"
+			}
+		}
+		{
+			count: 4
+			id: "7511000000000006"
+			item: {
+				count: 1
+				id: "pneumaticcraft:plastic"
 			}
 		}
 	]

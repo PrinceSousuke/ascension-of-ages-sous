@@ -1,26 +1,17 @@
 {
 	icon: {
-		id: "minecraft:ender_chest"
+		id: "stellaris:antenna"
 	}
 	id: "7700000000000013"
 	loot_size: 1
-	order_index: 51
+	order_index: 56
 	rewards: [
-		{ id: "7713000000000001", item: { count: 1, id: "appmek:chemical_storage_cell_4k" } }
-		{ id: "7713000000000002", item: { count: 1, id: "refinedstorage_mekanism_integration:256b_chemical_storage_block" } }
-		{ id: "7713000000000003", item: { count: 1, id: "mekanism:quantum_entangloporter" } }
-		{ id: "7713000000000004", item: { count: 1, id: "mekanism_lasers:energy_transformer" } }
-		{ id: "7713000000000005", item: { count: 1, id: "evolvedmekanism:dense_energy_cube" } }
-		{ id: "7713000000000006", item: { count: 1, id: "minecraft:echo_shard" } }
-		{ id: "7713000000000007", item: { count: 1, id: "mekanism:ultimate_chemical_tank" } }
-		{
-			count: 2
-			id: "7713000000000008"
-			item: {
-				count: 1
-				id: "mekanism_lasers:energy_storage_cell"
-			}
-		}
+		{ id: "7713000000000001", item: { count: 1, id: "stellaris:radioactive_generator" } }
+		{ id: "7713000000000002", item: { count: 1, id: "stellaris:t4_tank" } }
+		{ id: "7713000000000003", item: { count: 1, id: "stellaris:antenna" } }
+		{ id: "7713000000000004", item: { count: 1, id: "minecraft:heart_of_the_sea" } }
+		{ id: "7713000000000005", item: { count: 1, id: "cataclysm:tidal_claws" } }
+		{ id: "7713000000000006", item: { count: 1, id: "ae2:quantum_entangled_singularity" } }
 	]
 	use_title: true
 }

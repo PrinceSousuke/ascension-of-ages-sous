@@ -1,29 +1,24 @@
 {
 	icon: {
-		id: "minecraft:ender_chest"
+		id: "stellaris:antenna"
 	}
 	id: "7700000000000012"
 	loot_size: 1
-	order_index: 50
+	order_index: 55
 	rewards: [
+		{ id: "7712000000000001", item: { count: 1, id: "stellaris:upgrade_station" } }
+		{ id: "7712000000000002", item: { count: 1, id: "stellaris:water_pump" } }
 		{
 			count: 2
-			id: "7712000000000001"
+			id: "7712000000000003"
 			item: {
 				count: 1
-				id: "appmek:chemical_p2p_tunnel"
+				id: "ae2:wireless_booster"
 			}
 		}
-		{ id: "7712000000000002", item: { count: 1, id: "refinedstorage_mekanism_integration:256b_chemical_storage_disk" } }
-		{ id: "7712000000000003", item: { count: 1, id: "mekanism:portable_teleporter" } }
-		{
-			count: 16
-			id: "7712000000000004"
-			item: {
-				count: 1
-				id: "mekanism:ultimate_logistical_transporter"
-			}
-		}
+		{ id: "7712000000000004", item: { count: 1, id: "appmek:chemical_storage_cell_4k" } }
+		{ id: "7712000000000005", item: { count: 1, id: "stellaris:coal_generator" } }
+		{ id: "7712000000000006", item: { count: 1, id: "mekanism_lasers:energy_storage_cell" } }
 	]
 	use_title: true
 }

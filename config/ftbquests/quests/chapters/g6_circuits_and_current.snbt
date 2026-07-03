@@ -2934,7 +2934,7 @@
 				}
 				{
 					id: "7A55B10000000082"
-					item: { count: 1, id: "hybrid-aquatic:hydrothermal_vent_shaft" }
+					item: { count: 1, id: "hybrid-aquatic:hydrothermal_vent" }
 					type: "item"
 				}
 			]

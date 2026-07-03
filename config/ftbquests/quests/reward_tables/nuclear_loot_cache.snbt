@@ -3,77 +3,95 @@
 		id: "mekanism:radioactive_waste_barrel"
 	}
 	id: "7600000000000003"
-	loot_size: 1
-	order_index: 42
+	loot_size: 2
+	order_index: 45
 	rewards: [
 		{
-			count: 16
+			count: 8
 			id: "7603000000000001"
 			item: {
 				count: 1
 				id: "mekanism:steel_casing"
 			}
-			weight: 4.0f
+			weight: 3.5f
 		}
 		{
-			count: 16
+			count: 4
 			id: "7603000000000002"
 			item: {
 				count: 1
 				id: "mekanism:basic_control_circuit"
 			}
-			weight: 4.0f
-		}
-		{ id: "7603000000000003", item: { count: 1, id: "mekanism:electrolytic_separator" } }
-		{ id: "7603000000000004", item: { count: 1, id: "mekanism:advanced_chemical_tank" } }
-		{
-			id: "7603000000000005"
-			item: {
-				count: 1
-				id: "mekanism:hazmat_gown"
-			}
-			weight: 0.9f
+			weight: 3.0f
 		}
 		{
 			count: 2
+			id: "7603000000000003"
+			item: {
+				count: 1
+				id: "nuclearscience:reinforcedhazmatplate"
+			}
+			weight: 3.0f
+		}
+		{
+			count: 2
+			id: "7603000000000004"
+			item: {
+				count: 1
+				id: "mekanism:basic_chemical_tank"
+			}
+			weight: 3.0f
+		}
+		{
+			count: 16
+			id: "7603000000000005"
+			item: {
+				count: 1
+				id: "mekanism:basic_pressurized_tube"
+			}
+			weight: 2.5f
+		}
+		{
+			count: 4
 			id: "7603000000000006"
 			item: {
 				count: 1
-				id: "mekanism:radioactive_waste_barrel"
+				id: "mekanismgenerators:turbine_casing"
 			}
+			weight: 2.0f
 		}
 		{
 			id: "7603000000000007"
 			item: {
 				count: 1
-				id: "mekanismgenerators:fission_reactor_logic_adapter"
+				id: "nuclearscience:reinforcedhazmatboots"
 			}
-			weight: 0.45f
+			weight: 1.5f
 		}
 		{
-			count: 8
+			count: 2
 			id: "7603000000000008"
 			item: {
 				count: 1
-				id: "mekanismgenerators:turbine_casing"
+				id: "mekanism:reprocessed_fissile_fragment"
 			}
-			weight: 0.6f
+			weight: 0.5f
 		}
 		{
 			id: "7603000000000009"
 			item: {
 				count: 1
-				id: "mekanism:hazmat_boots"
+				id: "mekanism:advanced_control_circuit"
 			}
-			weight: 0.4f
+			weight: 0.8f
 		}
 		{
 			id: "7603000000000010"
 			item: {
 				count: 1
-				id: "mekanism:quantum_entangloporter"
+				id: "mekanism:pellet_plutonium"
 			}
-			weight: 0.35f
+			weight: 0.25f
 		}
 	]
 	use_title: true

@@ -3,77 +3,96 @@
 		id: "immersiveengineering:crate"
 	}
 	id: "7500000000000001"
-	loot_size: 1
-	order_index: 34
+	loot_size: 2
+	order_index: 36
 	rewards: [
 		{
-			count: 16
 			id: "7501000000000001"
 			item: {
 				count: 1
-				id: "modern_industrialization:steel_ingot"
+				id: "pneumaticcraft:pressure_gauge"
 			}
 			weight: 4.0f
 		}
 		{
-			count: 16
+			count: 2
 			id: "7501000000000002"
 			item: {
 				count: 1
-				id: "modern_industrialization:bronze_ingot"
+				id: "pneumaticcraft:speed_upgrade"
 			}
-			weight: 4.0f
+			weight: 3.5f
 		}
 		{
 			count: 8
 			id: "7501000000000003"
 			item: {
 				count: 1
-				id: "pneumaticcraft:plastic"
+				id: "modern_industrialization:steel_plate"
 			}
 			weight: 3.0f
 		}
 		{
-			count: 32
 			id: "7501000000000004"
 			item: {
+				components: {
+					"ftbquests:missing_item": "oritech:machine_core"
+				}
 				count: 1
-				id: "create_new_age:copper_wire"
+				id: "ftbquests:missing_item"
 			}
 			weight: 3.0f
 		}
 		{
+			count: 4
 			id: "7501000000000005"
 			item: {
 				count: 1
-				id: "modern_industrialization:bronze_boiler"
+				id: "immersiveengineering:component_iron"
 			}
-			weight: 1.5f
+			weight: 3.5f
 		}
 		{
 			id: "7501000000000006"
 			item: {
 				count: 1
-				id: "create_new_age:stirling_engine"
+				id: "createaddition:modular_accumulator"
 			}
-			weight: 1.25f
+			weight: 2.5f
 		}
 		{
 			id: "7501000000000007"
 			item: {
 				count: 1
-				id: "createaddition:electric_motor"
+				id: "pneumaticcraft:memory_stick"
 			}
-			weight: 1.5f
+			weight: 2.5f
 		}
 		{
-			count: 32
+			count: 4
 			id: "7501000000000008"
 			item: {
 				count: 1
-				id: "create:fluid_pipe"
+				id: "refinedstorage:quartz_enriched_iron"
+			}
+			weight: 2.5f
+		}
+		{
+			count: 2
+			id: "7501000000000009"
+			item: {
+				count: 1
+				id: "modern_industrialization:electronic_circuit"
 			}
 			weight: 2.0f
+		}
+		{
+			id: "7501000000000010"
+			item: {
+				count: 1
+				id: "pneumaticcraft:printed_circuit_board"
+			}
+			weight: 0.6f
 		}
 	]
 	use_title: true

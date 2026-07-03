@@ -16,14 +16,9 @@
 				id: "comforts:rope_and_nail"
 			}
 		}
-		{
-			count: 16
-			id: "7112000000000004"
-			item: {
-				count: 1
-				id: "minecraft:bread"
-			}
-		}
+		{ id: "7112000000000004", item: { count: 1, id: "farmersdelight:cooking_pot" } }
+		{ id: "7112000000000005", item: { components: { "ftbquests:missing_item": "sereneseasons:calendar" }, count: 1, id: "ftbquests:missing_item" } }
+		{ id: "7112000000000006", item: { count: 1, id: "aquaculture:iron_fishing_rod" } }
 	]
 	use_title: true
 }

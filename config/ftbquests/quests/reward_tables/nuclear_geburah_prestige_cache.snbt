@@ -1,0 +1,94 @@
+{
+	icon: {
+		id: "fdbosses:justice_core"
+	}
+	id: "7600000000000021"
+	loot_size: 3
+	order_index: 51
+	rewards: [
+		{
+			count: 8
+			id: "7633000000000001"
+			item: {
+				count: 1
+				id: "mekanism:reprocessed_fissile_fragment"
+			}
+			weight: 3.0f
+		}
+		{
+			count: 4
+			id: "7633000000000002"
+			item: {
+				count: 1
+				id: "nuclearscience:reinforcedhazmatplate"
+			}
+			weight: 3.0f
+		}
+		{
+			id: "7633000000000003"
+			item: {
+				count: 1
+				id: "alexscaves:ortholance"
+			}
+			weight: 0.4f
+		}
+		{
+			count: 2
+			id: "7633000000000004"
+			item: {
+				count: 1
+				id: "minecraft:nether_star"
+			}
+			weight: 0.3f
+		}
+		{ id: "7633000000000005", item: { components: { "ftbquests:missing_item": "fdbosses:justice_trophy" }, count: 1, id: "ftbquests:missing_item" } }
+		{
+			count: 2
+			id: "7633000000000006"
+			item: {
+				count: 1
+				id: "mekanismgenerators:turbine_rotor"
+			}
+			weight: 3.0f
+		}
+		{
+			count: 2
+			id: "7633000000000007"
+			item: {
+				count: 1
+				id: "apotheosis:mythic_material"
+			}
+			weight: 2.5f
+		}
+		{
+			count: 2
+			id: "7633000000000008"
+			item: {
+				count: 1
+				id: "mekanismgenerators:turbine_rotor"
+			}
+			weight: 2.5f
+		}
+		{
+			count: 32
+			id: "7633000000000009"
+			item: {
+				count: 1
+				id: "minecraft:experience_bottle"
+			}
+			weight: 3.0f
+		}
+		{
+			id: "7633000000000010"
+			item: {
+				components: {
+					"ftbquests:missing_item": "apotheosis:ancient_material"
+				}
+				count: 1
+				id: "ftbquests:missing_item"
+			}
+			weight: 0.25f
+		}
+	]
+	use_title: true
+}

@@ -639,7 +639,7 @@
 			entity_vis_size: 1.0f
 			hide_until_deps_visible: true
 			icon: {
-				id: "createaddition:liquid_blaze_burner"
+				id: "create:blaze_burner"
 			}
 			id: "4954051000000042"
 			optional: true
@@ -675,11 +675,6 @@
 					}
 					id: "4954052000000042"
 					item: { count: 1, id: "createaddition:biomass" }
-					type: "item"
-				}
-				{
-					id: "4954052000000142"
-					item: { count: 1, id: "createaddition:liquid_blaze_burner" }
 					type: "item"
 				}
 				{

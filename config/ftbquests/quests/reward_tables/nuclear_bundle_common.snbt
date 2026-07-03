@@ -4,10 +4,10 @@
 	}
 	id: "7600000000000011"
 	loot_size: 1
-	order_index: 43
+	order_index: 46
 	rewards: [
 		{
-			count: 8
+			count: 4
 			id: "7611000000000001"
 			item: {
 				count: 1
@@ -15,7 +15,7 @@
 			}
 		}
 		{
-			count: 8
+			count: 2
 			id: "7611000000000002"
 			item: {
 				count: 1
@@ -23,19 +23,28 @@
 			}
 		}
 		{
-			count: 2
+			count: 4
 			id: "7611000000000003"
 			item: {
 				count: 1
-				id: "mekanism:basic_chemical_tank"
+				id: "mekanism:hdpe_sheet"
 			}
 		}
+		{ id: "7611000000000004", item: { count: 1, id: "nuclearscience:reinforcedhazmatplate" } }
 		{
-			count: 32
-			id: "7611000000000004"
+			count: 16
+			id: "7611000000000005"
 			item: {
 				count: 1
 				id: "mekanism:basic_pressurized_tube"
+			}
+		}
+		{
+			count: 4
+			id: "7611000000000006"
+			item: {
+				count: 1
+				id: "mekanism:substrate"
 			}
 		}
 	]

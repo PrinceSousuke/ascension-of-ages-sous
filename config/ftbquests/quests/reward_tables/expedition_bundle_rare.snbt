@@ -6,21 +6,26 @@
 	loot_size: 1
 	order_index: 27
 	rewards: [
-		{ id: "7313000000000001", item: { count: 1, id: "refinedstorage:portable_grid" } }
-		{ id: "7313000000000002", item: { count: 1, id: "ae2:crafting_terminal" } }
-		{ id: "7313000000000003", item: { count: 1, id: "nautec:prism_monocle" } }
-		{ id: "7313000000000004", item: { count: 1, id: "smallships:oak_brigg" } }
-		{ id: "7313000000000005", item: { count: 1, id: "aether:zanite_ring" } }
-		{ id: "7313000000000006", item: { count: 1, id: "apotheosis:gem_cutting_table" } }
-		{ id: "7313000000000007", item: { components: { "ftbquests:missing_item": "divinerpg:realmite_shield" }, count: 1, id: "ftbquests:missing_item" } }
+		{ id: "7313000000000001", item: { count: 1, id: "minecraft:anvil" } }
+		{ id: "7313000000000002", item: { count: 1, id: "smallships:oak_brigg" } }
 		{
-			count: 8
-			id: "7313000000000008"
+			count: 2
+			id: "7313000000000003"
 			item: {
 				count: 1
-				id: "undergarden:cloggrum_ingot"
+				id: "undergarden:froststeel_ingot"
 			}
 		}
+		{
+			count: 4
+			id: "7313000000000004"
+			item: {
+				count: 1
+				id: "betterend:amber_gem"
+			}
+		}
+		{ id: "7313000000000005", item: { count: 1, id: "minecraft:golden_apple" } }
+		{ id: "7313000000000006", item: { count: 1, id: "apotheosis:rare_material" } }
 	]
 	use_title: true
 }

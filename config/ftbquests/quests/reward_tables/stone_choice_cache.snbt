@@ -6,18 +6,72 @@
 	loot_size: 1
 	order_index: 11
 	rewards: [
-		{ id: "7102000000000001", item: { count: 1, id: "cold_sweat:waterskin" } }
-		{ id: "7102000000000002", item: { count: 1, id: "cold_sweat:boiler" } }
-		{ id: "7102000000000003", item: { count: 1, id: "crafting_on_a_stick:crafting_table" } }
-		{ id: "7102000000000004", item: { count: 1, id: "comforts:hammock_white" } }
-		{ id: "7102000000000005", item: { count: 1, id: "cold_sweat:icebox" } }
 		{
-			count: 2
-			id: "7102000000000006"
+			id: "7102000000000001"
 			item: {
 				count: 1
-				id: "comforts:rope_and_nail"
+				id: "cold_sweat:waterskin"
 			}
+			weight: 3.0f
+		}
+		{
+			id: "7102000000000002"
+			item: {
+				count: 1
+				id: "farmersdelight:bamboo_basket"
+			}
+			weight: 3.0f
+		}
+		{
+			id: "7102000000000003"
+			item: {
+				count: 1
+				id: "comforts:sleeping_bag_white"
+			}
+			weight: 3.0f
+		}
+		{
+			id: "7102000000000004"
+			item: {
+				count: 1
+				id: "aquaculture:tackle_box"
+			}
+			weight: 3.0f
+		}
+		{
+			id: "7102000000000005"
+			item: {
+				count: 1
+				id: "farmersdelight:cooking_pot"
+			}
+			weight: 2.0f
+		}
+		{
+			id: "7102000000000006"
+			item: {
+				components: {
+					"ftbquests:missing_item": "sereneseasons:calendar"
+				}
+				count: 1
+				id: "ftbquests:missing_item"
+			}
+			weight: 2.0f
+		}
+		{
+			id: "7102000000000007"
+			item: {
+				count: 1
+				id: "cold_sweat:boiler"
+			}
+			weight: 1.5f
+		}
+		{
+			id: "7102000000000008"
+			item: {
+				count: 1
+				id: "farmersdelight:skillet"
+			}
+			weight: 0.6f
 		}
 	]
 	use_title: true

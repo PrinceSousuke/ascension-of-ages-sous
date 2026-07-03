@@ -3,75 +3,87 @@
 		id: "minecraft:dragon_egg"
 	}
 	id: "7800000000000003"
-	loot_size: 1
-	order_index: 54
+	loot_size: 3
+	order_index: 60
 	rewards: [
 		{
-			count: 2
+			count: 3
 			id: "7803000000000001"
-			item: {
-				count: 1
-				id: "minecraft:totem_of_undying"
-			}
-			weight: 2.0f
-		}
-		{
-			count: 6
-			id: "7803000000000002"
 			item: {
 				count: 1
 				id: "apotheosis:mythic_material"
 			}
-			weight: 1.5f
+			weight: 3.0f
 		}
 		{
-			count: 4
-			id: "7803000000000003"
+			count: 2
+			id: "7803000000000002"
 			item: {
 				count: 1
 				id: "minecraft:nether_star"
 			}
-			weight: 1.25f
+			weight: 3.0f
 		}
+		{ id: "7803000000000003", item: { count: 1, id: "minecraft:totem_of_undying" } }
 		{
 			id: "7803000000000004"
 			item: {
 				count: 1
-				id: "mekanism:quantum_entangloporter"
+				id: "minecraft:beacon"
 			}
-			weight: 0.6f
+			weight: 0.4f
 		}
 		{
+			count: 8
 			id: "7803000000000005"
 			item: {
 				count: 1
 				id: "minecraft:echo_shard"
 			}
-			weight: 0.5f
+			weight: 3.0f
 		}
 		{
+			count: 4
 			id: "7803000000000006"
 			item: {
 				count: 1
-				id: "mekanism:ultimate_chemical_tank"
+				id: "draconicevolution:draconium_dust"
 			}
-			weight: 0.6f
+			weight: 2.5f
 		}
 		{
+			count: 2
 			id: "7803000000000007"
 			item: {
 				count: 1
 				id: "minecraft:enchanted_golden_apple"
 			}
-			weight: 0.5f
 		}
 		{
+			count: 2
 			id: "7803000000000008"
 			item: {
 				count: 1
-				id: "minecraft:beacon"
+				id: "apotheosis:epic_material"
 			}
-			weight: 0.25f
+			weight: 2.5f
+		}
+		{
+			count: 4
+			id: "7803000000000009"
+			item: {
+				count: 1
+				id: "minecraft:dragon_breath"
+			}
+			weight: 3.0f
+		}
+		{
+			id: "7803000000000010"
+			item: {
+				count: 1
+				id: "minecraft:heart_of_the_sea"
+			}
+			weight: 0.5f
 		}
 	]
 	use_title: true

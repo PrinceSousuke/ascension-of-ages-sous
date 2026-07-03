@@ -4,27 +4,79 @@
 	}
 	id: "7600000000000002"
 	loot_size: 1
-	order_index: 41
+	order_index: 44
 	rewards: [
-		{ id: "7602000000000001", item: { count: 1, id: "mekanism:hazmat_gown" } }
-		{ id: "7602000000000002", item: { count: 1, id: "minecraft:bell" } }
-		{ id: "7602000000000003", item: { count: 1, id: "mekanism:hazmat_mask" } }
-		{ id: "7602000000000004", item: { count: 1, id: "mekanism:hazmat_boots" } }
+		{
+			count: 4
+			id: "7602000000000001"
+			item: {
+				count: 1
+				id: "mekanism:steel_casing"
+			}
+			weight: 3.0f
+		}
 		{
 			count: 2
+			id: "7602000000000002"
+			item: {
+				count: 1
+				id: "mekanism:basic_control_circuit"
+			}
+			weight: 3.0f
+		}
+		{
+			count: 4
+			id: "7602000000000003"
+			item: {
+				count: 1
+				id: "mekanism:hdpe_sheet"
+			}
+			weight: 3.0f
+		}
+		{
+			id: "7602000000000004"
+			item: {
+				count: 1
+				id: "nuclearscience:reinforcedhazmatplate"
+			}
+			weight: 3.0f
+		}
+		{
 			id: "7602000000000005"
 			item: {
 				count: 1
 				id: "mekanism:basic_chemical_tank"
 			}
+			weight: 2.0f
 		}
 		{
-			count: 2
+			count: 4
 			id: "7602000000000006"
+			item: {
+				components: {
+					"ftbquests:missing_item": "electrodynamics:wirecoilsteel"
+				}
+				count: 1
+				id: "ftbquests:missing_item"
+			}
+			weight: 2.0f
+		}
+		{
+			count: 4
+			id: "7602000000000007"
+			item: {
+				count: 1
+				id: "mekanism:substrate"
+			}
+			weight: 1.5f
+		}
+		{
+			id: "7602000000000008"
 			item: {
 				count: 1
 				id: "mekanism:radioactive_waste_barrel"
 			}
+			weight: 0.6f
 		}
 	]
 	use_title: true

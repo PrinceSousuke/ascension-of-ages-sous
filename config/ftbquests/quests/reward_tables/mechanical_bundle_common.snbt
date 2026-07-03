@@ -15,7 +15,7 @@
 			}
 		}
 		{
-			count: 16
+			count: 8
 			id: "7211000000000002"
 			item: {
 				count: 1
@@ -23,7 +23,7 @@
 			}
 		}
 		{
-			count: 16
+			count: 8
 			id: "7211000000000003"
 			item: {
 				count: 1
@@ -31,13 +31,15 @@
 			}
 		}
 		{
-			count: 8
+			count: 2
 			id: "7211000000000004"
 			item: {
 				count: 1
-				id: "immersiveengineering:wirecoil_copper"
+				id: "create:gearbox"
 			}
 		}
+		{ id: "7211000000000005", item: { count: 1, id: "create:encased_fan" } }
+		{ id: "7211000000000006", item: { count: 1, id: "create:basin" } }
 	]
 	use_title: true
 }
