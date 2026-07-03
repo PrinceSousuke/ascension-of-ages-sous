@@ -5040,6 +5040,7 @@
 	quest.49540D1000000024.title: "Mekanism Lapis Boots"
 	quest.49540D1000000025.quest_desc: [
 		"Forge the complete &6Mekanism Tools&r &bSteel&r armor: helmet, chestplate, leggings, and boots. It is a sturdy &dindustrial&r-grade suit, a dependable wall between you and the world."
+		"All &6Mekanism Tools&r gear is now forged on the &6Overgeared&r &bSmithing Anvil&r, not the crafting grid. The old grid recipes are gone. Place the ingots in the anvil's forging pattern, then strike the glowing metal with a hammer until the piece is finished. This applies to every material set: bronze, steel, lapis lazuli, osmium, refined glowstone, and refined obsidian."
 		"A solid default set built from metal you already smelt."
 	]
 	quest.49540D1000000025.quest_subtitle: "Mekanism steel armor set."
