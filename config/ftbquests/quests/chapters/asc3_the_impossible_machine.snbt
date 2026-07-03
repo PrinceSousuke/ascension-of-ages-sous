@@ -87,7 +87,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["494D010000010002"]
+			dependencies: ["494D010000010002", "434801100000010A", "4256010000010003"]
 			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: {

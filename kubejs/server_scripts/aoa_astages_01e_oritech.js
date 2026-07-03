@@ -75,6 +75,21 @@
     ["gilded_age", "oritech:reactor_controller", "block_item"],
     ["gilded_age", "oritech:fuel_generator_block", "block_item"],
     // ---- Oritech Atomic (atomic_forge / flux_gate / superconductor / particle tier) ----
+    // Nuclear reactor build parts (bypass fix 2026-07-02: parts were ungated, letting a
+    // uranium fission reactor be hand-built pre-Atomic; controller stays gilded as preview,
+    // the working multiblock completes at Atomic where its quest lives).
+    ["atomic", "oritech:reactor_rod", "block_item"],
+    ["atomic", "oritech:reactor_double_rod", "block_item"],
+    ["atomic", "oritech:reactor_quad_rod", "block_item"],
+    ["atomic", "oritech:reactor_wall", "block_item"],
+    ["atomic", "oritech:reactor_vent", "block_item"],
+    ["atomic", "oritech:reactor_heat_pipe", "block_item"],
+    ["atomic", "oritech:reactor_reflector", "block_item"],
+    ["atomic", "oritech:reactor_condenser", "block_item"],
+    ["atomic", "oritech:reactor_energy_port", "block_item"],
+    ["atomic", "oritech:reactor_fuel_port", "block_item"],
+    ["atomic", "oritech:reactor_redstone_port", "block_item"],
+    ["atomic", "oritech:reactor_absorber_port", "block_item"],
     ["atomic", "oritech:machine_core_5", "block_item"],
     ["atomic", "oritech:machine_core_7", "block_item"],
     ["atomic", "oritech:machine_extender", "block_item"],

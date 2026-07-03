@@ -2452,5 +2452,99 @@
 			x: 31.5d
 			y: -4.0d
 		}
+		{
+			dependencies: ["4348010000010002"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "nuclearscience:geigercounter"
+			}
+			id: "434801000002F001"
+			rewards: [{
+				id: "4348030000020001"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [
+				{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+					id: "4348020000020001"
+					item: { count: 1, id: "nuclearscience:geigercounter" }
+					type: "item"
+				}
+				{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+					id: "4348020000020002"
+					item: { count: 1, id: "nuclearscience:antidote" }
+					type: "item"
+				}
+				{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+					id: "4348020000020003"
+					item: { count: 1, id: "nuclearscience:iodinetablet" }
+					type: "item"
+				}
+				{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+					id: "4348020000020004"
+					item: { count: 1, id: "nuclearscience:radiationshieldingbase" }
+					type: "item"
+				}
+			]
+			x: 15.0d
+			y: 1.5d
+		}
 	]
 }

@@ -1574,5 +1574,156 @@
 			x: 10.0d
 			y: -1.5d
 		}
+		{
+			dependencies: ["4F4301100000010E"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "oritech:reactor_rod"
+			}
+			id: "4F43010000020001"
+			rewards: [{
+				id: "4F43030000020101"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [
+				{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+					id: "4F43020000020101"
+					item: { count: 1, id: "oritech:reactor_rod" }
+					type: "item"
+				}
+				{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+					id: "4F43020000020102"
+					item: { count: 1, id: "oritech:reactor_wall" }
+					type: "item"
+				}
+				{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+					id: "4F43020000020103"
+					item: { count: 1, id: "oritech:reactor_vent" }
+					type: "item"
+				}
+				{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+					id: "4F43020000020104"
+					item: { count: 1, id: "oritech:reactor_heat_pipe" }
+					type: "item"
+				}
+				{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+					id: "4F43020000020105"
+					item: { count: 1, id: "oritech:reactor_reflector" }
+					type: "item"
+				}
+				{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+					id: "4F43020000020106"
+					item: { count: 1, id: "oritech:reactor_energy_port" }
+					type: "item"
+				}
+				{
+				PlayerSpells: {
+					check: 0b
+					mode: "ALL"
+					required: 0L
+					spells: [ ]
+				}
+				SkillsLevel: {
+					category: ""
+					check: 0b
+					comparison: "GREATER_OR_EQUAL"
+					first: 10
+					mode: "TOTAL_LEVEL"
+					second: 20
+				}
+					id: "4F43020000020107"
+					item: { count: 1, id: "oritech:reactor_fuel_port" }
+					type: "item"
+				}
+			]
+			x: 10.5d
+			y: -4.5d
+		}
 	]
 }
