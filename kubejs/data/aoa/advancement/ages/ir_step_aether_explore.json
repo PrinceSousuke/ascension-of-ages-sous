@@ -26,5 +26,5 @@
     "announce_to_chat": false,
     "hidden": true
   },
-  "parent": "aoa:ages/the_renaissance"
+  "parent": "aoa:ages/industrial_revolution"
 }
