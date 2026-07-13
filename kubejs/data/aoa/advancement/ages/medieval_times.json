@@ -21,5 +21,6 @@
     "show_toast": true,
     "announce_to_chat": false,
     "hidden": true
-  }
+  },
+  "parent": "aoa:ages/dark_ages"
 }

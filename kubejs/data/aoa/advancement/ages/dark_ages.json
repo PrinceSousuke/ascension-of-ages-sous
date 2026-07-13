@@ -5,22 +5,22 @@
     }
   },
   "requirements": [
-    [
-      "granted_by_shim"
-    ]
+    ["granted_by_shim"]
   ],
   "display": {
     "icon": {
-      "id": "minecraft:ender_pearl"
+      "id": "minecraft:campfire"
     },
     "title": {
-      "translate": "advancement.aoa.journey.grove_trials.title"
+      "text": "Journey of Ages",
+      "color": "gold"
     },
     "description": {
-      "translate": "advancement.aoa.journey.grove_trials.description"
+      "translate": "advancement.aoa.age.dark_ages.description"
     },
+    "background": "minecraft:textures/block/mossy_stone_bricks.png",
     "frame": "challenge",
-    "show_toast": false,
+    "show_toast": true,
     "announce_to_chat": false,
     "hidden": true
   }

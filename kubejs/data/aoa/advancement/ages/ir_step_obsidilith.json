@@ -11,17 +11,18 @@
   ],
   "display": {
     "icon": {
-      "id": "cataclysm:cursium_ingot"
+      "id": "bosses_of_mass_destruction:obsidian_heart"
     },
     "title": {
-      "translate": "advancement.aoa.journey.maledictus.title"
+      "translate": "advancement.aoa.journey.obsidilith.title"
     },
     "description": {
-      "translate": "advancement.aoa.journey.maledictus.description"
+      "translate": "advancement.aoa.journey.obsidilith.description"
     },
     "frame": "challenge",
     "show_toast": false,
     "announce_to_chat": false,
     "hidden": true
-  }
+  },
+  "parent": "aoa:ages/ir_step_beyond"
 }
